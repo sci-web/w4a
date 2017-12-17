@@ -1,13 +1,12 @@
 Info Space (I_S)
-    Types:
-    Study objects (S_O)
+    Study objects (S_O):
         type of S_O (organizm/chemical/disease)
         S_O's name
         S_O's inner desciption
         S_O's link to wiki
         date of introduction/discovery
         link(s) to associated S_O (disease to organizm/chemical)
-    Study products (S_P)
+    Study products (S_P):
         type of S_P (vaccine/drug)
         S_P's name
         S_P's inner desciption
@@ -17,9 +16,9 @@ Info Space (I_S)
         link(s) to indirectly associated S_O (like vaccine to disease/organism side effects)
     / possibility of double types included: S_O(chemical) = S_P(drug)
 
-    Analyst Space (A_S)
-        Analyst (A.) Auth Data
-        Subject of interest (A_S_S) (like vaccination, maybe many)
+    Analyst Space (A_S):
+        Analyst (A.) Auth/Personal Data
+        Subject of interest (A_S_S) Instance (like vaccination, maybe many):
             Introduction text
             Basic/Common References
                 Link
@@ -27,11 +26,13 @@ Info Space (I_S)
                 Type (pub/book/movie/image)
                 Digest annotation
 
-        Analyst Info Space (A_I_S)
-            pubData of Info formed by ncbi_ID, doi, direct
-            type of Info (publ, report, record, case)
-            Digest from a given Info
-            Selected Plots/Tables downloaded by A.
+        Analyst Info Space (A_I_S) Instance (many):
+            linked S_O / S_P
+                pubData of Info formed by ncbi_ID, doi, direct
+                type of Info (publ, report, record, case)
+                Digest from a given Info
+                Selected Plots/Tables downloaded by A.
             Summary
+
 
 Outside Commenters Space (A_S included)

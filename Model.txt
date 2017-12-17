@@ -17,7 +17,7 @@ Info Space (I_S)
     / possibility of double types included: S_O(chemical) = S_P(drug)
 
     Analyst Space (A_S):
-        Analyst (A.) Auth/Personal Data
+        Analyst's (A.) Auth/Personal Data
         Subject of interest (A_S_S) Instance (like vaccination, maybe many):
             Introduction text
             Basic/Common References
@@ -31,7 +31,7 @@ Info Space (I_S)
                 pubData of Info formed by ncbi_ID, doi, direct
                 type of Info (publ, report, record, case)
                 Digest from a given Info
-                Selected Plots/Tables downloaded by A.
+                Plots/Tables uploaded by A.
             Summary
 
 

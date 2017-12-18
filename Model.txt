@@ -15,24 +15,34 @@ Info Space (I_S)
         link(s) to directly associated S_O (like vaccine to disease/organism)
         link(s) to indirectly associated S_O (like vaccine to disease/organism side effects)
     / possibility of double types included: S_O(chemical) = S_P(drug)
+    Study segments (S_S)
+        type of S_S (human/item)
+        S_S's name
+        S_S's inner desciption
+
 
     Analyst Space (A_S):
         Analyst's (A.) Auth/Personal Data
         Subject of interest (A_S_S) Instance (like vaccination, maybe many):
-            Introduction text
+            Epigraph
+            Introduction text/points
             Basic/Common References
                 Link
                 Title
                 Type (pub/book/movie/image)
                 Digest annotation
+            IntroSummary
 
-        Analyst Info Space (A_I_S) Instance (many):
-            linked S_O / S_P
+        Analyst Space (A_S_I) Instance (many):
+            Epigraph
+            Subject linked S_O / S_P / S_S
+            Intro
+                Title of link
                 pubData of Info formed by ncbi_ID, doi, direct
-                type of Info (publ, report, record, case)
-                Digest from a given Info
+                type of Info (article, report, record, case, mass-media)
+                Point (Digest from a given Info)
                 Plots/Tables uploaded by A.
-            Summary
+            SubjectSummary
 
 
 Outside Commenters Space (A_S included)

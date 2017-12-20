@@ -16,7 +16,7 @@ def parse(html):
     print "\"InfoDate\": \"" + date + "\""
     print "\"InfoAuthors\": \"" + authors + "\","
     print "\"InfoPlace\": \"" + place + "\","
-    print "\"Digest\": \"" + digest + "\","
+    print "\"Digest\": \"" + digest + "\""
 
 def main(argv):
     try:

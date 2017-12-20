@@ -14,7 +14,7 @@ def parse(html):
     print "\"Title\": \"" + title + "\","
     print "\"Link\": \"" + html.a['href'] + "\","
     print "\"InfoID\": \"article\","
-    print "\"InfoDate\": \"" + date + "\""
+    print "\"InfoDate\": \"" + date + "\","
     print "\"InfoAuthors\": \"" + authors + "\","
     print "\"InfoID\": \"\","
     print "\"InfoPlace\": \"" + place + "\","

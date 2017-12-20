@@ -8,16 +8,28 @@ def parse(html):
     title = html.a.string
     link = html.a.href
     pr_info = title[title.find("(")+1:title.find(")")]
-    authors, date, place = pr_info.split(", ")
+    dt = ['','','']
+    dt = pr_info.split(", ")        # authors, date, place
     title =  title[0:title.find("(")]
+    inner = BeautifulSoup(digest)
+    pattern =r'<(a|/a).*?>'    
+    for a in inner.findAll('a', href=True):
+        lnk = "[" + a.string + "==" + a['href'] + "]"
+        print lnk.encode('utf-8')
+        print str(a)
+        digest = re.sub(pattern, "*", digest)
+        digest = digest.replace("*"+str(a.string)+"*", lnk.encode('utf-8'))
+
+    # for el in BeautifulSoup(digest).a:
+    #     print el.href
     print 
     print "\"Title\": \"" + title + "\","
     print "\"Link\": \"" + html.a['href'] + "\","
     print "\"InfoID\": \"article\","
-    print "\"InfoDate\": \"" + date + "\","
-    print "\"InfoAuthors\": \"" + authors + "\","
+    print "\"InfoDate\": \"" + dt[1] + "\","
+    print "\"InfoAuthors\": \"" + dt[0] + "\","
     print "\"InfoID\": \"\","
-    print "\"InfoPlace\": \"" + place + "\","
+    print "\"InfoPlace\": \"" + dt[2] + "\","
     print "\"Digest\": \"" + digest + "\""
 
 def main(argv):

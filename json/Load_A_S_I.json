@@ -1,0 +1,266 @@
+{
+"Meta": {
+	"Title": "Антипрививочники",
+	"I_S_codename": "anti-vaxx",
+	"I_S_type": "S_S",
+	"I_S_type_this": "human",
+	"I_S_name": "Антипрививочники",
+	"Intro" : "Учёным обычно выделяют очень мало грантов на исследования безопасности прививок, адъювантов и прочих прививочных компонентов. Однако денег на исследования того, почему люди не прививаются, и как заставить их колоть своих детей, более чем достаточно. Поэтому существует много исследований, характеризующих родителей-антипрививочников."
+    },
+
+"Epigraph": {
+	"Text": "Меньшинство может быть право, большинство всегда ошибается.",
+	"Source": "Генрик Ибсен",
+    },
+
+"Points":
+    [{
+	"Num": 1,
+	"Title": "В некоторых частных школах Лос Анжелеса меньше 20% детей привиты",
+	"Link": "http://www.latimes.com/opinion/opinion-la/la-oe-shapiro-schools-and-vaccination-rates-20130811-story.html",
+	"InfoType": "mass-media",
+	"InfoDate": "2013",
+	"Digest": "Считается, что антипрививочники это обычно необразованные, религиозные и антинаучно настроенные люди. Однако научные данные свидетельствуют об обратном. Большинство антипрививочников хорошо образованны и богаты.
+	Как может быть, что эти богатые и образованные люди не прививают своих детей? Неужели они не знают, что прививки совершенно безопасны, и что они спасают от страшных болезней? Или может быть они знают о прививках что-то, что не знают другие?
+	Вот несколько исследований:"
+    },
+    {
+	"Num": 2,
+	"Title": "Children Who Have Received No Vaccines: Who Are They and Where Do They Live?",
+	"Link": "http://pediatrics.aappublications.org/content/114/1/187",
+	"InfoType": "article",
+	"InfoDate": "2004",
+	"InfoAuthors": "Smith",
+	"InfoPlace": "Pediatrics",
+	"Digest": "Невакцинированные дети большей частью белые. Их матери старше 30 лет, замужем, обладают академической степенью, и их семьи зарабатывают более $75,000 в год. (США)"
+    },
+    {
+	"Num": 3,
+	"Title": "Effects of Maternal and Provider Characteristics on Up-to-Date Immunization Status of Children Aged 19 to 35 Months",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1781415/",
+	"InfoType": "article",
+	"InfoDate": "2007",
+	"InfoAuthors": "Kim",
+	"InfoID": "PMC1781415",
+	"InfoPlace": "Am J Public Health",
+	"Digest": "Чем ниже уровень образования матери, и чем она беднее, тем выше шанс, что она полностью прививает детей.
+	Детей больше прививают афроамериканцы и латины, и чем они беднее, тем больше они прививают. (США)"
+    },
+    {
+	"Num": 4,
+	"Title": "Negative attitude of highly educated parents and health care workers towards future vaccinations in the Dutch childhood vaccination program",
+	"Link": "http://www.ncbi.nlm.nih.gov/pubmed/15837208",
+	"InfoType": "article",
+	"InfoDate": "2005",
+	"InfoAuthors": "Hak",
+	"InfoID": "15837208",
+	"InfoPlace": "Vaccine",
+	"Digest": "Родители с высшим образованием в 3 раза чаще отказывались от прививок.
+	Медицинские работники в 4 раза чаще отказывались от прививок.
+	Атеисты в 2.6 раза чаще отказывались от прививок. (Нидерланды)"
+    },
+    {
+	"Num": 5,
+	"Title": "Deciding to opt out of childhood vaccination mandates",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/18816357",
+	"InfoType": "article",
+	"InfoDate": "2008",
+	"InfoAuthors": "Gullion",
+	"InfoID": "18816357",
+	"InfoPlace": "Public Health Nurs.",
+	"Digest": "Родители, которые не прививают своих детей, ценят научное знание, знают где искать, и как анализировать информацию о прививках, и в то же время не очень доверяют медицине. (США)"
+    },
+    {
+	"Num": 6,
+	"Title": "More Israeli Parents Refusing to Vaccinate Their Babies According to State Regulations",
+	"Link": "http://www.haaretz.com/israel-news/.premium-1.527622",
+	"InfoType": "mass-media",
+	"InfoDate": "04-06-2013",
+	"InfoGeo":"Израиль",
+	"Digest": "Матери с академическим образованием в два раза чаще отказываются от прививок.
+	Евреи в 4 раза чаще мусульман отказываются от прививок.
+	Чем выше возраст матерей, тем чаще они отказываются от прививок."
+    },
+    {
+	"Num": 7,
+	"Title": "Differences in risk factors for partial and no immunisation in the first year of life: prospective cohort study",
+	"Link":"http://www.bmj.com/content/332/7553/1312",
+	"InfoType": "article",
+	"InfoDate": "2006",
+	"InfoAuthors": "Samad",
+	"InfoGeo": "Великобритания",
+	"Digest": "Непрививающие матери старше и более образованны, чем прививающие матери."
+    },
+    {
+	"Num": 8,
+	"Title": "A Population-Based Evaluation of a Publicly Funded, School-Based HPV Vaccine Program in British Columbia, Canada: Parental Factors Associated with HPV Vaccine Receipt",
+	"Link": "http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000270",
+	"InfoType": "article",
+	"InfoDate": "2010",
+	"InfoAuthors": "Ogilvie",
+	"InfoPlace": "PLoS Med.",
+	"InfoGeo": "Канада",
+	"Digest": "Более образованные родители чаще отказывались от ВПЧ прививки для своих дочерей."
+    },
+    {
+	"Num": 9,
+	"Title": "Predictors of HPV vaccine acceptability: a theory-informed, systematic review",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/17628649",
+	"InfoType": "article",
+	"InfoDate": "2007",
+	"InfoAuthors": "Brewer",
+	"InfoID": "17628649",
+	"InfoPlace": "Prev Med.",
+	"Digest": "Систематический обзор 28-и исследований. Чем выше уровень образования родителей, тем чаще они отказывались от ВПЧ прививки.",
+
+    },
+    {
+	"Num": 10,
+	"Title": "Factors associated with uptake of measles, mumps, and rubella vaccine (MMR) and use of single antigen vaccines in a contemporary UK cohort: prospective cohort study",
+	"Link": "http://www.bmj.com/content/336/7647/754",
+	"InfoType": "article",
+	"InfoDate": "2008",
+	"InfoAuthors": "Pearce",
+	"InfoPlace": "BMJ",
+	"InfoGeo": "Великобритания",
+	"Digest": "Чем выше уровень образования, возраст и доход, тем чаще родители отказывались от пресловутой MMR, и выбирали некомбинированную прививку от кори."
+    },
+    {
+	"Num": 11,
+	"Title": "Acceptance of human papillomavirus vaccination among Californian parents of daughters: a representative statewide analysis",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/17259050",
+	"InfoType": "article",
+	"InfoDate": "2007",
+	"InfoAuthors": "Constantine",
+	"InfoID": "17259050",
+	"InfoPlace": "J Adolesc Health",
+	"InfoGeo": "Калифорния, США",
+	"Digest": "Родители с высшим образованием и консерваторы реже разрешали своим дочерям сделать прививку от ВПЧ. Родители, которые не закончили школу, католики и либералы чаще разрешали дочерям сделать эту прививку."
+    },
+    {
+	"Num": 12,
+	"Title": "Maternal characteristics and hospital policies as risk factors for nonreceipt of hepatitis B vaccine in the newborn nursery",
+	"Link": "http://www.ncbi.nlm.nih.gov/pubmed/21941215",
+	"InfoType": "article",
+	"InfoDate": "2012",
+	"InfoAuthors": "O'Leary",
+	"InfoPlace": "Pediatr Infect Dis J",
+	"InfoGeo": "Колорадо, США",
+	"Digest": "Более образованные матери, и матери с более высоким доходом, чаще отказываются прививать своего новорожденного ребёнка от гепатита В."
+    },
+    {
+	"Num": 13,
+	"Title": "Pодители, живущие в богатых районах Мельбурна стали прививать ещё меньше",
+	"Link": "https://www.facebook.com/9NewsMelbourne/videos/1853727611557558/",
+	"InfoType": "social",
+	"InfoDate": "13-06-2017",
+	"InfoGeo": "Австралия",
+	"Digest": "После того, как в Австралии приняли закон обязывающих родителей прививать детей для получения детских пособий (No jab, no pay), родители, живущие в богатых районах Мельбурна стали прививать ещё меньше. Более образованные родители, многие с научным образованием, сомневаются в безопасности, и в необходимости прививок.
+	Лишь 20% тех родителей, которые не прививали до принятия этого закона, стали прививать из-за него.
+	10% австралийских родителей считают, что прививки связаны с аутизмом."
+    },
+    {
+	"Num": 14,
+	"Digest": "Подобных исследований есть ещё много, и все они приходят к одним и тем же выводам. Родители, которые не прививают своих детей всегда старше, более образованы и более состоятельны. Перестаньте, пожалуйста, относиться к ним, как к идиотам.
+
+	А вот еще несколько необычайно важных исследований, на которые нашлись деньги налогоплательщиков:"
+    },
+    {
+	"Num": 15,
+	"Title": "Clinician-parent discussions about inﬂuenza vaccination of children and their association with vaccine acceptance",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/28392141",
+	"InfoType": "article",
+	"InfoDate": "2017",
+	"InfoAuthors": "Hofstetter",
+	"InfoID": "28392141",
+	"InfoPlace": "Vaccine",
+	"Digest": "Если врач заявляет \"сегодня мы сделаем прививку от гриппа\", то 72% родителей соглашаются. А если врач спрашивает \"мы сегодня будем делать прививку от гриппа?\", то лишь 17% соглашаются.
+	Если врач рекомендует сделать прививку от гриппа вместе с какой-либо другой прививкой, то 83% родителей соглашаются. А если врач отдельно предлагает прививку от гриппа, то лишь 33% соглашаются её сделать. Врачам на заметку."
+    },
+    {
+	"Num": 16,
+	"Title": "Greater freedom of speech on Web 2.0 correlates with dominance of views \"Link\"ing vaccines to autism",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/25665960",
+	"InfoType": "article",
+	"InfoDate": "2015",
+	"InfoAuthors": "Venkatraman",
+	"InfoID": "25665960",
+	"InfoPlace": "Vaccine",
+	"Digest": "Авторы этого исследования проанализировали Ютуб, Гугл, Википедию и Пабмед, и пришли к выводу, что чем больше свобода слова на ресурсе, тем больше на нем связывают прививки с аутизмом. Больше всего свободы слова на ютубе, в гугле ее меньше, а в википедии и пабмеде ее очень мало. Это приводит к тому, что на ютубе 75% роликов связывают прививки с аутизмом, в гугле 41% ссылок, в википедии 14% статей, а в пабмеде 17% статей связывают прививки с аутизмом (больше чем в википедии!).
+	Но самое ужасное в том, замечают авторы исследования, что антипрививочные активисты используют научные доводы(!), врачей(!), известных людей и личные истории, чтобы вызвать доверие! Проблема в том, пишут они, что ютуб, в отличие от гугла, не дает в поиске роликов приоритета научным авторитетам.
+	Врачи участвовали в 36% антипрививочных роликах, и всего в 28% пропрививочных.
+	Авторы исследования предлагают модерировать интернет, а также призывают медицинские учреждения проявлять там больше активности."
+    },
+    {
+	"Num": 17,
+	"Title": "Content and Design Attributes of Antivaccination Web Sites",
+	"Link": "http://jamanetwork.com/journals/jama/fullarticle/195044",
+	"InfoType": "article",
+	"InfoDate": "2002",
+	"InfoAuthors": "Wolfe",
+	"InfoPlace": "JAMA",
+	"Digest": "В этом исследовании авторы проанализировали 22 антипрививочных сайта, и заключили, что антипрививочные сайты выступают против прививок."
+    },
+    {
+	"Num": 18,
+	"Digest": "Подобных исследований очень много, вот еще несколько, для тех, кто хочет дальше углубиться в эту весёлую тему:",
+	"SourcesPool": [
+		{
+			"Title": "A postmodern Pandora's box: anti-vaccination misinformation on the Internet",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/20045099",
+			"InfoDate": "2010",
+			"InfoAuthors": "Kata",
+			"InfoID": "20045099",
+			"InfoPlace": "Vaccine"
+		},
+		{
+			"Title": "Associations Between Exposure to and Expression of Negative Opinions About Human Papillomavirus Vaccines on Social Media: An Observational Study",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4526932/",
+			"InfoDate": "2015",
+			"InfoAuthors": "Dunn",
+			"InfoID": "PMC4526932",
+			"InfoPlace": "J Med Internet Res"
+
+		},
+		{
+			"Title": "Using social connection information to improve opinion mining: Identifying negative sentiment about HPV vaccines on Twitter",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/26262154",
+			"InfoDate": "2015",
+			"InfoAuthors": "Zhou",
+			"InfoID": "26262154",
+			"InfoPlace": "Stud Health Technol Inform"
+
+		},
+		{
+			"Title": "Vaccine-criticism on the internet: new insights based on French-speaking websites",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/25583384",
+			"InfoDate": "2015",
+			"InfoAuthors": "Ward",
+			"InfoID": "25583384",
+			"InfoPlace": "Vaccine"
+
+		}
+	]
+    },
+    {
+	"Num": 19,
+	"Title": "A comparison of language use in pro- and anti-vaccination comments in response to a high proﬁle Facebook post",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/27707558",
+	"InfoType": "article",
+	"InfoDate": "2016",
+	"InfoAuthors": "Faasse",
+	"InfoID": "27707558",
+	"InfoPlace": "Vaccine",
+	"Digest": "Авторы исследования проанализировали комментарии к посту Марка Цукерберга на фейсбуке. Они заключили, что комментарии антипрививочников более аналитические, и были больше по делу. Комментарии пропрививочников отличались повышенной тревожностью."
+    },
+    {
+	"Num": 20,
+	"Digest": "На все эти исследования гранты нашлись. А вот на адекватные исследования безопасности прививок, такие чтобы длились больше, чем несколько дней, и использовали бы настоящее плацебо - на такое денег нет.
+	Но вы там держитесь, всего вам доброго, и хорошего настроения!"
+    },
+    {
+	"Num": 21,
+	"Digest": "UPD 18/9
+	Профессор педиатрии Dr. Carol J. Baker предлагает простое решение проблемы антипрививочников. Поскольку антипрививочники в основном белые и образованные, она предлагает избавиться от всех белых людей в США."
+    }]
+}

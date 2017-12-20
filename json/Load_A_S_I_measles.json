@@ -1,0 +1,702 @@
+{
+"Meta": {
+	"Title": "Корь",
+	"I_S_codename": "measles",
+	"I_S_type": "S_O",
+	"I_S_type_this": "disease",
+	"I_S_name": "Корь",
+	"Intro" : ""
+    },
+
+"Epigraph": {
+	"Text": "Cancer was practically unknown until the cowpox vaccination began to be introduced.<br>I have seen 200 cases of cancer, and never saw a case in an unvaccinated person.",
+	"Source": "W.B. Clark, New York Times, 1909",
+    },
+
+"Points":
+    [{
+	"Num": 1,
+	"Digest": "1. Корь, это, безусловно, самая большая страшилка. Если верить СМИ, то корь намного [страшнее==http://www.healthcareglobal.com/hospitals/scared-ebola-measles-outbreak-far-more-dangerous] Эболы."
+    },
+    {
+	"Num": 2,
+	"Digest": "Вот небольшой [ролик==https://www.youtube.com/watch?v=mDb0ZS3vB9g] с вырезками из ТВ-передач 50-х и 60-х годов, где видно, как относились к кори в допрививочные времена. Примерно так, как 20 лет назад мы относились к ветрянке. Сейчас, конечно, после появления вакцины, ветрянка из года в год становится все более опасной и даже, судя по [некоторым==http://www.dailymail.co.uk/health/article-2586103/We-no-idea-chickenpox-deadly-Parents-heartbreak-healthy-girl-7-dies-suddenly-condition.html] источникам, смертельной болезнью. Это произошло и с корью. <br>Вот еще один, более интересный [ролик==https://www.youtube.com/watch?v=47RUl5xqs_s], анализирующий изменение отношения к кори.<br>Корь очень опасна при недоедании и недостатке витамина A, поэтому она часто была летальна в 19-м и начале 20-го века, и до сих пор летальна в странах третьего мира. Но в развитых странах корь намного менее опасна, чем грипп, легко проходит, дает пожизненный иммунитет, и, как мы увидим далее, предохраняет от намного более опасных болезней."
+    },
+    {
+	"Num": 3,
+	"Title": "Measles. Reports from general practitioners.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1992477",
+	"InfoType": "article",
+	"InfoDate": "1959",
+	"InfoPlace": "BMJ",
+	"Digest": "Статья 1959 года, в которой несколько практикующих врачей пишут о том, что корь стала легкой болезнью в Англии, практически без осложнений. Никакого лечения не требуется, не делается никаких шагов для того, чтобы предотвратить ее распространение, и случаи болезни даже нигде не регистрируются. Более того, они пишут, что корью лучше всего переболеть с 3-х до 7-и лет, потому что во взрослом возрасте она намного чаще приводит к осложнениям, и что младенцы ей практически не болеют, а если и болеют, то в очень легкой форме. Матери переболевших детей утверждают, что после кори дети стали намного лучше.<br>Свидетельства матерей о том, что корь приводит к скачку развития у детей, можно почитать и сегодня на специализированных форумах."
+    },
+    {
+	"Num": 4,
+	"Title": "The Importance of Measles as a Health Problem",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1522578",
+	"InfoType": "article",
+	"InfoDate": "1962",
+	"InfoAuthors": "Langmuir",
+	"InfoID": "PMC1522578",
+	"InfoPlace": "Am J Public Health Nations Health",
+	"Digest": "Зачем же вообще начали прививать от кори, если это была такая тривиальная болезнь?<br>Это статья [Alexander Langmuir==https://en.wikipedia.org/wiki/Alexander_Langmuir], главного эпидемиологa CDC, который пишет, что корь болезнь короткая, не тяжелая и малоопасная, и что мы достигли с ней \"биологического баланса\".<br>Затем на вопрос, зачем он хочет искоренить корь, он отвечает словами Эдмунда Хиллари, которого спросили, зачем покорять Эверест. На что Хиллари сказал: "потому что он есть". Автор добавляет, что он желает искоренить корь, потому что это возможно."
+    },
+    {
+	"Num": 5,
+	"Digest": "В 1966 году планировали полностью искоренить корь в течение года. [Считалось==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1919891/], что достаточно чтобы 55% населения были не подвержены кори, чтобы обеспечить коллективный иммунитет. Но к 1980 году [оказалось==https://www.ncbi.nlm.nih.gov/pubmed/7399493], что вакцинация привела лишь к тому, что вместо детей [стали==https://www.ncbi.nlm.nih.gov/pubmed/10545585] болеть подростки и взрослые. Ну а позже, когда матери, которые благодаря прививке не переболели в детстве корью, не могли передать своим детям иммунитет, корью стали болеть младенцы до года, что было практически неслыханным в допрививочные времена. То есть вместо того, чтобы переболеть корью в детстве, когда она менее опасна, благодаря прививке корью стали болеть беременные, младенцы, взрослые, у которых риск осложнений [выше==http://www.cdc.gov/vaccines/pubs/pinkbook/downloads/meas.pdf]."
+    },
+    {
+	"Num": 6,
+	"Digest": "В 1978 году [планировали==https://www.cdc.gov/measles/about/history.html] полностью искоренить корь уже за последующие четыре года. В 1989 году [оказалось==http://www.nytimes.com/1989/02/26/us/measles-not-yet-a-thing-of-the-past-reveals-the-limits-of-an-old-vaccine.html], что старая вакцина от кори была какая-то неправильная, и что только в 1980-м появилась правильная. Правда и правильная вакцина не привела к искоренению кори, поэтому в том же году решили [ввести==https://www.ncbi.nlm.nih.gov/pubmed/15064032] вторую дозу MMR. Также [оказалось==https://www.ncbi.nlm.nih.gov/pubmed/15064032], что вспышка кори вполне может быть в школе, где 100% детей имеют документальное подтверждение вакцинации. CDC не знали, как такое можно объяснить."
+    },
+    {
+	"Num": 7,
+	"Title": "Failure to reach the goal of measles elimination. Apparent paradox of measles infections in immunized persons.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/8053748",
+	"InfoType": "article",
+	"InfoDate": "1994",
+	"InfoAuthors": "Poland",
+	"InfoID": "8053748",
+	"InfoPlace": "Arch Intern Med",
+	"InfoGeo": "",
+	"Digest": "В 1994 году один из главных пропрививочников в мире Gregory Poland публикует статью, где он анализирует 18 вспышек кори в школах, где практически все ученики были привиты. Он заключает, что невозможно полностью искоренить корь даже если привить 100% детей, потому что вакцина не эффективна на 100%, поэтому чем дальше, тем больше корь будет становиться болезнью привитых, и что поскольку корь очень заразна, коллективный иммунитет для нее не работает, несмотря на очень высокий охват вакцинации. (Довольно иронично, что \"коллективный иммунитет\" - термин, который приобрел известность именно в контексте кори, для кори не работает).<br>Также он пишет, что прививка до 12-месячного возраста очень неэффективна, и даже до 15-месячного возраста не очень эффективна. Несмотря на это, в США и во многих других странах, эта прививка рекомендуется в 12 месяцев, а ВОЗ вообще рекомендует ее делать в 6 месяцев.<br>С 2000 года корь [считается==https://www.cdc.gov/measles/about/history.html] искорененной в США. Это не значит, что ей совсем перестали болеть. Просто изменили определение \"искоренения\". Сегодня искоренение означает, что корь передается от человеку к человеку менее чем 12 месяцев подряд, а новые случаи заражения - завозные."
+    },
+    {
+	"Num": 8,
+	"Digest": "Вакцина от кори всегда является частью трехвалентной вакцины MMR (КПК) (с краснухой и свинкой), или четыреxвалентой вакцины MMRV (с краснухой, свинкой и ветрянкой). Моновалентной вакцины от кори в развитых странах не производят, но в России и в некоторых странах третьего мира она вроде всё ещё доступна. Обычно дают две дозы - в 12 месяцев и в 5-6 лет.<br>В отличие от неживых вакцин, которые мы рассматривали до сих пор, корь это ослабленная вакцина, которая содержит живой вирус. Живые вакцины намного эффективнее неживых, и поэтому в них не добавляют алюминий. Проблема живых вакцин, среди прочего, в том, что ослабленные вирусы вполне могут мутировать обратно, и стать обычными, а также в том, что привитый человек довольно часто становится заразен для окружающих.",
+	"SourcesPool": [
+		{
+			"Title": "[1]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/10494235/",
+		},
+		{
+			"Title": "[2]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/26027483",
+		},
+		{
+			"Title": "[3]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/23531102/",
+		},
+		{
+			"Title": "[4]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/23543773/",
+		},
+		{
+			"Title": "[5]",
+			"Link" : "http://www.eurosurveillance.org/ViewArticle.aspx?ArticleId=20649",
+		}
+	]
+    },
+    {
+	"Num": 9,
+	"Digest": "Первая вакцина от кори была неживая, но через несколько лет массивного использования, оказалось, что она [приводит==http://jamanetwork.com/journals/jama/article-abstract/336928] к атипичной кори, а также к пневмонии и к энцефалопатии. Первые ослабленные вакцины были настолько сильными, что вместе с вакциной [кололи==https://www.ncbi.nlm.nih.gov/pubmed/7399493] также иммуноглобулин, поэтому в 1965-м и в 1967-м вакцину ослабляли еще больше."
+    },
+    {
+	"Num": 10,
+	"InfoImg": "https://ic.pics.livejournal.com/amantonio/68333260/2675/2675_600.jpg",
+	"InfoImgSource": "https://www.ncbi.nlm.nih.gov/pubmed/8741307",
+	"Digest": "Что это вообще означает, \"ослабленная вакцина\"? Вирусу ведь трудно дать под дых, чтобы его ослабить, но при этом не убить. Как же его все-таки ослабляют?<br>Для этого вирус приспосабливают к жизни в нечеловеческих клетках, в результате чего он мутирует, и становится менее приспособлен к человеку.<br>Вот диаграмма процесса ослабления вируса свинки: |&| <br>Для начала выделяют дикий штамм вируса из больного человека. После этого его два раза [серийно проводят==https://en.wikipedia.org/wiki/Serial_passage] через человеческие эмбриональные почечные клетки. Потом вирус пересаживают в почечные клетки зеленых обезьян. Потом его шесть раз проводят через амниотичные клетки зародышей цыплят, затем два раза проводят через [фибробластовые клетки==https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%B1%D1%80%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82] зародышей перепела, потом снова два раза через амниотичные клетки цыплят.<br>Ну а дальше по желанию. Можно провести три раза через фибробласты зародышей цыплят, а можно провести еще два раза через амниотичные клетки цыплят, а потом еще пять раз через [аллантоис==https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%BB%D0%B0%D0%BD%D1%82%D0%BE%D0%B8%D1%81] (эмбриональный орган дыхания) цыплят, а потом снова через фибропласты цыплят. Так получают различные вакцинные штаммы, которые также можно между собой смешивать. Вот [патент==https://www.google.com/patents/US4324861], если вас интересуют подробности.<br>Merck, например, используют не почечные клетки, а абортированные клетки легких, женские ([WI-38==https://en.wikipedia.org/wiki/WI-38]), и мужские ([MRC-5==https://en.wikipedia.org/wiki/MRC-5]), а также [бычью сыворотку==https://ru.wikipedia.org/wiki/%D0%91%D1%8B%D1%87%D0%B8%D0%B9_%D1%81%D1%8B%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9_%D0%B0%D0%BB%D1%8C%D0%B1%D1%83%D0%BC%D0%B8%D0%BD]. В общем, тут каждый производитель вакцин резвится в меру своего воображения. (Почему абортированные человеческие клетки намного хуже животных клеток будет разобрано в другой части).<br>Ну и поскольку невозможно полностью отделить вирус от клеток, в которых он размножается, эти клетки являются частью вакцины. Так как роль этих клеток состоит в том, чтобы быстро размножаться, они часто онкогенны. Ученых из FDA это, конечно, [беспокоит==https://www.scribd.com/doc/246682536/FDA-Meeting-Human-Tumors-for-Vaccine-Manufacture], но не очень.<br>Более того, эти клетки могут содержать и другие вирусы, которые пока неизвестны науке. Ведь чтобы найти в клетках вирус, нужно знать, что искать. А если вирус еще неизвестен, то его и невозможно найти. Но вы не волнуйтесь. Ученые из FDA [работают==https://www.fda.gov/biologicsbloodvaccines/scienceresearch/biologicsresearchareas/ucm127327.htm] над новыми технологиями выявления неизвестных вирусов. В 2010 году вот [обнаружили==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2876658/] свиной вирус в вакцине от ротавируса. Правда, не FDA этот вирус обнаружили, а ученые из калифорнийского университета. А потом решили проверить вакцину от ротавируса другого производителя, и [обнаружили==http://www.who.int/entity/immunization_standards/vaccine_quality/PCV1_Q_and_As_rotavirus_vaccines_3Jun10.pdf] в ней уже два свиных вируса. Но вы не волнуйтесь. FDA [полагает==https://www.fda.gov/NewsEvents/PublicHealthFocus/ucm205585.htm], что эти вирусы совершенно безопасны для человека. Ну, во всяком случае, их опасность не доказана. Поэтому эти свиные вирусы решили в вакцинах [оставить==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/B/excipient-table-2.pdf]. Не переделывать же такие хорошие вакцины из-за такой мелочи, как пара лишних вирусов."
+    },
+    {
+	"Num": 11,
+	"Header": "Эффективность",
+	"Title": "Measles outbreak in a vaccinated school population: epidemiology, chains of transmission and the role of vaccine failures.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1646939/",
+	"InfoType": "article",
+	"InfoDate": "1987",
+	"InfoAuthors": "Nkowane",
+	"InfoID": "PMC1646939",
+	"InfoPlace": "Am J Public Health",
+	"Digest": "Вспышка кори в школе в Массачусетсе, в которой 98% учеников были привиты (27 случаев). Вспышку начала полностью привитая 16-летняя девушка. Из 27 случаев трое были непривиты, а пятеро неадекватно привиты (т.е. получили прививку до 12 месячного возраста, когда она менее эффективна), остальные были полностью привиты. Всего 11 полностью привитых учеников заразили других, и 10 неадекватно привитых заразили других."
+    },
+    {
+	"Num": 12,
+	"Title": "Outbreak of measles among persons with prior evidence of immunity",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/24585562",
+	"InfoType": "article",
+	"InfoDate": "2014",
+	"InfoAuthors": "Rosen",
+	"InfoID": "24585562",
+	"InfoPlace": "Clin Infect Dis",
+	"InfoGeo": "New York City",
+	"EventDate": "2011",
+	"Digest": "До сих пор считалось, что хотя привитые от кори могут заболеть корью, они не могут заражать других (авторы явно не читали предыдущую статью, и десятки других статей о вспышках кори в полностью привитых школах). И вот, оказалось, что могут. Двукратно привитая двадцатидвухлетняя девушка заразила корью 4-х людей, из них трое были работники медицинского учреждения. Все четверо были или привиты двумя дозами, или у них были антитела кори.<br>Вот несколько статей о вспышках кори в полностью или почти полностью привитых коллективах: ",
+	"SourcesPool": [
+		{
+			"Title": "[1]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/9921727",
+		},
+		{
+			"Title": "[2]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/4047794",
+		},
+		{
+			"Title": "[3]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/28461876",
+		},
+		{
+			"Title": "[4]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/16583967",
+		},
+		{
+			"Title": "[5]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/26589518",
+		}
+		{
+			"Title": "[6]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/3821823",
+		}
+		{
+			"Title": "[7]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/1884314",
+		}
+		{
+			"Title": "[8]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/16322148",
+		}
+		{
+			"Title": "[9]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/140009",
+		}
+		{
+			"Title": "[10]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/4014205",
+		}
+		{
+			"Title": "[11]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/9850133",
+		}
+	]
+
+    },
+    {
+	"Num": 13,
+	"Title": "Difficulties in Eliminating Measles and Controlling Rubella and Mumps: A Cross-Sectional Study of a First Measles and Rubella Vaccination and a Second Measles, Mumps, and Rubella Vaccination.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3930734/",
+	"InfoType": "article",
+	"InfoDate": "2014",
+	"InfoAuthors": "Wang",
+	"InfoID": "PMC3930734",
+	"InfoPlace": "PLoS One",
+	"Digest": "В Китае охват вакцинации выше 99%, но несмотря на это, корь не исчезает. Антитела от кори есть у 93.6% населения, от свинки у 86.7%, а от краснухи у 74.6%. У женщин в возрасте 20-40 лет антител от кори и от краснухи намного меньше, чем у мужчин той же возрастной категории. То есть во время беременности, когда защита от кори и от краснухи важнее всего, благодаря прививке у многих женщин её нет. Еще меньше антител у детей 7-и месячного возраста и младше (в Китае прививают от кори в 8 месяцев). И действительно, больше всего случаев кори регистрируется в возрасте 20-29 лет. Тоже самое происходит и в других провинциях.<br>Краснухой больше всего болеют в возрасте 15-39 лет, тогда как она опаснее всего для беременных."
+    },
+    {
+	"Num": 14,
+	"Title": "Measles incidence rate and a phylogenetic study of contemporary genotype H1 measles strains in China: is an improved measles vaccine needed?",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/21701857",
+	"InfoType": "article",
+	"InfoDate": "2011",
+	"InfoAuthors": "Shi",
+	"InfoID": "21701857",
+	"InfoPlace": "Virus Genes",
+	"Digest": "Несмотря на охват вакцинации в 98.5% в одной из провинций Китая, количество случаев кори только растет, а вместо детей болеют взрослые.<br>Авторы выделили 16 штаммов вируса у 14 привитых и двух непривитых, и заключают, что вирус мутирует, поэтому привитые заболевают. Они призывают разработать новые вакцины от кори."
+    },
+    {
+	"Num": 15,
+	"Title": "Detection of measles virus RNA in urine specimens from vaccine recipients.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC228449/",
+	"InfoType": "article",
+	"InfoDate": "1995",
+	"InfoAuthors": "Rota",
+	"InfoID": "PMC228449",
+	"InfoPlace": "J Clin Microbiol",
+	"Digest": "Известно, что во время болезни вирус кори выделяется в моче до 10 дней после начала сыпи. И вот, оказалось, что после прививки вирус тоже выделяется в моче начиная с первого дня, и на протяжении как минимум 14 дней, (исследование было прекращено через 14 дней). Согласно другому исследованию вирус выделяется 16 дней после прививки.<br>Частота таких асимптоматических и субклинических инфекций, которые CDC не определяет как корь, неизвестна. Также неизвестно, насколько такие случаи заразны. В предыдущем исследовании оказалось, что у пяти из 12 контактов больного корью, в моче обнаружился вирус, хотя лишь у одного из них были клинические симптомы кори.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/11858860] и [здесь==http://www.eurosurveillance.org/ViewArticle.aspx?ArticleId=19652] сообщается о том, что оказываеся вакцинный штамм вируса кори после прививки может обнаруживаться также в горле."
+    },
+    {
+	"Num": 16,
+	"Title": "Maternally derived measles immunity in era of vaccine-protected mothers.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/2563011",
+	"InfoType": "article",
+	"InfoDate": "1989",
+	"InfoAuthors": "Koskiniemi",
+	"InfoID": "2563011",
+	"InfoPlace": "Lancet",
+	"Digest": "Поскольку у привитых меньше антител, чем у переболевших, привитые матери передают меньше антител младенцам через плаценту, чем непривитые.<br>Дети матерей, которые родились до 1957 года (т.е. до того, как начали прививать) защищены от кори в среднем до шестимесячного возраста посредством материнских антител. А дети матерей, которые родились после 1963 года имеют защиту в среднем до 4-х месяцев."
+    },
+    {
+	"Num": 17,
+	"Title": "Increased susceptibility to measles in infants in the United States.",
+	"Link": "https://www.ncbi.nlm.nih.gov/pubmed/10545585",
+	"InfoType": "article",
+	"InfoDate": "1999",
+	"InfoAuthors": "Papania",
+	"InfoID": "10545585",
+	"InfoPlace": "Pediatrics",
+	"Digest": "Младенцы привитых матерей болели корью в 7.5 раз чаще, чем младенцы непривитых матерей. Благодаря прививке всё больше и больше младенцев не защищены от кори. Поэтому авторы рекомендуют прививать незащищенных детей не позже 12-месячного возраста.<br>У непривитых матерей намного больше антител к кори, чем у привитых:",
+	"SourcesPool": [
+		{
+			"Title": "[1]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2874774/",
+		},
+		{
+			"Title": "[2]",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/20483946",
+		},
+	]
+    },
+    {
+	"Num": 18,
+	"Title": "Comparative Analysis of Titers of Antibody against Measles Virus in Sera of Vaccinated and Naturally Infected Japanese Individuals of Different Age Groups",
+	"Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC130661/",
+	"InfoType": "article",
+	"InfoDate": "2002",
+	"InfoAuthors": "Itoh",
+	"InfoID": "PMC130661",
+	"InfoPlace": "J Clin Microbiol",
+	"Digest": "Количество антител у привитых в 23.2 раза меньше, чем у непривитых, и к 20-летнему возрасту значительно снижается. После 20-и лет оно снова повышается, что свидетельствует о естественной инфекции."
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+    {
+	"Num": 1,
+	"Title": "",
+	"Link": "",
+	"InfoType": "",
+	"InfoDate": "",
+	"InfoAuthors": "",
+	"InfoID": "",
+	"InfoPlace": "",
+	"Digest": ""
+    },
+
+    {
+	"Num": 18,
+	"Digest": "",
+	"SourcesPool": [
+		{
+			"Title": "",
+			"Link" : "",
+			"InfoDate": "",
+			"InfoAuthors": "",
+			"InfoID": "",
+			"InfoPlace": ""
+		},
+	]
+    },
+    ]
+}

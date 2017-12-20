@@ -25,7 +25,7 @@ def parse(html):
         # print str(a)
         digest = re.sub(pattern, "*", digest)
         digest = digest.replace("*"+str(a.string)+"*", lnk.encode('utf-8'))
-    print 
+    print "{"
     print "\"Title\": \"" + title + "\","
     print "\"Link\": \"" + link + "\","
     print "\"InfoID\": \"article\","
@@ -34,7 +34,8 @@ def parse(html):
     print "\"InfoID\": \"\","
     print "\"InfoPlace\": \"" + dt[2] + "\","
     print "\"Digest\": \"" + digest + "\""
-
+    print "},"
+    
 def main(argv):
     try:
         opts, arg = getopt.getopt(argv, "t:", ["txt="])

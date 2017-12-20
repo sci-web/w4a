@@ -4,13 +4,20 @@ from BeautifulSoup import BeautifulSoup
 def parse(html):
     digest = html[html.find("<br>"):]
     digest = digest[4:]
-    html = BeautifulSoup(html)
-    title = html.a.string
-    link = html.a.href
+    soup = BeautifulSoup(html)
+    title = soup.a.string
+    link = soup.a.href
     pr_info = title[title.find("(")+1:title.find(")")]
-    dt = ['','','']
-    dt = pr_info.split(", ")        # authors, date, place
-    title =  title[0:title.find("(")]
+    dt = ["","",""]
+    if title.find("(") > 0:
+        print pr_info + "<<<"
+        dt = pr_info.split(", ")        # authors, date, place
+        title =  title[0:title.find(" (")]
+        link = soup.a['href']
+    else:
+        digest = html
+        title = ""
+        link = ""
     inner = BeautifulSoup(digest)
     pattern =r'<(a|/a).*?>'    
     for a in inner.findAll('a', href=True):
@@ -24,7 +31,7 @@ def parse(html):
     #     print el.href
     print 
     print "\"Title\": \"" + title + "\","
-    print "\"Link\": \"" + html.a['href'] + "\","
+    print "\"Link\": \"" + link + "\","
     print "\"InfoID\": \"article\","
     print "\"InfoDate\": \"" + dt[1] + "\","
     print "\"InfoAuthors\": \"" + dt[0] + "\","

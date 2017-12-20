@@ -10,7 +10,6 @@ def parse(html):
     pr_info = title[title.find("(")+1:title.find(")")]
     dt = ["","",""]
     if title.find("(") > 0:
-        print pr_info + "<<<"
         dt = pr_info.split(", ")        # authors, date, place
         title =  title[0:title.find(" (")]
         link = soup.a['href']
@@ -22,13 +21,10 @@ def parse(html):
     pattern =r'<(a|/a).*?>'    
     for a in inner.findAll('a', href=True):
         lnk = "[" + a.string + "==" + a['href'] + "]"
-        print lnk.encode('utf-8')
-        print str(a)
+        # print lnk.encode('utf-8')
+        # print str(a)
         digest = re.sub(pattern, "*", digest)
         digest = digest.replace("*"+str(a.string)+"*", lnk.encode('utf-8'))
-
-    # for el in BeautifulSoup(digest).a:
-    #     print el.href
     print 
     print "\"Title\": \"" + title + "\","
     print "\"Link\": \"" + link + "\","
@@ -46,7 +42,7 @@ def main(argv):
         sys.exit(2)
     for opt, arg in opts:
         arg.rstrip("\n\r")
-        if opt in ("-t", "--txt"):
+        if opt in ("-t", "--txt") and arg:
             parse(arg)
         else:
             print "no HTML input"

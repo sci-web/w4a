@@ -7,7 +7,7 @@ def parse(html):
     soup = BeautifulSoup(html)
     title = soup.a.string
     link = soup.a.href
-    pr_info = title[title.find("(")+1:title.find(")")]
+    pr_info = title[title.rfind("(")+1:title.rfind(")")]
     dt = ["","",""]
     if title.find("(") > 0:
         dt = pr_info.split(", ")        # authors, date, place
@@ -40,12 +40,16 @@ def main(argv):
         opts, arg = getopt.getopt(argv, "t:", ["txt="])
     except getopt.GetoptError:
         sys.exit(2)
-    for opt, arg in opts:
-        arg.rstrip("\n\r")
-        if opt in ("-t", "--txt") and arg:
-            parse(arg)
-        else:
-            print "no HTML input"
+    if len(opts) > 0:
+        for opt, arg in opts:
+            if opt in ("-t", "--txt") and arg:
+                arg.rstrip("\n\r")    
+                parse(arg)
+            else:
+                print "no HTML input"
+    else:
+        for point in sys.stdin.read().split("\n\n"):
+            parse(point)
 
 if __name__ == '__main__':
     main(sys.argv[1:])

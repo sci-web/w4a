@@ -13,8 +13,10 @@ def parse(html):
     print 
     print "\"Title\": \"" + title + "\","
     print "\"Link\": \"" + html.a['href'] + "\","
+    print "\"InfoID\": \"article\","
     print "\"InfoDate\": \"" + date + "\""
     print "\"InfoAuthors\": \"" + authors + "\","
+    print "\"InfoID\": \"\","
     print "\"InfoPlace\": \"" + place + "\","
     print "\"Digest\": \"" + digest + "\""
 

@@ -5,7 +5,8 @@
 	"I_S_type": "S_O",
 	"I_S_type_this": "disease",
 	"I_S_name": "Корь",
-	"Intro" : ""
+	"Intro" : "",
+	"Date" : "13-09-2017"
     },
 
 "Epigraph": {
@@ -250,7 +251,7 @@
 	"Num": 19,
         "Title": "The future of measles in highly immunized populations. A modeling approach.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/6741921",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1984",
         "InfoAuthors": "Levy",
         "InfoID": "6741921",
@@ -262,7 +263,7 @@
 	"Num": 20,
         "Title": "Measles reimmunization in children seronegative after initial immunization.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/9087472",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1997",
         "InfoAuthors": "Poland",
         "InfoID": "9087472",
@@ -274,7 +275,7 @@
 	"Num": 21,
         "Title": "Resistance of recent measles virus wild-type isolates to antibody-mediated neutralization by vaccinees with antibody.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/10935994",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "2000",
         "InfoAuthors": "Klingele",
         "InfoID": "10935994",
@@ -286,7 +287,7 @@
 	"Num": 22,
         "Title": "Measles Virus Neutralizing Antibodies in Intravenous Immunoglobulins: is an Increase by Re-Vaccination of Plasma Donors possible?",
         "Link": "https://doi.org/10.1093/infdis/jix428",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "2017",
         "InfoAuthors": "Modrof",
         "InfoID": "",
@@ -310,7 +311,7 @@
 	"Num": 24,
         "Title": "Measles as an index of immunological function.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/4175162",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1968",
         "InfoAuthors": "Burnet",
         "InfoID": "4175162",
@@ -319,10 +320,13 @@
 	"SourcesPool": [
 		{
 			"Title": "[1]",
+			"InfoType": "article",
 			"Link" : "http://journals.sagepub.com/doi/pdf/10.1177/003591577406701117",
 		},
 		{
 			"Title": "[2]",
+			"InfoType": "article",
+			"InfoID": "PMC1646020"
 			"Link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1646020/",
 		},
 	]
@@ -336,7 +340,7 @@
 	"Header": "Витамин А",
         "Title": "Intensive vitamin therapy in measles.",
         "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2521770/",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1932",
         "InfoAuthors": "Ellison",
         "InfoID": "PMC2521770",
@@ -348,7 +352,7 @@
 	"Num": 27,
         "Title": "Vitamin A supplements and mortality related to measles: a randomised clinical trial.",
         "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1245303/",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1987",
         "InfoAuthors": "Barclay",
         "InfoID": "PMC124530",
@@ -370,7 +374,7 @@
 	"Num": 29,
         "Title": "Vitamin A levels in children with measles in Long Beach, California.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/1625097",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1991",
         "InfoAuthors": "Arrieta",
         "InfoID": "1625097",
@@ -381,7 +385,7 @@
 	"Num": 30,
         "Title": "Vitamin A levels and severity of measles. New York City.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/1285727",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1992",
         "InfoAuthors": "Frieden",
         "InfoID": "1285727",
@@ -404,7 +408,7 @@
 	"Num": 32,
         "Title": "Reduced mortality among children in southern India receiving a small weekly dose of vitamin A.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/2205798",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1990",
         "InfoAuthors": "Rahmathullah",
         "InfoID": "2205798",
@@ -415,7 +419,7 @@
 	"Num": 33,
         "Title": "Vitamin A supplementation and child mortality. A meta-analysis. ",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8426449",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1993",
         "InfoAuthors": "Fawzi",
         "InfoID": "8426449",
@@ -426,7 +430,7 @@
 	"Num": 34,
         "Title": "Vitamin A supplementation for preventing morbidity and mortality in children from six months to five years of age.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/21154399",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "2017",
         "InfoAuthors": "Imdad",
         "InfoID": "21154399",
@@ -438,7 +442,7 @@
 	"Num": 35,
         "Title": "Severe measles: some unanswered questions.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/6878999",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1983",
         "InfoAuthors": "Morley",
         "InfoID": "6878999",
@@ -449,7 +453,7 @@
 	"Num": 36,
         "Title": "The effect of live measles vaccines on serum vitamin A levels in healthy children.",
         "Link": "https://www.ncbi.nlm.nih.gov/pubmed/9745778",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "1998",
         "InfoAuthors": "Yalçin",
         "InfoID": "9745778",
@@ -460,7 +464,7 @@
 	"Num": 37,
         "Title": "Vitamin A and Measles.",
         "Link": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2000.tb07803.x/full",
-        "InfoID": "article",
+        "InfoType": "article",
         "InfoDate": "2000",
         "InfoAuthors": "West",
         "InfoID": "",
@@ -478,239 +482,553 @@
 	"Digest": "В отличие от витамина А, не существует ни одного исследования, доказывающего, что прививка от кори приводит к снижению смертности от нее.<br>А теперь вспомните, сколько вы слышали в СМИ про витамин А, и сколько про прививки в свете последних "эпидемий" кори."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+	"Num": 40,
+	"Header": "Польза кори и других инфекционных заболеваний",
+        "Title": "Hodgkin&rsquo;s disease: remissions after measles.",
+        "Link": "http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(71)91186-X/abstract",
+        "InfoType": "article",
+        "InfoDate": "1971",
+        "InfoAuthors": "Zygiert",
+        "InfoID": "",
+        "InfoPlace": "Lancet",
+        "InfoGeo": "Польша",
+        "Digest": "Трое детей с подтвержденной лимфомой Ходжкина заболели корью. После кори лимфома прошла у всех троих. У двух из них через два года был небольшой рецидив. У третьего ремиссия длится уже 6 лет. (Польша)"
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+	"Num": 41,
+        "Title": "Infantile Hodgkin&#39;s disease: remission after measles.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1589969/",
+        "InfoType": "article",
+        "InfoDate": "1973",
+        "InfoAuthors": "Mota",
+        "InfoID": "PMC1589969",
+        "InfoPlace": "BMJ",
+        "InfoGeo": "Португалия",
+        "Digest": "Похожий случай в Португалии. У двухлетнего мальчика обнаружилась лимфома Ходжкина. До того, как успели начать радиотерапию, мальчик заболел корью, и лимфома исчезла. После 6 месяцев ремиссии мать обнаружила покраснение лица и шеи у ребенка, после того, как он выпил вина. Оказалось, что произошел небольшой рецидив лимфомы.<br>Зачем мать поила двухлетнего ребенка вином, давно ли она это делала, и имело ли это отношение к первоначальному заболеванию, в статье не сообщается."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+	"Num": 42,
+        "Title": "Regression of Hodgkin&#39;s disease after measles.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/6112483",
+        "InfoType": "article",
+        "InfoDate": "1981",
+        "InfoAuthors": "Tagi",
+        "InfoID": "6112483",
+        "InfoPlace": "Lancet",
+        "InfoGeo": "Нигерия",
+        "Digest": "Похожий случай в Нигерии в 1981 году. Был также зарегистрирован случай излечения лимфомы после кори на Кубе в 1949 году."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+	"Num": 43,
+        "Digest": "В 2014 году [женщину==http://edition.cnn.com/2014/05/15/health/measles-cancer-remission/index.html] вылечили от множественной миеломы посредством огромной дозы рекомбинантного вируса кори.<br>В настоящее время [ведутся==http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926122] клинические испытания лечения различных онкологических заболеваний посредством вируса кори.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/15961518] сообщается об успешном применении вируса для лечения рака кожи у пяти пациентов. [Здесь==https://www.ncbi.nlm.nih.gov/pubmed/15961518] о том, как вирус кори разрушает клетки меланомы.<br>Вирус кори успешно использовали и для лечения рака рака яичника [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890216/],[[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377302/]. Вирус оказался намного эффективнее [авастина==https://en.wikipedia.org/wiki/Bevacizumab], модного на сегодня, очень токсичного и очень дорогого лекарства от рака."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+	"Num": 44,
+        "Digest": "У тех, кто [болел==http://www.docguide.com/childhood-measles-may-protect-against-hodgkins-lymphoma-presented-esmo] в детстве корью, риск лимфомы Ходжкина был на 66% меньше, чем у тех, кто ей не болел. Перенесенная корь снижала также риск неходжкинской лимфомы на 40%. Ветрянка снижала риск лимфомы на 47%.<br>Риск лимфомы Ходжкина снижали также свинка, краснуха, коклюш и скарлатина. Чем больше инфекционных болезней было в детстве, тем ниже был риск лимфомы. Три детские болезни снижали риск неходжкинской лимфомы на 40%, а ходжкинской лимфомы на 80%."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+        "Num": 45,
+        "Title": "Do childhood diseases affect NHL and HL risk? A case-control study from northern and southern Italy.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/16406019",
+        "InfoType": "article",
+        "InfoDate": "2006",
+        "InfoAuthors": "Montella",
+        "InfoID": "16406019",
+        "InfoPlace": "Leuk Res",
+        "Digest": "Корь снижает риск неходжкинской лимфомы на 40%, а ходжкинской лимфомы на 70%. Ветрянка, свинка и краснуха снижают риск ходжкинской лимфомы на 50%, а скарлатина на 80%.<br>Две детские болезни снижают риск неходжкинской лимфомы на 50%, а ходжкинской - на 80%."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
+        "Num": 46,
+        "Title": "Risk factors for Hodgkin&#39;s disease by Epstein-Barr virus",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2374437",
+        "InfoType": "article",
+        "InfoDate": "2000",
+        "InfoAuthors": "Alexander",
+        "InfoID": "PMC2374437",
+        "InfoPlace": "Br J Cancer",
+        "Digest": "Корь снижала риск лимфомы Ходжкина на 47%. Две и более детских болезней снижали риск лимфомы на 55%."
     },
     {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-    {
-	"Num": 1,
-	"Title": "",
-	"Link": "",
-	"InfoType": "",
-	"InfoDate": "",
-	"InfoAuthors": "",
-	"InfoID": "",
-	"InfoPlace": "",
-	"Digest": ""
-    },
-
-    {
-	"Num": 18,
-	"Digest": "",
+        "Num": 47,
+        "Title": "Exposure to childhood infections and risk of Epstein-Barr virus--defined Hodgkin&#39;s lymphoma in women.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/15700307",
+        "InfoType": "article",
+        "InfoDate": "2005",
+        "InfoAuthors": "Glaser",
+        "InfoID": "15700307",
+        "InfoPlace": "Int J Cancer",
+        "Digest": "Корь, свинка или краснуха в детстве снижали риск EBV лимфомы Ходжкина у женщин на 70%<br>У тех, кто переболел корью до десятилетнего возраста, риск лимфомы был на 96% ниже, чем у тех, кто болел корью после десятилетнего возраста.",
 	"SourcesPool": [
 		{
-			"Title": "",
-			"Link" : "",
-			"InfoDate": "",
-			"InfoAuthors": "",
-			"InfoID": "",
-			"InfoPlace": ""
+			"Title": "Characteristics in youth indicative of adult-onset Hodgkin&#39;s disease.",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pubmed/857036",
+			"InfoType": "article",
+			"InfoDate": "1977",
+			"InfoAuthors": "Paffenbarger",
+			"InfoID": "857036",
+			"InfoPlace": "J Natl Cancer Inst",
+			"Digest": "Похожее исследование среди мужчин. Детские болезни снижали риск лимфомы Ходжкина на 20-60%."
 		},
+		{
+			"Title": "Self-reported history of infections and the risk of non-Hodgkin lymphoma: an InterLymph pooled analysis.",
+			"Link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3406230/",
+			"InfoType": "article",
+			"InfoDate": "2012",
+			"InfoAuthors": "Becker",
+			"InfoID": "PMC3406230",
+			"InfoPlace": "Int J Cancer",
+			"Digest": "Корь и коклюш снижали риск неходжкинской лимфомы на 15%."
+		}
 	]
     },
-    ]
+    {
+        "Num": 48,
+        "Title": "Febrile infectious childhood diseases in the history of cancer patients and matched controls.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/9824838",
+        "InfoType": "article",
+        "InfoDate": "1998",
+        "InfoAuthors": "Albonico",
+        "InfoID": "9824838",
+        "InfoPlace": "Med Hypotheses",
+        "Digest": "Корь в детстве снижала риск различных видов рака (не включая рак груди) на 55%, краснуха на 62%, а ветрянка на 38%.<br>У переболевших тремя или четырьмя детскими болезнями, риск рака был на 60% ниже, чем у тех, кто не болел детскими болезнями. У переболевших более чем четырьмя болезнями, риск рака был на 76% ниже."
+    },
+    {
+        "Num": 49,
+        "Title": "Febrile infections and malignant melanoma: results of a case-control study.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/1450674",
+        "InfoType": "article",
+        "InfoDate": "1992",
+        "InfoAuthors": "K&ouml;lmel",
+        "InfoID": "1450674",
+        "InfoPlace": "Melanoma Res",
+        "Digest": "У тех, кто болел детскими болезнями риск меланомы был ниже (но здесь нет статистической значимости). У тех, кто болел простудой или гриппом, риск меланомы был на 68% ниже.<br>Инфицированная рана снижала риск меланомы на 79%. Хроническая инфекционная болезнь снижала риск меланомы на 68%."
+    },
+    {
+        "Num": 50,
+        "Title": "Infections and melanoma risk: results of a multicentre EORTC case-control study. European Organization for Research and Treatment of Cancer.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/10596918",
+        "InfoType": "article",
+        "InfoDate": "1999",
+        "InfoAuthors": "K&ouml;lmel",
+        "InfoID": "10596918",
+        "InfoPlace": "Melanoma Res",
+        "Digest": "Практически все инфекционные заболевания снижают риск меланомы. Грипп снижает на 35%, пневмония на 55%, стафилококк на 46%.",
+	"SourcesPool": [
+            {
+            "Title": "Childhood leukemia and infectious diseases in the first year of life: a register-based case-control study.",
+            "Link": "https://www.ncbi.nlm.nih.gov/pubmed/3463201",
+            "InfoType": "article",
+            "InfoDate": "1986",
+            "InfoAuthors": "van Steensel-Moll",
+            "InfoID": "3463201",
+            "InfoPlace": "Am J Epidemiol",
+            "Digest": "Простуды, температура и детские инфекции снижали риск лейкемии.<br>Еще подобные исследования:"
+            },
+            {
+            "Title": "Exposure to infections through day-care attendance and risk of childhood leukaemia.",
+            "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879097/",
+            "InfoType": "article",
+            "InfoDate": "2008",
+            "InfoAuthors": "Urayama",
+            "InfoID": "PMC2879097",
+            "InfoPlace": "Radiat Prot Dosimetry",
+            "Digest": ""
+            },
+            {
+            "Title": "Socioeconomic status and childhood acute lymphocytic leukemia incidence in S&atilde;o Paulo, Brazil.",
+            "Link": "https://www.ncbi.nlm.nih.gov/pubmed/18688860",
+            "InfoType": "article",
+            "InfoDate": "2008",
+            "InfoAuthors": "Ribeiro",
+            "InfoID": "18688860",
+            "InfoPlace": "Int J Cancer",
+            "Digest": ""
+            }
+	]
+    },
+    {
+        "Num": 51,
+        "Title": "A case control study of carcinoma of the ovary.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC479015/",
+        "InfoType": "article",
+        "InfoDate": "1977",
+        "InfoAuthors": "Newhouse",
+        "InfoID": "PMC479015",
+        "InfoPlace": "Br J Prev Soc Med",
+        "Digest": "Корь снижает риск рака яичника на 53%, свинка на 39%, краснуха на 38%, ветрянка на 34%. Беременность снижает риск рака яичника на 73%."
+    },
+    {
+        "Num": 52,
+        "Title": "Measles infection and Parkinson&#39;s disease.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/4061437",
+        "InfoType": "article",
+        "InfoDate": "1985",
+        "InfoAuthors": "Sasco",
+        "InfoID": "4061437",
+        "InfoPlace": "Am J Epidemiol",
+        "Digest": "Исследование 50,000 выпускников Гарварда и Пенсильванского университета. У тех, кто переболел в детстве корью, риск болезни Паркинсона был в 2 раза ниже. Ветрянка и свинка тоже снижали риск Паркинсона.<br>Еще подобные исследования: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/5015581], [[2]==https://www.ncbi.nlm.nih.gov/labs/articles/5074681/]<br>А прививка от кори иногда [приводит==https://www.ncbi.nlm.nih.gov/pubmed/1350062/] к Паркинсону у детей."
+    },
+    {
+        "Num": 53,
+        "Title": "Association of measles and mumps with cardiovascular disease: The Japan Collaborative Cohort",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/26122188",
+        "InfoType": "article",
+        "InfoDate": "2015",
+        "InfoAuthors": "Kubota",
+        "InfoID": "26122188",
+        "InfoPlace": "Atherosclerosis",
+        "Digest": "Проспективное исследование более чем 100 тысяч человек в Японии, за которыми наблюдали 20 лет. У мужчин, которые болели в детстве корью, риск умереть от сердечно-сосудистых заболеваний был на 8% ниже, а у тех, кто переболел также свинкой - на 20% ниже.<br>У мужчин, переболевших свинкой, риск умереть от инсульта был на 48% ниже.<br>У женщин, переболевших корью и свинкой, риск умереть от сердечно-сосудистых заболеваний был на 17% ниже.",
+        "InfoImg": "https://ic.pics.livejournal.com/amantonio/68333260/2341/2341_original.jpg"
+    },
+    {
+        "Num": 54,
+        "Title": "Dual role of infections as risk factors for coronary heart disease.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/16780845",
+        "InfoType": "article",
+        "InfoDate": "2007",
+        "InfoAuthors": "Pesonen",
+        "InfoID": "16780845",
+        "InfoPlace": "Atherosclerosis",
+        "Digest": "Корь снижала риск инфаркта на 30%, ветрянка на 33%, скарлатина на 31%, свинка на 25%, краснуха на 9%, мононуклеоз на 33%. Чем больше этих инфекционных болезней человек перенес в детстве, тем ниже была вероятность инфаркта. Одна болезнь снижала риск инфаркта на 35%, две на 40%, три на 47%, четыре и пять болезней на 54%, а все шесть перечисленных болезней вместе снижали риск инфаркта на 89%.<br>Уровень LDL (&quot;плохого холестерина&quot;) был 2.41 mmol/L у больных. А вот у контрольной группы (у которых не было инфаркта) он был 3.67. (привет, статины!)"
+    },
+    {
+        "Num": 55,
+        "Title": "Еffect of measles on the nephrotic syndrome.",
+        "Link": "http://jamanetwork.com/journals/jamapediatrics/article-abstract/1180367",
+        "InfoType": "article",
+        "InfoDate": "1947",
+        "InfoAuthors": "Blumberg",
+        "InfoID": "1180367",
+        "InfoPlace": "Am J Dis Child",
+        "Digest": "5 пациентов с нефротическим синдромом заболели корью. У двух из них после кори нефротический синдром прошел, у троих было лишь временное улучшение.<br>Авторы проанализировали медицинскую литературу, и нашли еще несколько случаев излечения нефротического синдрома после кори, и частые случаи временного улучшения.<br>Авторы сообщают, что корь была самым эффективным средством лечения нефротического синдрома из всех используемых ими методов."
+    },
+    {
+        "Num": 56,
+        "Title": "A notable case of nephrosis.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1544932/",
+        "InfoType": "article",
+        "InfoDate": "1978",
+        "InfoAuthors": "Gairdner",
+        "InfoID": "PMC1544932",
+        "InfoPlace": "Arch Dis Child",
+        "Digest": "Здесь рассказывается о тяжелом случае нефротического синдрома у десятилетнего мальчика в 1916 году в Англии. Ребенок болел долгие месяцы и уже почти умер. Врачи не давали ему шансов, и его семья уже купила траурные одежды. Но вдруг он заболел корью, и после нее полностью выздоровел от нефротического синдрома. Потом он годами донашивал траурные костюмы своих братьев, а затем стал известным педиатром, профессором, и президентом национальной педиатрической ассоциации."
+    },
+    {
+        "Num": 57,
+        "Title": "Measles virus infection without rash in childhood is related to disease in adult life.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/2856946",
+        "InfoType": "article",
+        "InfoDate": "1985",
+        "InfoAuthors": "R&oslash;nne",
+        "InfoID": "2856946",
+        "InfoPlace": "Lancet",
+        "Digest": "У тех, кто в детстве не болел корью (или болел атипично, без сыпи, как после прививки) наблюдался во взрослом возрасте повышенный риск:<br>1) иммунореактивных заболеваний (аутоиммунных заболеваний вследствии инфекционной болезни),<br>2) болезней кожи (дерматиты, экземы и т. д.),<br>3) дегенеративных заболевании кости и хряща (остеоартроз и т. д.),<br>4) онкологических заболеваний."
+    },
+    {
+        "Num": 58,
+        "Title": " Multiple sclerosis and age at exposure to childhood diseases and animals: cases and their friends.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/6540400",
+        "InfoType": "article",
+        "InfoDate": "1984",
+        "InfoAuthors": "Sullivan",
+        "InfoID": "6540400",
+        "InfoPlace": "Neurology",
+        "Digest": "Те, кто переболели корью и другими инфекционными заболеваниями в раннем возрасте, меньше болеют рассеянным склерозом. Похожие исследования: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/3762950],[[2]==https://link.springer.com/article/10.1007/BF02361431]"
+    },
+    {
+        "Num": 59,
+        "Title": "Low mortality after mild measles infection compared to uninfected children in rural West Africa.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/12443670",
+        "InfoType": "article",
+        "InfoDate": "2002",
+        "InfoAuthors": "Aaby",
+        "InfoID": "12443670",
+        "InfoPlace": "Vaccine",
+        "Digest": "Исследование в Сенегальской деревне. В ходе вспышки кори 66 детей заболели, а 149 не заболели. За ними следили 4 года. У детей, которые переболели корью, риск смерти от других инфекционных заболеваний был на 86% ниже. Большинство заболевших были непривиты.<br>Похожие результаты [наблюдались==https://www.ncbi.nlm.nih.gov/pubmed/8684874] в Гвинее Биссау (смертность у тех, кто переболел корью была на 50% ниже), а также в [Сенегале==https://www.ncbi.nlm.nih.gov/pubmed/8629610] (смертность у переболевших была в 4 раза ниже), и в Бангладеше."
+    },
+    {
+        "Num": 60,
+        "Title": "Measles and atopy in Guinea-Bissau.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8667923",
+        "InfoType": "article",
+        "InfoDate": "1996",
+        "InfoAuthors": "Shaheen",
+        "InfoID": "8667923",
+        "InfoPlace": "Lancet",
+        "Digest": "У детей в Гвинее-Биссау, которые переболели корью, аллергия встречалась в 3 раза реже, чем у привитых детей, которые ей не переболели. Аллергия на домашний пылевой клещ встречалась у них в 5 раз реже.<br>Объясняется это тем, что вирус кори стимулирует клеточный иммунитет, тогда как за аллергию ответственен гуморальный иммунитет.<br>Дети, которые были на грудном вскармливании более года, и дети, в домах которых жили свиньи, тоже болели аллергией реже. Судя по косвенным данным, инфекции защищают от аллергии только если заражение происходит в раннем возрасте. Скорее всего реакция Т-клеток на аллергены созревает до 5-7 летнего возраста, и до этого времени она меняется под воздействием экологических факторов, таких как инфекции.<br>Еще два подобных исследования в Турции: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/16854347],[[2]==https://www.ncbi.nlm.nih.gov/pubmed/14998384]."
+    },
+    {
+        "Num": 61,
+        "Title": "Allergic disease and atopic sensitization in children in relation to measles vaccination and measles infection.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/19255001",
+        "InfoType": "article",
+        "InfoDate": "2009",
+        "InfoAuthors": "Rosenlund",
+        "InfoID": "19255001",
+        "InfoPlace": "Pediatrics",
+        "Digest": "Исследование 14,900 детей из пяти европейских стран. У тех, кто переболел корью, аллергия встречалась в 2 раза реже. Прививка тоже снижала случаи аллергии, но меньше.<br>У привитых и незаболевших корью, риск риноконъюнктивита был на 70% выше, чем у непривитых и незаболевших.<br>11% привитых детей болели корью. 31% непривитых детей корью не болели. Похожее [исследование==https://www.ncbi.nlm.nih.gov/pubmed/16387585].<br>Антибиотики в первый год жизни повышали риск риноконъюнктивита в 2 раза, астмы в 2.8 раз, экземы в 1.6 раз. Жаропонижающие повышали риск астмы на 54%, а экземы на 32%."
+    },
+    {
+        "Num": 62,
+        "Title": "Atopy in children of families with an anthroposophic lifestyle.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/10232315",
+        "InfoType": "article",
+        "InfoDate": "1999",
+        "InfoAuthors": "Alm",
+        "InfoID": "10232315",
+        "InfoPlace": "Lancet",
+        "Digest": "У тех, кто не был привит MMR, аллергии встречались на 33% реже. У тех, кто питались в основном органическими продуктами аллергии встречались на 37% реже.<br>Аллергии также встречались реже у тех, кто не пользовались антибиотиками, не пользовались жаропонижающими, болели корью, питались ферментированными овощами, или были на грудном вскармливании как минимум 4 месяца."
+    },
+    {
+        "Num": 63,
+        "Title": "Breast-feeding and a subsequent diagnosis of measles.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/19133867",
+        "InfoType": "article",
+        "InfoDate": "2009",
+        "InfoAuthors": "Silfverdal",
+        "InfoID": "19133867",
+        "InfoPlace": "Acta Paediatr",
+        "Digest": "У детей, которые были на грудном вскармливании (ГВ) более 3-х месяцев, риск клинической кори был на 30% ниже, по сравнению с теми, кто не был на ГВ, без связи с вакцинацией.<br>Также сообщается, что из 5569 привитых детей, 28% болели корью."
+    },
+    {
+        "Num": 64,
+        "InfoType": "article",
+        "InfoID": "PMC1448377",
+        "Digest": "[Исследование==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1448377], о котором я уже упоминал в другой части. Привитые MMR в 3.5 раза чаще болели астмой, и в 4.5 раза чаще экземой. Подробнее в части 6, п. 10."
+    },
+    {
+        "Num": 65,
+        "Title": "Improvement of food-sensitive atopic dermatitis accompanied by reduced lymphocyte responses to food antigen following natural measles virus infection.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8439821",
+        "InfoType": "article",
+        "InfoDate": "1993",
+        "InfoAuthors": "Kondo",
+        "InfoID": "8439821",
+        "InfoPlace": "Clin Exp Allergy",
+        "Digest": "5 пациентов с экземой и аллергией на яйца переболели корью. Через месяц у четырех из них симптомы экземы значительно улучшились. У пятого было временное улучшение."
+    },
+    {
+        "Num": 66,
+        "Title": "Infections and atopy: an exploratory study for a meta-analysis of the &quot;hygiene hypothesis&quot;.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/15741918",
+        "InfoType": "article",
+        "InfoDate": "2004",
+        "InfoAuthors": "Randi",
+        "InfoID": "15741918",
+        "InfoPlace": "Rev Epidemiol Sante Publique",
+        "Digest": "Предварительный анализ 10 статей для последующего мета-анализа. Судя по косвенным маркерам, инфекционные заболевания понижали риск дерматита на 20%, риск аллергического ринита на 30%, а риск астмы на 40%."
+    },
+    {
+        "Num": 67,
+        "Header": "Безопасность",
+        "Title": "The Risk of Seizures after Receipt of Whole-Cell Pertussis or Measles, Mumps, and Rubella Vaccine.",
+        "Link": "http://www.nejm.org/doi/full/10.1056/NEJMoa003077#t=article",
+        "InfoType": "article",
+        "InfoDate": "2001",
+        "InfoAuthors": "Barlow",
+        "InfoPlace": "N Engl J Med",
+        "Digest": "Риск фебрильных судорог у младенцев до 12 месяцев, которые получили прививку DTP, был в 9.3 раза выше в день вакцинации, чем у непривитых недавно детей.<br>Риск фебрильных судорог у тех, кто получили прививку MMR, был в 2.8 раз выше 8-14 дней после вакцинации.<br>В другом [исследовании==https://www.ncbi.nlm.nih.gov/pubmed/17204517] риск фебрильных судорог после MMR был выше в 6 раз. Похожие исследования: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/15265850], [[2]==http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(95)90471-9/abstract], [[3]==https://www.ncbi.nlm.nih.gov/pubmed/1945626]"
+    },
+    {
+        "Num": 68,
+        "Title": "Vaccines for measles, mumps and rubella in children.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/22336803/",
+        "InfoType": "article",
+        "InfoDate": "2012",
+        "InfoAuthors": "Demicheli",
+        "InfoID": "22336803",
+        "InfoPlace": "Cochrane Database Syst Rev",
+        "Digest": "Систематический обзор эффективности и безопасности MMR, проведенный Cochrane.<br>Вакцина повышает риск асептического менингита в 14-22 раза, риск фебрильных судорог в 4-5.7 раз, риск тромбоцитопенической пурпуры в 2.4-6.3 раза<br>Авторы заключают, что клинические и пост-клинические исследования безопасности MMR по большему счету неадекватны, и что невозможно отделить роль вакцины в предотвращении заболеваний, от побочных явлений, которые она вызывает.<br>Они рекомендуют улучшить формат и отчетность клинических и пост-клинических исследований, и стандартизировать определения побочных эффектов. Также необходимо проверить, сколько времени длится защитный эффект MMR."
+    },
+    {
+        "Num": 69,
+        "Title": "Adverse Reactions Following Immunization with MMR Vaccine in Children at Selected Provinces of Iran.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/21361714",
+        "InfoType": "article",
+        "InfoDate": "2011",
+        "InfoAuthors": "Esteghamati",
+        "InfoID": "",
+        "InfoPlace": "Arch Iran Med",
+        "Digest": "Исследование побочных эффектов MMR в Иране (43 тысячи привитых детей). У 1.8% начался паротит. У двух была энцефалопатия, и еще у двух анафилактический шок. То есть риск энцефалопатии и анафилактического шока составляет примерно 1 на 20,000, а не 1 на миллион, как обычно любят заявлять.<br>Риск конвульсий (не фебрильных) был 1 на 2000 вакцинаций у младенцев. Риск фебрильных судорог - 1 на 1750."
+    },
+    {
+    {
+        "Num": 70,
+        "Title": "Adverse events associated with MMR vaccines in Japan.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8741307",
+        "InfoType": "article",
+        "InfoDate": "1996",
+        "InfoAuthors": "Kimura",
+        "InfoID": "",
+        "InfoPlace": "Acta Paediatr Jpn",
+        "Digest": "Исследование побочных эффектов 4-х разных вакцин MMR. 38 тысяч детей были привиты. Асептичекий менингит (с лабораторно подтвержденным вакцинным штаммом свинки в спинномозговой жидкости) после стандартной вакцины был зарегистрирован у одного на каждые 600 вакцинированных (всего асептический менингит встречался у одного из 400 после стандартной MMR). У одного из каждых 350 вакцинированных были конвульсии, не связанные с менингитом (у 40% из них конвульсии были нефебрильные).<br>Одна из вакцин не вызывала асептический менингит. Оказалось, что компания которая ее производила намудрила что-то с вакцинными штаммами, и никому об этом не сообщила.<br>В других странах асептический менингит после MMR встречался реже (от 1:4000 до 1:282000).<br>В результате этого исследования в 1993-м году министерство здравоохранения Японии запретило использование MMR, и она запрещена там до сих пор. (Исследование длилось с октября 1991-го по апрель 1993-го, а опубликовано в 1996-м)."
+    },
+    {
+        "Num": 71,
+        "Header": "Коревой энцефалит",
+        "Title": "Measles inclusion-body encephalitis caused by the vaccine strain of measles virus.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/10589903/",
+        "InfoType": "article",
+        "InfoDate": "1999",
+        "InfoAuthors": "Bitnun",
+        "InfoID": "8741307",
+        "InfoPlace": "Clin Infect Dis",
+        "Digest": "Здоровому 12-месячному ребенку сделали прививку MMR, а через 8.5 месяцев у него начался энцефалит (MIBE). Биопсия мозга выявила вакцинный штамм кори. Ребенок умер через 1.5 месяца. Зарегистрированы еще несколько подобных случаев, но обычно они происходят с больными, а не со здоровыми.<br>В принципе MIBE - это тот же самый [панэнцефалит==https://en.wikipedia.org/wiki/Subacute_sclerosing_panencephalitis] (SSPE), редкое осложнение кори, которое проявляется через несколько лет, но он развивается раньше и намного быстрее. И не факт, что коревой панэнцефалит от вакцины случается реже, чем от болезни. Еще один похожий [случай==https://www.ncbi.nlm.nih.gov/pubmed/7645392].<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] сообщается, что из девяти случаев панэнцефалита трое были привиты, а двое - непривиты. Про остальных неизвестно.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] сообщается, что пропорция привитых среди больных панэнцефалитом растет, и у привитых он проявляется быстрее, чем у переболевших корью.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] сообщается, что в Финляндии после введения MMR количество тяжелых случаев энцефалита лишь увеличилось.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] сообщается, что несмотря на снижение случаев коревого энцефалита после введения прививки, общее количество случаев энцефалита не изменилось, просто корь заменили другие вирусы.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] рассказывается об эпидемии кори в 2008 году во Вьетнаме среди 20-летних, и сообщается, что из 15 случаев коревого энцефалита 11 были привиты, двое непривиты, и двое неизвестно.<br>CDC [утверждают==https://www.cdc.gov/vaccines/pubs/pinkbook/meas.html], что летальность коревого энцефалита составляет 15%. Однако до введения прививки его летальность была намного ниже. [Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] сообщается о 42 случаях коревого энцефалита в 1961-м году. Никто не умер.<br>[Случай==https://www.ncbi.nlm.nih.gov/pubmed/4182814] коревого энцефалита а также инвалидности и слепоты у девочки после прививки от кори в 1969 году.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16829007] сообщается, что риск коревого энцефалита повышается с возрастом. То есть прививка, которая фактически отодвигает болезнь на более поздний срок, значительно повышает риск коревого энцефалита."
+    },
+    {
+        "Num": 72,
+        "Title": "Acute encephalopathy followed by permanent brain injury or death associated with further attenuated measles vaccines: a review of claims submitted to the National Vaccine Injury Compensation Program.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/9481001",
+        "InfoType": "article",
+        "InfoDate": "1998",
+        "InfoAuthors": "Weibel",
+        "InfoID": "9481001",
+        "InfoPlace": "Pediatrics",
+        "Digest": "Исследование 48 детей с энцефалопатией после MMR. Авторы заключают, что между MMR и энцефалопатией скорее всего существует причинно-следственная связь."
+    },
+    {
+        "Num": 73,
+        "Title": "Child mortality following standard, medium or high titre measles immunization in West Africa.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8671571",
+        "InfoType": "article",
+        "InfoDate": "1996",
+        "InfoAuthors": "Knudsen",
+        "InfoID": "8671571",
+        "InfoPlace": "Int J Epidemiol",
+        "Digest": "Смертность между привитыми и непривитыми от кори никогда не сравнивалась. Однако в нескольких клинических испытаниях в Гвинее-Биссау, Сенегале и Гамбии сравнили смертность от различных вакцин кори, и оказалось, что смертность после вакцины с высокими титрами у девочек была на 86% выше, по сравнению с вакциной со средними титрами.<br>ВОЗ рекомендовало использование вакцины с высокими титрами с 1989 года, и кто знает, скольких девочек эта вакцина убила. Также неизвестно, снизилась бы смертность еще больше, если бы вместо вакцины со средними титрами использовали вакцину с низкими титрами, или если бы детей вообще не прививали от кори."
+    },
+    {
+        "Num": 74,
+        "Title": "Lessons from measles vaccination in developing countries.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1679437/",
+        "InfoID": "article",
+        "InfoDate": "1993",
+        "InfoAuthors": "Hall",
+        "InfoID": "",
+        "InfoPlace": "BMJ",
+        "Digest": "Это вообще случайно обнаружилось, что вакцина с высокими титрами значительно увеличивает смертность, поскольку от этой вакцины умирают больше лишь через год, и даже через несколько лет. Большинство исследований не длятся так долго. Вышеупомянутое исследование привело к тому, что NIH предложило исследовать этот феномен! Другие предложили провести массовые кампании вакцинации и искоренить корь, как это было сделано с полиомиелитом. Третьи предложили давать две дозы вакцины. Но это и так делается, даже без того, чтобы кто-то формально проверял, приводит ли это вообще к снижению смертности.<br>Авторы призывают провести рандомизированное исследование, и использовать в качестве меры эффективности не суррогатные маркеры, такие как количество антител, а смертность."
+    },
+    {
+        "Num": 75,
+        "Title": "The challenge of improving the efﬁcacy of measles vaccine.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/12505179",
+        "InfoType": "article",
+        "InfoDate": "2003",
+        "InfoAuthors": "Garly",
+        "InfoID": "12505179",
+        "InfoPlace": "Acta Trop",
+        "Digest": "- Роль клеточного иммунитета в защите от кори неясна. И если бы мы ее понимали, то можно было бы разработать более эффективную вакцину.<br>- Благодаря вакцинации, в Сенегале корью начали болеть взрослые и беременные женщины. Во время беременности корь опаснее всего, и для матери, и для ребенка.<br>- То, что от вакцины с высокими титрами умирали больше девочек, так это, возможно, произошло не потому что вакцина с высокими титрами хуже, а потому что у вакцины со средними титрами есть благотворный эффект на смертность, которого нет у вакцины с высокими титрами. Наверное. Правда эта гипотеза не объясняет почему только девочки умирали больше, а мальчики нет. Но мы (авторы) все равно считаем эту гипотезу логичной.<br>- Известно, что переболевшие корью умирают реже непереболевших, и что у кори есть положительное воздействие на иммунную систему. Поэтому можно предположить, что такой же эффект дает и прививка! Не существует исследований, доказывающих, что снижение смертности в развивающихся странах является следствием предотвращенных случаев кори, а не некоего неспецифического эффекта вакцины. Поэтому будет неразумно прекращать вакцинацию даже после полного искоренения кори, так как детская смертность может снова повыситься.<br>- Более того, если после искоренения кори прекратить вакцинировать, и у людей пропадет иммунитет к кори, то вирус кори можно будет использовать в качестве оружия для био-терроризма."
+    },
+    {
+        "Num": 76,
+        "Title": "Adverse Events following 12 and 18 Month Vaccinations: a Population-Based, Self-Controlled Case Series Analysis.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236196/",
+        "InfoType": "article",
+        "InfoDate": "2011",
+        "InfoAuthors": "Wilson",
+        "InfoID": "PMC3236196",
+        "InfoPlace": "PLoS One",
+        "Digest": "Риск обращения в скорую помощь после 12-месячной прививки был на 30% выше в день прививки, а на 9-й день после нее - в 2 раза выше. В день 18-и месячной прививки риск был повышен на 25%, а на 12-й день на 34%. Этот анализ не включает детей, которые умерли после прививки. Более того, контрольная группа в этом исследовании включала не других детей, которых не прививали, а тех же самых детей, просто через 20-28 дней после прививки."
+    },
+    {
+        "Num": 77,
+        "Title": "Increased emergency room visits or hospital admissions in females after 12-month MMR vaccination, but no difference after vaccinations given at a younger age.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/24440113",
+        "InfoType": "article",
+        "InfoDate": "2014",
+        "InfoAuthors": "Wilson",
+        "InfoID": "24440113",
+        "InfoPlace": "Vaccine",
+        "Digest": "Риск обращения в скорую помощь после 12-месячной прививки был на 35% выше, а у девочек он был на 8% выше, чем у мальчиков. Возможно это происходит потому что вес девочек ниже, а может из-за того, что девочки реагируют на вирус кори иначе."
+    },
+    {
+        "Num": 78,
+        "Title": "Epidemiological characteristics of childhood acute lymphocytic leukemia. Analysis by immunophenotype. The Childrens Cancer Group.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/8182942",
+        "InfoType": "article",
+        "InfoDate": "1994",
+        "InfoAuthors": "Buckley",
+        "InfoID": "8182942",
+        "InfoPlace": "Leukemia",
+        "Digest": "У детей, которые получили прививку MMR, риск острого лимфобластного лейкоза был на 70% выше."
+    },
+    {
+        "Num": 79,
+        "Title": "Risk of serious neurologic disease after immunization of young children in Britain and Ireland.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/17671057",
+        "InfoType": "article",
+        "InfoDate": "2007",
+        "InfoAuthors": "Ward",
+        "InfoID": "17671057",
+        "InfoPlace": "Pediatrics",
+        "Digest": "Риск серьезной неврологической болезни через 6-11 дней после MMR повышается в 5.7 раз."
+    },
+    {
+        "Num": 80,
+        "Title": "Risk factors of multiple sclerosis: a case-control study.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pubmed/14658040",
+        "InfoType": "article",
+        "InfoDate": "2003",
+        "InfoAuthors": "Zorzon",
+        "InfoID": "14658040",
+        "InfoPlace": "Neurol Sci",
+        "Digest": "Прививка от кори повышает риск рассеянного склероза в 92 раза.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1841203/] сообщается о 9 случаях рассеянного склероза начавшегося сразу после прививки."
+    },
+    {
+        "Num": 81,
+        "Digest": "Согласно VAERS, с 2000 года в США после прививки MMR или MMRV [умерли==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=MMR&VAX[]=MMRV&VAX_YEAR_LOW=2000] 174 человека и 742 стали инвалидами. От кори за это время [умерли==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=MMR&VAX[]=MMRV&VAX_YEAR_LOW=2000] 4 человека. В 2015 году был первый [случай==https://www.usatoday.com/story/news/2015/07/02/measles-death-washington-state/29624385/] смерти от кори за последние 12 лет (женщины с подавленным медикаментами иммунитетом). До этого [были==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5331a3.htm] два случая смерти в начале 2000-х: иммуно-больного мальчика и 75-летнего мужчины.<br>А от гриппа в США [умирают==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5933a1.htm] тысячи человек в год. Тем не менее гриппа почти не боятся, а корь, почему-то, вызывает вселенский ужас.<br>В Швейцарии за последние 7 лет умер один человек от кори. Он [был==http://outbreaknewstoday.com/switzerland-reports-1st-measles-death-since-2009/] привитый (и у него был рак). Причем уровень вакцинации в Швейцарии сравнительно [низкий==https://www.swissinfo.ch/eng/measles-is-still-a-sore-spot-for-the-swiss/8736280]."
+    },
+    {
+        "Num": 82,
+        "InfoGeo": "Европа",
+        "Digest": "В последние месяцы самая большая страшилка это эпидемия кори в Европе. С 2016 года [зарегистрировано==http://ecdc.europa.eu/sites/portal/files/documents/Communicable-disease-threats-report-09-sep-2017.pdf] 14 тысяч случаев, в основном в Румынии и Италии, и за эти два года 42 человека умерли, почти все в Румынии.<br>СМИ нагнали столько страха, что люди в панике отменяют запланированные поездки в Европу, а те кто не отменяют спешат привить своих детей даже до достижения 12-месячного возраста, несмотря на то, что безопасность этой прививки не установлена для младенцев до года. Более того, известно, что прививка до года неэффективна, поэтому ее вообще не считают за плановую прививку, и по достижении 12-месячного возраста необходимо привиться снова."
+    },
+    {
+        "Num": 83,
+        "InfoType": "book",
+        "Digest": "Вот график случаев кори в Европе с 2008 года, где видно, что эпидемия кори в Европе это цикличный процесс, и в 2010-2011 годах случаев было намного больше. Корь всегда [была==https://www.ncbi.nlm.nih.gov/books/NBK143257/] цикличной болезнью, даже в допрививочные времена.",
+	"InfoImg": "https://ic.pics.livejournal.com/amantonio/68333260/3289/3289_600.jpg",
+	"InfoImgSource": "http://ecdc.europa.eu/sites/portal/files/documents/measles%20-rubella-monitoring-170424.pdf",
+    },
+    {
+        "Num": 84,
+        "Digest": "Все без исключения умершие от кори (на февраль 2017 их было 16 человек) [были==http://ecdc.europa.eu/en/publications/Publications/27-02-2017-RRA-Measles-Romania,%20European%20Union%20countries.pdf] люди с ослабленной иммунной системой (immunocompromised), или с другими заболеваниями. Трое первых умерших (про остальных неизвестно) [были==http://ecdc.europa.eu/en/publications/Publications/27-02-2017-RRA-Measles-Romania,%20European%20Union%20countries.pdf] дети до года, то есть те, кого еще невозможно было привить в любом случае.<br>Больше всего случаев [регистрируется==http://www.balkaninsight.com/en/article/hungary-fears-romanian-measles-epidemic-might-have-crossed-the-border-03-10-2017] в бедных селах, где судя по всему, живут в основном цыгане."
+    },
+    {
+        "Num": 85,
+        "Title": "Severe Measles, Vitamin A Deficiency, and the Roma Community in Europe.",
+        "Link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3437709/",
+        "InfoType": "article",
+        "InfoDate": "2012",
+        "InfoAuthors": "Melenotte",
+        "InfoID": "PMC3437709",
+        "InfoPlace": "Emerg Infect Dis",
+        "Digest": "У цыган низкий уровень витамина А, и поэтому они болеют корью тяжелее. Чаще всего болеют дети до года и взрослые. Цыгане живут в тяжелых условиях, в тесноте и недоедают.<br>Еще одно [исследованиe==https://www.ncbi.nlm.nih.gov/pubmed/12098887] о том, что у цыган низкий уровень витаминов А, С и Е. (Оказывается также, что 78% цыганских матерей курят).<br>Получается, что в Европе даже недоедающий ребенок, с низким уровнем витамина А, не может умереть от кори. Для этого он должен еще и быть с ослабленной иммунной системой (обычно под этим имеют в виду больных раком или редкими генетическими заболеваниями), а такому ребенку прививка всё равно противопоказана."
+    },
+    {
+        "Num": 86,
+        "Digest": "В мае 2017 года 15 детей в Южном Судане [умерли==http://www.npr.org/sections/goatsandsoda/2017/06/02/531268150/a-botched-vaccine-campaign-for-measles-killed-15-children-in-south-sudan] после испорченной прививки от кори.<br>В 2014 году 75 детей в Сирии [получили==https://www.ncbi.nlm.nih.gov/pubmed/25268026] вакцину от кори, которую случайно разбавили с атракурием (мышечный релаксант), а не с водой. Как минимум 15 умерли. Согласно [другим==https://www.theguardian.com/world/2014/sep/17/syrian-children-die-contaminated-measles-vaccine] источникам умерли как минимум 34.<br>В 2016 году 16 младенцев в Израиле [получили==https://www.ncbi.nlm.nih.gov/pubmed/25268026] просроченную вакцину MMR. Министерство здравоохранения поспешило успокоить, и заявило, что просроченная вакцина совершенно безопасна, но неэффективна, поэтому им необходимо сделать прививку заново."
+    },
+    {
+        "Num": 87,
+        "Digest": "С 1920 годов по 1960-е, до начала вакцинации, несмотря на то, что количество случаев болезни оставалось постоянным, смертность от кори снизилась на 99% (график логарифмический).",
+        "ImgPool": [
+            {
+            "InfoImg": "https://ic.pics.livejournal.com/amantonio/68333260/3029/3029_600.jpg",
+            "InfoImgSource": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1522578"
+            },
+            {
+            "InfoImg": "https://childhealthsafety.files.wordpress.com/2009/01/0707275measleslog.jpg",
+            "InfoImgDesc": "Смертность от кори в Англии до внедрения вакцины из года в год тоже снижалась экспоненциально."
+            }
+        ]
+    },
+    {
+        "Num": 88,
+        "Digest": "Лекции<br>В 2015 году в Science было опубликовано [исследование==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823017/], доказывающее, что корь якобы стирает иммунную память. Эту байку подхватили все СМИ. В этой лекции Suzanne Humphries подробно разбирает это исследование. Вкратце, речь идет не об исследовании, а лишь о математической модели с различными предположениями, и на основании выборочных данных.<br>Dr. Suzanne Humphries - Manufactured Consent (Denmark, 2015) ([часть 1==https://www.youtube.com/watch?v=IXK-Dr7Kjp4], [часть 2==https://www.youtube.com/watch?v=7UbKE2q9HTs], [часть 3==https://www.youtube.com/watch?v=1J3AOjr6d0Y], [часть 4==https://www.youtube.com/watch?v=cJ92yaVl5V4], [часть 5==https://www.youtube.com/watch?v=GYrSYeUMp4Y])<br>[Dr Tetyana Obukhanych, Ph.D. - Natural Immunity and Vaccination==https://www.youtube.com/watch?v=8h66beBrEpk]<br>[Dr. Suzanne Humphries - Herd Immunity Measles (Norway, 2015)==https://www.youtube.com/watch?v=_KhofzZ-ke8]"
+    },
+    {
+        "Num": 89,
+        "Digest": "Корь опасна при недоедании, и при недостатке витамина А. Лично я запасся флаконом витамина А специально на случай кори. Ну и витамином С, конечно, для предотвращения бактериальных осложнений.<br>Корь в детстве предохраняет от онкологических, неврологических, сердечно-сосудистых и аллергических заболеваний во взрослом возрасте.<br>Вакцина от кори достаточно эффективна (на 90%, лет на 10-20, после чего бустеры уже неэффективны), но в случае с корью высокая эффективность это скорее недостаток. Корь это полезная болезнь, ей лучше переболеть в детстве, чем не болеть совсем, или болеть во взрослом возрасте, или во время беременности, когда прививка заканчивает свое действие, и когда корь опаснее.<br>Вероятность умереть после прививки в тысячи раз выше, чем вероятность умереть от кори (п. 81).<br>Аутизму будет посвящена отдельная часть."
+    }]
 }

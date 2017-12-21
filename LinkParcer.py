@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 import getopt, re, sys
 from BeautifulSoup import BeautifulSoup
 

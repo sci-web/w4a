@@ -34,15 +34,15 @@ def parse(html):
         except: 
             print a.string
     print "    {"
-    print "        \"Num\": " + num + ","    
-    print "        \"Title\": \"" + title + "\","
-    print "        \"Link\": \"" + link + "\","
-    print "        \"InfoType\": \"article\","
-    print "        \"InfoDate\": \"" + dt[1] + "\","
-    print "        \"InfoAuthors\": \"" + dt[0] + "\","
-    print "        \"InfoID\": \"\","
-    print "        \"InfoPlace\": \"" + dt[2] + "\","
-    print "        \"Digest\": \"" + digest + "\""
+    print "        \"num\": " + num + ","    
+    print "        \"title\": \"" + title + "\","
+    print "        \"link\": \"" + link + "\","
+    print "        \"info_type\": \"article\","
+    print "        \"info_date\": \"" + dt[1] + "\","
+    print "        \"info_authors\": \"" + dt[0] + "\","
+    print "        \"infoID\": \"\","
+    print "        \"info_place\": \"" + dt[2] + "\","
+    print "        \"digest\": \"" + digest + "\""
     print "    },"
 
 

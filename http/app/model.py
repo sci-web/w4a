@@ -7,14 +7,14 @@ class DB(object):
 
     def get_data_search(self, title, released):
         try:
-            return app.config['INTRO'].find({
+            return app.config['INTROS'].find({
                 '$text': {'$search': title},
                 }, {'score': {'$meta': 'textScore'}})
         except Exception, e:
             print e
 
     def get_data(self, start, end):
-        return app.config['INSTANCE'].find({ "appeared": 
+        return app.config['SPACES'].find({ "appeared": 
                 { '$elemMatch' : 
                     { "start_time": { '$gt': start }, "end_time": { '$lt': end } }
                 } 

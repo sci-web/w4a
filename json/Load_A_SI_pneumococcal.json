@@ -1,0 +1,820 @@
+{
+"title": "Пневмококк",
+"I_S_codename": "pneumococcal",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Пневмококк",
+"date": "13-12-2017",
+"intro": ""
+"epigraph": {
+		"text": "If I were to remain silent, I'd be guilty of complicity.",
+		"source": "Albert Einstein",
+		},
+"points":
+    [
+	  {
+        "num": 1,
+        "digest": "Пневмококк - это распространенная бактерия, которая, как и гемофильная палочка, может привести к менингиту и к другим инвазивным заболеваниям. После начала вакцинации от Hib, заболеваемость гемофильной инфекцией временно понизилась, а заболеваемость пневмококковой инфекцией повысилась. Но если смертность от гемофильного менингита [составляет==https://www.ncbi.nlm.nih.gov/pubmed/2230261] 3%, то смертность от пневмококкового менингита составляет 19%."
+    },
+    {
+        "num": 2,
+		    "title": "CDC Pinkbook",
+        "link": "https://www.cdc.gov/vaccines/pubs/pinkbook/pneumo.html",
+        "info_type": "cdc",
+        "digest": "Пневмококк (Streptococcus pneumoniae) живет в носоглотке 5%-90% здоровых людей. Среди школьников бактерия встречается у 20%-60%, среди солдат - у 50%-60%, а среди бездетных взрослых - у 5%-10%.
+		Связь между колонизацией пневмококком и естественным иммунитетом плохо изучена.
+		Пневмококк может привести к пневмонии, бактериемии и менингиту. Точной статистики по пневмококку не ведется, но оценивается, что каждый год в США 400,000 человек болеют пневмококковой пневмонией (летальность 5%-7%), 12,000 - бактериемией (летальность 20%, а среди пожилых 60%), и 3000-6000 - менингитом (летальность 8% среди детей и 22% среди взрослых).
+		Факторы риска инвазивной пневмококковой инфекции включают в себя курение, лейкоз, ВИЧ и другие иммунодефицитные состояния, отсутствие селезенки, наличие кохлеарных имплантатов, почечную недостаточность, заболевания печени и другие хронические заболевания. Риск инвазивной инфекции также повышен среди коренных жителей Аляски, негров и некоторых племен индейцев.
+		С уменьшением заболеваемости Hib, пневмококк стал главной причиной бактериального менингита среди детей младше 5-и лет в США.
+		Существуют 92 серотипа пневмококка. 10 самых распространенных серотипов ответственны за 62% инвазивных заболеваний.
+		Первая конъюгированная вакцина от пневмококка была лицензирована в 2000 году, и включала 7 серотипов (PCV7). В 2010 году была лицензирована вакцина от 13 серотипов (PCV13). Существует также полисахаридная 23-валентная вакцина от пневмококка (лицензирована в 1983 году), которая используется сегодня для пожилых. К 2020 году намечена цель достичь 90% охвата вакцинации среди пожилых. Пожилым рекомендуется также доза PCV13, но в 2018 году эта рекомендация будет пересмотрена.
+		Невосприимчивость пневмококка к пенициллину и к другим антибиотикам была очень распространена, но после начала вакцинации PCV7 она уменьшилась, а потом снова увеличилась, Затем, в 2008-м году, определение невосприимчивости к пенициллину было изменено, и сегодня считается, что большая часть штаммов восприимчива к пенициллину. Оказалось, что клиническая невосприимчивость к пенициллину отличается от восприимчивости in vitro.
+		Вакцина [содержит==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/B/excipient-table-2.pdf] алюминий и полисорбат 80. Прививку обычно делают в 2, 4, 6 и 12 месяцев."
+    },
+    {
+        "num": 3,
+		"header": "Факторы риска",
+        "title": "Risk Factors for Invasive Pneumococcal Disease in Children: A Population-based Case-Control Study in North America.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/10049984",
+        "info_type": "article",
+        "info_date": "1999",
+        "info_authors": "Levine",
+        "infoID": "10049984",
+        "info_place": "Pediatrics",
+		    "I_S_codenames": ["breast feeding"],
+        "digest": "Грудное вскармливание (ГВ) снижает риск пневмококковой инфекции на 73%.
+		[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC27869/] сообщается, что риск госпитализации детей не на ГВ из-за пневмонии (не только пневмококковой) был в 17 раз выше, чем детей на ГВ. А среди младенцев младше 3-х месяцев - в 61 раз выше."
+    },
+    {
+        "num": 4,
+        "title": "Cigarette smoking and invasive pneumococcal disease. Active Bacterial Core Surveillance Team.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/10706897/",
+        "info_type": "article",
+        "info_date": "2000",
+        "info_authors": "Nuorti",
+        "infoID": "10706897",
+        "info_place": "N Engl J Med",
+		    "I_S_codenames": ["smoking"],
+        "digest": "Курение повышает риск инвазивной пневмококковой инфекции у взрослых в 4.1 раза, а пассивное курение - в 2.5 раза.
+		Хроническая болезнь повышает риск в 2.6 раз. Люди с незаконченным средним образованием болеют в 2.8 раз чаще, а со средним образованием в 2 раза чаще, по сравнению с людьми с высшим образованием."
+    },
+    {
+        "num": 5,
+        "title": "The influence of chronic illnesses on the incidence of invasive pneumococcal disease in adults.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15995950/",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Kyaw",
+        "infoID": "15995950",
+        "info_place": "J Infect Dis",
+		    "I_S_codenames": ["diabetes"],
+        "digest": "Риск взрослого здорового человека заболеть инвазивной пневмококковой инфекцией составляет 8.8 на 100,000. Большинство заболевших являются пожилыми. Диабет повышает риск в 3.4 раза, хронические болезни сердца в 6.4 раза, хронические болезни легких - в 5.6 раз, рак - в 23 раза, СПИД - в 48 раз, рак крови - в 38 раз, алкоголизм - в 11 раз. Риск хронического больного умереть от пневмококковой инфекции повышен в 2.8 раз.
+		Здоровые негры заболевают в 2.3 раза чаще здоровых белых. Негры-алкоголики заболевают в 6 раз чаще белых алкоголиков. Негры с ВИЧ - в 9 раз чаще белых с ВИЧ."
+    },
+    {
+        "num": 6,
+        "title": "Risk factors for primary invasive pneumococcal disease among children in Finland.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/7869556",
+        "info_type": "article",
+        "info_date": "1995",
+        "info_authors": "Takala",
+        "infoID": "7869556",
+        "info_place": "JAMA",
+ 		    "I_S_codenames": ["day care"],
+        "digest": "Детский сад повышает риск пневмококковой инфекции среди детей младше 2-х лет в 36 раз, а риск частого среднего отита - в 8.8 раз."
+    },
+    {
+        "num": 7,
+        "title": "Geographical differences in invasive pneumococcal disease rates and serotype frequency in young children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11289365",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Hausdorff",
+        "infoID": "11289365",
+        "info_place": "Lancet",
+        "digest": "В США заболеваемость инвазивной пневмококковой инфекцией среди детей младше 6 лет в 3-6 раз выше, чем в Европе. Она также выше, чем в Австралии и Новой Зеландии.
+		Это, скорее всего, потому, что в США берут кровь на бактериальный анализ у всех детей младше 3-х лет с температурой 39 и выше, и у всех, у кого наблюдаются повышенные лейкоциты (им также дают антибиотики), а в Европе подобный анализ делают обычно лишь госпитализированным. Поскольку большинство случаев инвазивной пневмококковой инфекции это временные бактериемии, не требующие госпитализации, в европейских странах они, по большей части, не диагностируются."
+    },
+    {
+        "num": 8,
+        "title": "Association between prior antibiotic therapy and subsequent risk of community-acquired infections: a systematic review.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/29149266",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Malik",
+        "infoID": "29149266",
+        "info_place": "J Antimicrob Chemother",
+		    "I_S_codenames": ["antibiotics"],
+        "digest": "Использование антибиотиков в последствие повышает риск пневмококковой инфекции, а также риск Hib, менингита, инфекций золотистым стафилококком, сальмонеллой и кампилобактером, брюшного тифа, фурункулов, мастита, ОРВИ и инфекций мочевых путей."
+    },
+    {
+        "num": 9,
+        "title": "Invasive pneumococcal disease in Dallas County, Texas: results from population-based surveillance in 1995.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/9524828",
+        "info_type": "article",
+        "info_date": "1998",
+        "info_authors": "Pastor",
+        "infoID": "9524828",
+        "info_place": "Clin Infect Dis",
+        "digest": "Люди с низким доходом болеют пневмококком в 2 раза чаще людей со средним доходом, и в 3 раза чаще людей с высоким доходом."
+    },
+    {
+        "num": 10,
+        "title": "Invasive pneumococcal infection in Baltimore, Md: implications for immunization policy.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/10632309",
+        "info_type": "article",
+        "info_date": "2000",
+        "info_authors": "Harrison",
+        "infoID": "10632309",
+        "info_place": "Arch Intern Med",
+        "digest": "Негры болеют пневмококком в 3.3 раза чаще белых, а 40-49 летние негры - в 12 раз чаще. Медианный возраст больных среди негров ниже чем среди белых на 27 лет.
+		Люди с низким доходом болеют чаще. Горожане болеют чаще жителей пригородов.
+		Почти 50% заболевших негров заражены ВИЧ. СПИД повышает риск пневмококковой инфекции в 100-300 раз.
+		Авторы заключают, что необходимо вакцинировать молодых и бедных людей, живущих в городах. И несмотря на то, что пневмококком в основном болеют негры, необходимо вакцинировать белых тоже. Потому что среди белых тоже есть бедные. Но поскольку вакцинация исключительно групп риска была опробована с гепатитом В и провалилась, авторы считают, что необходима универсальная вакцинация от пневмококка."
+    },
+    {
+        "num": 11,
+		"header": "Пневмококк и гемофильная палочка",
+        "title": "Increase in bacteraemic pneumococcal infections in children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/7898220",
+        "info_type": "article",
+        "info_date": "1995",
+        "info_authors": "Baer",
+        "infoID": "7898220",
+        "info_place": "Lancet",
+		    "info_img": "https://ic.pics.livejournal.com/amantonio/68333260/6296/6296_original.jpg"
+        "info_geo": "Finland",
+        "digest": "Между 1992-м и 1994-м, заболеваемость пневмококком в Финляндии увеличилась в 2 раза среди детей младше двух лет, и в 3 раза среди детей младше 16 лет. Авторы связывают это с исчезновением Hib.
+    },
+    {
+        "num": 12,
+        "title": "Invasive pneumococcal infection in South and West England.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/7735348",
+        "info_type": "article",
+        "info_date": "1998",
+        "info_authors": "Smith",
+        "infoID": "7735348",
+        "info_place": "Epidemiol Infect",
+        "info_geo": "UK",
+        "digest": "Между 1982 и 1992 заболеваемость пневмококковой бактериемией и менингитом в Англии выросла в 2.3 раза."
+    },
+    {
+        "num": 13,
+        "title": "Increase in pneumococcal bacteraemia in Sweden.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/9078207",
+        "info_type": "article",
+        "info_date": "1997",
+        "info_authors": "Giesecke",
+        "infoID": "9078207",
+        "info_place": "Lancet",
+		    "info_geo": "Sweden",
+        "digest": "Между 1990 и 1995 заболеваемость пневмококковой бактериемией среди взрослых в Швеции выросла в 2.6 раз. То же самое наблюдалось и в Норвегии."
+    },
+    {
+        "num": 14,
+        "title": "Clinical Characteristics of Children With Complicated Pneumonia Caused by Streptococcus pneumoniae.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/12093940",
+        "info_type": "article",
+        "info_date": "2002",
+        "info_authors": "Tan",
+        "infoID": "12093940",
+        "info_place": "Pediatrics",
+        "digest": "В 1994-м 22.6% пневмококковых пневмоний сопровождались осложнениями. В 1999-м было уже 53% пневмоний с осложнениями."
+    },
+    {
+        "num": 15,
+        "title": "Rising rate of pneumococcal bacteremia at the Children's Hospital of Philadelphia.",
+        "link": "http://journals.lww.com/pidj/Citation/1994/12000/Rising_Rate_of_Pneumococcal_Bacteremia_At_the.13.aspx",
+        "info_type": "article",
+        "info_date": "1994",
+        "info_authors": "Foster",
+        "infoID": "",
+        "info_place": "Pediatr Infect Dis J",
+		    "I_S_codenames": ["H.influenzae"],
+        "digest": "За пять лет после начала вакцинации от Hib, заболеваемость пневмококковой бактериемией в Филадельфии выросла в 2 раза (с 38 до 73 случаев в год). Заболеваемость гемофильной бактериемией снизилась с 34 до 9 случаев в год, а заболеваемость менингококковой бактериемией не изменилась (3 случая в год).
+		Заболеваемость пневмококковым менингитом увеличилась на 50% (с 5.2 до 7.6 случаев в год). Заболеваемость гемофильным менингитом снизилась с 18 до 5.6 случаев в год, а заболеваемость менингококковым менингитом не изменилась (3 случая в год)."
+    },
+    {
+        "num": 16,
+        "title": "Inhibitory and Bactericidal Effects of Hydrogen Peroxide Production by Streptococcus pneumoniae on Other Inhabitants of the Upper Respiratory Tract.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC101678/",
+        "info_type": "article",
+        "info_date": "2000",
+        "info_authors": "Pericone",
+        "infoID": "PMC101678",
+        "info_place": "Infect Immun",
+		    "I_S_codenames": ["H.influenzae"],
+        "digest": "In vitro, пневмококк обладает бактерицидным воздействием на гемофильную палочку. Пневмококк выделяет пероксид водорода, который и убивает гемофильную палочку. Пневмококк обладает также ингибирующим воздействием на менингококковую бактерию, которая тоже погибает при воздействии пероксидом водорода, хотя для этого необходима более высокая его концентрация.
+		Выработка пневмококком пероксида водорода коррелирует с концентрацией кислорода в окружающей среде.
+		Другие бактерии, которые выделяют пероксид водорода - это лактобациллы и оральные стрептококки.
+		Бактерии, которых убивает или ингибирует перекись водорода - это золотистый стафилококк, гонококк (бактерия вызывающая гонорею) и дифтерийная палочка."
+    },
+    {
+        "num": 17,
+        "title": "The Role of Innate Immune Responses in the Outcome of Interspecies Competition for Colonization of Mucosal Surfaces.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1238736/",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Lysenko",
+        "infoID": "PMC1238736",
+        "info_place": "PLoS Pathog",
+        "digest": "Хотя in vitro пневмококк убивает гемофильную палочку, in vivo на мышах все получилось наоборот. Несмотря на то, что пневмококк и гемофильная палочка живут в носоглотке каждая по отдельности, при совместной колонизации пневмококк быстро исчезает, и остается лишь гемофильная палочка. Оказывается, что гемофильная палочка каким-то образом воздействует на [нейтрофилы==https://ru.wikipedia.org/wiki/%D0%9D%D0%B5%D0%B9%D1%82%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%B3%D1%80%D0%B0%D0%BD%D1%83%D0%BB%D0%BE%D1%86%D0%B8%D1%82%D1%8B] (вид фагоцитов), которые и убивают пневмококковые бактерии. Сами по себе нейтрофилы не убивают пневмококков так эффективно, как в присутствии гемофильной бактерии. Каким именно образом гемофильная бактерия влияет на нейтрофилы еще неизвестно.
+		Авторы заключают, что такие манипуляции, как антибиотики или вакцины, которые предназначены для элиминации одного патогена, могут непреднамеренно изменять конкурентные взаимодействия сложных микробных сообществ."
+    },
+    {
+        "num": 18,
+		"header": "Пневмококк и золотистый стафилококк",
+        "title": "Colonisation by Streptococcus pneumoniae and Staphylococcus aureus in healthy children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15183627",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Bogaert",
+        "infoID": "15183627",
+        "info_place": "Lancet",
+        "info_geo": "Netherlands",
+ 		    "I_S_codenames": ["S.aureus"],
+        "digest": "В клиническом исследовании пневмококковой вакцины в Нидерландах выяснилось, что колонизация вакцинными серотипами пневмококка отрицательно коррелирует с колонизацией золотистым стафилококком. Между невакцинными серотипами и золотистым стафилококком корреляции не обнаружилось.
+		Риск острого среднего отита, вызванного золотистым стафилококком, увеличился после вакцинации."
+    },
+    {
+        "num": 19,
+        "title": "Association between carriage of Streptococcus pneumoniae and Staphylococcus aureus in children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15304469",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Regev-Yochay",
+        "infoID": "15304469",
+        "info_place": "JAMA",
+        "info_geo": "Israel",
+ 		    "I_S_codenames": ["S.aureus"],
+        "digest": "В другом исследовании в Израиле тоже выяснилось, что колонизация пневмококком, особенно вакцинными серотипами, отрицательно коррелирует с колонизацией золотистым стафилококком у детей."
+    },
+    {
+        "num": 20,
+        "title": " Interference between Streptococcus pneumoniae and Staphylococcus aureus: In vitro hydrogen peroxide-mediated killing by Streptococcus pneumoniae.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1482988/",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "Regev-Yochay",
+        "infoID": "PMC1482988",
+        "info_place": "J Bacteriol",
+ 		    "I_S_codenames": ["S.aureus"],
+        "digest": "Выделяемая пневмококком перекись водорода убивает также золотистого стафилококка."
+    },
+    {
+        "num": 21,
+        "title": "Effect of seven-valent pneumococcal conjugate vaccine on Staphylococcus aureus colonisation in a randomised controlled trial.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3112202/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "van Gils",
+        "infoID": "PMC3112202",
+        "info_place": "PLoS One",
+ 		    "I_S_codenames": ["S.aureus"],
+        "digest": "После вакцинации от пневмококка наблюдается временное увеличение колонизации золотистого стафилококка."
+    },
+    {
+        "num": 22,
+        "title": "Seven-Valent Pneumococcal Conjugate Vaccine and Nasopharyngeal Microbiota in Healthy Children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3901477/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Biesbroek",
+        "infoID": "PMC3901477",
+        "info_place": "Emerg Infect Dis",
+ 		    "I_S_codenames": ["H.influenzae", "S.aureus", "AOM", "antibiotics"],
+        "digest": "У привитых от пневмококка, в верхних дыхательных путях живут меньше пневмококковых бактерий невакцинных серотипов, но больше гемофильной палочки и стафилококка, а также намного больше анаэробных бактерий (Veilonella, Prevotella, Bacteroidetes, Leptotrichia), Actinomyces, Rothia, Neisseria, Fusobacterium, Megasphaera и стрептококков. Известно, что некоторые из этих бактерий [повышают==http://mbio.asm.org/content/2/1/e00245-10] риск среднего отита. Временный бактериальный дисбаланс также повышает риск отита.
+		У принимавших антибиотики было в 4 раза меньше коринебактерий и Dolosigranulum, и в 6.3 раза больше стафилококка."
+    },
+    {
+        "num": 23,
+        "title": "Microbial interactions during upper respiratory tract infections.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2609881/",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Pettigrew",
+        "infoID": "PMC2609881",
+        "info_place": "Emerg Infect Dis",
+ 		    "I_S_codenames": ["H.influenzae", "S.aureus"],
+        "digest": "Колонизация пневмококком отрицательно коррелирует с колонизацией гемофильной бактерией, и с колонизацией золотистым стафилококком.
+		Колонизация гемофильной бактерией отрицательно коррелирует с колонизацией пневмококком, и с колонизацией золотистым стафилококком.
+		Авторы заключают, что элиминация пневмококка и гемофильной палочки из-за вакцинации может повысить риск среднего отита вследствие колонизации золотистым стафилококком, что результаты воздействия данной стратегии вмешательства в общественное здравоохранение может быть трудно предсказать, и что следует быть осторожными при разработке стратегий контроля колонизации верхних дыхательных путей."
+    },
+    {
+        "num": 24,
+        "title": "The epidemiology, treatment, and prevention of transmission of methicillin-resistant Staphylococcus aureus.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22101629",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Calfee",
+        "infoID": "22101629",
+        "info_place": "J Infus Nurs",
+ 		    "I_S_codenames": ["MRSA"],
+        "digest": "MRSA - метициллинрезистентный золотистый стафилококк, который называют также superbug, это трудноизлечимая инфекция, устойчивая к большинству антибиотиков. До 1980-х, она почти не встречалась, в 1980-е ей можно было заразиться лишь в больницах, а в 1990-е ей уже можно было заразиться и вне больниц.
+		Каждый год около 11,000 американцев [умирают==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2876761/] от золотистого стафилококка, и 5,500 умирают от MRSA. От пневмококка умирают в 3 раза [меньше==https://www.cdc.gov/abcs/reports-findings/survreports/spneu15.html]."
+    },
+    {
+        "num": 25,
+        "title": "Production of Hydrogen Peroxide by Bacteria.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1259100/",
+        "info_type": "article",
+        "info_date": "1922",
+        "info_authors": "McLeod",
+        "infoID": "PMC1259100",
+        "info_place": "Biochem J",
+        "digest": "Вообще, то, что пневмококк выделяет перекись водорода, и таким образом обладает антисептическим эффектом по отношению к золотистому стафилококку и к другим бактериям, было установлено еще в 1922 году. Стрептококк тоже выделяет перекись водорода.
+		Кстати, стрептококки в слюне, благодаря выделяемой перекиси водорода, [подавляют==http://www.jstor.org/stable/30089744] также дифтерийную бактерию."
+    },
+    {
+        "num": 26,
+        "title": "Bacterial antagonism, with particular reference to meningococcus.",
+        "link": "http://www.sciencedirect.com/science/article/pii/S0140673601560572",
+        "info_type": "article",
+        "info_date": "1915",
+        "info_authors": "Colebrook",
+        "infoID": "",
+        "info_place": "Lancet",
+        "digest": "А в 1915 году было установлено, что пневмококк в верхних дыхательных путях полностью подавляет менингококка и другие бактерии. Стрептококк тоже подавляет менингококка.
+		Автор пишет, что антисептики не всегда эффективны против менингококка, потому что не получают доступ ко всем бактериям, и более эффективно будет вживлять менингококковым носителям колонию пневмококковых бактерий. Автор провел данную процедуру на своем коллеге и на пяти других добровольцах. Несмотря на большие количества вживленных бактерий, у пяти добровольцев они не прижились, и не подавили менингококка. Но у шестого прижились и полностью подавили менингококка, правда эффект длился лишь два дня."
+    },
+    {
+        "num": 27,
+		    "header": "Эффективность",
+        "title": "The pneumococcal vaccine after 15 years of use.",
+        "link": "https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/618469",
+        "info_type": "article",
+        "info_date": "1994",
+        "info_authors": "Hirschmann",
+        "infoID": "8117169",
+        "info_place": "Arch Intern Med",
+        "digest": "Полисахаридная вакцина от пневмококка была лицензирована в США в 1977 году. Ее делают пожилым, различными хроническим больным и другим группам риска (например индейцам).
+		Авторы анализируют все опубликованные исследования, и заключают, что нет никаких свидетельств того, что эта вакцина эффективна для какой-либо группы населения.
+		FDA лицензировала эту вакцину на основании исследований 30-х и 40-х годов, исследований на южноафриканских работниках золотых рудников и на горцах из Новой Гвинеи. Рандомизированные исследования, опубликованные после лицензирования, показывали нулевую эффективность. Меньше всего вакцина эффективна для тех групп риска, для которых она предназначена - пожилых и иммунодефицитных больных. Несмотря на то, что через 6 лет рекомендуется ревакцинация, нет никаких свидетельств того, что вторая доза более эффективна, чем первая. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/3661581], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/23444498]."
+    },
+    {
+        "num": 28,
+        "title": "Trends in invasive pneumococcal disease-associated hospitalizations.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16323082",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "Shah",
+        "infoID": "16323082",
+        "info_place": "Clin Infect Dis",
+        "digest": "После начала вакцинации, заболеваемость пневмококковой бактериемией значительно снизилась среди пожилых, и незначительно среди детей. Заболеваемость пневмококковым менингитом упала в 3 раза.
+		Это то, что авторы сообщают в абстракте. То, на чем они не заостряют внимание, это что общее количество случаев бактериального менингита не изменилось, а количество случаев бактериемии лишь увеличилось."
+    },
+    {
+        "num": 29,
+        "title": "Empyema Hospitalizations Increased in US Children Despite Pneumococcal Conjugate Vaccine.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19948570",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Li",
+        "infoID": "19948570",
+        "info_place": "Pediatrics",
+		    "I_S_codenames": ["empyema"],
+        "digest": "Эмпиема плевры - это осложнение пневмонии (скопление гноя в полостях, окружающих легкие), которое встречается в 3% случаев пневмонии, и в трети случаев пневмококковой пневмонии.
+		Заболеваемость эмпиемой плевры в США увеличилась на 70% между 1997 и 2006, несмотря на уменьшение случаев бактериальной пневмонии и пневмококка. Среди детей младше 5-и лет, госпитализация вследствие эмпиемы плевры увеличилась на 100%.
+		Заболеваемость бактериальной пневмонией уменьшилась на 13%. Заболеваемость инвазивным пневмококком уменьшилась на 50%. Общее количество осложнений пневмонии увеличилось на 44%."
+    },
+    {
+        "num": 30,
+        "info_type": "mass media",
+        "info_date": "2011",
+        "info_geo": "France",
+        "digest": "После начала вакцинации от пневмококка во Франции, количество случаев пневмококкового менингита [увеличилось==http://sante.lefigaro.fr/actualite/2011/10/10/12851-meningite-pneumocoques-gagne-terrain-france] на 34% (с 0.93 до 1.25/100,000)."
+    },
+    {
+        "num": 31,
+        "title": "Pneumococcal responses are similar in Papua New Guinean children aged 3-5 years vaccinated in infancy with pneumococcal polysaccharide vaccine with or without prior pneumococcal conjugate vaccine, or without pneumococcal vaccination.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5640225/",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "van den Biggelaar",
+        "infoID": "PMC5640225",
+        "info_place": "PLoS One",
+        "info_geo": "Papua",
+        "digest": "Количество антител от пневмококка не отличалось у непривитых и у привитых конъюгированной или полисахаридной вакциной. (Папуа-Новая Гвинея)"
+    },
+    {
+        "num": 32,
+		    "header": "Замена штаммов",
+        "title": "Rapid pneumococcal evolution in response to clinical interventions.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3648787/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Croucher",
+        "infoID": "PMC3648787",
+        "info_place": "Science",
+        "digest": "В ответ на антибиотики и на вакцинацию пневмококк быстро мутирует. Бактерии пневмококка умеют менять свой серотип."
+    },
+    {
+        "num": 33,
+        "title": "Emergence of Multidrug-Resistant Pneumococcal Serotype 35B among Children in the United States.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5328440/",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Olarte",
+        "infoID": "PMC5328440",
+        "info_place": "J Clin Microbiol",
+        "digest": "После начала вакцинации появился новый серотип 35В, который редко встречался ранее, но теперь из года в год ответственен за всё большее количество пневмококковых инфекций. Этот серотип в 5 раз смертельнее других серотипов, и часто нечувствителен к антибиотикам.
+		Заболеваемость пневмококком снизилась в 2 раза в течение 2-х лет после начала вакцинации, и осталась примерно на том же уровне. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5328434/]."
+    },
+    {
+        "num": 34,
+        "title": "Emergence of invasive pneumococcal disease caused by nonvaccine serotypes in the era of 7-valent conjugate vaccine.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/18171247",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Mu&ntilde;oz-Almagro",
+        "infoID": "18171247",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "Spain",
+		    "I_S_codenames": ["empyema"],
+        "digest": "После начала вакцинации заболеваемость пневмококковой инфекцией в Барселоне выросла на 58%, а среди детей - на 135%.
+		Заболеваемость вакцинными серотипами уменьшилась на 40%, а невакцинными серотипами увеличилась на 531%.
+		Заболеваемость пневмонией и эмпиемой среди детей младше 5 лет выросла на 320%."
+    },
+    {
+        "num": 35,
+        "title": "Temporal trends of invasive disease due to Streptococcus pneumoniae among children in the intermountain west: emergence of nonvaccine serogroups.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15937758",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Byington",
+        "infoID": "15937758",
+        "info_place": "Clin Infect Dis",
+		"I_S_codenames": ["empyema"],
+        "digest": "После начала вакцинации, между 1997 и 2003, количество случаев пневмококковой инфекции в Солт-Лейк-Сити (Юта) снизилось на 27%. Заболеваемость вакцинными серотипами снизилась с 73% до 50%. Количество случаев заболевания от невакцинных серотипов увеличилось в 3 раза. Дети, заболевшие невакцинными серотипами, были госпитализированы дольше.
+		Доля случаев осложненных эмпиемой плевры увеличилась с 16% до 30%, а доля тяжелых случаев увеличилась с 57% до 71%. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/16511389]."
+    },
+    {
+        "num": 
+36,
+        "title": "Invasive pneumococcal disease caused by nonvaccine serotypes among Alaska native children with high levels of 7-valent pneumococcal conjugate vaccine coverage.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/17456820",
+        "info_type": "article",
+        "info_date": "2007",
+        "info_authors": "Singleton",
+        "infoID": "17456820",
+        "info_place": "JAMA",
+		    "I_S_codenames": ["empyema"],
+        "digest": "Коренные дети в Аляске болеют инвазивной пневмококковой инфекцией в 3 раза чаще, чем американцы в среднем.
+		За первые 3 года после начала вакцинации (2001-2003) заболеваемость пневмококковой инфекцией среди коренных детей младше 2-х лет в Аляске снизилась на 67%. Но потом, в 2004-2006, заболеваемость увеличилась на 82%.
+		Заболеваемость вакцинными серотипами снизилась на 96%, а невакцинными серотипами увеличилась на 140%.
+		Доля случаев, осложненных эмпиемой плевры, увеличилась с 2% до 13%. Доля случаев с пневмонией и бактериемией увеличилась с 40% до 57%.
+		В 2004 году 41% населения были носителями пневмококка. Доля семи вакцинных серотипов снизилась с 41% до 5%, а невакцинных серотипов увеличилась с 47% до 88%."
+    },
+    {
+        "num": 37,
+        "title": "The epidemiology of invasive pneumococcal disease in British Columbia following implementation of an infant immunization program: increases in herd immunity and replacement disease.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22338325",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Sahni",
+        "infoID": "22338325",
+        "info_place": "Can J Public Health",
+        "info_geo": "Canada",
+        "digest": "Заболеваемость инвазивной пневмококковой инфекцией среди детей до 5-и лет снизилась на 78% между 2002 и 2010, но среди детей старше 5-и лет, взрослых и пожилых она повысилась. Вакцинные штаммы заменились невакцинными. В целом, заболеваемость не изменилась. В 2006-2007 была зарегистрирована вспышка пневмококка среди нищих и наркоманов. (Британская Колумбия, Канада)"
+    },
+    {
+        "num": 38,
+        "title": "Routine pneumococcal vaccination of children provokes new patterns of serotypes causing invasive pneumococcal disease in adults and children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22814362",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Norton",
+        "infoID": "22814362",
+        "info_place": "Am J Med Sci",
+        "info_geo": "US",
+        "digest": "Заболеваемость инвазивной пневмококковой инфекцией среди детей снизилась в 2 раза между 1996 и 2010, но среди взрослых она повысилась на треть. В целом заболеваемость немного увеличилась. (Хантингтон, Западная Виргиния)."
+    },
+    {
+        "num": 39,
+        "title": "Rebound in the incidence of pneumococcal meningitis in northern France: effect of serotype replacement.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20626365",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Alexandre",
+        "infoID": "20626365",
+        "info_place": "Acta Paediatr",
+        "info_geo": "France",
+        "digest": "Заболеваемость пневмококковым менингитом среди детей младше 18 лет увеличилась в 2.2 раза между 2005 и 2008. Заболеваемость среди детей младше 2-х лет увеличилась в 6.5 раз. Охват вакцинации за это время вырос с 56% до 90%.
+		В 2008-м году заболеваемость пневмококковым менингитом сравнилась с допрививочной эпохой. (Северная Франция)"
+    },
+    {
+        "num": 40,
+        "title": "Initial Effects of the National PCV7 Childhood Immunization Program on Adult Invasive Pneumococcal Disease in Israel.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3917916/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Regev-Yochay",
+        "infoID": "PMC3917916",
+        "info_place": "PLoS One",
+        "info_geo": "Israel",
+        "digest": "Через два года после начала вакцинации, заболеваемость инвазивной пневмококковой инфекций среди взрослых в Израиле не изменилась."
+    },
+    {
+        "num": 41,
+        "title": "The changing role of exposure to children as a risk factor for bacteremic pneumococcal disease in the post conjugate vaccine era.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2946166/",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Metlay",
+        "infoID": "PMC2946166",
+        "info_place": "Arch Intern Med",
+        "digest": "В Филадельфии, заболеваемость вакцинными серотипами среди взрослых понижалась на 29% в год в 2002-2008, а невакцинными серотипами повышалась на 13% в год. В целом, заболеваемость пневмококковой инфекцией увеличивалась на 7% в год.
+		Негры болели в два раза чаще белых. Чем больше в доме детей, тем ниже риск заболевания. Диабет повышает риск заболевания в 2.5 раза. Курение - в 2.2 раза."
+    },
+    {
+        "num": 42,
+        "digest": "Все исследования показывают уменьшение заболеваемости вакцинными серотипами, и увеличение заболеваемости невакцинными серотипами, но есть также исследования, согласно которым несмотря на замену штаммов общая заболеваемость пневмококком (или заболеваемость в некоторых группах населения) понизилась: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/17529859], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/20420501], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2953990/], [[4]==https://www.ncbi.nlm.nih.gov/pubmed/17457623], [[5]==https://www.ncbi.nlm.nih.gov/pubmed/19949357]."
+    },
+    {
+        "num": 43,
+		    "digest": "Еще несколько статей о замене штаммов пневмококка с вакцинных на невакцинные:
+		1) [The impact of specific and non-specific immunity on the ecology of Streptococcus pneumoniae and the implications for vaccination. (Flasche, 2013, Proc Biol Sci)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3790488/]		
+		2) [Evidence that pneumococcal serotype replacement in Massachusetts following conjugate vaccination is now complete. (Hanage, 2010, Epidemics)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2963072/]
+		3) [Emergence of Streptococcus pneumoniae Serogroups 15 and 35 in Nasopharyngeal Cultures from Young Children with Acute Otitis Media. (Martin, 2014, Pediatr Infect Dis J)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4216617]
+		4) [Competition between Streptococcus pneumoniae strains: implications for vaccine-induced replacement in colonization and disease. (Meht&auml;l&auml;, 2013, Epidemiology)==https://www.ncbi.nlm.nih.gov/pubmed/23676265]
+		Еще: [[5]==https://www.ncbi.nlm.nih.gov/pubmed/18270917], [[6]==https://www.ncbi.nlm.nih.gov/pubmed/24463806], [[7]==https://www.ncbi.nlm.nih.gov/pubmed/17922399/], [[8]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3808555/], [[9]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2867993/], [[10]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4216617/], [[11]==https://www.ncbi.nlm.nih.gov/pubmed/15909260], [[12]==https://www.ncbi.nlm.nih.gov/pubmed/19035779], [[13]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3592052/], [[14]==http://jcm.asm.org/content/46/3/982.full], [[15]==https://www.ncbi.nlm.nih.gov/pubmed/18316986/], [[16]==https://www.ncbi.nlm.nih.gov/pubmed/22541259], [[17]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4249410/], [[18]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3256741/], [[19]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3377405/]."
+ 
+		...и о замене пневмококка на гемофильные и другие бактерии:
+		1) Bacterial interactions in the nasopharynx - effects of host factors in children attending day-care centers. (Dahlblom , 2012, J Infect Public Health)==https://www.ncbi.nlm.nih.gov/pubmed/22541259]
+		2) [Neuraminidase expressed by Streptococcus pneumoniae desialylates the lipopolysaccharide of Neisseria meningitidis and Haemophilus influenzae: a paradigm for interbacterial competition among pathogens of the human respiratory tract. (Shakhnovich, 2002, Infect Immun)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC133026/]
+		3) [Long-term effects of pneumococcal conjugate vaccine on nasopharyngeal carriage of S. pneumoniae, S. aureus, H. influenzae and M. catarrhalis. (Spijkerman, 2012, PLoS One)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3382588/]
+		4) [Pathogenic bacteria in chronic bronchitis. (May, 1954, Lancet)==https://www.sciencedirect.com/science/article/pii/S0140673654919315]
+		Еще: [[5]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3959886/], [[6]==https://www.ncbi.nlm.nih.gov/pubmed/15361721], [[7]==https://www.ncbi.nlm.nih.gov/pubmed/14557958]."
+    },
+    {
+        "num": 44,
+		    "header": "Колонизация",
+        "title": "Carriage of pneumococci after pneumococcal vaccination.",
+        "link": "http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(05)65585-7/",
+        "info_type": "article",
+        "info_date": "1996",
+        "info_authors": "Obaro",
+        "infoID": "8684225",
+        "info_place": "Lancet",
+        "info_geo": "Gambia",
+        "digest": "Поскольку для инвазивной инфекции требуется для начала колонизация бактерий в носоглотке, целью вакцинации является также снижение колонизации пневмококка.
+		Впервые конъюгированная пневмококковая вакцина была испытана на младенцах в Гамбии в 1993-м году, где выяснилось, что тогда как колонизация вакцинными серотипами снизилась на 78%-89%, колонизация невакцинными серотипами увеличилась в 4.5 раза."
+    },
+    {
+        "num": 45,
+        "title": "Carriage of Haemophilus influenzae is associated with pneumococcal vaccination in Italian children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/26190092",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Camilli",
+        "infoID": "26190092",
+        "info_place": "Vaccine",
+        "info_geo": "Italy",
+ 		    "I_S_codenames": ["H.influenzae"],
+        "digest": "Колонизация пневмококком среди привитых и непривитых в Италии не различалась. Гемофильная палочка встречалась среди привитых значительно чаще."
+    },
+    {
+        "num": 46,
+        "title": " Effect of 10-valent pneumococcal conjugate vaccine on nasopharyngeal carriage of Streptococcus pneumoniae and Haemophilus influenzae among children in S&atilde;o Paulo, Brazil.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27692770",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Brandileone",
+        "infoID": "",
+        "info_place": "Vaccine",
+        "info_geo": "Brazil",
+ 		    "I_S_codenames": ["H.influenzae"],
+        "digest": "После начала вакцинации, колонизация вакцинными серотипами значительно снизилась, а невакцинными увеличилась. Гемофильная палочка встречалась у привитых в 2-5 раз чаще, чем у непривитых. (Сан-Паулу, Бразилия)"
+    },
+    {
+        "num": 47,
+        "title": "Post-PCV7 changes in colonizing pneumococcal serotypes in 16 Massachusetts communities, 2001 and 2004.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16140686",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Huang",
+        "infoID": "16140686",
+        "info_place": "Pediatrics",
+        "digest": "Между 2001 и 2004, у детей младше 7-и лет в Массачусетсе, колонизация семью вакцинными серотипами пневмококка в носоглотке уменьшилась, а колонизация другими серотипами - увеличилась. В целом колонизация пневмококком практически не изменилась. Невосприимчивость к пенициллину увеличилась с 8% до 25% среди невакцинных серотипов, и с 45% до 56% среди вакцинных серотипов."
+    },
+    {
+        "num": 48,
+        "title": "Continued impact of pneumococcal conjugate vaccine on carriage in young children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2782668/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Huang",
+        "infoID": "PMC2782668",
+        "info_place": "Pediatrics",
+        "digest": "Продолжение предыдущего исследования. К 2007-у году вакцинные серотипы практически исчезли, и заменились невакцинными и нечувствительными к пенициллину серотипами. В целом, уровень колонизации пневмококком как был 30%, так и остался, но среди детей младше 6 месяцев он значительно вырос."
+    },
+    {
+        "num": 49,
+        "title": "Impact of 13-Valent Pneumococcal Conjugate Vaccination on Streptococcus pneumoniae Carriage in Young Children in Massachusetts.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3933044/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Lee",
+        "infoID": "PMC3933044",
+        "info_place": "J Pediatric Infect Dis Soc",
+ 		    "I_S_codenames": ["PCV13"],
+        "digest": "13-валентная вакцина (PCV13) тоже не изменила колонизацию пневмококком. Колонизация вакцинными серотипами снизилась, а невакцинными серотипами увеличивалась на 12% в год.
+		Уровень колонизации среди привитых PCV13 детей и непривитых не различался.
+		Колонизация штаммами PCV13 была на 70% ниже среди здоровых привитых детей, но не среди больных ОРВИ детей."
+    },
+    {
+        "num": 50,
+        "title": "Changes in nasopharyngeal carriage of Streptococcus pneumoniae, Haemophilus influenzae and Moraxella catarrhalis among healthy children attending a day-care centre before and after official financial support for the 7-valent pneumococcal conjugate vaccine and H. influenzae type b vaccine in Japan.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/24582389",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Oikawa",
+        "infoID": "24582389",
+        "info_place": "J Infect Chemother",
+        "info_geo": "Japan",
+        "digest": "В Японии, после начала вакцинации от Hib и пневмококка, колонизация вакцинными серотипами пневмококка уменьшилась, а невакцинными серотипами увеличилась. В целом, колонизация пневмококком не изменилась. Колонизация гемофильной палочкой увеличилась."
+    },
+    {
+        "num": 51,
+        "title": "Effect of Pneumococcal Conjugate Vaccination on Serotype-Specific Carriage and Invasive Disease in England: A Cross-Sectional Study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3071372/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Flasche",
+        "infoID": "PMC3071372",
+        "info_place": "PLoS Med",
+        "digest": "В Англии колонизация вакцинными серотипами снизилась, а невакцинными серотипами увеличилась. В целом колонизация увеличилась на 6% (нет статистической значимости)."
+    },
+    {
+        "num": 52,
+        "title": "Effect of pneumococcal vaccination on nasopharyngeal carriage of Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis, and Staphylococcus aureus in Fijian children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3295152/",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Dunne",
+        "infoID": "PMC3295152",
+        "info_place": "J Clin Microbiol",
+        "info_geo": "Fiji",
+        "digest": "На Фиджи вакцинация никак не повлияла на колонизацию пневмококком.
+		[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/22189528] сообщается, что в Папуа-Новой Гвинее вакцинация сразу после рождения не повлияла на колонизацию пневмококком."
+    },
+    {
+        "num": 53,
+		"header": "Острый средний отит",
+        "title": "Changes in frequency and pathogens causing acute otitis media in 1995-2003.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15361720",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Casey",
+        "infoID": "15361720",
+        "info_place": "Pediatr Infect Dis J",
+		"I_S_codenames": ["H.influenzae", "AOM"],
+        "digest": "Между 1995 и 2003 заболеваемость острым средним отитом не изменилась, но заболеваемость затянувшимся острым средним отитом уменьшилась с 16% до 12%. Место пневмококка в случаях среднего отита стала занимать гемофильная палочка, которая после начала пневмококковой вакцинации стала главным возбудителем болезни. (Рочестер, Нью-Йорк)"
+    },
+    {
+        "num": 54,
+        "title": "Predominance of nontypeable Haemophilus influenzae in children with otitis media following introduction of a 3+0 pneumococcal conjugate vaccine schedule.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21621576",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Wiertsema",
+        "infoID": "21621576",
+        "info_place": "Vaccine",
+		    "I_S_codenames": ["H.influenzae", "AOM"],
+        "digest": "Пневмококк и гемофильная бактерия ответственны за 80% случаев острого среднего отита. М.catarrhalis ответственна за 3-20% случаев.
+		После начала вакцинации от пневмококка, большинство случаев отита стали вызывать бескапсульные типы гемофильной бактерии."
+    },
+    {
+        "num": 55,
+        "title": "Effect of conjugate pneumococcal vaccine followed by polysaccharide pneumococcal vaccine on recurrent acute otitis media: a randomised study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/12842372",
+        "info_type": "article",
+        "info_date": "2003",
+        "info_authors": "Veenhoven",
+        "infoID": "12842372",
+        "info_place": "Lancet",
+		"I_S_codenames": ["S.aureus", "AOM"],
+        "digest": "Рандомизированное двойное слепое исследование влияния вакцины от пневмококка на острый средний отит у склонных к нему детей старше года. В качестве плацебо использовались вакцины от гепатита В и гепатита А.
+		Заболеваемость острым средним отитом у привитых была повышена на 25%, хотя статистическая значимость пограничная (CI 0.99-1.57). У детей старше 2-х лет, вакцина повышала риск отита на 45%. У детей не слишком склонных к отиту, вакцина повышала риск на 66%. Вакцинация никак не повлияла на колонизацию пневмококка, так как вакцинные серотипы заменились невакцинными. У привитых от пневмококка детей было выявлено больше золотистого стафилококка."
+    },
+    {
+        "num": 56,
+        "title": "Efficacy of a pneumococcal conjugate vaccine against acute otitis media.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11172176",
+        "info_type": "article",
+        "info_date": "2001",
+        "info_authors": "Eskola",
+        "infoID": "11172176",
+        "info_place": "N Engl J Med",
+		    "I_S_codenames": ["AOM"],
+        "digest": "Другое рандомизированное двойное слепое исследование влияния вакцины от пневмококка на острый средний отит. В качестве плацебо использовалась вакцина от гепатита В.
+		Вакцина снизила заболеваемость на 6%, но статистическая значимость отсутствует (CI -4 - 16).
+		Один ребенок умер, но его смерть была определена как несвязанная с вакциной."
+    },
+    {
+        "num": 57,
+        "title": "Effect of pneumococcal conjugate vaccine on nasopharyngeal bacterial colonization during acute otitis media.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16651345",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "Revai",
+        "infoID": "16651345",
+        "info_place": "Pediatrics",
+		     "I_S_codenames": ["H.influenzae", "М.catarrhalis", "AOM"],
+        "digest": "Предыдущее исследование широко [цитируется==https://scholar.google.co.il/scholar?hl=en&as_sdt=0%2C5&q=Efficacy+of+a+pneumococcal+conjugate+vaccine+against+acute+otitis+media&btnG=], и необязательно даже упоминать, что статистическая значимость отсутствовала. Необязательно также упоминать другие исследования, где заболеваемость отитом у привитых была повышена.
+		Кроме того, здесь сообщается, что колонизация пневмококком во время отита практически не изменилась, так как вакцинные серотипы заменились на невакцинные.
+		У привитых чаще встречалась бактерия М.catarrhalis в среднем ухе, по сравнению с непривитыми и недопривитыми.
+		Из трех видов бактерий (пневмококк, гемофильная палочка и М.catarrhalis) у непривитых обнаружилось в среднем 1.37 вида бактерий, у недопривитых 1.48, а у привитых 1.67."
+    },
+    {
+        "num": 58,
+        "title": "Moraxella catarrhalis: from Emerging to Established Pathogen.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC118065/",
+        "info_type": "article",
+        "info_date": "2002",
+        "info_authors": "Verduin",
+        "infoID": "PMC118065",
+        "info_place": "Clin Microbiol Rev",
+		"I_S_codenames": ["М.catarrhalis"],
+        "digest": "Раньше M.catarrhalis считалась безвредной бактерией, но в последнее десятилетие вдруг оказалось, что она может привести к менингиту, сепсису, отиту, пневмонии и прочим инвазивным заболеваниям.
+		Ученые [работают==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4720561/] над вакциной."
+    },
+    {
+        "num": 59,
+		"header": "Разное",
+        "title": "Cerebrospinal fluid and plasma levels of vitamin C in children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/3975061",
+        "info_type": "article",
+        "info_date": "1985",
+        "info_authors": "Heinz-Erian",
+        "infoID": "3975061",
+        "info_place": "Padiatr Padol",
+		     "I_S_codenames": ["vitamin C"],
+        "digest": "Концентрация витамина С в спинномозговой жидкости в 2.5-3 раза выше, чем в крови. У недоношенных и доношенных младенцев - в 16 раз выше. У недоношенных младенцев концентрация витамина С в 4-5 раз выше, чем у школьников.
+		Уровень витамина С в спинномозговой жидкости у больных острым гнойным менингитом был значительно понижен."
+    },
+    {
+        "num": 60,
+        "digest": "Как и гемофильная палочка, пневмококк - это [оппортунистическая инфекция==https://en.wikipedia.org/wiki/Opportunistic_infection]. То есть сама по себе эта бактерия безвредна, но при иммунодефицитном состоянии становится опасна."
+    },
+    {
+        "num": 61,
+		"header": "Безопасность",
+        "title": "Technical Report: Prevention of Pneumococcal Infections, Including the Use of Pneumococcal Conjugate and Polysaccharide Vaccines and Antibiotic Prophylaxis.",
+        "link": "http://pediatrics.aappublications.org/content/106/2/367",
+        "info_type": "article",
+        "info_date": "2000",
+        "info_authors": "Overturf",
+        "infoID": "10920170",
+        "info_place": "Pediatrics",
+		    "I_S_codenames": ["PCV7"],
+        "digest": "Вакцина от пневмококка (PCV7) является самой реактогенной из всех используемых на сегодня."
+    },
+    {
+        "num": 62,
+        "title": "Risk of Febrile Seizures and Epilepsy After Vaccination With Diphtheria, Tetanus, Acellular Pertussis, Inactivated Poliovirus, and Haemophilus Influenzae Type b.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22357833",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Sun",
+        "infoID": "22357833",
+        "info_place": "JAMA",
+		    "I_S_codenames": ["febrile seizures"],
+        "digest": "Вакцина DTaP-IPV-Hib повышает риск фебрильных судoрог в 4-7 раз в день вакцинации. Когда ее делают вместе с вакциной от пневмококка, то риск повышен и в последующие 3 дня. Риск эпилепсии не повышается."
+    },
+    {
+        "num": 63,
+        "info_type": "youtube",
+        "info_date": "2016",
+        "digest": Vaxxed bus - это был автобус такой, который до недавнего времени разъезжал по всему США, и собирал тысячи свидетельств родителей, чьи дети пострадали от прививок. Я обычно не привожу свидетельства оттуда, но в данном случае не могу удержаться.
+		Тройняшки (два мальчика и девочка) [получили==https://www.youtube.com/watch?v=GPHZFQFpZrY] прививку от пневмококка. В тот же день все трое стали аутистами."
+    },
+    {
+        "num": 64,
+        "info_type": "VAERS",
+        "info_place": "",
+        "digest": "С 2000 года в VAERS [зарегистрированы==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=PNC&VAX[]=PNC13&VAX[]=PPV&VAX[]=PNC10&VAXTYPES[]=Pneumonia&VAX_YEAR_LOW=2000] 1577 смертей от пневмококковой вакцины. 12,552 были госпитализированы и 1370 стали инвалидами."
+    },
+    {
+        "num": 65,
+		     "I_S_codenames": ["PCV13"],
+        "digest": "В конфиденциальном [отчете==http://ddata.over-blog.com/3/27/09/71/2012-2013/emea-responses--Prevenar-13-Pfizer-Confidential.pdf], который Pfizer предоставила европейскому агентству лекарственных средств, среди прочего, сообщается:1) За первое полугодие 2011 года было зарегистрировано 22 смерти после прививки PCV13. В подавляющем большинстве случаев смерть наступила через короткое время после прививки.
+		2) За два года (7/2009-7/2011) было зарегистрировано 1691 случаев побочных эффектов, из них 18% неврологические. Среди детей, которые получили только Prevenar-13, 9% побочных эффектов были неврологические. Среди тех, кто получили Prevenar-13 вместе с другой вакциной, 21% побочных эффектов были неврологические. Среди тех, кто получили Prevenar-13 вместе с Инфанрикс Гекса, 34% побочных эффектов были неврологические."
+    },
+    {
+        "num": 66,
+		     "I_S_codenames": ["PCV13"],
+        "digest": "В другом конфиденциальном [отчете==http://ddata.over-blog.com/3/27/09/71/2012-2013/Prevenar--confidential--overview-clinical-trials.pdf], который Wyeth (впоследствии Pfizer) предоставила европейскому агентству лекарственных средств, и который анализирует клинические исследования 13-валентной вакцины, сообщается:
+		1) Клинические исследования безопасности Prevenar 13 включали 1,365 детей. Из них тестируемую вакцину получили 493 младенца и 287 детей. Лишь за 580 из них наблюдали в течение 6 месяцев после прививки. В качестве плацебо использовалась семивалентная вакцина.
+		2) Среди тех, кто получили вакцину подкожно, менее 8% использовали антипиретики после прививки. Среди тех, кто получили вакцину внутримышечно, антипиретики использовали 80%.
+		Потеря аппетита наблюдалась менее чем у 19% в подкожной группе, и более чем у 54% во внутримышечной группе.
+		Раздражительность: менее чем у 37% в подкожной группе, и более чем у 88% во внутримышечной группе.
+		Сонливость: менее чем у 41% в подкожной группе, и более чем у 70% во внутримышечной группе.
+		Нарушение сна: менее чем у 24% в подкожной группе, и более чем у 45% во внутримышечной группе.
+		Тем не менее, производитель [рекомендует==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm201669.pdf] вводить эту вакцину внутримышечно.
+		3) Побочные реакции, которые спонтанно сообщались, были зарегистрированы у 83%-92%.
+		4) В одном из исследований, серьезные побочные эффекты наблюдались у 11.4% детей. Большинство из них были инфекции, требующие госпитализации. Все они были оценены, как несвязанные с прививкой. Подавляющее большинство серьезных побочных реакций были среди младенцев.
+		5) Всего в группе, получившей 13-валентную вакцину, было зарегистрировано 35 серьезных осложнений у 25 детей (из 780). То есть общий процент серьезных осложнений в двух исследованиях составил 3.2%. Процент осложнений от самого пневмококка намного ниже."
+    }]
+}
+

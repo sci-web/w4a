@@ -1,0 +1,1302 @@
+{
+"title": "Грипп",
+"I_S_codename": "influenza",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Грипп",
+"date": "11-11-2017",
+"intro": ""
+"epigraph": {
+		"text": "I&#39;ve never had a flu shot, and I&#39;ve never had the flu.
+I don&rsquo;t like the idea of injecting bad stuff into your body, which is basically what they do.",
+		"source": "Donald Trump",
+		"link": "https://www.youtube.com/watch?v=cDARZJxzeoY",
+		},
+"points":
+    [
+	{
+        "num": 1,
+        "digest": "Считается, что от гриппа умирают больше людей, чем от всех остальных прививочных болезней вместе взятых. Поэтому, теоретически, если и есть смысл от чего-то прививаться, так это от гриппа."
+    },
+    {
+        "num": 2,
+        "title": "CDC Pinkbook Influenza",
+        "link": "https://www.cdc.gov/vaccines/pubs/pinkbook/flu.html",
+        "info_type": "cdc",
+        "digest": "Вирусы гриппа делятся на три типа A, B и C. Тип А делится на подтипы согласно антигенам гемагглютинина (H) и нейраминидазы (N). Всего есть 18 антигенов гемагглютинина, и 9 антигенов нейраминидазы, но для людей значение имеют главным образом типы гемагглютинина H1, H2 и H3, (которые присоединяются к клеткам) и типы нейраминидазы N1 и N2 (которые проникают в клетку).
+		Вирус типа С не вызывает эпидемий, большинство случаев субклинические, и в вакцине он не содержится. Вирус типа В обычно приводит к более мягкому заболеванию, чем тип А.
+		Вакцина обычно содержит один штамм каждого из трех типов вируса: A(H1N1), A(H3N2) и B.
+		С 2013 года доступны четырехвалентные вакцины, которые включают дополнительный штамм вируса типа В.
+		С 2003 года доступны также живые назальные вакцины.
+		Вакцины сезона 2017/18 [содержат==https://www.cdc.gov/flu/professionals/acip/index.htm] следующие штаммы: A/Hong Kong/4801/2014(H3N2), A/Michigan/45/2015(H1N1)pdm09, и B/Brisbane/60/2008. Четырехвалентная вакцина содержит также штамм B/Phuket/3073/2013.
+		A/Hong Kong/4801/2014(H3N2) означает 4801-й выявленный в Гонконге в 2014 штамм вируса типа A(H3N2). Штаммы в вакцине меняются не каждый год, три из этих четырех штаммов [не изменились==https://www.cdc.gov/flu/about/season/flu-season-2016-2017.htm] с прошлого сезона."
+    },
+    {
+        "num": 3,
+        "digest": "Вирус для вакцины выращивается в оплодотворенных куриных яйцах. Некоторые вакцины [выращиваются==https://www.cdc.gov/flu/protect/vaccine/cell-based.htm] на почечных клетках собак. Тиомерсал (ртутный консервант) в детских прививках уже не используют, но в вакцине от гриппа его оставили (в многодозовых ампулах). Вакцина обычно содержит также полисорбат 80.
+		Два раза в год ВОЗ решает какие штаммы включить в вакцину. Выбираются те штаммы, которые хорошо [размножаются==https://www.cdc.gov/mmwr/preview/mmwrhtml/rr58e0724a1.htm] в яйцах. В процессе выращивания вирусы [мутируют==http://mbio.asm.org/content/8/3/e00669-17], поэтому выбранный ВОЗ штамм не всегда соответствует вакцинному штамму.
+		Из каждого яйца [вырабатывают==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4514247/] примерно одну дозу вакцины. Производитель вакцин использует миллион оплодотворенных яиц в день."
+    },
+    {
+        "num": 4,
+		"header": "Эффективность",
+        "title": "Low 2016/17 season vaccine effectiveness against hospitalised influenza A(H3N2) among elderly: awareness warranted for 2017/18 season.",
+        "link": "http://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2017.22.41.17-00645",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Rondy",
+        "infoID": "29043961",
+        "info_place": "Euro Surveill",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Эффективность вакцины от A(H3N2) в сезон 2016/17 среди госпитализированных пожилых составила 17%. Среди тех, кто были привиты также в предыдущий сезон, эффективность вакцины составила -2% (отрицательная).
+		Авторы ожидают, что и в следующем сезоне она будет не особо эффективна, так как штамм A(H3N2) в вакцине 2017/18 года остался прежним."
+    },
+    {
+        "num": 4,
+        "title": "Contemporary H3N2 influenza viruses have a glycosylation site that alters binding of antibodies elicited by egg-adapted vaccine strains.",
+        "link": "http://www.pnas.org/content/early/2017/10/31/1712377114",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Zost",
+        "infoID": "29109276",
+        "info_place": "Proc Natl Acad Sci",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Здесь объясняется, почему вакцина в 2016/17 была неэффективна (потому что вирус выращивается в яйцах и мутирует)."
+    },
+    {
+        "num": 5,
+        "digest": "Как вычисляют эффективность вакцины? Кому как удобно.
+		В обсервационных исследованиях, которых большинство, проверяют всех госпитализированных с ОРЗ на предмет заражения вирусами гриппа. Но проверяют только заражение теми штаммами, которые есть в вакцине.
+		Эффективность вакцины вычисляется по формуле VE = 1-OR = 1 - Oi/Oni, где Oi это соотношение привитых к непривитым среди заболевших гриппом, а Оni это соотношение привитых к непривитым среди заболевших не гриппом, а другими ОРЗ.
+		То есть эффективность вакцины обычно измеряют лишь среди госпитализированных, или среди заболевших. В предыдущем исследовании, например, медианный возраст госпитализированных был 80 лет, и 94% из них болели также другой болезнью, которая предрасполагает к ОРЗ."
+    },
+    {
+        "num": 6,
+        "title": "A Perfect Storm: Impact of Genomic Variation and Serial Vaccination on Low Influenza Vaccine Effectiveness During the 2014-2015 Season.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4901864/",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Skowronski",
+        "infoID": "PMC4901864",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "Canada",
+        "I_S_codenames": [""],
+        "digest": "В сезон 2014/15 эффективность вакцины от A(H3N2) в Канаде была 53% для тех, кто привились лишь в этом году. Среди тех, кто привились также в предыдущем сезоне, эффективность была отрицательной -32%. Среди тех, кто прививался 3 года подряд, эффективность составляла -54%.
+		В среднем, эффективность составляла -17%."
+    },
+    {
+        "num": 7,
+        "title": "Impact of repeated vaccination on vaccine effectiveness against influenza A(H3N2) and B during 8 seasons.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4207422/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "McLean",
+        "infoID": "PMC4207422",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Эффективность вакцины от A(H3N2) в 2004-2013 была 65% для тех, кто привились в одном сезоне. У тех, кто прививается часто, эффективность составила 24%. Эффективность от вируса гриппа типа В была 75% для тех, кто привились лишь в этом году, и 48% для тех, кто прививается часто."
+    },
+    {
+        "num": 8,
+        "title": "Influenza vaccine effectiveness in the community and the household.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3693492/",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Ohmit",
+        "infoID": "PMC3693492",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Эффективность в сезон 2010/11 среди тех, кто были привиты два года подряд была отрицательная -45%. Среди тех, кто был привит только в этом сезоне, эффективность составляла 62%.
+		Эффективность среди тех, кто заразился дома, составила -51%. А среди взрослых, которые заразились дома, эффективность была -283%."
+    },
+    {
+        "num": 9,
+        "title": "Influenza vaccine effectiveness in households with children during the 2012-2013 season: assessments of prior vaccination and serologic susceptibility.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25416812/",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Ohmit",
+        "infoID": "25416812",
+        "info_place": "J Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Эффективность вакцины в сезон 2012/13 составляла 48% для взрослых, и -4% для детей младше 9 лет."
+    },
+    {
+        "num": 10,
+        "title": "Effectiveness of influenza vaccine during pregnancy in preventing hospitalizations and outpatient visits for respiratory illness in pregnant women and their infants.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15311370",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Black",
+        "infoID": "15311370",
+        "info_place": "Am J Perinatol",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Анализ эффективности вакцины для беременных в 1997-2002. Прививка не имела никакого эффекта на заболеваемость гриппом."
+    },
+    {
+        "num": 11,
+        "title": "Impact of influenza vaccination on seasonal mortality in the US elderly population.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15710788",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Simonsen",
+        "infoID": "15710788",
+        "info_place": "Arch Intern Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Согласно обсервационным исследованиям, вакцинация от гриппа снижает смертность среди пожилых на 50%.
+		Прививочный охват среди пожилых вырос с 15-20% в 1970-х до 65% в 2001. Парадоксальным образом, смертность от гриппа среди пожилых в этот период лишь выросла.
+		Менее 10% смертности в зимний период связаны с гриппом, из чего следует, что обсервационные исследования значительно завышают пользу вакцинации."
+    },
+    {
+        "num": 12,
+        "title": "Influenza vaccination and mortality benefits: new insights, new opportunities.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19840664",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Simonsen",
+        "infoID": "",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "75% смертности от гриппа приходится на 70-летних и старше. Но нет никаких рандомизированных исследований, доказывающих, что вакцинация пожилых снижает смертность.
+		Некоторые исследования показывают, что прививка от гриппа предотвращает смертность еще до начала сезона гриппа, что свидетельствует о систематической ошибке отбора. Подобные некачественные исследования, тем не менее, продолжают публиковаться в престижных медицинских журналах."
+    },
+    {
+        "num": 13,
+        "title": "What, in Fact, Is the Evidence That Vaccinating Healthcare Workers against Seasonal Influenza Protects Their Patients? A Critical Review.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3502850/",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Abramson",
+        "infoID": "PMC3502850",
+        "info_place": "Int J Family Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Анализ литературы на предмет влияния вакцинации медицинского персонала на пациентов.
+		Исследования, доказывающие распространенное верование в то, что вакцинация персонала снижает заболеваемость и смертность пациентов - очень некачественные, а рекомендации необъективны.
+		Нет никаких достоверных свидетельств, что вакцинация персонала приносит какую-либо пользу пациентам. Она не снижает заболеваемость, не снижает смертность и даже не повышает охват вакцинации среди пациентов.
+		Автор заключает, что не следует заставлять медицинский персонал прививаться. Медикам стоит прочитать эту статью полностью, там немало интересного."
+    },
+    {
+        "num": 14,
+        "title": "Influenza Vaccination of Healthcare Workers: Critical Analysis of the Evidence for Patient Benefit Underpinning Policies of Enforcement.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/28129360/",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "De Serres",
+        "infoID": "28129360",
+        "info_place": "PLoS One",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Здесь анализируются 4 рандомизированных исследования о влиянии вакцинации медицинского персонала на пациентов. Согласно этим исследованиям, вакцинация восьми медицинских работников спасает одного пациента от смерти. Из чего следует, что вакцинация медиков спасает 687 тысяч жизней в год в США, то есть больше людей, чем умерли во время эпидемии 1918 года. Объясняется, как именно авторы исследований играются со статистикой, чтобы получить эти совершенно безумные результаты, и заключают, что даже по самым оптимистическим оценкам, нужно вакцинировать 6,000-32,000 медиков для предотвращения одной смерти от гриппа.
+		Кроме того, согласно этим исследованиям выходит, что 90% людей умирают от гриппа без наличия респираторных симптомов, а также, что вакцинация спасает от смерти больше людей, чем заболевают гриппом.
+		Авторы заключают, что принудительная вакцинация медиков не поддерживается эмпирическими данными, и что затрачиваемые на вакцинацию ресурсы стоит, возможно, направить на что-то более научно доказанное."
+    },
+    {
+        "num": 15,
+        "title": "Influenza outbreak in a vaccinated population--USS Ardent, February 2014.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/25340911",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Aquino",
+        "infoID": "25340911",
+        "info_place": "MMWR Morb Mortal Wkly Rep",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Вспышка гриппа на военном корабле, где 99% были привиты (25 случаев из 102 солдат). Выделенный штамм совпадал со штаммом в вакцине. Все заболевшие получили Тамифлю. Еще вспышки гриппа среди полностью привитых солдат: [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3855413/], [[2]==https://wwwnc.cdc.gov/eid/article/7/3/01-7320_article]."
+    },
+    {
+        "num": 16,
+		"header": "Непривитые",
+        "title": "Effectiveness of trivalent inactivated influenza vaccine in influenza-related hospitalization in children: a case-control study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22525386",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Joshi",
+        "infoID": "22525386",
+        "info_place": "Allergy Asthma Proc",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Исследование на протяжении 8 сезонов (1999-2007). Риск госпитализации вследствие гриппа у привитых детей был в 3.67 раз выше, чем у непривитых.
+		За эти 8 лет штамм A(H3N2) не угадали 5 раз, а штаммы A(H1N1) и В не угадали по 4 раза."
+    },
+    {
+        "num": 17,
+        "title": "Increased risk of noninfluenza respiratory virus infections associated with receipt of inactivated influenza vaccine.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3404712/",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Cowling",
+        "infoID": "PMC3404712",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Рандомизированное плацебо-контролируемое исследование. В течение 9 месяцев после прививки, риск негриппозных вирусных заболеваний у привитых был в 4.4 раза выше, чем у непривитых."
+    },
+    {
+        "num": 18,
+        "title": "Epidemiology of respiratory viral infections in children enrolled in a study of influenza vaccine effectiveness.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24483149/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Dierig",
+        "infoID": "24483149",
+        "info_place": "Influenza Other Respir Viruses",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Риск ОРВИ у привитых, в течение 13 недель после прививки, был на 60% выше, чем у непривитых. Риск заболевания гриппом был одинаков в обеих группах."
+    },
+    {
+        "num": 19,
+        "title": "Effectiveness and cost-benefit of influenza vaccination of healthy working adults: A randomized controlled trial.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11015795",
+        "info_type": "article",
+        "info_date": "2000",
+        "info_authors": "Bridges",
+        "infoID": "11015795",
+        "info_place": "JAMA",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Рандомизированное двойное слепое плацебо-контролируемое исследование экономической выгоды вакцинации от гриппа. В первый год исследования штамм не угадали, эффективность вакцины была отрицательная, привитые пропустили из-за болезни на 45% больше рабочих дней, чем непривитые, а врачей они посещали на 378% чаще.
+		Во второй год штамм угадали, и непривитые пропустили на 32% больше рабочих дней, чем привитые, а врачей посещали на 47% чаще.
+		В оба сезона вакцинация привела к убыткам. В сезон, когда штамм угадали, убыток составил $11.17 на человека, а в сезон, когда не угадали, убыток был $31.4 на человека.
+		Авторы заключают, что для здоровых работающих людей вакцинация не является экономически оправданной."
+    },
+    {
+        "num": 20,
+        "title": "Effectiveness of school-based influenza vaccination.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/17167135",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "King",
+        "infoID": "17167135",
+        "info_place": "N Engl J Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "В этом исследовании решили проверить, как вакцинация от гриппа влияет на коллективный иммунитет.
+		Учеников привили в школе ослабленной вакциной. Семьи привитых учеников меньше болели ОРЗ, чем семьи непривитых, но, парадоксальным образом, в семьях привитых было значительно больше случаев госпитализации.
+		Не было разницы в количестве пропущенных дней в школе между привитыми и непривитыми."
+    },
+    {
+        "num": 21,
+		"header": "Систематические обзоры",
+        "title": "Vaccines for preventing influenza in healthy children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22895945",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Jefferson",
+        "infoID": "22895945",
+        "info_place": "Cochrane Database Syst Rev",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор Cochrane эффективности вакцин от гриппа для детей (75 исследований, из них 17 российских).
+		Для детей старше двух лет эффективность живой вакцины составляла 33%, а инактивированной - 36%.
+		Для детей младше 2-х лет, эффективность вакцины практически нулевая. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/15056235/].
+		Не существует свидетельств того, что вакцина от гриппа снижает смертность, госпитализацию, серьезные осложнения или заразность гриппа.
+		Авторы с удивлением обнаружили лишь одно исследование безопасности инактивированной вакцины, проведенное в 1976 году, которое включало 35 детей. Они считают, что это довольно странно, что вакцина рекомендуется всем детям, несмотря на практически полное отсутствие исследований безопасности. А вот для живой вакцины они обнаружили 10 исследований безопасности. Но они не смогли анализировать данные, поскольку производители отказались предоставлять всю информацию о побочных эффектах.
+		Авторы отмечают, что все исследования вакцин были низкого качества."
+    },
+    {
+        "num": 22,
+        "title": "Vaccines for preventing influenza in healthy adults.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/24623315",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Demicheli",
+        "infoID": "24623315",
+        "info_place": "Cochrane Database Syst Rev",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор Cochrane эффективности вакцин от гриппа для взрослых (90 исследований). Менее 10% исследований были качественные.
+		Вакцинация имеет очень скромный эффект. Необходимо привить 40 человек для предотвращения одного случая ОРВИ, и 71 человек для предотвращения одного случая гриппа. Вакцинация никак не влияла на госпитализацию от гриппа, или на пропуск рабочих дней. Необходимо привить 92 беременные женщины для предотвращения одного случая ОРВИ у беременных, и 27 женщин для предотвращения одного случая гриппа у новорожденных.
+		Не обнаружилось никаких свидетельств того, что вакцинация снижает риск серьезных осложнений."
+    },
+    {
+        "num": 23,
+        "title": "Vaccines for preventing influenza in the elderly.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20166072",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Jefferson",
+        "infoID": "20166072",
+        "info_place": "Cochrane Database Syst Rev",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор Cochrane эффективности вакцин от гриппа для пожилых (75 исследований).
+		Все исследования были настолько некачественные, что авторы ничего не смогли заключить.
+		[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/16213065] сообщается, что у пожилых после прививки&nbsp;вырабатывается на 41-76% меньше антител, чем у молодых.
+		[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/26516142] сообщается, что у пожилых, которые принимают статины, вырабатывается на 38-67% меньше антител, чем у тех, кто их не принимает."
+    },
+    {
+        "num": 24,
+        "title": "Influenza vaccination for healthcare workers who care for people aged 60 or older living in long-term care institutions.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27251461",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Thomas",
+        "infoID": "27251461",
+        "info_place": "Cochrane Database Syst Rev",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор Cochrane эффективности вакцинации против гриппа медицинского персонала, который работает с пожилыми.
+		Нет никаких свидетельств того, что вакцинация медицинских работников снижает количество случаев гриппа, количество осложнений или смертность среди пожилых."
+    },
+    {
+        "num": 25,
+        "title": "Relation of study quality, concordance, take home message, funding, and impact in studies of influenza vaccines: systematic review.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643439/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Jefferson",
+        "infoID": "PMC2643439",
+        "info_place": "BMJ",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор Cochrane 259 исследований вакцин от гриппа.
+		70% исследований были некачественные, и излишне оптимистичные в своих выводах.
+		Лишь в 18% исследований выводы совпадали с результатами. Let that sink in. В 82% исследований выводы не совпадали с результатами.
+		В качественных исследованиях результаты и выводы были согласованы в 16 раз чаще.
+		Качественные исследования в 25 раз реже заключают, что вакцины эффективны.
+		Исследования, финансируемые правительством, в 2 раза реже заключают, что вакцины эффективны.
+		Исследования, финансируемые индустрией, намного чаще печатались в престижных журналах (с более высоким импакт-фактором), вне зависимости от качества исследования, или количества участников."
+    },
+    {
+        "num": 26,
+		"header": "Гетеросубтипический иммунитет",
+        "title": "Vaccination against human influenza A/H3N2 virus prevents the induction of heterosubtypic immunity against lethal infection with avian influenza A/H5N1 virus.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2678248/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Bodewes",
+        "infoID": "PMC2678248",
+        "info_place": "PLoS One",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Инфекция вирусом гриппа А повышает иммунитет от более опасных штаммов. Это называется [гетеросубтипический иммунитет==https://en.wikipedia.org/wiki/Heterosubtypic_immunity]. Вакцинация имеет обратный эффект.
+		Мышей привили от сезонного гриппа, а затем заразили пандемическим птичьим гриппом. Привитые мыши умерли, а непривитые выжили.
+		Авторы заключают, что во время следующей пандемии гриппа, риск серьезных осложнений и летального исхода у привитых детей будет выше, чем у непривитых. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19879807]."
+    },
+    {
+        "num": 27,
+        "title": "Infection of mice with a human influenza A/H3N2 virus induces protective immunity against lethal infection with influenza A/H5N1 virus.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19538996",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Kreijtz",
+        "infoID": "19538996",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Часть мышей заразили обычным сезонным гриппом, а через месяц всех мышей заразили летальным птичьим гриппом. Мыши, которые переболели обычным гриппом, почти все выжили, а те, кто не переболели, все погибли. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/17005299], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/22643217]."
+    },
+    {
+        "num": 27,
+        "title": "Potent protection against H5N1 and H7N9 influenza via childhood hemagglutinin imprinting.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5134739/",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Gostic",
+        "infoID": "PMC5134739",
+        "info_place": "Science",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Грипп в детстве защищает от более опасных штаммов гриппа во взрослом возрасте."
+    },
+    {
+        "num": 28,
+		"header": "Первородный антигенный грех",
+        "title": "Original antigenic sin responses to influenza viruses.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4460008/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Kim",
+        "infoID": "PMC4460008",
+        "info_place": "J Immunol",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Поскольку вирус гриппа постоянно мутирует, иммунная система, реагируя на него, подвержена влиянию первородного антигенного греха. Встречая новый штамм вируса, она вырабатывает антитела на предыдущие штаммы, за счет антител к новому штамму, что приводит к обострению болезни."
+    },
+    {
+        "num": 29,
+        "title": "Understanding Original Antigenic Sin in Influenza with a Dynamical System.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3163660/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Pan",
+        "infoID": "PMC3163660",
+        "info_place": "PLoS One",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Эффективность вакцины не снижается монотонно с увеличением антигенного расстояния между вакцинным и циркулирующим штаммом. Минимальная эффективность вакцины приходится на некоторое промежуточное расстояние между штаммами. Поскольку эффективность вакцины на этом промежуточном антигенном расстоянии между вакцинным и циркулирующим штаммами ниже эффективности на большем антигенном расстоянии, первородный антигенный грех может привести к тому, что привитые станут более восприимчивы к вирусу, чем непривитые.
+  
+		Этот феномен, возможно, объясняет, почему в те годы, когда вакцинный штамм [не угадали==https://www.ncbi.nlm.nih.gov/pubmed/11015795], вакцина не просто бесполезна, а наоборот, лишь усугубляет течение болезни. Вакцинный штам угадывают реже чем в 50% случаев."
+    },
+    {
+        "num": 30,
+        "title": "Vaccination and antigenic drift in influenza.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2603026/",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Boni",
+        "infoID": "PMC2603026",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Вакцинация может значительно влиять на мутацию вируса, и ускорять его эволюцию, если она обеспечивает частичный или несовершенный иммунитет. Это было продемонстрировано на цыплятах. У привитых от гриппа наблюдалось в два раза больше мутаций вируса, чем у непривитых цыплят.
+		Авторы заключают, что в сезоны с высоким прививочным охватом следует ожидать мутирующие штаммы вируса, и усилить мониторинг за ними."
+    },
+    {
+        "num": 31,
+		"header": "Свиной грипп",
+        "title": "Seasonal influenza vaccine and increased risk of pandemic A/H1N1 related illness: first detection of the association in British Columbia, Canada.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20887210",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Janjua",
+        "infoID": "20887210",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "Canada",
+        "I_S_codenames": ["H1N1"],
+        "digest": "Сезонная прививка от гриппа в 2009 году повышала риск заражения свиным гриппом в 2.5 раза среди детей в Канаде. Эти результаты подтвердились в пяти других исследованиях. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/20386731/], [[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2878199/]."
+    },
+    {
+        "num": 32,
+        "title": "Randomized Controlled Ferret Study to Assess the Direct Impact of 2008&ndash;09 Trivalent Inactivated Influenza Vaccine on A(H1N1)pdm09 Disease Risk.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3903544/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Skowronski",
+        "infoID": "PMC3903544",
+        "info_place": "PLoS One",
+        "info_geo": "",
+        "I_S_codenames": ["H1N1"],
+        "digest": "В этом исследовании проверили предыдущие результаты на хорьках. Часть хорьков привили сезонной вакциной от гриппа 2008/9 года, а потом их заразили свиным гриппом. И действительно, оказалось, что привитые хорьки болеют тяжелее, чем непривитые."
+    },
+    {
+        "num": 33,
+        "title": "Clinical and Epidemiologic Characteristics of an Outbreak of Novel H1N1",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2878199/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Crum-Cianflone",
+        "infoID": "PMC2878199",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Привитые в прошлом сезоне солдаты заболевали свиным гриппом значительно чаще непривитых."
+    },
+    {
+        "num": 34,
+		"header": "Безопасность",
+        "title": "Annual Vaccination against Influenza Virus Hampers Development of Virus-Specific CD8+ T Cell Immunity in Children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3209321/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Bodewes",
+        "infoID": "PMC3209321",
+        "info_place": "J Virol",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Прививка от гриппа подавляет выработку цитотоксических Т-лимфоцитов у детей, то есть делает их более восприимчивыми к инфекциям."
+    },
+    {
+        "num": 35,
+        "title": "Association of spontaneous abortion with receipt of inactivated influenza vaccine containing H1N1pdm09 in 2010-11 and 2011-12.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/28917295",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Donahue",
+        "infoID": "28917295",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": ["H1N1"],
+        "digest": "Прививка от гриппа во время беременности повышает риск выкидыша в последующие 28 дней в 2 раза.
+		Среди тех, кто получили также прививку от свиного гриппа в прошлый сезон, риск выкидыша был в 7.7 раз выше."
+    },
+    {
+        "num": 36,
+        "title": "Comparison of VAERS fetal-loss reports during three consecutive influenza seasons.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3888271/",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Goldman",
+        "infoID": "PMC3888271",
+        "info_place": "Hum Exp Toxicol",
+        "info_geo": "",
+        "I_S_codenames": ["VAERS","H1N1"],
+        "digest": "Анализ VAERS. В сезон 2009-10, когда прививали двумя вакцинами от гриппа (от обычного и от свиного), риск выкидыша был в 11 раз выше, чем в сезон 2008-9, и в 6 раз выше, чем в сезон 2010-11.
+		В качестве доказательства безопасности вакцины от гриппа для беременных приводят обычно два исследования. В первом участвовали 56, а во втором - 180 женщин. В этих исследованиях использовалась вакцина без тиомерсала. В третьем исследовании участвовали 2291 женщины, но выкидыши не были включены в анализ.
+		Считается, что вакцина приводит к выкидышу в 1.9 случаев на миллион привитых. Но эти данные не учитывают того, что в VAERS регистрируется довольно незначительное количество всех побочных эффектов."
+    },
+    {
+        "num": 37,
+        "title": "Inflammatory responses to trivalent influenza virus vaccine among pregnant women.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21945263",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Christian",
+        "infoID": "21945263",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Вакцина от гриппа приводит к воспалительной реакции у беременных женщин. Воспалительная реакция от прививки намного слабее, чем от инфекционной болезни, но тем не менее, она может повысить риск негативных последствий.
+		В сезон 2008-9 были привиты 11.3% беременных, в сезон 2009-10, благодаря пандемии, были привиты уже 50.7% беременных от сезонного гриппа, и 47.7% от свиного гриппа."
+    },
+    {
+        "num": 38,
+        "title": "Association Between Influenza Infection and Vaccination During Pregnancy and Risk of Autism Spectrum Disorder.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27893896",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Zerbo",
+        "infoID": "27893896",
+        "info_place": "JAMA Pediatr",
+        "info_geo": "",
+        "I_S_codenames": ["autism"],
+        "digest": "Исследование 197 тысяч детей родившихся в 2000-2010 годах. Аутизм был диагностирован у 1.6% (1 из 63)
+		Прививка от гриппа во время первого триместра беременности повышала риск аутизма на 20%. Но после коррекции на множественное тестирование (поправка Бонферрони), p-value становится 0.1, и авторы заключают, что с вероятностью в 10% это лишь случайная корреляция."
+    },
+    {
+        "num": 39,
+        "title": "Guillain-Barr&eacute; syndrome after vaccination in United States: data from the Centers for Disease Control and Prevention/Food and Drug Administration Vaccine Adverse Event Reporting System",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19730016",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Souayah",
+        "infoID": "19730016",
+        "info_place": "J Clin Neuromuscul Dis",
+        "info_geo": "",
+        "I_S_codenames": ["VAERS", "GBS"],
+        "digest": "В 1990-2005 годах в VAERS было зарегистрировано 1000 случаев синдрома Гийена-Барре после прививки. 63% из них были после прививки от гриппа."
+    },
+    {
+        "num": 40,
+        "title": "Narcolepsy and hypersomnia in Norwegian children and young adults following the influenza A(H1N1) 2009 pandemic.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/28302408/",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Trogstad",
+        "infoID": "28302408",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": ["H1N1", "narcolepsy"],
+        "digest": "Риск нарколепсии у привитых от свиного гриппа 2009-го года был повышен в 17 раз. В [другом==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835303/] исследовании риск нарколепсии был повышен в 4-9 раз. В [третьем==http://www.bmj.com/content/346/bmj.f794] в 14-16 раз.
+		В похожем шведском [исследовании==https://www.ncbi.nlm.nih.gov/pubmed/25325473/] оказалось, что нарколепсия после этой вакцины намного чаще сопровождается психиатрическими отклонениями."
+    },
+    {
+        "num": 41,
+        "title": "Inflammation-related effects of adjuvant influenza A vaccination on platelet activation and cardiac autonomic function.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20964738",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Lanza",
+        "infoID": "20964738",
+        "info_place": "J Intern Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Прививка от гриппа проводит к активации тромбоцитов, и, возможно, повышает риск сердечно-сосудистых заболеваний."
+    },
+    {
+        "num": 42,
+        "title": "Reversion of Cold-Adapted Live Attenuated Influenza Vaccine into a Pathogenic Virus.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/27440882/",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Zhou",
+        "infoID": "27440882",
+        "info_place": "J Virol",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Живая вакцина против гриппа может, при некоторых условиях, мутировать и стать вирулентной."
+    },
+    {
+        "num": 43,
+        "title": "ANCA-associated vasculitis following influenza vaccination: causal association or mere coincidence?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19734734",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Birck",
+        "infoID": "19734734",
+        "info_place": "J Clin Rheumatol",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Прививка от гриппа, возможно, приводит иногда к васкулиту. И к [неврологическим==http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0004-282X2014000700496] осложнениям."
+    },
+    {
+        "num": 44,
+		"header": "Статистика",
+        "title": "Are US flu death figures more PR than science?",
+        "link": "http://www.bmj.com/content/331/7529/1412",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Doshi",
+        "infoID": "",
+        "info_place": "BMJ",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "CDC утверждает, что 36,000 американцев умирают от гриппа каждый год. Однако они включают в эту статистику также смерти от пневмонии, которая далеко не всегда является следствием гриппа. Антациды, например, повышают риск пневмонии (привет, алюминий), но их, почему-то, не объединяют в одну статистику.
+		Согласно национальному центру статистики (который является частью CDC), от гриппа умирают в среднем 1348 человек в год.
+		До 2003 года CDC утверждало, что от гриппа умирают 20,000 человек в год. А потом была опубликована статья в JAMA, повысившая эту цифру на 80% на основании статистической модели, несмотря на то, что на самом деле смертность от гриппа в 90-е была на 30% ниже, чем в 80-е. &quot;В 2003 году был низкий спрос на вакцину от гриппа, производители не получали заказов даже в декабре&quot;, - заявил [др. Новак==http://crisiscommunication.uga.edu/contributors/glen-nowak-ph-d/] из CDC на NPR, - &quot;поэтому мы решили, что нужно поощрять людей вакцинироваться&quot;."
+    },
+    {
+        "num": 45,
+        "digest": "[Вот==http://www.cdc.gov/nchs/data/nvsr/nvsr60/nvsr60_04.pdf], например, данные CDC за 2014 год. 55,227 человек умерли от гриппа и пневмонии. Но из них лишь 4,605 умерли от гриппа, а остальные от пневмонии. Но далеко не все из этих 4,605 действительно умерли от гриппа, так как лабораторный анализ вируса делают довольно редко, тем не менее CDC суммирует случаи смерти от лабораторно подтвержденного гриппа (J09-J10), и от подозреваемого гриппа (J11). Хотя лишь небольшое количество ОРЗ вызывается вирусами гриппа."
+    },
+    {
+        "num": 46,
+        "digest": "А вот [презентация==http://iom.nationalacademies.org/~/media/E9B963EDB28645C5ABCC22467120662D.ashx], которую подготовил др. Новак, директор CDC по связям с общественностью, где он объясняет, как именно СМИ и медицинские эксперты должны запугать население гриппом, и повысить таким образом прививочный охват. Там рассказывается, среди прочего, что CDC о вас думает. Очень рекомендую ознакомиться, там всего 17 слайдов. Вот, например, цитата оттуда: &quot;Health literacy is a growing problem&quot;."
+    },
+    {
+        "num": 47,
+        "title": "Trends in Recorded Influenza Mortality: United States, 1900&ndash;2004.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2374803/",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Doshi",
+        "infoID": "PMC2374803",
+        "info_place": "Am J Public Health",
+        "info_geo": "",
+        "I_S_codenames": [""],
+		"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/4276/4276_original.jpg"
+        "digest": "Homeland Security ожидает, что следующая пандемия гриппа убьет в 6-56 раз больше американцев, чем обычный сезонный грипп. ВОЗ более консервативна, и ожидает, что пандемия убьет в 4-30 раз больше людей, чем обычный грипп.
+		Однако, за исключением 1918 года, каждая следующая пандемия была менее летальна, чем предыдущие. Более того, смертность во время пандемий гриппа (1957/58, 1968/9) не особо отличалась от смертности в обычные сезоны гриппа.
+		NIH проанализировал данные 30 сезонов гриппа, и не обнаружил корреляции между возросшим прививочным охватом и снижением смертности в какой-либо возрастной группе.
+		CDC утверждает, что смертность от гриппа увеличилась на 67% в 90-е, тогда как на самом деле она упала на 38%."
+    },
+    {
+        "num": 48,
+        "title": "Influenza vaccines: time for a rethink.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/23553143",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Doshi",
+        "infoID": "23553143",
+        "info_place": "JAMA Intern Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Для большинства людей вакцина от гриппа бесполезна, так как большинство населения гриппом не заболевает. Лишь 7% ОРЗ вызываются вирусами гриппа.
+		Цитируемые CDC исследования подвержены &quot;эффекту здорового рабочего&quot; (healthy user bias), то есть здоровые прививаются чаще, чем больные.
+		В 2009 году Австралия остановила программу вакцинации, так как обнаружилось, что у одного из 110 детей она вызывала фебрильные судороги. Предположение, что безопасность прошлых вакцин от гриппа свидетельствует о безопасности будущих - необоснованно."
+    },
+    {
+        "num": 49,
+        "title": "Influenza: marketing vaccine by marketing disease.",
+        "link": "http://www.bmj.com/content/346/bmj.f3037",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Doshi",
+        "infoID": "23682040",
+        "info_place": "BMJ",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Продвижение вакцин против гриппа является сегодня одной из наиболее агрессивных стратегий общественного здравоохранения. 20 лет назад, в 1990-м, рынок вакцин от гриппа в США составлял 32 миллиона доз, а сегодня он составляет 135 миллионов доз. Этот огромный рост был вызван не спросом, а рекламной кампанией, которая талдычит нам, что грипп это серьезная болезнь, что мы все подвержены риску осложнений, что прививка практически безопасна, а вакцинация спасает жизни. С этой точки зрения, похоже, что отсутствие вакцин для всех 315 миллионов граждан США - граничит с неэтичным. Тем не менее, людей по всей стране заставляют прививаться от гриппа, особенно в медицинских учреждениях, именно потому, что не все этого желают, и принуждение является единственным способом достижения высокого охвата вакцинации.
+		В 1960-м CDC рекомендовало вакцину лишь для пожилых (65 и старше). В 1984-м начали прививать также медицинский персонал, а в 1987 добавили тех, кто проживает в одном доме с пожилыми. В 1997-м начали прививать беременных во 2-м и 3-м триместре. В 2000 году стали прививать тех, кому за 50. В 2004-м начали прививать беременных в первом триместре, детей с 6 месяцев до двух лет, а также всех, кто контактирует с ними. В 2006-м рекомендация расширилась на детей до 5 лет, и всех кто контактирует с ними. В 2008-м начали прививать всех детей до 18 лет, а в 2010-м всё остальное население, кроме младенцев до 6 месяцев.
+		CDC на основании одного обсервационного исследования, которое оно и финансировало, утверждает, что вакцина от гриппа снижает смертность от всех причин среди пожилых на 48%. Если это правда, то вакцина от гриппа может спасти больше жизней, чем любое другое лекарство зарегистрированное на планете. Если грипп ответственен лишь за 5% зимней смертности, то вакцина от него не может предотвращать половину всех смертей.
+		Если обсервационным исследованиям невозможно верить, какие есть свидетельства снижения смертности среди пожилых благодаря вакцинации? Практически никаких. Проводилось лишь одно рандомизированное исследование среди пожилых, это было 20 лет назад, и оно не показало снижения смертности. То есть вакцина от гриппа рекомендуются несмотря на полное отсутствие клинических испытаний доказывающих ее эффективность. Рекомендация базируется лишь на основании выработки антител, но нет никаких доказательств того, что эти антитела приводят к снижению заболеваемости. И поскольку на данный момент вакцина рекомендуется всем, проводить рандомизированное испытание уже неэтично."
+    },
+    {
+        "num": 50,
+        "title": "WHO and the pandemic flu &ldquo;conspiracies&rdquo;.",
+        "link": "http://www.bmj.com/content/340/bmj.c2912",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Cohen",
+        "infoID": "",
+        "info_place": "BMJ",
+        "info_geo": "",
+        "I_S_codenames": ["WHO"],
+        "digest": "В 1999 году, после вспышки птичьего гриппа в Гонконге, ВОЗ начала готовиться к пандемии. И вот, через 10 лет, 11 июня 2009 года, Маргарет Чан, генеральный директор ВОЗ, провозгласила, что пандемия наконец-то наступила. Правительства разных стран потратили миллиарды долларов на закупку запасов противовирусных препаратов - Тамифлю и Релензы. Год спустя эти запасы так и лежат нетронутыми, и государства разрывают контракты с производителями вакцин.
+		Консультанты, которые составляли рекомендации для ВОЗ, работали одновременно на фармацевтические компании, и их конфликт интересов не разглашался. Таким образом, фармацевтические компании рекомендовали государствам посредством ВОЗ закупать запасы противовирусных препаратов, поскольку во время пандемии будет нехватка.
+		Состав комитета по чрезвычайным ситуациям, ВОЗ держит в секрете. Маргарет Чан отказалась предоставить отчет о конфликтах интересов тех, кто составляет рекомендации ВОЗ для государств.
+		За несколько месяцев до провозглашения пандемии, ВОЗ изменила критерии, по которым можно провозгласить пандемию, и теперь для этого не нужно было оценивать заболеваемость и смертность.
+		У ВОЗ не было никаких научных оснований заключать, что 2 миллиарда людей заболеют свиным гриппом. Более того, ВОЗ не изменила свою оценку даже после того, как прошел сезон гриппа в Австралии и Новой Зеландии, где заболели лишь 1-2 человека из 1000. Также было очень мало данных о безопасности и эффективности вакцин.
+		FDA не хотела лицензировать Релензу, поскольку она не была эффективнее плацебо. Но в конце концов лицензировала, чтобы на рынке было хоть что-то на случай пандемии гриппа.
+		В статье еще много интересного. BMJ, один из ведущих медицинских журналов, проводит расследование и открыто пишет о тотальной коррупциии ВОЗ. Если у вас остались еще некоторые сомнения в том, что ВОЗ это коррумпированная организация, эта статья их развеет."
+    },
+    {
+        "num": 51,
+        "title": "Influenza vaccination: policy versus evidence.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1626345/",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "Jefferson",
+        "infoID": "PMC1626345",
+        "info_place": "BMJ",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематические исследования показывают, что вакцинация от гриппа практически бесполезна. Большинство исследований низкого качества, безопасность почти не проверяется. Следует срочно пересмотреть программы вакцинации.
+		Это пишет глава отдела вакцин в Cochrane. Тот самый, который считает, что несмотря на отсутствие доказательств, безопасность алюминия не следует больше исследовать.
+		За такое вольнодумие от него [отвернулись==https://en.wikipedia.org/wiki/Tom_Jefferson_(epidemiologist)] коллеги, и на конференции на тему приготовления к пандемии он был вынужден обедать в одиночестве.",
+    {
+        "num": 52,
+		"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/4442/4442_original.png"
+        "digest": "В 2002 году CDC начала [поощрять==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5738a2.htm] вакцинацию детей с 6 месяцев до 2-х лет, а в 2004 году уже настоятельно рекомендовать. В первый год ребенок получает две дозы вакцины. В 2009 дети [получали==https://www.cdc.gov/h1n1flu/vaccination/public/vaccination_qa_pub.htm] дополнительную вакцину от свиного гриппа.
+		Вот график случаев смерти детей до 5-и лет от гриппа в 1996-2014."
+    },
+    {
+        "num": 53,
+		"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/4724/4724_original.jpg"
+        "digest": "В 2010 году рекомендацию расширили на всех людей старше шести месяцев. Вот график случаев смерти от гриппа всех возрастных групп в 1996-2014.
+		Для пропорции, каждый год более 3000 человек в США умирают от недоедания, 7000 умирают от C.difficile, 40,000 от отравления, 30,000 от алкоголя, 50,000 от наркотиков, 40,000 от самоубийства, 80,000 от диабета, 90,000 от Альцгеймера, и 200-400 тысяч от врачебной <a href="http://www.bmj.com/content/353/bmj.i2139.full">ошибки</a>."
+	},
+    {
+        "num": 54,
+        "info_type": "VAERS",
+        "digest": "Согласно VAERS, с 2000 года 835 человек [умерли==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=FLU(H1N1)&VAX[]=FLU3&VAX[]=FLU4&VAX[]=FLUA3&VAX[]=FLUC3&VAX[]=FLUC4&VAX[]=FLUN(H1N1)&VAX[]=FLUN3&VAX[]=FLUN4&VAX[]=FLUR3&VAX[]=FLUX&VAX[]=FLUX(H1N1)&VAX[]=H5N1&VAX_YEAR_LOW=2000] после прививки от гриппа, и 2161 стали инвалидами. Учитывая, что в VAERS регистрируются лишь 1-2% серьезных побочных эффектов, вполне возможно, что вакцина от гриппа убила больше людей, чем сам грипп."
+    },
+    {
+        "num": 55,
+        "title": "Influenza vaccination and mortality benefits: new insights, new opportunities.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19840664",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Simonsen",
+        "infoID": "19840664",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+		"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/5008/5008_original.jpg"
+        "digest": "Несмотря на то, что согласно обсервационным исследованиям прививка от гриппа снижает смертность от всех причин на 50%, возросший охват вакцинации не привел к снижению смертности ни от гриппа, ни от других причин."
+    },
+    {
+        "num": 56,
+        "header": "Разное",
+        "title": "Do we have enough evidence how seasonal influenza is transmitted and can be prevented in hospitals to implement a comprehensive policy?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27171752",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Thomas",
+        "infoID": "27171752",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Вирус гриппа передается в основном при близком контакте (менее 1 метра). Дольше всего вирус сохраняется на нержавеющей стали (несколько часов), а на шершавых поверхностях он выживает менее 15 минут. Инанктивируется на 99% парами перекиси водорода (10 ppm) за 2.5 минуты."
+    },
+    {
+        "num": 57,
+        "info_type": "mass media",
+        "digest": "Вирус гриппа A(H3N2) [обвиняется==https://www.facebook.com/7newssydney/videos/1826057830751675/] в смерти сотен пожилых австралийцев в 2017 году. Этот вирус содержался в вакцине, но успел мутировать за 4 месяца. Еще: [[1]==http://www.smh.com.au/national/worst-ever-flu-epidemic-claims-more-lives-amid-calls-for-mandatory-jabs-for-aged-care-workers-20170902-gy9h5s.html]."
+    },
+    {
+        "num": 58,
+        "digest": "[Начинаются==https://clinicaltrials.gov/ct2/show/NCT03049488] очередные клинические испытания долгожданной вакцины от [RSV==https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%81%D0%BF%D0%B8%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%BE-%D1%81%D0%B8%D0%BD%D1%86%D0%B8%D1%82%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B2%D0%B8%D1%80%D1%83%D1%81_%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0]. Разыскиваются добровольцы.
+		В 1960-х уже [пробовали==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4794264/] разработать подобную вакцину, но не получилось. Вакцина увеличивала вирулентность вируса, и из 31 привитых младенцев, 25 были впоследствии госпитализированы, и двое умерли.
+		К нынешней вакцине добавили алюминий, и поэтому ученые надеются, что она будет безопаснее и эффективнее."
+    },
+    {
+        "num": 59,
+        "digest": "59. Считается, что за пандемию 1918 года ответственен вирус гриппа. Это, однако, далеко не факт. [Судя по всему==http://www.reuters.com/article/us-flu-1918/flu-may-not-have-killed-most-in-1918-pandemic-idUSTRE5146PD20090205], это было что-то бактериальное, а не вирусное. Возможно, пневмококк."
+    },
+    {
+        "num": 60,
+        "title": "Salicylates and pandemic influenza mortality, 1918-1919 pharmacology, pathology, and historic evidence.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19788357",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Starko",
+        "infoID": "19788357",
+        "info_place": "Clin Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Значительное количество смертности во время пандемии 1918 года было, вероятно, вызвано аспирином, который врачи в то время прописывали в огромных дозах (8-31 г в день)."
+    },
+    {
+        "num": 61,
+        "title": "Review of prescribing information for influenza vaccines for pregnant and lactating women.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27595450",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Proveaux",
+        "infoID": "27595450",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "ВОЗ, CDC и все остальные настоятельно рекомендуют делать прививку от гриппа во время беременности и лактации. Авторы проанализировали вкладыши 96 вакцин от гриппа, и обнаружили, что большинство производителей выражаются очень осторожно, пишут, что безопасность вакцины для беременных не была установлена, а некоторые производители пишут, что она вообще запрещена для беременных. Авторы считают, что использование таких выражений во вкладышах может отбить у беременных желание прививаться, поэтому производителям не следует так осторожно выражаться."
+    },
+    {
+        "num": 
+        "digest": "Лекции: [Sherri Tenpenny - Flu and flu vaccines==https://www.youtube.com/watch?v=mpx8-Rmf8bc]"
+    },
+    {
+        "num": 63,
+		"header": "Лечение и профилактика",
+        "title": "Role of medical history in brain tumour development. Results from the international adult brain tumour study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/10389745",
+        "info_type": "article",
+        "info_date": "1999",
+        "info_authors": "Schlehofer",
+        "infoID": "10389745",
+        "info_place": "Int J Cancer",
+        "info_geo": "",
+        "I_S_codenames": ["glioma"],
+        "digest": "У тех, кто болели гриппом и ОРВИ, риск глиомы (опухоли мозга) и менингиомы (опухоли мозговой оболочки) был на 27-28% ниже."
+    },
+    {
+        "num": 64,
+        "title": "Antiviral medications for influenza.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396761/",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Korownyk",
+        "infoID": "PMC4396761",
+        "info_place": "Can Fam Physician",
+        "info_geo": "",
+        "I_S_codenames": ["oseltamivir", "zanamivir"],
+        "digest": "Судя по некачественным и необъективным исследованиям, в основном неопубликованным, противовирусные препараты осельтамивир (Тамифлю) и занамивир (Реленза) укорачивают течение гриппа на 0.6-0.7 дней. Они не снижают риск пневмонии и госпитализации.
+		Продажи Тамифлю составили более 18 миллиардов долларов. Большинство из проданных запасов не было использовано. Препараты не рекомендуются, если прошло уже более 48 часов от начала симптомов."
+    },
+    {
+        "num": 65,
+        "title": "Complications: tracking down the data on oseltamivir.",
+        "link": "http://www.bmj.com/bmj/section-pdf/186422?path=/bmj/339/7734/Feature.full.pdf",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Cohen",
+        "infoID": "19995818",
+        "info_place": "BMJ",
+        "info_geo": "",
+        "I_S_codenames": ["oseltamivir"],
+        "digest": "Интересное расследование BMJ о том, как Cochrane пытались получить доступ к данным клинических исследованиям Тамифлю.
+		В 2009 году японский педиатр спросил у Cochrane, почему их систематический обзор основывается на неопубликованных данных производителя, а не на их собственном анализе. Cochrane обязаны были ответить на это в течение полугода, и долго пытались получить исходные данные у производителя. Они их так и не получили.
+		Это привело к тому, что Cochrane [решили==https://www.youtube.com/watch?v=CU3PsTd5Bg0] изменить свою методику систематических обзоров."
+    },
+    {
+        "num": 66,
+        "title": "The effect on mortality of antipyretics in the treatment of influenza infection: systematic review and meta-analyis.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951171/",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Eyers",
+        "infoID": "PMC2951171",
+        "info_place": "J R Soc Med",
+        "info_geo": "",
+        "I_S_codenames": ["antipyretics"],
+        "digest": "Систематический обзор и метаанализ использования антипиретиков (жаропонижающих) во время гриппа на смертность.
+		Рандомизированных и плацебо контролируемых исследований на людях не проводилось. Обнаружилось 8 исследований на животных (мыши и цыплята).
+		Антипиретики (аспирин, парацетамол, диклофенак) во время гриппа повышали смертность на 34%.
+		Парацетамол и ибупрофен рекомендуются детям и взрослым в качестве жаропонижающих во время гриппа, несмотря на отсутствие научных свидетельств их эффективности и безопасности. Более того, существуют свидетельства того, что повышенная температура во время болезни повышает шансы на выживание, и что использование антипиретиков может иметь неблагоприятное влияние на течение болезни. Антипиретики повышают риск смерти у млекопитающих с различными бактериальными, вирусными и паразитическими болезнями.
+		Существуют также свидетельства негативного влияния антипиретиков на бактериальную пневмонию (возможное осложнение гриппа) у животных, что может осложнить грипп еще больше. Также как и вирус гриппа, многие штаммы пневмококка чувствительны к температуре, и погибают при 40-41&deg;C. Использование аспирина при пневмококковой инфекции повышало смертность мышей в 2-3 раза."
+    },
+    {
+        "num": 67,
+        "title": "Oral administration of Lactobacillus gasseri SBT2055 is effective for preventing influenza in mice.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3982165/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Nakayama",
+        "infoID": "",
+        "info_place": "Sci Rep",
+        "info_geo": "",
+        "I_S_codenames": ["probiotics"],
+        "digest": "Пробиотик предохраняет мышей от гриппа. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/28931041], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/28416546], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5104466/], [[4]==https://www.ncbi.nlm.nih.gov/pubmed/25765832], [[5]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3899257/], [[6]==https://www.ncbi.nlm.nih.gov/pubmed/24329975].
+		[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/29077061] сообщается, что пробиотики значительно повышают сероконверсию вакцины."
+    },
+    {
+        "num": 68,
+        "title": "Effects of probiotic Lactobacillus brevis KB290 on incidence of influenza infection among schoolchildren: an open-label pilot study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4285317/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Waki",
+        "infoID": "PMC4285317",
+        "info_place": "Lett Appl Microbiol",
+        "info_geo": "",
+        "I_S_codenames": ["probiotics"],
+        "digest": "Пробиотик предохраняет от гриппа и детей тоже."
+    },
+    {
+        "num": 69,
+        "title": "Probiotic effects on cold and influenza-like symptom incidence and duration in children.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19651563",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Leyer",
+        "infoID": "19651563",
+        "info_place": "Pediatrics",
+        "info_geo": "",
+        "I_S_codenames": ["probiotics"],
+        "digest": "Пробиотики снижают случаи кашля у детей на 41-62%, насморка на 28-58%, высокой температуры на 53-72%. Использование антибиотиков снижалось на 68-84%, а пропущенные дни в детском саду на 27-31%."
+    },
+    {
+        "num": 70,
+        "title": "Physical interventions to interrupt or reduce the spread of respiratory viruses.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21735402",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Jefferson",
+        "infoID": "21735402",
+        "info_place": "Cochrane Database Syst Rev",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор Cochrane. Чтобы снизить распространение ОРВИ следует мыть руки, и научить этому детей. Маски и перчатки тоже эффективны."
+    },
+    {
+        "num": 71,
+        "title": "Garlic for the common cold.",
+        "link": "http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD006206.pub4/abstract",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Lissman",
+        "infoID": "25386977",
+        "info_place": "Cochrane Database Syst Rev",
+        "info_geo": "",
+        "I_S_codenames": ["garlic"],
+        "digest": "Систематический обзор Cochrane влияния чеснока на простудные заболевания. Авторы обнаружили лишь одно подходящее исследование, в котором чеснок снижал риск простуды примерно в 3 раза."
+    },
+    {
+        "num": 72,
+        "title": "Randomized study of the efficacy and safety of oral elderberry extract in the treatment of influenza A and B virus infections.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15080016/",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Zakay-Rones",
+        "infoID": "15080016",
+        "info_place": "J Int Med Res",
+        "info_geo": "",
+        "I_S_codenames": ["elderberry"],
+        "digest": "Небольшое рандомизированное двойное слепое плацебо-контролируемое исследование лечения гриппа экстрактом бузины. Экстракт бузины укорачивал болезнь на 4 дня по сравнению с плацебо. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19682714], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/9395631], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4848651/], [[4]==https://www.ncbi.nlm.nih.gov/pubmed/22972323].
+		Для сравнения, Тамифлю [укорачивает==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396761/] болезнь на 17 часов, [повышая==http://www.cochrane.org/CD008965/ARI_regulatory-information-on-trials-of-oseltamivir-tamiflu-and-zanamivir-relenza-for-influenza-in-adults-and-children] при этом риск психиатрических осложнений и почечной недостаточности. Но, почему-то, правительства всех стран тратят миллиарды долларов на закупку запасов Тамифлю, и никто не закупает бузину."
+    },
+    {
+        "num": 73,
+        "title": "Zinc Lozenges May Shorten the Duration of Colds: A Systematic Review.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136969/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Hemil&auml;",
+        "infoID": "PMC3136969",
+        "info_place": "Open Respir Med J",
+        "info_geo": "",
+        "I_S_codenames": ["zinc"],
+        "digest": "Цинк, возможно, тоже лечит простудные заболевания, но только в достаточно больших дозах.
+		Также противогриппозный эффект имеют [женшень==http://www.mdpi.com/2072-6643/6/2/517/htm], [зеленый чай==https://www.ncbi.nlm.nih.gov/pubmed/21832025] и [прополис==https://www.ncbi.nlm.nih.gov/pubmed/18610553]."
+    },
+    {
+        "num": 74,
+		"header": "Витамин D",
+        "title": "Influenza, solar radiation and vitamin D.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092571/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Moan",
+        "infoID": "PMC3092571",
+        "info_place": "Dermatoendocrinol",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Существуют много гипотез, почему респираторными заболеваниями болеют лишь в определенном сезоне: холод, сухость воздуха, пребывание в закрытых помещениях, путешествия, солнечное ультрафиолетовое излучение, которое убивает патогены, годичный биоритм гормонов и т. д. Возможно, также, что за это ответственна сезонность вирусов и бактерий.
+		Авторы проанализировали количество смертей от гриппа и пневмонии в Норвегии в 1980-2000 годах, и сравнили с уровнем ультрафиолетового излучения и образующегося им витамином D. Смертность от гриппа повышается через 2 месяца после достижения минимального уровня витамина D, но это, вероятно, из-за того, что болезнь обычно начинается за несколько недель до смерти.
+		Максимальный уровень витамина D наблюдается в середине лета, а минимальный в феврале.
+		У женщин, которые избегают прямых солнечных лучей, уровень витамина D составляет 25 nmol/L.
+		Норвегия находится на 58-70 градусах широты, и витамин D синтезируется на коже только летом.
+		В тропиках сезонность гриппа не наблюдается, но начиная с 20-30 градусов широты уже наблюдается. На первый взгляд это неожиданно, однако на 25-й широте в конце июня на коже синтезируется в 5 раз больше витамина D, чем в конце декабря.
+		Известно, что витамин D укрепляет иммунитет."
+    },
+    {
+        "num": 75,
+        "title": "Epidemic influenza and vitamin D.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2870528/",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "Cannell",
+        "infoID": "PMC2870528",
+        "info_place": "Epidemiol Infect",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Большинство витамина D вырабатывается под воздействием солнца.
+		В средних широтах многие имеют низкий уровень витамина D, особенно зимой.
+		Пожилые люди вырабатывают в четыре раза меньше витамина D по сравнению с 20-летними, под воздействием одинакового солнечного излучения.
+		В Лондоне (52-я широта) витамин D не вырабатывается с октября по март, так как всё UVB излучение фильтруется озонным слоем. Зимняя смертность в Великобритании обратно пропорциональна количеству солнечного света. Каждый дополнительный час солнца снижает смертность на 2.9%.
+		У привитых живой вакциной в феврале в 2 раза чаще поднимается температура, чем у привитых в июне. У привитых летом образуется меньше антител. 40% привитых в декабре выделяют вирус, по сравнению с 16% привитых в сентябре.
+		Не обнаружилось свидетельств токсичности витамина D, даже в количестве 50,000 МЕ ежедневно на протяжении 6 недель. Одноразовая доза в 600,000 МЕ внутримышечно тоже не токсична."
+    },
+    {
+        "num": 76,
+        "title": "Randomized trial of vitamin D supplementation to prevent seasonal influenza A in schoolchildren.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20219962",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Urashima",
+        "infoID": "20219962",
+        "info_place": "Am J Clin Nutr",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Рандомизированное двойное слепое плацебо-контролируемое исследование влияния витамина D на заболеваемость гриппом. Дети, которые получали 1200 МЕ витамина D3 в день болели гриппом на 42% меньше."
+    },
+    {
+        "num": 77,
+        "title": "Vitamin D for prevention of respiratory tract infections: A systematic review and meta-analysis.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3543548/",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Charan",
+        "infoID": "PMC3543548",
+        "info_place": "J Pharmacol Pharmacother",
+        "info_geo": "vitamin D",
+        "I_S_codenames": [""],
+        "digest": "Систематический обзор и метаанализ влияния витамина D на заболеваемость ОРЗ. Включены лишь рандомизированные плацебо-контролируемые исследования (5). Витамин D снижал заболеваемость на 42% у детей, и на 35% у взрослых."
+    },
+    {
+        "num": 78,
+        "title": "Vitamin D and Respiratory Tract Infections: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3686844/",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Bergman",
+        "infoID": "PMC3686844",
+        "info_place": "PLoS One",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Похожий систематический обзор и метаанализ (11 исследований). Витамин D снижает риск ОРВИ на 36%. Небольшие каждодневные дозы снижают риск ОРВИ на 49%, тогда как нечастые большие дозы витамина менее эффективны, и снижают риск ОРВИ лишь на 14%."
+    },
+    {
+        "num": 79,
+        "title": "Vitamin D, innate immunity and outcomes in community acquired pneumonia.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21244571",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Leow",
+        "infoID": "21244571",
+        "info_place": "Respirology",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Среди пациентов, поступивших в больницу с пневмонией, смертность у тех, у кого был дефицит витамина D (менее 30 nmol/L) была в 12.7 раз выше, чем среди тех, у кого уровень витамина был выше 50 nmol/L."
+    },
+    {
+        "num": 80,
+        "title": "Association of subclinical vitamin D deficiency in newborns with acute lower respiratory infection and their mothers.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/18030309",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Karatekin",
+        "infoID": "18030309",
+        "info_place": "Eur J Clin Nutr",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Уровень витамина D у новорожденных, госпитализированных с острой респираторной инфекцией, был значительно ниже, чем у здоровых новорожденных (9.12 vs 16.33 ng/mL).
+		Уровень витамина D у матерей госпитализированнных новорожденных также был ниже, чем у матерей здоровых малышей (13.38 vs 22.79 ng/mL).
+		Наблюдалась высокая корреляция между уровнем витамина D у новорожденных, и у их матерей."
+    },
+    {
+        "num": 81,
+        "title": "Cord-blood 25-hydroxyvitamin D levels and risk of respiratory infection, wheezing, and asthma.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21187313",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Camargo",
+        "infoID": "21187313",
+        "info_place": "Pediatrics",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Авторы измерили уровень витамина D в пуповине у 922 новорожденных.
+		В последующие 3 месяца после рождения, риск респираторных заболеваний и прочих инфекций у младенцев, с уровнем витамина ниже 25 nmol/L, был в 2 раза выше, чем у младенцев с уровнем витамина выше 75 nmol/L. Риск хрипа у детей с низким уровнем витамина D при рождении, был в 2 раза выше до пятилетнего возраста, чем у младенцев с высоким уровнем витамина."
+    },
+    {
+        "num": 82,
+        "title": "Cord blood vitamin D deficiency is associated with respiratory syncytial virus bronchiolitis.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21555499",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Belderbos",
+        "infoID": "21555499",
+        "info_place": "Pediatrics",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Младенцы, с уровнем витамина D в пуповине ниже 50 nmol/L, болели бронхиолитом в первый год жизни в 6.2 раза чаще, чем те, у кого уровень витамина при рождении был выше 75 nmol/L.
+		В западных странах у 40% беременных и у 50% новорожденных наблюдается дефицит витамина D.
+		Дефицит витамина D во время беременности ассоциирован с диабетом 1 типа, рассеянным склерозом, шизофренией и респираторными заболеваниями у детей."
+    },
+    {
+        "num": 83,
+        "title": "Association of subclinical vitamin D deficiency with severe acute lower respiratory infection in Indian children under 5 y.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15042122",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Wayse",
+        "infoID": "15042122",
+        "info_place": "Eur J Clin Nutr",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Дети с уровнем витамина D выше 22.5 nmol/L болели пневмонией на 91% реже. Исключительное ГВ на протяжении 4 месяцев снижало риск пневмонии на 58%."
+    },
+    {
+        "num": 84,
+        "title": "Serum 25-hydroxyvitamin D, mortality, and incident cardiovascular disease, respiratory disease, cancers, and fractures: a 13-y prospective population study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4196486/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Khaw",
+        "infoID": "PMC4196486",
+        "info_place": "Am J Clin Nutr",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Проспективное исследование 14 тысяч человек в Великобритании, за которыми наблюдали 13 лет.
+		Чем выше был уровень витамина D, тем ниже была смертность. Среди тех, у кого уровень витамина D был выше 90 nmol/L, смертность была на 34% ниже, чем у людей с уровнем витамина 30 nmol/L и ниже. Риск смерти от сердечно-сосудистых заболеваний у них был на 38% ниже, от рака - на 15% ниже, от респираторных заболеваний - на 78% ниже."
+    },
+    {
+        "num": 85,
+        "title": "An association of serum vitamin D concentrations &lt; 40 nmol/L with acute respiratory tract infection in young Finnish men.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/17823437",
+        "info_type": "article",
+        "info_date": "2007",
+        "info_authors": "Laaksi",
+        "infoID": "17823437",
+        "info_place": "Am J Clin Nutr",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Солдаты с низким уровнем витамина D (ниже 40 nmol/L) болели респираторными заболеваниями на 63% чаще, чем солдаты с уровнем витамина выше 40 nmol/L.
+		У курящих солдат уровень витамина D был ниже, чем у некурящих. У солдат занимающихся спортом более 5 часов в неделю, уровень витамина D был выше."
+    },
+    {
+        "num": 86,
+        "title": "Serum 25-hydroxyvitamin d and the incidence of acute viral respiratory tract infections in healthy adults.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2885414/",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Sabetta",
+        "infoID": "PMC2885414",
+        "info_place": "PLoS One",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Взрослые с уровнем витамина D выше 38 ng/mL болели ОРЗ в 2.7 раз реже, а продолжительность болезни у них была в 4.9 раз меньше. Вакцина от гриппа на заболеваемость не влияла."
+    },
+    {
+        "num": 87,
+        "title": "Reduced primary care respiratory infection visits following pregnancy and infancy vitamin D supplementation: a randomised controlled trial.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/25283480",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Grant",
+        "infoID": "",
+        "info_place": "Acta Paediatr",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Eще несколько исследований о связи витамина D с гриппом и другими ОРЗ:
+		1) [Reduced primary care respiratory infection visits following pregnancy and infancy vitamin D supplementation: a randomised controlled trial. (Grant, 2015, Acta Paediatr)==https://www.ncbi.nlm.nih.gov/pubmed/25283480]
+		2) [The seasonality of pandemic and non-pandemic influenzas: the roles of solar radiation and vitamin D. (Juzeniene, 2010, Int J Infect Dis)==https://www.ncbi.nlm.nih.gov/pubmed/21036090]
+		3) [Vitamin D status has a linear association with seasonal infections and lung function in British adults. (Berry, 2011, Br J Nutr)==https://www.ncbi.nlm.nih.gov/pubmed/21736791]
+		4) [The prevalence of vitamin D deficiency among schoolchildren: a cohort study from Xinxiang, China. (Li, 2015, J Pediatr Endocrinol Metab)==https://www.ncbi.nlm.nih.gov/pubmed/25581743]
+		5) [Randomized trial of vitamin D supplementation for winter-related atopic dermatitis in children. (Camargo, 2014, J Allergy Clin Immunol)==https://www.ncbi.nlm.nih.gov/pubmed/25282565]
+		6) [Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data. (Martineau, 2017, BMJ)==http://www.bmj.com/content/356/bmj.i6583]
+		7) [The role of UV radiation and vitamin D in the seasonality and outcomes of infectious disease. (Abhimanyu, 2017, Photochem Photobiol Sci)==https://www.ncbi.nlm.nih.gov/pubmed/28078341]
+		8) [Cord blood 25(OH)D levels and the subsequent risk of lower respiratory tract infections in early childhood: the Ulm birth cohort. (Łuczyńska, 2014, Eur J Epidemiol)==https://www.ncbi.nlm.nih.gov/pubmed/24859820]
+		9) [Vitamin D status and acute lower respiratory infection in early childhood in Sylhet, Bangladesh. (Roth, 2010, Acta Paediatr)==https://www.ncbi.nlm.nih.gov/pubmed/19900174]
+		10) [Serum vitamin D concentrations and associated severity of acute lower respiratory tract infections in Japanese hospitalized children. (Inamo, 2011, Pediatr Int)==https://www.ncbi.nlm.nih.gov/pubmed/21648117]
+		11) [Vitamin D deficiency in young children with severe acute lower respiratory infection. (McNally, 2009, Pediatr Pulmonol)==https://www.ncbi.nlm.nih.gov/pubmed/19746437]
+		12) [Effect of daily cod liver oil and a multivitamin-mineral supplement with selenium on upper respiratory tract pediatric visits by young, inner-city, Latino children: randomized pediatric sites. (Linday, 2004, Ann Otol Rhinol Laryngol)==https://www.ncbi.nlm.nih.gov/pubmed/15562899]
+		13) [Low Retinol-Binding Protein and Vitamin D Levels Are Associated with Severe Outcomes in Children Hospitalized with Lower Respiratory Tract Infection and Respiratory Syncytial Virus or Human Metapneumovirus Detection. (Hurwitz, 2017, J Pediatr)==https://www.ncbi.nlm.nih.gov/pubmed/28578159]
+		14) [Association Between Serum 25-Hydroxyvitamin D Level and Upper Respiratory Tract Infection in the Third National Health and Nutrition Examination Survey. (Ginde, 2009, Arch Intern Med)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447082/]
+		15) [Low Serum 25-Hydroxyvitamin D Level and Risk of Upper Respiratory Tract Infection in Children and Adolescents. (Science, 2013, Clin Infect Dis)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3888147/]
+		16) [Maternal vitamin D supplementation during pregnancy and lactation to prevent acute respiratory infections in infancy in Dhaka, Bangladesh (MDARI trial): protocol for a prospective cohort study nested within a randomized controlled trial. (Morris, 2016, BMC Pregnancy Childbirth)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5064894/]
+		17) [Re: Epidemic influenza and vitamin D. (Aloia, 2007, Epidemiol Infect)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2870688/]
+		18) [The possible roles of solar ultraviolet-B radiation and vitamin D in reducing case-fatality rates from the 1918-1919 influenza pandemic in the United States. (Grant, 2009, Dermatoendocrinol)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835877/]"
+    },
+    {
+        "num": 88,
+        "title": "On the epidemiology of influenza.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2279112/",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Cannell",
+        "infoID": "PMC2279112",
+        "info_place": "Virol J",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Очень интересная обзорная статья про эпидемиологию гриппа и витaмин D, стоит прочитать полностью. Среди прочего, оказывается, что в многочисленных лабораторных экспериментах так и не смогли доказать, что больной гриппом человек может заразить здорового."
+    },
+    {
+        "num": 89,
+        "title": "Vitamin D: a new anti-infective agent?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/24593793",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Borella",
+        "infoID": "24593793",
+        "info_place": "Ann N Y Acad Sci",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Низкий уровень витамина D коррелирует также с кишечными инфекциями, пневмонией, отитом, клостридиальными инфекциями, вагинозом, инфекциями мочевыводящих путей, сепсисом, денге, гепатитом В, гепатитом С и ВИЧ. Витамин D используется в лечении остеопороза, ревматизма и рака.
+		До середины 20-го столетия туберкулез лечили в санаториях солнечными ваннами. Также его лечили рыбьим жиром. Эти разные способы лечения имеют один общий компонент - витамин D."
+    },
+    {
+        "num": 90,
+        "title": "Vitamin D for influenza.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4463890/",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Schwalfenberg",
+        "infoID": "PMC4463890",
+        "info_place": "Can Fam Physician",
+        "info_geo": "Canada",
+        "I_S_codenames": ["vitamin D", "oseltamivir", "zanamivir"],
+        "digest": "Тамифлю и Реленза - это бесполезные препараты, которые приносят больше вреда, чем пользы.Я видел как у пациентов в домах престарелых и у персонала начинается из-за них рвота, диарея, галлюцинации, делирий, и ухудшаются когнитивные функции. Прекращение использования этих лекарств приведет к огромной экономии средств.
+		IOM рекомендует принимать 600 МЕ витамина D тем, кто моложе 70 лет, для достижения уровня 50 nmol/L у 97.5% людей. Однако, в их рекомендации содержится статистическая ошибка, и на самом деле нужно принимать 8800 МЕ для достижения этого уровня.
+		Уже несколько лет, как я и мой коллега даем пациентам витамин D, и у большинства из них уровень витамина составляет более 100 nmol/L. Мы редко видим теперь пациентов с гриппом или ОРЗ, а когда видим, то даем им ударные дозы витамина D (одноразовую дозу в 50,000 МЕ, или по 10,000 МЕ 3 раза в день на протяжении 2-3 дней). Симптомы полностью проходят за 48-72 часа. Витамин D стоит пенни за 1000 МЕ, то есть это лечение стоит меньше доллара."
+    },
+    {
+        "num": 91,
+        "title": "Pandemic preparedness for swine flu influenza in the United States.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20102323",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Edlich",
+        "infoID": "20102323",
+        "info_place": "J Environ Pathol Toxicol Oncol",
+        "info_geo": "",
+        "I_S_codenames": ["vitamin D"],
+        "digest": "Некоторые медицинские работники, возможно, не захотят прививаться от свиного гриппа, поскольку вакцина содержит ртутный консервант тиомерсал, который может быть вреден для здоровья. Им следует проверить уровень витамина D, и восполнить дефицит в случае необходимости.
+		Оптимальный уровень витамина D составляет 50-75 ng/mL, а оптимальная доза для взрослых составляет 4000-5000 МЕ в день."
+    },
+    {
+        "num": 92,
+        "digest": "P.S.: Под витамином D здесь имеется в виду D3. Подходите осторожно к выбору препарата, не все они они одинаково безопасны. А лучше всего вообще не использовать добавок, а просто больше бывать на солнце.
+		P.S. 2: Лично я склоняюсь к тому, что профилактический прием витамина D - это, возможно, неплохая идея для взрослых и пожилых, но я пока не уверен, что это хорошая идея для детей, и тем более для младенцев.
+		P.S.3: Статьи Weston A Price о витамине D: [[1]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/from-seafood-to-sunshine-a-new-understanding-of-vitamin-d-safety/], [[2]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/update-on-vitamins-a-and-d/]. Там пишут, что слишком высокий уровень витамина D повышает риск сердечных болезней и остеопороза."
+    },
+    {
+        "num": 93,
+        "title": "Live Attenuated Influenza Vaccine Enhances Colonization of Streptococcus pneumoniae and Staphylococcus aureus in Mice.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3944816/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Mina",
+        "infoID": "PMC3944816",
+        "info_place": "MBio",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Вакцинация живой вакциной от гриппа значительно повышает колонизацию пневмококка и золотистого стрептококка верхних дыхательных путей у мышей."
+    },
+    {
+        "num": 94,
+        "title": "Live Attenuated Influenza Virus Increases Pneumococcal Translocation and Persistence Within the Middle Ear.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4654764/",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Mina",
+        "infoID": "PMC4654764",
+        "info_place": "J Infect Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Вакцинация живой вакциной от гриппа также повышает колонизацию пневмококка в среднем ухе у мышей, что может повысить вероятность отита."
+    },
+    {
+        "num": 95,
+        "title": "Use of the Inactivated Intranasal Influenza Vaccine and the Risk of Bell&#39;s Palsy in Switzerland.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/14985487",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Mutsch",
+        "infoID": "14985487",
+        "info_place": "N Engl J Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Инактивированная назальная вакцина, которая использовалась в Швейцарии, повышала риск паралича лицевого нерва в 84 раза."
+       }
+	   ]
+}

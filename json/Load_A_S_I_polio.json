@@ -5,7 +5,7 @@
 "I_S_type_this": "disease",
 "I_S_name": "Полиомиелит",
 "date": "24-10-2017",
-"intro": ""
+"intro": "",
 "epigraph": {
 		"text": "The only safe vaccine is one that is never used.",
 		"source": "Dr. James Shannon, director of the NIH",
@@ -17,8 +17,7 @@
         "digest": "Несмотря на то, что полиомиелит в развитых странах уже десятки лет не наблюдается, он, почему-то, продолжает вселять ужас."
     },
     {
-        "num": 
-<a href="https://www,
+        "num": 2,
         "title": "CDC Pinkbook Polio",
         "link": "https://www.cdc.gov/vaccines/pubs/pinkbook/polio.html",
         "info_type": "cdc",

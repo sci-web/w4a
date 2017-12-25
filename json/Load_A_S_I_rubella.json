@@ -230,23 +230,169 @@
         "info_geo": "",
         "I_S_codenames": [""],
         "digest": "Вакцинация матери не всегда даёт защиту от синдрома врожденной краснухи для ребенка. Здесь приводится случай матери, которая за 7 лет до беременности была привита, за 3 года до беременности у нее был выявлен достаточный уровень антител, но тем не менее она заразилась краснухой во время беременности.
-		Вот еще несколько подобных случаев:
-		1) [Subclinical rubella reinfection in vaccinated women with rubella-specific IgM response during pregnancy and transmission of virus to the fetus. (Forsgren, 1985, Scand J Infect Dis)==https://www.ncbi.nlm.nih.gov/pubmed/4089542 ]
-		2) [Subclinical congenital rubella infection associated with maternal rubella vaccination in early pregnancy. (Hayden, 1980, J Pediatr)==https://www.ncbi.nlm.nih.gov/pubmed/7365590]
-		3) [Rubella embryopathy after previous maternal rubella vaccination. (Enders, 1984, Infection)==https://www.ncbi.nlm.nih.gov/pubmed/6735484]
-		4) [Outcome of pregnancy after maternal reinfection with rubella. (Morgan-Capner, 1991, CDR (Lond Engl Rev))==https://www.ncbi.nlm.nih.gov/pubmed/1669775]
-		5) [Fetal infection after maternal reinfection with rubella. (Gilbert, 1989, BMJ)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1838098/]
-		6) [Congenital rubella syndrome after maternal reinfection. (Bullens, 2000, Clin. Pediatr)==https://www.ncbi.nlm.nih.gov/pubmed/10696549]
-		7) [Congenital rubella syndrome after maternal reinfection. (Weber, 1993, Infection)==https://www.ncbi.nlm.nih.gov/pubmed/8491520]
-		8) [Congenital rubella syndrome after maternal immunization. (Miron, 1992, Harefuah)==https://www.ncbi.nlm.nih.gov/pubmed/1572573]
-		9) [Congenital rubella syndrome despite repeated vaccination of the mother: a coincidence of vaccine failure with failure to vaccinate. (Braun, 1994, Acta Paediatr)==https://www.ncbi.nlm.nih.gov/pubmed/7919771]
-		10) [Congenital rubella syndrome despite maternal antibodies. (Banerji, 2005, CMAJ)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1150255/]
-		11) [Congenital rubella syndrome due to infection after maternal antibody conversion with vaccine. (Ushida, 2003, Jpn J Infect Dis)==https://www.ncbi.nlm.nih.gov/pubmed/12824690]
-		12) [Congenital rubella after successful vaccination. (Bott, 1982, Med J Aust)==https://www.ncbi.nlm.nih.gov/pubmed/7099094]
-		13) [Congenital rubella after previous maternal immunity. (Das, 1990, Arch Dis Child)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1792151/]
-		14) [Congenital rubella after previous maternal vaccination. (Condon, 1992, Med J Aust)==https://www.ncbi.nlm.nih.gov/pubmed/1603016]
-		15) [Congenital rubella after anticipated maternal immunity: two cases and a review of the literature. (Robinson, 1994, Pediatr Infect Dis J)==https://www.ncbi.nlm.nih.gov/pubmed/7808852]
-		16) [Congenital rubella infection from reinfection of previously immunised mothers. (Keith, 1991, Aust N Z J Ophthalmol)==https://www.ncbi.nlm.nih.gov/pubmed/1789966]"
+		Вот еще несколько подобных случаев:",
+		"sources_pool": [
+            {
+                "num": 1,
+				"title": "Subclinical rubella reinfection in vaccinated women with rubella-specific IgM response during pregnancy and transmission of virus to the fetus.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/4089542",
+                "info_type": "article",
+                "info_date": "1985",
+                "info_authors": "Forsgren",
+                "infoID": "4089542",
+                "info_place": "Scand J Infect Dis",
+            },
+			{
+                "num": 2,
+				"title": "Subclinical congenital rubella infection associated with maternal rubella vaccination in early pregnancy.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/7365590",
+                "info_type": "article",
+                "info_date": "1980",
+                "info_authors": "Hayden",
+                "infoID": "7365590",
+                "info_place": "J Pediatr",
+            },
+			{
+                "num": 3,
+				"title": "Rubella embryopathy after previous maternal rubella vaccination.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/6735484",
+                "info_type": "article",
+                "info_date": "1984",
+                "info_authors": "Enders",
+                "infoID": "6735484",
+                "info_place": "Infection",
+            },
+			{
+                "num": 4,
+				"title": "Outcome of pregnancy after maternal reinfection with rubella.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/1669775",
+                "info_type": "article",
+                "info_date": "1991",
+                "info_authors": "Morgan-Capner",
+                "infoID": "1669775",
+                "info_place": "CDR (Lond Engl Rev)",
+            },
+			{
+                "num": 5,
+				"title": "Fetal infection after maternal reinfection with rubella.",
+                "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1838098/",
+                "info_type": "article",
+                "info_date": "1989",
+                "info_authors": "Gilbert",
+                "infoID": "PMC1838098",
+                "info_place": "BMJ",
+            },
+			{
+                "num": 6,
+				"title": "Congenital rubella syndrome after maternal reinfection.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/10696549",
+                "info_type": "article",
+                "info_date": "2000",
+                "info_authors": "Bullens",
+                "infoID": "10696549",
+                "info_place": "Clin. Pediatr",
+            },
+			{
+                "num": 7,
+				"title": "Congenital rubella syndrome after maternal reinfection.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/8491520",
+                "info_type": "article",
+                "info_date": "1993",
+                "info_authors": "Weber",
+                "infoID": "8491520",
+                "info_place": "Infection",
+            },
+			{
+                "num": 8,
+				"title": "Congenital rubella syndrome after maternal immunization.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/1572573",
+                "info_type": "article",
+                "info_date": "1992",
+                "info_authors": "Miron",
+                "infoID": "1572573",
+                "info_place": "Harefuah",
+            },
+			{
+                "num": 9,
+				"title": "Congenital rubella syndrome despite repeated vaccination of the mother: a coincidence of vaccine failure with failure to vaccinate.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/7919771",
+                "info_type": "article",
+                "info_date": "1994",
+                "info_authors": "Braun",
+                "infoID": "7919771",
+                "info_place": "Acta Paediatr",
+            },
+			{
+                "num": 10,
+				"title": "Congenital rubella syndrome despite maternal antibodies.",
+                "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1150255/",
+                "info_type": "article",
+                "info_date": "2005",
+                "info_authors": "Banerji",
+                "infoID": "PMC1150255",
+                "info_place": "CMAJ",
+            },
+			{
+                "num": 11,
+				"title": "Congenital rubella syndrome due to infection after maternal antibody conversion with vaccine.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/12824690",
+                "info_type": "article",
+                "info_date": "2003",
+                "info_authors": "Ushida",
+                "infoID": "12824690",
+                "info_place": "Jpn J Infect Dis",
+            },
+			{
+                "num": 12,
+				"title": "Congenital rubella after successful vaccination.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/7099094",
+                "info_type": "article",
+                "info_date": "1982",
+                "info_authors": "Bott",
+                "infoID": "7099094",
+                "info_place": "Med J Aust",
+            },			
+			{
+                "num": 13,
+				"title": "Congenital rubella after previous maternal immunity.",
+                "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1792151/",
+                "info_type": "article",
+                "info_date": "1990",
+                "info_authors": "Das",
+                "infoID": "PMC1792151",
+                "info_place": "Arch Dis Child",
+            },
+			{
+                "num": 14,
+				"title": "Congenital rubella after previous maternal vaccination.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/1603016",
+                "info_type": "article",
+                "info_date": "1992",
+                "info_authors": "Condon",
+                "infoID": "1603016",
+                "info_place": "Med J Aust",
+            },			
+			{
+                "num": 15,
+				"title": "Congenital rubella after anticipated maternal immunity: two cases and a review of the literature.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/7808852",
+                "info_type": "article",
+                "info_date": "1994",
+                "info_authors": "Robinson",
+                "infoID": "7808852",
+                "info_place": "Pediatr Infect Dis J",
+            },
+			{
+                "num": 16,
+				"title": "Congenital rubella infection from reinfection of previously immunised mothers.",
+                "link": "https://www.ncbi.nlm.nih.gov/pubmed/1789966",
+                "info_type": "article",
+                "info_date": "1991",
+                "info_authors": "Keith",
+                "infoID": "1789966",
+                "info_place": "Aust N Z J Ophthalmol",
+            },
+			]
     },
     {
         "num": 16,

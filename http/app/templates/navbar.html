@@ -10,8 +10,9 @@
       <ul class="nav navbar-nav">
         <li class="dropdown"><a href="/vaccines">Прививки <span class="caret"></span></a>
           <ul class="dropdown-menu">
-              <li><a href="/vaccines/measles">Корь</a></li>
-              <li><a href="/vaccines/mumps">Свинка</a></li>
+          {% for entry in items %}
+              <li><a href="/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.I_S_name }}</a></li>
+          {% endfor %}
           </ul>
         </li>
       </ul>
@@ -19,7 +20,7 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Поиск…">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+<!--        <button type="submit" class="btn btn-default">Submit</button> -->
       </form>
       <ul class="nav navbar-nav navbar-right hli">
         <li>
@@ -28,12 +29,6 @@
             {% else %}
               <a onClick="javascript:showDiv('lf')" style="cursor:pointer;">Login</a>
             {% endif %}
-        </li>
-        <li>
-          <a href="#">System <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">EN</a></li>
-          </ul>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

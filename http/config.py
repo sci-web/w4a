@@ -6,9 +6,9 @@ DB_NAME = 'w4a'
 
 # DATABASE = MongoClient("mongodb://ant-login7.linux.crg.es:27017")[DB_NAME]
 DATABASE = MongoClient()[DB_NAME]
-INTROS = DATABASE.intros_space
-I_S = DATABASE.I_S_objects
-SPACES = DATABASE.analyst_spaces
+INTROS = DATABASE.intros
+# I_S = DATABASE.I_S_objects
+SPACES = DATABASE.a_spaces
 CORE = DATABASE.core
 
 CSV = set(['csv', 'txt'])

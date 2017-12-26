@@ -1,6 +1,6 @@
 from app import app
 from flask import request, redirect, render_template, url_for, flash, Response
-from flask.ext.login import login_user, logout_user, login_required, current_user
+from flask_login import login_user, logout_user, login_required, current_user
 from datetime import date
 from flask_admin.model import typefmt
 import os
@@ -20,10 +20,9 @@ MY_DEFAULT_FORMATTERS.update({
 
 @app.route('/')
 def index():
-    # item = app.config['CORE'].find()
-    item = {}
+    item = DB().get_spaces_by_key("amantonio", "date")
     form = makeform()    
-    return render_template('index.html', form=form)
+    return render_template('index.html', form=form, items=item)
 
 
 @app.route('/next', methods=['GET', 'POST'])

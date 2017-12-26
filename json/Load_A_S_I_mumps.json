@@ -1,18 +1,17 @@
 {
+"analyst": "amantonio",
+"namespace": "vaccines",
 "title": "Свинка",
 "I_S_codename": "mumps",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Свинка",
-"intro" : "",
 "date" : "27-09-2017",
 "epigraph": {
-	"text": "Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive",
-	"source": "C.S. Lewis",
+    "text": "Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive",
+    "source": "C.S. Lewis"
     },
-"points":
-    [
-    {
+"points":[{
         "num": 1,
         "digest": "Свинка (паротит) у детей это обычно настолько тривиальное заболевание, что даже ВОЗ им [не пугает==http://www.who.int/immunization/diseases/mumps/en/]. Однако, пишут они, у взрослых свинка может вызывать тяжелые осложнения. Поэтому важно прививать младенцев."
     },
@@ -65,78 +64,76 @@
         "info_place": "Arch Dis Child",
         "I_S_codenames": ["deafness", "MMR"],
         "digest": "Здесь описываются 9 случаев глухоты после MMR за 4 года со времени введения вакцины. Авторы заключают, что 3 случая не связаны с прививкой (но не объясняют почему), а 6 остальных может связаны, а может и нет.<br>Поскольку одностороннюю глухоту трудно диагностировать у детей, а прививают их в 12 месяцев, то возможно были другие случаи, которые пропустили.<br>Авторы предлагают проверить слух детей при поступлении в школу, и сравнить с историческими данными, чтобы понять, влияет ли MMR на слух.<br>Еще несколько случаев глухоты после MMR:",
-        	"sources_pool": [
-		{
-			"title": "[1]",
-			"info_type": "article",
-			"infoID": "PMC1833873",
-			"info_date": "1988",
-			"link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1833873",
-		},
-		{
-			"title": "[2]",
-			"info_type": "article",
-			"infoID": "10.1056/NEJM199107113250217",
+            "sources_pool": [{
+            "title": "[1]",
+            "info_type": "article",
+            "infoID": "PMC1833873",
+            "info_date": "1988",
+            "link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1833873"
+        },
+        {
+            "title": "[2]",
+            "info_type": "article",
+            "infoID": "10.1056/NEJM199107113250217",
                         "info_date": "1991",
-			"link" : "http://www.nejm.org/doi/full/10.1056/NEJM199107113250217",
-		},
-		{
-			"title": "[3]",
-			"info_type": "article",
-			"infoID": "1960595",
-			"info_date": "1991",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/1960595",
-		},
-		{
-			"title": "[4]",
-			"info_type": "article",
-			"infoID": "9596372",
-			"info_date": "1998",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/9596372",
-		},
-		{
-			"title": "[5]",
-			"info_type": "article",
-			"infoID": "5033251",
-			"info_date": "1972",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/5033251",
-		},
-		{
-			"title": "[6]",
-			"info_type": "article",
-			"infoID": "237360",
-			"info_date": "1975",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/237360",
-		},
-		{
-			"title": "[7]",
-			"info_type": "article",
-			"infoID": "4093255",
-			"info_date": "1985",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/4093255",
-		},
-		{
-			"title": "[8]",
-			"info_type": "article",
-			"infoID": "15871835",
-			"info_date": "2005",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/15871835",
-		},
-		{
-			"title": "[9]",
-			"info_type": "mass-media",
-			"infoID": "18255204",
-			"info_date": "2012",
-			"link" : "http://www.huffingtonpost.co.uk/2012/09/05/mmr-vaccine-deafness_n_1856929.html",
-		},
-		{
-			"Di": "В VAERS зарегистрированы еще 44 случая",
-			"info_type": "article",
-			"infoID": "18255204",
-			"info_date": "2008",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/18255204",
-		}
-	]
+            "link" : "http://www.nejm.org/doi/full/10.1056/NEJM199107113250217"
+        },
+        {
+            "title": "[3]",
+            "info_type": "article",
+            "infoID": "1960595",
+            "info_date": "1991",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/1960595"
+        },
+        {
+            "title": "[4]",
+            "info_type": "article",
+            "infoID": "9596372",
+            "info_date": "1998",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/9596372"
+        },
+        {
+            "title": "[5]",
+            "info_type": "article",
+            "infoID": "5033251",
+            "info_date": "1972",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/5033251"
+        },
+        {
+            "title": "[6]",
+            "info_type": "article",
+            "infoID": "237360",
+            "info_date": "1975",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/237360"
+        },
+        {
+            "title": "[7]",
+            "info_type": "article",
+            "infoID": "4093255",
+            "info_date": "1985",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/4093255"
+        },
+        {
+            "title": "[8]",
+            "info_type": "article",
+            "infoID": "15871835",
+            "info_date": "2005",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/15871835"
+        },
+        {
+            "title": "[9]",
+            "info_type": "mass-media",
+            "infoID": "18255204",
+            "info_date": "2012",
+            "link" : "http://www.huffingtonpost.co.uk/2012/09/05/mmr-vaccine-deafness_n_1856929.html"
+        },
+        {
+            "Di": "В VAERS зарегистрированы еще 44 случая",
+            "info_type": "article",
+            "infoID": "18255204",
+            "info_date": "2008",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/18255204"
+        }]
     },
     {
         "num": 7,
@@ -150,7 +147,7 @@
         "I_S_codenames": ["meningoencephalitis"],
         "digest": "Здесь сообщается о 119 случаях менингоэнцефалита вследствие свинки в Сан Франциско за 12 лет (1943-1955). Проходит он обычно мягко, без осложнений, без неврологических последствий, длится менее пяти дней, и госпитализация редко необходима. Смерть вследствие менингоэнцефалита от свинки это очень редкое явление, и во всей медицинской литературе описаны лишь 3 таких случая (включая один из этих 119)."
     },
-   {
+    {
         "num": 8,
         "header": "Эффективность",
         "title": "Mumps in the workplace. Further evidence of the changing epidemiology of a childhood vaccine-preventable disease.",
@@ -232,57 +229,55 @@
         "infoID": "21983359",
         "info_place": "Vaccine",
         "digest": "Как и в случае с корью, поскольку вакцина от свинки живая, после прививки вакцинируемый становится заразным&nbsp;для других. Еще подобные исследования:",
-                	"sources_pool": [
-		{
-			"title": "[1]",
-			"info_type": "article",
-			"info_authors": "Kaic B",
-			"infoID": "18768116",
-			"info_date": "2008",
-			"info_geo": "Croatia",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/18768116",
-		},
-		{
-			"title": "[2]",
-			"info_type": "article",
-			"info_authors": "Otrashevskaia EV",
-			"infoID": "24772647",
-                        "info_date": "2013",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/24772647",
-		},
-		{
-			"title": "[3]",
-			"info_type": "article",
-			"info_authors": "Tesović G",
-			"infoID": "18329761",
-			"info_date": "2008",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/18329761",
-		},
-		{
-			"title": "[4]",
-			"info_type": "article",
-			"info_authors": "Atrasheuskaya A",
-			"infoID": "22749598",
-			"info_date": "2012",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/22749598",
-		},
-		{
-			"title": "[5]",
-			"info_type": "article",
-			"info_authors": "Atrasheuskaya AV",
-			"infoID": "16266774",
-			"info_date": "2006",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/16266774",
-		},
-		{
-			"title": "[6]",
-			"info_type": "article",
-			"info_authors": "Vukić BT",
-			"infoID": "18639602",
-			"info_date": "2008",
-			"link" : "https://www.ncbi.nlm.nih.gov/pubmed/18639602",
-		},
-	]
+                    "sources_pool": [{
+            "title": "[1]",
+            "info_type": "article",
+            "info_authors": "Kaic B",
+            "infoID": "18768116",
+            "info_date": "2008",
+            "info_geo": "Croatia",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/18768116"
+        },
+        {
+            "title": "[2]",
+            "info_type": "article",
+            "info_authors": "Otrashevskaia EV",
+            "infoID": "24772647",
+            "info_date": "2013",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/24772647"
+        },
+        {
+            "title": "[3]",
+            "info_type": "article",
+            "info_authors": "Tesović G",
+            "infoID": "18329761",
+            "info_date": "2008",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/18329761"
+        },
+        {
+            "title": "[4]",
+            "info_type": "article",
+            "info_authors": "Atrasheuskaya A",
+            "infoID": "22749598",
+            "info_date": "2012",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/22749598"
+        },
+        {
+            "title": "[5]",
+            "info_type": "article",
+            "info_authors": "Atrasheuskaya AV",
+            "infoID": "16266774",
+            "info_date": "2006",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/16266774"
+        },
+        {
+            "title": "[6]",
+            "info_type": "article",
+            "info_authors": "Vukić BT",
+            "infoID": "18639602",
+            "info_date": "2008",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/18639602"
+        }]
     },
     {
         "num": 15,
@@ -371,8 +366,7 @@
         "info_place": "Vaccine",
         "I_S_codenames": ["orchitis", "MMR"],
         "digest": "Орхит вполне может возникнуть как следствие прививки от свинки:",
-        "sources_pool": [
-            {
+        "sources_pool": [{
                 "num": 1,
                 "title": "Case of mumps orchitis after vaccination.",
                 "link": "https://www.ncbi.nlm.nih.gov/pubmed/24164648",
@@ -380,7 +374,7 @@
                 "info_date": "2014",
                 "info_authors": "Kanda",
                 "infoID": "24164648",
-                "info_place": "Int J Urol",
+                "info_place": "Int J Urol"
             },
             {
                 "num": 2,
@@ -390,7 +384,7 @@
                 "info_date": "2008",
                 "info_authors": "Abdelbaky",
                 "infoID": "PMC2647202",
-                "info_place": "Ann R Coll Surg Engl",
+                "info_place": "Ann R Coll Surg Engl"
             },
             {
                 "num": 3,
@@ -400,7 +394,7 @@
                 "info_date": "1994",
                 "info_authors": "Kuczyk",
                 "infoID": "7645149",
-                "info_place": "Urol Int",
+                "info_place": "Urol Int"
             },
             {
                 "num": 4,
@@ -409,10 +403,8 @@
                 "info_type": "article",
                 "info_date": "2002",
                 "info_authors": "Suzuki",
-                "info_place": "Jpn J Urol",
-            },
-
-	]
+                "info_place": "Jpn J Urol"
+            }]
     },
     {
         "num": 24,
@@ -426,7 +418,7 @@
         "I_S_codenames": ["MMR", "encephalitis"],
         "digest": "14-месячному мальчику сделали прививку MMR, а через 4 месяца у него диагностировали тяжёлый комбинированный иммунодефицит. Потом ему успешно сделали пересадку костного мозга, и у него начался хронический энцефалит, а в 5 лет он умер. Когда ему сделали биопсию мозга, то обнаружили в мозгу вакцинный штамм вируса свинки. Это был первый случай панэнцефалита вызванного вирусом свинки."
     },
-   {
+    {
         "num": 25,
         "header": "Польза свинки",
         "digest": "В предыдущей части были среди прочего приведены исследования согласно которым свинка в детстве снижает риск онкологических, неврологических и сердечно-сосудистых заболеваний. Здесь я остановлюсь подробнее на раке яичника."

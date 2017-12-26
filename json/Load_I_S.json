@@ -3,344 +3,352 @@
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Свинка",
-"I_S_name_en": "Mumps",
-},
+"I_S_name_en": "Mumps"
+}
 {
 "I_S_codename": "measles",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Корь",
-"I_S_name_en": "Measles",
-},
+"I_S_name_en": "Measles"
+}
 {
 "I_S_codename": "orchitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Орхит",
-"I_S_name_en": "Orchitis",
-},
+"I_S_name_en": "Orchitis"
+}
 {
 "I_S_codename": "meningitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Менингит",
-"I_S_name_en": "Meningitis",
-},
+"I_S_name_en": "Meningitis"
+}
 {
 "I_S_codename": "deafness",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Глухота",
-"I_S_name_en": "Deafness",
-},
+"I_S_name_en": "Deafness"
+}
 {
 "I_S_codename": "meningoencephalitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Менингоэнцефалит",
-"I_S_name_en": "Meningoencephalitis",
-},
+"I_S_name_en": "Meningoencephalitis"
+}
 {
 "I_S_codename": "pancreatitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Панкреатит",
-"I_S_name_en": "Pancreatitis",
-},
+"I_S_name_en": "Pancreatitis"
+}
 {
 "I_S_codename": "encephalitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Энцефалит",
-"I_S_name_en": "Encephalitis",
-},
+"I_S_name_en": "Encephalitis"
+}
 {
 "I_S_codename": "hemorrhagic vasculitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Геморрагический Васкулит",
-"I_S_name_en": "Hemorrhagic Vasculitis",
-},
+"I_S_name_en": "Hemorrhagic Vasculitis"
+}
 {
 "I_S_codename": "cancer",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Рак",
-"I_S_name_en": "Cancer",
-},
+"I_S_name_en": "Cancer"
+}
 {
 "I_S_codename": "fetal bovine serum",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Эмбриональная бычья сыворотка",
 "I_S_link": "https://en.wikipedia.org/wiki/Fetal_bovine_serum",
-"I_S_name_en": "Hemorrhagic Vasculitis",
-},
+"I_S_name_en": "Hemorrhagic Vasculitis"
+}
 {
 "I_S_codename": "vitamin A",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Витамин А",
 "I_S_link": "https://en.wikipedia.org/wiki/Vitamin_A",
-"I_S_name_en": "vitamin A",
-},
+"I_S_name_en": "vitamin A"
+}
+{
+"I_S_codename": "hCG",
+"I_S_type": "S_O",
+"I_S_type_this": "drug",
+"I_S_name": "Human Chorionic Gonadotropin",
+"I_S_link": "https://en.wikipedia.org/wiki/Human_chorionic_gonadotropin",
+"I_S_name_en": "Human Chorionic Gonadotropin"
+}
 {
 "I_S_codename": "vitamin C",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Витамин C",
 "I_S_link": "https://en.wikipedia.org/wiki/Vitamin_C",
-"I_S_name_en": "vitamin C",
-},
+"I_S_name_en": "vitamin C"
+}
 {
 "I_S_codename": "ovarian cancer",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Рак яичника",
-"I_S_name_en": "Ovarian Cancer",
-},
+"I_S_name_en": "Ovarian Cancer"
+}
 {
 "I_S_codename": "skin cancer",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Рак кожи",
-"I_S_name_en": "Skin сancer",
-},
+"I_S_name_en": "Skin сancer"
+}
 {
 "I_S_codename": "melanoma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Меланома",
-"I_S_name_en": "Melanoma",
-},
+"I_S_name_en": "Melanoma"
+}
 {
 "I_S_codename": "pneumonia",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Пневмония",
-"I_S_name_en": "Pneumonia",
-},
+"I_S_name_en": "Pneumonia"
+}
 {
 "I_S_codename": "encephalopathy",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Энцефалопатия",
-"I_S_name_en": "Encephalopathy",
-},
+"I_S_name_en": "Encephalopathy"
+}
 {
 "I_S_codename": "Hodgkin's lymphoma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Лимфома Ходжкина",
-"I_S_name_en": "Hodgkin's lymphoma",
-},
+"I_S_name_en": "Hodgkin's lymphoma"
+}
 {
 "I_S_codename": "lymphoblastic leukemia",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Лимфобластный Лейкоз",
-"I_S_name_en": "Lymphoblastic Leukemia",
-},
+"I_S_name_en": "Lymphoblastic Leukemia"
+}
 {
 "I_S_codename": "lymphoma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Лимфома",
-"I_S_name_en": "lymphoma",
-},
+"I_S_name_en": "lymphoma"
+}
 {
 "I_S_codename": "Parkinson's disease",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Болезнь Паркинсона",
-"I_S_name_en": "Parkinson's disease",
-},
+"I_S_name_en": "Parkinson's disease"
+}
 {
 "I_S_codename": "neurologic diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Неврологические Заболевания",
-"I_S_name_en": "Neurologic diseases",
-},
+"I_S_name_en": "Neurologic diseases"
+}
 {
 "I_S_codename": "cardiovascular diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Сердечно-сосудистых заболевания",
-"I_S_name_en": "Cardiovascular diseases",
-},
+"I_S_name_en": "Cardiovascular diseases"
+}
 {
 "I_S_codename": "heart attack",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Инфаркт",
-"I_S_name_en": "Heart attack",
-},
+"I_S_name_en": "Heart attack"
+}
 {
 "I_S_codename": "nephrotic syndrome",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Нефротический Синдром",
-"I_S_name_en": "Nephrotic Syndrome",
-},
+"I_S_name_en": "Nephrotic Syndrome"
+}
 {
 "I_S_codename": "dermatitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Дерматит",
-"I_S_name_en": "Dermatitis",
-},
+"I_S_name_en": "Dermatitis"
+}
 {
 "I_S_codename": "eczemae",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Экзема",
-"I_S_name_en": "Eczemae",
-},
+"I_S_name_en": "Eczemae"
+}
 {
 "I_S_codename": "autoimmune diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Аутоиммунных заболевания",
-"I_S_name_en": "Autoimmune Diseases",
-},
+"I_S_name_en": "Autoimmune Diseases"
+}
 {
 "I_S_codename": "osteoarthritis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Остеоартроз",
-"I_S_name_en": "Osteoarthritis",
-},
+"I_S_name_en": "Osteoarthritis"
+}
 {
 "I_S_codename": "multiple sclerosis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Рассеянный Склероз",
-"I_S_name_en": "Multiple Sclerosis",
-},
+"I_S_name_en": "Multiple Sclerosis"
+}
 {
 "I_S_codename": "allergy",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Аллергия",
-"I_S_name_en": "Allergy",
-},
+"I_S_name_en": "Allergy"
+}
 {
 "I_S_codename": "asthma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Астма",
-"I_S_name_en": "Asthma",
-},
+"I_S_name_en": "Asthma"
+}
 {
 "I_S_codename": "parotitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Паротит",
-"I_S_name_en": "Parotitis",
+"I_S_name_en": "Parotitis"
 }
 {
 "I_S_codename": "anaphylactic shock",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Анафилактический Шок",
-"I_S_name_en": "Anaphylactic Shock",
+"I_S_name_en": "Anaphylactic Shock"
 }
 {
 "I_S_codename": "febrile convulsions",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Фебрильные Судороги",
-"I_S_name_en": "Febrile Convulsions",
+"I_S_name_en": "Febrile Convulsions"
 }
 {
 "I_S_codename": "thrombocytopenic purpura",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Тромбоцитопенической Пурпура",
-"I_S_name_en": "Thrombocytopenic Purpura",
-},
+"I_S_name_en": "Thrombocytopenic Purpura"
+}
 {
 "I_S_codename": "myeloma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Миелома",
-"I_S_name_en": "Myeloma",
-},
+"I_S_name_en": "Myeloma"
+}
 {
 "I_S_codename": "wine",
 "I_S_type": "S_O",
 "I_S_type_this": "food",
 "I_S_name": "Вино",
-"I_S_name_en": "Wine",
-},
+"I_S_name_en": "Wine"
+}
 {
 "I_S_codename": "MMR",
 "I_S_type": "S_P",
-"I_S_type_this": "vaccine",
-},
+"I_S_type_this": "vaccine"
+}
 {
 "I_S_codename": "MMRV",
 "I_S_type": "S_P",
-"I_S_type_this": "vaccine",
-},
+"I_S_type_this": "vaccine"
+}
 {
 "I_S_codename": "MUC1",
 "I_S_type": "S_O",
 "I_S_link": "https://ru.wikipedia.org/wiki/MUC1",
-"I_S_type_this": "protein",
-},
+"I_S_type_this": "protein"
+}
 {
 "I_S_codename": "Japan",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Япония",
-},
+"I_S_name": "Япония"
+}
 {
 "I_S_codename": "Great Britain",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Великобритания",
-},
+"I_S_name": "Великобритания"
+}
 {
 "I_S_codename": "France",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Франция",
-},
+"I_S_name": "Франция"
+}
 {
 "I_S_codename": "Brasil",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Бразилия",
-},
+"I_S_name": "Бразилия"
+}
 {
 "I_S_codename": "South Africa",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "ЮАР",
+"I_S_name": "ЮАР"
 }
 {
 "I_S_codename": "Poland",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Польша",
-},
+"I_S_name": "Польша"
+}
 {
 "I_S_codename": "Portugal",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Португалия",
-},
+"I_S_name": "Португалия"
+}
 {
 "I_S_codename": "Nigeria",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "ЮАР",
-},
+"I_S_name": "ЮАР"
+}
 {
 "I_S_codename": "Senegal",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "Сенегал",
+"I_S_name": "Сенегал"
 }

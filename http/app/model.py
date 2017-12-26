@@ -5,6 +5,10 @@ import re
 
 class DB(object):
 
+
+    def get_spaces_by_key(self, analyst, key):
+        return app.config['SPACES'].find({"analyst" : analyst}).sort(key,1) 
+
     def get_data_search(self, title, released):
         try:
             return app.config['INTROS'].find({

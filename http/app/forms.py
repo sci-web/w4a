@@ -1,7 +1,7 @@
 from app import app
-from flask.ext.wtf import Form
+from flask_wtf import Form
 from flask import request, flash
-from flask.ext.admin.form.upload import FileUploadField
+from flask_admin.form.upload import FileUploadField
 from wtforms import StringField, PasswordField, HiddenField, DateField
 from wtforms.validators import DataRequired
 from werkzeug.utils import secure_filename

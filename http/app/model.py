@@ -6,8 +6,15 @@ import re
 class DB(object):
 
 
-    def get_spaces_by_key(self, analyst, key):
-        return app.config['SPACES'].find({"analyst" : analyst}).sort(key,1) 
+    def get_spaces_by_key_sorted(self, analyst, key):
+        return app.config['SPACES'].find({"analyst": analyst}, {"namespace": 1, "I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
+
+    def get_a_space(self, namespace, key):
+        return app.config['SPACES'].find({"namespace": namespace, "I_S_codename": key})
+
+    def get_objects_by_key_sorted(self, key):
+        return app.config['OBJECTS'].find({}, {"I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
+
 
     def get_data_search(self, title, released):
         try:

@@ -55,7 +55,7 @@
 "I_S_name_en": "Encephalitis"
 }
 {
-"I_S_codename": "hemorrhagic vasculitis",
+"I_S_codename": "hemorrhagic_vasculitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Геморрагический Васкулит",
@@ -69,7 +69,7 @@
 "I_S_name_en": "Cancer"
 }
 {
-"I_S_codename": "fetal bovine serum",
+"I_S_codename": "fetal_bovine_serum",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Эмбриональная бычья сыворотка",
@@ -77,12 +77,12 @@
 "I_S_name_en": "Hemorrhagic Vasculitis"
 }
 {
-"I_S_codename": "vitamin A",
+"I_S_codename": "vitamin_A",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Витамин А",
 "I_S_link": "https://en.wikipedia.org/wiki/Vitamin_A",
-"I_S_name_en": "vitamin A"
+"I_S_name_en": "Vitamin A"
 }
 {
 "I_S_codename": "hCG",
@@ -93,22 +93,22 @@
 "I_S_name_en": "Human Chorionic Gonadotropin"
 }
 {
-"I_S_codename": "vitamin C",
+"I_S_codename": "vitamin_C",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Витамин C",
 "I_S_link": "https://en.wikipedia.org/wiki/Vitamin_C",
-"I_S_name_en": "vitamin C"
+"I_S_name_en": "Vitamin C"
 }
 {
-"I_S_codename": "ovarian cancer",
+"I_S_codename": "ovarian_cancer",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Рак яичника",
 "I_S_name_en": "Ovarian Cancer"
 }
 {
-"I_S_codename": "skin cancer",
+"I_S_codename": "skin_cancer",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Рак кожи",
@@ -136,18 +136,18 @@
 "I_S_name_en": "Encephalopathy"
 }
 {
-"I_S_codename": "Hodgkin's lymphoma",
+"I_S_codename": "Hodgkin's_lymphoma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Лимфома Ходжкина",
 "I_S_name_en": "Hodgkin's lymphoma"
 }
 {
-"I_S_codename": "lymphoblastic leukemia",
+"I_S_codename": "lymphoblastic_leukemia",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Лимфобластный Лейкоз",
-"I_S_name_en": "Lymphoblastic Leukemia"
+"I_S_name": "Лимфобластный лейкоз",
+"I_S_name_en": "Lymphoblastic leukemia"
 }
 {
 "I_S_codename": "lymphoma",
@@ -157,39 +157,39 @@
 "I_S_name_en": "lymphoma"
 }
 {
-"I_S_codename": "Parkinson's disease",
+"I_S_codename": "Parkinson's_disease",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Болезнь Паркинсона",
 "I_S_name_en": "Parkinson's disease"
 }
 {
-"I_S_codename": "neurologic diseases",
+"I_S_codename": "neurologic_diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Неврологические Заболевания",
+"I_S_name": "Неврологические заболевания",
 "I_S_name_en": "Neurologic diseases"
 }
 {
-"I_S_codename": "cardiovascular diseases",
+"I_S_codename": "cardiovascular_diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Сердечно-сосудистых заболевания",
+"I_S_name": "Сердечно-сосудистые заболевания",
 "I_S_name_en": "Cardiovascular diseases"
 }
 {
-"I_S_codename": "heart attack",
+"I_S_codename": "heart_attack",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Инфаркт",
 "I_S_name_en": "Heart attack"
 }
 {
-"I_S_codename": "nephrotic syndrome",
+"I_S_codename": "nephrotic_syndrome",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Нефротический Синдром",
-"I_S_name_en": "Nephrotic Syndrome"
+"I_S_name": "Нефротический синдром",
+"I_S_name_en": "Nephrotic syndrome"
 }
 {
 "I_S_codename": "dermatitis",
@@ -206,11 +206,11 @@
 "I_S_name_en": "Eczemae"
 }
 {
-"I_S_codename": "autoimmune diseases",
+"I_S_codename": "autoimmune_diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Аутоиммунных заболевания",
-"I_S_name_en": "Autoimmune Diseases"
+"I_S_name": "Аутоиммунные заболевания",
+"I_S_name_en": "Autoimmune diseases"
 }
 {
 "I_S_codename": "osteoarthritis",
@@ -220,11 +220,11 @@
 "I_S_name_en": "Osteoarthritis"
 }
 {
-"I_S_codename": "multiple sclerosis",
+"I_S_codename": "multiple_sclerosis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Рассеянный Склероз",
-"I_S_name_en": "Multiple Sclerosis"
+"I_S_name": "Рассеянный склероз",
+"I_S_name_en": "Multiple sclerosis"
 }
 {
 "I_S_codename": "allergy",
@@ -248,25 +248,25 @@
 "I_S_name_en": "Parotitis"
 }
 {
-"I_S_codename": "anaphylactic shock",
+"I_S_codename": "anaphylactic_shock",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Анафилактический Шок",
 "I_S_name_en": "Anaphylactic Shock"
 }
 {
-"I_S_codename": "febrile convulsions",
+"I_S_codename": "febrile_convulsions",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Фебрильные Судороги",
 "I_S_name_en": "Febrile Convulsions"
 }
 {
-"I_S_codename": "thrombocytopenic purpura",
+"I_S_codename": "thrombocytopenic_purpura",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Тромбоцитопенической Пурпура",
-"I_S_name_en": "Thrombocytopenic Purpura"
+"I_S_name": "Тромбоцитопеническая пурпура",
+"I_S_name_en": "Thrombocytopenic purpura"
 }
 {
 "I_S_codename": "myeloma",
@@ -285,16 +285,19 @@
 {
 "I_S_codename": "MMR",
 "I_S_type": "S_P",
+"I_S_name": "Вакцина MMR",
 "I_S_type_this": "vaccine"
 }
 {
 "I_S_codename": "MMRV",
 "I_S_type": "S_P",
+"I_S_name": "Вакцина MMRV",
 "I_S_type_this": "vaccine"
 }
 {
 "I_S_codename": "MUC1",
 "I_S_type": "S_O",
+"I_S_name": "Протеин MUC1",
 "I_S_link": "https://ru.wikipedia.org/wiki/MUC1",
 "I_S_type_this": "protein"
 }
@@ -305,7 +308,7 @@
 "I_S_name": "Япония"
 }
 {
-"I_S_codename": "Great Britain",
+"I_S_codename": "Great_Britain",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
 "I_S_name": "Великобритания"
@@ -323,7 +326,7 @@
 "I_S_name": "Бразилия"
 }
 {
-"I_S_codename": "South Africa",
+"I_S_codename": "South_Africa",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
 "I_S_name": "ЮАР"

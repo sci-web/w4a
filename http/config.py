@@ -7,7 +7,7 @@ DB_NAME = 'w4a'
 # DATABASE = MongoClient("mongodb://ant-login7.linux.crg.es:27017")[DB_NAME]
 DATABASE = MongoClient()[DB_NAME]
 INTROS = DATABASE.intros
-# I_S = DATABASE.I_S_objects
+OBJECTS = DATABASE.objects
 SPACES = DATABASE.a_spaces
 CORE = DATABASE.core
 

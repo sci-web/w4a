@@ -8,12 +8,11 @@ from .model import DB
 from .forms import LoginForm, makeform
 
 
-# @app.before_request
-# def load_vars():
-#     items = DB().get_spaces_by_key_sorted("amantonio", "date")
-#     objects = DB().get_objects_by_key_sorted("I_S_name")
-#     items = g.items
-#     objects = g.objects
+@app.before_request
+def load_vars():
+    g.items = DB().get_spaces_by_key_sorted("amantonio", "date")
+    g.objects = DB().get_objects_by_key_sorted("I_S_name")
+    g.form = makeform()
 
 
 def date_format(view, value):
@@ -27,17 +26,11 @@ MY_DEFAULT_FORMATTERS.update({
 
 @app.route('/')
 def index():
-    form = makeform()
-    items = DB().get_spaces_by_key_sorted("amantonio", "date")
-    objects = DB().get_objects_by_key_sorted("I_S_name")    
-    return render_template('index.html', form=form, items=items, objects=objects)
+    return render_template('index.html', form=g.form, items=g.items, objects=g.objects)
 
 @app.route('/<namespace>/<codename>')
 def show_item(namespace, codename):
-    form = makeform()
-    items = DB().get_spaces_by_key_sorted("amantonio", "date")
-    objects = DB().get_objects_by_key_sorted("I_S_name")    
-    return render_template('index.html', form=form, items=items, objects=objects)
+    return render_template('index.html', form=g.form, items=g.items, objects=g.objects)
 
 @app.route('/next', methods=['GET', 'POST'])
 def next():

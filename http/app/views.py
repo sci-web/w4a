@@ -1,19 +1,19 @@
 from app import app
-from flask import request, redirect, render_template, url_for, flash, Response, g
+from flask import request, redirect, render_template, url_for, flash, Response, g, jsonify
 from flask_login import login_user, logout_user, login_required, current_user
 from datetime import date
 from flask_admin.model import typefmt
 import os
 from .model import DB
 from .forms import LoginForm, makeform
+from bson.json_util import dumps
 
 
 @app.before_request
 def load_vars():
-    g.items = DB().get_spaces_by_key_sorted("amantonio", "date")
+    g.items = DB().get_spaces_by_key_sorted("vaccines", "date")
     g.objects = DB().get_objects_by_key_sorted("I_S_name")
     g.form = makeform()
-
 
 def date_format(view, value):
     return value.strftime('%d.%m.%Y')
@@ -24,13 +24,32 @@ MY_DEFAULT_FORMATTERS.update({
     date: date_format
 })
 
+
+# @app.before_request
+# def before_request():
+#     if request.path != '/':
+#         if request.headers['content-type'].find('application/json'):
+#             return 'Unsupported Media Type', 415
+
+
 @app.route('/')
 def index():
-    return render_template('index.html', form=g.form, items=g.items, objects=g.objects)
+    i_data = DB().get_intros()
+    return render_template('index.html', form=g.form, items=g.items, objects=g.objects, data=i_data)
 
-@app.route('/<namespace>/<codename>')
+
+@app.route('/content/<namespace>/<codename>')
 def show_item(namespace, codename):
     return render_template('index.html', form=g.form, items=g.items, objects=g.objects)
+
+
+@app.route('/intro/<namespace>')
+def show_intro(namespace):
+    i_data = DB().get_an_intro(namespace)
+    return jsonify( {'data': render_template('show.html', idata=i_data)} )
+
+    # return jsonify(result=idata)
+
 
 @app.route('/next', methods=['GET', 'POST'])
 def next():

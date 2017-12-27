@@ -1,0 +1,10 @@
+{% for entry in idata %}
+    <ol>
+    {% for pnt in entry.points %}
+        <li style="margin:10px">{{ pnt.item | safe }}
+    {% endfor %}
+    </ol>
+    <div style="margin:10px">
+    {{ entry.summary }}
+    </div>
+{% endfor %}

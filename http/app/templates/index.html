@@ -5,7 +5,47 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 40px 40px 1px;">
-start
+{% for entry in data %}
+	<div>
+            <h4 style="text-align:right">{{ entry.analyst }}</h4>
+            <h1>{{ entry.subject }}</h1>
+            <div  style="margin:0 0 10px 0" align=right>{{ entry.epigraph.text }}<br>
+            {{ entry.epigraph.source }}
+            </div>
+            {{ entry.intro }}
+            <div style="margin:10px 0 0 0">
+                <div style="float:left"><a id="opentxt" href="/intro/{{ entry.namespace }}">Текст введения</a></div>
+                <div style="float:right" align=right><a href="/chapters/{{ entry.namespace }}" id="open-content">Оглавление</a></div>
+            </div>
+	</div>
+{% endfor %}
 </div>
+<div id="fill" style="display:none;">
+      <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
+	  <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
+      </div>
+<script>
+$(document).ready(function() {
+ $("#opentxt").bind('click', function() {
+    event.preventDefault();
+//    alert($(this).attr('href'));
+    $.getJSON({
+        url: $(this).attr('href'),
+            beforeSend: function() {
+                $('#wait').show();
+            },
+            complete: function() {
+                $('#wait').hide();
+            },
+            success: function(evt){
+              //$("#fill").html = evt.data;
+                $('#fill').html(evt.data).show();
+            }
+    });
+ });
+});
+</script>
 {% endblock %}
+
+
 

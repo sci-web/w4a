@@ -1,9 +1,10 @@
 {% extends "base.html" %}
-{% block title %}Upload Your Catalogue{% endblock %}
+{% block title %}Spell out scientific service{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
 {% block content %}
+<a name="top"></a>
 <div style="margin:50px 40px 40px 1px;">
 {% for entry in data %}
 	<div>
@@ -13,36 +14,51 @@
             {{ entry.epigraph.source }}
             </div>
             {{ entry.intro }}
-            <div style="margin:10px 0 0 0">
-                <div style="float:left"><a id="opentxt" href="/intro/{{ entry.namespace }}">Текст введения</a></div>
-                <div style="float:right" align=right><a href="/chapters/{{ entry.namespace }}" id="open-content">Оглавление</a></div>
+            <div style="margin:10px 0 0 0; font-size:17px;">
+                <div style="float:left">
+                    <a id="opentxt" href="/intro/{{ entry.namespace }}" name="top">Введение</a>
+                    <div style="display:inline">
+                        <span id="hide" style="display:none; font-size:14px" onClick="javascript:hideDiv('hide')" >
+                            <a onClick="javascript:hideDiv('fill')" href="#">(спрятать)</a>
+                        </span>
+                    </div>
+                </div>
+                <div style="float:right" align=right>
+                    <a href="/chapters/{{ entry.namespace }}" id="open-content">Оглавление</a>
+                </div>
             </div>
 	</div>
 {% endfor %}
 </div>
-<div id="fill" style="display:none;">
-      <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
-	  <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
-      </div>
+<div id="fill" class="boxed_sh" style="display:none;margin:10px 40px 40px 0; padding:0 20px; ">
+    <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
+        <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
+    </div>
+</div>
 <script>
 $(document).ready(function() {
- $("#opentxt").bind('click', function() {
+  $("#opentxt").bind('click', function(event) {
     event.preventDefault();
-//    alert($(this).attr('href'));
     $.getJSON({
-        url: $(this).attr('href'),
+            url: $(this).attr('href'),
+            data: "div",
+            contentType: "application/json; charset=utf-8",
             beforeSend: function() {
                 $('#wait').show();
             },
             complete: function() {
                 $('#wait').hide();
+                $('#hide').show();
             },
-            success: function(evt){
-              //$("#fill").html = evt.data;
-                $('#fill').html(evt.data).show();
+            success: function(result){
+                $('#fill').html(result.data).show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            // if does not work with some browser extension or firewall's blocking async requests etc.
+                alert("does not work, probably due to installed browser extension");
             }
     });
- });
+  });
 });
 </script>
 {% endblock %}

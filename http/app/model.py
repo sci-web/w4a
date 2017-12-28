@@ -21,6 +21,9 @@ class DB(object):
     def get_an_intro(self, namespace):
         return app.config['INTROS'].find({"namespace": namespace})
 
+    def get_an_intro_arr(self, namespace):
+        return app.config['INTROS'].find({"namespace": namespace}).toArray()
+
     def get_data_search(self, title, released):
         try:
             return app.config['INTROS'].find({

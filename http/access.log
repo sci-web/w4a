@@ -460,3 +460,1432 @@ INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/config.py', reloadi
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger pin code: 278-515-353
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 19:58:30] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 19:58:30] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:06] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:23] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:23] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:23] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:23] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:24] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:24] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:56] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:56] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:56] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:56] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:56] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:00:56] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:01:43] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:02:23] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:02:53] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:03:58] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:04:08] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:05:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:05:48] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:05:54] "GET /chapters/vaccines HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:07:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:07:35] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.index.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:08:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:08:48] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:09:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:09:59] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:11:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:11:06] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:12:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:12:50] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:14:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:14:17] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:14:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:14:44] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show_div.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show_div.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:17:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:17:31] "GET /intro/vaccines?div HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/show_div.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:18:35] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:20] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/css/bootstrap-select.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/css/core-dataTables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/css/core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/datatables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/jquery-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/jquery-2.1.4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/datatables.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/moment.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/jquery.highlight.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/dataTables.searchHighlight.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/show-hide.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/validator.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/fileinput.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/bootstrap-select.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/fileinput_locale_es.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/jquery.smartmenus.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /static/js/jquery.smartmenus.bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:25] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:35] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/css/bootstrap-select.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/css/core-dataTables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/css/core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/datatables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/jquery-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/jquery-2.1.4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/datatables.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/moment.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/jquery.highlight.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/dataTables.searchHighlight.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/show-hide.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/validator.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/fileinput.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/bootstrap-select.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/fileinput_locale_es.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/jquery.smartmenus.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:46] "GET /static/js/jquery.smartmenus.bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:19:47] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.show.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/css/bootstrap-select.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/css/core-dataTables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/css/core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/datatables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/jquery-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/jquery-2.1.4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/datatables.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/moment.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/jquery.highlight.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/dataTables.searchHighlight.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/show-hide.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/validator.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/fileinput.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/bootstrap-select.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/fileinput_locale_es.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/jquery.smartmenus.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /static/js/jquery.smartmenus.bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 20:20:03] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:14:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:14:48] "GET /intro/vaccines?div HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:05] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:21] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:21] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:21] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:21] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:21] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:15:21] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:16:28] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:06] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:20] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:20] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:20] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:20] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:20] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:17:20] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:26] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:54] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/css/bootstrap-select.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/css/core-dataTables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/css/core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/datatables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/jquery-ui.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/jquery-2.1.4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/datatables.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/moment.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/jquery.highlight.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/dataTables.searchHighlight.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/show-hide.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/validator.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/fileinput.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/bootstrap-select.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/fileinput_locale_es.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/d3.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/jquery.smartmenus.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /static/js/jquery.smartmenus.bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:22:59] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:28] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:28] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:28] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:28] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:28] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:28] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:23:48] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:24:19] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:24:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:24:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:24:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:24:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:24:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:25:13] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:25:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:25:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:25:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:25:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:25:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:16] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:41] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:29:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:31:33] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:31:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:31:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:31:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:31:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:31:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:49:26] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:49:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:49:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:49:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:49:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:49:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:37] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:38] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:38] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:38] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:38] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:38] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:50:38] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:53:25] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:54:00] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:54:31] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:54:44] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:55:15] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:55:25] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:55:26] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:55:49] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:56:09] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:57:37] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:57:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:57:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:57:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:57:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:57:37] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:19] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:19] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:33] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:33] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:58:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:59:58] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:59:58] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:59:58] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:59:58] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:59:58] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 21:59:58] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:00:13] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:00:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:00:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:00:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:00:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:00:13] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:01:55] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:01:55] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:01:55] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:01:55] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:01:55] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:01:55] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:11:20] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:11:30] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:12:12] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:12:14] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:12:30] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.points.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:20:41] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:20:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:20:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:20:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:20:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:20:41] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:15] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:15] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:15] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:15] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:15] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:15] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:34] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:24:34] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:26:47] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:26:47] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:26:47] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:26:47] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:26:48] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:26:48] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:27:26] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:27:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:27:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:27:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:27:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:27:26] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:28:00] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:28:00] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:28:00] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:28:00] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:28:00] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:28:00] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:29:05] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:29:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:29:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:29:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:29:05] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:29:06] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:30:01] "GET /intro/vaccines HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:30:01] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:30:01] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:30:01] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:30:01] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:30:01] "GET /intro/vaccines?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:34:34] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/points.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:35:23] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug:127.0.0.1 - - [28/Dec/2017 22:36:07] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 278-515-353

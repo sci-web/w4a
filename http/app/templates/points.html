@@ -1,0 +1,23 @@
+    <ol>
+    {% for pnt in entry.points %}
+        <li style="margin:10px; text-align:justify">{{ pnt.item | safe }}
+    {% endfor %}
+    </ol>
+    <div style="margin:10px">
+    <h3>{{ entry.ref_header }}</h3>
+    <p style="text-align:justify">{{ entry.ref_intro | safe }}
+        {% for item in entry.refs %}
+            <h4>{{ item.ref_title }}</h4>
+            {{ item.ref_digest | safe }}
+            <ol>
+            {% for ref in item.ref_pool %}
+                <li style="margin:10px"><a href={{ ref.link }}>{{ ref.title }}</a> <small>{{ ref.linktype }}</small>
+                <div style="text-align:justify">{{ ref.digest | rehref | safe }}</div>
+            {% endfor %}
+            </ol>
+        {% endfor %}
+
+    </div>
+    <div style="margin:10px 100px 10px 10px; text-align:justify">
+    {{ entry.summary | safe }}
+    </div>

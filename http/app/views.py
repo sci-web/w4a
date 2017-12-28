@@ -1,13 +1,15 @@
 from app import app
+import re
 from flask import request, redirect, render_template, url_for, flash, Response, g, jsonify
 from flask_login import login_user, logout_user, login_required, current_user
 from datetime import date
+import datetime
 from flask_admin.model import typefmt
 import os
 from .model import DB
 from .forms import LoginForm, makeform
 from bson.json_util import dumps
-
+import json
 
 @app.before_request
 def load_vars():
@@ -25,11 +27,10 @@ MY_DEFAULT_FORMATTERS.update({
 })
 
 
-# @app.before_request
-# def before_request():
-#     if request.path != '/':
-#         if request.headers['content-type'].find('application/json'):
-#             return 'Unsupported Media Type', 415
+"""regex in template by rehref: replacing markups with HTML a href"""
+def rehref(jsonstring):
+    return re.sub(r'\[(.*?)\=\=(.*?)\]', r'<a href=\2>\1</a>', "".join(jsonstring))
+app.jinja_env.filters['rehref'] = rehref
 
 
 @app.route('/')
@@ -43,12 +44,16 @@ def show_item(namespace, codename):
     return render_template('index.html', form=g.form, items=g.items, objects=g.objects)
 
 
-@app.route('/intro/<namespace>')
+@app.route('/intro/<namespace>',methods=['GET','POST'])
 def show_intro(namespace):
     i_data = DB().get_an_intro(namespace)
-    return jsonify( {'data': render_template('show.html', idata=i_data)} )
-
-    # return jsonify(result=idata)
+    data = json.loads(dumps(i_data))
+    f_date = str(datetime.datetime.fromtimestamp(data[0]["date"]['$date'] / 1e3 ))
+    data[0]["date"] = f_date[0:f_date.rfind(":")]
+    if 'div' in request.args:
+        return jsonify( {'data': render_template('show_div.html', idata=data)} )
+    else:
+        return render_template('show.html', idata=data, items=g.items, objects=g.objects, title=data[0]["subject"])
 
 
 @app.route('/next', methods=['GET', 'POST'])

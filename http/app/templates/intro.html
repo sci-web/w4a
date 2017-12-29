@@ -12,16 +12,14 @@
             <div style="float:left"><h1>{{ entry.subject }}</h1></div>
             <div style="float:right"><h4 style="text-align:right">{{ entry.analyst }}</h4></div>
         </div>
-        <div style="margin:0 0 10px 0" align=right>{{ entry.epigraph.text }}<br>
-            {{ entry.epigraph.source }}
+        <div style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
+            {{ entry.epigraph.source }}</small>
         </div>
-        <div style="margin:20px 20px 40px 20px; text-align:justify">
+        <div style="margin:20px 20px 10px 20px; text-align:justify">
         {{ entry.intro | safe}}
         </div>
     </div>
-    <div align=right style="margin:10px 10px 0 0">
-        <div style="display:inline; margin:0 5px; 0 0">{{ entry.date }}</div>
-    </div>
+    <div align=right style="margin:10px 10px 0 0">{{ entry.date }}</div>
 {% include "points.html" %}
 {% endfor %}
 </div>

@@ -29,7 +29,7 @@ MY_DEFAULT_FORMATTERS.update({
 
 """regex in template by rehref: replacing markups with HTML a href"""
 def rehref(jsonstring):
-    return re.sub(r'\[(.*?)\=\=(.*?)\]', r'<a href=\2>\1</a>', "".join(jsonstring))
+    return re.sub(r'\[(.*?)\=\=(.*?)\]', r'<a href=\2>\1</a>', "".join(jsonstring)) # join: make it string
 app.jinja_env.filters['rehref'] = rehref
 
 
@@ -48,12 +48,25 @@ def show_item(namespace, codename):
 def show_intro(namespace):
     i_data = DB().get_an_intro(namespace)
     data = json.loads(dumps(i_data))
-    f_date = str(datetime.datetime.fromtimestamp(data[0]["date"]['$date'] / 1e3 ))
-    data[0]["date"] = f_date[0:f_date.rfind(":")]
+    f_date = datetime.datetime.fromtimestamp( data[0]["date"]['$date'] / 1e3 )
+    data[0]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     if 'div' in request.args:
-        return jsonify( {'data': render_template('show_div.html', idata=data)} )
+        return jsonify( {'data': render_template('intro_div.html', idata=data)} )
     else:
-        return render_template('show.html', idata=data, items=g.items, objects=g.objects, title=data[0]["subject"])
+        return render_template('intro.html', idata=data, items=g.items, objects=g.objects, title=data[0]["subject"])
+
+
+@app.route('/chapters/<namespace>',methods=['GET','POST'])
+def chapters(namespace):
+    i_data = DB().get_spaces_by_key_sorted(namespace, "date")
+    data = json.loads(dumps(i_data))
+    for i in range(0, len(data)):
+        f_date = datetime.datetime.fromtimestamp( data[i]["date"]['$date'] / 1e3 )
+        data[i]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
+    if 'div' in request.args:
+        return jsonify( {'data': render_template('chapt_div.html', idata=data)} )
+    else:
+        return render_template('chapt.html', idata=data, items=g.items, objects=g.objects, title=namespace)
 
 
 @app.route('/next', methods=['GET', 'POST'])

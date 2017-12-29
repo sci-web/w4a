@@ -8,7 +8,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
       <ul class="nav navbar-nav">
-        <li class="dropdown"><a href="/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
+        <li class="dropdown"><a href="/intro/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
           <ul class="dropdown-menu">
           {% for entry in items %}
               <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.I_S_name }}</a></li>

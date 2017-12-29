@@ -7,7 +7,8 @@ class DB(object):
 
 
     def get_spaces_by_key_sorted(self, namespace, key):
-        return app.config['SPACES'].find({"namespace": namespace}, {"namespace": 1, "I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
+        return app.config['SPACES'].find({"namespace": namespace}, 
+                                         {"namespace": 1, "I_S_codename": 1, "I_S_name": 1, "intro": 1, "title": 1, "date":1, "epigraph": 1, "points": {"$slice": 1}}).sort(key, 1)
 
     def get_a_space(self, namespace, key):
         return app.config['SPACES'].find({"namespace": namespace, "I_S_codename": key})
@@ -20,9 +21,6 @@ class DB(object):
 
     def get_an_intro(self, namespace):
         return app.config['INTROS'].find({"namespace": namespace})
-
-    def get_an_intro_arr(self, namespace):
-        return app.config['INTROS'].find({"namespace": namespace}).toArray()
 
     def get_data_search(self, title, released):
         try:

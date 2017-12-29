@@ -5,32 +5,38 @@
 {% endblock %}
 {% block content %}
 <a name="top"></a>
-<div style="margin:50px 40px 40px 1px;">
+<div style="margin:50px 40px 10px 1px;">
 {% for entry in data %}
-	<div>
+	<div style="">
             <h4 style="text-align:right">{{ entry.analyst }}</h4>
             <h1>{{ entry.subject }}</h1>
-            <div  style="margin:0 0 10px 0" align=right>{{ entry.epigraph.text }}<br>
-            {{ entry.epigraph.source }}
+            <div  style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
+            {{ entry.epigraph.source }}</small>
             </div>
-            {{ entry.intro }}
-            <div style="margin:10px 0 0 0; font-size:17px;">
+            <p style="text-align:justify">{{ entry.intro | rehref | safe }}
+            <div style="margin:10px 0 0 0; font-size:17px;height:30px;">
                 <div style="float:left">
-                    <a id="opentxt" href="/intro/{{ entry.namespace }}" name="top">Введение</a>
+                    <a id="opentxt" href="/intro/{{ entry.namespace }}">Введение</a>
                     <div style="display:inline">
-                        <span id="hide" style="display:none; font-size:14px" onClick="javascript:hideDiv('hide')" >
+                        <span id="ihide" style="display:none; font-size:14px" onClick="javascript:hideDiv('ihide')" >
                             <a onClick="javascript:hideDiv('fill')" href="#">(спрятать)</a>
                         </span>
                     </div>
                 </div>
                 <div style="float:right" align=right>
-                    <a href="/chapters/{{ entry.namespace }}" id="open-content">Оглавление</a>
+                    <div style="display:inline">
+                        <span id="chide" style="display:none; font-size:14px" onClick="javascript:hideDiv('chide')" >
+                            <a onClick="javascript:hideDiv('fill')" href="#">(спрятать)</a>
+                        </span>
+                    </div>
+                    <a id="opencontent" href="/chapters/{{ entry.namespace }}">Оглавление</a>
                 </div>
             </div>
-	</div>
+</div>
+<hr size=1 style="width: 92%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:5px 0 5px 50px" align=center>
 {% endfor %}
 </div>
-<div id="fill" class="boxed_sh" style="display:none;margin:10px 40px 40px 0; padding:0 20px; ">
+<div id="fill" class="boxed_sh" style="display:none;margin:-12px 40px 40px 0; padding:0 20px; ">
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>
@@ -39,8 +45,15 @@
 $(document).ready(function() {
   $("#opentxt").bind('click', function(event) {
     event.preventDefault();
+    Retrieve($(this).attr('href'), "#ihide");
+  });
+  $("#opencontent").bind('click', function(event) {
+    event.preventDefault();
+    Retrieve($(this).attr('href'), "#chide");
+  });
+  function Retrieve(url, hide) {
     $.getJSON({
-            url: $(this).attr('href'),
+            url: url,
             data: "div",
             contentType: "application/json; charset=utf-8",
             beforeSend: function() {
@@ -48,7 +61,7 @@ $(document).ready(function() {
             },
             complete: function() {
                 $('#wait').hide();
-                $('#hide').show();
+                $(hide).show();
             },
             success: function(result){
                 $('#fill').html(result.data).show();
@@ -58,7 +71,7 @@ $(document).ready(function() {
                 alert("does not work, probably due to installed browser extension");
             }
     });
-  });
+  }
 });
 </script>
 {% endblock %}

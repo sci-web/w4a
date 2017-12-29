@@ -25,11 +25,17 @@
 <body>
 {% include "navbar.html" %}
 {% include "flash.html" %}
+<style>
+a.leftnav {color:#024d60;text-decoration:none;}
+a.leftnav:hover {color:#777;text-decoration:none;}
+</style>
 <div style="margin:5px;">
     <div style="float:left; width:10%; margin:50px 5px 5px 10px">
         <ul style="margin:0; padding:0 0 10px 15px; list-style-type:square">
         {% for entry in objects %}
-            <li style="color:#4d4df6"><a href="/browse/{{ entry.I_S_codename }}">{{ entry.I_S_name }}</a></li>
+            <li style="color:#4d4df6">
+                <a href="/browse/{{ entry.I_S_codename }}" class="leftnav">{{ entry.I_S_name }}</a>
+            </li>
         {% endfor %}
         </ul>
     </div>

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<a name="top"></a>
+<div style="margin:55px 30px 30px 0px;">
+{% for entry in idata %}
+    <div style="margin:10px 5px; 0 0" align=right><small>{{ entry.date }}</small></div>
+    <h3 style="margin:-30px 0 0 0">
+        <a href="/space/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.title }}</a>
+    </h3>
+        <div  style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
+            {{ entry.epigraph.source }}</small>
+        </div>
+    <p style="text-align:justify">
+    {% if entry.intro %}
+        {{ entry.intro | rehref | safe  }}
+    {% else %}
+        {{ entry.points[0].digest | rehref | safe  }}
+    {% endif %}
+<div style="margin:0 0 10px 0; width: 100%;" align=right><a href="/space/{{ entry.namespace }}/{{ entry.I_S_codename }}">Далее &gt;&gt;</a>
+<hr size=1 style="width: 80%; color:#c9ccff; height:1px; background-color:#c9ccff; margin:7px 0; text-align:right;">
+</div>
+{% endfor %}
+<div style="height:30px; margin:-25px 0 10px 0">
+    <div>
+        <a href="#top" style="border:0px; width:11px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+    </div>
+</div>
+{% endblock %}

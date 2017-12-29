@@ -1,0 +1,536 @@
+{
+"title": "Алюминий",
+"I_S_codename": "aluminium",
+"I_S_type": "S_P",
+"I_S_type_this": "???",
+"I_S_name": "Алюминий",
+"date": "16-07-2017",
+"intro": ""
+"epigraph": {
+		"text": "A foolish faith in authority is the worst enemy of truth.",
+		"source": "Albert Einstein",
+		},
+"points":
+    [
+	{
+        "num": 1,
+        "digest": "Большинство людей полагают, что прививка это просто ослабленный или мертвый вирус/бактерия. Иммунная система вырабатывает на впрыснутый мертвый вирус антитела, и впоследствии, если человек заражается, его иммунная система уже узнает этот вирус, и быстро на него реагирует.
+Эта картина настолько упрощенная, что можно сказать, что она совершенно не соответствует действительности."
+    },
+    {
+        "num": 2,
+        "digest": "Если бы все было так просто, то прививка давала бы пожизненный иммунитет, какой обычно дает перенесенная болезнь. Этого, однако, не происходит. Иммунитет от прививки длится обычно 3-5 лет. Самые эффективные прививки дают иммунитет лет на 10. (Что именно означает слово &quot;иммунитет&quot; в контексте прививок это отдельная тема, которая будет рассмотрена в другой части).
+Наша иммунная система совсем не глупая. Она понимает, что фрагмент мертвого вируса или бактерии никакой опасности не представляет, и плохо [вырабатывает==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3117407/] против него антитела.
+Как эту проблему решают умные учёные? Они добавляют в прививку адъювант. Адъювант это молекула, которую иммунная система распознает как очень токсичную, и сильно на нее реагирует. В придачу она реагирует и на вирус, и, что самое неприятное, также на все остальные ингредиенты прививки, и не только на них. Это, в свою очередь, приводит к аллергиям, и к различным аутоиммунным заболеваниям. Поэтому алюминий называют &quot;immunologist&#39;s dirty little secret&quot;.
+Ингредиентами прививок являются, например, яичный белок (овальбумин). Иммунная система вполне может в придачу к вирусу научиться реагировать и на него, как на угрозу. Так получается аллергия на яйца.
+[Арахисовое масло в прививках==http://www.nytimes.com/1964/09/19/peanut-oil-used-in-a-new-vaccine.html] привело, вероятно, к распространенной аллергии на арахис.
+Сквален - другой вакцинный адъювант - производится также в человеческих тканях, и прививочная реакция на него является, скорее всего, причиной аутоиммунных заболеваний.
+"
+    },
+    {
+        "num": 3,
+        "digest": "Вторая - наверное даже более важная причина использования адъювантов - чисто экономическая.
+Выращивать вирусы это сложно, долго и дорого. Возможно, если впрыснуть очень много вируса, то иммунная система соблаговолит на него отреагировать, и выработать антитела. Но это будет уже более дорогая вакцина. Намного дешевле взять небольшое количество вируса, добавить немного адъюванта, и получить очень сильную иммунную реакцию. Для разрешения FDA эффективность вакцины намного важнее, чем безопасность. Безопасность, как мы видели, довольно легко подделать. Эффективность подделать намного сложнее."
+    },
+    {
+        "num": 4,
+        "digest": "Двумя самыми распространенными адъювантами являются гидроксид алюминия и фосфат алюминия. Достаточно разобраться лишь с ними, чтобы исключить большинство прививок.
+С темой алюминия стоит разобраться и без связи с прививками, просто чтобы понять, насколько коррумпирована наука, ВОЗ, CDC и правительства разных стран."
+    },
+    {
+        "num": 5,
+        "digest": "Существуют сотни исследований, доказывающих, что алюминий, даже в минимальных концентрациях, очень токсичен. Я приведу лишь несколько обзорных статей."
+    },
+    {
+        "num": 6,
+        "title": "Aluminum vaccine adjuvants: are they safe?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21568886",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Tomljenovic",
+        "infoID": "21568886",
+        "info_place": "Curr Med Chem.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Несмотря на 90 лет использования алюминиевых адъювантов в прививках, до сих пор неизвестно, почему, и как именно, алюминий вызывает такую сильную иммунную реакцию.
+Высокая токсичность и опасность алюминия, потребляемого орально, была известна уже в 1911 году, когда д-р William Gies опубликовал результаты семилетних исследований об алюминии в пекарском порошке, в консервантах и в красителях. Алюминий влияет на память, на концентрацию и на поведение. (Оказывается, кстати, что алюминий до сих пор добавляется в пекарский порошок (baking powder), и в пищевые консерванты).
+Недоношенные дети, которых кормили смесями с алюминием, развивались хуже, чем, дети на смесях без алюминия.
+Алюминий, который используют в диализе почек приводит к деменции, конвульсиям, психозу и т. д.
+Алюминий ассоциирован также с болезнью Альцгеймера, болезнью Паркинсона, рассеянным склерозом, аутизмом и эпилепсией.
+Количество алюминия в прививках в десятки раз превышает норму, установленную FDA.
+Там еще много интересного без связи с алюминием, эту статью стоит прочитать полностью."
+    },
+    {
+        "num": 7,
+        "title": "Do aluminum vaccine adjuvants contribute to the rising prevalence of autism?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22099159",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Tomljenovic",
+        "infoID": "22099159",
+        "info_place": "J Inorg Biochem",
+        "info_geo": "",
+        "I_S_codenames": ["autism"],
+        "digest": "Чем больше в стране делают прививок с алюминием, тем больше в ней аутистов.
+В США увеличение количества аутистов коррелирует с увеличением использования алюминиевых адъювантов. (r=0.92, p&lt;0.0001)
+Авторы используют [Hill&#39;s criteria==https://en.wikipedia.org/wiki/Bradford_Hill_criteria], и заключают, что связь между алюминием в вакцинах и аутизмом вероятно причинно-следственная. Эту статью тоже стоит прочитать полностью."
+    },
+    {
+        "num": 8,
+        "title": "Aluminum hydroxide injections lead to motor deficits and motor neuron degeneration.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2819810/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Shaw",
+        "infoID": "PMC2819810",
+        "info_place": "J Inorg Biochem",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Мышам вкололи гидроксид алюминия в эквивалентным человеческим вакцинным дозам. У них наблюдалась повышенная гибель двигательных нейронов, пониженная двигательная активность, плохая пространственная память, и прочие эффекты, соответствующие деменции, болезни Альцгеймера и Gulf War syndrome. Еще два похожих исследования.",
+		"sources_pool": [{
+            "title": "[1]",
+            "info_type": "article",
+            "infoID": "23932735",
+            "info_date": "2013",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/23932735"
+			},
+			{
+			"title": "[2]",
+            "info_type": "article",
+            "infoID": "17114826",
+            "info_date": "2007",
+            "link" : "https://www.ncbi.nlm.nih.gov/pubmed/17114826"
+		}]
+	},
+    {
+        "num": 9,
+        "title": " Aluminium incorporation into the brain of rat fetuses and sucklings",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11470320",
+        "info_type": "article",
+        "info_date": "2001",
+        "info_authors": "Yumoto",
+        "infoID": "11470320",
+        "info_place": "Brain Res Bull",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Беременным крысам ввели под кожу радиоактивный алюминий, который уже через несколько дней попал в мозг зародышей. После рождения этот алюминий продолжал накапливаться в мозгу, передаваясь уже через грудное молоко."
+    },
+    {
+        "num": 10,
+        "title": "A study of the distribution of aluminum in human placental tissues based on alkaline solubilization with determination by electrothermal atomic absorption spectrometry.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3315392",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Kruger",
+        "infoID": "PMC3315392",
+        "info_place": "Metallomics",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "У 95% родивших женщин алюминий был обнаружен в плаценте, у 81% в плацентной мембране, и у 46% в пуповине.
+Это к вопросу о прививках беременным."
+    },
+    {
+        "num": 10,
+        "title": "Mechanisms of aluminum adjuvant toxicity and autoimmunity in pediatric populations.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22235057",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Tomljenovic",
+        "infoID": "22235057",
+        "info_place": "Lupus",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Еще две обзорные и познавательные статьи про алюминиевые адъюванты, которые стоит прочитать: [Aluminum in Childhood Vaccines Is Unsafe (Miller, 2016, JPANDS)==http://www.jpands.org/vol21no4/miller.pdf]"
+    },
+    {
+        "num": 11,
+        "title": "Macrophagic myofasciitis: characterization and pathophysiology",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3623725/",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Gherardi",
+        "infoID": "PMC3623725",
+        "info_place": "Lupus",
+        "info_geo": "",
+        "I_S_codenames": ["Macrophagic myofasciitis"],
+        "digest": "Обзорная статья про MMF. У некоторых пациентов алюминиевые адъюванты после прививки не рассасываются, а остаются на месте укола и формируют алюминиевую гранулёму. Сопутствующие симптомы это обычно миалгия (мышечные боли), хроническая усталость, когнитивные нарушения, а также различные аутоиммунные болезни."
+    },
+    {
+        "num": 12,
+        "title": "Aluminum Should Now Be Considered a Primary Etiological Factor in Alzheimer&rsquo;s Disease.",
+        "link": "http://content.iospress.com/articles/journal-of-alzheimers-disease-reports/adr170010",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Exley",
+        "infoID": "10.3233/ADR-170010",
+        "info_place": "JAD reports",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Точная причина болезни Альцгеймера еще неизвестна, но алюминий играет в ней главную роль.
+Вот еще один [мета-анализ==http://www.sciencedirect.com/science/article/pii/S0304394015302512] на эту тему."
+    },
+    {
+        "num": 13,
+        "title": "Link between Aluminum and the Pathogenesis of Alzheimer&#39;s Disease: The Integration of the Aluminum and Amyloid Cascade Hypotheses",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3056430/",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Kawahara",
+        "infoID": "PMC3056430",
+        "info_place": "Int J Alzheimers Dis",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Хоть эта статья в основном про роль алюминия в болезни Альцгеймера, она перечисляет также известные на сегодня механизмы влияния алюминия на биологические процессы.
+Несмотря на то, что алюминий является одним из самых распространенных металлов на Земле, в природе он встречается лишь в соединениях с кремнием и кислородом. Человек научился выделять чистый алюминий и создавать из него соли лишь в конце девятнадцатого века.
+У алюминия нет никакой полезной биологической функции.
+Алюминий является сильным нейротоксином, который подавляет более 200 биологических процессов.
+Среди всего прочего, алюминий связывается с АТФ (от чего появляется хроническая усталость), изменяет ДНК, убивает нервные клетки и т. д."
+    },
+    {
+        "num": 14,
+        "title": "Selective accumulation of aluminum in cerebral arteries in Alzheimer&rsquo;s disease",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3720708/",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Bhattacharjee",
+        "infoID": "PMC3720708",
+        "info_place": "J Inorg Biochem",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Чем ближе артерии находятся к мозгу, тем выше в них концентрация алюминия у больных болезнью Альцгеймера."
+    },
+    {
+        "num": 15,
+        "title": "Aluminum content of human semen: Implications for semen quality.",
+        "link": "http://www.sciencedirect.com/science/article/pii/S0890623814002548",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Klein",
+        "infoID": "25461904",
+        "info_place": "Reproductive Toxicology",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Алюминий собирается в сперме, и чем его больше, тем хуже качество спермы."
+    },
+    {
+        "num": 16,
+        "title": "Slow CCL2-dependent translocation of biopersistent particles from muscle to brain.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/23557144",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Khan",
+        "infoID": "23557144",
+        "info_place": "BMC Med",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Алюминий, вколотый в мышцу вместе с прививкой, попадает в мозг, селезенку, печень, и остается там годами. Он переносится по телу посредством макрофагов. Макрофаги это клетки, которые пожирают бактерии, и прочие токсичные вещества. Макрофаги проглатывают алюминий, но не умеют его утилизировать, а разносят его по всему телу через лимфатическую систему."
+    },
+    {
+        "num": 17,
+        "digest": "Вопрос безопасности алюминиевых солей является одним из краеугольных вопросов безопасности прививок, и поэтому защитники прививок часто должны на него отвечать.
+Вот, например, статья Пола Оффита, самого известного в мире защитника прививок, в которой он объясняет родителям, что алюминия в прививках не следует опасаться:"
+    },
+    {
+        "num": 17,
+        "title": "Addressing Parents&rsquo; Concerns: Do Vaccines Contain Harmful Preservatives, Adjuvants, Additives, or Residuals?",
+        "link": "http://pediatrics.aappublications.org/content/112/6/1394",
+        "info_type": "article",
+        "info_date": "2003",
+        "info_authors": "Offit",
+        "infoID": "",
+        "info_place": "Pediatrics",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Его аргументы:
+1) алюминиевые адъюванты безопасны, потому что используются в прививках более 70 лет.
+2) алюминий есть и в грудном молоке, и в детских смесях, и вообще это один из самых распространенных металлов.
+3) были проведены опыты на мышах, которых кормили лактатом алюминия, и ничего с ними не случилось."
+Первый аргумент настолько нелепый и антинаучный, что на него даже трудно ответить. Семьдесят лет назад у половины детей не было хронических заболеваний. А учитывая обилие научных исследований о вреде алюминия, этот аргумент попросту лживый.
+На второй аргумент отвечает следующая статья:
+    },
+    {
+        "num": 17, 
+        "title": "Infants&#39; exposure to aluminum from vaccines and breast milk during the first 6 months.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20010978",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "D&oacute;rea",
+        "infoID": "20010978",
+        "info_place": "J Expo Sci Environ Epidemiol.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Лишь в одной прививке от гепатита В, которую младенец получает в первый день жизни, алюминия в 5 раз больше, чем весь алюминий, который он получит за шесть месяцев питания грудным молоком.
+Кроме того, невозможно сравнивать алюминий и алюминиевый адъювант, который присоединен к антигену, и который организму намного сложнее вывести.
+На третий аргумент отвечает уже [вышеупомянутая статья==https://www.ncbi.nlm.nih.gov/pubmed/21568886].
+Оффит забывает упомянуть, что двигательная активность 20% мышей из этих экспериментов была значительно нарушена. Не говоря уже о том, что сравнивать внутримышечный алюминий и алюминий в пище (лишь 0.25% которого усваивается) невозможно, как и сравнивать лактат алюминия с фосфатом или гидроксидом алюминия. У разных солей алюминия разная токсичность."
+    },
+    {
+        "num": 18,
+        "title": "Adverse events after immunisation with aluminium-containing DTP vaccines: systematic review of the evidence.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/14871632",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Jefferson",
+        "infoID": "14871632",
+        "info_place": "Lancet Infect Dis.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "А вот систематический обзор и мета-анализ, который доказывает, что алюминий в вакцинах DTP безопасен. Очень рекомендую прочитать эту статью полностью. После ее прочтения, ваше мнение о науке больше никогда не будет прежним.
+Авторы выявили 8 исследований алюминиевых адъювантов, и сделали мета-анализ 5-и из них.
+Исследования безопасности длились от 24 часов до 6 недель. Побочные эффекты, которые в них искали, были лишь плач, крик, боль, температура, конвульсии и покраснение.
+Авторы заключили, что хотя все эти исследования были очень сомнительного качества, алюминий в вакцинах нечем заменить. И даже если замена ему найдется, то придется снова проверять и патентовать все вакцины, и это поставит под вопрос программы вакцинации во всем мире.
+Затем следует окончательный шокирующий вывод: Despite a lack of good-quality evidence we do not recommend that any further research on this topic is undertaken.
+Это, внимание, был систематический обзор всей имеющейся литературы о безопасности алюминия в прививках.
+Нет, не совсем так. Это был не обычный систематический обзор. Это был систематический обзор [Cochrane==https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE], самой уважаемой в медицине научной организации, чьи систематические обзоры признаются самыми качественными в мире. Можете себе представить как выглядят обычные, менее качественные систематические обзоры."
+    },
+    {
+        "num": 19,
+		"header": "Куда девается алюминий",
+        "title": "In vivo absorption of aluminium-containing vaccine adjuvants using 26Al",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/9302736",
+        "info_type": "article",
+        "info_date": "1997",
+        "info_authors": "Flarend",
+        "infoID": "9302736",
+        "info_place": "Vaccine",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Несмотря на то, что алюминиевые адъюванты используются с 1926 года, что именно происходит с ними после того, как их вкалывают в мышцу, науке неизвестно.
+Исследователи взяли несколько кроликов, вкололи двум из них радиоактивный гидроксид алюминия, двум другим радиоактивный фосфат алюминия. Через 28 дней кроликов убили, и на этот момент 94% гидроксида алюминия и 78% фосфата алюминия всё еще оставалось в теле кроликов.
+Авторы исследовали несколько внутренних органов, и заключили, что в них скопилось мало алюминия. Хотя как они определили, что его &quot;мало&quot; осталось неясным, поскольку контрольных кроликов, которым не кололи алюминий в эксперименте не было. Авторы не исследовали кости кроликов (потому что они их испортили), несмотря на то, что известно, что алюминий аккумулируется в костях. Авторы не исследовали мышцы, в которые был вколот алюминий. Исследование продлилось лишь 28 дней, несмотря на то, что известно, что алюминий остается в теле годами.
+Они заключили, что тело успешно выводит алюминий из организма, несмотря на то, что большая часть алюминия осталась в теле, и совсем непонятно, в каких именно органах."
+    },
+    {
+        "num": 20,
+        "title": "Effect of routine vaccination on aluminum and essential element levels in preterm infants.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/ ",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Movsas",
+        "infoID": "23856981",
+        "info_place": "JAMA Pediatr.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "15-и недоношенным детям сделали несколько прививок с 1200 мкг алюминия. Этого алюминия не нашли ни в крови, ни в моче. Куда он подевался осталось неясно."
+    },
+    {
+        "num": 21,
+		"header": "Фильмы:",
+        "digest": "[L&#39;aluminium, les vaccins et les deux lapins==https://www.youtube.com/watch?v=933TYSOglZE] (Алюминий, вакцины и два кролика)
+Очень интересный французский фильм (с английскими субтитрами). Включает интервью с мировым экспертом по алюминию Cristopher Exley, а также с открывателями MMF (Gherardi и Authier). Про коррупцию и многое другое.
+- Существуют не менее эффективные адъюванты (фосфат кальция), которые не используются.
+- Существуют вакцины вообще без адъювантов, они больше не используются."
+    },
+    {
+        "num": 22,
+        "digest": "[Vaccine syndrome==https://vimeo.com/215109690]
+Этот фильм является также частью сериала Vaccines revealed.
+- 250,000 солдат, участвующих в войне в Персидском заливе страдают от Gulf War syndrome (Синдром Войны в Персидском заливе). Это 35% всех солдат участвоваших в ней. Причем страдают от него также солдаты не участвовавшие в боевых действиях. Всего от Gulf War syndrome страдают более миллиона американских солдат. Причиной, судя по всему, является экспериментальная вакцина от антракса, а также прочие вакцины, которые американские солдаты обязаны делать в больших количествах. Американский солдат, отказавшийся от прививки, идет под суд, потом на пару месяцев в тюрьму, получает большой штраф, а затем его увольняют, лишая звания и пенсии (dishonorable discharge).
+- 35,000 солдат умерли от побочных эффектов прививки от антракса. Для сравнения, менее 6,800 солдат погибли в Ираке и в Афганистане. (непонятно, правда, откуда они взяли эту цифру)
+- А откуда вообще у иракцев есть антракс, которого американцы так боялись? Его Саддаму Хусейну дал президент Джимми Картер, чтобы помочь ему в его войне с Ираном.
+- Солдатки, получившие прививку от антракса, рожали детей с тяжелыми врожденными дефектами.
+- Каждый день 22 ветерана совершают самоубийство. (Я часто слышал этот факт, но не представлял, что это может быть как-то связано с прививками.)
+- А помните конверты с антраксом, которые через неделю после 9/11 прислали сенаторам и новостным агентствам, в результате чего 5 человек погибли, и в которых обвиняли тогда Ирак и Аль-Каиду? ФБР [считает==https://en.wikipedia.org/wiki/2001_anthrax_attacks], что их рассылал ученый, который работал в армии США над вакциной от антракса."
+    },
+    {
+        "num": 22,
+        "digest": "[The Age of Aluminuim==https://www.youtube.com/watch?v=5F0u54gs0iU]
+Этот фильм должен посмотреть каждый.
+Кроме всего прочего, алюминий, оказывается, используется также в системах очистки питьевой воды, и некоторые его количества там и остаются.
+А гидроксид алюминия [используется==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2590830/] для стимулирования аллергий у мышей."
+    },
+    {
+        "num": 23,
+        "digest": " Очень интересные лекции на тему алюминия в прививках, и не только в прививках:
+[Dr. Suzanne Humphries - Trojan Horses and Clusterbombs==https://www.youtube.com/watch?v=PWP6e2CYPo8 ]
+[Dr. Christopher Exley - Vaccine Safety Conference Session 16==https://www.youtube.com/watch?v=JKfbkeQyw84]
+[Dr. Christopher A. Shaw - Vaccine Safety Conference Session 17==https://www.youtube.com/watch?v=fmgw3KNjEJ4 ]"
+    },
+    {
+        "num": 24,
+        "title": "Aluminum-Induced Entropy in Biological Systems: Implications for Neurological Disease.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4202242/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Shaw",
+        "infoID": "PMC4202242",
+        "info_place": "J Toxicol.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Несколько статей и лекций, которые углубляются чуть дальше в биологию процессов, связанных с алюминием:
+[Human exposure to aluminium. (Exley, 2013, Environ Sci Process Impacts.) ==https://www.ncbi.nlm.nih.gov/pubmed/23982047]
+[Myelin is a preferential target of aluminum-mediated oxidative damage. (Verstraeten, 1997, Arch Biochem Biophys.)==https://www.ncbi.nlm.nih.gov/pubmed/9264541]
+[Human health risk assessment for aluminium, aluminium oxide, and aluminium hydroxide (Krewski, 2007, J Toxicol Environ Health B Crit Rev)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2782734]
+[Multifaceted effects of aluminium in neurodegenerative diseases: A review. (Maya, 2016, Biomed Pharmacother)==https://www.ncbi.nlm.nih.gov/pubmed/27479193]
+[Dr. Romain Gherardi - Vaccine Safety Conference Session 18==https://www.youtube.com/watch?v=ICQD9wuQmSc]
+[Dr. Russell Blaylock - Vaccine Safety Conference Session 22==https://www.youtube.com/watch?v=u9DkcpEEBPI]"
+    },
+    {
+        "num": 25,
+		"header": "Алюминий без связи с прививками",
+        "title": "Risk Assessment of Using Aluminum Foil in Food Preparation",
+        "link": "http://www.electrochemsci.org/papers/vol7/7054498.pdf",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Bassioni",
+        "infoID": "",
+        "info_place": "Int. J. Electrochem. Sci.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Если вы используете алюминиевую посуду, одноразовые алюминиевые противни или алюминиевую фольгу, то, возможно, не стоит этого делать. Еще: [[1]==http://www.sciencedirect.com/science/article/pii/S0048969716324548]."
+    },
+    {
+        "num": 26,
+        "title": "Aluminium, antiperspirants and breast cancer.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16045991",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Darbre",
+        "infoID": "16045991",
+        "info_place": "J Inorg Biochem.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "- Соли алюминия в антиперспирантах блокируют потовые железы, в результате чего пот не выделяется, что и делает их очень эффективными.
+- Причина 90% случаев рака груди - экологическая, а не генетическая.
+- В 1926 году лишь 31% раковых опухолей приходились на верхнюю внешнюю часть груди. В 1994 году на эту область приходилось уже 61% опухолей. Эта пропорция линейно растет из года в год.
+- Геномная нестабильность во внешней части груди постоянно повышается.
+- Среди больных раком груди, те, кто использовали антиперспиранты больше, диагностировались в более молодом возрасте.
+- Алюминий из кожи проникает в кровь уже после одного использования дезодоранта.
+- Алюминий генотоксичен, он может вносить изменения в ДНК, а также обладает эпигенетическим эффектом.
+- Алюминий блокирует рецепторы эстрогена.
+Впрочем, статью стоит читать не только женщинам, поскольку антиперспиранты, возможно, [приводят==https://www.ncbi.nlm.nih.gov/pubmed/19307063] также к раку предстательной железы.
+
+После этой статьи стоит почитать [статью==https://www.cancer.org/cancer/cancer-causes/antiperspirants-and-breast-cancer-risk.html] о антиперспирантах на сайте американского онкологического общества.
+А потом решайте сами, ставит ли перед собой это общество цель понизить количество больных раком, или наоборот."
+    },
+    {
+        "num": 27,
+        "title": "Antacids and dietary supplements with an influence on the gastric pH increase the risk for food sensitization.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2999750/",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Pali-Sch&ouml;ll",
+        "infoID": "PMC2999750",
+        "info_place": "Clin Exp Allergy.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Гидроксид алюминия и фосфат алюминия используются также в качестве антацидов (лекарств от изжоги и некоторых других болезней ЖКТ, многие из которых продаются без рецепта). Что, в свою очередь, приводит к аллергиям."
+    },
+    {
+        "num": 28,
+        "title": "Aluminium content of some foods and food products in the USA, with aluminium food additives.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16019791",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Saiyed",
+        "infoID": "16019791",
+        "info_place": "Food Addit Contam.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Количество алюминия в разных продуктах. Алюминия много в замороженных пиццах, колбасах, сыре, панкейках, пекарском порошке, пекарских смесях и т.д.
+Алюминия [немало==https://www.ncbi.nlm.nih.gov/pubmed/1625612] также в напитках, продающихся в алюминиевых пивных банках.
+У крыс, которых поили напитками из алюминиевых банок, содержание алюминия в костях [было==https://www.ncbi.nlm.nih.gov/pubmed/8118174] на 69% выше."
+    },
+    {
+        "num": 28,
+        "title": "Evaluation of aluminium concentrations in samples of chocolate and beverages by electrothermal atomic absorption spectrometry.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11552746",
+        "info_type": "article",
+        "info_date": "2001",
+        "info_authors": "Sepe",
+        "infoID": "11552746",
+        "info_place": "Food Addit Contam",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Алюминия много в шоколаде, очень много в какао, а также в чае и во фруктовых соках."
+    },
+    {
+        "num": 28,
+        "title": "Aluminium content of selected foods and food products.",
+        "link": "https://enveurope.springeropen.com/articles/10.1186/2190-4715-23-37",
+        "info_type": "article",
+        "info_date": "2011",
+        "info_authors": "Stahl",
+        "infoID": "",
+        "info_place": "Environ. Sci. Eur",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Алюминия много в какао, шоколаде, кондитерских изделиях, премиксах для выпечки, бисквитах и соленых крендельках, макаронах и т. д."
+    },
+    {
+        "num": 29,
+        "title": "Aluminum: a potential pro-oxidant in sunscreens/sunblocks?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/17854717",
+        "info_type": "article",
+        "info_date": "2007",
+        "info_authors": "Nicholson",
+        "infoID": "17854717",
+        "info_place": "Free Radic Biol Med.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Алюминий содержится в очень огромных количествах в солнцезащитных кремах. Поскольку алюминий является оксидантом, вполне возможно, что он способствует развитию меланомы."
+    },
+    {
+        "num": 30,
+        "title": "There is (still) too much aluminium in infant formulas.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2939626/",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Burrell",
+        "infoID": "",
+        "info_place": "BMC Pediatr.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "В детских смесях содержится очень много алюминия. Согласно стандарту EPA, в питьевой воде может содержаться максимум [200мкг==https://www.epa.gov/dwstandardsregulations/secondary-drinking-water-standards-guidance-nuisance-chemicals] алюминия на литр. В 15-и проверенных детских смесях было от 176мкг до 700мкг алюминия на литр.
+Через три года они [проанализировали==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3851493/] еще 30 детских смесей, с похожими результатами."
+    },
+    {
+        "num": 31,
+        "title": "Silicon-Rich Mineral Water as a Non-Invasive Test of the &lsquo;Aluminum Hypothesis&rsquo; in Alzheimer&rsquo;s Disease.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22976072",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Davenward",
+        "infoID": "22976072",
+        "info_place": "J Alzheimers Dis.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Минеральная вода, богатая кремнием Si(OH)<span style="font-size: xx-small;">4</span>, выводит алюминий из организма.
+12 недель употребления этой воды привело к когнитивным улучшениям у некоторых больных болезнью Альцгеймера.
+Судя по экспериментам на крысах, куркумин, возможно, [защищает==https://www.ncbi.nlm.nih.gov/pubmed/22130689] от воспалительных эффектов алюминия, а также [омега-3==https://www.ncbi.nlm.nih.gov/pubmed/27055897], [экстракт==https://www.ncbi.nlm.nih.gov/pubmed/28128384] из маша, [моринга==https://www.ncbi.nlm.nih.gov/pubmed/28397152], [мелатонин==https://www.ncbi.nlm.nih.gov/pubmed/26374992], [оливковое масло==https://www.ncbi.nlm.nih.gov/pubmed/25690328] и [фолиевая кислота==https://www.ncbi.nlm.nih.gov/pubmed/28119228]."
+    },
+    {
+        "num": 32,
+        "title": "Studies on aluminium leaching from cookware in tea and coffee and estimation of aluminium content in toothpaste, baking powder and paan masala.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/9092078",
+        "info_type": "article",
+        "info_date": "1997",
+        "info_authors": "Rajwanshi",
+        "infoID": "9092078",
+        "info_place": "Sci Total Environ",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Алюминия очень много в зубных пастах, а также в чае.
+[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/8462312] исследование о том, как зубная паста с алюминием усугубляет дерматит (который был вызван прививками).
+[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/8462312] исследование о том, как зубная паста с алюминием приводит к кариесу.
+[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/8462312] сообщается, что возможно алюминий в зубных пастах играет даже большую роль в возникновении Альцгеймера, чем алюминий в воде, и что 60% рынка всех зубных паст это пасты с алюминием."
+    },
+    {
+        "num": 33,
+        "digest": "Очень интересная TED-x [лекция==https://www.youtube.com/watch?v=Dvh3JhsrQ0w] о том, как неонатолог вылечила своего мужа от Альцгеймера кокосовым маслом."
+    },
+    {
+        "num": 34,
+        "title": "Association between maternal aluminum exposure and the risk of congenital heart defects in offspring.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/26707789/",
+        "info_type": "article",
+        "info_date": "2016",
+        "info_authors": "Liu",
+        "infoID": "26707789",
+        "info_place": "Birth Defects Res A Clin Mol Teratol",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "Высокий уровень алюминия в волосах матери ассоциирован с врожденными дефектами сердца у ребенка."
+    }
+	]
+}

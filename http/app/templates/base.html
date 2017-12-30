@@ -22,32 +22,44 @@
     <script type=text/javascript src="{{ url_for('static', filename='js/fileinput_locale_es.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/d3.min.js') }}"></script>
 </head>
-<body>
+<body >
 {% include "navbar.html" %}
 {% include "flash.html" %}
-<style>
-a.leftnav {color:#024d60;text-decoration:none;}
-a.leftnav:hover {color:#777;text-decoration:none;}
-</style>
+<div id="masthead">
+</div>
 <div style="margin:5px;">
-    <div style="float:left; width:10%; margin:50px 5px 5px 10px">
-        <ul style="margin:0; padding:0 0 10px 15px; list-style-type:square">
-        {% for entry in objects %}
-            <li style="color:#4d4df6">
-                <a href="/browse/{{ entry.I_S_codename }}" class="leftnav">{{ entry.I_S_name }}</a>
-            </li>
-        {% endfor %}
+    <div style="float:left; width:14%; margin:50px 5px 0 20px" id="left">
+        <ul id="sidebar" style="padding:0 0 0 15px; list-style-type:square">
+            {% for entry in objects %}
+                <li style="color:#4d4df6" class="leftnav">
+                    <a href="/browse/{{ entry.I_S_codename }}" class="leftnav">{{ entry.I_S_name }}</a>
+                </li>
+            {% endfor %}
         </ul>
     </div>
-    <div id="container" style="float:right; width:88%;">
-            {% block content %}{% endblock %}
+    <div style="float:right; width:82%;">
+        {% block content %}{% endblock %}
     </div>
 </div>
+<script type='text/javascript'>
+$(document).ready(function() {
+    var $body   = $(document.body);
+    var navHeight = $('.navbar').outerHeight(true);
+    $('#sidebar').affix({
+        offset: {
+            top: 245,
+            bottom: navHeight
+        }
+    });
+    $body.scrollspy({
+            target: '#left',
+            offset: navHeight
+    });
+});
+</script>
 </body>
 </html>
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<!--<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>-->
 <script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.min.js') }}"></script>
 <script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.bootstrap.min.js') }}"></script>

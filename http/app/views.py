@@ -26,9 +26,9 @@ MY_DEFAULT_FORMATTERS.update({
     date: date_format
 })
 
-
 """regex in template by rehref: replacing markups with HTML a href"""
 def rehref(jsonstring):
+    jsonstring = re.sub(r'\[\]', r'', "".join(jsonstring))
     return re.sub(r'\[(.*?)\=\=(.*?)\]', r'<a href=\2>\1</a>', "".join(jsonstring)) # join: make it string
 app.jinja_env.filters['rehref'] = rehref
 
@@ -41,7 +41,8 @@ def index():
 
 @app.route('/content/<namespace>/<codename>')
 def show_item(namespace, codename):
-    return render_template('index.html', form=g.form, items=g.items, objects=g.objects)
+    data = DB().get_a_space(namespace, codename)
+    return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects)
 
 
 @app.route('/intro/<namespace>',methods=['GET','POST'])
@@ -91,3 +92,13 @@ def tmpl():
     return render_template('tmpl.html', items=items)
 
 
+@app.errorhandler(404)
+def page_not_found(error):
+    form = makeform()
+    return render_template('404.html', items=g.items, objects=g.objects), 404
+
+
+@app.errorhandler(500)
+def internal_error(error):
+    form = makeform()
+    return render_template('500.html', items=g.items, objects=g.objects), 500

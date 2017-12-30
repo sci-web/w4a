@@ -10,25 +10,27 @@
     <div style="margin:10px 10px 0 0">
         <div style="height:60px">
             <div style="float:left"><h1>{{ entry.subject }}</h1></div>
-            <div style="float:right"><h4 style="text-align:right">{{ entry.analyst }}</h4></div>
+            <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ entry.analyst }}</a></h4></div>
         </div>
-        <div style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
-            {{ entry.epigraph.source }}</small>
+        <div  style="margin:0 45px 0 0; line-height:16px" align=right><small>{{ entry.epigraph.text | safe }}<br>
+            <em>{{ entry.epigraph.source }}</em></small>
         </div>
-        <div style="margin:20px 20px 10px 20px; text-align:justify">
-        {{ entry.intro | safe}}
+        </div>
+        <div style="margin:10px 50px 0 0; text-align:justify">
+        {{ entry.intro | rehref | safe}}
         </div>
     </div>
-    <div align=right style="margin:10px 10px 0 0">{{ entry.date }}</div>
-{% include "points.html" %}
+    <div style="height:20px; margin:0 10px 20px 0px; font-size:17px;">
+        <div style="float:left; margin-left:-3px">
+            <a href="/chapters/{{ entry.namespace }}" class="linknav">Оглавление</a>
+        </div>
+        <div style="float:right; margin: 0 15px 0 0">
+            <small style="background-color:#e1e6f0;margin:5px">{{ entry.date }}</small>
+        </div>
+    </div>
+    <div style="margin:0 30px 40px 0">
+        {% include "points.html" %}
+    </div>
 {% endfor %}
-</div>
-<div style="height:30px; margin:0 20px 20px 5px">
-    <div style="float:left">
-        <a href="#top" style="border:0px; width:11px; margin:5px; text-decoration:none"><font color="#3F4659" size=4>↑</font></a>
-    </div>
-    <div style="float:right">
-        <a href="#top" style="border:0px; width:11px; margin:5px; text-decoration:none"><font color="#3F4659" size=4>↑</font></a>
-    </div>
 </div>
 {% endblock %}

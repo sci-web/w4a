@@ -1,4 +1,4 @@
-    <ol>
+  <ol>
     {% for pnt in entry.points %}
         <li style="margin:10px; text-align:justify">{{ pnt.item | rehref | safe  }}
     {% endfor %}
@@ -21,3 +21,11 @@
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ entry.summary | rehref | safe  }}
     </div>
+<div style="height:10px; margin:10px 5px 0 5px">
+    <div style="float:left">
+        <a href="#top" style="border:0px; width:11px; margin:5px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+    </div>
+    <div style="float:right">
+        <a href="#top" style="border:0px; width:11px; margin:5px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+    </div>
+</div>

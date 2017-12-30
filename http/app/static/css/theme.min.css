@@ -920,7 +920,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .tab-content>.tab-pane{display:none}
 .tab-content>.active{display:block}
 .nav-tabs .dropdown-menu{margin-top:-1px;border-top-right-radius:0;border-top-left-radius:0}
-.navbar{position:relative;min-height:44px;margin-bottom:22px;border:1px solid transparent}
+.navbar{position:relative;min-height:50px;margin-bottom:22px;border:1px solid transparent}
 .navbar-collapse{overflow-x:visible;padding-right:15px;padding-left:15px;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}
 .navbar-collapse.in{overflow-y:auto}
 @media (min-width:768px){.navbar{border-radius:4px}
@@ -938,18 +938,18 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .navbar-fixed-bottom,.navbar-fixed-top{position:fixed;right:0;left:0;z-index:1030}
 .navbar-fixed-top{top:0;border-width:0 0 1px}
 .navbar-fixed-bottom{bottom:0;margin-bottom:0;border-width:1px 0 0}
-.navbar-brand{float:left;padding:11px 15px;font-size:20px;line-height:22px;height:44px}
+.navbar-brand{float:left;padding:14px 15px;font-size:20px;line-height:22px;height:50px}
 .navbar-brand:focus,.navbar-brand:hover{text-decoration:none}
 .navbar-brand>img{display:block}
 @media (min-width:768px){.container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}
 .navbar-fixed-bottom,.navbar-fixed-top,.navbar-static-top{border-radius:0}
 .navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand{margin-left:-15px}
 }
-.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:5px;margin-bottom:5px;background-color:transparent;border:1px solid transparent;border-radius:4px}
+.navbar-toggle{position:relative;float:right;margin-right:15px;padding:9px 10px;margin-top:8px;margin-bottom:8px;background-color:transparent;border:1px solid transparent;border-radius:4px}
 .navbar-toggle:focus{outline:0}
 .navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}
 .navbar-toggle .icon-bar+.icon-bar{margin-top:4px}
-.navbar-nav{margin:5.5px -15px}
+.navbar-nav{margin:7px -15px}
 .navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:22px}
 @media (max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}
 .navbar-nav .open .dropdown-menu .dropdown-header,.navbar-nav .open .dropdown-menu>li>a{padding:5px 15px 5px 25px}
@@ -960,9 +960,9 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 @media (min-width:768px){.navbar-toggle{display:none}
 .navbar-nav{float:left;margin:0}
 .navbar-nav>li{float:left}
-.navbar-nav>li>a{padding-top:11px;padding-bottom:11px}
+.navbar-nav>li>a{padding-top:14px;padding-bottom:14px}
 }
-.navbar-form{padding:10px 15px;border-top:1px solid transparent;border-bottom:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);margin:5px -15px}
+.navbar-form{padding:10px 15px;border-top:1px solid transparent;border-bottom:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 1px 0 rgba(255,255,255,.1);margin:8px -15px}
 @media (min-width:768px){.navbar-form .form-control-static,.navbar-form .form-group{display:inline-block}
 .navbar-form .control-label,.navbar-form .form-group{margin-bottom:0;vertical-align:middle}
 .navbar-form .form-control{display:inline-block;width:auto;vertical-align:middle}
@@ -983,9 +983,9 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 }
 .navbar-nav>li>.dropdown-menu{margin-top:0;border-top-right-radius:0;border-top-left-radius:0}
 .navbar-fixed-bottom .navbar-nav>li>.dropdown-menu{margin-bottom:0;border-radius:4px 4px 0 0}
-.navbar-btn{margin-top:5px;margin-bottom:5px}
-.navbar-btn.btn-sm{margin-top:6.5px;margin-bottom:6.5px}
-.navbar-btn.btn-xs,.navbar-text{margin-top:11px;margin-bottom:11px}
+.navbar-btn{margin-top:8px;margin-bottom:8px}
+.navbar-btn.btn-sm{margin-top:9.5px;margin-bottom:9.5px}
+.navbar-btn.btn-xs,.navbar-text{margin-top:14px;margin-bottom:14px}
 @media (min-width:768px){.navbar-text{float:left;margin-left:15px;margin-right:15px}
 .navbar-left{float:left!important}
 .navbar-right{float:right!important;margin-right:-15px}

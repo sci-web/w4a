@@ -39,21 +39,9 @@ def logout():
     return redirect("/")
 
 
-@app.errorhandler(404)
-def page_not_found(error):
-    form = makeform()
-    return render_template('404.html', form=form), 404
-
-
-@app.errorhandler(500)
-def internal_error(error):
-    form = makeform()
-    return render_template('500.html', form=form), 500
-
-
 @lm.user_loader
 def load_user(email):
-    u = app.config['STAFF'].find_one({"email": email})
+    u = app.config['AUTH'].find_one({"email": email})
     if not u:
         return None
     return Auth(u['email'], u['access'], u['first_name'], u['surname'])

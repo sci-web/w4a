@@ -1,55 +1,24 @@
-.boxed {
-  -moz-border-radius: 7px;
-  -khtml-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  border: 1px solid #555ce1;
-  margin: 38px 0 5px 3px;
-  padding: 2px 2px 2px 2px;
+#masthead {min-height:15px;background-color:#000044;color:#aaaacc;}
+.affix-top,.affix{position: static;margin:-10px 0 0 0;}
+@media (min-width: 1200px) {
+  #sidebar.affix-top {position: static;margin:10px 0 0 0;}
+  #sidebar.affix-bottom {position: relative;}
+  #sidebar.affix {position: fixed;margin:10px 0 0 0;}
 }
+a.leftnav {color:#024d60;text-decoration:none;}
+a.leftnav:hover {color:#3840ea;text-decoration:none;}
+li.leftnav {padding:1px}
+li.leftnav:hover {color:#3840ea;text-decoration:none;background-color:#e1e6f0;padding:1px}
+a.linknav {color:#024d60;text-decoration:none;padding:3px}
+a.linknav:hover {color:#3840ea;text-decoration:none;background-color:#e1e6f0;padding:3px}
 .boxed_sh {
-  -moz-border-radius: 7px;-khtml-border-radius: 7px; -webkit-border-radius: 7px; border-radius: 7px;
-  border: 1px solid #555ce1; margin: 15px 0 3px 3px; padding: 2px 2px 2px 2px;
-  box-shadow: 4px 4px 6px #ddd;
-  -moz-box-shadow: 4px 4px 6px #ddd;
-  -webkit-box-shadow: 4px 4px 6px #ddd;
-  background:#fff
+  -moz-border-radius:7px;-khtml-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;border:1px solid #555ce1;margin:15px 0 3px 3px;
+  padding: 2px 2px 2px 2px;box-shadow: 4px 4px 6px #ddd;-moz-box-shadow: 4px 4px 6px #ddd;-webkit-box-shadow: 4px 4px 6px #ddd;background:#fff
 }
-.ui-draggable .ui-dialog-titlebar { cursor: move; }
-
-/* Overlays */
-.ui-widget-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-.ui-resizable { position: relative;}
-.ui-resizable-handle { position: absolute;font-size: 0.1px; display: block; }
-.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
-.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
-.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
-.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
-.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
-.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
-.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
-.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
-.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}.ui-accordion .ui-accordion-header { display: block; cursor: pointer; position: relative; margin-top: 2px; padding: .5em .5em .5em .7em; zoom: 1; }
-.ui-accordion .ui-accordion-icons { padding-left: 2.2em; }
-.ui-accordion .ui-accordion-noicons { padding-left: .7em; }
-.ui-accordion .ui-accordion-icons .ui-accordion-icons { padding-left: 2.2em; }
-.ui-accordion .ui-accordion-header .ui-accordion-header-icon { position: absolute; left: .5em; top: 50%; margin-top: -8px; }
-.ui-accordion .ui-accordion-content { padding: 1em 2.2em; border-top: 0; overflow: auto; zoom: 1; }
-.ui-autocomplete {
-	position: absolute;
-	top: 0;
-	left: 0;
-	cursor: default;
-}
-
-.bootstrap-select > .btn {
-    height: 25px;
-    padding: 1px 14px 1px 7px;
-}
+.bootstrap-select > .btn {height: 25px;padding: 1px 14px 1px 7px;}
 .tdv {vertical-align: top; width: 4%}
-.wrap {
-    font-family: monospace;
-    word-wrap:break-word;
-}
+.wrap {font-family: monospace;word-wrap:break-word;}
 input.long {width:900px;}
 input.short {width:30px; height:14px; margin:5px 0 0 3px;}
+.heading{height: 100px;line-height: 50px;margin-top: 10px;position: -webkit-sticky;position: sticky;top: 0px;}
+img {max-width: 100%;max-height: 100%;}

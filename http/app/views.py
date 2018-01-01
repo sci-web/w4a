@@ -41,8 +41,12 @@ def index():
 
 @app.route('/content/<namespace>/<codename>')
 def show_item(namespace, codename):
-    data = DB().get_a_space(namespace, codename)
-    return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects)
+    i_data = DB().get_a_space(namespace, codename)
+    data = json.loads(dumps(i_data))
+    title = data[0]["title"]
+    f_date = datetime.datetime.fromtimestamp( data[0]["date"]['$date'] / 1e3 )
+    data[0]["date"] = f_date.strftime('%d-%m-%Y %H:%M')    
+    return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects, title=namespace.title() + ": " + title)
 
 
 @app.route('/intro/<namespace>',methods=['GET','POST'])

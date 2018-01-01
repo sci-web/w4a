@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <a name="top"></a>
-<div style="margin:40px 30px 30px 0px;">
+<div style="margin:35px 30px 30px 0px;">
 {% for entry in idata %}
     <div style="margin:10px 10px 0 0">
         <div style="height:60px">
@@ -14,6 +14,9 @@
         </div>
         <div  style="margin:0 45px 0 0; line-height:16px" align=right><font color="#2d2df6">{{ entry.epigraph.text | safe }}<br>
             <em>{{ entry.epigraph.source }}</em></font>
+        </div>
+        <div style="margin:10px 5px; 0 0" align=right>
+            <small style="background-color:#e1e6f0;margin:5px">{{ entry.date }}</small>
         </div>
         </div>
         <div style="margin:10px 50px 0 0; text-align:justify">
@@ -95,12 +98,16 @@
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ entry.summary | rehref | safe  }}
     </div>
-    <div style="height:30px; margin:10px 25px 20px 5px;">
+    <div style="height:50px; margin:10px 25px 20px 5px;">
         <div style="float:left">
-            <a href="#top" style="border:0px; width:11px; margin:5px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+            <a href="/intro/{{ entry.namespace }}" class="linknav" style="margin:15px;">Введение</a>
+            <p>
+            <a href="#top" style="border:0px; width:11px; margin:15px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
         </div>
-        <div style="float:right">
-            <a href="#top" style="border:0px; width:11px; margin:5px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+        <div style="float:right" align=right>
+            <a href="/chapters/{{ entry.namespace }}" class="linknav" style="margin:15px;">Оглавление</a>
+            <p>
+            <a href="#top" style="border:0px; width:11px; margin:15px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
         </div>
     </div>
 {% endfor %}

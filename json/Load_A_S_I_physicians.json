@@ -1,0 +1,331 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Врачи",
+"I_S_codename": "safety",
+"I_S_type_ref": "S_S",
+"I_S_type_this": "???",
+"I_S_name": "Врачи",
+"intro" : "",
+"date" : "26-06-2017",
+"epigraph": {
+"text": "Врачи - это те, кто прописывают лекарства, о которых мало знают,
+чтобы лечить болезни, о которых они знают ещё меньше,
+у людей, о которых они не знают вообще ничего.",
+"source": "Вольтер"
+},
+"points":[{
+		"num": 1,
+		"digest": "Аргумент: \"Если бы с прививками была какая-либо проблема, если бы они были небезопасны, или неэффективны, то врачи бы об этом знали. Но в настоящее время существует практически полный медицинский консенсус - прививки безопасны и эффективны. Ведь врачи, за их долгие годы обучения, наверняка учили про прививки намного больше, чем ты там почитал о них в интернете\""
+    },
+    {
+        "num": 2,
+        "digest": "Моя жена тоже считала, что прививки безопасны и эффективны. Так их учили. Я спросил у нее, сколько часов за всё время её обучения было посвящено прививкам. Оказалось, что лишь несколько часов. Из них два часа они учили про календарь прививок, и еще два часа была лекция на тему \"как отвечать на аргументы антипрививочников\". К слову, после этой лекции почти все студенты заявили, что аргументы лектора их не убедили, и что аргументы антипрививочников более убедительны. Они, разумеется, не подумали, что антипрививочники в чём-то правы. Они решили, что лектор просто плохо подготовилась к этой лекции."
+    },
+    {
+        "num": 3,
+        "digest": "Но может в других университетах всё иначе? [Вот==https://www.youtube.com/watch?v=buQvtnQ7VXA], сколько учат про прививки в самых престижных американских университетах. Из 6,700 страниц, которые студент медвуза должен выучить, лишь 4 страницы посвященны прививкам."
+    },
+    {
+        "num": 4,
+        "digest": "Врачи имеют финансовую заинтересованность в прививках. Чем больше прививок они сбывают, тем выше их бонус.
+Страховая компания Blue Cross Blue Shield, например, [платит==https://wellnessandequality.com/tag/blue-cross-blue-shields-physician-incentive-program/ ] врачам по $400 за каждого полностью привитого ребенка. Но только если процент привитых в практике выше 63%. Это и есть главная причина того, что педиатры в США [отказываются==https://www.forbes.com/sites/tarahaelle/2016/08/29/as-more-parents-refuse-vaccines-more-doctors-dismiss-them-with-aaps-blessing/#678539881f22] лечить непривитых детей."
+    },
+    {
+        "num": 5,
+        "digest": "Аргумент: \"Но я разговаривал с несколькими врачами, и все они утверждают, что прививки безопасны. Более того, врачи ведь не прививали бы своих детей, если бы считали прививки небезопасными\"."
+    },
+    {
+        "num": 6,
+        "digest": "Большинство людей полагают, что врач может лечить так, как он считает нужным. Это далеко не так. Если, например, врач прочитал несколько научных статей, и пришел к выводу, что определенную болезнь лучше лечить каким-то другим способом, он не имеет права это делать. Врач обязан следовать разрешенным протоколам лечения, иначе он лишится лицензии. Если врач посоветует пациенту какое-либо неодобренное лекарство, ну, например, лечить коклюш витамином С, а не антибиотиком, и с пациентом что-то случится, то врач пойдет под суд. Если же врач выпишет антибиотики ([не особо эффективные==https://www.ncbi.nlm.nih.gov/pubmed/15674946] в случае коклюша), и с пациентом что-то случится, врач не понесет никакой ответственности. Какой же смысл врачу советовать пациенту что-то, что не одобрено протоколом?
+Точно также, врач, по большему счету, не имеет права советовать пациенту не прививаться. Он очень быстро может лишиться лицензии (особенно в США), и даже если он её не лишится, его карьера далеко не продвинется.
+Тем не менее, есть немало врачей открыто выступающих против прививок. Конечно, это всегда врачи со своей частной практикой."
+    },
+    {
+        "num": 7,
+        "digest": "Если вы спросите мою жену, как врача, советует ли она прививаться, и она вам не доверяет, то она ответит, что советует. Прививки, продекламирует она, это самый большой подарок медицины человечеству, они спасли миллионы жизней.
+Если же вы спросите её, прививает ли она своего ребёнка, и она вам полностью доверяет, то она объяснит, что выцарапает глаза тому, кто приблизится к ребёнку с вакциной, и посоветует вам поступить также.
+Поэтому важно правильно задавать вопрос. Еще более важно, чтобы врач, которому вы задаёте вопрос, полностью вам доверял, и не думал, что вы можете на него пожаловаться, или опубликовать его совет.
+Конечно, большинство врачей скорее всего прививают своих детей. Но только потому, что они почти ничего о вакцинах не учили. Поэтому важно также спросить у врача, сколько научных статей о безопасности и эффективности вакцин он прочитал. Попросите его также дать вам почитать хоть одно исследование, доказывающее безопасность вакцины, которую он собирается вколоть."
+    },
+    {
+        "num": 8,
+		"header": "И всё же многие врачи идут на риск, и не советуют своим пациентам прививаться. Вот несколько исследований",
+        "title": "Despite awareness of recommendations, why do health care workers not immunize pregnant women?",
+        "link": "https://www.ncbi.nlm.nih.gov/labs/articles/28063725/",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Gesser-Edelsburg",
+        "infoID": "28063725",
+        "info_place": "Am J Infect Control",
+        "info_geo": "Israel",
+        "I_S_codenames": [""],
+        "digest": "Несмотря на то, что 93% врачей знают, что министерство здравоохранения рекомендует прививать беременных женщин от гриппа и коклюша, лишь 70% следуют этим рекомендациям. Треть врачей считают, что обе прививки опасны, или что их безопасность сомнительна. 40% врачей из тех, которые считают, что эти прививки опасны, всё равно рекомендуют их своим пациенткам. (Израиль)"
+    },
+    {
+        "num": 9,
+        "title": "How do physicians immunize their own children? Differences among pediatricians and nonpediatricians.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16263976",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Posfay-Barbe",
+        "infoID": "16263976",
+        "info_place": "Pediatrics",
+        "info_geo": "Switzerland",
+        "I_S_codenames": [""],
+        "digest": "5% врачей непедиатров не прививают своих детей от кори-свинки-краснухи. Они считают, что комбинированные вакцины небезопасны, что лучше переболеть болезнью, чем вакцинироваться, и что гомеопатическое лечение хорошо работает для этих болезней.
+10% отложат на более поздний срок прививку DTаP, 15% отложат прививку MMR.
+Треть врачей не прививали своих детей от гепатита В и от гемофильной палочки. Лишь 12% прививали от гриппа, и лишь 3% прививали от ветрянки. 34% педиатров не прививали своих детей согласно графику прививок.
+В опросе участвовали лишь подписчики InfoVac, то есть врачи, активно заинтересованные в прививках. Из чего следует, что реальное количество врачей, не прививающих своих детей, вероятно намного больше. (Швейцария)"
+    },
+    {
+        "num": 10,
+        "title": "Vaccination practices among physicians and their children.",
+        "link": "https://www.scirp.org/journal/PaperInformation.aspx?PaperID=22932",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Martin",
+        "infoID": "",
+        "info_place": "OJPed.",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "21% педиатров-специалистов и 10% общих педиатров откажутся хотя бы от одной прививки для своего ребёнка.
+19% педиатров-специалистов и 5% общих педиатров отложат прививку MMR до 1.5 летнего возраста.
+18% педиатров-специалистов не сделают своему ребёнку прививку от ротавируса, 6% не сделают прививку от гепатита А. (США)"
+    },
+    {
+        "num": 11,
+        "title": "Physicians who do and do not recommend children get all vaccinations.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/18726813",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Gust",
+        "infoID": "18726813",
+        "info_place": "J Health Commun",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "11% врачей не рекомендовали своим пациентам прививать своих детей всеми вакцинами.
+Врачи-терапевты в 2 раза чаще педиатров не рекомендовали прививать (терапевты на прививках зарабатывают меньше).
+Врачи доверяют медицинским журналам больше чем CDC и FDA. Фармацевтическим компаниям они доверяют меньше, чем интернету. (США)"
+    },
+    {
+        "num": 12,
+        "title": "Paediatricians knowledge, attitudes, and practices regarding immunizations for infants in Italy.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2801680/",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Anastasi",
+        "infoID": "PMC2801680",
+        "info_place": "BMC Public Health",
+        "info_geo": "Italy",
+        "I_S_codenames": [""],
+        "digest": "Всего 10% врачей были хорошего мнения о всех вакцинах.
+60% врачей хотели бы знать о вакцинах больше.
+Лишь 25% врачей делали своим пациентам необязательные прививки (коклюш, корь, свинка, ветрянка, краснуха, HiB, пневмококк, менингококк). (Италия)"
+    },
+    {
+        "num": 13,
+        "title": "Factors associated with vaccination for hepatitis B, pertussis, seasonal and pandemic influenza among French general practitioners: a 2010 survey.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/23806242",
+        "info_type": "article",
+        "info_date": "2013",
+        "info_authors": "Pulcini",
+        "infoID": "23806242",
+        "info_place": "Vaccine",
+        "info_geo": "France",
+        "I_S_codenames": [""],
+        "digest": "27% семейных врачей не были привиты от гепатита В, 36% не были привиты от коклюша. 23% не были привиты от гриппа. (Франция)"
+    },
+    {
+        "num": 14,
+        "title": "Knowledge, attitudes, beliefs and practices of general practitioners towards measles and MMR vaccination in southeastern France in 2012.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/23517454",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Pulcini",
+        "infoID": "23517454",
+        "info_place": "Clin Microbiol Infect",
+        "info_geo": "France",
+        "I_S_codenames": [""],
+        "digest": "13% врачей не считают корь опасной болезнью. 12% врачей считают вторую дозу MMR бесполезной.
+33% врачей не считают, что прививка MMR должна быть обязательной для детей до 2-х лет. (Франция)"
+    },
+    {
+        "num": 15,
+        "title": "What lies behind the low rates of vaccinations among nurses who treat infants?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22446637",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Baron-Epel",
+        "infoID": "22446637",
+        "info_place": "Vaccine",
+        "info_geo": "Israel",
+        "I_S_codenames": [""],
+        "digest": "После того, как израильских медсестер в течение 3-х месяцев упрашивали привиться от коклюша, лишь 2% (два процента) соизволили это сделать. Причем речь идет о медсестрах, работающих в центрах матери и ребенка (типат халав), то есть тех, чья главная роль, это прививать детей.
+Большинство медсестер не доверяет органам здравоохранения, и отчаянно сопротивляются обязательным прививкам.
+Медсестры опасаются побочных эффектов, и считают, что риск от гриппа и коклюша ниже, чем риск от прививки.
+Они считают, что у родителей должен быть выбор, прививать или не прививать ребенка, и требуют такого же уважения к их правам.
+Медсестры разделяют работу и личную жизнь. То, что их работа это прививать детей, это одно. А то, прививаются ли они сами или нет, это их личное дело, и они не считают нужным сообщать родителям ни свое мнение о прививках, ни о том, прививаются ли они сами.
+Авторы исследования заключили, что медсестры, которые делают прививки, по сути являются антипрививочницами. (Израиль)"
+
+Это, наверное, самое важное исследование, из всех представленных здесь. Практически во всех остальных исследованиях, данные были собраны из опросов врачей. Врачи прекрасно понимают, что им не следует негативно отзываться о прививках, поэтому логично предположить, что реальное количество врачей, которые не прививают своих детей намного выше. Данные в этом исследовании реальны, они не основаны на опросах. <b>98% медсестер, чья основная роль, это делать детям прививки, отказываются прививаться сами!</b>
+Израильские врачи, впрочем, тоже [отказываются==https://www.vesty.co.il/articles/0,7340,L-5028846,00.html] прививаться от гриппа."
+    },
+    {
+        "num": 16,
+        "title": "Influenza vaccination among healthcare workers in Italy.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4514208/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Alicino",
+        "infoID": "PMC4514208",
+        "info_place": "Hum Vaccin Immunother",
+        "info_geo": "Italy",
+        "I_S_codenames": [""],
+        "digest": "Работники системы здравоохранения сопротивляются прививкам от гриппа, несмотря на десять лет усилий, направленных на повышение уровня вакцинации. Лишь 30% врачей, 11% медсестер и 9% клинического персонала привились от гриппа. (Италия)"
+    },
+    {
+        "num": 17,
+        "title": "Vaccinating health care workers during an influenza pandemic.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22773657",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Head",
+        "infoID": "22773657",
+        "info_place": "Occup Med Lond",
+        "info_geo": "UK",
+        "I_S_codenames": [""],
+        "digest": "41% работников системы здравоохранения отказались вакцинироваться от H1N1 во время пандемии 2009 года. Они считали, что вакцина неэффективна, и нее есть побочные эффекты, и вообще, инфекция эта обычно легко проходит.
+57% работников системы здравоохранения отказались вакцинироваться от обычного гриппа. (Лондон, Великобритания)"
+    },
+    {
+        "num": 
+18,
+        "title": "Influenza vaccination amongst hospital health care workers in Beijing.(Seale, 2010, Occup Med Lond",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20418403",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Seale",
+        "infoID": "20418403",
+        "info_place": "Occup Med Lond",
+        "info_geo": "China",
+        "I_S_codenames": [""],
+        "digest": "Лишь 13% врачей и 21% медсестер прививаются от гриппа.
+40% работников здравоохранения считают, что прививка от гриппа может привести к заболеванию гриппом. (Пекин, Китай)"
+    },
+    {
+        "num": 19,
+        "title": "Seasonal and Pandemic A",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20471438",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "V&iacute;rseda",
+        "infoID": "20471438",
+        "info_place": "Vaccine",
+        "info_geo": "Spain",
+        "I_S_codenames": [""],
+        "digest": "Более половины работников здравоохранения отказались прививаться от гриппа и лишь 16.5% привились от H1N1 во время \"пандемии\" 2009-го года. Они сомневались в эффективности прививки и боялись побочных эффектов. (Мадрид, Испания)"
+    },
+    {
+        "num": 20,
+        "title": "Influenza vaccination compliance among health care workers in a German university hospital.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19139807",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Wicker",
+        "infoID": "19139807",
+        "info_place": "Infection",
+        "info_geo": "Germany",
+        "I_S_codenames": [""],
+        "digest": "Более 20 лет немецких работников здравоохранения уговаривают прививаться от гриппа, но лишь 39% врачей и 17% медсестер прививаются. Они опасаются побочных эффектов, считают, что прививка может привести к болезни, и не верят в ее эффективность. (Берлин, Германия)"
+    },
+    {
+        "num": 21,
+        "title": "Influenza vaccination attitudes and practices among US registered nurses.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19556035",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Clark",
+        "infoID": "19556035",
+        "info_place": "Am J Infect Control",
+        "info_geo": "",
+        "I_S_codenames": [""],
+        "digest": "41% медсестер не привились от гриппа. Они опасались побочных эффектов, считали, что риск заразиться низкий, и вообще, не считали эту прививку эффективной. (США)"
+    },
+    {
+        "num": 22,
+		"header": "Та же история повторяется везде. Врачи и медсестры во всех странах отказываются прививаться от гриппа.",
+        "title": "Influenza vaccination in paediatric nurses: cross-sectional study of coverage, refusal, and factors in acceptance.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/18448210",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Norton",
+        "infoID": "",
+        "info_place": "Vaccine",
+        "info_geo": "Canada",
+        "I_S_codenames": [""],
+        "digest": "Канада"
+    },
+    {
+        "num": 22,
+        "title": "Attitudes of health care workers to influenza vaccination: why are they not vaccinated?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/17276792",
+        "info_type": "article",
+        "info_date": "2007",
+        "info_authors": "Takayanagi",
+        "infoID": "",
+        "info_place": "Am J Infect Control",
+        "info_geo": "Brazil",
+        "I_S_codenames": [""],
+        "digest": "Бразилия"
+    },
+    {
+        "num": 22,
+        "title": "Influenza vaccination coverage among patients and healthcare workers in a university hospital during the 2006-2007 influenza season.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/23116695",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Landelle",
+        "infoID": "23116695",
+        "info_place": "Vaccine",
+        "info_geo": "France",
+        "I_S_codenames": [""],
+        "digest": "Франция"
+    },
+    {
+        "num": 22,
+		"digest": "Весь мир",
+		"sources_pool": [{
+        "title": "Influenza vaccination of health care workers in hospitals--a review of studies on attitudes and predictors.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19467744",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Hollmeyer",
+        "infoID": "",
+        "info_place": "Vaccine",
+        "info_geo": "19467744",
+        "I_S_codenames": [""],
+		},
+		{
+		 "title": "Influenza vaccination of healthcare workers: a literature review of attitudes and beliefs.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16804657",
+        "info_type": "article",
+        "info_date": "2006",
+        "info_authors": "Hofmann",
+        "infoID": "16804657",
+        "info_place": "Infection",
+        "info_geo": "19467744",
+        "I_S_codenames": [""],
+		}]
+    },
+    {
+        "num": 23,
+        "digest": "Сколько не толкуй врачам и медсестрам, что все прививки безопасны и эффективны, далеко не все в это верят.
+Научные данные свидетельствуют о том, что медицинский консенсус о безопасности и эффективности прививок - это миф."
+    },
+    {
+        "num": 24,
+        "digest": "Австралийские врачи, которые [помогают==https://www.facebook.com/9NewsMelbourne/videos/1886631838267135/] своим пациентам отказываться от прививок [преследуются==http://www.abc.net.au/news/2017-08-24/melbourne-doctors-investigated-over-anti-vaccination-allegations/8837554] законом. [Еще==https://www.facebook.com/iwakeupwithtoday/videos/1711307558903902/].
+Врачи в Индии, которые заказывают много вакцин, [получают==http://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/pharma-firm-lures-doctors-with-gold-coins-to-push-its-vaccines/articleshow/56700011.cms] подарки от фармацевтической компании."
+    }]
+}

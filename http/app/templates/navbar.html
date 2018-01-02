@@ -10,7 +10,13 @@
         <li class="dropdown"><a href="/intro/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
           <ul class="dropdown-menu">
           {% for entry in items %}
-              <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.I_S_name }}</a></li>
+              <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">
+                {% if entry.I_S_type == "S_O" %}
+                {{ entry.I_S_name }}
+                {% else %}
+                <div style="text-align:right">{{ entry.I_S_name }}</div>
+                {% endif %}
+                </a></li>
           {% endfor %}
           </ul>
         </li>

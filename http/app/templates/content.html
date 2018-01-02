@@ -4,7 +4,6 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<a name="top"></a>
 <div style="margin:35px 30px 30px 0px;">
 {% for entry in idata %}
     <div style="margin:10px 10px 0 0">
@@ -13,7 +12,11 @@
             <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ entry.analyst }}</a></h4></div>
         </div>
         <div  style="margin:0 45px 0 0; line-height:16px" align=right><font color="#2d2df6">{{ entry.epigraph.text | safe }}<br>
-            <em>{{ entry.epigraph.source }}</em></font>
+            <em>{{ entry.epigraph.source }}</em>
+            {% if entry.epigraph.link %}
+                <small><a href={{ entry.epigraph.link }}>источник</a></small>
+            {% endif %}
+            </font>
         </div>
         <div style="margin:10px 5px; 0 0" align=right>
             <small style="background-color:#e1e6f0;margin:5px">{{ entry.date }}</small>
@@ -27,8 +30,7 @@
     {% for pnt in entry.points %}
         <li style="margin:10px; text-align:justify">
             {% if pnt.title %}
-                <b><a href="{{ pnt.link }}">{{ pnt.title }}</a></b>
-            {% endif %}
+                <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
             <em>
                 {% if pnt.info_date %}
                     {{ pnt.info_date }},
@@ -39,8 +41,7 @@
                 {% if pnt.info_place%}
                     {{ pnt.info_place }} {{ pnt.info_geo }}
                 {% endif %}
-            </em>
-            {% if pnt.title %}<br>
+            </em><br>
             {% endif %}
             {{ pnt.digest | rehref | safe  }}
             {% if pnt.info_img %}

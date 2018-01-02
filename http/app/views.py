@@ -13,7 +13,7 @@ import json
 
 @app.before_request
 def load_vars():
-    g.items = DB().get_spaces_by_key_sorted("vaccines", "date")
+    g.items = DB().get_spaces_by_key_sorted("vaccines", "I_S_name")
     g.objects = DB().get_objects_by_key_sorted("I_S_name")
     g.form = makeform()
 

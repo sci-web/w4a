@@ -4,7 +4,6 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<a name="top"></a>
 <div style="margin:50px 40px 10px 0;">
 {% for entry in data %}
             <h4 style="text-align:right;"><a href="" class="linknav">{{ entry.analyst }}</a></h4>
@@ -16,7 +15,7 @@
             <div style="margin:10px 0 0 0; font-size:17px;height:30px;">
                 <div style="float:left; margin-left:-3px">
                     <a id="opentxt" href="/intro/{{ entry.namespace }}" class="linknav">Введение</a>
-                    <div style="display:inline">
+                    <div style="display:inline"><span id="none"></span>
                         <span id="ihide" style="display:none; font-size:14px" onClick="javascript:hideDiv('ihide')" >
                             <a onClick="javascript:hideDiv('fill')" href="#" class="linknav">(спрятать)</a>
                         </span>
@@ -34,13 +33,14 @@
 <hr size=1 style="width: 92%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:5px 0 5px 50px" align=center>
 {% endfor %}
 </div>
-<div id="fill" class="boxed_sh" style="display:none;margin:-12px 40px 40px 0; padding:0 20px; ">
+<div id="fill" class="boxed_sh" style="display:none; margin:-12px 40px 40px 0; padding:0 20px; ">
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>
 </div>
 <script>
 $(document).ready(function() {
+  Retrieve('/intro/vaccines?div', "#none");
   $("#opentxt").bind('click', function(event) {
     event.preventDefault();
     Retrieve($(this).attr('href'), "#ihide");

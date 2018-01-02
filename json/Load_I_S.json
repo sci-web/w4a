@@ -308,7 +308,7 @@
 "I_S_name": "Япония"
 }
 {
-"I_S_codename": "Great_Britain",
+"I_S_codename": "UK",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
 "I_S_name": "Великобритания"
@@ -347,11 +347,59 @@
 "I_S_codename": "Nigeria",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": "ЮАР"
+"I_S_name": "Нигерия"
 }
 {
 "I_S_codename": "Senegal",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
 "I_S_name": "Сенегал"
+}
+{
+"I_S_codename": "Germany",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Германия"
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
+}
+{
+"I_S_codename": "",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": ""
 }

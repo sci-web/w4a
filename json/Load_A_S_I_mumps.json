@@ -3,10 +3,10 @@
 "namespace": "vaccines",
 "title": "Свинка",
 "I_S_codename": "mumps",
-"I_S_type_ref": "S_O",
+"I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Свинка",
-"date" : "27-09-2017",
+"date" : ISODate("2017-09-27T23:54:00Z"),
 "epigraph": {
     "text": "Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive",
     "source": "C.S. Lewis"

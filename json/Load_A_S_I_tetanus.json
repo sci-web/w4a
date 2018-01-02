@@ -3,10 +3,10 @@
 "namespace": "vaccines",
 "title": "Столбняк",
 "I_S_codename": "tetanus",
-"I_S_type_ref": "S_O",
+"I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Столбняк",
-"date": "10-08-2017",
+"date": ISODate("2017-08-10T18:01:00Z"),
 "intro": "",
 "epigraph": {
         "text": "As well consult a butcher on the value of vegetarianism as a doctor on the worth of vaccination.",

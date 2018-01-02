@@ -3,10 +3,10 @@
 "namespace": "vaccines",
 "title": "Папиллома",
 "I_S_codename": "papilloma",
-"I_S_type_ref": "S_O",
+"I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Папиллома",
-"date": "27-07-2017",
+"date": ISODate("2017-07-27T17:51:00Z"),
 "intro": "Я начинаю обзор отдельных прививок с вакцины от Вируса Папилломы Человека (HPV), потому что она, без сомнения, является самой опасной и самой бесполезной прививкой.",
 "epigraph": {
         "text": "The world will not be destroyed by those who do evil, but by those who watch them without doing anything.",

@@ -3,11 +3,11 @@
 "namespace": "vaccines",
 "title": "Корь",
 "I_S_codename": "measles",
-"I_S_type_ref": "S_O",
+"I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Корь",
 "intro" : "",
-"date" : "13-09-2017",
+"date" : ISODate("2017-09-13T09:05:00Z"),
 "epigraph": {
 "text": "Cancer was practically unknown until the cowpox vaccination began to be introduced.<br>I have seen 200 cases of cancer, and never saw a case in an unvaccinated person.",
 "source": "W.B. Clark, New York Times, 1909"
@@ -59,7 +59,7 @@
 "info_authors": "Poland",
 "infoID": "8053748",
 "info_place": "Arch Intern Med",
-"info_geo": "",
+
 "digest": "В 1994 году один из главных пропрививочников в мире Gregory Poland публикует статью, где он анализирует 18 вспышек кори в школах, где практически все ученики были привиты. Он заключает, что невозможно полностью искоренить корь даже если привить 100% детей, потому что вакцина не эффективна на 100%, поэтому чем дальше, тем больше корь будет становиться болезнью привитых, и что поскольку корь очень заразна, коллективный иммунитет для нее не работает, несмотря на очень высокий охват вакцинации. (Довольно иронично, что \"коллективный иммунитет\" - термин, который приобрел известность именно в контексте кори, для кори не работает).<br>Также он пишет, что прививка до 12-месячного возраста очень неэффективна, и даже до 15-месячного возраста не очень эффективна. Несмотря на это, в США и во многих других странах, эта прививка рекомендуется в 12 месяцев, а ВОЗ вообще рекомендует ее делать в 6 месяцев.<br>С 2000 года корь [считается==https://www.cdc.gov/measles/about/history.html] искорененной в США. Это не значит, что ей совсем перестали болеть. Просто изменили определение \"искоренения\". Сегодня искоренение означает, что корь передается от человеку к человеку менее чем 12 месяцев подряд, а новые случаи заражения - завозные."
 },
 {
@@ -567,7 +567,7 @@
 },
 {
 "num": 41,
-"title": "Infantile Hodgkin&#39;s disease: remission after measles.",
+"title": "Infantile Hodgkin's disease: remission after measles.",
 "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1589969/",
 "info_type": "article",
 "info_date": "1973",
@@ -580,7 +580,7 @@
 },
 {
 "num": 42,
-"title": "Regression of Hodgkin&#39;s disease after measles.",
+"title": "Regression of Hodgkin's disease after measles.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/6112483",
 "info_type": "article",
 "info_date": "1981",
@@ -615,7 +615,7 @@
 },
 {
 "num": 46,
-"title": "Risk factors for Hodgkin&#39;s disease by Epstein-Barr virus",
+"title": "Risk factors for Hodgkin's disease by Epstein-Barr virus",
 "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2374437",
 "info_type": "article",
 "info_date": "2000",
@@ -627,7 +627,7 @@
 },
 {
 "num": 47,
-"title": "Exposure to childhood infections and risk of Epstein-Barr virus--defined Hodgkin&#39;s lymphoma in women.",
+"title": "Exposure to childhood infections and risk of Epstein-Barr virus--defined Hodgkin's lymphoma in women.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/15700307",
 "info_type": "article",
 "info_date": "2005",
@@ -637,7 +637,7 @@
 "I_S_codenames": ["Hodgkin's_lymphoma"],
 "digest": "Корь, свинка или краснуха в детстве снижали риск EBV лимфомы Ходжкина у женщин на 70%<br>У тех, кто переболел корью до десятилетнего возраста, риск лимфомы был на 96% ниже, чем у тех, кто болел корью после десятилетнего возраста.",
 "sources_pool": [{
-    "title": "Characteristics in youth indicative of adult-onset Hodgkin&#39;s disease.",
+    "title": "Characteristics in youth indicative of adult-onset Hodgkin's disease.",
     "link" : "https://www.ncbi.nlm.nih.gov/pubmed/857036",
     "info_type": "article",
     "info_date": "1977",
@@ -735,7 +735,7 @@
 },
 {
 "num": 52,
-"title": "Measles infection and Parkinson&#39;s disease.",
+"title": "Measles infection and Parkinson's disease.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/4061437",
 "info_type": "article",
 "info_date": "1985",
@@ -801,7 +801,7 @@
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/2856946",
 "info_type": "article",
 "info_date": "1985",
-"info_authors": "R&oslash;nne",
+"info_authors": "Rønne T.",
 "infoID": "2856946",
 "info_place": "Lancet",
 "I_S_codenames": ["cancer", "dermatitis", "eczema", "autoimmune_diseases", "osteoarthritis"],
@@ -1135,7 +1135,7 @@
 {
 "num": 87,
 "digest": "С 1920 годов по 1960-е, до начала вакцинации, несмотря на то, что количество случаев болезни оставалось постоянным, смертность от кори снизилась на 99% (график логарифмический).",
-"ImgPool": [{
+"img_pool": [{
     "info_img": "https://ic.pics.livejournal.com/amantonio/68333260/3029/3029_600.jpg",
     "info_imgSource": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1522578"
     },

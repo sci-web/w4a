@@ -80,7 +80,7 @@
 "I_S_codename": "vitamin_A",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
-"I_S_name": "Витамин А",
+"I_S_name": "Витамин A",
 "I_S_link": "https://en.wikipedia.org/wiki/Vitamin_A",
 "I_S_name_en": "Vitamin A"
 }
@@ -308,6 +308,13 @@
 "I_S_name": "Япония"
 }
 {
+"I_S_codename": "Europe",
+"I_S_type": "S_S",
+"I_S_inside": ["Georgia", "Russia", "Croatia", "Spain", "Netherlands", "Sweden", "Finland", "Romania", "Germany", "UK", "France", "Poland", "Poland"],
+"I_S_type_this": "geo",
+"I_S_name": "Европа"
+}
+{
 "I_S_codename": "UK",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
@@ -324,6 +331,13 @@
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
 "I_S_name": "Бразилия"
+}
+{
+"I_S_codename": "Africa",
+"I_S_type": "S_S",
+"I_S_inside": ["Gambia", "Republic_of_Congo", "Guinea_Bissau", "South_Africa", "Tanzania", "Senegal", "Nigeria"],
+"I_S_type_this": "geo",
+"I_S_name": "Африка"
 }
 {
 "I_S_codename": "South_Africa",
@@ -362,44 +376,202 @@
 "I_S_name": "Германия"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "Canada",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Канада"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "Australia",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Австралия"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "Taiwan",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Тайвань"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "South_Korea",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Северная Корея"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "Guinea_Bissau",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Гвинея Биссау"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "New_Zealand",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Новая Зелландия"
 }
 {
-"I_S_codename": "",
+"I_S_codename": "Bangladesh",
 "I_S_type": "S_S",
 "I_S_type_this": "geo",
-"I_S_name": ""
+"I_S_name": "Бангладеш"
+}
+{
+"I_S_codename": "Italy",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Италия"
+}
+{
+"I_S_codename": "Tanzania",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Танзания"
+}
+{
+"I_S_codename": "China",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Китай"
+}
+{
+"I_S_codename": "Galápagos",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Галапагосы"
+}
+{
+"I_S_codename": "Israel",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Израиль"
+}
+{
+"I_S_codename": "Indonesia",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Индонезия"
+}
+{
+"I_S_codename": "Republic_of_Congo",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Конго"
+}
+{
+"I_S_codename": "Pakistan",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Пакистан"
+}
+{
+"I_S_codename": "India",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Индия"
+}
+{
+"I_S_codename": "Oman",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Оман"
+}
+{
+"I_S_codename": "Romania",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Румыния"
+}
+{
+"I_S_codename": "Fiji",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "О-ва Фиджи"
+}
+{
+"I_S_codename": "Gambia",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Гамбия"
+}
+{
+"I_S_codename": "US",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "США"
+}
+{
+"I_S_codename": "Spain",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Испания"
+}
+{
+"I_S_codename": "Papua_New_Guinea",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Папуа Новая Гвинея"
+}
+{
+"I_S_codename": "Netherlands",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Нидерланды"
+}
+{
+"I_S_codename": "Sweden",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Швеция"
+}
+{
+"I_S_codename": "Finland",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Финляндия"
+}
+{
+"I_S_codename": "Croatia",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Хорватия"
+}
+{
+"I_S_codename": "Iran",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Иран"
+}
+{
+"I_S_codename": "New_York",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_outside": ["US"],
+"I_S_name": "Нью Йорк"
+}
+{
+"I_S_codename": "California",
+"I_S_type": "S_S",
+"I_S_outside": ["US"],
+"I_S_type_this": "geo",
+"I_S_name": "Калифорния"
+}
+{
+"I_S_codename": "Cuba",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Куба"
+}
+{
+"I_S_codename": "Russia",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Россия"
+}
+{
+"I_S_codename": "Georgia",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Грузия"
 }

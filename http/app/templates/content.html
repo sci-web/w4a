@@ -6,12 +6,12 @@
 {% block content %}
 <div style="margin:35px 30px 30px 0px;">
 {% for entry in idata %}
-    <div style="margin:10px 10px 0 0">
+    <div style="margin:10px 0 0 0">
         <div style="height:60px">
             <div style="float:left"><h1>{{ entry.title }}</h1></div>
             <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ entry.analyst }}</a></h4></div>
         </div>
-        <div  style="margin:0 45px 0 0; line-height:16px" align=right><font color="#2d2df6">{{ entry.epigraph.text | safe }}<br>
+        <div style="margin:0 45px 0 0; line-height:16px" align=right><font color="#2d2df6">{{ entry.epigraph.text | safe }}<br>
             <em>{{ entry.epigraph.source }}</em>
             {% if entry.epigraph.link %}
                 <small><a href={{ entry.epigraph.link }}>источник</a></small>
@@ -21,13 +21,15 @@
         <div style="margin:10px 5px; 0 0" align=right>
             <small style="background-color:#e1e6f0;margin:5px">{{ entry.date }}</small>
         </div>
-        </div>
         <div style="margin:10px 50px 0 0; text-align:justify">
         {{ entry.intro | rehref | safe}}
         </div>
     </div>
-    <ol style="margin:-20px 40px 10px 0px;">
+    <ol style="margin:20px 40px 10px 0px;">
     {% for pnt in entry.points %}
+        {% if pnt.header %}
+        <h3>{{ pnt.header }}</h3>
+        {% endif %}
         <li style="margin:10px; text-align:justify">
             {% if pnt.title %}
                 <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
@@ -98,6 +100,15 @@
     </ol>
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ entry.summary | rehref | safe  }}
+    <p style="margin:10px 0 7px 8px"><span style="background:#dfe9f0;color:blue; margin:5px">Изложение по главам:</span><br>
+        {% for ch in chapters %}
+            {% if ch.I_S_name == entry.title %}
+            <span style="nowrap"><div style="display:inline-block; min-width:25px; padding:0 2px 0 12px">{{ loop.index }}.</div>{{ ch.I_S_name }}</span>
+            {% else %}
+            <span style="nowrap"><div style="display:inline-block; min-width:25px; padding:0 2px 0 12px">{{ loop.index }}.</div><a
+                href="/content/{{ ch.namespace }}/{{ ch.I_S_codename }}">{{ ch.I_S_name }}</a></span>
+            {% endif %}
+        {% endfor %}
     </div>
     <div style="height:50px; margin:10px 25px 20px 5px;">
         <div style="float:left">

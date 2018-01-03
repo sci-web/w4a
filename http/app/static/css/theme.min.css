@@ -800,7 +800,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 tr.collapse.in{display:table-row}
 tbody.collapse.in{display:table-row-group}
 .collapsing{height:0;overflow:hidden;-webkit-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;transition-timing-function:ease}
-.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:4px dashed;border-top:4px solid\9;border-right:4px solid transparent;border-left:4px solid transparent}
+.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:5px dashed;border-top:5px solid\9;border-right:5px solid transparent;border-left:5px solid transparent}
 .dropdown-toggle:focus{outline:0}
 .dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;min-width:160px;padding:5px 0;margin:2px 0 0;list-style:none;font-size:16px;text-align:left;background-color:#eff6fb;border:1px solid #9a9ff9;border-radius:4px;background-clip:padding-box}
 .btn-group>.btn-group:first-child:not(:last-child)>.btn:last-child,.btn-group>.btn-group:first-child:not(:last-child)>.dropdown-toggle,.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){border-bottom-right-radius:0;border-top-right-radius:0}
@@ -821,7 +821,7 @@ tbody.collapse.in{display:table-row-group}
 .dropdown-backdrop{position:fixed;left:0;right:0;bottom:0;top:0;z-index:990}
 .nav-justified>.dropdown .dropdown-menu,.nav-tabs.nav-justified>.dropdown .dropdown-menu{left:auto;top:auto}
 .pull-right>.dropdown-menu{right:0;left:auto}
-.dropup .caret,.navbar-fixed-bottom .dropdown .caret{border-top:0;border-bottom:4px dashed;border-bottom:4px solid\9;content:""}
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret{border-top:0;border-bottom:5px dashed;border-bottom:5px solid\9;content:""}
 .dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:2px}
 @media (min-width:768px){.navbar-right .dropdown-menu{left:auto;right:0}
 .navbar-right .dropdown-menu-left{left:0;right:auto}
@@ -837,8 +837,8 @@ tbody.collapse.in{display:table-row-group}
 .btn-group>.btn+.dropdown-toggle{padding-left:8px;padding-right:8px}
 .btn-group>.btn-lg+.dropdown-toggle{padding-left:12px;padding-right:12px}
 .btn-group.open .dropdown-toggle.btn-link{-webkit-box-shadow:none;box-shadow:none}
-.btn-lg .caret{border-width:5px 5px 0}
-.dropup .btn-lg .caret{border-width:0 5px 5px}
+.btn-lg .caret{border-width:4px 4px 0}
+.dropup .btn-lg .caret{border-width:0 4px 4px}
 .btn-group-vertical>.btn,.btn-group-vertical>.btn-group,.btn-group-vertical>.btn-group>.btn{display:block;float:none;width:100%;max-width:100%}
 .btn-group-vertical>.btn-group>.btn{float:none}
 .btn-group-vertical>.btn+.btn,.btn-group-vertical>.btn+.btn-group,.btn-group-vertical>.btn-group+.btn,.btn-group-vertical>.btn-group+.btn-group{margin-top:-1px;margin-left:0}
@@ -888,17 +888,17 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background-color:#fff}
 .nav .nav-divider{height:1px;margin:10px 0;overflow:hidden;background-color:#e5e5e5}
 .nav>li>a>img{max-width:none}
-.nav-tabs{border-bottom:1px solid #9a9ff9}
+.nav-tabs{border-bottom:1px solid #8389f9}
 .nav-tabs>li{float:left;margin-bottom:-1px}
 .nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}
-.nav-tabs>li>a:hover{border-color:#eee #eee #9a9ff9}
-.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#555;background-color:#fff;border:1px solid #9a9ff9;border-bottom-color:transparent;cursor:default}
+.nav-tabs>li>a:hover{border-color:#b5bff6 #b5bff6 #8389f9}
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#00f;background-color:#e1e6f0;border:1px solid #8389f9;border-bottom-color:transparent;cursor:default}
 .nav-tabs.nav-justified{width:100%;border-bottom:0}
 .nav-tabs.nav-justified>li{float:none}
 .nav-tabs.nav-justified>li>a{text-align:center;margin-bottom:5px;margin-right:0;border-radius:4px}
-.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{border:1px solid #9a9ff9}
+.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{border:1px solid #8389f9}
 @media (min-width:768px){.nav-tabs.nav-justified>li{display:table-cell;width:1%}
-.nav-tabs.nav-justified>li>a{margin-bottom:0;border-bottom:1px solid #9a9ff9;border-radius:4px 4px 0 0}
+.nav-tabs.nav-justified>li>a{margin-bottom:0;border-bottom:1px solid #8389f9;border-radius:4px 4px 0 0}
 .nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:focus,.nav-tabs.nav-justified>.active>a:hover{border-bottom-color:#fff}
 }
 .nav-pills>li{float:left}
@@ -911,10 +911,10 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .nav-justified>li>a{text-align:center;margin-bottom:5px}
 .nav-tabs-justified{border-bottom:0}
 .nav-tabs-justified>li>a{margin-right:0;border-radius:4px}
-.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{border:1px solid #9a9ff9}
+.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{border:1px solid #8389f9}
 @media (min-width:768px){.nav-justified>li{display:table-cell;width:1%}
 .nav-justified>li>a{margin-bottom:0}
-.nav-tabs-justified>li>a{border-bottom:1px solid #9a9ff9;border-radius:4px 4px 0 0}
+.nav-tabs-justified>li>a{border-bottom:1px solid #8389f9;border-radius:4px 4px 0 0}
 .nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:focus,.nav-tabs-justified>.active>a:hover{border-bottom-color:#fff}
 }
 .tab-content>.tab-pane{display:none}

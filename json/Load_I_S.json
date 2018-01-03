@@ -310,9 +310,15 @@
 {
 "I_S_codename": "Europe",
 "I_S_type": "S_S",
-"I_S_inside": ["Georgia", "Russia", "Croatia", "Spain", "Netherlands", "Sweden", "Finland", "Romania", "Germany", "UK", "France", "Poland", "Poland"],
+"I_S_inside": ["Georgia", "Russia", "Croatia", "Spain", "Netherlands", "Sweden", "Finland", "Romania", "Germany", "UK", "France", "Poland", "Poland", "Switzerland"],
 "I_S_type_this": "geo",
 "I_S_name": "Европа"
+}
+{
+"I_S_codename": "Switzerland",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Швейцария"
 }
 {
 "I_S_codename": "UK",

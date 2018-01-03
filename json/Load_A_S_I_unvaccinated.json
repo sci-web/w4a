@@ -4,7 +4,7 @@
 "title": "Непривитые",
 "I_S_codename": "unvaccinated",
 "I_S_type_ref": "S_S",
-"I_S_type_this": "???",
+"I_S_type_this": "human",
 "I_S_name": "Непривитые",
 "intro" : "",
 "date" : ISODate("2017-07-06T14:40:00Z"),

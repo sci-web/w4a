@@ -28,7 +28,7 @@
     <ol style="margin:20px 40px 10px 0px;">
     {% for pnt in entry.points %}
         {% if pnt.header %}
-        <h3>{{ pnt.header }}</h3>
+        <h3>{{ pnt.header | safe }}</h3>
         {% endif %}
         <li style="margin:10px; text-align:justify">
             {% if pnt.title %}

@@ -128,10 +128,12 @@
             "link" : "http://www.huffingtonpost.co.uk/2012/09/05/mmr-vaccine-deafness_n_1856929.html"
         },
         {
-            "Di": "В VAERS зарегистрированы еще 44 случая",
+            "title": "В VAERS зарегистрированы еще 44 случая",
             "info_type": "article",
             "infoID": "18255204",
             "info_date": "2008",
+            "info_authors": "Asatryan A",
+            "info_place": "Vaccine",
             "link" : "https://www.ncbi.nlm.nih.gov/pubmed/18255204"
         }]
     },

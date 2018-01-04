@@ -6,13 +6,6 @@
 "I_S_name_en": "Mumps"
 }
 {
-"I_S_codename": "measles",
-"I_S_type": "S_O",
-"I_S_type_this": "disease",
-"I_S_name": "Корь",
-"I_S_name_en": "Measles"
-}
-{
 "I_S_codename": "orchitis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",

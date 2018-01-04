@@ -554,7 +554,7 @@
 {
 "num": 40,
 "header": "Польза кори и других инфекционных заболеваний",
-"title": "Hodgkin&rsquo;s disease: remissions after measles.",
+"title": "Hodgkin's disease: remissions after measles.",
 "link": "http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(71)91186-X/abstract",
 "info_type": "article",
 "info_date": "1971",
@@ -950,7 +950,7 @@
 "info_authors": "Demicheli",
 "infoID": "22336803",
 "info_place": "Cochrane Database Syst Rev",
-"I_S_codenames": ["MMR", "febrile_convulsions", "meningitis", "thrombocytopenic_purpura"],
+"I_S_codenames": ["MMR", "febrile_seizures", "meningitis", "thrombocytopenic_purpura"],
 "digest": "Систематический обзор эффективности и безопасности MMR, проведенный Cochrane.<br>Вакцина повышает риск асептического менингита в 14-22 раза, риск фебрильных судорог в 4-5.7 раз, риск тромбоцитопенической пурпуры в 2.4-6.3 раза<br>Авторы заключают, что клинические и пост-клинические исследования безопасности MMR по большему счету неадекватны, и что невозможно отделить роль вакцины в предотвращении заболеваний, от побочных явлений, которые она вызывает.<br>Они рекомендуют улучшить формат и отчетность клинических и пост-клинических исследований, и стандартизировать определения побочных эффектов. Также необходимо проверить, сколько времени длится защитный эффект MMR."
 },
 {
@@ -963,7 +963,7 @@
 "infoID": "",
 "info_place": "Arch Iran Med",
 "info_geo": "Iran",
-"I_S_codenames": ["parotitis", "encephalopathy", "anaphylactic_shock", "febrile_convulsions"],
+"I_S_codenames": ["parotitis", "encephalopathy", "anaphylactic_shock", "febrile_seizures"],
 "digest": "Исследование побочных эффектов MMR в Иране (43 тысячи привитых детей). У 1.8% начался паротит. У двух была энцефалопатия, и еще у двух анафилактический шок. То есть риск энцефалопатии и анафилактического шока составляет примерно 1 на 20,000, а не 1 на миллион, как обычно любят заявлять.<br>Риск конвульсий (не фебрильных) был 1 на 2000 вакцинаций у младенцев. Риск фебрильных судорог - 1 на 1750."
 },
 {

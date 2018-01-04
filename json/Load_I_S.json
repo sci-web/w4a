@@ -62,6 +62,27 @@
 "I_S_name_en": "Hemorrhagic Vasculitis"
 }
 {
+"I_S_codename": "vasculitis",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Васкулит",
+"I_S_name_en": "Vasculitis"
+}
+{
+"I_S_codename": "orthostatic_intolerance",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Ортостатическая непереносимость",
+"I_S_name_en": "Orthostatic intolerance"
+}
+{
+"I_S_codename": "alopecia",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Потеря волос",
+"I_S_name_en": "Alopecia"
+}
+{
 "I_S_codename": "cancer",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
@@ -69,12 +90,26 @@
 "I_S_name_en": "Cancer"
 }
 {
+"I_S_codename": "glioma",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Глиома",
+"I_S_name_en": "Glioma"
+}
+{
+"I_S_codename": "caries",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Кариес",
+"I_S_name_en": "Caries"
+}
+{
 "I_S_codename": "fetal_bovine_serum",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Эмбриональная бычья сыворотка",
 "I_S_link": "https://en.wikipedia.org/wiki/Fetal_bovine_serum",
-"I_S_name_en": "Hemorrhagic Vasculitis"
+"I_S_name_en": "Fetal bovine serum"
 }
 {
 "I_S_codename": "vitamin_A",
@@ -85,12 +120,35 @@
 "I_S_name_en": "Vitamin A"
 }
 {
+"I_S_codename": "vitamin_D",
+"I_S_type": "S_O",
+"I_S_type_this": "drug",
+"I_S_name": "Витамин D",
+"I_S_link": "https://en.wikipedia.org/wiki/Vitamin_A",
+"I_S_name_en": "Vitamin D"
+}
+{
 "I_S_codename": "hCG",
 "I_S_type": "S_O",
 "I_S_type_this": "drug",
 "I_S_name": "Human Chorionic Gonadotropin",
 "I_S_link": "https://en.wikipedia.org/wiki/Human_chorionic_gonadotropin",
 "I_S_name_en": "Human Chorionic Gonadotropin"
+}
+{
+"I_S_codename": "VAERS",
+"I_S_type": "S_S",
+"I_S_type_this": "human",
+"I_S_name": "VAERS: Система отчётов о неблагоприятных действиях вакцинации",
+"I_S_link": "https://en.wikipedia.org/wiki/Vaccine_Adverse_Event_Reporting_System",
+"I_S_name_en": "VAERS: Vaccine Adverse Event Reporting System"
+}
+{
+"I_S_codename": "ЦРЩ",
+"I_S_type": "S_S",
+"I_S_type_this": "human",
+"I_S_name": "ВОЗ: Всемирная Организация Здравоохранения",
+"I_S_name_en": "WHO: World Health Organization"
 }
 {
 "I_S_codename": "vitamin_C",
@@ -199,6 +257,13 @@
 "I_S_name_en": "Dermatitis"
 }
 {
+"I_S_codename": "atopic_dermatitis",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Атопический Дерматит",
+"I_S_name_en": "Atopic Dermatitis"
+}
+{
 "I_S_codename": "eczemae",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
@@ -220,6 +285,20 @@
 "I_S_name_en": "Osteoarthritis"
 }
 {
+"I_S_codename": "lupus",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Волчанка",
+"I_S_name_en": "Lupus"
+}
+{
+"I_S_codename": "arthritis",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Артрит",
+"I_S_name_en": "Arthritis"
+}
+{
 "I_S_codename": "multiple_sclerosis",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
@@ -234,11 +313,39 @@
 "I_S_name_en": "Allergy"
 }
 {
+"I_S_codename": "GBS",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Синдром Гийена-Барре",
+"I_S_name_en": "Guillain–Barré syndrome"
+}
+{
+"I_S_codename": "H3N2",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Вирус гриппа штамм A (H3N2)",
+"I_S_name_en": "Influenza A (H3N2) Variant Virus"
+}
+{
+"I_S_codename": "H1N1",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Вирус гриппа штамм A (H1N1)",
+"I_S_name_en": "Influenza A (H1N1) Variant Virus"
+}
+{
 "I_S_codename": "asthma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Астма",
 "I_S_name_en": "Asthma"
+}
+{
+"I_S_codename": "narcolepsy",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Нарколепсия",
+"I_S_name_en": "Narcolepsy"
 }
 {
 "I_S_codename": "parotitis",
@@ -248,6 +355,13 @@
 "I_S_name_en": "Parotitis"
 }
 {
+"I_S_codename": "leukaemia",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Лейкемия",
+"I_S_name_en": "Leukaemia"
+}
+{
 "I_S_codename": "anaphylactic_shock",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
@@ -255,11 +369,11 @@
 "I_S_name_en": "Anaphylactic Shock"
 }
 {
-"I_S_codename": "febrile_convulsions",
+"I_S_codename": "febrile_seizures",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Фебрильные Судороги",
-"I_S_name_en": "Febrile Convulsions"
+"I_S_name_en": "Febrile seizures"
 }
 {
 "I_S_codename": "thrombocytopenic_purpura",
@@ -269,6 +383,27 @@
 "I_S_name_en": "Thrombocytopenic purpura"
 }
 {
+"I_S_codename": "VAPP",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Вакцин-ассоциированный паралитический полиомиелит",
+"I_S_name_en": "Vaccine-Associated Paralytic Poliomyelitis (VAPP)"
+}
+{
+"I_S_codename": "AFM",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Острый вялый миелит",
+"I_S_name_en": "Acute flaccid myelitis"
+}
+{
+"I_S_codename": "SV40",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Вирус SV40",
+"I_S_name_en": "Simian vacuolating virus 40 (SV40)"
+}
+{
 "I_S_codename": "myeloma",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
@@ -276,30 +411,307 @@
 "I_S_name_en": "Myeloma"
 }
 {
-"I_S_codename": "wine",
+"I_S_codename": "autism",
 "I_S_type": "S_O",
-"I_S_type_this": "food",
+"I_S_type_this": "disease",
+"I_S_name": "Аутизм",
+"I_S_name_en": "Autism"
+}
+{
+"I_S_codename": "SIDS",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Синдром внезапной детской смерти (СВДС)",
+"I_S_name_en": "Sudden infant death syndrome (SIDS)"
+}
+{
+"I_S_codename": "gastroenteritis",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Гастроэнтерит",
+"I_S_name_en": "Gastroenteritis"
+}
+{
+"I_S_codename": "type_1_diabetes",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Диабет 1го типа",
+"I_S_name_en": "Type 1 Diabetes"
+}
+{
+"I_S_codename": "diabetes",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Диабет",
+"I_S_name_en": "Diabetes"
+}
+{
+"I_S_codename": "hypoglycemia",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Гипогликемия",
+"I_S_name_en": "Hypoglycemia"
+}
+{
+"I_S_codename": "wine",
+"I_S_type": "S_S",
+"I_S_type_this": "condition",
 "I_S_name": "Вино",
 "I_S_name_en": "Wine"
+}
+{
+"I_S_codename": "insecticides",
+"I_S_type": "S_S",
+"I_S_type_this": "condition",
+"I_S_name": "Инсектициды",
+"I_S_name_en": "Insecticides"
+}
+{
+"I_S_codename": "strychnine",
+"I_S_type": "S_S",
+"I_S_type_this": "condition",
+"I_S_name": "Стрихнин",
+"I_S_name_en": "Strychnine"
+}
+{
+"I_S_codename": "sugar",
+"I_S_type": "S_S",
+"I_S_type_this": "condition",
+"I_S_name": "Сахар",
+"I_S_name_en": "Sugar"
+}
+{
+"I_S_codename": "placebo",
+"I_S_type": "S_P",
+"I_S_name": "Плацебо",
+"I_S_type_this": "drug",
+"I_S_name_en": "Placebo"
+}
+{
+"I_S_codename": "oseltamivir",
+"I_S_type": "S_P",
+"I_S_name": "Oseltamivir",
+"I_S_type_this": "drug",
+"I_S_name_en": "Oseltamivir"
+}
+{
+"I_S_codename": "zanamivir",
+"I_S_type": "S_P",
+"I_S_name": "Zanamivir",
+"I_S_type_this": "drug",
+"I_S_name_en": "Zanamivir"
+}
+{
+"I_S_codename": "acetaminophen",
+"I_S_type": "S_P",
+"I_S_name": "Ацетаминофен",
+"I_S_type_this": "drug",
+"I_S_name_en": "Acetaminophen"
+}
+{
+"I_S_codename": "NSAIDs",
+"I_S_type": "S_P",
+"I_S_name": "Нестероидные противовоспалительные препараты",
+"I_S_type_this": "drug",
+"I_S_name_en": "Nonsteroidal anti-inflammatory drugs"
+}
+{
+"I_S_codename": "garlic",
+"I_S_type": "S_P",
+"I_S_name": "Чеснок",
+"I_S_type_this": "drug",
+"I_S_name_en": "Garlic"
+}
+{
+"I_S_codename": "elderberry",
+"I_S_type": "S_P",
+"I_S_name": "Ягоды бузины",
+"I_S_type_this": "drug",
+"I_S_name_en": "Elderberry"
+}
+{
+"I_S_codename": "zinc",
+"I_S_type": "S_P",
+"I_S_name": "Цинк",
+"I_S_type_this": "drug",
+"I_S_name_en": "Zinc"
+}
+{
+"I_S_codename": "probiotics",
+"I_S_type": "S_P",
+"I_S_name": "Пробиотики",
+"I_S_type_this": "drug",
+"I_S_name_en": "Probiotics"
+}
+{
+"I_S_codename": "antibiotics",
+"I_S_type": "S_P",
+"I_S_name": "Антибиотики",
+"I_S_type_this": "drug",
+"I_S_name_en": "Antibiotics"
+}
+{
+"I_S_codename": "antipyretics",
+"I_S_type": "S_P",
+"I_S_name": "Жаропонижающее",
+"I_S_type_this": "drug",
+"I_S_name_en": "Antipyretics"
 }
 {
 "I_S_codename": "MMR",
 "I_S_type": "S_P",
 "I_S_name": "Вакцина MMR",
-"I_S_type_this": "vaccine"
+"I_S_type_this": "drug",
+"I_S_name_en": "MMR Vaccine"
 }
 {
 "I_S_codename": "MMRV",
 "I_S_type": "S_P",
 "I_S_name": "Вакцина MMRV",
-"I_S_type_this": "vaccine"
+"I_S_type_this": "drug",
+"I_S_name_en": "MMRV Vaccine"
+}
+{
+"I_S_codename": "DTaP/Hib",
+"I_S_type": "S_P",
+"I_S_name": "Вакцина DTaP/Hib",
+"I_S_type_this": "drug",
+"I_S_name_en": "DTaP/Hib Vaccine"
+}
+{
+"I_S_codename": "DTP_vaccine",
+"I_S_type": "S_P",
+"I_S_name": "Вакцина DTP",
+"I_S_type_this": "drug",
+"I_S_name_en": "DTP Vaccine"
+}
+{
+"I_S_codename": "DTaP_vaccine",
+"I_S_type": "S_P",
+"I_S_name": "Вакцина DTaP",
+"I_S_type_this": "drug",
+"I_S_name_en": "DTaP Vaccine"
+}
+{
+"I_S_codename": "PCV13",
+"I_S_type": "S_P",
+"I_S_name": "Вакцина PCV13",
+"I_S_type_this": "drug",
+"I_S_name_en": "PCV13 Vaccine"
+}
+{
+"I_S_codename": "PCV7",
+"I_S_type": "S_P",
+"I_S_name": "Вакцина PCV7",
+"I_S_type_this": "drug",
+"I_S_name_en": "PCV7 Vaccine"
+}
+{
+"I_S_codename": "Tdap",
+"I_S_type": "S_P",
+"I_S_name": "Вакцина Tdap",
+"I_S_type_this": "drug",
+"I_S_name_en": "Tdap Vaccine"
+}
+{
+"I_S_codename": "adjuvants",
+"I_S_type": "S_P",
+"I_S_name": "Адъюванты",
+"I_S_link": "https://ru.wikipedia.org/wiki/Адъювант",
+"I_S_type_this": "drug",
+"I_S_name_en": "Adjuvants"
 }
 {
 "I_S_codename": "MUC1",
-"I_S_type": "S_O",
+"I_S_type": "S_P",
 "I_S_name": "Протеин MUC1",
 "I_S_link": "https://ru.wikipedia.org/wiki/MUC1",
-"I_S_type_this": "protein"
+"I_S_type_this": "drug",
+"I_S_name_en": "MUC1 Protein"
+}
+{
+"I_S_codename": "empyema",
+"I_S_type": "S_O",
+"I_S_name": "Эмпиема",
+"I_S_type_this": "disease",
+"I_S_name_en": "Empyema"
+}
+{
+"I_S_codename": "H.influenzae",
+"I_S_type": "S_O",
+"I_S_name": "Гемофильная инфекция/бактерия",
+"I_S_type_this": "disease",
+"I_S_name_en": "Haemophilus influenzae"
+}
+{
+"I_S_codename": "H.influenzae",
+"I_S_type": "S_O",
+"I_S_name": "Золотистый Стафилококк",
+"I_S_type_this": "disease",
+"I_S_name_en": "Staphylococcus Aureus"
+}
+{
+"I_S_codename": "М.catarrhalis",
+"I_S_type": "S_O",
+"I_S_name": "Моракселла Катаралис",
+"I_S_type_this": "disease",
+"I_S_name_en": "Moraxella catarrhalis"
+}
+{
+"I_S_codename": "MRSA",
+"I_S_type": "S_O",
+"I_S_name": "Метициллин-резистентный Золотистый Стафилококк",
+"I_S_type_this": "disease",
+"I_S_name_en": "Methicillin-resistant Staphylococcus Aureus"
+}
+{
+"I_S_codename": "AOM",
+"I_S_type": "S_O",
+"I_S_name": "Острый средний отит",
+"I_S_type_this": "disease",
+"I_S_name_en": "Acute otitis media"
+}
+{
+"I_S_codename": "natural_immunity",
+"I_S_type": "S_S",
+"I_S_name": "Естественный иммунитет",
+"I_S_type_this": "condition",
+"I_S_name_en": "Natural immunity"
+}
+{
+"I_S_codename": "menopause",
+"I_S_type": "S_S",
+"I_S_name": "Менопауза",
+"I_S_type_this": "condition",
+"I_S_name_en": "Menopause"
+}
+{
+"I_S_codename": "breast_feeding",
+"I_S_type": "S_S",
+"I_S_name": "Кормление грудью",
+"I_S_type_this": "condition",
+"I_S_name_en": "Breast feeding"
+}
+{
+"I_S_codename": "tonsillectomy",
+"I_S_type": "S_S",
+"I_S_name": "Удаление гланд",
+"I_S_type_this": "condition",
+"I_S_name_en": "Tonsillectomy"
+}
+{
+"I_S_codename": "day_care",
+"I_S_type": "S_S",
+"I_S_name": "Детский сад",
+"I_S_type_this": "condition",
+"I_S_name_en": "Day care"
+}
+{
+"I_S_codename": "smoking",
+"I_S_type": "S_S",
+"I_S_name": "Курение",
+"I_S_type_this": "condition",
+"I_S_name_en": "Smoking"
 }
 {
 "I_S_codename": "Japan",
@@ -310,9 +722,15 @@
 {
 "I_S_codename": "Europe",
 "I_S_type": "S_S",
-"I_S_inside": ["Georgia", "Russia", "Croatia", "Spain", "Netherlands", "Sweden", "Finland", "Romania", "Germany", "UK", "France", "Poland", "Poland", "Switzerland"],
+"I_S_inside": ["Georgia", "Russia", "Croatia", "Spain", "Netherlands", "Sweden", "Finland", "Romania", "Germany", "UK", "France", "Poland", "Poland", "Switzerland", "Belgium"],
 "I_S_type_this": "geo",
 "I_S_name": "Европа"
+}
+{
+"I_S_codename": "Belgium",
+"I_S_type": "S_S",
+"I_S_type_this": "geo",
+"I_S_name": "Бельгия"
 }
 {
 "I_S_codename": "Switzerland",

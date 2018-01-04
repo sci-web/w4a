@@ -1,13 +1,14 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container" style="width:79.5%; margin:0 0 0 28px">
+  <div class="container" style="width:79.5%; margin:0 0 0 33px">
     <div class="navbar-header pull-left">
       <a class="navbar-brand" href="/">/</a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="dropdown"><a href="/intro/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
+        <li class="dropdown"><a href="/chapters/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
           <ul class="dropdown-menu">
           <li><a name="top">Изложение по главам:</a></li>
+          <li><a href="/intro/vaccines">Введение</a></li>
           {% for entry in items %}
               <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">
                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>

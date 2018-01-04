@@ -15,7 +15,8 @@ import json
 def load_vars():
     g.items = DB().get_spaces_by_key_sorted("vaccines", "date")
     g.objects = DB().get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
-    g.products = DB().get_objects_by_key_sorted_filter_yes("drug", "I_S_name")    
+    g.drugs = DB().get_objects_by_key_sorted_filter_yes("drug", "I_S_name")
+    g.conditions = DB().get_objects_by_key_sorted_filter_yes("condition", "I_S_name")    
     g.objects_geo = DB().get_objects_by_key_sorted_filter_yes("geo", "I_S_name")
     g.form = makeform()
 
@@ -38,7 +39,7 @@ app.jinja_env.filters['rehref'] = rehref
 @app.route('/')
 def index():
     i_data = DB().get_intros()
-    return render_template('index.html', form=g.form, items=g.items, objects=g.objects, products=g.products, geo_objects=g.objects_geo, data=i_data)
+    return render_template('index.html', form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, data=i_data)
 
 
 @app.route('/content/<namespace>/<codename>')
@@ -49,8 +50,18 @@ def show_item(namespace, codename):
     chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
     f_date = datetime.datetime.fromtimestamp( data[0]["date"]['$date'] / 1e3 )
     data[0]["date"] = f_date.strftime('%d-%m-%Y %H:%M')    
-    return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects, products=g.products, geo_objects=g.objects_geo, 
+    return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
                             title=namespace.title() + ": " + title, chapters=chapters)
+
+
+@app.route('/browse/obj/<codename>',methods=['GET','POST'])
+def browse(codename):
+    i_data = DB().get_points_by_codename(codename)
+    chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
+    obj = DB().get_an_objects_by_codename(codename)
+    objdata = json.loads(dumps(obj))
+    return render_template('browse.html', idata=i_data, obj=objdata,
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=objdata[0]["I_S_name"])
 
 
 @app.route('/intro/<namespace>',methods=['GET','POST'])
@@ -59,10 +70,12 @@ def show_intro(namespace):
     data = json.loads(dumps(i_data))
     f_date = datetime.datetime.fromtimestamp( data[0]["date"]['$date'] / 1e3 )
     data[0]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
+    chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
     if 'div' in request.args:
         return jsonify( {'data': render_template('intro_div.html', idata=data)} )
     else:
-        return render_template('intro.html', idata=data, items=g.items, objects=g.objects, products=g.products, geo_objects=g.objects_geo, title=data[0]["subject"])
+        return render_template('intro.html', idata=data, 
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=data[0]["subject"])
 
 
 @app.route('/chapters/<namespace>',methods=['GET','POST'])
@@ -73,9 +86,10 @@ def chapters(namespace):
         f_date = datetime.datetime.fromtimestamp( data[i]["date"]['$date'] / 1e3 )
         data[i]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     if 'div' in request.args:
-        return jsonify( {'data': render_template('chapt_div.html', idata=data)} )
+        return jsonify( {'data': render_template('chapt_div.html', idata=data, chapters=chapters)} )
     else:
-        return render_template('chapt.html', idata=data, items=g.items, geo_objects=g.objects_geo, objects=g.objects, products=g.products, title=namespace)
+        return render_template('chapt.html', idata=data, 
+                            items=g.items, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=namespace)
 
 
 @app.route('/next', methods=['GET', 'POST'])

@@ -14,8 +14,11 @@ class DB(object):
     def get_a_space(self, namespace, key):
         return app.config['SPACES'].find({"namespace": namespace, "I_S_codename": key})
 
-    def get_objects_by_key_sorted(self, key):
-        return app.config['OBJECTS'].find({}, {"I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
+    def get_points_by_codename(self, codename):
+        return app.config['SPACES'].aggregate([{'$match':{"points.I_S_codenames":codename}}, { '$unwind' : "$points" },{'$match':{"points.I_S_codenames":codename}}])
+
+    def get_an_objects_by_codename(self, codename):
+        return app.config['OBJECTS'].find({"I_S_codename": codename})
 
     def get_objects_by_key_sorted_filter_no(self, val, key):
         return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}}, {"I_S_codename": 1, "I_S_name": 1}).sort(key, 1)

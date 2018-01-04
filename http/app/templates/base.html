@@ -29,13 +29,14 @@
 </div>
 <div>
   <div class="row" style="margin:5px; width:100%">
-    <div class=col-md-3 style="width:17%; margin:50px 5px 0 20px" id=left>
-    <div id=sidebar align=center style="max-width:250px">
-        <ul class="nav nav-tabs" id=sidebar>
-            <li class="active"><a data-toggle="tab" href="#ill">Disease</a></li>
-            <li><a data-toggle="tab" href="#heal">Drug</a></li>
+    <div class=col-md-3 style="width:20%; margin:50px 5px 0 20px" id=left>
+    <div id=sidebar align=center style="max-width:302px">
+        <ul class="nav nav-tabs" id=sidebar style="margin-right:80px">
+            <li class="active"><a data-toggle="tab" href="#ill">Болезни</a></li>
+            <li><a data-toggle="tab" href="#drugs">Препараты</a></li>
+            <li><a data-toggle="tab" href="#conds">Условия</a></li>
         </ul>
-        <div style="border-top:1px solid #d3d6f0; margin-top:-1px">  </div>
+        <div style="border-top:1px solid #e1e6f0; margin-top:-1px;"> </div>
         <div class="tab-content tab-col" align=left>
             <div id=ill class="tab-pane fade in active">
                 <ul class="leftmenu">
@@ -46,9 +47,18 @@
                 {% endfor %}
                 </ul>
             </div>
-            <div id="heal" class="tab-pane fade">
+            <div id="drugs" class="tab-pane fade">
                 <ul class="leftmenu">
-                {% for entry in products %}
+                {% for entry in drugs %}
+                    <li style="color:#4d4df6" class="leftnav">
+                        <a href="/browse/obj/{{ entry.I_S_codename }}" class="leftnav">{{ entry.I_S_name }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="conds" class="tab-pane fade">
+                <ul class="leftmenu">
+                {% for entry in conditions %}
                     <li style="color:#4d4df6" class="leftnav">
                         <a href="/browse/obj/{{ entry.I_S_codename }}" class="leftnav">{{ entry.I_S_name }}</a>
                     </li>
@@ -56,16 +66,17 @@
                 </ul>
             </div>
         </div>
+        <small>↑ scrollable with mouse over ↑</small>
     </div>
     </div>
-    <div class=col-md-6 style="width:65%;">
+    <div class=col-md-6 style="width:58%;">
         {% block content %}{% endblock %}
     </div>
     <div class=col-md-3 style="width:12%; margin:55px 5px 0 0">
         <ul id="rightbar" style="padding:0 0 0 15px; list-style-type:square">
             {% for entry in geo_objects %}
-                <li style="color:#4d4df6" class="leftnav">
-                    <a href="/browse/seg/{{ entry.I_S_codename }}" class="leftnav">{{ entry.I_S_name }}</a>
+                <li style="color:#4d4df6" class="rightnav">
+                    <a href="/browse/seg/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name }}</a>
                 </li>
             {% endfor %}
         </ul>
@@ -78,13 +89,13 @@ $(document).ready(function() {
     var navHeight = $('.navbar').outerHeight(true);
     $('#sidebar').affix({
         offset: {
-            top: 245,
+            top: 1,
             bottom: navHeight
         }
     });
     $('#rightbar').affix({
         offset: {
-            top: 245,
+            top: 1,
             bottom: navHeight
         }
     });

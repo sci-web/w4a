@@ -32,12 +32,15 @@ img {max-width: 100%;max-height: 100%;}
 .nav-tabs li a {flex: 1; }
 .nav-tabs li.active {flex: 1; margin:0}
 .tab-col {border-right:1px solid #c3c6f0;border-left:1px solid #8389f9;border-bottom:1px solid #c3c6f0;
-    margin:0px; background:#e1e7f8;overflow-y:auto;
+    margin:0px; background:#e1e7f8;max-height:800px;
     height:755px;
-    overflow-y: auto;
-    max-height:800px;}
+    /* for firefox: */
+    margin-right: -9px !important;
+    overflow-y:auto;}
 .tab-col::-webkit-scrollbar {
         width: 0 !important;
+        display: none;
+        background: transparent;
     }
 .leftmenu{padding:10px 0 10px 10px; margin: 0 10px 0 20px; list-style-type:square}
 

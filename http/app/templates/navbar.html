@@ -7,7 +7,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown"><a href="/chapters/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
           <ul class="dropdown-menu">
-          <li><a name="top">Изложение по главам:</a></li>
+          <li><span style="margin:0 0 0 20px">Изложение по главам:</span></li>
           <li><a href="/intro/vaccines">Введение</a></li>
           {% for entry in items %}
               <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">
@@ -18,9 +18,10 @@
           </ul>
         </li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
+      <form class="navbar-form navbar-left" role="search" action="/search" method="POST" name="form" enctype="multipart/form-data">
+
         <div class="form-group" style="margin-left:137px;">
-          <input type="text" class="form-control" placeholder="Поиск…">
+          <input type="text" class="form-control" placeholder="Поиск…" name=search>
         </div>
 <!--        <button type="submit" class="btn btn-default">Submit</button> -->
       </form>

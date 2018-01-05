@@ -12,6 +12,8 @@ def prefix_name(obj, file_data):
     parts = op.splitext(file_data.filename)
     return secure_filename('file-%s%s' % parts)
 
+class searchForm(Form):
+    search = StringField('search')
 
 def makeform():
     form = LoginForm(request.values, from_url=request.path)

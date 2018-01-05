@@ -4,11 +4,10 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<a name="top"></a>
 <div style="margin:60px 20px 30px 20px;">
     <h1 style="margin:0 0 20px 0">{{ title }}</h1>
     {% for entry in idata %}
-        <h3><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.title }}</a></h3>
+        <h3 style="text-align:right"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">{{ entry.title }}</a></h3>
            {% if entry.points.title %}
                 <b><a href="{{ entry.points.link }}" rel="nofollow">{{ entry.points.title }}</a></b>
                 <em>
@@ -18,10 +17,11 @@
                 {% if entry.points.info_authors %}
                     {{ entry.points.info_authors }},
                 {% endif %}
-                {% if entry.points.info_place%}
-                    {{ entry.points.info_place }} {{ entry.points.info_geo }}
+                {% if entry.points.info_place %}
+                    {{ entry.points.info_place }}
                 {% endif %}
-                </em><br>
+                </em>
+                <br>
             {% endif %}
             <p style="text-align:justify">{{ entry.points.digest | rehref | safe  }}
                 {% if entry.points.info_img %}

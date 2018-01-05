@@ -7,7 +7,7 @@ import datetime
 from flask_admin.model import typefmt
 import os
 from .model import DB
-from .forms import LoginForm, makeform
+from .forms import LoginForm, makeform, searchForm
 from bson.json_util import dumps
 import json
 
@@ -54,11 +54,51 @@ def show_item(namespace, codename):
                             title=namespace.title() + ": " + title, chapters=chapters)
 
 
-@app.route('/browse/obj/<codename>',methods=['GET','POST'])
+@app.route('/search', methods=['GET','POST'])
+def search():
+    i_data = {}
+    chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
+    searchfor = ""
+    sform = searchForm(request.values)
+    if request.method == 'POST':
+        if sform.data["search"]:
+            searchfor = sform.data["search"]
+            i_data = DB().search(searchfor)
+            idata = json.loads(dumps(i_data))
+            fdata = []  # filtered data
+            print len(idata)
+            for r in idata:
+                m_regex = r'\[.*?\=\=.*?\]'
+                txt = r["points"]["digest"]
+                fnd_link = re.findall(m_regex, txt, re.IGNORECASE)
+                words = []
+                if len(fnd_link) == 0:
+                    fdata.append(r)
+                else:
+                    for fl in fnd_link:
+                        (word, lnk) = fl.split("==")
+                        w = re.findall(searchfor, word, re.IGNORECASE)
+                        if len(w) > 0:
+                            words.append(word)
+                    if len(words) > 0:
+                        fdata.append(r)
+
+            print len(fdata)
+        else:
+            flash("Cannot process your form: no data", category='error')
+    else:
+        flash("Form was not properly sent", category='error')
+
+    return render_template('srp.html', idata=fdata, 
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=searchfor)
+
+
+
+@app.route('/browse/obj/<codename>')
 def browse(codename):
     i_data = DB().get_points_by_codename(codename)
     chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
-    obj = DB().get_an_objects_by_codename(codename)
+    obj = DB().get_an_object_by_codename(codename)
     objdata = json.loads(dumps(obj))
     return render_template('browse.html', idata=i_data, obj=objdata,
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=objdata[0]["I_S_name"])

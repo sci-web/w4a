@@ -1,3 +1,6 @@
+<style>
+.alert {position:absolute; margin-top:100px;}
+</style>
 {% for error in get_flashed_messages(with_categories=true, category_filter=["error"]) %}
 <div class="alert alert-dismissable alert-danger" align="center" id="error">
     <button type="button" class="close" data-dismiss="alert"  onClick = "hideDiv('error');" >&times;</button>

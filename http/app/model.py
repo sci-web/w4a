@@ -18,9 +18,19 @@ class DB(object):
         #         '$text': {'$search': expression}
         #         }, {'score': {'$meta': 'textScore'}})
         return app.config['SPACES'].aggregate([
-                            {'$match':{'$text': {'$search': expression}}}, 
+                            {'$match':{ '$or': [
+                                {"points.digest":{'$regex':expression}}, 
+                                {"points.title":{'$regex':expression}}, 
+                                {"points.img_pool.info_imgDesc":{'$regex':expression }},
+                                {"points.sources_pool.title":{'$regex':expression}}
+                                ]}}, 
                             { '$unwind' : "$points" },
-                            {'$match':{"points.digest":{'$regex':expression}}}
+                            {'$match':{ '$or': [
+                                {"points.digest":{'$regex':expression}}, 
+                                {"points.title":{'$regex':expression}}, 
+                                {"points.img_pool.info_imgDesc":{'$regex':expression }},
+                                {"points.sources_pool.title":{'$regex':expression}}
+                                ]}}
                             ])
 
     def get_a_space(self, namespace, key):

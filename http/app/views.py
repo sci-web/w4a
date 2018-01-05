@@ -60,13 +60,12 @@ def search():
     chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
     searchfor = ""
     sform = searchForm(request.values)
+    fdata = []  # filtered data    
     if request.method == 'POST':
         if sform.data["search"]:
             searchfor = sform.data["search"]
             i_data = DB().search(searchfor)
             idata = json.loads(dumps(i_data))
-            fdata = []  # filtered data
-            print len(idata)
             for r in idata:
                 m_regex = r'\[.*?\=\=.*?\]'
                 txt = r["points"]["digest"]
@@ -82,13 +81,10 @@ def search():
                             words.append(word)
                     if len(words) > 0:
                         fdata.append(r)
-
-            print len(fdata)
         else:
             flash("Cannot process your form: no data", category='error')
     else:
         flash("Form was not properly sent", category='error')
-
     return render_template('srp.html', idata=fdata, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=searchfor)
 

@@ -25,7 +25,6 @@
 </head>
 <body>
 {% include "navbar.html" %}
-{% include "flash.html" %}
 <div id="masthead"><a name="top"></a>
 </div>
 <div>
@@ -71,6 +70,7 @@
     </div>
     </div>
     <div class=col-md-6 style="width:58%;">
+        {% include "flash.html" %}
         {% block content %}{% endblock %}
     </div>
     <div class=col-md-3 style="width:12%; margin:55px 5px 0 0">

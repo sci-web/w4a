@@ -85,7 +85,7 @@ def search():
             flash("Cannot process your form: no data", category='error')
     else:
         flash("Form was not properly sent", category='error')
-    return render_template('srp.html', idata=fdata, 
+    return render_template('srp.html', idata=fdata, found=len(fdata),
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=searchfor)
 
 
@@ -95,6 +95,16 @@ def browse(codename):
     i_data = DB().get_points_by_codename(codename)
     chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
     obj = DB().get_an_object_by_codename(codename)
+    objdata = json.loads(dumps(obj))
+    return render_template('browse.html', idata=i_data, obj=objdata,
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=objdata[0]["I_S_name"])
+
+
+@app.route('/browse/geo/<geo>')
+def browse_geo(geo):
+    i_data = DB().get_points_by_geo(geo)
+    chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
+    obj = DB().get_an_object_by_codename(geo)
     objdata = json.loads(dumps(obj))
     return render_template('browse.html', idata=i_data, obj=objdata,
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=chapters, title=objdata[0]["I_S_name"])

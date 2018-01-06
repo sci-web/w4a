@@ -21,7 +21,6 @@
     <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/fileinput_locale_es.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
-<!--    <script type=text/javascript src="{{ url_for('static', filename='js/mouse_wheel.js') }}"></script> -->
 </head>
 <body>
 {% include "navbar.html" %}
@@ -77,7 +76,7 @@
         <ul id="rightbar" style="padding:0 0 0 15px; list-style-type:square">
             {% for entry in geo_objects %}
                 <li style="color:#4d4df6" class="rightnav">
-                    <a href="/browse/seg/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name }}</a>
+                    <a href="/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name }}</a>
                 </li>
             {% endfor %}
         </ul>

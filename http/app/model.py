@@ -15,7 +15,7 @@ class DB(object):
     def search(self, expression):
         # return app.config['SPACES'].find(
         #         {
-        #         '$text': {'$search': expression}
+        #         '$text': {'$search': expression, '$language': "ru"}
         #         }, {'score': {'$meta': 'textScore'}})
         return app.config['SPACES'].aggregate([
                             {'$match':{ '$or': [
@@ -41,6 +41,13 @@ class DB(object):
                             {'$match':{"points.I_S_codenames":codename}}, 
                             { '$unwind' : "$points" },
                             {'$match':{"points.I_S_codenames":codename}}
+                            ])
+
+    def get_points_by_geo(self, codename):
+        return app.config['SPACES'].aggregate([
+                            {'$match':{"points.info_geo":codename}}, 
+                            { '$unwind' : "$points" },
+                            {'$match':{"points.info_geo":codename}}
                             ])
 
     def get_an_object_by_codename(self, codename):

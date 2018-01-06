@@ -14,9 +14,13 @@ $(document).ready(function() {
 </script>
 <div style="margin:60px 20px 30px 20px;" id=hlight>
 <input type="hidden" name="keyword" value="{{ title }}">
-    <h1 style="margin:0 0 20px 0">{{ title }}</h1>
+    <h4>Найдено <b>{{ found }}</b> результатов для {{ title }}</h4>
     {% for entry in idata %}
-        <h3 style="text-align:right"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">{{ entry.title }}</a></h3>
+        <div style="margin-left:70%">
+                <h3>
+                     {{ loop.index }}. <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">{{ entry.title }}</a>
+                </h3>
+        </div>
            {{ entry.points.num }}.
            {% if entry.points.title %}
                 <b><a href="{{ entry.points.link }}" rel="nofollow">{{ entry.points.title }}</a></b>
@@ -86,4 +90,5 @@ $(document).ready(function() {
             <div align=right style="margin-top:-10px"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">Вся статья &gt;&gt;</a></div>
     {% endfor %}
 </div>
+
 {% endblock %}

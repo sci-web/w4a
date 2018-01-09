@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div style="margin:35px 30px 30px 0px;">
+<form action="/edit/content/{{ namespace }}:{{ chapter }}" method="POST" name="form" enctype="multipart/form-data">
+{{ form.hidden_tag() }}
+{{ form.from_url }}
+<h1>Edit chapter {{ chapter }}</h1>
+    <div style="margin:10px 0 0 0">
+        <div style="height:60px">
+            <label class="control-label" for="title"></label>Title: {{ form.title }} <font color="red">(*)</font>
+        </div>
+        <div style="margin:0 45px 0 0; line-height:16px" align=right>
+            <label class="control-label" for="epigraph_text"></label>Epigraph text: {{ form.epigraph_text }}<br>
+            <label class="control-label" for="epigraph_source"></label>Epigraph source: {{ form.epigraph_source }}
+        </div>
+        <div style="margin:10px 50px 0 0; text-align:justify">
+            <label class="control-label" for="intro"></label>Introduction: {{ form.intro }}
+        </div>
+    </div>
+    <h3>Points:</h3><br>
+    <div style="margin:0 0 0 20px">
+        <label class="control-label" for="pnt_1_header_1"></label>header (of next point(s)): {{ form.pnt_1_header_1 }}<br>
+        <label class="control-label" for="pnt_1_title_1"></label>title (paper's title): {{ form.pnt_1_title_1 }}<br>
+        <label class="control-label" for="pnt_1_link_1"></label>link: {{ form.pnt_1_link_1 }}<br>
+        <label class="control-label" for="pnt_1_id_1"></label>paper's ID: {{ form.pnt_id_1 }} (pubmed/doi/PMC id if present)<br>
+        <label class="control-label" for="pnt_1_date_1"></label>paper's date: {{ form.pnt_1_date_1 }}<br>
+        <label class="control-label" for="pnt_1_authors_1"></label>paper's authors: {{ form.pnt_1_authors_1 }}<br>
+        <label class="control-label" for="pnt_1_place_1"></label>publication place: {{ form.pnt_1_place_1 }} (journal's name or acronim)<br>
+        <label class="control-label" for="pnt_1_geo_1"></label>geo location: {{ form.pnt_1_geo_1 }}<br>
+        <label class="control-label" for="pnt_1_digest_1"></label>digest: {{ form.pnt_1_digest_1 }}<br>
+        <label class="control-label" for="pnt_1_img_1"></label>image: {{ form.pnt_1_img_1 }}<br>
+        <label class="control-label" for="pnt_1_img_source_1"></label>image source: {{ form.pnt_1_img_source_1 }} (link)<br>
+        <label class="control-label" for="pnt_1_img_source_1"></label>image description: {{ form.pnt_1_img_descr_1 }}<br>
+        This point images pool:
+        <div style="margin:0 0 0 20px">
+            <label class="control-label" for="pnt_1_imgpool_1"></label>image pool #1: {{ form.pnt_1_imgpool_1 }}<br>
+            <label class="control-label" for="pnt_1_img_source_1"></label>image source: {{ form.pnt_1_img_source_1 }} (link)<br>
+            <label class="control-label" for="pnt_1_img_source_1"></label>image description: {{ form.pnt_1_img_descr_1 }}<br>
+        </div>
+        <a href="/edit/?add_point_1_imgpool">add next image pool item</a>
+        This point sources pool:
+        <div style="margin:0 0 0 20px">
+            <label class="control-label" for="pnt_1_sourcepool_title_1"></label>source pool #1 title: {{ form.pnt_1_sourcepool_title_1 }}<br>
+            <label class="control-label" for="pnt_1_sourcepool_link_1"></label>source pool #1 link: {{ form.pnt_1_sourcepool_link_1 }} (link)<br>
+            <label class="control-label" for="pnt_1_sourcepool_id_1"></label>source pool #1 paper's ID: {{ form.pnt_1_sourcepool_id_1 }} (pubmed/doi/PMC id if present)<br>
+            <label class="control-label" for="pnt_1_sourcepool_date_1"></label>source pool #1paper's date: {{ form.pnt_1_sourcepool_date_1 }}<br>
+            <label class="control-label" for="pnt_1_sourcepool_authors_1"></label>source pool #1 paper's authors: {{ form.pnt_1_sourcepool_authors_1 }}<br>
+            <label class="control-label" for="pnt_1_sourcepool_place_1"></label>source pool #1 publication place: {{ form.pnt_1_sourcepool_place_1 }} (journal's name or acronim)<br>
+            <label class="control-label" for="pnt_1_sourcepool_geo_1"></label>source pool #1 geo location: {{ form.pnt_geo_1 }}<br>
+        </div>
+    </div>
+    <div style="margin:10px 100px 10px 10px; text-align:justify">
+        <label class="control-label" for="ref_1_link_digest_1"></label>Summary: {{ form.summary }}
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+{% endblock %}

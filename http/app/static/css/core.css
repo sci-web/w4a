@@ -5,10 +5,10 @@
   #sidebar.affix-bottom {position: relative;}
   #sidebar.affix {position: fixed;margin:10px 0 0 0;}
 }
-a.leftnav, a.rightnav {color:#024d60;text-decoration:none;}
-a.leftnav:hover, a.rightnav:hover {color:#3840ea;text-decoration:none;}
-li.leftnav {padding:1px}
-li.leftnav:hover {color:#3840ea;text-decoration:none;background-color:#f1f1f0;padding:1px}
+a.sqnav, a.rightnav {color:#024d60;text-decoration:none;}
+a.sqnav:hover, a.rightnav:hover {color:#3840ea;text-decoration:none;}
+li.sqnav {padding:1px}
+li.sqnav:hover {color:#3840ea;text-decoration:none;background-color:#f1f1f0;padding:1px}
 
 li.rightnav {padding:1px}
 li.rightnav:hover {color:#3840ea;text-decoration:none;background-color:#e1e6f0;padding:1px}
@@ -42,5 +42,5 @@ img {max-width: 100%;max-height: 100%;}
         display: none;
         background: transparent;
     }
-.leftmenu{padding:10px 0 10px 10px; margin: 0 10px 0 20px; list-style-type:square}
+.sqmenu{padding:10px 0 10px 10px; margin: 0 10px 0 20px; list-style-type:square}
 

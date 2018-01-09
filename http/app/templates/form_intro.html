@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}Spell out scientific service :: analyst space{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div style="margin:40px 20px 30px 10px;">
+<form action="/edit/intro/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
+{{ form.hidden_tag() }}
+{{ form.from_url }}
+<h1>Edit topic {{ subject }}</h1>
+    <div style="margin:10px 0 0 0">
+        <div style="height:60px">
+            <label class="control-label" for="subject"></label>Subject (research title): {{ form.subject }} <font color="red">(*)</font>
+        </div>
+        <div style="margin:0 45px 0 0; line-height:16px">
+            <label class="control-label" for="epigraph_text"></label>Epigraph text: {{ form.epigraph_text }}<br>
+            <label class="control-label" for="epigraph_source"></label>Epigraph source: {{ form.epigraph_source }}
+        </div>
+        <div style="margin:10px 40px 0 0;">
+        <label class="control-label" for="intro"></label>Introduction: {{ form.intro }}
+        </div>
+    </div>
+    <div style="margin:0 30px 40px 0">
+        <ol>
+            <li style="margin:10px;">
+            <label class="control-label" for="point_1"></label>Point: {{ form.point }}<br>
+            <a href="/edit/?add_intro_point">add next point</a>
+            </li>
+        </ol>
+            <div style="margin:10px">
+            <h3>Introduction references:</h3>
+            <label class="control-label" for="ref_header"></label>References header: {{ form.ref_header }}<br>
+            <p>
+            <label class="control-label" for="ref_header"></label>References intro: {{ form.ref_intro }}
+                <div style="margin:0 0 0 20px">
+                <label class="control-label" for="ref_title"></label>References block #1 title: {{ form.ref_title_1 }}<br>
+                <label class="control-label" for="ref_digest"></label>References block #1 digest: {{ form.ref_digest_1 }}
+                    <div>
+                        References block #1 links:<br>
+                        <label class="control-label" for="ref_1_link_title_1"></label>Link #1 title: {{ form.ref_1_link_title_1 }}<br>
+                        <label class="control-label" for="ref_1_link_href_1"></label>Link #1 address: {{ form.ref_1_link_href_1 }}<br>
+                        <label class="control-label" for="ref_1_link_type_1"></label>Link #1 type: {{ form.ref_1_link_type_1 }}<br>
+                        <label class="control-label" for="ref_1_link_digest_1"></label>Link #1 digest: {{ form.ref_1_link_digest_1 }}<br>
+                    </div>
+                    <a href="/edit/?add_ref_1_link_1">add next link</a>
+                </div>
+                <a href="/edit/?add_ref_block_1">add next ref. block</a>
+            </div>
+            <div style="margin:10px 100px 10px 10px; text-align:justify">
+                <label class="control-label" for="ref_1_link_digest_1"></label>Summary: {{ form.summary }}
+            </div>
+    </div>
+<button type="submit" class="btn btn-default">Submit</button>
+</form>
+</div>
+{% endblock %}

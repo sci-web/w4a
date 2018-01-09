@@ -7,14 +7,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown"><a href="/chapters/vaccines" style="font-size:17px">Прививки <span class="caret"></span></a>
           <ul class="dropdown-menu">
-          <li><span style="margin:0 0 0 20px">Изложение по главам:</span></li>
           <li><a href="/intro/vaccines">Введение</a></li>
-          {% for entry in items %}
-              <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">
-                <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
-                {{ entry.I_S_name }}</a>
-            </li>
-          {% endfor %}
           </ul>
         </li>
       </ul>

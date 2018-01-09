@@ -4,7 +4,6 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<a name="top"></a>
 <div style="margin:40px 20px 30px 10px;">
 {% for entry in idata %}
     <div style="margin:10px 0 0 0">
@@ -12,7 +11,7 @@
             <div style="float:left"><h1>{{ entry.subject }}</h1></div>
             <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ entry.analyst }}</a></h4></div>
         </div>
-        <div  style="margin:0 45px 0 0; line-height:16px" align=right><small>{{ entry.epigraph.text | safe }}<br>
+        <div style="margin:0 45px 0 0; line-height:16px" align=right><small>{{ entry.epigraph.text | safe }}<br>
                 <em>{{ entry.epigraph.source }}</em></small>
         </div>
         <div style="margin:10px 40px 0 0; text-align:justify">

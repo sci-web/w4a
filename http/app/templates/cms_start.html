@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Spell out scientific service :: CMS {% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div style="margin:40px 20px 30px 10px;">
+<h2>Chose a chapter to edit:</h2>
+    {% if chapters %}
+    <div style="margin:0 0 0 10px">
+        {% for ch in chapters %}
+            {{ loop.index }}. <a href="/edit_chapter/{{ ch.namespace }}/{{ ch.I_S_codename }}">{{ ch.I_S_name }}</a><br>
+        {% endfor %}
+Or: <a href="/new_chapter/{{ namespace }}">add a chapter</h2>
+    </div>
+    {% endif %}
+<h2>Introduce a topic:</h2>
+<form action="/edit/intro/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
+{{ form.hidden_tag() }}
+{{ form.from_url }}
+        <div style="height:60px">
+            <label class="control-label" for="subject"></label>Subject (research title): {{ form.subject }} <font color="red">(*)</font><br>
+            <label class="control-label" for="namespace"></label>Namespace: {{ form.namespace }} <font color="red">(*)</font>
+        </div>
+<button type="submit" class="btn btn-default">Next</button>
+</form>
+</div>
+{% endblock %}

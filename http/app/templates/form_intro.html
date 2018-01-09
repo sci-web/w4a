@@ -11,7 +11,8 @@
 <h1>Edit topic {{ subject }}</h1>
     <div style="margin:10px 0 0 0">
         <div style="height:60px">
-            <label class="control-label" for="subject"></label>Subject (research title): {{ form.subject }} <font color="red">(*)</font>
+            <label class="control-label" for="subject"></label>Subject (research title): {{ form.subject }} <font color="red">(*)</font><br>
+            <label class="control-label" for="namespace"></label>Namespace: {{ form.namespace }} <font color="red">(*)</font>
         </div>
         <div style="margin:0 45px 0 0; line-height:16px">
             <label class="control-label" for="epigraph_text"></label>Epigraph text: {{ form.epigraph_text }}<br>

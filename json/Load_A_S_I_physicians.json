@@ -246,6 +246,8 @@
     },
     {
         "num": 24,
+        "digest": "Франция:",
+        "sources_pool": [{
         "title": "Influenza vaccination coverage among patients and healthcare workers in a university hospital during the 2006-2007 influenza season.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/23116695",
         "info_type": "article",
@@ -254,7 +256,17 @@
         "infoID": "23116695",
         "info_place": "Vaccine",
         "info_geo": "France",
-        "digest": "Франция"
+        },
+        {
+         "title": "Knowledge and attitudes towards influenza vaccination of health care workers in emergency services.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27919630",
+        "info_type": "article",
+        "info_date": "2017",
+        "info_authors": "Hulo",
+        "infoID": "27919630",
+        "info_place": "Vaccine",
+        "info_geo": "France",
+        }]
     },
     {
         "num": 25,

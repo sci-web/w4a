@@ -592,6 +592,32 @@
 "digest": "Похожий случай в Нигерии в 1981 году. Был также зарегистрирован случай излечения лимфомы после кори на Кубе в 1949 году."
 },
 {
+"num": 42.1,
+"title": "Regression of Burkitt's lymphoma in association with measles infection.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4103972",
+"info_type": "article",
+"info_date": "1971",
+"info_authors": "Bluming",
+"infoID": "4103972",
+"info_place": "Lancet",
+"info_geo": "Uganda",
+"I_S_codenames": ["Burkitt's_lymphoma","measles"],
+"digest": "У 8-летнего мальчика опух глаз, так что он им уже не видел, и была диагностирована лимфома Бёркитта. Через 10 дней после диагноза он заболел корью, а в течение двух недель опухоль исчезла, и он полностью выздоровел."
+},
+{
+"num": 42.2,
+"title": "Possible effect of measles on leukaemia.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4099624",
+"info_type": "article",
+"info_date": "1971",
+"info_authors": "Pasquinucci",
+"infoID": "4099624",
+"info_place": "Lancet",
+"info_geo": "Italy",
+"I_S_codenames": ["Lymphoblastic_leukemia","measles","rubella"],
+"digest": "Из четырех случаев лимфобластного лейкоза в 1965 году, двое умерли, а двое заболели корью во время лечения и до сих пор живы. Одна девочка заболела в придачу к кори еще и краснухой. Автор считает, что возможно и у вируса краснухи есть благотворный эффект."
+},
+{
 "num": 43,
 "I_S_codenames": ["myeloma", "ovarian_cancer", "skin_cancer", "melanoma"],
 "digest": "В 2014 году [женщину==http://edition.cnn.com/2014/05/15/health/measles-cancer-remission/index.html] вылечили от множественной миеломы посредством огромной дозы рекомбинантного вируса кори.<br>В настоящее время [ведутся==http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3926122] клинические испытания лечения различных онкологических заболеваний посредством вируса кори.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/15961518] сообщается об успешном применении вируса для лечения рака кожи у пяти пациентов. [Здесь==https://www.ncbi.nlm.nih.gov/pubmed/15961518] о том, как вирус кори разрушает клетки меланомы.<br>Вирус кори успешно использовали и для лечения рака яичника [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890216/],[[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377302/]. Вирус оказался намного эффективнее [авастина==https://en.wikipedia.org/wiki/Bevacizumab], модного на сегодня, очень токсичного и очень дорогого лекарства от рака."

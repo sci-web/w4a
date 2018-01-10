@@ -4,7 +4,7 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:50px 40px 10px 0;">
+<div style="margin:50px 1% 10px 0; height:100%">
 {% for entry in data %}
             <h4 style="text-align:right;"><a href="" class="linknav">{{ entry.analyst }}</a></h4>
             <h1 style="margin:-17px 0 0 0 ">{{ entry.subject }}</h1>
@@ -30,10 +30,10 @@
                     <a id="opencontent" href="/chapters/{{ entry.namespace }}" class="linknav">Оглавление</a>
                 </div>
             </div>
-<hr size=1 style="width: 92%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:5px 0 5px 50px" align=center>
+<hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0" align=center>
 {% endfor %}
 </div>
-<div id="fill" class="boxed_sh" style="display:none; margin:-12px 40px 40px 0; padding:0 20px; ">
+<div id="fill" class="boxed_sh" style="display:none; margin:-12px 1% 80px 0; padding:0 2%; ">
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>

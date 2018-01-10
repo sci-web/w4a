@@ -1,9 +1,15 @@
 #masthead {min-height:15px;background-color:#000044;color:#aaaacc;}
 .affix-top,.affix{position: static;margin:-10px 0 0 0;}
-@media (min-width: 1200px) {
+@media (max-width: 480px) {
+  #sidebar {font-size:90%}
+}
+@media (min-width: 760px) {
   #sidebar.affix-top {position: static;margin:10px 0 0 0;}
   #sidebar.affix-bottom {position: relative;}
   #sidebar.affix {position: fixed;margin:10px 0 0 0;}
+  #sidebar {font-size:90%}
+ .sbox {margin-left:108px}
+ .wscreen {position:fixed}
 }
 a.sqnav, a.rightnav {color:#024d60;text-decoration:none;}
 a.sqnav:hover, a.rightnav:hover {color:#3840ea;text-decoration:none;}

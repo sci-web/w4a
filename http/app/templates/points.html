@@ -1,9 +1,9 @@
   <ol>
     {% for pnt in entry.points %}
-        <li style="margin:10px; text-align:justify">{{ pnt.item | rehref | safe  }}
+        <li style="margin:10px 15px 0 -20px; text-align:justify">{{ pnt.item | rehref | safe  }}
     {% endfor %}
   </ol>
-    <div style="margin:10px">
+    <div style="margin:1%" align=left>
     <h3>{{ entry.ref_header }}</h3>
     <p style="text-align:justify">{{ entry.ref_intro | safe }}
         {% for item in entry.refs %}
@@ -18,10 +18,10 @@
         {% endfor %}
 
     </div>
-    <div style="margin:10px 100px 10px 10px; text-align:justify">
+    <div style="margin:10px 2% 10px 2%; text-align:justify">
     {{ entry.summary | rehref | safe  }}
     </div>
-    <div style="margin:10px 100px 10px 10px; text-align:justify">
+    <div style="margin:10px 2% 10px 2%; text-align:justify">
     {% include "bottom_nav.html" %}
     </div>
 <div style="height:10px; margin:10px 5px 0 5px">

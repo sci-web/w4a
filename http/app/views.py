@@ -1,7 +1,6 @@
-from app import app
+from app import app, lm
 import re
 from flask import request, redirect, render_template, url_for, flash, Response, g, jsonify
-from flask_login import login_user, logout_user, login_required, current_user
 from datetime import date
 import datetime
 from flask_admin.model import typefmt
@@ -9,7 +8,9 @@ import os
 from .model import DB
 from .forms import LoginForm, makeform, searchForm
 from bson.json_util import dumps
+from .auth import Auth
 import json
+
 
 @app.before_request
 def load_vars():
@@ -85,7 +86,7 @@ def search():
             flash("Cannot process your form: no data", category='error')
     else:
         flash("Form was not properly sent", category='error')
-    return render_template('srp.html', idata=fdata, found=len(fdata),
+    return render_template('srp.html', idata=fdata, found=len(fdata), form=g.form, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=searchfor)
 
 
@@ -95,7 +96,7 @@ def browse(codename):
     i_data = DB().get_points_by_codename(codename)
     obj = DB().get_an_object_by_codename(codename)
     objdata = json.loads(dumps(obj))
-    return render_template('browse.html', idata=i_data, obj=objdata,
+    return render_template('browse.html', idata=i_data, obj=objdata, form=g.form, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=objdata[0]["I_S_name"])
 
 
@@ -104,7 +105,7 @@ def browse_geo(geo):
     i_data = DB().get_points_by_geo(geo)
     obj = DB().get_an_object_by_codename(geo)
     objdata = json.loads(dumps(obj))
-    return render_template('browse.html', idata=i_data, obj=objdata,
+    return render_template('browse.html', idata=i_data, obj=objdata, form=g.form, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=objdata[0]["I_S_name"])
 
 
@@ -117,7 +118,7 @@ def show_intro(namespace):
     if 'div' in request.args:
         return jsonify( {'data': render_template('intro_div.html', idata=data, chapters=g.chapters)} )
     else:
-        return render_template('intro.html', idata=data, 
+        return render_template('intro.html', idata=data, form=g.form, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=data[0]["subject"])
 
 
@@ -131,39 +132,17 @@ def chapters(namespace):
     if 'div' in request.args:
         return jsonify( {'data': render_template('chapt_div.html', idata=data, chapters=chapters)} )
     else:
-        return render_template('chapt.html', idata=data, 
+        return render_template('chapt.html', idata=data, form=g.form, 
                             items=g.items, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=namespace)
-
-
-@app.route('/next', methods=['GET', 'POST'])
-def next():
-    form = ClientForm(request.values)
-    items = {}
-    if request.method == 'POST':
-        if form.data:
-            data = []
-        else:
-            flash("Cannot process your form: no data", category='error')
-    else:
-        flash("Form was not properly sent", category='error')
-    return render_template('next.html', items=items, form=form)
-
-
-@app.route('/tmpl', methods=['GET', 'POST'])
-def tmpl():
-    start = datetime.datetime.strptime("2016-11-04 00:00:00", '%Y-%m-%d %H:%M:%S')
-    end = datetime.datetime.strptime("2016-11-14 23:59:59", '%Y-%m-%d %H:%M:%S')
-    items = DB().get_data(start, end)
-    return render_template('tmpl.html', items=items)
 
 
 @app.errorhandler(404)
 def page_not_found(error):
     form = makeform()
-    return render_template('404.html', items=g.items, objects=g.objects), 404
+    return render_template('404.html', form=g.form, items=g.items, objects=g.objects), 404
 
 
 @app.errorhandler(500)
 def internal_error(error):
     form = makeform()
-    return render_template('500.html', items=g.items, objects=g.objects), 500
+    return render_template('500.html', form=g.form, items=g.items, objects=g.objects), 500

@@ -4,10 +4,10 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:50px 1% 10px 0; height:100%">
+<div style="margin:50px 1% 10px 0; height:100%" align=left>
 {% for entry in data %}
             <h4 style="text-align:right;"><a href="" class="linknav">{{ entry.analyst }}</a></h4>
-            <h1 style="margin:-17px 0 0 0 ">{{ entry.subject }}</h1>
+            <h1 style="margin:-25px 0 0 0 ">{{ entry.subject }}</h1>
             <div  style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
             {{ entry.epigraph.source }}</small>
             </div>
@@ -30,7 +30,7 @@
                     <a id="opencontent" href="/chapters/{{ entry.namespace }}" class="linknav">Оглавление</a>
                 </div>
             </div>
-<hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0" align=center>
+<hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 0 15%" align=center>
 {% endfor %}
 </div>
 <div id="fill" class="boxed_sh" style="display:none; margin:-12px 1% 80px 0; padding:0 2%; ">

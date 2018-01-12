@@ -1,10 +1,10 @@
 from app import app, lm
 import datetime
 # import xlrd
-from flask import redirect, url_for, render_template
-# from flask_login import login_user, logout_user, login_required, current_user
-from .forms import makeform
+from flask import redirect, url_for, render_template, g
+from flask_login import login_user, logout_user, login_required
 from .auth import Auth
+from .model import DB
 
 
 def extension_ok(filename, ff):
@@ -24,8 +24,7 @@ def packed(val_dict):
 
 @app.route('/login/', methods=['GET', 'POST'])
 def login():
-    form = makeform()
-    url = form.from_url.data
+    url = g.form.from_url.data
     if url is not None and url != "/" and url != "":
         url = url.strip("/")
         return redirect(url_for(url))
@@ -41,10 +40,10 @@ def logout():
 
 @lm.user_loader
 def load_user(email):
-    u = app.config['AUTH'].find_one({"email": email})
+    u = DB().get_a_user(email)
     if not u:
         return None
-    return Auth(u['email'], u['access'], u['first_name'], u['surname'])
+    return Auth(u['email'], u['access'], u['author'])
 
 
 @app.context_processor

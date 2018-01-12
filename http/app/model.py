@@ -73,12 +73,5 @@ class DB(object):
         except Exception, e:
             print e
 
-    def get_data(self, start, end):
-        return app.config['SPACES'].find({ "appeared": 
-                { '$elemMatch' : 
-                    { "start_time": { '$gt': start }, "end_time": { '$lt': end } }
-                } 
-            })
-
-    def get_meta(self):
-        return app.config['META'].find()
+    def get_a_user(self, email):
+        return app.config['CORE'].find_one({"email": email})

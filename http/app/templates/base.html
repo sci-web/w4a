@@ -27,7 +27,7 @@
 </div>
 <div class="container-fluid" align=center>
  <div class="row" style="margin:5px; width:100%">
-    <div class="col-md-2 col-xs-2" style="margin:65px 5px 0 0; height:100%; background:#fff" align=left>
+    <div class="col-md-2 col-xs-2" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
       <div class="wscreen">
         <div style="display:none;margin-top:-14px; margin:0; width:200px; white-space:nowrap;"
             onClick="javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" id=show>
@@ -49,11 +49,11 @@
         </ul>
       </div>
     </div>
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-6" style="margin:0 0 35px 0">
         {% include "flash.html" %}
         {% block content %}{% endblock %}
     </div>
-    <div class="col-xs-2 col-md-3" style="width:352px;margin:55px 0 0 0">
+    <div class="col-xs-2 col-md-3" style="width:352px;margin:25px 0 0 0">
     <div align=center style="max-width:327px;padding-top:10px;" id=sidebar>
         <ul class="nav nav-tabs" style="margin-right:80px;">
             <li class="active"><a data-toggle="tab" href="#ill">Болезни</a></li>

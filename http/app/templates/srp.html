@@ -12,7 +12,7 @@ $(document).ready(function() {
     $('#hlight').highlightRegex(/{{ title }}/ig);
 });
 </script>
-<div style="margin:60px 20px 30px 20px;" id=hlight>
+<div style="margin:60px 20px 30px 20px;" id=hlight align=left>
 <input type="hidden" name="keyword" value="{{ title }}">
     <h4>Найдено <b>{{ found }}</b> результатов для {{ title }}</h4>
     {% for entry in idata %}

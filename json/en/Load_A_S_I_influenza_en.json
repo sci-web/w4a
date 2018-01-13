@@ -1,0 +1,1211 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Flu",
+"I_S_codename": "influenza",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Flu",
+"date": ISODate ("2017-09-09T01: 15: 00Z"),
+"intro": "",
+"epigraph": {
+"text": "I've never had a flu shot, and I've never had the flu. I do not like the flu.",
+"source": "Donald Trump",
+"link": "https://www.youtube.com/watch?v=cDARZJxzeoY"
+},
+"points": [{
+"num": 1,
+"digest": "It is believed that more people are dying from the flu than from all the other vaccine diseases combined. Therefore, theoretically, if there is a sense from something to get vaccinated, it's from the flu."
+},
+{
+"num": 2,
+"title": "CDC Pinkbook Influenza",
+"link": "https://www.cdc.gov/vaccines/pubs/pinkbook/flu.html",
+"info_type": "cdc",
+"digest": "Influenza viruses are divided into three types A, B and C. Type A is divided into subtypes according to the antigens of hemagglutinin (H) and neuraminidase (N) .There are 18 hemagglutinin antigens and 9 neuraminidase antigens, but for humans, mainly types of hemagglutinin H1, H2 and H3 (which attach to cells) and types of neuraminidase N1 and N2 (which penetrate the cell).<br> Type C virus does not cause epidemics, most cases are subclinical, and it is not contained in the vaccine. Type B virus usually leads to a milder disease than type A. <br> A vaccine usually with holds one strain of each of the three types of the virus: A (H1N1), A (H3N2) and B. <br> Since 2013, tetravalent vaccines are available that include an additional strain of the type B virus. Since 2003, live nasal vaccines . <br> Vaccines of the season 2017/18 [contain==https://www.cdc.gov/flu/professionals/acip/index.htm] the following strains: A/ Hong Kong/4801/2014 (H3N2), A/Michigan/45/2015 (H1N1) pdm09, and B/Brisbane/60/2008. The tetravalent vaccine also contains strain B/Phuket/3073/2013. <br> A/Hong Kong/4801/2014 (H3N2) means the 4801th identified in Hong Kong in 2014 strain of the virus type A (H3N2). The strains in the vaccine do not change every year, three of these four strains have not changed since last season. "
+},
+{
+"num": 3,
+"digest": "A vaccine virus is grown in fertilized chicken eggs Some vaccines [are grown on the kidney cells of dogs.] Thiomersal (mercurial preservative) are no longer used in children's vaccinations, but in the vaccine against influenza it was left (in multi-dose ampoules) .The vaccine usually also contains polysorbate 80. <br> Twice a year WHO decides which strains to include in the vaccine.Select those strains that are good [multiply==https://www.cdc.gov/mmwr/preview/mmwrhtml/rr58e0724a1.htm] in the eggs .In the growing process, the viruses [mutated==http: //mbio.asm.org/content/8/3/e00669-17], so the WHO-selected strain does not always match the vaccine strain. <br> About one dose [of https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4514247/] of approximately one dose A vaccine maker uses a million fertilized eggs a day. "
+},
+{
+"num": 4,
+"header": "Efficiency",
+"title": "Low 2016/17 season vaccine efficacy against hospitalized influenza A (H3N2) among elderly: awareness warranted for 2017/18 season.",
+"link": "http://www.eurosurveillance.org/content/10.2807/1560-7917.ES.2017.22.41.17-00645",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Rondy",
+"infoID": "29043961",
+"info_place": "Euro Surveill",
+"I_S_codenames": ["H3N2"],
+"digest": "The effectiveness of vaccine from A (H3N2) in the 2016/17 season among hospitalized elderly was 17%. Among those who were vaccinated also in the previous season, the effectiveness of the vaccine was -2% (negative). The authors expect , as in the next season it will not be particularly effective, since strain A (H3N2) in the vaccine of 2017/18 remained the same. "
+},
+{
+"num": 4,
+"title": "Contemporary H3N2 influenza viruses have a glycosylation site that is antibodies to antibodies elicited by egg-adapted vaccine strains.",
+"link": "http://www.pnas.org/content/early/2017/10/31/1712377114",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Zost",
+"infoID": "29109276",
+"info_place": "Proc Natl Acad Sci",
+"I_S_codenames": ["H3N2"],
+"digest": "This explains why the vaccine in 2016/17 was ineffective (because the virus is grown in eggs and mutates)."
+},
+{
+"num": 5,
+"digest": "How is the effectiveness of the vaccine calculated? To whom is it convenient? <br> In the observational studies, which most, check all those hospitalized with ARI for infection with influenza viruses, but only check the infection with those strains that are in the vaccine. The effectiveness of the vaccine is calculated by the formula VE = 1-OR = 1 - Oi/Oni, where Oi is the ratio of vaccinated to the unvaccinated among the sick with influenza, and Oni is the ratio of vaccinated to unvaccinated among non-flu cases, and other ARI. Vaccines are usually measured only among italizirovannyh, or among patients. In a previous study, for example, the median age of hospitalized was 80 years, and 94% of them also suffered from another disease, which predisposes to acute respiratory infections."
+},
+{
+"num": 6,
+"title": "A Perfect Storm: Impact of Genomic Variation and Serial Vaccination on Low Influenza Vaccine Effectiveness During the 2014-2015 Season.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4901864/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Skowronski",
+"infoID": "PMC4901864",
+"info_place": "Clin Infect Dis",
+"info_geo": "Canada",
+"I_S_codenames": ["H3N2"],
+"digest": "In the 2014/15 season, the effectiveness of A (H3N2) vaccine in Canada was 53% for those who were vaccinated only this year, among those who were vaccinated also in the previous season, the efficacy was negative -32%. those who were vaccinated for 3 consecutive years, the effectiveness was -54%. <br> On average, the efficiency was -17%. "
+},
+{
+"num": 7,
+"title": "Impact of the repeated vaccination on vaccine effectiveness against influenza A (H3N2) and B during 8 seasons.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4207422/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "McLean",
+"infoID": "PMC4207422",
+"info_place": "Clin Infect Dis",
+
+"I_S_codenames": ["H3N2"],
+"digest": "The effectiveness of the vaccine against A (H3N2) in 2004-2013 was 65% for those who were vaccinated in the same season. Those who are vaccinated often have efficacy of 24%. Effectiveness from Type B influenza virus was 75% for those who have been vaccinated only this year, and 48% for those who get vaccinated frequently. "
+},
+{
+"num": 8,
+"title": "Influenza vaccine effectiveness in the community and the household.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3693492/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Ohmit",
+"infoID": "PMC3693492",
+"info_place": "Clin Infect Dis",
+"digest": "Efficiency in the 2010/11 season among those who were vaccinated for two consecutive years was negative -45%. Among those who were vaccinated only this season, the effectiveness was 62%. <br> Efficiency among those who infected at home, was -51% .And among the adults who contracted the house, the efficiency was -283%. "
+},
+{
+"num": 9,
+"title": "Influenza vaccine effectiveness in households with children during the 2012-2013 season: assessments of prior vaccination and serologic susceptibility.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/25416812/",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Ohmit",
+"infoID": "25416812",
+"info_place": "J Infect Dis",
+"digest": "The effectiveness of the vaccine in the 2012/13 season was 48% for adults, and -4% for children under the age of 9 years."
+},
+{
+"num": 10,
+"title": "Effectiveness of influenza vaccine during pregnancy and outpatient visits for respiratory illness in pregnant women and their infants.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15311370",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Black",
+"infoID": "15311370",
+"info_place": "Am J Perinatol",
+"digest": "Analysis of the effectiveness of the vaccine for pregnant women in 1997-2002.The vaccination had no effect on the incidence of influenza."
+},
+{
+"num": 11,
+"title": "Impact of influenza vaccination on seasonal mortality in the US elderly population.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15710788",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Simonsen",
+"infoID": "15710788",
+"info_place": "Arch Intern Med",
+"digest": "According to observational studies, vaccination against influenza reduces the death rate among the elderly by 50%. Vaccination coverage among the elderly rose from 15-20% in the 1970s to 65% in 2001. Paradoxically, the elderly during this period only increased. <br> Less than 10% of the mortality in winter is associated with influenza, which means that observational studies significantly overestimate the benefits of vaccination. "
+},
+{
+"num": 12,
+"title": "Influenza vaccination and benefits: new insights, new opportunities.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19840664",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Simonsen",
+"infoID": "",
+"info_place": "Vaccine",
+"digest": "75% of the deaths from influenza are 70 years of age or older, but there are no randomized studies that prove that vaccination of the elderly reduces mortality. Some studies show that the flu vaccine prevents mortality even before the start of the influenza season , which indicates a systematic selection error.Such low-quality research, however, continues to be published in prestigious medical journals. "
+},
+{
+"num": 13,
+"title": "What, in Fact, Is the Evidence That Vaccinating Healthcare Workers against Seasonal Influenza Protects Their Patients? A Critical Review.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3502850/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Abramson",
+"infoID": "PMC3502850",
+"info_place": "Int J Family Med",
+"digest": "Analysis of literature on the impact of vaccination of medical personnel on patients.<br> Research showing the widespread belief that vaccination of staff reduces morbidity and mortality of patients is very poor, and recommendations are biased.<br> There is no reliable evidence that the vaccination of the staff brings some benefit to the patients.It does not reduce the incidence, does not reduce the mortality rate and does not even increase vaccination coverage among patients. The author concludes that one should not force a medical Physicians should read this article in full, there are many interesting things."
+},
+{
+"num": 14,
+"title": "Influenza Vaccination of Healthcare Workers: Critical Analysis of the Evidence for Patient Benefit Underpinning Policies of Enforcement.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/28129360/",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "De Serres",
+"infoID": "28129360",
+"info_place": "PLoS One",
+"digest": "Four randomized studies on the impact of vaccination of medical personnel on patients are analyzed here: according to these studies, the vaccination of eight health workers saves one patient from death, which means that vaccination of physicians saves 687,000 lives a year in the US, that is more people than died during the epidemic of 1918. It explains how the authors of the research are playing with statistics in order to get these completely insane results, and conclude that even according to the most optimistic estimates, we need 6,000-32,000 doctors to prevent one death from influenza. <br> In addition, according to these studies, it turns out that 90% of people die from the flu without the presence of respiratory symptoms, and that vaccination saves more people from death than they get sick with the flu. <br> The authors conclude that the compulsory vaccination of physicians is not supported by empirical data, and that the resources spent for vaccination may, perhaps, be directed to something more scientifically proven. "
+},
+{
+"num": 15,
+"title": "Influenza outbreak in a vaccinated population - USS Ardent, February 2014.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25340911",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Aquino",
+"infoID": "25340911",
+"info_place": "MMWR Morb Mortal Wkly Rep",
+"digest": "Influenza on a warship, where 99% were vaccinated (25 cases out of 102 soldiers). The isolated strain coincided with the strain in the vaccine. All the cases were given to Tamiflu. Another outbreak of influenza among fully vaccinated soldiers: [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3855413/], [[2]==https://wwwnc.cdc.gov/eid/article/7/3/01-7320_article ]. "
+},
+{
+"num": 16,
+"header": "Unprunited",
+"title": "Effectiveness of trivalent inactivated influenza vaccine in influenza-related hospitalization in children: a case-control study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22525386",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Joshi",
+"infoID": "22525386",
+"info_place": "Allergy Asthma Proc",
+"I_S_codenames": ["H3N2", "H1N1"],
+"digest": "The study for 8 seasons (1999-2007) .The risk of hospitalization due to influenza in vaccinated children was 3.67 times higher than in the unvaccinated. <br> For these 8 years, strain A (H3N2) has not been guessed 5 times, and the strains A (H1N1) and B did not guess four times. "
+},
+{
+"num": 17,
+"title": "Increased risk of noninfluenza, respiratory infection, infection with receipt of inactivated influenza vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3404712/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Cowling",
+"infoID": "PMC3404712",
+"info_place": "Clin Infect Dis",
+"digest": "Randomized placebo-controlled trial. During 9 months after vaccination, the risk of non-influenza viral diseases in vaccinated patients was 4.4 times higher than in the unvaccinated. "
+},
+{
+"num": 18,
+"title": "Epidemiology of respiratory viral infections in children enrolled in a study of influenza vaccine effectiveness.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/24483149/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Dierig",
+"infoID": "24483149",
+"info_place": "Influenza Other Respir Viruses",
+"digest": "The risk of ARVI in vaccinated people, within 13 weeks after vaccination, was 60% higher than in the unvaccinated, and the risk of flu was the same in both groups."
+},
+{
+"num": 19,
+"title": "Effectiveness and cost-benefit of influenza vaccination of healthy working adults: A randomized controlled trial.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11015795",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Bridges",
+"infoID": "11015795",
+"info_place": "JAMA",
+"digest": "A randomized, double-blind, placebo-controlled trial of the economic benefits of influenza vaccination. In the first year of the study, the strain was not guessed, the vaccine was ineffective, vaccinated because of illness 45% more working days than unvaccinated, and doctors visited 378% more often. <br> In the second year the strain was guessed, and the unvaccinated people missed 32% more working days than those vaccinated, and doctors attended 47% more often. <br> In both seasons vaccination led to losses.In the season, when the strain was guessed, the loss was $ 11.17 per person, in the season when you do not have guessed, the loss was $ 31.4 per person. <br> authors conclude that vaccination is not economically feasible for healthy working people. "
+},
+{
+"num": 20,
+"title": "Effectiveness of school-based influenza vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17167135",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "King",
+"infoID": "17167135",
+"info_place": "N Engl J Med",
+"digest": "In this study, we decided to test how influenza vaccination affects collective immunity. The pupils were immunized at school with a weakened vaccine. The families of vaccinated pupils were less sick with ARI than the families of the unvaccinated, but, paradoxically, in families vaccinated significantly more cases of hospitalization. <br> There was no difference in the number of missed days in school between vaccinated and unvaccinated. "
+},
+{
+"num": 21,
+"header": "Systematic reviews",
+"title": "Vaccines for preventing influenza in healthy children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22895945",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Jefferson",
+"infoID": "22895945",
+"info_place": "Cochrane Database Syst Rev",
+"digest": "Systematic review of Cochrane effectiveness of influenza vaccines for children (75 studies, 17 of them Russian). <br> For children older than two years, the effectiveness of live vaccine was 33%, and inactivated - 36%. <br> For children the effectiveness of the vaccine is almost zero.Other: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/15056235/]. <br> There is no evidence that the vaccine against influenza reduces mortality, hospitalization, serious complications or infectiousness of influenza. The authors were surprised to find only one study of the safety of an inactivated vaccine, born in 1976, which included 35 children.They believe that it is rather strange that the vaccine is recommended to all children, despite the almost complete absence of safety studies, but they found 10 safety studies for the live vaccine, but they could not analyze the data, since manufacturers refused to provide all information about side effects. <br> The authors note that all studies of vaccines were of poor quality. "
+},
+{
+"num": 22,
+"title": "Vaccines for preventing influenza in healthy adults.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24623315",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Demicheli",
+"infoID": "24623315",
+"info_place": "Cochrane Database Syst Rev",
+"digest": "Systematic review of the Cochrane Effectiveness of Influenza vaccines for adults (90 studies.) Less than 10% of studies were of a high quality. Vaccination has a very modest effect. It is necessary to inject 40 people to prevent one case of ARVI, and 71 people to prevent one case of influenza, vaccination did not affect hospitalization for influenza, or for missing work days, 92 pregnant women should be vaccinated to prevent one case of ARVI in pregnant women and 27 women to prevent one case of flu in newborns. There was no evidence that vaccination reduces the risk of serious complications."
+},
+{
+"num": 23,
+"title": "Vaccines for prevention of infection in the elderly.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20166072",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Jefferson",
+"infoID": "20166072",
+"info_place": "Cochrane Database Syst Rev",
+"digest": "A systematic review of the Cochrane Effectiveness of influenza vaccines for the elderly (75 studies). <br> All studies were so substandard that the authors could not conclude anything. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/16213065] it is reported that the elderly after vaccination & nbsp; produced 41-76% less antibodies than the young. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/26516142] it is reported that in the elderly who take statins, 38-67% less antibodies are produced than those who do not take them. "
+},
+{
+"num": 24,
+"title": "Influenza vaccination for healthcare workers who care for people aged 60 or older living in long-term care institutions.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27251461",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Thomas",
+"infoID": "27251461",
+"info_place": "Cochrane Database Syst Rev",
+"digest": "A systematic review of Cochrane effectiveness of influenza vaccination against medical personnel who works with the elderly. There is no evidence that vaccination of health care providers reduces the number of cases of flu, the number of complications or mortality among the elderly. "
+},
+{
+"num": 25,
+"title": "Relation of study quality, concordance, take home message, funding, and impact in studies of influenza vaccines: systematic review.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2643439/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Jefferson",
+"infoID": "PMC2643439",
+"info_place": "BMJ",
+"digest": "Systematic review of Cochrane 259 influenza vaccine trials. <br> 70% of studies were substandard, and overly optimistic in their findings. Only in 18% of studies did the findings coincide with the results. Let's sink in. In 82 % of the study findings did not coincide with the results. <br> In quality studies, the results and conclusions were agreed 16 times more often. <br> Qualitative studies 25 times less conclude that the vaccines are effective. <br> Studies funded by the government are 2 times less likely to conclude that vaccines are effective. <br> Research, Financing mye industry, more often published in prestigious journals (with a higher impact factor), regardless of the quality of research, or the number of participants. "
+},
+{
+"num": 26,
+"header": "Heterosubptic immunity",
+"title": "Vaccination against human influenza A/H3N2 virus inhibited the induction of heterosubtypic immunity against lethal infection with avian influenza A/H5N1 virus.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2678248/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Bodewes",
+"infoID": "PMC2678248",
+"info_place": "PLoS One",
+"digest": "Infection with the influenza A virus increases immunity from more dangerous strains. This is called [heterosubtypic immunity==https://en.wikipedia.org/wiki/Heterosubtypic_immunity.] Vaccination has the opposite effect. Mice vaccinated from seasonal influenza, and then infected with pandemic avian influenza, grafted mice died, and ungrafted survived. <br> The authors conclude that during the next influenza pandemic, the risk of serious complications and death in vaccinated children will be higher than that of unvaccinated. More: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19879807]."
+},
+{
+"num": 27,
+"title": "Infection of mice with a human influenza A/H3N2 virus induces protective immunity against lethal infection with influenza A/H5N1 virus.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19538996",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Kreijtz",
+"infoID": "19538996",
+"info_place": "Vaccine",
+"digest": "A part of the mice were infected with the usual seasonal flu, and a month later all mice were infected with lethal avian influenza. The mice that had been ill with the usual flu almost all survived, and those who did not get sick all died. [[1]==https://www.ncbi.nlm.nih.gov/pubmed/17005299], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/22643217]."
+},
+{
+"num": 27,
+"title": "Potent protection against H5N1 and H7N9 influenza via childhood hemagglutinin imprinting.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5134739/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Gostic",
+"infoID": "PMC5134739",
+"info_place": "Science",
+"digest": "Influenza in childhood protects against more dangerous strains of influenza in adulthood."
+},
+{
+"num": 28,
+"header": "Original antigenic sin",
+"title": "Original antigenic sin responses to influenza viruses.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4460008/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Kim",
+"infoID": "PMC4460008",
+"info_place": "J Immunol",
+"digest": "Since the influenza virus is constantly mutating, the immune system, reacting to it, is affected by the original antigenic sin.With a new strain of the virus, it produces antibodies to previous strains, due to antibodies to the new strain, which leads to an aggravation of the disease."
+},
+{
+"num": 29,
+"title": "Understanding Original Antigenic Sin in Influenza with a Dynamical System.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3163660/",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Pan",
+"infoID": "PMC3163660",
+"info_place": "PLoS One",
+"digest": "The effectiveness of the vaccine does not decrease monotonically with the increase in the antigenic distance between the vaccine and circulating strain.The minimum effectiveness of the vaccine is at some intermediate distance between the strains.As the vaccine efficiency at this intermediate antigenic distance between the vaccine and circulating strains is below the efficiency at a greater antigenic distance , the original antigenic sin can lead to the fact that the vaccinated will become more susceptible to the virus than the unvaccinated. <br><br> This phenomenon, it is possible, explains why in those years when the vaccine strain [not guessed==https://www.ncbi.nlm.nih.gov/pubmed/11015795], the vaccine is not just useless, but on the contrary, only aggravates the course of the disease. strain guess less often than in 50% of cases. "
+},
+{
+"num": 30,
+"title": "Vaccination and antigenic drift in influenza.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2603026/",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Boni",
+"infoID": "PMC2603026",
+"info_place": "Vaccine",
+"digest": "Vaccination can significantly affect the mutation of the virus, and accelerate its evolution if it provides partial or imperfect immunity. This was demonstrated on chickens. Vaccinated from influenza, there were twice as many virus mutations as in unvaccinated chickens.<br> The authors conclude that in seasons with high vaccine coverage, mutant strains of the virus should be expected, and monitoring beyond them should be strengthened. "
+},
+{
+"num": 31,
+"header": "Swine flu",
+"title": "Seasonal influenza vaccine and increased risk of pandemic A/H1N1 related illness: first detection of the association in British Columbia, Canada.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20887210",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Janjua",
+"infoID": "20887210",
+"info_place": "Clin Infect Dis",
+"info_geo": "Canada",
+"I_S_codenames": ["H1N1"],
+"digest": "Seasonal influenza vaccination increased the risk of swine flu infection by 2.5 times among children in Canada in 2009. These results were confirmed in five other studies. More: [[1]==https://www.ncbi.nlm .nih.gov/pmc/articles/pmid/20386731], [[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2878199/]."
+},
+{
+"num": 32,
+"title": "Randomized Controlled Ferret Study to Assess the Direct Impact of 2008 09 Trivalent Inactivated Influenza Vaccine on A (H1N1) pdm09 Disease Risk.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3903544/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Skowronski",
+"infoID": "PMC3903544",
+"info_place": "PLoS One",
+"I_S_codenames": ["H1N1"],
+"digest": "This study tested the previous results on ferrets, some of the ferrets were seasoned with the seasonal flu vaccine of 2008/9, and then they were infected with swine flu. Indeed, it turned out that grafted ferrets are heavier than ungrafted. "
+},
+{
+"num": 33,
+"title": "Clinical and Epidemiologic Characteristics of an Outbreak of Novel H1N1",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2878199/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Crum-Cianflone",
+"infoID": "PMC2878199",
+"info_place": "Clin Infect Dis",
+"digest": "The grafted in the last season, soldiers fell ill with swine flu much more unvaccinated."
+},
+{
+"num": 34,
+"header": "Security",
+"title": "Annual Vaccination against Influenza Virus Hampers Development of Virus-Specific CD8 + T Cell Immunity in Children.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3209321/",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Bodewes",
+"infoID": "PMC3209321",
+"info_place": "J Virol",
+"digest": "Vaccination against influenza inhibits the production of cytotoxic T-lymphocytes in children, that is, makes them more susceptible to infections."
+},
+{
+"num": 35,
+"title": "Association of spontaneous abortion with receipt of inactivated influenza vaccine containing H1N1pdm09 in 2010-11 and 2011-12.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28917295",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Donahue",
+"infoID": "28917295",
+"info_place": "Vaccine",
+"I_S_codenames": ["H1N1"],
+"digest": "Vaccination against influenza during pregnancy increases the risk of miscarriage in the next 28 days by 2 times. Among those who were also vaccinated against swine flu in the previous season, the risk of miscarriage was 7.7 times higher. "
+},
+{
+"num": 36,
+"title": "Comparison of VAERS fetal-loss reports during three consecutive influenza seasons.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3888271/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Goldman",
+"infoID": "PMC3888271",
+"info_place": "Hum Exp Toxicol",
+"I_S_codenames": ["VAERS", "H1N1"],
+"digest": "VAERS Analysis. In the 2009-10 season, when vaccinated with two flu vaccines (from conventional and from porcine), the risk of miscarriage was 11 times higher than in the 2008-9 season, and 6 times higher than in the 2010-11 season.<br><br> As a proof of the safety of a flu vaccine for pregnant women, two studies usually lead, 56 in the first, and 180 women in the second, in a thiomersal-free vaccine, in the third study, 2291 women, but miscarriages were not included in the analysis. <br> It is believed that the vaccine leads to a miscarriage in 1.9 cases per million p However, these data do not take into account the fact that a negligible number of all side effects are registered in VAERS. "
+},
+{
+"num": 37,
+"title": "Inflammatory responses to trivalent influenza virus vaccine among pregnant women.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21945263",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Christian",
+"infoID": "21945263",
+"info_place": "Vaccine",
+"digest": "The flu vaccine leads to an inflammatory reaction in pregnant women.The inflammatory response from vaccination is much weaker than from an infectious disease, but nevertheless, it can increase the risk of negative consequences. In the 2008-9 season were vaccinated 11.3% of pregnant women, in the 2009-10 season, thanks to a pandemic, 50.7% of pregnant women from seasonal influenza were vaccinated, and 47.7% of swine flu. "
+},
+{
+"num": 38,
+"title": "Association Between Influenza Infection and Vaccination During Pregnancy and Risk of Autism Spectrum Disorder.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27893896",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Zerbo",
+"infoID": "27893896",
+"info_place": "JAMA Pediatr",
+"digest": "A study of 197 thousand children born in 2000-2010 Autism was diagnosed in 1.6% (1 of 63)<br> The vaccine against influenza during the first trimester of pregnancy increased the risk of autism by 20% .But after correction for multiple testing (Bonferroni amendment), the p-value becomes 0.1, and the authors conclude that with a probability of 10% this is only a random correlation. "
+},
+{
+"num": 39,
+"title": "Guillain-Barr & e., syndrome after vaccination in the United States: data from the Centers for Disease Control and Prevention/Food and Drug Administration Vaccine Adverse Event Reporting System",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19730016",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Souayah",
+"infoID": "19730016",
+"info_place": "J Clin Neuromuscul Dis",
+"I_S_codenames": ["VAERS", "GBS"],
+"digest": "In 1990-2005, the VAERS reported 1000 cases of Guillain-Barre syndrome after vaccination, 63% of them were vaccinated against influenza."
+},
+{
+"num": 40,
+"title": "Narcolepsy and hypersomnia in Norwegian children and young adults following the influenza A (H1N1) 2009 pandemic.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28302408/",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Trogstad",
+"infoID": "28302408",
+"info_place": "Vaccine",
+"I_S_codenames": ["H1N1", "narcolepsy"],
+"digest": "The risk of narcolepsy in vaccines from swine flu in 2009 was increased 17-fold. In [another==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4835303/] study the risk narcolepsy was increased 4 to 9 times. In the third==http://www.bmj.com/content/346/bmj.f794] 14-16 times. <br> In a similar Swedish [study==https://www.ncbi.nlm.nih.gov/pubmed/25325473/] it turned out that narcolepsy after this vaccine is much more often accompanied by psychiatric abnormalities. "
+},
+{
+"num": 41,
+"title": "Inflammation-related effects of adjuvant influenza A vaccination on platelet activation and cardiac autonomic function.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20964738",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Lanza",
+"infoID": "20964738",
+"info_place": "J Intern Med",
+"digest": "Vaccination from influenza conducts to platelet activation, and possibly increases the risk of cardiovascular disease."
+},
+{
+"num": 42,
+"title": "Reversion of Cold-Adapted Live Attenuated Influenza Vaccine into a Pathogenic Virus.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/pmid/27440882/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Zhou",
+"infoID": "27440882",
+"info_place": "J Virol",
+"digest": "A live influenza vaccine can, under certain conditions, mutate and become virulent."
+},
+{
+"num": 43,
+"title": "ANCA-associated vasculitis, the following influenza vaccination: causal association or mere coincidence?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19734734",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Birck",
+"infoID": "19734734",
+"info_place": "J Clin Rheumatol",
+"digest": "A vaccine against influenza may sometimes lead to vasculitis. And to [neurological complications==http://www.scielo.br/scielo.php?script=sci_arttext&pid=S0004-282X2014000700496]"
+},
+{
+"num": 44,
+"header": "Statistics",
+"title": "Are US flu death figures more PR than science?",
+"link": "http://www.bmj.com/content/331/7529/1412",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Doshi",
+"infoID": "",
+"info_place": "BMJ",
+"digest": "The CDC claims that 36,000 Americans die of the flu each year, but they also include deaths from pneumonia in this statistics, which is not always the result of the flu. Antacids, for example, increase the risk of pneumonia (hi, aluminum), but they are, for some reason, not combined into one statistic. <br> According to the national statistics center (which is part of the CDC), an average of 1,348 people die of influenza per year. <br> Until 2003, the CDC claimed 20,000 deaths from influenza people a year.And then an article was published in JAMA, which raised this figure by 80 % based on the statistical model, despite the fact that in fact the death rate from influenza in the 90s was 30% lower than in the 80's. In 2003 there was a low demand for the flu vaccine, manufacturers did not receive orders even in December [Dr. Novak said==http://crisiscommunication.uga.edu/contributors/glen-nowak-ph-d/] from the CDC to NPR, so we decided that people should be encouraged to be vaccinated ."
+},
+{
+"num": 45,
+"digest": "[== http: //www.cdc.gov/nchs/data/nvsr/nvsr60/nvsr60_04.pdf], for example, CDC data for 2014. 55,227 people died of influenza and pneumonia. only 4.605 died of influenza and the remainder of pneumonia.But not all of these 4.605 really died of influenza, as laboratory analysis of the virus is rare, however the CDC sums up deaths from laboratory-confirmed influenza (J09-J10), and from a suspected influenza (J11), although only a small amount of ARI is caused by influenza viruses. "
+},
+{
+"num": 46,
+"digest": "But [presentation==http://iom.nationalacademies.org/~/media/E9B963EDB28645C5ABCC22467120662D.ashx], which was prepared by Dr. Novak, CDC's director of public relations, where he explains exactly how the media and medical experts should intimidate the population with the flu, and thus increase the vaccine coverage, which tells, among other things, what the CDC thinks of you. I highly recommend that you read only 17 slides. Here is a quote: \"Health literacy is a growing problem\"."
+},
+{
+"num": 47,
+"title": "Trends in Recorded Influenza Mortality: United States, 1900 & nbsp; 2004.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2374803/",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Doshi",
+"infoID": "PMC2374803",
+"info_place": "Am J Public Health",
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/4276/4276_original.jpg",
+"digest": "Homeland Security expects that the next flu pandemic will kill 6-56 times more Americans than regular seasonal flu, WHO is more conservative, and expects the pandemic to kill 4 to 30 times more people than usual flu. < br> However, with the exception of 1918, each subsequent pandemic was less lethal than previous ones, and mortality during influenza pandemics (1957/58, 1968/9) was not significantly different from mortality in normal influenza seasons. <br> NIH analyzed the data of 30 influenza seasons, and did not find a correlation between the increased vaccine coverage and the decline of mortality in any age group. <br> CDC claims that the death rate from influenza increased by 67% in the 90's, while in fact it fell by 38%. "
+},
+{
+"num": 48,
+"title": "Influenza vaccines: time for a rethink.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23553143",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Doshi",
+"infoID": "23553143",
+"info_place": "JAMA Intern Med",
+"digest": "For most people, the influenza vaccine is useless, as most people do not get sick with the flu, only 7% of the ARI is caused by the flu viruses. The quoted CDC studies are subject to the \"healthy user bias\" effect, that is, healthy people are vaccinated more often than patients. <br> <br> Australia stopped the vaccination program in 2009, as it was found that one of the 110 children had caused febrile convulsions, and the assumption that the safety of the previous influenza vaccines testifies to the safety of the future is unreasonable."
+},
+{
+"num": 49,
+"title": "Influenza: marketing vaccine by marketing disease.",
+"link": "http://www.bmj.com/content/346/bmj.f3037",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Doshi",
+"infoID": "23682040",
+"info_place": "BMJ",
+"digest": "Promoting influenza vaccines is one of the most aggressive public health strategies today. 20 years ago, in 1990, the vaccine market for influenza in the United States was 32 million doses, and today it is 135 million doses. was caused not by demand, but by an advertising campaign that tells us that the flu is a serious illness, that we are all at risk of complications, that the vaccine is practically safe, and vaccination saves lives. From this point of view, it seems that the lack of vaccines for all 315 million citizen The United States borders on the unethical, yet people across the country are being vaccinated against influenza, especially in medical institutions, precisely because not everyone wants it, and coercion is the only way to achieve high vaccination coverage. In the 1960s CDC recommended the vaccine only for the elderly (65 and older), in 1984, medical personnel were also inoculated, and in 1987, those who lived in the same house with the elderly were added. In 1997, they began to vaccinate pregnant women in the 2nd and 3rd trimester. In 2000, they began to vaccinate those who are over 50. In 2004, they began to vaccinate pregnant women in the first trimester, children from 6 months to two years, as well as all those who contact them. In 2006, the recommendation extended to children under 5 years old, and all who contact them. In 2008, they began to vaccinate all children under the age of 18, and in 2010, the rest of the population, except for infants under 6 months. The CDC, on the basis of one observational study that it funded, claims that the influenza vaccine reduces mortality from all causes among the elderly by 48%. If this is true, then a flu vaccine can save more lives than any other medicine registered on the planet. If influenza is only responsible for 5% of winter mortality, then the vaccine against it can not prevent half of all deaths. If observational studies are impossible to believe, what evidence is there for reducing mortality among the elderly due to vaccination? Practically none. There was only one randomized study among the elderly, it was 20 years ago, and it did not show a decrease in mortality. That is, a flu vaccine is recommended despite a complete lack of clinical trials proving its effectiveness. The recommendation is based only on the development of antibodies, but there is no evidence that these antibodies lead to a reduction in morbidity. And since at the moment the vaccine is recommended to everyone, it is already unethical to conduct a randomized trial. "
+},
+{
+"num": 50,
+"title": "WHO and the pandemic flu & ldquo; conspiracies & rdquo ;.",
+"link": "http://www.bmj.com/content/340/bmj.c2912",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Cohen",
+"info_place": "BMJ",
+"I_S_codenames": ["WHO"],
+"digest": "In 1999, after the bird flu outbreak in Hong Kong, WHO began to prepare for a pandemic, and after 10 years, on June 11, 2009, Margaret Chan, WHO Director-General, proclaimed that the pandemic had finally come. The governments of different countries spent billions of dollars on the purchase of antiviral drugs - Tamiflu and Relenza - a year later, these reserves are untouched, and states are breaking contracts with vaccine manufacturers. <br> Consultants who drafted recommendations for the WHO worked simultaneously on pharmaceuticals and their conflicts of interest were not disclosed, so the pharmaceutical companies recommended that states purchase WHO supplies of antiviral drugs through WHO, as there will be a shortage during the pandemic. <br> <br> The secret of the emergency committee, WHO keeps a secret Margaret Chan declined to provide a report about the conflicts of interests of those who make WHO recommendations for states. <br> Several months before the pandemic was declared, WHO changed the criteria by which a pandemic can be declared, and now for this there was no need to assess morbidity and mortality. <br> <br> There was no scientific reason to conclude that 2 billion people will become ill with swine flu. Moreover, WHO did not change its assessment even after the influenza season in Australia and New Zealand, where only 1-2 people out of 1000 fell ill. Also there was very little data on the safety and efficacy of vaccines. <br> The FDA did not want to license Relenza, because it was not more effective than placebo. But in the end, she licensed to have something on the market in case of an influenza pandemic. <br> There are many interesting things in the article. BMJ, one of the leading medical journals, conducts an investigation and openly writes about total corruption and WHO. If you still have some doubts that WHO is a corrupt organization, this article will dispel them. "
+},
+{
+"num": 51,
+"title": "Influenza vaccination: policy versus evidence.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1626345/",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "Jefferson",
+"infoID": "PMC1626345",
+"info_place": "BMJ",
+"digest": "Systematic studies show that vaccination against influenza is practically useless.Most studies of poor quality, safety is almost not checked.It should be urgently reviewed vaccination programs. <br> This is written by the head of vaccines in Cochrane.The one who believes that Despite the lack of evidence, the safety of aluminum should not be investigated further. For such a freethinking from him [== https://en.wikipedia.org/wiki/Tom_Jefferson_ (epidemiologist)] colleagues turned away, and at a conference on preparing for pandemic, he was forced to to be alone in bed. "
+},
+{
+"num": 52,
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/4442/4442_original.png",
+"digest": "In 2002, the CDC began [to encourage vaccination of children from 6 months to 2 years of age, and in 2004 already In the first year, the child receives two doses of the vaccine.In 2009, children [received an additional vaccine against swine flu [https://www.cdc.gov/h1n1flu/vaccination/public/vaccination_qa_pub.htm. cases of death of children under 5 years of age from influenza in 1996-2014. "
+},
+{
+"num": 53,
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/4724/4724_original.jpg",
+"digest": "In 2010, the recommendation was extended to all people over six months. Here is a graph of the deaths from influenza in all age groups in 1996-2014.<br> For the proportion, more than 3,000 people die every year from malnutrition, 7000 die from C.difficile, 40,000 from poisoning, 30,000 from alcohol, 50,000 from drugs, 40,000 from suicide, 80,000 from diabetes, 90,000 from Alzheimer's, and 200-400 thousand from medical [errors==http://www.bmj.com/content/353/bmj.i2139.full]. "
+},
+{
+"num": 54,
+"info_type": "VAERS",
+"digest": "According to VAERS, since 2000, 835 people [died==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=FLU(H1N1)&VAX[]=FLU3&VAX[]=FLU4&VAX[]=FLU4&VAX[]=FLUX&VAX[]=FLUX(H1N1)&VAX[]=FLU4&VAX[]=FLU4&VAX[]=FLU3&VAX[]=H5N1&VAX_YEAR_LOW=2000] after vaccination against influenza, and 2161 became disabled.With VAES reporting only 1-2% of serious side effects, it is possible that the flu vaccine killed more people than the flu itself."
+},
+{
+"num": 55,
+"title": "Influenza vaccination and benefits: new insights, new opportunities.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19840664",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Simonsen",
+"infoID": "19840664",
+"info_place": "Vaccine",
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/5008/5008_original.jpg",
+"digest": "Despite the fact that according to observational studies, the flu vaccine reduces all-cause mortality by 50%, the increased vaccination coverage did not lead to a reduction in mortality from either influenza or other causes."
+},
+{
+"num": 56,
+"header": "Miscellaneous",
+"title": "Do we have enough evidence how can we prevent prolonged use?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27171752",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Thomas",
+"infoID": "27171752",
+"info_place": "Vaccine",
+"digest": "Influenza virus is transmitted mainly at close contact (less than 1 meter), the virus lasts the longest time on stainless steel (several hours), and on rough surfaces it survives less than 15 minutes. It is inactivated by 99% with hydrogen peroxide vapor (10 ppm) in 2.5 minutes. "
+},
+{
+"num": 57,
+"info_type": "mass media",
+"digest": "Influenza A (H3N2) virus [charged==https://www.facebook.com/7newssydney/videos/1826057830751675/] in the deaths of hundreds of elderly Australians in 2017. This virus was contained in the vaccine, but managed to mutate for 4 months. More: [[1]==http: //www.smh.com.au/national/worst-ever-flu-epidemic-claims-more-lives-amid-calls-for-mandatory-jabs- for-aged-care-workers-20170902-gy9h5s.html]. "
+},
+{
+"num": 58,
+"digest": "[Begin==https://clinicaltrials.gov/ct2/show/NCT03049488] regular clinical trials of the long-awaited vaccine from [RSV==https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D1%81%D0%BF%D0%B8%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%BE-%D1%81%D0%B8%D0%BD%D1%86%D0%B8%D1%82%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D0%B2%D0%B8%D1%80%D1%83%D1%81_%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0]. Volunteers are sought. <br> <br> In the 1960s already [tried https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4794264/] to develop a similar vaccine, but it did not work out .The vaccine increased virulence of the virus, and of 31 vaccinated babies, 25 were subsequently hospitalized, and two died. <br> Aluminum was added to the current vaccine, and the researchers hope that it will be safer and more effective. "
+},
+{
+"num": 59,
+"digest": "It is believed that the influenza virus is responsible for the pandemic of 1918. This, however, is far from fact. [Apparently==http: //www.reuters.com/article/us-flu-1918/] it was something bacterial, not viral. Perhaps pneumococcus."
+},
+{
+"num": 60,
+"title": "Salicylates and pandemic influenza mortality, 1918-1919 pharmacology, pathology, and historic evidence.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19788357",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Starko",
+"infoID": "19788357",
+"info_place": "Clin Infect Dis",
+"digest": "A significant amount of mortality during the pandemic in 1918 was probably caused by aspirin, which doctors at that time prescribed in huge doses (8-31 g per day)."
+},
+{
+"num": 61,
+"title": "Review of the prescribing information for influenza vaccines for pregnant and lactating women.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27595450",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Proveaux",
+"infoID": "27595450",
+"info_place": "Vaccine",
+"digest": "WHO, CDC and all others strongly recommend getting a flu shot during pregnancy and lactation. The authors analyzed the liners of 96 vaccines against influenza, and found that most manufacturers expressed themselves very cautiously, write that the safety of the vaccine for pregnant women was not is established, and some manufacturers write that it is generally prohibited for pregnant women.The authors believe that the use of such expressions in the inserts can discourage pregnant women from becoming vaccinated, so manufacturers should not be so cautious yrazhatsya. "
+},
+{
+"num": 62,
+"digest": "Lectures: [Sherri Tenpenny - Flu and flu vaccines==https://www.youtube.com/watch? v = mpx8-Rmf8bc]"
+},
+{
+"num": 63,
+"header": "Treatment and prevention",
+"title": "Role of medical history in the brain tumour development. Results from the international adult brain tumour study. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10389745",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Schlehofer",
+"infoID": "10389745",
+"info_place": "Int J Cancer",
+"I_S_codenames": ["glioma"],
+"digest": "Those who had the flu and ARVI, the risk of glioma (brain tumors) and meningioma (tumors of the meninges) was 27-28% lower."
+},
+{
+"num": 64,
+"title": "Antiviral medications for influenza.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396761/",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Korownyk",
+"infoID": "PMC4396761",
+"info_place": "Can Fam Physician",
+
+"I_S_codenames": ["oseltamivir", "zanamivir"],
+"digest": "Based on substandard and biased research, largely unpublished, antiviral drugs oseltamivir (Tamiflu) and zanamivir (Relenza) shorten the course of influenza by 0.6-0.7 days. They do not reduce the risk of pneumonia and hospitalization. <br> Sales of Tamiflu more than 18 billion dollars, most of the sold stocks have not been used, drugs are not recommended if it's been more than 48 hours since the onset of symptoms."
+},
+{
+"num": 65,
+"title": "Complications: tracking down the data on oseltamivir.",
+"link": "http://www.bmj.com/bmj/section-pdf/186422?path=/bmj/339/7734/Feature.full.pdf",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Cohen",
+"infoID": "19995818",
+"info_place": "BMJ",
+
+"I_S_codenames": ["oseltamivir"],
+"digest": "An interesting investigation by BMJ about how Cochrane tried to access data from clinical studies of Tamiflu. In 2009, a Japanese pediatrician asked Cochrane why their systematic review was based on unpublished manufacturer data, rather than on their own analysis Cochrane had to respond to this within six months, and for a long time tried to get the original data from the manufacturer, they never got it. <br> This led to the fact that Cochrane [decided==https://www.youtube.com/watch?v=CU3PsTd5Bg0] to change its methodology for systematic reviews. "
+},
+{
+"num": 66,
+"title": "The effect on the disease of antipyretics in the treatment of an influenza infection: systematic review and meta-analysis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951171/",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Eyers",
+"infoID": "PMC2951171",
+"info_place": "J R Soc Med",
+"I_S_codenames": ["antipyretics"],
+"digest": "A systematic review and meta-analysis of the use of antipyretic drugs (antipyretic drugs) during influenza on mortality. Randomized and placebo-controlled studies in humans have not been conducted, eight animal studies (mice and chickens) have been found. <br> Antipyretics (aspirin , paracetamol, diclofenac) increased the death rate by 34% during influenza. <br> Paracetamol and ibuprofen are recommended for children and adults as antipyretic during influenza, despite the lack of scientific evidence of their effectiveness and safety. There is evidence that a fever during a disease increases the chances of survival, and that the use of antipyretics may have an adverse effect on the course of the disease Antipyretics increase the risk of death in mammals with various bacterial, viral and parasitic diseases. antipyretics for bacterial pneumonia (possible complication of influenza) in animals, which can complicate the flu even more. Like the influenza virus, many strains of pneumococcus are sensitive to temperature, and die at 40-41 ° C. The use of aspirin in pneumococcal infection increased mice mortality by 2-3 times. "
+},
+{
+"num": 67,
+"title": "Oral administration of Lactobacillus gasseri SBT2055 is effective for preventing influenza in mice.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3982165/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Nakayama",
+"infoID": "PMC3982165",
+"info_place": "Sci Rep",
+"I_S_codenames": ["probiotics"],
+"digest": "The probiotic protects mice from the flu. More: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/28931041], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/28416546], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5104466/], [[4]==https://www.ncbi.nlm.nih.gov/pubmed/25765832], [[5]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3899257/], [[6]==https://www.ncbi.nlm.nih.gov/pubmed/24329975]. [Here==https://www.ncbi.nlm.nih.gov/pubmed/29077061] is reported that probiotics significantly increase seroconversion of the vaccine. "
+},
+{
+"num": 68,
+"title": "Effects of probiotic Lactobacillus brevis KB290 on incidence of influenza infection among schoolchildren: an open-label pilot study.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4285317/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Waki",
+"infoID": "PMC4285317",
+"info_place": "Lett Appl Microbiol",
+"I_S_codenames": ["probiotics"],
+"digest": "The probiotic protects against the flu and children too."
+},
+{
+"num": 69,
+"title": "Probiotic effects on cold and influenza-like symptom incidence and duration in children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19651563",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Leyer",
+"infoID": "19651563",
+"info_place": "Pediatrics",
+"I_S_codenames": ["probiotics"],
+"digest": "Probiotics reduce the incidence of cough in children by 41-62%, the common cold by 28-58%, high temperature by 53-72%. The use of antibiotics decreased by 68-84%, and missed days in the kindergarten at 27- 31%. "
+},
+{
+"num": 70,
+"title": "Physical interventions to interrupt or reduce the spread of respiratory viruses.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21735402",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Jefferson",
+"infoID": "21735402",
+"info_place": "Cochrane Database Syst Rev",
+"digest": "Systematic review of Cochrane: To reduce the spread of ARVI, hands should be washed and children taught. Masks and gloves are also effective. "
+},
+{
+"num": 71,
+"title": "Garlic for the common cold.",
+"link": "http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD006206.pub4/abstract",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Lissman",
+"infoID": "25386977",
+"info_place": "Cochrane Database Syst Rev",
+"I_S_codenames": ["garlic"],
+"digest": "Systematic review of the effect of garlic on colds in the Cochrane The authors found only one suitable study in which garlic reduced the risk of the common cold by about 3 times."
+},
+{
+"num": 72,
+"title": "Randomized study of the efficacy and safety of oral elderberry extract in the treatment of influenza A and B virus infections.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15080016/",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Zakay-Rones",
+"infoID": "15080016",
+"info_place": "J Int Med Res",
+"I_S_codenames": ["elderberry"],
+"digest": "A small, randomized, double-blind, placebo-controlled study of treatment of influenza with elderberry extract. The elderberry extract shortened the disease 4 days compared with placebo. [1]==https://www.ncbi.nlm.nih. gov/pubmed/19682714], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/9395631], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4848651 /], [[4]==https://www.ncbi.nlm.nih.gov/pubmed/22972323]. <br> For comparison, Tamiflu [shortens==https:// www.ncbi.nlm.nih.gov/pmc/articles/PMC4396761/] illness for 17 hours, [promoting==http://www.cochrane.org/CD008965/ARI_regulatory-information-on-trials-of-oseltamivir- tamiflu-and-zanamivir-relenza-for-influenza-in-adults-and-children], with the risk of psychiatric complications and renal failure but, for some reason, the governments of all countries spend billions of dollars to buy supplies of Tamiflu, and no one buys elder. "
+},
+{
+"num": 73,
+"title": "Zinc Lozenges May Shorten the Duration of Colds: A Systematic Review.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136969/",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Hemil & auml;",
+"infoID": "PMC3136969",
+"info_place": "Open Respir Med J",
+"I_S_codenames": ["zinc"],
+"digest": "Zinc, perhaps, also cures colds, but only in large enough doses. <br> Also the anti-influenza effect [has==http: //www.mdpi.com/2072-6643/6/2/517/htm], [green tea==https://www.ncbi.nlm.nih.gov/pubmed/21832025] and [propolis==https://www.ncbi.nlm.nih.gov/pubmed/18610553 ]. "
+},
+{
+"num": 74,
+"header": "Vitamin D",
+"title": "Influenza, solar radiation and vitamin D.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3092571/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Moan",
+"infoID": "PMC3092571",
+"info_place": "Dermatoendocrinol",
+"I_S_codenames": ["vitamin_D"],
+"digest": "There are many hypotheses why respiratory diseases are only a problem in a certain season: cold, dry air, indoors, travel, solar ultraviolet radiation that kills pathogens, a yearly biorhythm of hormones, etc. Perhaps, that the seasonality of viruses and bacteria is responsible for this. <br> The authors analyzed the number of deaths from influenza and pneumonia in Norway in 1980-2000, and compared with the level of ultraviolet radiation and the vitamin D. Disease from influenza 2 months after reaching the minimum level of vitamin D, but this is probably due to the fact that the disease usually begins several weeks before death. <br> The maximum level of vitamin D is observed in mid-summer, and the minimum in February. <br > In women who avoid direct sunlight, the level of vitamin D is 25 nmol/L. <br> Norway is at 58-70 degrees of latitude, and vitamin D is synthesized on the skin only in the summer. <br> In the tropics the seasonality of the flu is not observed, but from 20-30 degrees latitude is already observed. At first glance, this is unexpected, but at the 25th latitude in the end of June, 5 times more vitamin D is synthesized on the skin than at the end of December. It is known that vitamin D strengthens the immune system. "
+},
+{
+"num": 75,
+"title": "Epidemic influenza and vitamin D.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2870528/",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "Cannell",
+"infoID": "PMC2870528",
+"info_place": "Epidemiol Infect",
+"I_S_codenames": ["vitamin_D"],
+"digest": "Most vitamin D is produced by the sun. <br> In the middle latitudes, many people have low levels of vitamin D, especially in the winter. <br> Elderly people produce four times less vitamin D than 20-year-olds, under the influence of of the same solar radiation. <br> <br> In London (52nd latitude), vitamin D is not produced from October to March, as all UVB radiation is filtered by the ozone layer.The winter mortality in the UK is inversely proportional to the amount of sunlight.Each additional hour of the sun reduces mortality by 2.9%. <br> In vaccinated with live vaccine in February, the temperature rises 2 times more often than in vaccinated in June.In vaccinated in summer less antibodies are formed, 40% of those vaccinated in December secrete the virus, compared to 16% of those vaccinated in September. <br> There was no evidence of toxicity of vitamin D, even in the amount of 50,000 IU daily for 6 weeks, a single dose of 600,000 IU is also intramuscularly non-toxic. "
+},
+{
+"num": 76,
+"title": "Randomized trial of vitamin D supplementation to prevent seasonal influenza A in schoolchildren.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20219962",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Urashima",
+"infoID": "20219962",
+"info_place": "Am J Clin Nutr",
+"I_S_codenames": ["vitamin_D"],
+"digest": "A randomized, double-blind, placebo-controlled study of the effect of vitamin D on the incidence of influenza. Children who received 1200 IU of vitamin D3 daily had 42% less flu. "
+},
+{
+"num": 77,
+"title": "Vitamin D for the prevention of respiratory tract infections: A systematic review and meta-analysis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3543548/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Charan",
+"infoID": "PMC3543548",
+"info_place": "J Pharmacol Pharmacother",
+"I_S_codenames": ["vitamin_D"],
+"digest": "A systematic review and meta-analysis of the effects of vitamin D on the incidence of acute respiratory disease. Only randomized, placebo-controlled trials are included.5 Vitamin D reduced incidence by 42% in children and by 35% in adults. "
+},
+{
+"num": 78,
+"title": "Vitamin D and Respiratory Tract Infections: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3686844/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Bergman",
+"infoID": "PMC3686844",
+"info_place": "PLoS One",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "A similar systematic review and meta-analysis (11 studies). Vitamin D reduces the risk of ARVI by 36%. Small daily doses reduce the risk of ARI by 49%, while infrequent large doses of vitamin A are less effective, and reduce the risk of acute respiratory viral infection by only 14 %. "
+},
+{
+"num": 79,
+"title": "Vitamin D, innate immunity and outcomes in community acquired pneumonia.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21244571",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Leow",
+"infoID": "21244571",
+"info_place": "Respirology",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Among patients admitted to the hospital with pneumonia, mortality in those who had a vitamin D deficiency (less than 30 nmol/L) was 12.7 times higher than among those who had a vitamin level higher than 50 nmol/L. "
+},
+{
+"num": 80,
+"title": "Association of subclinical vitamin D deficiency in newborns with lower respiratory infection and their mothers.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18030309",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Karatekin",
+"infoID": "18030309",
+"info_place": "Eur J Clin Nutr",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "The level of vitamin D in newborns hospitalized with acute respiratory infection was significantly lower than in healthy newborns (9.12 vs 16.33 ng/mL). <br> The level of vitamin D in mothers of hospitalized newborns was also lower than in mothers of healthy babies (13.38 vs 22.79 ng/mL). A high correlation was observed between the level of vitamin D in newborns, and in their mothers. "
+},
+{
+"num": 81,
+"title": "Cord-blood 25-hydroxyvitamin D levels and risk of respiratory infection, wheezing, and asthma.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21187313",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Camargo",
+"infoID": "21187313",
+"info_place": "Pediatrics",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "The authors measured the level of vitamin D in the umbilical cord in 922 newborns. <br> In the next 3 months after birth, the risk of respiratory infections and other infections in infants with a vitamin level below 25 nmol/L was 2 times higher, than in infants with a vitamin level above 75 nmol/L. The risk of wheezing in children with low vitamin D at birth was 2-fold higher to five years of age than in infants with high levels of vitamin. "
+},
+{
+"num": 82,
+"title": "Cord blood vitamin D deficiency is associated with respiratory syncytial virus bronchiolitis.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21555499",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Belderbos",
+"infoID": "21555499",
+"info_place": "Pediatrics",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Infants with a vitamin D level in the umbilical cord below 50 nmol/L suffered bronchiolitis in the first year of life 6.2 times more often than those who had a vitamin level at birth of greater than 75 nmol/L. western countries, 40% of pregnant women and 50% of newborns have vitamin D deficiency. Vitamin D deficiency during pregnancy is associated with type 1 diabetes, multiple sclerosis, schizophrenia and respiratory diseases in children. "
+},
+{
+"num": 83,
+"title": "Association of subclinical vitamin D deficiency with severe lower respiratory infection in Indian children under 5 y.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15042122",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Wayse",
+"infoID": "15042122",
+"info_place": "Eur J Clin Nutr",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Children with a vitamin D level above 22.5 nmol/L suffered from pneumonia 91% less frequently. Exceptional GV over the course of 4 months reduced the risk of pneumonia by 58%. "
+},
+{
+"num": 84,
+"title": "Serum 25-hydroxyvitamin D, mortality, and incident cardiovascular disease, respiratory disease, cancers, and fractures: a 13-y prospective population study.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4196486/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Khaw",
+"infoID": "PMC4196486",
+"info_place": "Am J Clin Nutr",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "A prospective study of 14,000 people in the UK, followed by 13 years. The higher the vitamin D level, the lower the mortality rate, among those with a vitamin D level above 90 nmol/L, mortality was 34% lower than in people with a vitamin level of 30 nmol/L and lower, they had a 38% lower risk of cardiovascular disease, 15% less cancer, 78% less respiratory . "
+},
+{
+"num": 85,
+"title": "An association of serum vitamin D concentrations & lt; 40 nmol/L with acute respiratory tract infection in young Finnish men.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17823437",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Laaksi",
+"infoID": "17823437",
+"info_place": "Am J Clin Nutr",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Soldiers with low vitamin D levels (below 40 nmol/L) were 63% more likely to have respiratory illnesses than soldiers with a vitamin level higher than 40 nmol/L. Among those who smoked, the vitamin D level was lower than In non-smokers, soldiers who exercise more than 5 hours a week, the level of vitamin D was higher. "
+},
+{
+"num": 86,
+"title": "Serum 25-hydroxyvitamin d and the incidence of acute viral respiratory tract infections in healthy adults.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2885414/",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Sabetta",
+"infoID": "PMC2885414",
+"info_place": "PLoS One",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Adults with a vitamin D level above 38 ng/mL had a 2.7 times less acute respiratory disease, and the disease duration was 4.9 times less. The influenza vaccine did not affect the incidence. "
+},
+{
+"num": 87,
+"title": "Reduced primary care Vitamin D supplementation: a randomized controlled trial. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25283480",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Grant",
+"infoID": "25283480",
+"info_place": "Acta Paediatr",
+"I_S_codenames": ["vitamin_D"],
+"digest": "There are several studies on the relationship of vitamin D to influenza and other ARI:",
+"sources_pool": [{
+"title": "The seasonality of pandemic and non-pandemic influenzas: the role of solar radiation and vitamin D.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21036090",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Juzeniene",
+"info_place": "Int J Infect Dis",
+"infoID": "21036090"
+},
+{
+"title": "Vitamin D has a linear association with seasonal infections and lung function in British adults.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21736791",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Berry",
+"info_place": "Br J Nutr",
+"infoID": "21736791"
+},
+{
+"title": "The prevalence of vitamin D deficiency among schoolchildren: a cohort study from Xinxiang, China.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25581743",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Li",
+"info_place": "J Pediatr Endocrinol Metab",
+"infoID": "25581743"
+},
+{
+"title": "Randomized trial of vitamin D supplementation for winter-related atopic dermatitis in children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25282565",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Camargo",
+"info_place": "J Allergy Clin Immunol",
+"infoID": "25282565"
+},
+{
+"title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+"link": "http://www.bmj.com/content/356/bmj.i6583",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Martineau",
+"info_place": "BMJ"
+},
+{
+"title": "The role of UV radiation and vitamin D in the seasonality and outcomes of infectious disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28078341",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Abhimanyu",
+"info_place": "Photochem Photobiol Sci",
+"infoID": "28078341"
+},
+{
+"title": "Cord blood 25 (OH) D levels and the subsequent risk of lower respiratory tract infections in early childhood: the Ulm birth cohort.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24859820",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Łuczyńska",
+"info_place": "Eur J Epidemiol",
+"infoID": "24859820"
+},
+{
+"title": "Vitamin D status and lower respiratory infection in early childhood in Sylhet, Bangladesh.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19900174",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Roth",
+"info_place": "Acta Paediatr",
+"infoID": "19900174"
+},
+{
+"title": "Serum vitamin D concentrations and associated severity of the lower respiratory tract infections in Japanese hospitalized children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21648117",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Inamo",
+"info_place": "Pediatr Int",
+"infoID": "21648117"
+},
+{
+"title": "Vitamin D deficiency in young children with severe lower respiratory infection.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19746437",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "McNally",
+"info_place": "Pediatr Pulmonol",
+"infoID": "19746437"
+},
+{
+"title": "Effect of daily cod liver oil and a multivitamin-mineral supplement with selenium on the upper respiratory tract pediatric visits by young, inner-city, Latino children: randomized pediatric sites.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15562899",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Linday",
+"info_place": "Ann Otol Rhinol Laryngol",
+"infoID": "15562899"
+},
+{
+"title": "Low Retinol-Binding Protein and Vitamin D Levels Are Associated with Severe Outcomes in Children with Lower Respiratory Tract Infection and Respiratory Syncytial Virus or Human Metapneumovirus Detection.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28578159",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Hurwitz",
+"info_place": "J Pediatr",
+"infoID": "28578159"
+},
+{
+"title": "Association Between Serum 25-Hydroxyvitamin D Level and Upper Respiratory Tract Infection in the Third National Health and Nutrition Examination Survey.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447082/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Ginde",
+"info_place": "Arch Intern Med",
+"infoID": "PMC3447082"
+},
+{
+"title": "Low Serum 25-Hydroxyvitamin D Level and Risk of Upper Respiratory Tract Infection in Children and Adolescents.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3888147/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Science",
+"info_place": "Clin Infect Dis",
+"infoID": "PMC3888147"
+},
+{
+"title": "Maternal vitamin D supplementation during pregnancy and lactation to prevent acute respiratory infections in infancy in Dhaka, Bangladesh (MDARI trial): protocol for a prospective cohort study nested within a randomized controlled trial.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5064894/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Morris",
+"info_place": "BMC Pregnancy Childbirth",
+"infoID": "PMC5064894"
+},
+{
+"title": "Re: Epidemic influenza and vitamin D.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2870688/",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Aloia",
+"info_place": "Epidemiol Infect",
+"infoID": "PMC2870688"
+},
+{
+"title": "The possible roles of solar ultraviolet radiation and vitamin D in reducing the case-fatality rates from the 1918-1919 influenza pandemic in the United States.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835877/",
+"info_type": "article",
+"info_date": "2009",
+"info_place": "Dermatoendocrinol",
+"infoID": "PMC2835877"
+}]
+},
+{
+"num": 88,
+"title": "On the epidemiology of influenza.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2279112/",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Cannell",
+"infoID": "PMC2279112",
+"info_place": "Virol J",
+"digest": "A very interesting review article on the epidemiology of influenza and vitamin D is worth reading, among other things, it turns out that in numerous laboratory experiments they could not prove that a person with flu can infect a healthy person."
+},
+{
+"num": 89,
+"title": "Vitamin D: a new anti-infective agent?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24593793",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Borella",
+"infoID": "24593793",
+"info_place": "Ann N Y Acad Sci",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Low level of vitamin D also correlates with intestinal infections, pneumonia, otitis media, clostridial infections, vaginosis, urinary tract infections, sepsis, dengue, hepatitis B, hepatitis C and HIV. Vitamin D is used in the treatment of osteoporosis, rheumatism and cancer Until the middle of the 20th century, tuberculosis was treated in sun baths in sanatoriums, and it was treated with fish oil, these different methods of treatment have one common component - vitamin D. "
+},
+{
+"num": 90,
+"title": "Vitamin D for influenza.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4463890/",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Schwalfenberg",
+"infoID": "PMC4463890",
+"info_place": "Can Fam Physician",
+"info_geo": "Canada",
+"I_S_codenames": ["vitamin_D", "oseltamivir", "zanamivir"],
+"digest": "Tamiflu and Relenza are useless drugs that do more harm than good. I have seen how patients in nursing homes and staff begin because of them vomiting, diarrhea, hallucinations, delirium, and worsening cognitive function. The IOM recommends taking 600 IU vitamin D for those under 70 years old to reach the level of 50 nmol/L in 97.5% of people. However, their recommendation contains a statistical error, and in fact, you need to take 8800 IU to achieve this For several years, as I and my colleague have given vitamin D to patients, and most of them have a vitamin level of more than 100 nmol/L. We rarely see patients with influenza or ARD, and when we see, we give them shock doses of vitamin D (a one-time dose of 50,000 IU, or 10,000 IU three times a day for 2-3 days) Symptoms completely pass for 48-72 hours Vitamin D costs a penny for 1000 IU, that is, this treatment costs less dollar. "
+},
+{
+"num": 91,
+"title": "Pandemic preparedness for swine flu in the United States.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20102323",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Edlich",
+"infoID": "20102323",
+"info_place": "J Environ Pathol Toxicol Oncol",
+
+"I_S_codenames": ["vitamin_D"],
+"digest": "Some health professionals may not want to be vaccinated against swine flu because the vaccine contains a mercury preservative thiomersal that can be harmful to health.It should check the level of vitamin D and make up for the deficit if necessary. the level of vitamin D is 50-75 ng/mL, and the optimal dose for adults is 4000-5000 IU per day. "
+},
+{
+"num": 92,
+"digest": "PS: Under D, here D3 is meant.Care carefully to the choice of the drug, not all of them are equally safe.And it's best not to use additives at all, but simply to be more in the sun. PS 2: Personally, I tend to believe that a preventive vitamin D supplement is probably a good idea for adults and seniors, but I'm not yet sure that this is a good idea for children, and even more so for babies. <br> PS3: Weston articles A Price for vitamin D: [[1]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/from-seafood-to-sunshine-a-new-understanding-of-vitamin- d-safety /], [[2]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/u pdate-on-vitamins-a-and-d /]. They write that too high a level of vitamin D increases the risk of heart disease and osteoporosis. "
+},
+{
+"num": 93,
+"title": "Live Attenuated Influenza Vaccine Enhances Colonization of Streptococcus pneumoniae and Staphylococcus aureus in Mice.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3944816/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Mina",
+"infoID": "PMC3944816",
+"info_place": "MBio",
+"digest": "Vaccination with live influenza vaccine significantly increases the colonization of pneumococcus and golden streptococcus of the upper respiratory tract in mice."
+},
+{
+"num": 94,
+"title": "Live Attenuated Influenza Virus Increases Pneumococcal Translocation and Persistence Within the Middle Ear.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4654764/",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Mina",
+"infoID": "PMC4654764",
+"info_place": "J Infect Dis",
+"digest": "Vaccination with live influenza vaccine also increases the colonization of pneumococcus in the middle ear in mice, which may increase the likelihood of otitis."
+},
+{
+"num": 95,
+"title": "Use of the Inactivated Intranasal Influenza Vaccine and the Risk of Bell's Palsy in Switzerland.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/14985487",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Mutsch",
+"infoID": "14985487",
+"info_place": "N Engl J Med",
+"digest": "The inactivated nasal vaccine, which was used in Switzerland, increased the risk of paralysis of the facial nerve 84 times."
+}]
+}

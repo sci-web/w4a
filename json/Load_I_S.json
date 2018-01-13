@@ -215,6 +215,13 @@
 "I_S_name_en": "Parkinson's disease"
 }
 {
+"I_S_codename": "Alzheimers",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Болезнь Альцгеймера",
+"I_S_name_en": "Alzheimers disease"
+}
+{
 "I_S_codename": "neurologic_diseases",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",

@@ -1,0 +1,363 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Diphtheria",
+"I_S_codename": "diphtheria",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Diphtheria",
+"date": ISODate ("2017-08-28T22: 46: 00Z"),
+"intro": "",
+"epigraph": {
+"text": "At present, intelligent people do not have their children vaccinated, nor does the law now compel them to. The result is not, as the Jennerians prophesied, the extermination of the human race by smallpox; are now killed by vaccination than by smallpox. ",
+"source": "George Bernard Shaw"
+},
+"points": [{
+"num": 1,
+"digest": "Like tetanus, diphtheria is also a very dangerous disease, but what is the probability of getting sick in our time, and how effective is the vaccination?"
+},
+{
+"num": 2,
+"title": "CDC Pinkbook Diphtheria",
+"link": "https://www.cdc.gov/vaccines/pubs/pinkbook/dip.html",
+"info_type": "cdc",
+"digest": "Diphtheria is caused by the bacterium Corynebacterium diphtheriae, which in itself is quite harmless, but if this bacterium is infected with a specific virus (bacteriophage), then it starts producing and releasing a strong toxin. This toxin is responsible for severe diphtheria symptoms. Diphtheria toxin destroys tissue in the pharynx, and forms a pseudomembrane in it, and without the toxin the bacterium can cause only pharyngitis.If this toxin enters the circulatory system, complications can lead to myocarditis and temporary paralysis. 5-10%. <br> Disease is transmitted mainly by airborne droplets, but it is also possible to transfer through household items. <br> Most people get infected with a diphtheria bacterium do not get sick, but simply are a reservoir of bacteria and carriers. During epidemics, most children are Most cases of the disease occur in winter and spring (you can already guess why)."
+},
+{
+"num": 3,
+"digest": "The diphtheria vaccine is not separately produced, it is always combined with tetanus (DT, Td), and usually with pertussis (DTaP / DTP) .As for tetanus, the vaccine is a toxoid, ie, the toxin is inactivated formalin. <br> <br> Antibiotics and diphtheria immunoglobulin are used as a treatment, but since diphtheria is an extremely rare disease, human immunoglobulin is not produced for it, and even in developed countries it is used horse."
+},
+{
+"num": 4,
+"digest": "Such a concept as an allergy was [unknown==http://www.allergyclinic.co.nz/history_allergy.aspx] until 1906. It was invented by an Austrian pediatrician to describe the strange symptoms that he observed in those who received diphtheria immunoglobulin. The concept of anaphylactic shock also did not exist until 1902. "
+},
+{
+"num": 5,
+"title": "Immunological notes. XVII-XXIV",
+"link": "http://onlinelibrary.wiley.com/doi/10.1002/path.1700290106/abstract",
+"info_type": "article",
+"info_date": "1926",
+"info_authors": "Glenny",
+"infoID": "10.1002/path.1700290106",
+"info_place": "J Pathol",
+"I_S_codenames": ["aluminium"],
+"digest": "In 1926, Glenny and his group experimented with the diphtheria vaccine and tried to improve its efficacy, and they accidentally found that the addition of aluminum to the vaccine produced a stronger immune response. Since then, aluminum has been added to all non-living vaccines<br><br> Glenny was not interested in the safety of aluminum in the vaccine 90 years ago. It does not interest anyone else today. "
+},
+{
+"num": 6,
+"header": "Who fell ill with diphtheria",
+"title": "Diphtheria in North America.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2129462",
+"info_type": "article",
+"info_date": "1984",
+"info_authors": "Dixon",
+"infoID": "PMC2129462",
+"info_place": "J Hyg (Lond).",
+"I_S_codenames": ["aluminium"],
+"Digest": "Diphtheria was always considered a childish disease, but adults started to get sick in the middle of the 20th century, in 1960 21% of the cases were adults (over 15), in 1964 adults were already 36% in the 1970s it was 48%, and the mortality ratio also changed: in the 1960s, 70% of the deaths from diphtheria in Canada were children, and in the 1970s 73% of the deaths were adults. <br> In the 1960s, Indians were ill with diphtheria 20 times more white, and 3 times more black.The reason for this is the reduced hygiene of Indians due to their poverty. <br> - In the late 1960's there was an outbreak of diphtheria in Austin (88 cases (196 cases), and diphtheria was observed predominantly in urban areas with low socioeconomic status. <br> <br> One of the forms of diphtheria is skin diphtheria, which is common among homeless people and is much less dangerous. diphtheria is associated primarily with the poor, crowded and low hygiene standards.In 1975, 67% of cases of diphtheria were skin diphtheria, and it was mainly affected by poor Indians. <br> In the vast majority of cases, the infection of cutaneous diphtheria is also accompanied by staphi okokkom and streptococcus. It seems that the skin infection of streptococcus and staphylococcus predisposes to secondary infection with diphtheria and a low level of hygiene is the main contributing factor. In the 1970s there was an epidemic of diphtheria in Seattle. Out of 558 cases, 334 were from Skid Road (ie homeless). 3 people died. 74% had skin diphtheria. 70% were heavy alcoholics. <br> - In 1971 there was a diphtheria outbreak in Vancouver (44 cases). The majority of the sick were begging alcoholics. <br> - In 1973, an outbreak among the children of the Indians. The source was 4 children with cutaneous diphtheria. <br> <br> Skin diphtheria was recognized as a reservoir of infection in 1969 in Louisiana and Alabama. The bacterium was isolated in 30% of healthy people. The grafted and the unvaccinated were equally infected. <br> - Since the 1980s, diphtheria has been virtually non-existent in North America. "
+},
+{
+"num": 7,
+"title": "Immunity and immunization of children against diphtheria in Sweden.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/2496989",
+"info_type": "article",
+"info_date": "1989",
+"info_authors": "Mark",
+"infoID": "2496989",
+"info_place": "Eur J Clin Microbiol Infect Dis",
+"info_geo": "Sweden",
+"digest": "- The protective level of antibodies for diphtheria is considered from 0.01 to 0.1 IU / ml.The exact value can not be established. <br> <br> No cases of diphtheria have been reported in Sweden since the 1950s to 1984. In 1984, m, there were 3 outbreaks (17 cases, 3 deaths.) Almost all patients were chronic alcoholics, mostly those with an antibody level below 0.01.The researchers measured the level of antibodies in children, 48% of children , who received 3 doses of the vaccine in infancy, the level of antibodies was below 0.01 IU / ml Among the six-year-olds, there were 15%. Among the 16-year-olds, In addition to infant vaccinations, a booster was also obtained, and the antibody level was below 0.01 in 24%. <br> <br> It is possible that the low level of antibodies in Sweden is due to the fact that the pertussis component was excluded from the vaccine in the 1970s.As pertussis toxin is in itself an adjuvant , its exclusion makes the diphtheria vaccine less effective. <br> <br> The immune response to the booster among the 16-year-olds was much worse than that of the 6-year-old, even though the 16-year-old received a 2.5-fold dose. The authors have no explanation for this phenomenon. <br> - It is believed that the level of antibodies more than 1 IU / ml gives protection for 10 years. Only 50% of 16-year-olds and 22% of 10-year-olds had this level of antibodies after vaccination. <br> - The level of antibodies drops by 20-30% per year. In children, it falls even faster. Whereas in 94% of children aged 15 months the antibody level was more than 1 IU / ml, after 4 years the average level was only 0.062. "
+},
+{
+"num": 8,
+"title": "Serological immunity to diphtheria in Sweden in 1978 and 1984.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/3738433",
+"info_type": "article",
+"info_date": "1986",
+"info_authors": "Christenson",
+"infoID": "3738433",
+"info_place": "Scand J Infect Dis",
+"info_geo": "Sweden",
+"digest": "The authors measured the level of antibodies in 2400 people in Sweden, 19% of those 20 years old and younger had no immunity from diphtheria, among people over 40, only 15% had sufficient levels of antibodies, among those over 60, there was no immunity in 81% of women, and 56% in men. On average, among adults, 70% of women and 50% of men, the antibody level was below 0.01 IU / ml. "
+},
+{
+"num": 9,
+"title": "Tetanus and diphtheria immunity in urban Minnesota adults.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/490826",
+"info_type": "article",
+"info_date": "1979",
+"info_authors": "Crossley",
+"infoID": "490826",
+"info_place": "JAMA",
+"digest": "In 84% of men and 89% of women in Minnesota, the level of antibodies from diphtheria was below 0.01."
+},
+{
+"num": 10,
+"title": "Serologic Immunity to Diphtheria and Tetanus in the United States.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11992301",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "McQuillan",
+"infoID": "11992301",
+"info_place": "Ann Intern Med",
+"digest": "40% of Americans do not have sufficient immunity to diphtheria (below 0.1)."
+},
+{
+"num": 11,
+"title": "Diphtheria Outbreaks in Immunized Populations.",
+"link": "http://www.nejm.org/doi/full/10.1056/NEJM198801073180108",
+"info_type": "article",
+"info_date": "1988",
+"info_authors": "Karzon",
+"infoID": "10.1056/NEJM198801073180108",
+"info_place": "N Engl J Med",
+"digest": "Reducing the number of cases of diphtheria in the 1970s occurred despite the lack of immunity among adults. Recent epidemics of diphtheria occur only among alcoholics and the homeless. "
+},
+{
+"num": 11.1,
+"title": "Booster immunization for diphtheria and tetanus: no evidence of need in adults.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/2860299",
+"info_type": "article",
+"info_date": "1985",
+"info_authors": "Mathias",
+"infoID": "2860299",
+"info_place": "Lancet",
+"digest": "Recommendations for a 25-year re-vaccination from diphtheria and tetanus are based on serological studies, according to which the elderly have fewer antibodies, but the goal of vaccination is the prevention of disease rather than the production of antibodies. In Canada, the incidence of diphtheria does not increase with age. also the mortality from tetanus. <br> The authors conclude that the benefits of revaccination from diphtheria and tetanus for adults do not justify the risks and costs."
+},
+{
+"num": 12,
+"header": "A little history",
+"title": "An Outbreak Of Diphtheria In A Highly Immunized Community.",
+"link": "https://www.jstor.org/stable/20369096",
+"info_type": "article",
+"info_date": "1947",
+"info_authors": "Fanning",
+"infoID": "",
+"info_place": "BMJ",
+"info_geo": "UK",
+"digest": "The outbreak of diphtheria in the English school in 1946 (18 cases.) All but two (or three) were vaccinated (thanks to this, according to the authors, probably no one died). <br> Among the 23 unprivileged Of the 299 vaccines, 5% fell ill, one in the unvaccinated was actually vaccinated, but more than a decade ago.If to exclude it, 9% of the unvaccinated fell ill.<br> If you divide the patients into two groups - those who were vaccinated less than 5 years ago, and more than 5 years ago - the percentage of incidence between them is the same. However, among the newly vaccinated the disease was is easier than among long-vaccinated and unvaccinated. <br> The authors conclude that vaccination without subsequent booster is not particularly effective, and is called upon to vaccinate every three years, in addition to vaccinations in infancy. "
+},
+{
+"num": 13,
+"title": "The Diphtheria Epidemic in Halifax.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1826600/",
+"info_type": "article",
+"info_date": "1941",
+"info_authors": "Morton",
+"infoID": "PMC1826600",
+"info_place": "Can Med Assoc J",
+"info_geo": "Canada",
+"digest": "Outbreak of diphtheria in Halifax (Canada) in 1940. 66 cases, of which 30% were fully vaccinated."
+},
+{
+"num": 14,
+"title": "Some Observations on Diphtheria in the Immunized.",
+"link": "https://www.jstor.org/stable/41978872?seq=1",
+"info_type": "article",
+"info_date": "1945",
+"info_authors": "Gibbard",
+"infoID": "",
+"info_place": "Can J Public Health",
+"info_geo": "Canada",
+"digest": "In the early 1940s, there was a diphtheria epidemic in Canada (1028 cases, 4.3% died), 24% of the cases were vaccinated (or protected), five of them died, one was vaccinated six months before the disease. <br> In general, vaccines had less pronounced symptoms, the authors conclude that the vaccine is effective, but not 100%."
+},
+{
+"num": 15,
+"title": "An Outbreak of Diphtheria in Baltimore in 1944.",
+"link": "https://academic.oup.com/aje/article-abstract/42/2/179/136808/AN-OUTBREAK-OF-DIPHTHERIA-IN-BALTIMORE-IN-19441",
+"info_type": "article",
+"info_date": "1945",
+"info_authors": "Eller",
+"infoID": "",
+"info_place": "Am J Epidemiol",
+"digest": "Diphtheria outbreak in Baltimore. In 1943, 103 cases were reported, 29% of which were vaccinated, and another 14% stated that they were vaccinated, but this was not documented. Therefore, in Baltimore, In the first half of 1944, 142 cases were registered, of which 63% were already vaccinated. "
+},
+{
+"num": 16,
+"digest": "In Western countries, no one remembers what diphtheria is, and even at medical faculties almost nothing is taught about this disease, it is so rarely found (spouse, personal communication) .But because of the epidemic in Russia and the CIS in the early 1990s, many countries are still afraid of diphtheria, but who fell ill during this epidemic? "
+},
+{
+"num": 17,
+"title": "Diphtheria in the Former Soviet Union: Reemergence of a Pandemic Disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2640235/",
+"info_type": "article",
+"info_date": "1998",
+"info_authors": "Vitek",
+"infoID": "PMC2640235",
+"info_place": "Emerg Infect Dis",
+"info_geo": "Russia",
+"digest": "The role of antibacterial immunity in protection against diphtheria has not been studied since the 1930s." "Before World War II, diphtheria was seldom seen in Western Europe. During the war, in the territories occupied by the Germans - in the Netherlands, Denmark and Norway began an epidemic, which was the last epidemic of diphtheria in developed European countries.The remaining single cases have since been observed mainly among the low socioeconomic class. In Russia in the early 1990s, cases of diphtheria among the military met 6 times more often, than among citizens in the late 1980s, this proportion was even higher. <br> <br> In the epidemic of the 1990s in the CIS countries, 83% of all cases were registered in Russia, most of the cases were adults. , patients in psychiatric hospitals living in crowded and poor sanitation conditions.While people working in usual conditions, there were very few cases of illness. <br> Children rarely ached, but were carriers of the disease. The economic crisis after the collapse of the Soviet Union worsened housing conditions and increased the epidemic. Since practically the entire population of the USSR was vaccinated, it is difficult to blame the lack of vaccination in the epidemic, but the authors succeeded. Still, this article was written in the CDC. "
+},
+{
+"num": 18,
+"title": "Diphtheria outbreak in St. Petersburg: clinical characteristics of 1860 adult patients.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9122631",
+"info_type": "article",
+"info_date": "1996",
+"info_authors": "Rakhmanova",
+"infoID": "9122631",
+"info_place": "Scand J Infect Dis",
+"info_geo": "Russia",
+"digest": "1860 cases of diphtheria in Botkin Hospital in St. Petersburg, mortality was 2.3%, 69% of deaths were chronic alcoholics. <br> Among those who had a toxic form of the disease, the death rate was 26%. 6% of those vaccinated, and 14% of those who were not vaccinated, but only those who had been vaccinated in the last 5 years were considered vaccinated. <br> In general, mortality from diphtheria (2.3%) was relatively low, compared to the last known epidemics. alcoholics, the mortality rate was approximately 1%. in the late stages of the disease, and were either alcoholics or very busy people. <br> The authors conclude that the epidemic of diphtheria in developed countries is unlikely to lead to high mortality in the future.As well as the vaccination data for alcoholics were absent, that probably they were not vaccinated. <br> The vaccine gives immunity for a relatively short period of time.How exactly diphtheria is transmitted from person to person is not very known."
+},
+{
+"num": 19,
+"title": "Risk factors for diphtheria: a prospective case-control study in the Republic of Georgia, 1995-1996.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10657203",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Quick",
+"infoID": "10657203",
+"info_place": "J Infect Dis",
+"info_geo": "Georgia",
+"digest": "- To get diphtheria from another person, the distance from it should be less than 1 m. If it is more, the risk of infection decreases significantly. <br> <br> 40-78% of unvaccinated children in Afghanistan, Burma and Nigeria have a five-year age, natural immunity has developed. <br> <br> Socioeconomic factors such as narrowness, poverty, alcoholism and low level of hygiene contribute to the spread of diphtheria. <br> <br> Study of 218 cases of diphtheria in Georgia in 1995-1996 Mortality rate was 10%. < br> - Among children, the mother's initial level of education increased rice to diphtheria 4 times compared to those whose mother had academic education. <br> <br> Among adults, people with primary education had diphtheria 5 times more likely than those who graduated from university. <br> <br> Chronic diseases increased the risk of diphtheria in 3 Unemployed patients were sick twice as often, the shower less than once a week increased the risk of the disease by a factor of 2. <br> <br> Unprunited patients were sick 19 times more than those vaccinated, but only those who received all doses of vaccination and boosters, and have been vaccinated in the last 10 years. The rest were defined as unvaccinated. The authors write that perhaps patients did not remember well whether they were vaccinated or not. <br> <br> Among 181 cases, 9% were unvaccinated, 48% had a chronic illness, and 21% had a shower less than once a week. The authors conclude that vaccination is the most important tool in the control of diphtheria, but do not emphasize too much that washing costs more often than once a week. Also, the authors write that diphtheria is not a very contagious disease, and that it needs a long-term contact with it patients. Visiting crowded places was not a risk factor. <br> In comparison to past epidemics in Europe and the USA, which occurred mainly among alcoholics, in this study the authors did not find an increased risk of alcoholism. They conclude that probably low socioeconomic status, and not alcoholism is a risk factor. "
+},
+{
+"num": 20,
+"title": "Epidemiology of three cases of severe diphtheria in Finnish patients with low antitoxin antibody levels.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11757971",
+"info_type": "article",
+"info_date": "2001",
+"info_authors": "Lumio",
+"infoID": "11757971",
+"info_place": "Eur J Clin Microbiol Infect Dis",
+"info_geo": "Finland",
+"digest": "In the 1990s, thanks to the opening of the borders, a flood of tourists from Finland to Russia and from Russia to Finland flooded 400,000 Finns visited Russia every year and 200 thousand Russians visited Finland. 10 million trips were made. to the epidemic in Russia, only 10 Finns became infected with diphtheria in Russia, almost all were middle-aged men, of whom only three were ill with severe form (described below), five mild forms, and two were only carriers. <br> <br> 1) A 43-year-old Finnish citizen visited St. Petersburg in 1993. There he kissed his St. Petersburg and when he returned to Finland he had diphtheria, he was vaccinated against diphtheria 20 years ago, and was considered unvaccinated (level of antibodies: 0.01), his St. Petersburg girlfriend did not fall ill, and another bacterial carrier was found that was traveling with the first in He also had an intimate relationship with the same \"girlfriend\" in St. Petersburg, which was the first case in Finland in 30 years. <br> 2) A 57-year-old man visited Vyborg for one day in 1996 , and returned with diphtheria. He denied close contacts with local residents, but his friends told him that he went to prostitutes. It is not known whether he was vaccinated (antibody level: 0.06). 3) A 45-year-old man visited Vyborg for 22 hours, and returned with diphtheria. His friends told me that he went to a prostitute. He was vaccinated, and even received a booster a year before the trip (antibody level: 0.08). He was the only fully vaccinated, and the only one who died. All three used large amounts of alcohol during the trip, and two of them were chronic alcoholics. Yet:",
+"sources_pool": [
+{
+"title": "Diphtheria after visit to Russia.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8100325",
+"info_type": "article",
+"info_date": "1993",
+"info_authors": "Lumio",
+"infoID": "8100325",
+"info_place": "Lancet",
+"info_geo": "Finland"
+}]
+},
+{
+"num": 21,
+"title": "Sexually transmitted diphtheria.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22628666",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Berger",
+"infoID": "22628666",
+"info_place": "Sex Transm Infect.",
+"info_geo": "Germany",
+"digest": "The first case of infection with diphtheria through oral sex. A man, an immigrant from the USSR who lives in Germany, went to a male sex worker, and received from him with a blowjob also urethritis in addition with diphtheria. France), diphtheria has become more frequent in the last few years than in other developed countries (several cases per year) .The reason for this [is==http://outbreaknewstoday.com/europe-reporting-imported-cutaneous-diphtheria-in-refugees-10571/] too liberal policy of these countries regarding reception of migrants from the countries of the third world. "
+},
+{
+"num": 22,
+"digest": "In 2016, 25 years after diphtheria was completely eradicated, [the hipps://www.garda.com/crisis24/news-alerts/68376] outbreak of diphtheria in Venezuela. there, from year to year, only [increased == http://apps.who.int/immunization_monitoring/globalsummary/countries? countrycriteria%5Bcountry%5D%5B%5D=VEN], and given the humanitarian catastrophe that is taking place there, it is difficult to blame for this outbreak of a lack of vaccination, but WHO would not be WHO if it allowed facts [knock down==http://www.humanosphere.org/global-health/2016/11/venezuelas-ignoring-another-public-health-crisis-diphtheria/] yourself to the point. "
+},
+{
+"num": 23,
+"digest": "In November-December 2017 [started == https: //www.npr.org/sections/goatsandsoda/2017/12/08/569462246/diphtheria-why-is-it-back-and-what- exactly-is-it] outbreaks of diphtheria in Yemen and in the refugee camp in Bangladesh, because of the lack of vaccination coverage, and not because of the civil war in Yemen, and not because refugees in Bangladesh live in tents for 30 people each. "
+},
+{
+"num": 24,
+"header": "Treatment",
+"title": "The effect of diphtheria toxin on the vitamin C content of guinea pig tissues.",
+"link": "http://jpet.aspetjournals.org/content/56/2/209",
+"info_type": "article",
+"info_date": "1936",
+"info_authors": "Lyman",
+"infoID": "",
+"info_place": "J. Pharm. Exp. Ther",
+"I_S_codenames": ["vitamin_C"],
+"digest": "In addition to humans, guinea pigs are the only mammals that do not synthesize vitamin C. The guinea pigs were injected with diphtheria toxin Those who were on a diet with reduced vitamin C lost more weight than those who were on the diet. the usual diet.Diphtheria toxin depleted the stores of vitamin C in the adrenal glands, in the pancreas and in the kidneys. "
+},
+{
+"num": 25,
+"title": "The influence of vitamin C deficiency in the protection of guinea pigs to diphtheria toxin glucose tolerance.",
+"link": "http://www.mv.helsinki.fi/home/hemila/concepts/Sigal_1937_p1_8.pdf",
+"info_type": "article",
+"info_date": "1937",
+"info_authors": "Sigal",
+"info_place": "J Pharmacol Exp Ther",
+"I_S_codenames": ["vitamin_C"],
+"digest": "- The lack of vitamin C leads to a lower resistance to infections, and to increased damage from bacterial toxins. Reduced resistance appears before symptoms of scurvy are visible.  Guinea pigs on a diet with low vitamin C, which injected a sublethal dose of diphtheria toxin, more tissue damage, greater weight loss, broader areas of necrosis, worse tooth development, and a low life expectancy compared with guinea pigs that were not restricted to vitamin B e. <br> Most likely low level of vitamin C leads to systemic disorders of the whole organism and especially the endocrine system. The authors conclude that the level of vitamin C for detoxification from diphtheria should be significantly higher than the required level of vitamin C to prevent scurvy. "
+},
+{
+"num": 26,
+"title": "Effects of Vitamin C Intake on the Degree of Tooth Injury Produced by Diphtheria Toxin.",
+"link": "http://ajph.aphapublications.org/doi/abs/10.2105/AJPH.30.9.1068",
+"info_type": "article",
+"info_date": "1940",
+"info_authors": "King",
+"infoID": "10.2105 / AJPH.30.9.1068",
+"info_place": "Am. J. Public Health",
+"I_S_codenames": ["vitamin_C", "caries"],
+"digest": "- When guinea pigs are injected with a sublethal dose of diphtheria toxin, a 30-50% decrease in the level of vitamin C in the tissues is observed for 24-48 hours. <br> - In children who received little vitamin C, It spontaneously passed after recovery, without an increase in vitamin C in the diet. <br> <br> What correlates with the lack of caries in children 10-14 years is good nutrition and the absence of disease in infancy and childhood. pigs injected 0.4 or 0.8 of the minimum lethal dose of diphtheria toxin. 0.8 mg of vitamin C per day were observed, destruction of the dental tissue was observed.In those who received 5 mg of vitamin C teeth did not collapse. "
+},
+{
+"num": 27,
+"title": "The influence of vitamin C level after resistance to diphtheria toxin.",
+"link": "https://www.cabdirect.org/cabdirect/abstract/19351405461",
+"info_type": "article",
+"info_date": "1935",
+"info_authors": "Menten",
+"info_place": "J. Nutr",
+"I_S_codenames": ["vitamin_C"],
+"digest": "Guinea pigs with limited vitamin C in the diet were injected with sublethal doses of diphtheria toxin, they began arteriosclerosis in the lungs, in the liver, in the spleen and in the kidneys."
+},
+{
+"num": 28,
+"title": "The effect of diphtheria toxin on vitamin C in vitro.",
+"link": "http://www.jbc.org/content/121/1/31.full.pdf",
+"info_type": "article",
+"info_date": "1937",
+"info_authors": "Torrance",
+"info_place": "J Biol Chem",
+"I_S_codenames": ["vitamin_C"],
+"digest": "Guinea pigs with low levels of vitamin C, who injected a lethal dose of diphtheria toxin, died faster than mumps on a normal diet. Guinea pigs given large doses of vitamin C survived even when they were injected with several lethal doses of toxin."
+},
+{
+"num": 29,
+"I_S_codenames": ["vitamin_C"],
+"digest": "Since the 1940s, no one has studied the effect of vitamin C on diphtheria. In 1971, Klenner [reports==https://www.seanet.com/~alexs/ascorbate/197x/klenner-fr-j_appl_nutr-1971-v23-n3&4-p61.htm#appendix] about the treatment of a girl from diphtheria by intravenous injection of a vitamin. Two other children who did not receive vitamin C. died, all three received an antitoxin. More: ",
+"sources_pool": [{
+"title": "[1]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/189004",
+"info_type": "article",
+"info_date": "1976",
+"info_authors": "Clark",
+"infoID": "189004",
+"info_place": "J Nutr Sci Vitaminol (Tokyo)"
+}]
+},
+{
+"num": 30,
+"info_img": "http://www.dissolvingillusions.com/wp-content/uploads/2013/03/G11.9-US-Diphtheria-T-1900-1967.png",
+"digest": "As in the case of other diseases, the reduction in mortality from diphtheria began long before the introduction of the vaccine."
+},
+{
+"num": 31,
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/1930/1930_600.jpg",
+"digest": "Because the diphtheria vaccine is a toxoid, it can not prevent infection, but it can prevent complications from the disease. It was logical to expect that with the introduction of the vaccine, the mortality from diphtheria will decrease, but this did not happen. the number of cases of diphtheria was constantly decreasing, mortality remained approximately at the level of 10% from the 1920s to the 1970s, in spite of the increasing number of cases of diphtheria [see Coverage of vaccination (data [from here==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2129462/])."
+},
+{
+"num": 32,
+"info_geo": ["India"],
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/2102/2102_600.jpg",
+"digest": "And here are [data==https: //www.ncbi.nlm.nih.gov/pmc/articles/PMC3180947/] from India, more or less the only country in the world where diphtheria still exists. the increased coverage of vaccination, the number of cases of diphtheria is not particularly reduced since the 80s. "
+},
+{
+"num": 33,
+"digest": "Today, diphtheria is an exceptionally rare disease, it practically [does not occur==http://apps.who.int/immunization_monitoring/globalsummary/timeseries/tsincidencediphtheria.html] even in most of the third world. In 2000, there were only six cases of diphtheria in the United States [registered==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/e/reported-cases.pdf], one of them died. He [was==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5253a3.htm] 63 years old, and he contracted Haiti. This is so rare a disease that CDC writes a separate report about almost every case [[1]==https://www.cdc.gov/mmwr/preview/mmwrhtml/00051752.htm], [[2]==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6003a4.htm], [[3]== https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5253a3.htm]. But the bubonic plague in the US since 2000 [hurts==https://www.cdc.gov/plague/maps/index.html] 96 people, and 12 died, their deaths were not widely covered, since children are not vaccinated against plague. "
+},
+{
+"num": 34,
+"info_geo": ["Spain", "Belgium", "UK", "Izrael", "Russia"],
+"digest": "Death from diphtheria in developed countries is so rare that every such case is widely [covered==https://en.wikipedia.org/wiki/Diphtheria#History] in the press. diphtheria in Spain, and in 2016 a girl in Belgium and a girl in England in 2008. This seems to be the only cases of death of children from diphtheria in developed countries in recent years 30. <br> In Israel over the past 40 years [happened==http://apps.who.int/immunization_monitoring/globalsummary/incidences?c=ISR] only 7 cases of diphtheria, and there have been no cases of diphtheria in the last 15 years. <br> Several cases of the disease are registered in Russia In 2012, [there were==http://rospotrebnadzor.ru/documents/details.php?ELEMENT_ID=653] 5 cases of the disease, including four vaccinated, including 11 carriers, of which 9 were vaccinated. In 2013, [there were==http://rospotrebnadzor.ru/deyatelnost/epidemiological-surveillance/?ELEMENT_ID=2734] two cases of the disease, both vaccinated, four carriers were identified, all vaccinated. In 2014 [there was==http://www.rospotrebnadzor.ru/activities/statistical-materials/statictic_details.php?ELEMENT_ID=7804] one case, and in 2015 two more (it is unclear whether they were vaccinated or not). For all these years, no one died from diphtheria.<br><br> Many more cases of anthrax (anthrax) [are registered in Russia==http://www.rospotrebnadzor.ru/activities/statistical-materials/statictic_details.php?ELEMENT_ID=7804], a much more dangerous disease (36 cases in 2016, 3 cases in 2015). But since they do not vaccinate her, and no one scares her, her parents are not very afraid that the child will suddenly catch her. "
+},
+{
+"num": 35,
+"digest": "Since the diphtheria vaccine is always combined with tetanus / pertussis, its safety data are similar to those given in the relevant parts. The vaccine (without the pertussis component) leads to Guillain-Barre syndrome, anaphylactic shock and shoulder neuritis, lowers the level lymphocytes, increases the risk of allergies, and antiphospholipid syndrome.In VAERS from 2000 to 2017, after vaccination with diphtheria without pertussis component (DT / Td) [registered==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=DT&VAX []=TD&VAX_YEAR_LOW=2000] 33 deaths and 188 cases of invalids From diphtheria, 6 people died and died alone in that time, given that only 1-10% of all cases are registered in VAERS, the probability of dying from vaccination is hundreds of times greater than the probability of falling ill with diphtheria. <br> The likelihood of developing diphtheria a maximum of 1 to 10 million, and usually even less.The probability of anaphylactic shock alone is, at best, 1 per million, and a brachial neuritis of 1 per 100,000. "
+},
+{
+"num": 36,
+"digest": "Since the vaccine for diphtheria appeared as far back as the 1920s, it did not pass any clinical trials, especially no effectiveness tests. Nevertheless, judging by the available data, it still gives some immunity from diphtheria, at least and far from complete [[1]==https://wwwnc.cdc.gov/eid/article/14/7/07-1167_article], [[2]==https://www.researchgate.net/publication/12658028_Ukraine_1992_First_Assessment_of_Diphtheria_Vaccine_Effectiveness_during_the_Recent_Resurgence_of_Diphtheria_in_the_Former_Soviet_Union]. In any case, it is clearly more effective than tetanus vaccination, which is quite logical, since the diphtheria toxin spreads through the circulatory system, g but there is tetanus in the nervous system, where there are none, but this immunity is very short-lived, and it is necessary to be vaccinated every 3-5 years so that the number of antibodies is sufficient.As no one so often gets vaccinated, most people do not have immunity from diphtheria. br> - The vaccine contains aluminum. <br> - Diphtheria are mostly susceptible to alcoholics and the homeless, and even they are extremely ill. It's almost impossible to get sick with diphtheria today. <br> <br> Diphtheria seems to be also treated with vitamin C. <br> <br> The probability of dying from vaccination is many times greater than the probability of getting diphtheria."
+}]
+}

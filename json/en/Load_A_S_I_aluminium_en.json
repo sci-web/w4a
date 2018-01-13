@@ -1,0 +1,418 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Aluminum",
+"I_S_codename": "aluminum",
+"I_S_type": "S_P",
+"I_S_type_this": "chemical",
+"I_S_name": "Aluminum",
+"date": ISODate ("2017-07-16T22: 44: 00Z"),
+"intro": "",
+"epigraph": {
+"text": "A foolish faith in authority is the worst enemy of truth.",
+"source": "Albert Einstein"
+},
+"points":
+[
+{
+"num": 1,
+"digest": "Most people believe that vaccination is simply a weakened or dead virus / bacterium.The immune system produces an injected dead antibody virus, and subsequently, if a person becomes infected, his immune system already recognizes this virus and responds quickly to it. <br> This picture is so simplistic that we can say that it is completely untrue. "
+},
+{
+"num": 2,
+"digest": "If everything was so simple, the vaccine would give lifelong immunity, which usually gives the transferred illness, but this does not happen. Immunity from vaccination lasts usually 3-5 years. The most effective vaccinations give immunity for 10 years (What exactly is the word \"immunity\" in the context of vaccinations is a separate topic that will be examined in another part.) <br> Our immune system is not at all stupid.It understands that a fragment of a dead virus or bacteria does not represent any danger, and bad [generates==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3117407] antibodies against it. <br> <br> How does this problem solve intelligent scientists? They add an adjuvant to the vaccine.The adjuvant is a molecule that the immune system recognizes as very toxic and reacts strongly to it.In addition, it reacts to the virus , and, most unpleasant, also on all other ingredients of the vaccine, and not only on them, which in turn leads to allergies and to various autoimmune diseases. Therefore immunologists call aluminum \"immunologist's dirty little secret\". <br> Ingredients of vaccinations are, for example, egg white (ovalbumin). The immune system may well, in addition to the virus, learn to respond to it as a threat. So the egg allergy turns out. <br> [Peanut oil in vaccinations==http://www.nytimes.com/1964/09/19/peanut-oil-used-in-a-new-vaccine.html] led, probably to a common allergy to peanuts. <br> Squalene - Another vaccine adjuvant - is also produced in human tissues, and the immune response to it is most likely the cause of autoimmune diseases. "
+},
+{
+"num": 3,
+"digest": "The second, perhaps even more important, reason for using adjuvants is purely economic. It is difficult, long and expensive to grow viruses, if you inject a lot of the virus, the immune system will deign to react to it and develop antibodies. But it will be a more expensive vaccine, it is much cheaper to take a small amount of the virus, add a little adjuvant, and get a very strong immune response. To resolve the FDA, the effectiveness of the vaccine is more important than safety. Security, as we saw, gently spoofed. The efficiency is much harder to fake. "
+},
+{
+"num": 4,
+"digest": "The two most common adjuvants are aluminum hydroxide and aluminum phosphate.It is enough to understand only with them to exclude most vaccinations. The topic of aluminum should be understood and without the connection with vaccinations, just to understand how corrupt science is, WHO , CDC and governments of different countries. "
+},
+{
+"num": 5,
+"digest": "There are hundreds of studies proving that aluminum, even at minimal concentrations, is very toxic. I will give just a few overview articles. "
+},
+{
+"num": 6,
+"title": "Aluminum vaccine adjuvants: are they safe?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21568886",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Tomljenovic",
+"infoID": "21568886",
+"info_place": "Curr Med Chem",
+"digest": "Despite 90 years of use of aluminum adjuvants in vaccines, it is still unknown why, and how exactly aluminum causes such a strong immune response. <br> High toxicity and danger of aluminum consumed orally was already known in 1911 , when Dr. William Gies published the results of seven years of research on aluminum in baking powder, preservatives and dyes.Aluminum affects memory, concentration and behavior. (It turns out, by the way, that aluminum is still added to baking powder (baking powder), and in food e) Preservatives, fed with mixtures with aluminum, developed worse than, children on mixtures without aluminum. <br> Aluminum, which is used in dialysis of kidneys, leads to dementia, convulsions, psychosis, etc. <br> Aluminum is also associated with Alzheimer's disease, Parkinson's disease, multiple sclerosis, autism and epilepsy. <br> The amount of aluminum in vaccines is tens of times higher than the norm established by the FDA. <br> This article is worth reading in full, there is still a lot of interesting without any connection with aluminum. "
+},
+{
+"num": 7,
+"title": "Do the aluminum vaccine adjuvants contribute to the rising prevalence of autism?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22099159",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Tomljenovic",
+"infoID": "22099159",
+"info_place": "J Inorg Biochem",
+"I_S_codenames": ["autism"],
+"digest": "The more immunizations with aluminum are made in the country, the more autistics are in it. <br> In the US, the increase in the number of autistics correlates with the increase in the use of aluminum adjuvants. (r = 0.92, p <0.0001) <br> Authors use [ Hill's criteria == https: //en.wikipedia.org/wiki/Bradford_Hill_criteria], and conclude that the connection between aluminum in vaccines and autism is probably causal.This article is also worth reading in full. "
+},
+{
+"num": 8,
+"title": "Aluminum hydroxide injections lead to motor deficits and motor neuron degeneration.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2819810/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Shaw",
+"infoID": "PMC2819810",
+"info_place": "J Inorg Biochem",
+"digest": "Mice were injected with aluminum hydroxide in equivalent human vaccine doses, with increased death of motor neurons, decreased motor activity, poor spatial memory, and other effects related to dementia, Alzheimer's and Gulf War syndrome. Two other similar studies: ",
+"sources_pool": [{
+"title": "[1]",
+"info_type": "article",
+"infoID": "23932735",
+"info_date": "2013",
+"info_authors": "Shaw",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23932735"
+},
+{
+"title": "[2]",
+"info_type": "article",
+"infoID": "17114826",
+"info_date": "2007",
+"info_authors": "Petrik",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17114826"
+}]
+},
+{
+"num": 9,
+"title": "Aluminum incorporation into the brain of rat fetuses and sucklings",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11470320",
+"info_type": "article",
+"info_date": "2001",
+"info_authors": "Yumoto",
+"infoID": "11470320",
+"info_place": "Brain Res Bull",
+"I_S_codenames": ["pregnancy"],
+"digest": "Pregnant rats were injected under the skin with radioactive aluminum, which in a few days got into the brain of the embryos. After birth, this aluminum continued to accumulate in the brain, transmitted through the breast milk. "
+},
+{
+"num": 9.1,
+"title": "Association between maternal exposure to aluminum and the risk of congenital heart defects in offspring.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26707789/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Liu",
+"infoID": "26707789",
+"info_place": "Birth Defects Res A Clin Mol Teratol",
+"I_S_codenames": ["pregnancy"],
+"digest": "A high level of aluminum in the mother's hair is associated with congenital heart defects in the child."
+}
+{
+"num": 9.2,
+"title": "A study of the distribution of aluminum in human placental tissues based on alkaline solubilization with determination by electrothermal atomic absorption spectrometry.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3315392",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Kruger",
+"infoID": "PMC3315392",
+"info_place": "Metallomics",
+"I_S_codenames": ["pregnancy"],
+"digest": "In 95% of women who gave birth, aluminum was found in the placenta, 81% in the placenta membrane, and 46% in the umbilical cord. This is the question of vaccinations for pregnant women."
+},
+{
+"num": 10,
+"digest": "Two more survey and cognitive articles about aluminum adjuvants, which are worth reading:",
+"sources_pool": [{
+"title": "Mechanisms of aluminum adjuvant toxicity and autoimmunity in pediatric populations.",
+"info_type": "article",
+"infoID": "23932735",
+"info_date": "2013",
+"info_authors": "Shaw",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23932735"
+},
+{
+"title": "Aluminum in Childhood Vaccines Is Unsafe.",
+"link": "http://www.jpands.org/vol21no4/miller.pdf",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Miller",
+"info_place": "JPANDS",
+}]
+},
+{
+"num": 11,
+"title": "Macrophagic myofasciitis: characterization and pathophysiology",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3623725/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Gherardi",
+"infoID": "PMC3623725",
+"info_place": "Lupus",
+"I_S_codenames": ["macrophagic_myofasciitis"],
+"digest": "A review article on the MMF. In some patients, aluminum adjuvants do not resolve after vaccination, but remain at the injection site and form an aluminum granule .The associated symptoms are usually myalgia (muscle pains), chronic fatigue, cognitive impairment, and various autoimmune disorders disease. "
+},
+{
+"num": 12,
+"title": "Aluminum Should Now Be Considered a Primary Etiological Factor in Alzheimer's Disease.",
+"link": "http://content.iospress.com/articles/journal-of-alzheimers-disease-reports/adr170010",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Exley",
+"infoID": "10.3233 / ADR-170010",
+"info_place": "JAD reports",
+"digest": "The exact cause of Alzheimer's disease is not yet known, but aluminum plays a major role in it. <br> Here's another [meta-analysis==http://www.sciencedirect.com/science/article/pii/S0304394015302512] about this theme."
+},
+{
+"num": 13,
+"title": "Link between Aluminum and the Pathogenesis of Alzheimer's Disease: The Integration of the Aluminum and Amyloid Cascade Hypotheses",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3056430/",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Kawahara",
+"infoID": "PMC3056430",
+"I_S_codenames": ["Alzheimers"],
+"info_place": "Int J Alzheimers Dis",
+"digest": "Although this article is mainly about the role of aluminum in Alzheimer's disease, it also lists the mechanisms known to date for the effect of aluminum on biological processes. Despite the fact that aluminum is one of the most common metals on earth, in nature it is found only in compounds with silicon and oxygen.The man has learned to separate pure aluminum and to create salts from it only in the late nineteenth century. <br> Aluminum has no useful biological function. <br> Aluminum is a strong neurotoxin that There are more than 200 biological processes. Among other things, aluminum binds to ATP (which causes chronic fatigue), changes DNA, kills nerve cells, etc. "
+},
+{
+"num": 14,
+"title": "Selective accumulation of aluminum in cerebral arteries in Alzheimer's disease",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3720708/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Bhattacharjee",
+"infoID": "PMC3720708",
+"info_place": "J Inorg Biochem",
+"I_S_codenames": ["Alzheimers"],
+"digest": "The closer the arteries are to the brain, the higher the concentration of aluminum in them in patients with Alzheimer's disease."
+},
+{
+"num": 15,
+"title": "Aluminum content of human semen: Implications for semen quality.",
+"link": "http://www.sciencedirect.com/science/article/pii/S0890623814002548",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Klein",
+"infoID": "25461904",
+"info_place": "Reproductive Toxicology",
+"I_S_codenames": ["Alzheimers"],
+"digest": "Aluminum is collected in semen, and the more it is, the worse the quality of sperm."
+},
+{
+"num": 16,
+"title": "Slow CCL2-dependent translocation of biopersistent particles from muscle to brain.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23557144",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Khan",
+"infoID": "23557144",
+"info_place": "BMC Med",
+"digest": "Aluminum injected into the muscle along with the vaccine enters the brain, spleen, liver, and remains there for years, it is carried over the body through macrophages. Macrophages are cells that devour bacteria and other toxic substances. Macrophages swallow aluminum, but do not know how to dispose of it, but spread it all over the body through the lymphatic system. "
+},
+{
+"num": 17,
+"digest": "The safety of aluminum salts is one of the cornerstones of vaccine safety, and vaccination advocates often have to answer it. For example, the article by Paul Offit, the world's most famous vaccine advocate, in which he explains to parents , that aluminum in vaccines should not be feared: "
+},
+{
+"num": 17,
+"title": "Addressing Parents' Concerns: Do Vaccines Contain Harmful Preservatives, Adjuvants, Additives, or Residuals?",
+"link": "http://pediatrics.aappublications.org/content/112/6/1394",
+"info_type": "article",
+"info_date": "2003",
+"info_authors": "Offit",
+"infoID": "",
+"info_place": "Pediatrics",
+"digest": "His arguments: <br> 1) aluminum adjuvants are safe, because they are used in vaccines for more than 70 years; <br> 2) aluminum is found in breast milk and in children's mixtures, and in general this is one of the most common metals, <br> 3) experiments were conducted on mice fed with aluminum lactate, and nothing happened to them. <br> <br> The first argument is so ridiculous and unscientific that it is even difficult to answer it. Seventy years ago, half of the children did not have In view of the abundance of scientific research on the dangers of aluminum, this argument . Stu lying <br> The second argument corresponds to the following article: "
+},
+{
+"num": 17,
+"title": "Infants' exposure to aluminum from vaccines and breast milk during the first 6 months.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20010978",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Dórea",
+"infoID": "20010978",
+"info_place": "J Expo Sci Environ Epidemiol",
+"I_S_codenames": ["breast_feeding"],
+"digest": "Only in one vaccine from hepatitis B, which the baby receives on the first day of life, aluminum is 5 times greater than all the aluminum that he will receive in six months of breastfeeding. Besides, it is impossible to compare aluminum and an aluminum adjuvant that is attached to the antigen, and which is much more difficult for the body to remove. The third argument is already answered [the above article==https://www.ncbi.nlm.nih.gov/pubmed/21568886]. <br > Ofit forgot to mention that the motor activity of 20% of mice from these experiments was significantly disrupted. already that it is impossible to compare intramuscular aluminum and aluminum in food (only 0.25% of which is absorbed), as well as to compare aluminum lactate with phosphate or aluminum hydroxide. Different salts of aluminum have different toxicity. "
+},
+{
+"num": 18,
+"title": "Adverse events after immunization with aluminum-containing DTP vaccines: systematic review of the evidence.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/14871632",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Jefferson",
+"infoID": "14871632",
+"info_place": "Lancet Infect Dis",
+"digest": "And here is a systematic review and meta-analysis that proves that aluminum in DTP vaccines is safe. I highly recommend reading this article in full. After reading it, your opinion of science will never be the same again. 8 studies of aluminum adjuvants, and made a meta-analysis of 5 of them. <br> Safety studies lasted from 24 hours to 6 weeks.The side effects they were looking for were only crying, screaming, pain, temperature, convulsions and redness . The authors concluded that although all these studies were very doubtful there is nothing to replace aluminum in vaccines, and even if there is a substitute for it, you will have to check and patent all the vaccines again, and that will call into question the vaccination programs around the world. Then comes the final shocking conclusion: Despite a lack of good -quality evidence <br> <br> This, attention, was a systematic review of all available literature on the safety of aluminum in vaccines. <br> No, not really. This was not an ordinary systematic review. It was a systematic review [Cochrane == https: //ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BA%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B5_%D1%81%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87% D0%B5%D1%81%D1%82%D0%B2%D0%BE], the most respected scientific organization in medicine, whose systematic reviews are recognized as the best in the world. You can imagine how ordinary, less qualitative systematic reviews look like. "
+},
+{
+"num": 19,
+"header": "Where does aluminum go",
+"title": "In vivo absorption of aluminum-containing vaccine adjuvants using 26Al",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9302736",
+"info_type": "article",
+"info_date": "1997",
+"info_authors": "Flarend",
+"infoID": "9302736",
+"info_place": "Vaccine",
+"digest": "Despite the fact that aluminum adjuvants have been used since 1926, what exactly happens to them after they are injected into the muscle, science is unknown. The researchers took several rabbits, stuck two of them with radioactive aluminum hydroxide, two other radioactive aluminum phosphate.After 28 days, rabbits were killed and at that time 94% of aluminum hydroxide and 78% of aluminum phosphate still remained in the body of rabbits. The authors investigated several internal organs and concluded that they contained a small amount of aluminum Although they determined that about him \"little\" remained unclear, as the control rabbits that did not have aluminum pricked were not in the experiment.The authors did not examine the rabbit's bones (because they spoiled them), despite the fact that it is known that aluminum accumulates in bones. The study lasted only 28 days, despite the fact that it is known that aluminum remains in the body for years. They concluded that the body successfully removes aluminum from the body, despite the fact that the aluminum part of the aluminum remained in the body, and m is unclear in which particular organs. "
+},
+{
+"num": 20,
+"title": "Effect of routine vaccination on aluminum and essential element levels in preterm infants.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Movsas",
+"infoID": "23856981",
+"info_place": "JAMA Pediatr",
+"digest": "15 preterm infants underwent several inoculations with 1200 μg of aluminum.This aluminum was found neither in blood nor in urine. Where it went was unclear."
+},
+{
+"num": 21,
+"header": "Movies:",
+"digest": "[L'aluminium, les vaccines et les deux lapins==https://www.youtube.com/watch?v=933TYSOglZE] (Aluminum, vaccines and two rabbits)<br> A very interesting French film ( with English subtitles.) Includes interviews with world expert on aluminum Cristopher Exley, as well as with MMF (Gherardi and Authier) discoverers.For corruption and much more.<br><br> There are no less effective adjuvants (calcium phosphate) that are not used. <br> - There are vaccines generally without adjuvants, they are no longer used. "
+},
+{
+"num": 22,
+"digest": "[Vaccine syndrome==https://vimeo.com/215109690]<br> This film is also part of the series Vaccines revealed. <br><br> 250,000 soldiers participating in the Gulf War suffer from the Gulf War syndrome (Gulf War Syndrome), representing 35% of all soldiers participating in it, and suffering from soldiers who did not take part in the fighting, and more than a million American soldiers suffer from the Gulf War syndrome .The reason for this appears to be an experimental vaccine from anthrax, and other vaccines that US soldiers are required to do in large quantities. The canadian soldier who refused to be vaccinated goes to court, then for a couple of months in prison, receives a large fine, and then he is fired, depriving him of titles and pensions (dishonorable discharge). <br> <br> 35,000 soldiers died of the side effects of grafting from anthrax. By comparison, less than 6,800 soldiers were killed in Iraq and Afghanistan (it's unclear where they got that figure from). - And where do the Iraqis have an anthrax, which the Americans were so afraid of? Saddam Hussein was given President Jimmy Carter to help him in his war with Iran. <br> <br> Soldiers vaccinated from anthrax gave birth to children with severe birth defects. <br> <br> 22 veterans commit suicide every day. (I often heard this fact, but did not imagine that it could be somehow related to vaccinations.) <br> <br> And remember the envelopes with anthrax, which a week after 9/11 were sent to senators and news agencies, resulting in 5 people were killed, and then Iraq and Al Qaeda were accused? The FBI [believes==https://en.wikipedia.org/wiki/2001_anthrax_attacks] that they were sent by a scientist who worked in the US Army over an anthrax vaccine. "
+},
+{
+"num": 22,
+"digest": "[This Age of Aluminuim==https://www.youtube.com/watch?v=5F0u54gs0iU] <br> This film should look everyone. <br> Among other things, aluminum, it turns out, is also used in drinking water purification systems, and some of its quantities remain in the water. "
+},
+{
+"num": 23,
+"digest": "Very interesting lectures on the topic of aluminum in vaccines, and not only in vaccines: <br> [Dr. Suzanne Humphries - Trojan Horses and Clusterbombs==https://www.youtube.com/watch?v=PWP6e2CYPo8] <br> [Dr. Christopher Exley - Vaccine Safety Conference Session 16==https://www.youtube.com/watch?v=JKfbkeQyw84] <br> [Dr. Christopher A. Shaw - Vaccine Safety Conference Session 17==https://www.youtube.com/watch?v=fmgw3KNjEJ4] "
+},
+{
+"num": 24,
+"digest": "Several articles and lectures that go deeper into the biology of the processes associated with aluminum: <br> [Aluminum-Induced Entropy in Biological Systems: Implications for Neurological Disease. (Shaw, 2014, J Toxicol)==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4202242/] [Human exposure to aluminum. (Exley, 2013, Environ Sci Process Impacts.)==https://www.ncbi.nlm.nih.gov/pubmed/23982047]<br> [Myelin is a preferential target of aluminum-mediated oxidative damage. (Verstraeten, 1997, Arch Biochem Biophys.)==https://www.ncbi.nlm.nih.gov/pubmed/9264541] [Human health risk assessment for aluminum, aluminum oxide, and aluminum hydroxide (Krewski, 2007, J Toxicol Environ Health B Crit Rev)==https://www.ncbi.nlm.nih.gov/ pmc/articles/PMC2782734] <br> [Multifaceted effects of aluminum in neurodegenerative diseases: A review. (Maya, 2016, Biomed Pharmacother)== https://www.ncbi.nlm.nih.gov/pubmed/27479193] [Dr. Romain Gherardi - Vaccine Safety Conference Session 18==https: //www.youtube.com/watch?v=ICQD9wuQmSc] <br> [Dr. Russell Blaylock - Vaccine Safety Conference Session 22==https://www.youtube.com/watch?v=u9DkcpEEBPI]"
+},
+{
+"num": 24.5,
+"I_S_codenames": ["allergy"],
+"digest": "Aluminum hydroxide [used==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2590830/] to stimulate allergies in mice."
+},
+{
+"num": 25,
+"header": "Aluminum without vaccine connection",
+"title": "Risk Assessment of Using Aluminum Foil in Food Preparation",
+"link": "http://www.electrochemsci.org/papers/vol7/7054498.pdf",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Bassioni",
+"infoID": "",
+"info_place": "Int J Electrochem Sci",
+"digest": "If you use aluminum cookware, disposable aluminum baking trays or aluminum foil, then maybe you should not do it. More: [[1]==http://www.sciencedirect.com/science/article/pii/S0048969716324548]. "
+},
+{
+"num": 26,
+"title": "Aluminum, antiperspirants and breast cancer.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16045991",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Darbre",
+"infoID": "16045991",
+"info_place": "J Inorg Biochem",
+"I_S_codenames": ["breast_cancer"],
+"digest": "- Aluminum salts in antiperspirants block the sweat glands, resulting in sweat not being released, which makes them very effective. <br> <br> The cause of 90% of breast cancer cases is ecological, not genetic. 1926, only 31% of cancers were on the upper outer chest, and 61% of tumors accounted for this area in 1994. This proportion increases linearly from year to year. <br> <br> Genomic instability in the external part of the breast is constantly increasing. <Br > - Among patients with breast cancer, those who used antiperspirants more often were diagnosed with at a younger age. <br> <br> Aluminum from the skin penetrates the blood after just one deodorant use. <br> <br> Aluminum is genotoxic, it can make changes in DNA, and also has an epigenetic effect. <br> <br> Aluminum blocks estrogen receptors <br> <br> However, the article is worth reading not only to women, because antiperspirants may [also lead to prostate cancer.] < br> After this article it is worth reading [article==https://www.cancer.org/cancer/cancer-causes/antiperspirants-and-breast-cancer-risk.html] about antiperspirants on the site of America Oncology Society. And then decide for yourself whether this society sets a goal to reduce the number of cancer patients, or vice versa. "
+},
+{
+"num": 27,
+"title": "Antacids and dietary supplements with an influence on the gastric pH increase the risk for food sensitization.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2999750/",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Pali-Schöll",
+"infoID": "PMC2999750",
+"info_place": "Clin Exp Allergy",
+"I_S_codenames": ["antacids"],
+"digest": "Aluminum hydroxide and aluminum phosphate are also used as antacids (medications for heartburn and some other gastrointestinal diseases, many of which are sold over the counter) .This, in turn, leads to allergies."
+},
+{
+"num": 28,
+"title": "Aluminum content of some foods and food products in the USA, with aluminium food additives.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16019791",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Saiyed",
+"infoID": "16019791",
+"info_place": "Food Addit Contam",
+"digest": "The amount of aluminum in different products. Aluminum is abundant in frozen pizzas, sausages, cheese, pancakes, baking powder, baking mixes, etc. <br> Aluminum [a lot==https://www.ncbi.nlm.nih.gov/pubmed/1625612] also in drinks sold in aluminum beer cans. <br> In rats that were given drinks from aluminum cans, the content of aluminum in bones [was==https://www.ncbi.nlm.nih.gov/pubmed/8118174] is 69% higher. "
+},
+{
+"num": 28,
+"title": "Evaluation of the concentration of aluminum in concentrations of electrolytes and beverages by electrothermal atomic absorption spectrometry.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11552746",
+"info_type": "article",
+"info_date": "2001",
+"info_authors": "Sepe",
+"infoID": "11552746",
+"info_place": "Food Addit Contam",
+"digest": "Aluminum is plentiful in chocolate, very much in cocoa, as well as in tea and fruit juices."
+},
+{
+"num": 28,
+"title": "Aluminum content of selected foods and food products.",
+"link": "https://enveurope.springeropen.com/articles/10.1186/2190-4715-23-37",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Stahl",
+"infoID": "10.1186 / 2190-4715-23-37",
+"info_place": "Environ Sci Eur",
+"digest": "Aluminum is abundant in cocoa, chocolate, confectionery, premixes for baking, biscuits and salted pretzels, macaroni, etc."
+},
+{
+"num": 29,
+"title": "Aluminum: a potential pro-oxidant in sunscreens / sunblocks?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17854717",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Nicholson",
+"infoID": "17854717",
+"info_place": "Free Radic Biol Med",
+"I_S_codenames": ["aluminium", "sunscreen"],
+"digest": "Aluminum is contained in very large quantities in sunscreens. Since aluminum is an oxidant, it is possible that it contributes to the development of melanoma. "
+},
+{
+"num": 30,
+"title": "There is (still) too much aluminum in infant formulas.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2939626/",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Burrell",
+"infoID": "",
+"info_place": "BMC Pediatr",
+"digest": "In children's mixtures, there is a lot of aluminum. According to the EPA standard, drinking water can contain a maximum of [200μg==https://www.epa.gov/dwstandardsregulations/secondary-drinking-water-standards-guidance-nuisance-chemicals] of aluminum per liter.In 15 tested children's mixtures, there was from 176μg to 700μg of aluminum per liter. <br> Three years later, the authors [analyzed==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3851493] another 30 infant formulas, with similar results. "
+},
+{
+"num": 31,
+"title": "Silicon-Rich Mineral Water as a Non-Invasive Test of the \" Aluminum Hypothesis\" in Alzheimer's Disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22976072",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Davenward",
+"infoID": "22976072",
+"info_place": "J Alzheimers Dis",
+"digest": "Mineral water rich in silicon, Si (OH) <sub> 4 </ sub>, removes aluminum from the body. <br> 12 weeks of drinking this water led to cognitive improvements in some patients with Alzheimer's disease. by experiments in rats, curcumin, perhaps [protects==https://www.ncbi.nlm.nih.gov/pubmed/22130689] from the inflammatory effects of aluminum, as well as [omega-3==ncbi.nlm.nih.gov/pubmed/27055897], [extract from masha==https://www.ncbi.nlm.nih.gov/pubmed/28128384], [moringa== https://www.ncbi.nlm.nih.gov/pubmed/28397152], [melatonin==https://www.ncbi.nlm.nih.gov/pubmed/26374992], [olive oil==https://www.ncbi.nlm.nih.gov/pubmed/25690328] and [folic acid==https://www.ncbi.nlm.nih.gov/pubmed/28119228]."
+},
+{
+"num": 32,
+"title": "Studies on aluminum leaching from cookware in tea and coffee and evaluation of the content in the toothpaste, baking powder and paan masala.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9092078",
+"info_type": "article",
+"info_date": "1997",
+"info_authors": "Rajwanshi",
+"infoID": "9092078",
+"info_place": "Sci Total Environ",
+"digest": "Aluminum is very much in toothpaste, and also in tea. [Here==https://www.ncbi.nlm.nih.gov/pubmed/8462312] A study on how toothpaste with Aluminum exacerbates dermatitis (which was caused by vaccination). <br> <br>[Here==https://www.ncbi.nlm.nih.gov/pubmed/8462312] A study on how toothpaste with aluminum leads to tooth decay. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/8462312] it is reported that aluminum in toothpastes may play an even greater role in the occurrence of Alzheimer's than aluminum in water, and that 60% of the market for all toothpastes are pastes with aluminum. "
+},
+{
+"num": 33,
+"digest": "Very interesting TED-x [lecture==https://www.youtube.com/watch?v=Dvh3JhsrQ0w] about how the neonatologist cured her husband from Alzheimer's coconut oil."
+}]
+}

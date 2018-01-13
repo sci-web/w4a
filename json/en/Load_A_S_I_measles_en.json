@@ -1,0 +1,1182 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Measles",
+"I_S_codename": "measles",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Measles",
+"intro": "",
+"date": ISODate ("2017-09-13T09: 05: 00Z"),
+"epigraph": {
+"text": "I have seen 200 cases of cancer, and never saw a case in an unvaccinated person.",
+"source": "W.B. Clark, New York Times, 1909"
+},
+"points": [{
+"num": 1,
+"digest": "Measles, this is certainly the biggest horror story. If the media is to be believed, measles are [much worse==http://www.healthcareglobal.com/hospitals/scared-ebola-measles-outbreak-far-more- dangerous] Ebola. "
+},
+{
+"num": 2,
+"I_S_codenames": ["vitamin_A"],
+"digest": "Here's a small [video==https://www.youtube.com/watch?v=mDb0ZS3vB9g] with clippings from TV shows of the 50's and 60's, where you can see how the measles were treated Before the vaccine, chickenpox from year to year is becoming more and more dangerous, and even, judging by [some==http://www.dailymail.co.uk/health/article-2586103/We-no-idea-chickenpox-deadly-Parents-heartbreak-healthy-girl-7-dies-suddenly-condition.html] to sources, a deadly disease. > Here's another, more interesting [video==https://www.youtube.com/watch?v=47RUl5xqs_s], analyzing the changes Measles are very dangerous with malnutrition and a lack of vitamin A, so it was often lethal in the 19th and early 20th centuries, and is still lethal in third world countries. But in developed countries, measles are much less dangerous than the flu, it easily passes, gives lifelong immunity, and, as we will see below, protects from much more dangerous diseases. "
+},
+{
+"num": 3,
+"title": "Measles. Reports from general practitioners.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1992477",
+"info_type": "article",
+"info_date": "1959",
+"info_place": "BMJ",
+"digest": "A 1959 article, in which several practitioners write that measles has become an easy disease in England, with almost no complications: no treatment is required, no steps are taken to prevent its spread, and cases of illness they even write that measles is best treated from 3 to 7 years old, because in adulthood it is more likely to lead to complications, and that infants do not practically get sick of it, and if they get sick , then in a very light form. They argue that children from measles have become much better. <br> Certificate mothers that measles leads to a jump in development in children, and can be read today in the specialized forums. "
+},
+{
+"num": 4,
+"title": "The Importance of Measles as a Health Problem",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1522578",
+"info_type": "article",
+"info_date": "1962",
+"info_authors": "Langmuir",
+"infoID": "PMC1522578",
+"info_place": "Am J Public Health Nations",
+"digest": "Why did they start vaccinating against measles at all if it was such a trivial illness? This is an article [Alexander Langmuir==https://en.wikipedia.org/wiki/Alexander_Langmuir], the chief epidemiologist of the CDC, who writes that the measles disease is short, not heavy and not very dangerous, and that we have reached with it a \"biological balance.\" Then, when asked why he wants to eradicate measles, he responds with the words of Edmund Hillary, who was asked why conquer Everest To which Hillary said: \"Because it exists.\" The author adds that he wants to eradicate measles, because it is possible. "
+},
+{
+"num": 5,
+"digest": "In 1966, it was planned to completely eradicate measles throughout the year. [It was considered==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1919891/], which is enough that 55% of the population were not are susceptible to measles in order to ensure collective immunity.But by 1980 [it turned out that the vaccination only resulted in the fact that instead of children [became==https://www.ncbi.nlm.nih.gov/pubmed/7399493] : //www.ncbi.nlm.nih.gov/pubmed/10545585] teenagers and adults are ill, and later, when the mothers who, thanks to the vaccination, did not get measles as a child, could not give their children immunity; year, what was pr that is, instead of being infected with measles in childhood, when it is less dangerous, pregnant women, infants, adults, and those with a risk of complications have become pregnant with the measles vaccination [above==http://www.cdc.gov /vaccines/pubs/pinkbook/downloads/meas.pdf]. "
+},
+{
+"num": 6,
+"I_S_codenames": ["MMR"],
+"digest": "In 1978 [planned==https://www.cdc.gov/measles/about/history.html] completely eradicated measles within the next four years. In 1989 [it turned out==http:// www.nytimes.com/1989/02/26/us/measles-not-yet-a-thing-of-the-past-reveals-the-limits-of-an-old-vaccine.html] that the old vaccine there was some kind of irregularity in measles, and that it was correct only in 1980. True and the right vaccine did not lead to the eradication of measles, that's why in the same year they decided to introduce https://www.ncbi.nlm.nih.gov/pubmed/15064032] second dose of MMR. [It also turned out that the outbreak of measles could well be at a school where 100% of children have a documentary The CDC did not know how this could be explained."
+},
+{
+"num": 7,
+"title": "Failure to reach the goal of measles elimination. Apparent paradox of measles infections in immunized persons.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8053748",
+"info_type": "article",
+"info_date": "1994",
+"info_authors": "Poland",
+"infoID": "8053748",
+"info_place": "Arch Intern Med",
+
+"digest": "In 1994, one of the main proprivovnikov in the world Gregory Poland publishes an article where he analyzes 18 measles outbreaks in schools where almost all pupils were vaccinated.It concludes that it is impossible to completely eradicate measles even if 100% of children are vaccinated, because the vaccine is not 100% effective, so the further it is, the more measles will become the disease of the vaccinated, and that because measles is very contagious, the collective immunity for it does not work, despite the very high vaccination coverage. (Quite ironically, the collective immunity which has gained fame in the context of measles, does not work for measles.) <br> He also says that a vaccination before 12 months of age is very inefficient, and even before the age of 15 months is not very effective. many other countries, this vaccination is recommended at 12 months, and WHO generally recommends it at 6 months. <br> Since 2000, measles [is considered==https://www.cdc.gov/measles/about/history.html] eradicated in the United States. This does not mean that she completely stopped being ill. Just changed the definition of \"eradication.\" Today, eradication means that measles is transmitted from person to person for less than 12 consecutive months, and new cases of infection are imported. "
+},
+{
+"num": 8,
+"I_S_codenames": ["MMR", "MMRV"],
+"digest": "The measles vaccine is always part of the trivalent MMR vaccine (with rubella and mumps), or the four-valent MMRV vaccine (with rubella, mumps and chickenpox.) Monovalent measles vaccine is not produced in developed countries, but in Russia and in some countries of the third world it seems to be still available.It is usually given two doses - at 12 months and 5-6 years. <br> Unlike inanimate vaccines that we have considered so far, measles is a weakened vaccine that contains Live virus: Live vaccines are much more effective than inanimate ones, and therefore they are not added Lumino. The problem of live vaccines, among other things, that the attenuated viruses can mutate quite back, and become common, and that vaccinated people often becomes contagious to others. ",
+"sources_pool": [{
+"title": "[1]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10494235",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Jenkin GA",
+"infoID": "10494235"
+},
+{
+"title": "[2]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26027483",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Tramuto F",
+"infoID": "26027483"
+},
+{
+"title": "[3]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23531102",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Monica Hau",
+"infoID": "23531102"
+},
+{
+"title": "[4]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23543773",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Lindsay Nestibo",
+"infoID": "23543773"
+},
+{
+"title": "[5]",
+"link": "http://www.eurosurveillance.org/ViewArticle.aspx?ArticleId=20649",
+"info_type": "article"
+}]
+},
+{
+"num": 9,
+"I_S_codenames": ["pneumonia", "encephalopathy"],
+"digest": "The first measles vaccine was inanimate, but after several years of massive use, it turned out that she [leads==http://jamanetwork.com/journals/jama/article-abstract/336928] to atypical measles, and also to pneumonia and to encephalopathy.The first attenuated vaccines were so strong that, together with the vaccine [pricked also immunoglobulin, so in 1965 and in The 1967 vaccine was weakened even more. "
+},
+{
+"num": 10,
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/2675/2675_600.jpg",
+"info_imgSource": "https://www.ncbi.nlm.nih.gov/pubmed/8741307",
+"digest": "What does this generally mean, \"weakened vaccine \"? It is difficult to give the virus under the breath to weaken it, but not kill it .How does it all be weakened? <br> For this the virus is adapted to life in non-human cells, as a result of which it mutates and becomes less adapted to humans.<br><br> Here is a diagram of the process of weakening the mumps virus: | | | | To begin with, a wild strain of the virus is extracted from the sick person. After that, [serially run==https://en.wikipedia.org/wiki/Serial_passage] through human embryonic kidney cells. are transplanted into the kidney cells of green monkeys.Then, it is passed six times through the amniotic cells of the chick embryos, then twice through [fibroblast cells==https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%B1%D1%80%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82] of the quail embryos, then again twice through the amniotic cells of the chicks. If desired, it can be done three times through the fibroblasts of the chick embryos, and you can spend two more times through the amniotic cells of the chickens, and then five more times through the [allantois] https://en.wikipedia.org/wiki/%D0%90% D0% BB% D0% BB% D0% B0% D0% BD% D1% 82% D0% BE% D0% B8% D1% 81] (embryonic respiratory organs) of chickens, and then again through the fibroblasts of chickens. Thus, different vaccine strains are obtained, which can also be mixed together. Here [patent==https://www.google.com/patents/US4324861], if you are interested in details. <br> Merck, for example, use non-renal cells, and aborted lung cells, female ([WI-38==https://en.wikipedia.org/wiki/WI-38]), and masculine ([MRC-5==https://en.wikipedia.org/wiki/MRC-5]), as well as [bovine serum==https://www.wikipedia.org/wiki/%D0%91%D1%8B%D1%87%D0%B8%D0%B9_%D1%81%D1%8B%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%D0%B0%D0%BB%D1%8C%D0%B1%D1%83%D0%BC%D0%B8%D0%BD]. In general, here each manufacturer of vaccines frolics to the best of their imagination. (Why aborted human cells are much worse than animal cells will be dismantled in another part). And since it is impossible to completely separate the virus from the cells in which it multiplies, these cells are part of the vaccine. Since the role of these cells is to rapidly multiply, they are often oncogenic. Scientists from the FDA this, of course, [worries==https://www.scribd.com/doc/246682536/FDA-Meeting-Human-Tumors-for-Vaccine-Manufacture], but not very. <br> Moreover, these cells can contain other viruses, which are still unknown to science. After all, to find a virus in the cells, you need to know what to look for. And if the virus is still unknown, it can not be found. But do not worry. Scientists from the FDA [work==https://www.fda.gov/biologicsbloodvaccines/scienceresearch/biologicsresearchareas/ucm127327.htm] on new technologies for detecting unknown viruses. In 2010, a swine virus in a rotavirus vaccine [was found==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2876658/]. True, the FDA did not detect this virus, but scientists from the University of California. And then they decided to check the vaccine against the rotavirus of another manufacturer, and [found http://www.who.int/entity/immunization_standards/vaccine_quality/PCV1_Q_and_As_rotavirus_vaccines_3Jun10.pdf] there are already two swine viruses in it. But do not worry. FDA [believes==https://www.fda.gov/NewsEvents/PublicHealthFocus/ucm205585.htm] that these viruses are completely harmless to humans. Well, in any case, their danger is not proved. Therefore, these pork viruses were decided in vaccines [leave==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/B/excipient-table-2.pdf]. Do not alter such good vaccines because of such trifles as a couple of superfluous viruses. "
+},
+{
+"num": 11,
+"header": "Efficiency",
+"title": "Measles outbreak in a vaccinated school population: epidemiology, transmission and the role of vaccine failures.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1646939/",
+"info_type": "article",
+"info_date": "1987",
+"info_authors": "Nkowane",
+"infoID": "PMC1646939",
+"info_place": "Am J Public Health",
+"digest": "A measles outbreak in a school in Massachusetts, in which 98% of pupils were vaccinated (27 cases) .The outbreak was initiated by a fully vaccinated 16-year-old girl. Of the 27 cases, three were unvaccinated, and five inadequately vaccinated (ie received inoculation up to 12 months of age when it is less effective), the rest were fully vaccinated.In total, 11 fully vaccinated pupils infected others, and 10 inadequately vaccinated infected others. "
+},
+{
+"num": 12,
+"title": "Outbreak of measles among persons with prior evidence of immunity",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24585562",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Rosen",
+"infoID": "24585562",
+"info_place": "Clin Infect Dis",
+"info_geo": "New_York",
+"EventDate": "2011",
+"digest": "Until now it was believed that although measles vaccinated against measles can become infected, they can not infect others (the authors clearly did not read the previous article, and dozens of other articles on measles outbreaks in fully vaccinated schools.) And, it turned out, Twice a girl who was vaccinated with a twenty-two-year-old girl infected four people with measles, three of whom were medical workers, all four were either vaccinated with two doses or they had measles antibodies. <br> Here are some articles about measles outbreaks in full or almost fully vaccinated collectives: ",
+"sources_pool": [{
+"title": "[1]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9921727",
+"info_type": "article",
+"info_date": "1999",
+"infoID": "9921727"
+},
+{
+"title": "[2]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4047794",
+"info_type": "article",
+"info_date": "1985",
+"info_authors": "H F Hull",
+"infoID": "4047794"
+},
+{
+"title": "[3]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28461876",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Parivash Davoodian",
+"infoID": "28461876"
+},
+{
+"title": "[4]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16583967",
+"info_type": "article",
+"info_date": "2003",
+"info_authors": "Nilambar Jha",
+"infoID": "16583967"
+},
+{
+"title": "[5]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26589518",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Rui Ma",
+"infoID": "26589518"
+},
+{
+"title": "[6]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/3821823",
+"info_type": "article",
+"info_date": "1987",
+"info_authors": "T L Gustafson",
+"infoID": "3821823"
+},
+{
+"title": "[7]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/1884314",
+"info_type": "article",
+"info_date": "1991",
+"info_authors": "N Boulianne",
+"infoID": "1884314"
+},
+{
+"title": "[8]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16322148",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Lorraine F Yeung",
+"infoID": "16322148"
+},
+{
+"title": "[9]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/140009",
+"info_type": "article",
+"info_date": "1977",
+"info_authors": "K Markvart",
+"infoID": "140009"
+},
+{
+"title": "[10]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4014205",
+"info_type": "article",
+"info_date": "1985",
+"info_authors": "S G Wassilak",
+"infoID": "4014205"
+},
+{
+"title": "[11]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9850133",
+"info_type": "article",
+"info_date": "1985",
+"info_authors": "M Paunio",
+"infoID": "9850133"
+}]
+},
+{
+"num": 13,
+"title": "Difficulties in Eliminating Measles and Controlling Rubella and Mumps: A Cross-Sectional Study of a First Measles and Rubella Vaccination and a Second Measles, Mumps, and Rubella Vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3930734/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Wang",
+"infoID": "PMC3930734",
+"info_place": "PLoS One",
+"digest": "In China, vaccination coverage is higher than 99%, but in spite of this, measles does not disappear: 93.6% of the population has measles, 86.7% has mumps, and 74.6% has rubella. 40 years of antibodies against measles and rubella are much less than in men of the same age category, that is, during pregnancy, when protection against measles and rubella is the most important, thanks to vaccination many women do not have it.Even fewer antibodies in children of 7- and a month old and younger (in China, vaccinated against measles at 8 months.) Indeed, most cases of measles are registered in the age of ie 20-29 years. The same thing is happening in other provinces. <br> rubella most ill at the age of 15-39 years, whereas it is the most dangerous for pregnant women. "
+},
+{
+"num": 14,
+"title": "Measles incidence rate and a phylogenetic study of the contemporary genotype H1 measles strains in China: is an improved measles vaccine needed?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21701857",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Shi",
+"infoID": "21701857",
+"info_place": "Virus Genes",
+"digest": "Despite the coverage of vaccination in 98.5% in one of the provinces of China, the number of cases of measles is only growing, and adults are ill adults instead. The authors isolated 16 strains of the virus from 14 vaccinated and two ungrafted, and conclude that the virus mutates, so vaccinated people fall ill. They are calling for the development of new measles vaccines."
+},
+{
+"num": 15,
+"title": "Detection of measles virus RNA in urine specimens from vaccine recipients.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC228449/",
+"info_type": "article",
+"info_date": "1995",
+"info_authors": "Rota",
+"infoID": "PMC228449",
+"info_place": "J Clin Microbiol",
+"digest": "It is known that during the disease the measles virus is excreted in the urine up to 10 days after the onset of the rash, and it turned out that after the vaccination the virus is also excreted in the urine from the first day, and for at least 14 days, ( the study was discontinued after 14 days.) According to another study, the virus is released 16 days after vaccination. <br> <br> The frequency of such asymptomatic and subclinical infections that CDC does not define as measles is unknown, and it is also unknown how much such cases are contagious.In the previous study, that five out of 12 contacts acts of a measles patient, a virus was found in the urine, although only one of them had clinical measles symptoms. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/11858860] and [here==http://www.eurosurveillance.org/ViewArticle.aspx?ArticleId=19652] reported that the vaccine strain of measles virus after vaccination can also be found in the throat. "
+},
+{
+"num": 16,
+"title": "Maternally derived measles immunity in the era of vaccine-protected mothers.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/2563011",
+"info_type": "article",
+"info_date": "1989",
+"info_authors": "Koskiniemi",
+"infoID": "2563011",
+"info_place": "Lancet",
+"digest": "Because vaccines have fewer antibodies than those who have recovered, vaccinated mothers transmit fewer antibodies to babies across the placenta than ungrafted ones. <br> Children of mothers who were born before 1957 (ie before they began to vaccinate) are protected against measles on average up to six months of age through maternal antibodies, while the children of mothers who were born after 1963 have an average of up to 4 months' protection. "
+},
+{
+"num": 17,
+"title": "Increased susceptibility to measles in infants in the United States.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10545585",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Papania",
+"infoID": "10545585",
+"info_place": "Pediatrics",
+"digest": "Infants with vaccinated mothers have been infected with measles 7.5 times more often than infants of unvaccinated mothers.Through vaccination, more and more babies are not protected against measles.Therefore, the authors recommend vaccinating unprotected children no later than 12 months of age. mothers have much more antibodies to measles than those vaccinated: ",
+"sources_pool": [{
+"title": "[1]",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2874774",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Hong Zhao",
+"infoID": "PMC2874774"
+},
+{
+"title": "[2]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20483946",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "E Leuridan",
+"infoID": "20483946"
+}]
+},
+{
+"num": 18,
+"title": "Comparative Analysis of Titers of Antibody against Measles Virus in Sera of Vaccinated and Naturally Infected Japanese Individuals of the Different Age Groups.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC130661/",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Itoh",
+"infoID": "PMC130661",
+"info_place": "J Clin Microbiol",
+"digest": "The number of antibodies in vaccinated is 23.2 times less than that of ungrafted, and by the age of 20 it is significantly reduced, after 20 years it rises again, which indicates a natural infection."
+},
+{
+"num": 19,
+"title": "The future of measles in highly immunized populations. A modeling approach. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/6741921",
+"info_type": "article",
+"info_date": "1984",
+"info_authors": "Levy",
+"infoID": "6741921",
+"info_place": "Am J Epidemiol",
+"digest": "In the pre-vaccination period, 10.6% of the population were susceptible to measles, from the beginning of vaccination, this figure fell to 3.1%, but then began to rise by 0.1% per year. By 2050, the susceptibility to measles will be higher than in pre-vaccination times And this [will lead to unprecedented epidemics==http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2677258/]."
+},
+{
+"num": 20,
+"title": "Measles reimmunization in children seronegative after initial immunization.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9087472",
+"info_type": "article",
+"info_date": "1997",
+"info_authors": "Poland",
+"infoID": "9087472",
+"info_place": "JAMA",
+"digest": "20% of children had no antibodies to measles at 4-11 years after vaccination. <br> [Here==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3905323/] is reported , that in 2-10% of children antibodies do not appear at all after 2 doses of the vaccine. "
+},
+{
+"num": 21,
+"title": "Resistance of recent measles virus wild-type isolates to antibody-mediated neutralization by vaccinees with antibody.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10935994",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Klingele",
+"infoID": "10935994",
+"info_place": "J Med Virol",
+"digest": "Blood was taken from vaccinated people, and in unvaccinated but ill measles, and compared how antibodies cope with different strains of measles virus. The vaccinated neutralized 25% of the strains, and the unvaccinated strain 54%. In all, 10% of the strains were not neutralized would have 75% of the unvaccinated, while among the vaccinated there were 50% of such strains. "
+},
+{
+"num": 22,
+"title": "Measles Virus Neutralizing Antibodies in Intravenous Immunoglobulins: is an Increase by Re-Vaccination of Plasma Donors possible?",
+"link": "https://doi.org/10.1093/infdis/jix428",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Modrof",
+"infoID": "",
+"info_place": "J. Infect. Dis. ahead of print",
+"I_S_codenames": ["MMR"],
+"digest": "Immunoglobulin is used to treat measles in people with immune diseases, which is made from donor blood plasma. The authors analyzed antibodies against measles in blood donors, and it turned out that those who were born after 1990 were 7 times fewer antibodies than those who were born before 1962. Vaccination of this problem did not solve, because it raised the level of antibodies only twice, and only for a few months.The authors recommend the FDA to reduce the amount of required antibodies in the immunoglobulin. <br> Another similar [study==https://www.ncbi.nlm.nih.gov/pubmed/26597262]. Erez year after the third vaccination MMR, the amount of antibody has returned to its previous level. "
+},
+{
+"num": 23,
+"title": "The Re-Emergence of Measles in Developed Countries: Time to Develop the Next-Generation Measles Vaccines?",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3905323/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Poland",
+"infoID": "PMC3905323",
+"info_place": "Vaccine",
+"digest": "Many studies show that 2-10% of those vaccinated with two doses do not produce antibodies, so in many developed countries there are measles outbreaks.Our laboratory found that 8.9% of vaccinated children do not have enough antibodies 7 years after vaccination This leads to a paradoxical situation: in a society with a high incidence of vaccination, measles are mostly vaccinated, so it is impossible to eradicate measles with the existing vaccine, since it requires collective immunity in 95%. Therefore, we need new The ideal vaccine will be one that could be done immediately after birth, and which has no contraindications, then we can finally eradicate measles. "
+},
+{
+"num": 24,
+"title": "Measles as an index of immunological function.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4175162",
+"info_type": "article",
+"info_date": "1968",
+"info_authors": "Burnet",
+"infoID": "4175162",
+"info_place": "Lancet",
+"digest": "There is such a rare genetic disease - agammaglobulinemia, in which humoral immunity does not work at all and antibodies are not produced, which does not prevent patients from successfully recovering from measles. Therefore, antibodies and humoral immunity do not play a significant role in measles. ",
+"sources_pool": [{
+"title": "[1]",
+"info_type": "article",
+"link": "http://journals.sagepub.com/doi/pdf/10.1177/003591577406701117"
+},
+{
+"title": "[2]",
+"info_type": "article",
+"info_date": "1974",
+"info_authors": "P J Lachmann",
+"infoID": "PMC1646020",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1646020"
+}]
+},
+{
+"num": 25,
+"digest": "As in the case of other diseases, the definition of measles was narrowed, if previously measles was considered measles only with a specific rash (and often [confused]==http://jamanetwork.com/journals/jama/article-abstract/ 656182] with rubella), then today for the diagnosis of measles [a==https://www.cdc.gov/vaccines/pubs/surv-manual/chpt07-measles.html] laboratory analysis, or a temperature above 38.3, cough, a rash and an established connection to another measles patient. (It is interesting that high temperature, as a side effect of vaccination, [is considered==https://www.cdc.gov/vaccines/pubs/pinkbook/meas.html] 39.4, not 38.3 ). "
+},
+{
+"num": 26,
+"header": "Vitamin A",
+"title": "Intensive vitamin therapy in measles.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2521770/",
+"info_type": "article",
+"info_date": "1932",
+"info_authors": "Ellison",
+"infoID": "PMC2521770",
+"info_place": "BMJ",
+"I_S_codenames": ["vitamin_A"],
+"digest": "In the 1920s, studies began proving that vitamin A protects against infections. In rats on a diet without vitamin A, salivary glands and mucous membranes atrophied, after which these tissues were infected with bacteria and the rats died. In 1931 it turned out that vitamin A [prevents https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2315000] from postpartum sepsis Vitamin A then [called==https://www.ncbi.nlm. nih.gov/pmc/articles/PMC2456524] anti-infective vitamin [[1]==http://pubs.acs.org/doi/abs/10.1021/ed010p97?journalCode=jceda8]. <br> The measles virus attacks epithelial cells. With a deficiency of vitamin A, these atrophy cells ovans, which allows even innocuous bacteria to attack them, and infect the lungs, skin, middle ear and digestive tract, leading to complications. <br> In England, measles is dangerous mainly for children from the poor class, whose diet is fat-free (hence also vitamins A and D). <br> 600 children of measles patients admitted to a London hospital were randomly divided into two groups, half of whom received vitamins A and D in the form of fish oil (courtesy of Glaxo Laboratories). <br> Mortality among those who did not receive vitamins was 8.7%, and among the recipients - 3.7%. After this successful test for the treatment of measles with vitamin A is simply forgotten. "
+},
+{
+"num": 27,
+"title": "Vitamin A supplements and mortality related to measles: a randomized clinical trial.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1245303/",
+"info_type": "article",
+"info_date": "1987",
+"info_authors": "Barclay",
+"infoID": "PMC124530",
+"info_place": "BMJ",
+"I_S_codenames": ["vitamin_A"],
+"digest": "A new vitamin A was discovered only 50 years later, when it turned out that children in Indonesia, even with a small deficit of vitamin A [die==https://www.ncbi.nlm.nih.gov/pubmed/6136744] in 4 times more often, and some age groups are 8-12 times more likely. Also, the addition of vitamin A [decreased==https://www.ncbi.nlm.nih.gov/pubmed/2871418] mortality by 34%. the WHO report of 1968 [stated==http://apps.who.int/iris/handle/10665/41782] that there is nothing else that is associated with infectious diseases more than a lack of vitamin A. <br> Measles lowers the level vitamin A, even in normally eating children. Their level of vitamin becomes even lower than that of malnourished, uninfected children. <br> The authors conducted a randomized study of measles cases in Tanzania, a quarter of the children were severely malnourished, and only 30% had a weight above 80% of the norm, many suffering from anemia. 91% of children had a vitamin A level below 0.56 umol/l (today the lower limit of the norm [is considered==https://medlineplus.gov/ency/article/003570.htm] 1.75 umol/l). Among the children participating in the 14% were extremely depleted, and 58% were underweight. Among those who did not receive vitamin A (400 thousand units), mortality was 13%, and among those who received vitamin, mortality was 7%. Among children under two years of age, vitamin A decreased mortality by 87%. Exhausted children died of measles several times more often than those who ate better, without being associated with vitamin A. <br> After this study, WHO [recommended==http://apps.who.int/iris/handle/10665/226256] use of vitamin A for children with measles, but only where the death rate exceeds 1%. The recommended dose was 100-200 thousand units. (depending on age), despite the fact that the study used a dose of 400 thousand units. "
+},
+{
+"num": 28,
+"title": "A randomized, controlled trial of vitamin A in children with severe measles.",
+"link": "http://www.nejm.org/doi/full/10.1056/NEJM199007193230304",
+"infoID": "article",
+"info_date": "1990",
+"info_authors": "Hussey",
+"infoID": "",
+"info_place": "N Engl J Med",
+"I_S_codenames": ["vitamin_A"],
+"info_geo": "South Africa",
+"digest": "Randomized double-blind study in South Africa (189 children). Unlike Tanzania, where children had a pronounced lack of vitamin, in South Africa, the clinical deficiency of the vitamin is very rare. of children with measles, the level of vitamin A was very low (averaging 0.4 umol/l), 92% had a lower level of 0.7, they also had a low level of retinol binding protein and albumin, all children from the poor area, almost all black or mulatto. <br> Children who received vitamin A (400 thousand units) recovered from pneumonia and d They are 2 times faster, and they had 2 times less cerebrovascular disease (respiratory disease) .10 out of 12 children who died, 10 received a placebo.No one died of a vitamin level above 0.7 umol/l. <br > The authors believe that vitamin A should be given to all critically ill children, and not only where the death rate is above 1%, and the dose should be increased to 400 thousand units, since the effectiveness of a lower dose is not proven. "
+},
+{
+"num": 29,
+"title": "Vitamin A levels in children with measles in Long Beach, California.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/1625097",
+"info_type": "article",
+"info_date": "1991",
+"info_authors": "Arrieta",
+"infoID": "1625097",
+"info_place": "J Pediatr",
+"I_S_codenames": ["vitamin_A"],
+"info_geo": "California",
+"digest": "The authors tested the vitamin A level in 20 children with measles in California, and to their surprise, half of them had low levels of vitamin A (less than 0.7), despite the fact that everyone was well fed. In the second control group (patients with other infectious diseases), 30% had a low level of vitamin A. All patients with measles also had a low level of retinol-binding protein and prealbumin. The authors conclude that it is impossible to further assume , Thu About well-nourished American children, the level of vitamin A during measles is not lowered, and they also suggest that the level of vitamin A is lower in other infectious diseases. "
+},
+{
+"num": 30,
+"title": "Vitamin A levels and severity of measles, New York City.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/1285727",
+"info_type": "article",
+"info_date": "1992",
+"info_authors": "Frieden",
+"infoID": "1285727",
+"info_place": "Am J Dis Child",
+"info_geo": "New_York",
+"I_S_codenames": ["vitamin_A"],
+"digest": "Measured the level of vitamin A in 89 children under 2 years old with measles in New York, and compared with the control group. Almost all were Latina and African Americans, 22% had a low level of vitamin (less than 0.7). % was a borderline level (0.7-0.87), children with a vitamin deficiency often had a high fever (above 40), the temperature stayed longer, and they were 2 times more likely to be hospitalized, and children with borderline vitamin levels were also hospitalized more often. control group, the level of vitamin A was not lowered, and the average level of vitamin A in them was 2 times higher than in the group of measles patients (0.92 vs. 1.9 umol/l). <br> <br> Six children had a documentary confirmation of the vaccination.The symptoms of the disease, the level of the vitamin and the number of antibodies they had were exactly the same as those of not who have documented evidence of vaccination. <br> Lack of vitamin A weakens cellular immunity and reduces the production of antibodies. <br> The authors conclude that half of the children with measles in New York have a low or borderline vitamin A level, and this leads to a more severe illness. They offer to give vitamin A also to children in the United States, not just in the countries of the third world. <br> <br> Related [study==https://www.ncbi.nlm.nih.gov/pubmed/8502524] in Milwaukee. "
+},
+{
+"num": 31,
+"title": "Vitamin A for treating measles in children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16235283",
+"infoID": "article",
+"info_date": "2005",
+"info_authors": "Huiming",
+"infoID": "16235283",
+"info_place": "Cochrane Database Syst Rev",
+"I_S_codenames": ["vitamin_A"],
+"Digest": "Systematic review of Cochrane using vitamin A in the treatment of measles. Two doses of vitamin A (200,000 units each) reduce measles deaths by 82%, the risk of otitis is reduced by 74%, the risk of croup is reduced by 47%. Vitamin And on a water basis is more effective than vitamin A on a fat basis. <br> One dose of vitamin A does not reduce mortality. <br> Can it be that three doses of vitamin A, or higher doses will reduce the mortality even more? This, for some reason, nobody checked. "
+},
+{
+"num": 32,
+"title": "Reduced mortality among children in southern India, receiving a small weekly dose of vitamin A.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/2205798",
+"info_type": "article",
+"info_date": "1990",
+"info_authors": "Rahmathullah",
+"infoID": "2205798",
+"info_place": "N Engl J Med",
+"I_S_codenames": ["vitamin_A"],
+"digest": "A randomized controlled trial of the effects of vitamin A on mortality: 15,000 children were divided into two groups: one received only vitamin E once a week, and the other received vitamin A (8,000 units) a year. of children who received vitamin A, mortality was 54% lower.In children under the age of 4 years, the death rate was 4 times lower than in children who did not receive vitamin A. Among those who were undernourished (such were 72%), vitamin A reduced mortality by 9 times. <br> The authors did not expect such a significant reduction in mortality, since in Indonesia and a similar experiment led to a reduction in mortality of only 11-45% .But in Indonesia, vitamin A was added to sodium glutamate, and in India to peanut oil .It is possible that if in Indonesia to vitamin A added also aluminum, its effect the mortality rate would be even less pronounced. "
+},
+{
+"num": 33,
+"title": "Vitamin A supplementation and child mortality. A meta-analysis.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8426449",
+"info_type": "article",
+"info_date": "1993",
+"info_authors": "Fawzi",
+"infoID": "8426449",
+"info_place": "JAMA",
+"I_S_codenames": ["vitamin_A"],
+"digest": "A meta-analysis of the effects of vitamin A on infant mortality: Vitamin A reduced measles deaths by 60%, and among infants by 90%. Mortality from pneumonia decreased by 70%. "
+},
+{
+"num": 34,
+"title": "Vitamin A supplementation for preventing morbidity and mortality in children from six months to five years of age.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21154399",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Imdad",
+"infoID": "21154399",
+"info_place": "Cochrane Database Syst Rev.",
+"I_S_codenames": ["vitamin_A"],
+"digest": "A systematic review of Cochrane's overall vitamin A impact on morbidity and mortality: Vitamin A preventive supplement reduces mortality by 12-24%, the risk of diarrhea is reduced by 15%, the risk of measles is reduced by 50%."
+},
+{
+"num": 35,
+"title": "Severe measles: some unanswered questions.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/6878999",
+"info_type": "article",
+"info_date": "1983",
+"info_authors": "Morley",
+"infoID": "6878999",
+"info_place": "Rev Infect Dis",
+"I_S_codenames": ["vitamin_A"],
+"digest": "In developed countries, measles is an easy disease, and it's bad, the authors write, because the parents of these children who make decisions in this world may decide that the measles vaccine is not so important, but in Africa, measles they die 400 times more, and therefore vaccination is very important there, they also write that a malnourished child releases 3 times more virus than a normal one, and that malnutrition, especially in children, leads to a more serious illness, and a lack of vitamin A can lead to blindness."
+},
+{
+"num": 36,
+"title": "The effect of live measles vaccines on serum vitamin A levels in healthy children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9745778",
+"info_type": "article",
+"info_date": "1998",
+"info_authors": "Yalçin",
+"infoID": "9745778",
+"info_place": "Acta Paediatr Jpn",
+"I_S_codenames": ["vitamin_A", "MMR"],
+"digest": "Like measles, and a monovalent vaccine against measles and MMR, they also significantly deplete the stores of vitamin A. [[1]==https://www.ncbi.nlm.nih.gov/pubmed/10462357]"
+},
+{
+"num": 37,
+"title": "Vitamin A and Measles.",
+"link": "http://onlinelibrary.wiley.com/doi/10.1111/j.1753-4887.2000.tb07803.x/full",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "West",
+"infoID": "",
+"info_place": "Nutr Rev",
+"I_S_codenames": ["vitamin_A"],
+"digest": "A review article on vitamin A and measles. In England, measles mortality fell 200 times from 1908 to 1960, before vaccination was introduced. The authors write that the tradition of giving children every day fish oil (rich in vitamin A ) has practically disappeared in Europe, and has remained only in Norway, they recommend giving vitamin A along with the vaccination. "
+},
+{
+"num": 38,
+"I_S_codenames": ["vitamin_C"],
+"digest": "Vitamin C, perhaps, too [leads = to https://www.seanet.com/~alexs/ascorbate/194x/klenner-fr-southern_med_surg-1949-v111-n7-p209.htm] to the fast recovery from measles. "
+},
+{
+"num": 39,
+"I_S_codenames": ["vitamin_A"],
+"digest": "Unlike vitamin A, there is no research proving that measles vaccination leads to a decrease in mortality from it. <br> And now remember how much you heard in the media about vitamin A, and how much about vaccinations in the light of the latest \"epidemics\" of measles. "
+},
+{
+"num": 40,
+"header": "Use of measles and other infectious diseases",
+"title": "Hodgkin's disease: remissions after measles.",
+"link": "http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(71)91186-X/abstract",
+"info_type": "article",
+"info_date": "1971",
+"info_authors": "Zygiert",
+"infoID": "",
+"info_place": "Lancet",
+"info_geo": "Poland",
+"I_S_codenames": ["Hodgkin's_lymphoma"],
+"digest": "Three children with confirmed Hodgkin's lymphoma became ill with measles, after measles, all three of them had lymphoma, two of them had a small relapse in two years. The third remission lasts for 6 years. (Poland)."
+},
+{
+"num": 41,
+"title": "Infantile Hodgkin's disease: remission after measles.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1589969/",
+"info_type": "article",
+"info_date": "1973",
+"info_authors": "Mota",
+"infoID": "PMC1589969",
+"info_place": "BMJ",
+"info_geo": "Portugal",
+"I_S_codenames": ["Hodgkin's_lymphoma", "wine"],
+"digest": "A similar case in Portugal. The two-year-old boy showed Hodgkin's lymphoma before radiotherapy, the boy contracted measles, and the lymphoma disappeared. After 6 months of remission, the mother discovered reddening of the face and neck in the child, after he drank wine, it turned out that there was a slight relapse of the lymphoma. <br> <br> Why did the mother give a two-year-old child a wine, did she do it long ago, and whether this had to do with the original disease, the article does not say."
+},
+{
+"num": 42,
+"title": "Regression of Hodgkin's disease after measles.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/6112483",
+"info_type": "article",
+"info_date": "1981",
+"info_authors": "Tagi",
+"infoID": "6112483",
+"info_place": "Lancet",
+"info_geo": "Nigeria",
+"I_S_codenames": ["Hodgkin's_lymphoma", "wine"],
+"digest": "A similar case in Nigeria in 1981. A case of curing lymphoma after measles in Cuba in 1949 was also recorded."
+},
+{
+"num": 42.1,
+"title": "Regression of Burkitt's lymphoma in association with measles infection.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4103972",
+"info_type": "article",
+"info_date": "1971",
+"info_authors": "Bluming",
+"infoID": "4103972",
+"info_place": "Lancet",
+"info_geo": "Uganda",
+"I_S_codenames": ["Burkitt's_lymphoma", "measles"],
+"digest": "The 8-year-old boy had swollen eyes, so he could not see them anymore, and Burkitt's lymphoma was diagnosed. 10 days after the diagnosis, he contracted measles, and within two weeks the tumor disappeared and he completely recovered. "
+},
+{
+"num": 42.2,
+"title": "Possible effect of measles on leukaemia.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4099624",
+"info_type": "article",
+"info_date": "1971",
+"info_authors": "Pasquinucci",
+"infoID": "4099624",
+"info_place": "Lancet",
+"info_geo": "Italy",
+"I_S_codenames": ["Lymphoblastic_leukemia", "measles", "rubella"],
+"digest": "Out of four cases of lymphoblastic leukemia in 1965, two died, and two got measles during treatment and are still alive. The author also believes that it is possible that the rubella virus also has rubella there is a beneficial effect. "
+},
+{
+"num": 43,
+"I_S_codenames": ["myeloma", "ovarian_cancer", "skin_cancer", "melanoma"],
+"digest": "In 2014 [a woman==http://edition.cnn.com/2014/05/15/health/measles-cancer-remission/index.html] was cured of multiple myeloma by a huge dose of a recombinant measles virus <br> <br> At present, clinical trials of the treatment of various cancers by means of the measles virus are underway. [[Here==https://www.ncbi.nlm.nih.gov/pubmed/15961518] reported the successful use of the virus to treat skin cancer in five patients. [Here==https://www.ncbi.nlm.nih.gov/pubmed/15961518 ] on how the measles virus destroys melanoma cells. <br> Measles virus has also been used successfully for treatment of ovarian cancer [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2890216/], [[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4377302 /]. The virus was much more effective [avastina==https://en.wikipedia.org/wiki/Bevacizumab], fashionable for today, a very toxic and very expensive cancer drug. "
+},
+{
+"num": 44,
+"I_S_codenames": ["Hodgkin's_lymphoma", "lymphoma"],
+"digest": "Those who [were ill], as a child, measles, the risk of Hodgkin's lymphoma was on 66% less than those who did not suffer from it.Corrected measles also reduced the risk of non-Hodgkin's lymphoma by 40%, while chickenpox reduced the risk of lymphoma by 47%. <br> <br> Hodgkin's lymphoma was also reduced by mumps, rubella, whooping cough and scarlet fever. of infectious diseases was in childhood, the lower the risk of lymphoma .. Three childhood diseases reduced the risk of non-Hodgkin's lymphoma by 40%, and the Hodgkin's lymphoma by 80%. "
+},
+{
+"num": 45,
+"title": "Doing young children's health NHL and HL risk? A case-control study from northern and southern Italy. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16406019",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "Montella",
+"infoID": "16406019",
+"info_place": "Leuk Res",
+"I_S_codenames": ["Hodgkin's_lymphoma", "lymphoma"],
+"digest": "Measles reduces the risk of non-Hodgkin's lymphoma by 40%, and Hodgkin's lymphoma by 70%. Chicken pox, mumps and rubella reduce the risk of Hodgkin's lymphoma by 50%, and scarlet fever by 80%. <br> Two children's illnesses reduce the risk of non-Hodgkin's lymphoma by 50%, and the Hodgkin's - by 80%. "
+},
+{
+"num": 46,
+"title": "Risk factors for Hodgkin's disease by Epstein-Barr virus",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2374437",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Alexander",
+"infoID": "PMC2374437",
+"info_place": "Br J Cancer",
+"I_S_codenames": ["Hodgkin's_lymphoma"],
+"digest": "Measles reduced the risk of Hodgkin's lymphoma by 47%. Two or more childhood illnesses reduced the risk of lymphoma by 55%. "
+},
+{
+"num": 47,
+"title": "Exposure to childhood infections and risk of Epstein-Barr virus-defined Hodgkin's lymphoma in women.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15700307",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Glaser",
+"infoID": "15700307",
+"info_place": "Int J Cancer",
+"I_S_codenames": ["Hodgkin's_lymphoma"],
+"digest": "Measles, mumps or rubella in childhood reduced the risk of Hodgkin's EBV lymphoma in women by 70% <br> Those who had had measles before the age of ten, the risk of lymphoma was 96% lower than those who had measles after ten years of age.",
+"sources_pool": [{
+"title": "Characteristics in youth indicative of the adult-onset of Hodgkin's disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/857036",
+"info_type": "article",
+"info_date": "1977",
+"info_authors": "Paffenbarger",
+"infoID": "857036",
+"info_place": "J Natl Cancer Inst",
+"digest": "A similar study among men: childhood illnesses reduced the risk of Hodgkin's lymphoma by 20-60%."
+},
+{
+"title": "Self-reported history of infections and the risk of non-Hodgkin lymphoma: an InterLymph pooled analysis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3406230/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Becker",
+"infoID": "PMC3406230",
+"info_place": "Int J Cancer",
+"digest": "Measles and whooping cough reduced the risk of non-Hodgkin's lymphoma by 15%."
+}]
+},
+{
+"num": 48,
+"title": "Febrile infectious childhood diseases in the history of cancer patients and matched controls.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9824838",
+"info_type": "article",
+"info_date": "1998",
+"info_authors": "Albonico",
+"infoID": "9824838",
+"info_place": "Med Hypotheses",
+"I_S_codenames": ["cancer"],
+"digest": "Measles in childhood reduced the risk of various cancers (not including breast cancer) by 55%, rubella by 62%, and chickenpox by 38%. In those who had three or four childhood diseases, the risk of cancer was 60 % lower than those who did not suffer from childhood illnesses.In more than four diseases, the risk of cancer was 76% lower. "
+},
+{
+"num": 49,
+"title": "Febrile infections and malignant melanoma: results of a case-control study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/1450674",
+"info_type": "article",
+"info_date": "1992",
+"info_authors": "K & oml lmel",
+"infoID": "1450674",
+"info_place": "Melanoma Res",
+"I_S_codenames": ["melanoma"],
+"digest": "Those who had childhood diseases had a lower risk of melanoma (but there is no statistical significance.) Those who had a cold or flu had a 68% lower risk of melanoma. The infected wound reduced the risk of melanoma by 79% Chronic infectious disease reduced the risk of melanoma by 68%."
+},
+{
+"num": 50,
+"title": "Infections and melanoma risk: results of a multicenter EORTC case-control study. European Organization for Research and Treatment of Cancer. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10596918",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "K & oml lmel",
+"infoID": "10596918",
+"info_place": "Melanoma Res",
+"I_S_codenames": ["melanoma"],
+"digest": "Virtually all infectious diseases reduce the risk of melanoma.The flu reduces by 35%, pneumonia by 55%, staphylococcus by 46%.",
+"sources_pool": [{
+"title": "Childhood leukemia and infectious diseases in the first year of life: a register-based case-control study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/3463201",
+"info_type": "article",
+"info_date": "1986",
+"info_authors": "van Steensel-Moll",
+"infoID": "3463201",
+"info_place": "Am J Epidemiol",
+"digest": "Colds, fever and children's infections reduced the risk of leukemia. Even more similar studies:"
+},
+{
+"title": "Exposure to infections through day-care attendance and risk of childhood leukaemia.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2879097/",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Urayama",
+"infoID": "PMC2879097",
+"info_place": "Radiat Prot Dosimetry"
+},
+{
+"title": "Socioeconomic status and childhood acute lymphocytic leukemia incidence in S & ato Paulo, Brazil.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18688860",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Ribeiro",
+"infoID": "18688860",
+"info_place": "Int J Cancer"
+}]
+},
+{
+"num": 51,
+"title": "A case study of carcinoma of the ovary.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC479015/",
+"info_type": "article",
+"info_date": "1977",
+"info_authors": "Newhouse",
+"infoID": "PMC479015",
+"info_place": "Br J Prev Soc Med",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "Measles reduces the risk of ovarian cancer by 53%, mumps 39%, rubella by 38%, chickenpox by 34%. Pregnancy reduces the risk of ovarian cancer by 73%. "
+},
+{
+"num": 52,
+"title": "Measles infection and Parkinson's disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4061437",
+"info_type": "article",
+"info_date": "1985",
+"info_authors": "Sasco",
+"infoID": "4061437",
+"info_place": "Am J Epidemiol",
+"I_S_codenames": ["parkinson's_disease"],
+"digest": "A study of 50,000 graduates of Harvard University and the University of Pennsylvania.The risk of Parkinson's disease was 2 times lower in those who had childhood measles, chickenpox and mumps also reduced the risk of Parkinson. <br> <br> Similar studies: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/5015581], [[2]==https://www.ncbi.nlm.nih.gov/labs/articles/5074681/] <br > A measles vaccine sometimes [leads =] to Parkinson in children. "
+},
+{
+"num": 53,
+"title": "Association of measles and mumps with cardiovascular disease: The Japan Collaborative Cohort",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26122188",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Kubota",
+"infoID": "26122188",
+"info_place": "Atherosclerosis",
+"info_geo": "Japan",
+"I_S_codenames": ["cardiovascular_diseases"],
+"digest": "A prospective study of more than 100,000 people in Japan, who were followed for 20 years.In men who had childhood measles, the risk of dying from cardiovascular disease was 8% lower, and those who also had an illness mumps is 20% lower. <br> In men who have had mumps, the risk of dying from stroke was 48% lower. <br> In women who had been ill with measles and mumps, the risk of dying from cardiovascular disease was 17% lower. ",
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/2341/2341_original.jpg"
+},
+{
+"num": 54,
+"title": "Dual role of infections as risk factors for coronary heart disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16780845",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Pesonen",
+"infoID": "16780845",
+"info_place": "Atherosclerosis",
+"I_S_codenames": ["heart_attack"],
+"digest": "Measles reduced the risk of heart attack by 30%, chickenpox by 33%, scarlet fever by 31%, mumps by 25%, rubella by 9%, mononucleosis by 33%. The more these infectious diseases a person suffered as a child, the lower one disease reduced the risk of a heart attack by 35%, two by 40%, three by 47%, four and five diseases by 54%, and all six listed diseases together reduced the risk of heart attack by 89%. <br> LDL level \"bad cholesterol\") was 2.41 mmol/L in patients, but in the control group (who did not have a heart attack) he was 3.67. (hello, statins!) "
+},
+{
+"num": 55,
+"title": "Effect of measles on the nephrotic syndrome.",
+"link": "http://jamanetwork.com/journals/jamapediatrics/article-abstract/1180367",
+"info_type": "article",
+"info_date": "1947",
+"info_authors": "Blumberg",
+"infoID": "1180367",
+"info_place": "Am J Dis Child",
+"I_S_codenames": ["nephrotic_syndrome"],
+"digest": "5 patients with nephrotic syndrome got measles, two of them had a nephrotic syndrome after measles, three had only temporary improvement. The authors analyzed medical literature and found several more cases of curing the nephrotic syndrome after measles, and frequent cases of temporary improvement. The authors report that measles was the most effective treatment for nephrotic syndrome from all the methods they used. "
+},
+{
+"num": 56,
+"title": "A notable case of nephrosis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1544932/",
+"info_type": "article",
+"info_date": "1978",
+"info_authors": "Gairdner",
+"infoID": "PMC1544932",
+"info_place": "Arch Dis Child",
+"I_S_codenames": ["nephrotic_syndrome"],
+"digest": "It tells about the severe case of nephrotic syndrome in a ten-year-old boy in England in 1916. The child was ill for months and almost died, doctors did not give him a chance, and his family had already bought mourning clothes. But suddenly he contracted measles, and after it completely recovered from the nephrotic syndrome, then he worn the mourning costumes of his brothers for years, and then became a famous pediatrician, professor, and president of the National Pediatric Association. "
+},
+{
+"num": 57,
+"title": "Measles virus infection without rash in childhood is related to the disease in adult life.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/2856946",
+"info_type": "article",
+"info_date": "1985",
+"info_authors": "Rønne T.",
+"infoID": "2856946",
+"info_place": "Lancet",
+"I_S_codenames": ["cancer", "dermatitis", "eczema", "autoimmune_diseases", "osteoarthritis"],
+"digest": "Those who did not have measles in their childhood (or had a sick atypical, without a rash, like after vaccination) had an increased risk in adulthood: 1) immunoreactive diseases (autoimmune diseases due to an infectious disease), <br > 2) skin diseases (dermatitis, eczema, etc.), <br> 3) degenerative diseases of bone and cartilage (osteoarthritis, etc.), <br> 4) oncological diseases. "
+},
+{
+"num": 58,
+"title": "Multiple sclerosis and age at exposure to childhood diseases and animals: cases and their friends.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/6540400",
+"info_type": "article",
+"info_date": "1984",
+"info_authors": "Sullivan",
+"infoID": "6540400",
+"info_place": "Neurology",
+"I_S_codenames": ["multiple sclerosis"],
+"digest": "Those who have been infected with measles and other infectious diseases at an early age are less likely to have multiple sclerosis. Similar studies: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/3762950] , [[2]==https://link.springer.com/article/10.1007/BF02361431] "
+},
+{
+"num": 59,
+"title": "Low mortality after mild measles, compared to uninfected children in rural West Africa. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/12443670",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Aaby",
+"infoID": "12443670",
+"info_place": "Vaccine",
+"info_geo": "Senegal",
+"digest": "The study in the Senegalese village. During the outbreak of measles, 66 children became ill, and 149 did not fall ill, followed by 4 years. The children who received measles were 86% less likely to die from other infectious diseases. <br> Similar results were observed in Guinea Bissau (mortality in those who had measles was 50% lower), as well as in [Senegal==https://www.ncbi.nlm.nih.gov/pubmed/8629610] (mortality was 4 times lower among the sick), and in Bangladesh. "
+},
+{
+"num": 60,
+"title": "Measles and atopy in Guinea-Bissau.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8667923",
+"info_type": "article",
+"info_date": "1996",
+"info_authors": "Shaheen",
+"infoID": "8667923",
+"info_place": "Lancet",
+"info_geo": "Guinea-Bissau",
+"I_S_codenames": ["allergy"],
+"digest": "In children in Guinea-Bissau, who had been ill with measles, the allergy was 3 times less common than in vaccinated children who did not get it. They allergic to a home dust mite 5 times less often. <br> Explained this is because the measles virus stimulates cellular immunity, whereas humoral immunity is responsible for allergies. <br> <br> Children who have been breastfed for more than a year and children in pig houses have also had an allergy less often, according to indirect data, infections protect against allergies only if infection occurs in the p Anemone age: most likely the reaction of T cells to allergens ripens to 5-7 years of age, and before that time it changes under the influence of environmental factors such as infections. <br> Two more similar studies in Turkey: ",
+"sources_pool": [{
+"title": "[1]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16854347",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "E Kucukosmanoglu",
+"infoID": "16854347",
+"info_place": "Allergologia et immunopathologia"
+},
+{
+"title": "[2]",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/14998384",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Kuyucu",
+"infoID": "14998384",
+"info_place": "Pediatr Allergy Immunol"
+}]
+},
+{
+"num": 61,
+"title": "Allergic disease and atopic sensitization in children in relation to measles vaccination and measles infection.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19255001",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Rosenlund",
+"infoID": "19255001",
+"info_place": "Pediatrics",
+"I_S_codenames": ["allergy"],
+"digest": "A study of 14,900 children from five European countries: those who had had measles, allergy was twice as rare, and the vaccination also reduced allergies, but less. In vaccinated and not infected measles, the risk of rhinoconjunctivitis was 70 % higher than those who were unvaccinated and not ill. <br> <br> 11% of vaccinated children had measles, 31% of unvaccinated children did not get measles .. Similar [study==https://www.ncbi.nlm.nih.gov/pubmed/16387585] Antibiotics in the first year of life increased the risk of rhinoconjunctivitis by 2 times, asthma 2.8 times, eczema 1.6 times. Antipyretics increased the risk of asthma by 54%, and eczema 32%. "
+},
+{
+"num": 62,
+"title": "Atopy in children of families with an anthroposophic lifestyle.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10232315",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Alm",
+"infoID": "10232315",
+"info_place": "Lancet",
+"I_S_codenames": ["allergy", "MMR"],
+"digest": "Those who were not vaccinated with MMR, allergies were 33% less common, those who fed mainly organic allergy products were 37% less likely." "Allergies were also less common in those who did not use antibiotics, did not use antipyretic drugs, were ill with measles, ate fermented vegetables, or were at breastfeeding for at least 4 months. "
+},
+{
+"num": 63,
+"title": "Breast-feeding and a subsequent diagnosis of measles.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19133867",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Silfverdal",
+"infoID": "19133867",
+"info_place": "Acta Paediatr",
+"digest": "For children who have been breastfed for more than 3 months, the risk of clinical measles was 30% lower compared to those who were not on HBV without a vaccination link. <br> It is also reported that out of 5569 vaccinated children, 28% had measles. "
+},
+{
+"num": 64,
+"info_type": "article",
+"infoID": "PMC1448377",
+"info_date": "2004",
+"info_authors": "Tricia M. McKeever",
+"I_S_codenames": ["eczemae", "asthma", "MMR"],
+"digest": "[Study==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1448377], which I mentioned in another part: Grafted MMRs were 3.5 times more likely to have asthma, and 4.5 times more often with eczema .. More in part 6, paragraph 10. "
+},
+{
+"num": 65,
+"title": "Improvement of food-sensitive atopic dermatitis, accompanied by reduced lymphocyte responses to food antigen following natural measles virus infection.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8439821",
+"info_type": "article",
+"info_date": "1993",
+"info_authors": "Kondo",
+"infoID": "8439821",
+"info_place": "Clin Exp Allergy",
+"I_S_codenames": ["eczemae", "allergy"],
+"digest": "5 patients with eczema and egg allergy were infected with measles. A month later, in four of them, the symptoms of eczema improved significantly. The fifth had a temporary improvement."
+},
+{
+"num": 66,
+"title": "Infections and atopy: an exploratory study for a meta-analysis of the & quot; hygiene hypothesis & quot ;",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15741918",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Randi",
+"infoID": "15741918",
+"info_place": "Rev Epidemiol Sante Publique",
+"I_S_codenames": ["allergy", "asthma", "dermatitis"],
+"digest": "Preliminary analysis of 10 articles for the subsequent meta-analysis. According to indirect markers, infectious diseases reduced the risk of dermatitis by 20%, the risk of allergic rhinitis by 30%, and the risk of asthma by 40%. "
+},
+{
+"num": 67,
+"header": "Security",
+"title": "The Risk of Seizures after Receipt of Whole-Cell Pertussis or Measles, Mumps, and Rubella Vaccine.",
+"link": "http://www.nejm.org/doi/full/10.1056/NEJMoa003077#t=article",
+"info_type": "article",
+"info_date": "2001",
+"info_authors": "Barlow",
+"info_place": "N Engl J Med",
+"digest": "The risk of febrile seizures in infants under 12 months who received a DTP vaccine was 9.3 times higher on the day of vaccination than in unvaccinated children. The risk of febrile seizures in those who received the MMR vaccine was 2.8 times higher than 8-14 days after vaccination. <br> In another [study==https://www.ncbi.nlm.nih.gov/pubmed/17204517], the risk of febrile seizures after MMR was 6-fold higher. : [[1]==https://www.ncbi.nlm.nih.gov/pubmed/15265850], [[2]==http://www.thelancet.com/journals/lancet/article/PIIS0140- 6736 (95) 90471-9/abstract], [[3]==https://www.ncbi.nlm.nih.gov/pubmed/1945626] "
+},
+{
+"num": 68,
+"title": "Vaccines for measles, mumps and rubella in children.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22336803/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Demicheli",
+"infoID": "22336803",
+"info_place": "Cochrane Database Syst Rev",
+"I_S_codenames": ["MMR", "febrile_seizures", "meningitis", "thrombocytopenic_purpura"],
+"digest": "A systematic review of the effectiveness and safety of MMR, conducted by Cochrane. <br> The vaccine increases the risk of aseptic meningitis 14-22 times, the risk of febrile seizures 4-5.7 times, the risk of thrombocytopenic purpura 2.4-6.3 times. conclude that the clinical and post-clinical safety studies of MMR are largely inadequate and that it is impossible to separate the role of the vaccine in preventing the disease and the side effects it causes. They recommend improving the format and reporting of clinical and post- and one hundred It is also necessary to check how long the protective effect of the MMR lasts. "
+},
+{
+"num": 69,
+"title": "Adverse Reactions Following Immunization with MMR Vaccine in Children at Selected Provinces of Iran.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21361714",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Esteghamati",
+"infoID": "",
+"info_place": "Arch Iran Med",
+"info_geo": "Iran",
+"I_S_codenames": ["parotitis", "encephalopathy", "anaphylactic_shock", "febrile_seizures"],
+"digest": "Study of the side effects of MMR in Iran (43 thousand vaccinated children), 1.8% had mumps, two had encephalopathy, and two had anaphylactic shock, that is, the risk of encephalopathy and anaphylactic shock is about 1 to 20,000, and not 1 in a million, as people usually like to claim. <br> <br> The risk of convulsions (not febrile) was 1 for 2000 vaccinations in infants.The risk of febrile seizures is 1 at 1750. "
+},
+{
+"num": 70,
+"title": "Adverse events associated with MMR vaccines in Japan.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8741307",
+"info_type": "article",
+"info_date": "1996",
+"info_authors": "Kimura",
+"infoID": "",
+"info_place": "Acta Paediatr Jpn",
+"I_S_codenames": ["MMR", "meningitis"],
+"digest": "Investigation of the side effects of 4 different MMR vaccines: 38,000 children were vaccinated. Aseptic meningitis (with a laboratory confirmed vaccine strain of mumps in the cerebrospinal fluid) after a standard vaccine was registered in one for every 600 vaccinated (in all, aseptic meningitis occurred one in 400 after the standard MMR.) One out of every 350 vaccines had convulsions not associated with meningitis (40% of them had non-febrile convulsions). <br> <br> One of the vaccines did not cause aseptic meningitis.It turned out that the comp The one that produced her namudrila something with vaccine strains, and no one reported it. <br> In other countries, aseptic meningitis after MMR was less common (from 1: 4000 to 1: 282000). <br> As a result of this study, In 1993, the Ministry of Health of Japan banned the use of MMR, and it is banned there until now. (The study lasted from October 1991 to April 1993, and was published in 1996.) "
+},
+{
+"num": 71,
+"header": "measles encephalitis",
+"title": "Measles inclusion-body encephalitis caused by the vaccine strain of measles virus.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10589903/",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Bitnun",
+"infoID": "8741307",
+"info_place": "Clin Infect Dis",
+"I_S_codenames": ["MMR", "encephalitis"],
+"digest": "A healthy 12-month-old baby was inoculated with MMR, and 8.5 months later, he developed encephalitis (MIBE). A brain biopsy revealed a measles vaccine strain. The baby died after 1.5 months. patients, not with healthy. <br> In principle, MIBE is the same [panencephalitis==https://en.wikipedia.org/wiki/Subacute_sclerosing_panencephalitis] (SSPE), a rare complication of measles that manifests itself in a few years, but it develops earlier and much faster.Indeed not the fact that measles panencephalitis from the vaccine happens less often than from the disease, [another similar case==https://www.ncbi.nlm.nih.gov/pubmed/7645392]. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/16829007], it is reported that of the nine cases of panencephalitis, three were vaccinated, and two were unvaccinated. [The others are unknown.] [[Here==https://www.ncbi.nlm.nih.gov/pubmed/2491742] is reported , that the proportion of vaccinated among patients with panencephalitis is increasing, and it appears more quickly in vaccinated patients than in those who have recovered measles. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/2563011] it is reported that in Finland after the introduction of MMR, the number of severe cases of encephalitis only increased. <br> [Here==https://www.ncbi.nlm.nih.gov/pubmed/9243237] it is reported that despite a decrease in the incidence of measles encephalitis after vaccination, the total number of cases of encephalitis has not changed, simply measles replaced other viruses. <br> [Here==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3742472/] describes the measles epidemic in Vietnam in 2008 among 20-year-olds, and it is reported that 11 of 15 cases of measles encephalitis were vaccinated, two are unvaccinated, and two are unknown. <br> CDC [argue==https:// www. cdc.gov/vaccines/pubs/pinkbook/meas.html], that mortality of measles encephalitis is 15%. However, before the introduction of the vaccine, its lethality was much lower. [Here==https://www.ncbi.nlm.nih.gov/pubmed/4182814] 42 cases of measles encephalitis have been reported in 1961. No one died. <br> [Case==https://www.ncbi.nlm.nih.gov/pubmed/4182814] measles encephalitis and also disability and blindness in a girl after measles vaccination in 1969. <br> [Here==https://link.springer.com/article/10.1007/BF01253828] is reported that the risk of measles encephalitis rises with age. That is, the vaccination, which actually pushes the disease out at a later date, significantly increases the risk of measles encephalitis. "
+},
+{
+"num": 72,
+"title": "Acute encephalopathy followed by permanent brain injury or death associated with further attenuated measles vaccines: a review of the claims submitted to the National Vaccine Injury Compensation Program.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9481001",
+"info_type": "article",
+"info_date": "1998",
+"info_authors": "Weibel",
+"infoID": "9481001",
+"info_place": "Pediatrics",
+"I_S_codenames": ["MMR", "encephalopathy"],
+"digest": "A study of 48 children with encephalopathy after MMR.The authors conclude that there is likely a causal relationship between MMR and encephalopathy."
+},
+{
+"num": 73,
+"title": "Child mortality following standard, medium or high titre measles immunization in West Africa.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8671571",
+"info_type": "article",
+"info_date": "1996",
+"info_authors": "Knudsen",
+"infoID": "8671571",
+"info_place": "Int J Epidemiol",
+"info_geo": "Africa",
+"digest": "Mortality between vaccinated and unvaccinated against measles has never been compared, but several clinical trials in Guinea-Bissau, Senegal and the Gambia compared deaths from various measles vaccines, and it turned out that the death rate after vaccine with high titers in girls was 86% higher than the vaccine with medium titers. <br> WHO recommended the use of a vaccine with high titers since 1989, and who knows how many girls this vaccine has killed.It is also not known whether the mortality would decrease even more if instead of a vaccine with averages titers used a vaccine with low titers, or if children were not vaccinated against measles at all. "
+},
+{
+"num": 74,
+"title": "Lessons from measles vaccination in developing countries.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1679437/",
+"infoID": "article",
+"info_date": "1993",
+"info_authors": "Hall",
+"infoID": "",
+"info_place": "BMJ",
+"digest": "It was inadvertently discovered that a vaccine with high titers significantly increases mortality, since this vaccine dies only after a year, and even in a few years.Most studies do not last as long.The above study led to the fact that NIH suggested to investigate this phenomenon! Others suggested carrying out massive vaccination campaigns and eradicating measles, as was done with poliomyelitis, while others suggested giving two doses of the vaccine, but this is done even without someone formally whether it leads to a reduction in mortality at all. <br> Authors urge to conduct a randomized study, and use as a measure of efficacy not surrogate markers, such as the number of antibodies, and mortality. "
+},
+{
+"num": 75,
+"title": "The challenge of improving the effectiveness of measles vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/12505179",
+"info_type": "article",
+"info_date": "2003",
+"info_authors": "Garly",
+"infoID": "12505179",
+"info_place": "Acta Trop",
+"digest": "The role of cellular immunity in measles protection is unclear, and if we understood it, we could develop a more effective vaccine." "Thanks to vaccination, Senegal's adult and pregnant women began to suffer from measles. pregnancy measles is the most dangerous for both mother and child. <br> <br> The fact that the vaccine with high titers was dying more girls, so it could have happened not because the vaccine with high titers is worse, but because the vaccine with Average titers have a beneficial effect on mortality, which is not found in vaccines with higher True, this hypothesis does not explain why only girls died more than boys, but we (the authors) still consider this hypothesis to be logical. <br> <br> It is known that those who have recovered measles die less often than those who have not had it, and that measles have a positive impact on the immune system, so it can be assumed that vaccination has the same effect! There are no studies showing that the reduction in mortality in developing countries is a consequence of prevented measles cases, and not some kind of nonspecific effect of vaccine tsins. Therefore, it will be unreasonable to stop vaccination even after the complete eradication of measles, as infant mortality may rise again. <br> <br> Moreover, if after measles elimination has been stopped vaccination and people are immunized against measles, measles virus can be used as a weapon for bio-terrorism. "
+},
+{
+"num": 76,
+"title": "Adverse Events following 12 and 18 Months Vaccinations: a Population-Based, Self-Controlled Case Series Analysis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3236196/",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Wilson",
+"infoID": "PMC3236196",
+"info_place": "PLoS One",
+"digest": "The risk of seeking ambulance after a 12-month vaccination was 30% higher on the day of vaccination, and on the 9th day after it - 2 times higher. On the day of the 18-month vaccination, the risk was increased by 25 %, and on day 12, 34% .This analysis does not include children who died after vaccination.In addition, the control group in this study did not include other children who were not vaccinated but the same children, 28 days after vaccination. "
+},
+{
+"num": 77,
+"title": "Increased emergency room visits or hospital admissions in females after 12-month MMR vaccination, but no difference after vaccinations given at a younger age.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24440113",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Wilson",
+"infoID": "24440113",
+"info_place": "Vaccine",
+"digest": "The risk of seeking ambulance after a 12-month vaccination was 35% higher, and in girls it was 8% higher than that of boys. Perhaps this is because the weight of girls is lower, or maybe because of that , that girls respond to the measles virus differently. "
+},
+{
+"num": 78,
+"title": "Epidemiological characteristics of childhood acute lymphocytic leukemia. Analysis by immunophenotype. The Childrens Cancer Group. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/8182942",
+"info_type": "article",
+"info_date": "1994",
+"info_authors": "Buckley",
+"infoID": "8182942",
+"info_place": "Leukemia",
+"I_S_codenames": ["MMR", "lymphoblastic_leukemia"],
+"digest": "In children who received the MMR vaccine, the risk of acute lymphoblastic leukemia was 70% higher."
+},
+{
+"num": 79,
+"title": "Risk of serious neurological disease after immunization of young children in Britain and Ireland.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17671057",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Ward",
+"infoID": "17671057",
+"info_place": "Pediatrics",
+"I_S_codenames": ["MMR", "neurologic_diseases"],
+"digest": "The risk of a serious neurologic illness after 6-11 days after the MMR rises 5.7 times."
+},
+{
+"num": 80,
+"title": "Risk factors of multiple sclerosis: a case-control study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/14658040",
+"info_type": "article",
+"info_date": "2003",
+"info_authors": "Zorzon",
+"infoID": "14658040",
+"info_place": "Neurol Sci",
+"I_S_codenames": ["multiple_sclerosis"],
+"digest": "A measles vaccine increases the risk of multiple sclerosis 92-fold. <br> [Here==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1841203/] reported 9 cases of multiple sclerosis which began immediately after vaccination. "
+},
+{
+"num": 81,
+"I_S_codenames": ["MMR", "MMRV"],
+"digest": "According to VAERS, since 2000 in the US after MMR or MMRV vaccination [died==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=MMR&VAX[]=MMRV&VAX_YEAR_LOW=2000] 174 people and 742 became disabled. For measles for this time [died==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=MMR&VAX[]=MMRV&VAX_YEAR_LOW=2000] 4.<br>In 2015, there was the first [case of] measles deaths [in the last 12 years==https://www.usatoday.com/story/news/2015/07/02/measles-death-washington-state/29624385/] (women with suppressed medications immunity.) Prior to this [there were two cases of death in the early 2000s: an immunely ill boy and 75-year-old man. <br> And from of the flu in the United States [die==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm5933a1.htm] thousands of people a year .Nevertheless, the flu is almost not afraid, and measles, for some reason, causes a universal horror <br> <br> In Switzerland over the last 7 years, one person died of measles. [He was [http://exhibitedstuday.com/switzerland-reports-1st-measles-death-since-2009/] vaccinated (and he had cancer). And the level of vaccination in Switzerland is relatively [low == https://www.swissinfo.ch/eng/measles-is-still-a-sore-spot-for-the-swiss/8736280]."
+},
+{
+"num": 82,
+"info_geo": "Europe",
+"digest": "In recent months, the biggest scarecrow is the measles epidemic in Europe. Since 2016 [registered==http://ecdc.europa.eu/sites/portal/files/documents/Communicable-disease-threats-report-09-sep-2017.pdf] 14 thousand cases, mostly in Romania and Italy, and 42 people died in these two years, almost all in Romania. <br> The media has caught so much fear that people panick cancel planned trips to Europe , and those who do not abolish hasten to vaccinate their children even before reaching the age of 12 months, despite the fact that the safety of this vaccine has not been established for babies for up to a year. but that the vaccine is ineffective for a year, so it is generally not considered a planned vaccination, and after reaching the 12-month-old age, it is necessary to inject again."
+},
+{
+"num": 83,
+"info_type": "book",
+"digest": "Here is a graph of measles cases in Europe since 2008, where it can be seen that the measles epidemic in Europe is a cyclical process, and in 2010-2011 there were much more cases. Measles always [was==https://www.ncbi.nlm.nih.gov/books/NBK143257/] cyclic disease, even in pre-vaccination times. ",
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/3289/3289_600.jpg",
+"info_imgSource": "http://ecdc.europa.eu/sites/portal/files/documents/measles%20-rubella-monitoring-170424.pdf"
+},
+{
+"num": 84,
+"digest": "All without exception, died of measles (as of February 2017 there were 16 of them) [were==http://ecdc.europa.eu/en/publications/Publications/27-02-2017-RRA-Measles-Romania,%20European%20Union% 20countries.pdf] people with weakened immune system (immunocompromised), or with other diseases. The three first deaths (about the rest are unknown) [were==http://ecdc.europa.eu/en/publications/Publications/27-02-2017-RRA-Measles-Romania,%20European%20Union%20countries.pdf] children under one year, that is, those who could not be vaccinated in any way. <br> Most cases [registered==http://www.balkaninsight.com/en/article/hungary-fears-romanian-measles-epidemic-might-have-crossed-the-border-03-10-2017] in poor villages, where judging by everything, mostly gypsies live."
+},
+{
+"num": 85,
+"title": "Severe Measles, Vitamin A Deficiency, and the Roma Community in Europe.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3437709/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Melenotte",
+"infoID": "PMC3437709",
+"info_place": "Emerg Infect Dis",
+"I_S_codenames": ["vitamin_A"],
+"digest": "The Roma have a low level of vitamin A, and therefore they suffer from measles heavier. Most often, children up to the year and adults are ill.Gypsies live in harsh conditions, are cramped and undernourished. <br> Another [study==https://www.ncbi.nlm.nih.gov/pubmed/12098887] that the Roma have a low level of vitamins A, C and E. (It also turns out that 78% of Roma mothers smoke). <br> It turns out that in Europe, even a malnourished child, with a low level of vitamin A, can not die of measles.To do this, it must also be with a weakened immune system (usually this means cancer patients or rare genetic diseases), and this vaccine is still contraindicated to such a child. "
+},
+{
+"num": 86,
+"digest": "In May 2017, 15 children in Southern Sudan [died==http://www.npr.org/sections/goatsandsoda/2017/06/02/531268150/a-botched-vaccine-campaign-for-measles-killed-15-children-in-south-sudan] after a spoiled measles vaccination. <br> In 2014, 75 children in Syria [received==https://www.ncbi.nlm.nih.gov/pubmed/25268026] a measles vaccine that was accidentally diluted with atracurium (muscle relaxant), not with water. At least 15 died. [Other==https://www.theguardian.com/world/2014/sep/17/syrian-children-die-contaminated-measles-vaccine] sources died at least 34. <br> In 2016, 16 babies in Israel [received==https://www.ncbi.nlm.nih.gov/pubmed/25268026] overdue MMR vaccine. avoohraneniya hastened to reassure, and stated that the overdue vaccine is perfectly safe, but ineffective, so they need to be vaccinated again. "
+},
+{
+"num": 87,
+"digest": "From the 1920s to the 1960s, before the vaccination began, despite the fact that the number of cases remained constant, the mortality from measles decreased by 99% (logarithmic graph).",
+"img_pool": [{
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/3029/3029_600.jpg",
+"info_imgSource": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1522578"
+},
+{
+"info_img": "https://childhealthsafety.files.wordpress.com/2009/01/0707275measleslog.jpg",
+"info_imgDesc": "Mortality from measles in England before the introduction of the vaccine from year to year also decreased exponentially."
+}]
+},
+{
+"num": 88,
+"digest": "Lectures <br> In 2015, Science published [a study [http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4823017/], proving that measles allegedly erases the immune memory All of the media picked up this bike, Suzanne Humphries discusses this research in detail, in short, it's not about research, it's about a mathematical model with different assumptions, and based on sample data. <br> Dr. Suzanne Humphries - Manufactured Consent (Denmark, 2015) ([part 1==https://www.youtube.com/watch?v=IXK-Dr7Kjp4], [part 2==https://www.youtube.com/watch?v=7UbKE2q9HTs], [part 3==https://www.youtube.com/watch?v=1J3AOjr6d0Y], [part 4==https://www.youtube.com/watch?v=cJ92yaVl5V4], [part 5==https://www.youtube.com/watch?v=GYrSYeUMp4Y]) <br> [Dr Tetyana Obukhanych, Ph.D. - Natural Immunity and Vaccination==https://www.youtube.com/watch?v=8h66beBrEpk] <br> [Dr. Suzanne Humphries - Herd Immunity Measles (Norway, 2015)==https://www.youtube.com/watch?v=_KhofzZ-ke8]"
+},
+{
+"num": 89,
+"I_S_codenames": ["vitamin_A"],
+"digest": "Measles is dangerous with malnutrition, and with a lack of vitamin A. Personally, I stock a bottle of vitamin A specifically for the case of measles, and vitamin C, of ​​course, to prevent bacterial complications. Measles in childhood protects against cancer, neurological , cardiovascular and allergic diseases in adulthood. <br> The measles vaccine is effective enough (by 90%, for 10-20 years, after which the boosters are already ineffective), but in the case of measles high efficiency is rather a disadvantage. useful disease, she had better recover in de than to not be sick at all, or sick during adulthood, or during pregnancy, when the vaccine ends, and when measles is more dangerous. <br> The probability of dying after a vaccination is thousands of times higher than the probability of dying from measles (paragraph 81 ). Autism will be devoted to a separate part. "
+}]
+}

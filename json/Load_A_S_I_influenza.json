@@ -297,7 +297,7 @@
         "digest": "Инфекция вирусом гриппа А повышает иммунитет от более опасных штаммов. Это называется [гетеросубтипический иммунитет==https://en.wikipedia.org/wiki/Heterosubtypic_immunity]. Вакцинация имеет обратный эффект.<br>Мышей привили от сезонного гриппа, а затем заразили пандемическим птичьим гриппом. Привитые мыши умерли, а непривитые выжили.<br>Авторы заключают, что во время следующей пандемии гриппа, риск серьезных осложнений и летального исхода у привитых детей будет выше, чем у непривитых. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19879807]."
     },
     {
-        "num": 27,
+        "num": 26.5,
         "title": "Infection of mice with a human influenza A/H3N2 virus induces protective immunity against lethal infection with influenza A/H5N1 virus.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/19538996",
         "info_type": "article",
@@ -630,7 +630,7 @@
     },
     {
         "num": 59,
-        "digest": "59. Считается, что за пандемию 1918 года ответственен вирус гриппа. Это, однако, далеко не факт. [Судя по всему==http://www.reuters.com/article/us-flu-1918/flu-may-not-have-killed-most-in-1918-pandemic-idUSTRE5146PD20090205], это было что-то бактериальное, а не вирусное. Возможно, пневмококк."
+        "digest": "Считается, что за пандемию 1918 года ответственен вирус гриппа. Это, однако, далеко не факт. [Судя по всему==http://www.reuters.com/article/us-flu-1918/flu-may-not-have-killed-most-in-1918-pandemic-idUSTRE5146PD20090205], это было что-то бактериальное, а не вирусное. Возможно, пневмококк."
     },
     {
         "num": 60,
@@ -965,21 +965,11 @@
         "info_type": "article",
         "info_date": "2015",
         "info_authors": "Grant",
-        "infoID": "",
+        "infoID": "25283480",
         "info_place": "Acta Paediatr",
-        
         "I_S_codenames": ["vitamin_D"],
         "digest": "Eще несколько исследований о связи витамина D с гриппом и другими ОРЗ:",
         "sources_pool": [{
-        "title": "Reduced primary care respiratory infection visits following pregnancy and infancy vitamin D supplementation: a randomised controlled trial.",
-        "link" : "https://www.ncbi.nlm.nih.gov/pubmed/25283480",
-        "info_type": "article",
-        "info_date": "2015",
-        "info_authors": "Grant",
-        "info_place": "Acta Paediatr",
-        "infoID": "25283480"
-        },
-        {
         "title": "The seasonality of pandemic and non-pandemic influenzas: the roles of solar radiation and vitamin D.",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/21036090",
         "info_type": "article",

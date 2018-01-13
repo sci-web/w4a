@@ -1,0 +1,595 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Mumps",
+"I_S_codename": "mumps",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Mole",
+"date": ISODate ("2017-09-27T23: 54: 00Z"),
+"epigraph": {
+"text": "Of all tyrannies, a tyranny sincerely exercised for the good of its victims may be the most oppressive",
+"source": "C.S. Lewis"
+},
+"points": [{
+"num": 1,
+"digest": "Mumps (parotitis) in children is usually so trivial that even WHO does not scare them [= http: //www.who.int/immunization/diseases/mumps/en/]. However, they write , in adults, mumps can cause severe complications, so it is important to vaccinate babies. "
+},
+{
+"num": 2,
+"info_type": "cdc",
+"I_S_codenames": ["orchitis", "MMR"],
+"info_geo": "Japan",
+"digest": "In pre-vaccination times, 15-27% of cases of mumps [passed==https://www.cdc.gov/vaccines/pubs/pinkbook/mumps.html] are asymptomatic. How many cases are asymptomatic today, because it is unclear how the vaccine changes the clinical symptoms.The orchitis (inflammation of the testicle), this is the most common complication of the mumps, but it is only possible in sexually mature men.It is usually one-sided.The infertility of the swine orchitis happens rarely, even in the case of bilateral orchitis. , as the vaccine appeared, the diseases of the pig are not registered Rova.<br> monovalent vaccine against mumps is almost nowhere to be found, except in Japan, where the MMR is still banned, and where the vaccine against mumps is not sponsored by the state, and from the few who instilled. "
+},
+{
+"num": 3,
+"header": "A little history",
+"title": "Vaccine against mumps.",
+"link": "http://www.bmj.com/content/2/5555/779",
+"info_type": "article",
+"info_date": "1967",
+"info_place": "BMJ",
+"digest": "Mumps is a relatively mild illness in children, but it causes inconvenience because children must miss school. Severe complications from mumps are rare.<br> After vaccination, fewer antibodies are formed than after the disease. the fact that the vaccine against mumps appeared recently looks promising, there is no need for mass vaccination. "
+},
+{
+"num": 4,
+"title": "Prevention of mumps.",
+"link": "http://www.bmj.com/content/281/6250/1231",
+"info_type": "article",
+"info_date": "1980",
+"info_place": "BMJ",
+"digest": "In 13 years, the BMJ again questions whether the UK needs another vaccine for infants. The pig is not subject to registration and the number of cases is unknown, especially since in 40% of cases the mumps is asymptomatic. measles could be justified.This vaccine could be done when entering the school for those who have not already been infected with mumps or measles.<br> Will those 50% of parents who agree today to inoculate against measles agree to another vaccination in supplementation to it? Only if unreasonable, but broad the widespread fear of infertility from orchitis will overpower the English distrust of new vaccines, otherwise this vaccine will not be in demand.<br><br> However, even a low vaccination coverage can lead to an increase in the number of mumps susceptible to mumps.<br> For an untreated person, a vaccine can be a boon, but for society as a whole it is quite the opposite, since the situation will change when 95% of adults have immunity to mumps. This disease can be unpleasant, but it is rarely dangerous. An attempt to prevent it on a massive scale can increase the number of diseases among adults, with all the attendant risks. "
+},
+{
+"num": 5,
+"title": "A retrospective survey of the complications of mumps.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2157395/",
+"info_type": "article",
+"info_date": "1974",
+"infoID": "PMC2157395",
+"info_place": "J R Coll Gen Pract",
+"I_S_codenames": ["orchitis", "meningitis"],
+"info_geo": "England",
+"digest": "2,482 cases of hospitalization from mumps are analyzed here in 1958-1969 in 16 hospitals in England, they constitute the majority of the cases of mumps requiring hospitalization in the country. Half of the patients were older than 15. Complications were observed in 42%. two of them had another serious illness, and the mumps might not have been related to death, and the third probably had no mumps, and the only complication that may have remained irreversible among these cases is deafness in five patients, four of them adults. About Me the agitation in mumps happens so often that some people think that it should not be considered a complication, but an integral part of the disease. In any case, there is a consensus that meningitis in mumps is not dangerous and it rarely has consequences. What is commonly feared is orchitis, there is a general fear of infertility from orchitis, but the likelihood of this is overestimated, although infertility can not be ruled out, in a small retrospective study infertility, as a consequence of orchitis, would not to found.<br> authors conclude that mass vaccination against mumps is not necessary. Maybe it makes sense to vaccinate sexually mature adolescents on admission to a boarding school or army. But even then it should be remembered that 90% of boys by the age of 14 already had a mumps, so they should check the antibodies, and vaccinate only those who have no antibodies. "
+},
+{
+"num": 6,
+"title": "Reports of sensorineural deafness after measles, mumps, and rubella immunization.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1029435",
+"info_type": "article",
+"info_date": "1993",
+"info_authors": "Stewart",
+"infoID": "PMC1029435",
+"info_place": "Arch Dis Child",
+"I_S_codenames": ["deafness", "MMR"],
+"digest": "9 cases of deafness after MMR are described here in 4 years from the time of vaccine administration, the authors conclude that 3 cases are not associated with grafting (but do not explain why) and 6 others may or may not be related. > Since one-sided deafness is difficult to diagnose in children and vaccinated at 12 months, there may have been other cases that have been missed.<br> Authors propose to check the hearing of children on admission to school and compare it with historical data to see if MMR by ear.<br> Several more cases of deafness after the MMR: ",
+"sources_pool": [{
+"title": "[1]",
+"info_type": "article",
+"infoID": "PMC1833873",
+"info_date": "1988",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1833873"
+},
+{
+"title": "[2]",
+"info_type": "article",
+"infoID": "10.1056/NEJM199107113250217",
+"info_date": "1991",
+"link": "http://www.nejm.org/doi/full/10.1056/NEJM199107113250217"
+},
+{
+"title": "[3]",
+"info_type": "article",
+"infoID": "1960595",
+"info_date": "1991",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/1960595"
+},
+{
+"title": "[4]",
+"info_type": "article",
+"infoID": "9596372",
+"info_date": "1998",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9596372"
+},
+{
+"title": "[5]",
+"info_type": "article",
+"infoID": "5033251",
+"info_date": "1972",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/5033251"
+},
+{
+"title": "[6]",
+"info_type": "article",
+"infoID": "237360",
+"info_date": "1975",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/237360"
+},
+{
+"title": "[7]",
+"info_type": "article",
+"infoID": "4093255",
+"info_date": "1985",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4093255"
+},
+{
+"title": "[8]",
+"info_type": "article",
+"infoID": "15871835",
+"info_date": "2005",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15871835"
+},
+{
+"title": "[9]",
+"info_type": "mass-media",
+"infoID": "18255204",
+"info_date": "2012",
+"link": "http://www.huffingtonpost.co.uk/2012/09/05/mmr-vaccine-deafness_n_1856929.html"
+},
+{
+"title": "There are still 44 cases registered in VAERS",
+"info_type": "article",
+"infoID": "18255204",
+"info_date": "2008",
+"info_authors": "Asatryan A",
+"info_place": "Vaccine",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18255204"
+}]
+},
+{
+"num": 7,
+"title": "Mumps meningoencephalitis",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1512024/",
+"info_type": "article",
+"info_date": "1957",
+"info_authors": "Bruyn",
+"infoID": "PMC1512024",
+"info_place": "Calif Med",
+"I_S_codenames": ["meningoencephalitis"],
+"digest": "119 cases of meningoencephalitis due to mumps in San Francisco in 12 years (1943-1955) are reported here. It usually passes gently, without complications, without neurological consequences, lasts less than five days, and hospitalization is rarely necessary. Death due to meningoencephalitis from mumps it is very rare phenomenon, and in all medical literature only 3 such cases (including one of these 119) are described. "
+},
+{
+"num": 8,
+"header": "Efficiency",
+"title": "Mumps in the workplace. Further evidence of the changing epidemiology of a childhood vaccine-preventable disease.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/3404601",
+"info_type": "article",
+"info_date": "1988",
+"info_authors": "Kaplan",
+"infoID": "3404601",
+"info_place": "JAMA",
+"digest": "Twenty years after the advent of the vaccine, and 10 years after it became widely used, the first outbreak of guinea pig (118 cases) occurred at a factory (Chicago Mercantile Exchange) .The outbreak cost $ 120,738, while the vaccine costs only $ 4.47.<br> The authors report that historically vaccine preventive maintenance of mumps has not received as much attention as other diseases, since the disease is mild, but $ 1,500 for every mumps case is too high, while the vaccine costs $ 4.47 in the public sector, and $ 8.80 in the private sector. the follow-up shows that every dollar invested in vaccines against mumps saves $ 7- $ 14.<br><br> In addition, mumps in adults often leads to complications: 10-38% of sexually mature men have orchitis, and meningitis (0.6% of cases among those over the age of 20. Swine during the first trimester of pregnancy increases the risk of miscarriage. In pre-vaccination times, outbreaks of mumps were observed mainly in prisons, in orphanages and in army barracks. "
+},
+{
+"num": 9,
+"title": "The effectiveness of the mumps component of the MMR vaccine: a case control study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15950329",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Harling",
+"infoID": "15950329",
+"info_place": "Vaccine",
+"I_S_codenames": ["MMR"],
+"digest": "Outbreak of mumps in London. 51% of the patients were vaccinated, the effectiveness of a single dose of the vaccine was 64% .The effectiveness of the two doses was 88% .This efficiency is much lower than stated in clinical trials, since immunogenicity (ie, the number of antibodies) is not an accurate biological marker of the effectiveness of the vaccine, and it is possible that the vaccines have been stored incorrectly, which is why they have lost their effectiveness.<br> The authors also analyze other studies of vaccine effectiveness against mumps, in the 60s the effectiveness was 97%, in 70 73-79%, 80 70-91%, in the 90 46-78% (87% for the Urabe strain). "
+},
+{
+"num": 10,
+"title": "Vaccine-related mumps infections in Thailand and the identification of a novel mutation in the mumps fusion protein.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23089079/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Gilliland",
+"infoID": "23089079",
+"info_place": "Biologicals",
+"I_S_codenames": ["MMR"],
+"digest": "Two weeks after the MMR vaccination of female nurses in Thailand, an outbreak of mumps occurred, and the vaccine strain of the virus (Leningrad-Zagreb) was found among the people who had repeatedly caused mumps outbreaks before."
+},
+{
+"num": 11,
+"title": "Waning immunity against mumps in vaccinated young adults, France 2013.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26987576",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Vygen",
+"infoID": "26987576",
+"info_place": "Euro Surveill",
+"I_S_codenames": ["orchitis", "meningitis", "pancreatitis", "encephalitis", "MMR"],
+"info_geo": "France",
+"digest": "In 2013, 15 outbreaks of mumps were registered in France, 72% of the cases were vaccinated twice, the effectiveness of the vaccine was 49% for one dose, and 55% for two doses. Among those who were vaccinated once, with each past year after vaccination, the risk of developing mumps increased by 7%.<br> Among those who were vaccinated twice, each year after vaccination, the risk of developing mumps increased by 10%.<br> Five men there was an orchitis, one was unprivileged, two were vaccinated with a single dose, and two were vaccinated twice.<br> Pig is a mild illness that but it can sometimes lead to serious complications, such as orchitis, meningitis, pancreatitis or encephalitis, especially among adults. In adults, complications from mumps are more common, and these complications are more serious than in children, especially among the unvaccinated. In other countries, outbreaks of mumps among vaccinated people are also observed, the reason for this is the diminishing effectiveness of the vaccine, and in the absence of natural boosters. It is also possible that outbreaks are primarily to blame for the overestimated effectiveness, inadequate vaccination coverage, or the presence of a strain that is not covered by the vaccine.<br> The presence of outbreaks among vaccinated and falling effectiveness make one think about a third dose of the vaccine. Such an experiment was conducted in the USA during outbreaks in 2009 and 2010. Both times the outbreak receded a few weeks after vaccination. However, outbreaks always go to waste, and it is unclear whether this was due to the vaccine. Nevertheless, this and other experiments hint that the third dose of a vaccine is a good idea. In addition, during the vaccination campaigns in the United States, the third dose showed few side effects.<br> The Netherlands wanted to introduce a third dose of MMR into the national vaccination schedule, but changed their mind, because, firstly, the mumps rarely get complications, and secondly, it is unlikely that vaccination coverage among adults will be satisfactory.<br> Outbreaks of mumps among vaccinated, as well as this study, led to the fact that the Ministry of Health of France recommended doing a third dose of MMR during outbreaks. Despite the fact that it is not known whether the vaccine is effective for those already infected with the virus, it is possible that vaccination will shorten the period of infectiousness of the vaccinated.<br> In a Dutch study, it was found that two-thirds are ill during the outbreaks asymptomatically. The role of asymptomatic patients in the transmission of the disease remains unknown.<br> Future observations in France, and possibly also in other countries that adopt such a recommendation, will help determine whether a third dose of MMR is effective during outbreaks."
+},
+{
+"num": 12,
+"title": "Mumps outbreak in Israel's highly vaccinated society: are two doses enough?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21554780",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Anis",
+"infoID": "21554780",
+"info_place": "Epidemiol Infect",
+"info_geo": "Israel",
+"digest": "Outbreak of the mumps in Israel (more than 5000 cases), 78% were fully vaccinated, mostly adolescents and adults were sick. In other countries (Austria, USA, Netherlands, Great Britain), outbreaks of mumps were also observed among adolescents and students, then as in countries where mumps are not vaccinated, children from 5 to 9 years old are sick. Despite high vaccination coverage (90-97%), antibodies to mumps were detected only in 68% of the population.<br> Authors write that the outbreaks of mumps in recent years have been caused by genotype G, whereas the vaccine contains the virus of genotype A. But they do not believe that This is associated with outbreaks, and suggest introducing a third dose of the vaccine. "
+},
+{
+"num": 13,
+"title": "Mumps outbreak in a highly vaccinated school population. Evidence for a large-scale vaccination failure. ",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/7795768",
+"info_type": "article",
+"info_date": "1995",
+"info_authors": "Cheek",
+"infoID": "7795768",
+"info_place": "Arch Pediatr Adolesc Med",
+"digest": "A flash of mumps in a school where all the pupils except one were vaccinated, there were 54 cases in all. There are a lot of similar studies about the outbreaks of mumps among fully vaccinated, here are a few more: [[1]==https://academic.oup.com/cid/article-abstract/64/4/408/2631868/Mumps-Outbreak-Among-a-Highly-Vaccinated], [[2]==https://academic.oup.com/cid/article/47/11/1458/282575/Mumps-Outbreaks-in-Vaccinated-Populations-Are], [[3]==https://academic.oup.com/jid/article-abstract/169/ 1/77/896282], [[4]==http: //www.eurosurveillance.org/content/10.2807/ese.15.17.19554-en], [[5]==https://www.ncbi. nlm.nih.gov/pubmed/23099425], [[6]==https://www.mja.com.au/journal/2009/191/7/prolonged-mumps-outbreak-among-highly-vaccinated-aboriginal -people-kimberley], [[7]==https://www.cdc.gov/mmwr/volumes/65/wr/mm6529a2.htm], [[8]==https://www.ncbi.nlm .nih.gov/pubmed/1861205], [[9]==https://www.ncbi.nlm.nih.gov/pubmed/16940266/], [[10]==https://www.ncbi.nlm.nih.gov/pubmed/9312835 /], [[11]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4140044/], [[12]==https://www.ncbi.nlm.nih .gov/pubmed/25391635 /], [[13]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5299122/]. "
+},
+{
+"num": 14,
+"title": "Transmission of mumps from mumps-vaccinated individuals to close contacts.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21983359",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Fanoy",
+"infoID": "21983359",
+"info_place": "Vaccine",
+"digest": "As in the case of measles, since the vaccine against mumps is alive, after vaccination the vaccinated becomes infectious for others. Still similar studies:",
+"sources_pool": [{
+"title": "[1]",
+"info_type": "article",
+"info_authors": "Kaic B",
+"infoID": "18768116",
+"info_date": "2008",
+"info_geo": "Croatia",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18768116"
+},
+{
+"title": "[2]",
+"info_type": "article",
+"info_authors": "Otrashevskaia EV",
+"infoID": "24772647",
+"info_date": "2013",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24772647"
+},
+{
+"title": "[3]",
+"info_type": "article",
+"info_authors": "Tesović G",
+"infoID": "18329761",
+"info_date": "2008",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18329761"
+},
+{
+"title": "[4]",
+"info_type": "article",
+"info_authors": "Atrasheuskaya A",
+"infoID": "22749598",
+"info_date": "2012",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22749598"
+},
+{
+"title": "[5]",
+"info_type": "article",
+"info_authors": "Atrasheuskaya AV",
+"infoID": "16266774",
+"info_date": "2006",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16266774"
+},
+{
+"title": "[6]",
+"info_type": "article",
+"info_authors": "Vukić BT",
+"infoID": "18639602",
+"info_date": "2008",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18639602"
+}]
+},
+{
+"num": 15,
+"digest": "The vaccine against the mumps is so ineffective, and there are so many outbreaks of mumps among the vaccinated that there is a special vaccine in Wikipedia [article==https://en.wikipedia.org/wiki/Mumps_outbreaks_in_the_21st_century] listing mumps outbreaks in the 21st century . "
+},
+{
+"num": 16,
+"I_S_codenames": ["MMRV", "MMR"],
+"digest": "In 2010, two virologists who worked earlier in Merck [sued==https://www.forbes.com/sites/gerganakoleva/2012/06/27/merck-whistleblower-suit-a-boon-to-anti-vaccination-advocates-though-it-stresses-importance-of-vaccines/#a12f73f96789] thecompany. They claimed that Merck forged the results of clinical trials of the vaccine against mumps, which allowed the company to remain the only manufacturer of MMR in the United States<br> In the lawsuit [stated==http: //www.rescuepost.com/files/june-mumps-suit-1.pdf] that Merck organized a fictitious vaccine testing program in the late 90's. The company obliged scientists to participate in the program, promised them high premiums, if the vaccine will be certified and threatened with jail if they report this fraud to the FDA.<br><br> The effectiveness of the vaccine against mumps is checked as follows: The children are taken a blood test before vaccination and after vaccination, then a virus is added to the blood, The comparison of the number of these plaques in the blood before vaccination and after vaccination indicates the effectiveness of the vaccine. Instead of testing how the children's blood neutralizes the wild strain of the virus, Merck tested how it neutralizes the vaccine strain. However, this was still not enough to show the required efficiency in 95%. Therefore, the antibodies of rabbits were added to the test blood, which gave 100% efficiency. But that's not all. Since the addition of animal antibodies showed a pre-vaccine efficacy of 80% (instead of 10%), it was clear that there was deception. Therefore, pre-vaccine tests had to be reworked. At first, they tried to change the amount of rabbit antibodies added, but this did not give the desired results. Then they just started to forge a count of plaques, and counted plaques, which were not in the blood. Fake data was brought immediately to the excel, as changing the paper forms took too much time, moreover, such tactics did not leave traces of falsification.<br> Virologists still appealed to the FDA, and from there came the agent with a check. She half an hour asked questions, received false answers, did not ask questions to the virologists themselves, did not check the lab, and wrote a one-page report where she pointed out small problems in the process, without mentioning rabbit antibodies or falsification of data.<br> As a result, Merck received MMR certification and MMRV, and is the only manufacturer of these vaccines in the US.<br> After a large outbreak of mumps in 2006 and 2009, the CDC, which planned to eliminate mumps by 2010, shifted this target to 2020.<br> When the court asked Merck provide documents effe of the vaccine, they [provided==https://www.reuters.com/article/health-vaccine/merck-accused-of-stonewalling-in-mumps-vaccine-antitrust-lawsuit-idUSL1N0YQ0W820150604] 50-year-old data. "
+},
+{
+"num": 17,
+"title": "",
+"link": "",
+"info_type": "article",
+"info_date": "",
+"info_authors": "",
+"infoID": "",
+"info_place": "",
+"I_S_codenames": ["MMR"],
+"digest": "All the safety studies of the MMR, given in the part of the trial, are relevant to the mumps. Here are a few more: "
+},
+{
+"num": 18,
+"title": "Outbreak of aseptic meningitis associated with mass vaccination with a urabe-containing measles-mumps-rubella vaccine: implications for immunization programs.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10707922",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Dourado",
+"infoID": "10707922",
+"info_place": "Am J Epidemiol",
+"info_geo": "Brasil",
+"I_S_codenames": ["MMR"],
+"digest": "Following the massive MMR vaccination campaign in Brazil with the Japanese strain of mumps (Urabe), an outbreak of aseptic meningitis began, the risk of the disease increased 14-30 times. The fact that the Urabe strain is associated with aseptic meningitis was known before, but the Brazilian authorities still decided to use this strain, because it is cheaper and more effective than the Jeryl Lynn strain (which is used in the US), and because they felt that the risk of meningitis is rather low. In France, the vaccination with the same strain did not result to the outbreak of meningitis. This phenomenon is due to the fact that in Brazil outbreaks were observed mainly in large cities where people live close to hospitals, and a large number of children were vaccinated in a very short time, and these factors helped to identify the outbreak.<br> Authors worry that such side effects may lead to a waiver of vaccination, they write that the belief of people for the benefit of vaccination alone is already inadequate, and that more and more people refuse vaccinations and that it would not hurt to register the side effects of vaccination as well. "
+},
+{
+"num": 19,
+"header": "Security",
+"info_geo": "UK",
+"digest": "In the UK, the Urabe strain began to be used in 1988, but stopped using it in 1992, only after the producers said they would stop releasing it. Judging from the published documents, the authorities [knew==http://www.telegraph.co.uk/news/uknews/1544592/Vaccine-officials-knew-about-MMR-risks.html] about the danger of this strain already in 1987. "
+},
+{
+"num": 20,
+"title": "Outbreak of aseptic meningitis and mumps after mass vaccination with MMR vaccine using the Leningrad-Zagreb mumps strain.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11803071",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "da Cunha",
+"infoID": "11803071",
+"info_place": "Vaccine",
+"I_S_codenames": ["MMR", "meningitis"],
+"digest": "The next year, the Brazilian authorities, trained by bitter experience, bought MMR with another strain of pig-Leningrad-Zagreb, and planted 845,000 children.The outbreak of aseptic meningitis began again, and this time the risk of the disease was 74 times higher. Of course, this strain was also known in advance that it increases the risk of meningitis, but since the vaccination campaign in the Bahamas did not lead to a flare-up of meningitis, we decided to see how it would be in Brazil.In addition, an outbreak of mumps began.One 300 doses of vaccine , led to a mole. the question is whether all funding for a vaccination campaign should go to vaccines, or whether it is worth leaving some amount for the registration of side effects. They write that this question is rather controversial in the medical literature. Advocates of vaccine priority believe that the benefits of vaccination campaigns are undeniable, and there is nothing spending money on nonsense .A side of side effects observers believe that the lack of information about them scares the people, and leads to a lack of trust in vaccines.<br> The Leningrad-Zagreb strain was developed in Serbia on the basis of e Leningrad 3 strain, which is also [resulted==https://www.ncbi.nlm.nih.gov/pubmed/2726323] to meningitis. "
+},
+{
+"num": 21,
+"title": "Depressed lymphocyte function after measles-mumps-rubella vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/1151122",
+"info_type": "article",
+"info_date": "1975",
+"info_authors": "Munyer",
+"infoID": "1151122",
+"info_place": "J Infect Dis",
+"I_S_codenames": ["MMR"],
+"digest": "The authors tested the lymphocyte response to candida in vaccines, and found that MMR leads to a decreased function of lymphocytes, which lasts 1-5 weeks after vaccination. The function of lymphocytes returns to the previous level only 10-12 weeks after inoculation. Other studies have shown similar results. "
+},
+{
+"num": 22,
+"title": "Henoch-Schöne nlein purpura and drug and vaccine use in childhood: a case-control study.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4912703/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Da Dalt",
+"infoID": "",
+"info_place": "Ital J Pediatr",
+"I_S_codenames": ["MMR", "hemorrhagic_vasculitis"],
+"digest": "MMR increases the risk of hemorrhagic vasculitis by a factor of 3.4, which usually occurs in children themselves, but in 1% of cases it leads to renal failure."
+},
+{
+"num": 23,
+"title": "Mumps vaccine associated orchitis: Evidence supporting a potential immune-mediated mechanism.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20085834",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Clifford",
+"infoID": "20085834",
+"info_place": "Vaccine",
+"I_S_codenames": ["orchitis", "MMR"],
+"digest": "Orchitis may well arise as a result of vaccination against mumps:",
+"sources_pool": [{
+"num": 1,
+"title": "Case of mumps orchitis after vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24164648",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Kanda",
+"infoID": "24164648",
+"info_place": "Int J Urol"
+},
+{
+"num": 2,
+"title": "Unilateral Epididymo-Orchitis: A Rare Complication of MMR Vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2647202",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Abdelbaky",
+"infoID": "PMC2647202",
+"info_place": "Ann R Coll Surg Engl"
+},
+{
+"num": 3,
+"title": "Orchitis following Mumps Vaccination in an Adult.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/7645149",
+"info_type": "article",
+"info_date": "1994",
+"info_authors": "Kuczyk",
+"infoID": "7645149",
+"info_place": "Urol Int"
+},
+{
+"num": 4,
+"title": "A case of orchitis following vaccination with freeze-dried live attenuated mumps vaccine.",
+"link": "https://www.jstage.jst.go.jp/article/jpnjurol1989/93/4/93_4_577/_article",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Suzuki",
+"info_place": "Jpn J Urol"
+}]
+},
+{
+"num": 24,
+"title": "Deep sequencing reveals persistence of cell-associated mumps vaccine virus in chronic encephalitis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5209397/",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Morfopoulou",
+"infoID": "PMC5209397",
+"info_place": "Acta Neuropathol",
+"I_S_codenames": ["MMR", "encephalitis"],
+"digest": "The 14-month-old boy was inoculated with the MMR, and after 4 months he was diagnosed with severe combined immunodeficiency, then he was successfully transplanted, and he developed chronic encephalitis, and died when he was 5. When he was biopsy brain, the vaccine strain of the mumps virus was found in the brain.It was the first case of panencephalitis caused by the mumps virus. "
+},
+{
+"num": 25,
+"header": "The benefits of mumps",
+"digest": "In the previous part, among other things, studies have been carried out according to which mumps in childhood reduces the risk of cancer, neurological and cardiovascular diseases. Here I will dwell more on ovarian cancer. "
+},
+{
+"num": 26,
+"title": "Epidemiologic study of malignancies of the ovaries.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/5939299",
+"info_type": "article",
+"info_date": "1966",
+"info_authors": "West",
+"infoID": "5939299",
+"info_place": "Cancer",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "Unlike other cancers, the risk of which rises with age, the risk of ovarian cancer rises until the age of seventy, and then sharply decreases. The risk of ovarian cancer in Japan is much lower than in England and the United States, where this type of cancer becomes more and more common. The author analyzed the relationship between ovarian cancer and 50 different factors, and found that the only statistically significant factor associated with ovarian cancer was the absence of mumps in childhood (p = 0.007) .In fact, the absence of rubella in childhood was also associated with cancer ovary, but in this case, the p-value was equal to 0.02 In those years, scientists have been a little more self-esteem, and p & gt;. 0.01 was not considered statistically significant result<br> also found that the risk of ovarian cancer among unmarried women was significantly higher."
+},
+{
+"num": 27,
+"title": "Possible role of mumps in the etiology of ovarian cancer.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/445337",
+"info_type": "article",
+"info_date": "1979",
+"info_authors": "Menczer",
+"infoID": "445337",
+"info_place": "Cancer",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "Clinical mumps in childhood is associated with a reduced risk of ovarian cancer .. In addition, it turned out that patients with ovarian cancer had fewer antibodies to mumps. The authors believe that what affects the risk of ovarian cancer is not itself Infection with the mumps virus, and the subclinical course of the disease. In subclinical disease (without symptoms, as after vaccination), fewer antibodies are produced that later protect against cancer. "
+},
+{
+"num": 28,
+"title": "Mumps and ovarian cancer: modern interpretation of an historic association.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2951028/",
+"info_type": "article",
+"info_date": "2011",
+"info_authors": "Cramer",
+"infoID": "PMC2951028",
+"info_place": "Cancer Causes Control",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "In addition to these two, seven more studies on the relationship of mumps to a reduced risk of ovarian cancer were published, but the biological mechanism of this phenomenon was not investigated, and with the initiation of vaccination, the connection between mumps and ovarian cancer became irrelevant and forgotten about it.<br> All research except the two found a protective effect of mumps on ovarian cancer.One of the two studies that did not find a link did not reveal a connection even between pregnancy and ovarian cancer.The second study (the last of nine) was conducted in 2008 , and includes already much more vaccinated than the previous ones. [MUC1==https://ru.wikipedia.org/wiki/MUC1] is a membrane protein that is associated with cancerous tumors. The authors found that women who had had mumps had much more antibodies to this protein than those who have not recovered.This biological mechanism explains the protective function of the mumps.<br> Vaccination against mumps creates antibodies against the virus, but does not create antibodies to MUC 1. To create these antibodies, it is necessary to have a mumps. Hence, it can be concluded that since symptomatic cases of mumps after vaccination are observed much more rarely, this will lead to an increase in the incidence of ovarian cancer. Indeed, the incidence of ovarian cancer among white women increased.<br> The authors also conducted a meta-analysis of eight studies, and concluded that mumps reduces cancer risk by 19%. "
+},
+{
+"num": 29,
+"title": "Oncolytic activities of approved mumps and measles vaccines for the therapy of ovarian cancer.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15746945",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Myers",
+"infoID": "15746945",
+"info_place": "Cancer Gene Ther",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "Ovarian cancer is the fourth highest in American women, 25 000 women a year fall ill and 16 000 of them die. The authors analyzed three viruses - recombinant measles virus and vaccine strains of measles and mumps as a treatment for ovarian cancer in vitro and in mice, all three viruses successfully killed cancer cells.Despite the excellent results, the virus, for some reason, did not become used in conventional cancer therapy.It is possible because this strain can cause complications of the nervous system. that since most people in Western countries are vaccinated against measles and mumps, the immune system can prevent this kind of therapy. "
+},
+{
+"num": 30,
+"title": "Treatment of human cancer with mumps virus.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/4611607",
+"info_type": "article",
+"info_date": "1974",
+"info_authors": "Asada",
+"infoID": "4611607",
+"info_place": "Cancer",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "90 patients at the terminal stage of cancer were tried with a mumps virus (wild or almost wild strain) .The virus was given orally, rectally, intravenously, through inhalation, a local injection, or simply applying externally to the tumor. , the patients received only small amounts.<br> The results were very good in 37 patients (complete disappearance of the tumor or a decrease of more than 50%), and good in 42 patients (reduction of tumor or cessation of increase). days in patients rohodila pain and improves appetite, and within two weeks, many of the disappearance of the tumor was observed. The side effects were minimal. 19 patients are cured. "
+},
+{
+"num": 31,
+"title": "Studies on the use of mumps for the treatment of human cancer.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/749908",
+"info_type": "article",
+"info_date": "1978",
+"info_authors": "Okuno",
+"infoID": "749908",
+"info_place": "Biken J",
+"digest": "Two hundred patients with cancer had intravenously administered mumps virus (Urabe strain) to the patients.The only side effect was a slight increase in temperature in half of them.<br> 26 patients showed tumor regression, most disappeared pain, 30 of 35 decreased or bleeding ceased, in 30 of 41, ascites and edema decreased or disappeared. "
+},
+{
+"num": 32,
+"title": "Attenuated mumps virus therapy of carcinoma of the maxillary sinus.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/118126",
+"info_type": "article",
+"info_date": "1979",
+"info_authors": "Sato",
+"infoID": "118126",
+"info_place": "Int J Oral Surg",
+"I_S_codenames": ["ovarian_cancer"],
+"digest": "Two mumps with a maxillary sinus carcinoma were injected with a guinea pig virus (Urabe strain), they immediately had pain and a tumor regressed, but then they all died of exhaustion."
+},
+{
+"num": 33,
+"title": "Recombinant mumps virus as a cancer therapeutic agent.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4980112/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Ammayappan",
+"infoID": "PMC4980112",
+"info_place": "Mol Ther Oncolytics",
+"I_S_codenames": ["cancer"],
+"digest": "All three previous studies were conducted in Japan, and outside of these results nobody was interested in. And in 2016, the notorious Mayo Clinic decided to take samples of this virus in Japan and test them in vitro and in mice. indeed, the virus has an anti-cancer effect. "
+},
+{
+"num": 34,
+"header": "Embryonic bovine serum",
+"title": "The use of fetal bovine serum: ethical or scientific problem?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11971757",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Jochems",
+"infoID": "11971757",
+"info_place": "Altern Lab Anim",
+"I_S_codenames": ["MMR", "fetal_bovine_serum"],
+"digest": "One of the [components==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/B/excipient-table-2.pdf] MMR (and some other vaccines) is [ embryonic bovine serum==https://en.wikipedia.org/wiki/Fetal_bovine_serum]. Cells in which viruses are grown must multiply, and for this they need a nutrient medium with hormones, growth factors, proteins, amino acids, vitamins and t As embryonic bovine serum is usually used as this medium.<br> Because the whey should be preferably sterile, it is not blood of cows but blood of calf embryos that is used for its production. <b r> The pregnant cow is killed and the uterus is taken out of it, then the fetus is removed from the uterus, the umbilical cord is cut and disinfected, and then the heart is pierced and the blood is pumped out.Sometimes a pump is used for this, and sometimes a massage, and then the blood is coagulated and centrifuged from it platelets and clotting factors are separated, what remains as a result is fetal bovine serum. In addition to the right ingredients, the serum can also contain viruses, bacteria, yeasts, fungi, mycoplasmas, endotoxins and possibly [prions==https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BE%D0%BD%D1%8B]. Many components of bovine serum have not yet been determined, and the function of many of those that are determined is unknown.<br> Three months of the embryo produces 150 ml of serum, of a six-month period 350 ml, and of a nine-month period 550 ml. (Pregnancy of cows lasts 9 months). The world market of bovine serum is 500,000 liters per year, which requires about 2 million pregnant cows. (At the moment, the whey market [is==https://www.invitria.com/cell-culture-products-types/serum/] is already 700,000 liters.)<br><br> Next, the authors examine the literature on the topic, Does the fetus suffer during piercing the heart and pumping out the blood.<br> Because the fetus that is separated from the placenta is experiencing [anoxia==https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D0%BE%D0%BA%D1%81%D0%B8%D1%8F] (acute lack of oxygen), perhaps this leads to the fact that the pain signals do not reach the brain, and the fetus does not suffer. , it turns out that unlike adult rabbits, which die after 1.5 minutes ano Xenia, prematurely born rabbits live without oxygen for 44 minutes. This is because the embryos and newborns compensate for the lack of oxygen through anaerobic metabolism. In addition, the fetal brain consumes much less oxygen than the adult brain. Among other species of animals, a similar pattern is observed, but no one has checked the calves.<br> Science has only recently wondered whether a mammalian fetus or newborn pain is affected. Just ten years ago, it was believed that infants are less sensitive to pain than adults, so the operation of preterm and born infants was done without anesthesia. Today it is believed that the human fetus is experiencing pain from the 24th week, and can suffer from the 11th week after conception. Moreover, embryos and newborns are more sensitive to pain than adults, since they have not yet developed [https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%86%D0%B8%D1%86%D0%B5%D0%BF%D1%86%D0%B8%D1%8F] Mechanism of suppression of physiological pain. Therefore, the fetus may feel pain even if it is simply touched. The authors conclude that during piercing the heart the fetus has normal brain activity, it experiences pain and suffers when the blood is pumped out of it, and possibly even after the end of this procedure , before dying.<br> Next, the authors speculate whether it is possible to anesthetize the fetus so that it does not feel pain. Some believe that anoxia itself plays the role of an anesthetic, but it is not. In addition, newborn mammals are very poor at absorbing medicines. And the presence of these drugs in the serum is undesirable. Electroshock also does not fit, as it leads to cardiac arrest. The authors believe that perhaps a bolt that is correctly stuffed into the brain will lead to brain death of the fetus. Some manufacturers claim that they kill the fetus before the blood is extracted from it. But this is not true, because blood coagulates immediately after death, and to extract it, the fetus must be alive. The authors conclude that the procedure for collecting embryonic bovine serum is inhumane. "
+},
+{
+"num": 35,
+"title": "Benefits and expenses due to animal serum used in cell culture production.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10404869",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Wessman",
+"infoID": "10404869",
+"info_place": "Dev Biol Stand",
+"I_S_codenames": ["MMR", "fetal_bovine_serum"],
+"digest": "20-50% of embryonic bovine serum is infected with the bovine diarrhea virus, as well as other viruses. This is only about viruses known to science that make up only [minor==https://www.sciencedaily. com/releases/2011/10/111005172651.htm] part of all the existing viruses. "
+},
+{
+"num": 36,
+"title": "Fetal Bovine Serum RNA Interferes with the Cell Culture derived Extracellular RNA.",
+"link": "https://www.nature.com/articles/srep31175",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Wei",
+"infoID": "",
+"info_place": "Nature",
+"I_S_codenames": ["MMR", "fetal_bovine_serum"],
+"digest": "Embryonic bovine serum contains extracellular RNA, which is impossible to separate from the serum.This RNA interacts with the RNA of human cells in which viruses for vaccines are grown."
+},
+{
+"num": 37,
+"title": "Evidence of pestivirus RNA in human virus vaccines.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264050/",
+"info_type": "article",
+"info_date": "1994",
+"info_authors": "Harasawa",
+"infoID": "PMC264050",
+"info_place": "J Clin Microbiol",
+"I_S_codenames": ["MMR", "fetal_bovine_serum"],
+"digest": "The authors analyzed 5 types of live vaccines and found in MMR vaccines from two different manufacturers, as well as in two monovalent vaccines from mumps and rubella from the RNA of bovine diarrhea virus, which probably got there from embryonic bovine serum<br> In infants, this virus may lead to gastroenteritis, and in pregnant women - to the birth of children with microcephaly. "
+},
+{
+"num": 38,
+"title": "Viral contamination of bovine foetal serum and cell cultures.",
+"link": "https://www.nature.com/nature/journal/v266/n5605/abs/266835a0.html",
+"info_type": "article",
+"info_date": "1977",
+"info_authors": "Nuttall",
+"info_place": "Nature",
+"I_S_codenames": ["MMR", "fetal_bovine_serum"],
+"digest": "The fact that embryonic bovine serum is infected with the bovine diarrhea virus was known back in 1977. It is known that this virus passes through the placenta and can infect the calf embryo in the uterus. 60% of the serum samples in Australia were 8% of the vaccines for bovine rhinotracheitis have also been infected.<br> The virus has also been found in cow kidney cells that are used to produce a measles vaccine."
+},
+{
+"num": 39,
+"title": "In vitro inhibition of mumps by retinoids.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3829803/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Soye",
+"infoID": "PMC3829803",
+"info_place": "Virol J",
+"I_S_codenames": ["vitamin_A"],
+"digest": "Vitamin A suppresses reproduction of the mumps virus in vitro. <a name='cutid1-end'> </a>"
+}]
+}

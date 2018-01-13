@@ -1,0 +1,251 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Anti-vaccination",
+"I_S_codename": "anti-vaxx",
+"I_S_type_ref": "S_S",
+"I_S_type_this": "human",
+"I_S_name": "Anti-vaccination",
+"intro": "Scientists are usually given very few grants to study the safety of vaccines, adjuvants and other vaccine components, but there is more than enough research to investigate why people are not vaccinated and how to get them to chop their children, characterizing anti-vaccination parents. ",
+"date": ISODate ("2017-06-22T23: 26: 00Z"),
+"epigraph": {
+"text": "The minority can be right, the majority is always wrong.",
+"source": "Henrik Ibsen"
+},
+"points":
+[{
+"num": 1,
+"digest": "It is believed that anti-vaccination is usually uneducated, religious and anti-scientific people, but scientific evidence suggests otherwise." "Most antiperspirants are well-educated and rich. Some Los Angeles private schools have less than 20% of children [vaccinated == http://www.latimes.com/opinion/opinion-la/la-oe-shapiro-schools-and-vaccination-rates-20130811-story.html]. How can it be that these rich and educated people do not plant their own children? Do not they know that vaccinations are completely safe, and that they save from terrible diseases? Or maybe they know ? Vaccination is something that others do not know <br> <br> Here are a few studies "
+},
+{
+"num": 2,
+"title": "Children Who Have Received No Vaccines: Who Are They and Where Do They Live?",
+"link": "http://pediatrics.aappublications.org/content/114/1/187",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Smith",
+"info_place": "Pediatrics",
+"info_geo": "US",
+"digest": "Unprovoked children are mostly white, their mothers are over 30 years old, married, have an academic degree, and their families earn more than $ 75,000 per year. (USA) "
+},
+{
+"num": 3,
+"title": "Effects of Maternal and Provider Characteristics on the Up-to-Date Immunization Status of Children Aged 19 to 35 Months.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1781415/",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Kim",
+"infoID": "PMC1781415",
+"info_place": "Am J Public Health",
+"info_geo": "US",
+"digest": "The lower the level of education of the mother, and the poorer she is, the greater the chance that she will fully inculcate the children. Children are more inculcated by Afro- and Latin-Americans, and the poorer they are, the more they vaccinate. USA)"
+},
+{
+"num": 4,
+"title": "Negative attitude of highly educated parents and health care workers to future vaccinations in the Dutch childhood vaccination program.",
+"link": "http://www.ncbi.nlm.nih.gov/pubmed/15837208",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Hak",
+"infoID": "15837208",
+"info_place": "Vaccine",
+"info_geo": "Netherlands",
+"digest": "Parents with higher education 3 times more often refused vaccinations. <br> Medical workers 4 times more often refused vaccinations. <br> Atheists 2.6 times more often refused vaccinations. (Netherlands)"
+},
+{
+"num": 5,
+"title": "Deciding to opt out of childhood vaccination mandates.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18816357",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Gullion",
+"infoID": "18816357",
+"info_place": "Public Health Nurs.",
+"info_geo": "US",
+"digest": "Parents who do not vaccinate their children, appreciate scientific knowledge, know where to look, and how to analyze information about vaccinations, and at the same time do not trust medicine very much. (USA) "
+},
+{
+"num": 6,
+"title": "More Israeli Parents Refusing to Vaccinate Their Babies According to State Regulations.",
+"link": "http://www.haaretz.com/israel-news/.premium-1.527622",
+"info_type": "mass-media",
+"info_date": "04-06-2013",
+"info_geo": "Israel",
+"digest": "Mothers with academic education are twice as likely to refuse vaccinations. <br> Jews are 4 times more likely than Muslims to refuse vaccinations. <br> The higher the age of mothers, the more often they refuse vaccinations. (Israel) "
+},
+{
+"num": 7,
+"title": "Differences in risk factors for partial and no immunization in the first year of life: prospective cohort study.",
+"link": "http://www.bmj.com/content/332/7553/1312",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "Samad",
+"infoID": "16740559",
+"info_geo": "UK",
+"digest": "Non-invasive mothers are older and more educated than grafting mothers. (Great Britain) "
+},
+{
+"num": 8,
+"title": "A Population-Based Evaluation of a Publicly Funded, School-Based HPV Vaccine Program in British Columbia, Canada: Parental Factors Associated with HPV Vaccine Receipt.",
+"link": "http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1000270",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Ogilvie",
+"infoID": "20454567",
+"info_place": "PLoS Med.",
+"info_geo": "Canada",
+"I_S_codenames": ["HPV vaccine"],
+"digest": "More educated parents more often refused HPV vaccination for their daughters. (Canada)"
+},
+{
+"num": 9,
+"title": "Predictors of HPV vaccine acceptability: a theory-informed, systematic review.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17628649",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Brewer",
+"infoID": "17628649",
+"info_place": "Prev Med.",
+"I_S_codenames": ["HPV vaccine"],
+"digest": "Systematic review of 28 studies. The higher the education level of parents, the more often they refused the vaccine against HPV. "
+},
+{
+"num": 10,
+"title": "Factors associated with uptake of measles, mumps, and rubella vaccine (MMR) and use of single antigen vaccines in a contemporary UK cohort: prospective cohort study.",
+"link": "http://www.bmj.com/content/336/7647/754",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Pearce",
+"info_place": "BMJ",
+"infoID": "18309964",
+"info_geo": "UK",
+"I_S_codenames": ["anti-vaxxers", "MMR"],
+"digest": "The higher the level of education, age and income, the more parents refused MMR, and chose a non-vaccinated measles vaccine. (Great Britain)"
+},
+{
+"num": 11,
+"title": "Acceptance of human papillomavirus vaccination among Californian parents of daughters: a representative statewide analysis.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17259050",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Constantine",
+"infoID": "17259050",
+"info_place": "J Adolesc Health",
+"info_geo": "US",
+"I_S_codenames": ["HPV vaccine"],
+"digest": "Parents with higher education and conservatives were less likely to allow their daughters to get vaccinated against HPV. Parents who did not finish school, Catholics and liberals more often allowed daughters to do this vaccine. (California, USA)"
+},
+{
+"num": 12,
+"title": "Maternal characteristics and hospital policies for risk factors for nonreceipt of hepatitis B vaccine in the newborn nursery.",
+"link": "http://www.ncbi.nlm.nih.gov/pubmed/21941215",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "O'Leary",
+"infoID": "21941215",
+"info_place": "Pediatr Infect Dis J",
+"info_geo": "US",
+"I_S_codenames": ["hepatitis B vaccine"],
+"digest": "More educated mothers and mothers with higher incomes are more likely to refuse to vaccinate their newborn baby from hepatitis B. (Colorado, USA)"
+},
+{
+"num": 13,
+"info_type": "social",
+"info_date": "13-06-2017",
+"info_geo": "Australia",
+"digest": "After Australia enacted the law of obliging parents to vaccinate children to receive child allowances (No jab, no pay), parents living in wealthy areas of Melbourne began to vaccinate [even less == https: //www.facebook .com / 9NewsMelbourne / videos / 1853727611557558 /]. More educated parents, many with a scientific background, question security and the need for vaccinations. Only 20% of those parents who were not vaccinated before the adoption of this law, for him. <br> 10% of Australian parents believe that vaccinations are associated with autism. "
+},
+{
+"num": 14,
+"digest": "There are many similar studies, and all of them come to the same conclusions. Parents who do not vaccinate their children are always older, more educated and more wealthy. Stop, please, treat them like idiots. <br> <br> And here are a few extraordinarily important studies on which the taxpayer's money was found: "
+},
+{
+"num": 15,
+"title": "Clinician-parent discussions about in fl uenza vaccination of children and their association with vaccine acceptance.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28392141",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Hofstetter",
+"infoID": "28392141",
+"info_place": "Vaccine",
+"digest": "If the doctor says \"today we will vaccinate against the flu\", 72% of the parents agree, and if the doctor asks \"will we get a flu shot today?\" , only 17% agree.  If the doctor recommends that you get a flu shot with any other vaccination, 83% of the parents agree, and if the doctor separately offers a flu shot, only 33% agree to do it."
+},
+{
+"num": 16,
+"title": "Greater freedom of speech on Web 2.0 correlates with dominance of views linking vaccines to autism.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25665960",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Venkatraman",
+"infoID": "25665960",
+"info_place": "Vaccine",
+"digest": "The authors of this study analyzed Youtube, Google, Wikipedia and Pabmed, and concluded that the more freedom of speech on the resource, the more it is associated with vaccinations with autism.The most freedom of speech on YouTube, in Google it is less , and in Wikipedia and pabmeda it is very small.This leads to the fact that on YouTube 75% of videos link vaccinations with autism, in Google 41% of links, in Wikipedia 14% of articles, and in the pabmeda 17% of articles associate vaccinations with autism (more than in Wikipedia!). But the most terrible thing is, the authors of the study note, that anti-vaccination activists use scientific arguments (!), doctors (!), famous people and personal stories to inspire confidence! The problem is, they write that YouTube, unlike Google, does not give priority to scientific authorities in the search for commercials. <br> Doctors participated in 36% of anti-vaccination rollers, and only 28% of pro-vaccination. <br> Authors of the study suggest moderating the Internet, and also call on medical institutions to show more activity there. "
+},
+{
+"num": 17,
+"title": "A comparison of the language in use in pro and anti-vaccine comments in response to a high profile Facebook post",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27707558",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Faasse",
+"infoID": "27707558",
+"info_place": "Vaccine",
+"digest": "The authors of the study analyzed comments on Mark Zuckerberg's post on Facebook, they concluded that the comments of anti-vaccination agents were more analytical, and were more relevant to the case. The comments of the pro-vaccinators were more troublesome. "
+},
+{
+"num": 18,
+"title": "Content and Design Attributes of Antivaccination Web Sites",
+"link": "http://jamanetwork.com/journals/jama/fullarticle/195044",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Wolfe",
+"infoID": "12076221",
+"info_place": "JAMA",
+"digest": "In this study, the authors analyzed 22 anti-invasive sites, and concluded that anti-vaccination sites are opposed to vaccinations."
+},
+{
+"num": 19,
+"digest": "There are a lot of similar studies, here are a few more, for those who want to go deeper into this fun topic:",
+"sources_pool": [
+{
+"title": "A postmodern Pandora's box: anti-vaccination misinformation on the Internet",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20045099",
+"info_date": "2010",
+"info_authors": "Kata",
+"infoID": "20045099",
+"info_place": "Vaccine"
+},
+{
+"title": "Associations Between Exposure to and Expression of Negative Opinions About Human Papillomavirus Vaccines on Social Media: An Observational Study",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4526932/",
+"info_date": "2015",
+"info_authors": "Dunn",
+"infoID": "PMC4526932",
+"info_place": "J Med Internet Res"
+},
+{
+"title": "Using social connection information to improve the opinion of HPV vaccines on Twitter",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26262154",
+"info_date": "2015",
+"info_authors": "Zhou",
+"infoID": "26262154",
+"info_place": "Stud Health Technol Inform"
+},
+{
+"title": "Vaccine-criticism on the internet: new insights based on French-speaking websites",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25583384",
+"info_date": "2015",
+"info_authors": "Ward",
+"infoID": "25583384",
+"info_place": "Vaccine"
+}]
+},
+{
+"num": 20,
+"digest": "Pediatric Professor Dr. Carol J. Baker offers a simple solution to the problem of anti-vaccination. Since antiparrels are mostly white and educated, she suggests [get rid of [https: //www.youtube.com/watch? v = wyXuPwsLGWI] from of all white people in the United States. "
+},
+{
+"num": 21,
+"digest": "Grants were found for all these studies, but for adequate vaccine safety studies, such that they lasted more than a few days, and would use a real placebo, there is no such money. But you are there, all you good, and good mood! "
+}]
+}

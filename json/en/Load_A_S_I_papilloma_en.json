@@ -1,0 +1,350 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Papilloma",
+"I_S_codename": "papilloma",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Papilloma",
+"date": ISODate ("2017-07-27T17: 51: 00Z"),
+"intro": "I'm starting to review individual vaccines from the vaccine from the Human Papilloma Virus (HPV), because it is without doubt the most dangerous and most useless vaccination.",
+"epigraph": {
+"text": "The world will not be destroyed by those who do it, but by those who watch them without doing anything.",
+"source": "Albert Einstein"
+},
+"points":
+[{
+"num": 2,
+"digest": "HPV is transmitted mostly through sexual contact, but [also==http://jcm.asm.org/content/43/1/376.full] from parents and friends. Most people get infected through life , in 90% of cases the virus passes by itself, without any symptoms, and only 0.15% of cases of infection result in cancer of the cervix.<br> There are more than 170 strains of papillomavirus, 17 of them are potentially oncogenic, some lead only to warts."
+},
+{
+"num": 3,
+"digest": "There are currently three HPV vaccines: Merck is a tetravalent vaccine (protects against species 6,11,16,18), and Cervarix (GlaxoSmithKline) is bivalent (protects from 16 and 18). and 18 are oncogenic, and are \"responsible\" for 70% of cervical cancer cases, and species 6 and 11 lead to warts. Since 2014, there is also a new nine-valent vaccine called Gardasil 9. The vaccine is usually given to children from 9 years of age, and girls and boys, and it is done in three stages.In 2016 CDC [recommended==https://www.cdc.gov/mmwr/volumes/65/wr/mm6549a5.htm] to reduce the number of doses to two. <br > Vaccines contain recombins (genetically modified) virus-like particles. "
+},
+{
+"num": 4,
+"digest": "How do scientists usually establish that a specific virus (or other pathogen) is the cause of a particular disease? Theoretically, for this, one usually uses [Koch postulates==https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%81%D1%82%D1%83%D0%BB%D0%B0%D1%82%D1%8B_%D0%9A%D0%BE%D1%85%D0%B0] The causal relationship between HPV and cervical cancer does not satisfy Koch's postulates.<br> Practically, this means little, because even Koch himself understood the limitations of his postulates. In fact, today in medicine there are no common accepted criteria establishing the cause-effect Usually statistical methods are used, but anything can be proved by statistics.<br><br> Wikipedia [new==https://en.wikipedia.org/wiki/Koch%27s_postulates] new postulates of Koch that were proposed for the 21st session, However, they write, these new postulates are rather controversial, because according to them HPV is not the cause of cervical cancer, although everyone knows that it is.<br><br> So is HPV the cause of cervical cancer, or not, this is not a settled science. "
+},
+{
+"num": 5,
+"title": "The cause of invasive cancer can be multifactorial.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10721464",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Haverkos",
+"infoID": "10721464",
+"info_place": "Biomed Pharmacother",
+"digest": "Despite the fact that HPV-16 and 18 play a major role in the development of cervical cancer, HPV infection is neither an obligatory factor in the cause of cervical cancer nor a sufficient factor." "HPV is only found in 90 % of tumors, and therefore the cause-and-effect relationship between them does not satisfy Koch's first postulate.<br><br> In the 1970s, researchers considered the herpes virus (HSV-2) responsible for this disease.<br> Those who have HPV fall ill cervical cancer is 4.3 times more likely than those who do not have it, but those who have both viruses (HPV and herpes) fall ill in 8.8 times more often.<br> In another study, HPV was found in 77% of cases of cancer, among those who did not have HPV, herpes was found 3.6 times more often.<br> - Smoking significantly increases the risk of cervical cancer (even after the correction for sexual behavior and socioeconomic status.)<br><br> Vaginal douching also significantly increases the risk of cervical cancer, tar is used in commercial douching. The risk of cervical cancer in using commercial means is 2.4 times higher. Those who use vinegar and water risk do not increase. Tar is also in cigarettes, and is a known carcinogen.<br> - In African American women, cervical cancer is twice as common. They are also twice as likely to do douching.<br><br> Birth control pills increase the risk of cervical cancer 3 times. Intrauterine spiral - 1.6 times. Condoms, diaphragms, foam and jelly reduce the risk of cancer. The authors conclude that the cause of cervical cancer is the interaction between viruses (especially HPV and HSV-2) and tar (smoking and douching) "
+},
+{
+"num": 6,
+"digest": "HPV and cervical cancer can be compared to aluminum and Alzheimer's, although it is clear to scientists that aluminum plays a major role in the onset of the disease, it is not profitable for anyone to admit it.It is not beneficial neither for the aluminum industry, nor for cosmetic, nor the pharmaceutical, which will lose hundreds of billions of profits, and who will have to pay huge compensation.It is not beneficial to governments whose economies will suffer because of this, nor even scientists who will take out already scarce grants and who do not want to become more obvious It's not profitable even for the [Alzheimer's Association] to lose funding as soon as the cause of the disease is found.This is beneficial only to patients, but because they have Alzheimer's, they they do not understand anything.<br><br> The recognition of HPV as the only cervical cancer factor is beneficial for everyone, the pharmaceutical industry, the government, and even scientists.The HPV vaccine created a new multibillion-dollar market that hitherto did not exist [out of thin air==http://www.pharmexec.com/brand-year-0]. That's only girls and boys who are pricked this vaccine, as well as their parents, who brainwashed propaganda, this vaccine is not beneficial. But their opinions are not asked. "
+},
+{
+"num": 7,
+"digest": "Cervical cancer develops very slowly, this is a process that takes 20-40 years.It precedes it [cervical dysplasia==https://ru.wikipedia.org/wiki/%D0%94%D0%B8%D1%81%D0%BF%D0%BB%D0%B0%D0%B7%D0%B8%D1%8F_%D1%88%D0%B5%D0%B9%D0%BA%D0%B8_%D0]<br><br> Dysplasia of the cervix is ​​the presence of atypical cells on the cervix of the womb.There are three types of dysplasia: CIN 1 (low-grade dysplasia), CIN 2 (moderate dysplasia), CIN 3 (severe dysplasia) The presence of dysplasia does not mean that cervical cancer is inevitable.<br> CIN 1 passes by itself in 99% of cases, and 1% passes into cancer.<br> CIN 2 in 95% of cases pass itself, and 5% go into cancer.<br> CIN 3 in 68-88% of cases, it goes away, and a 12-32% conversion into cancer. "
+},
+{
+"num": 8,
+"title": "Human papillomavirus (HPV) vaccines as an option for preventing cervical malignancies: (how effective and safe?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23016780/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Tomljenovic",
+"infoID": "23016780",
+"info_place": "Curr Pharm Des",
+"digest": "The next article analyzes clinical studies of vaccines against HPV, the article is long, but very informative, and it is worth reading it completely.<br><br> - Pap smear is a test that determines the presence of dysplasia. it is widely used, the risk of dying from cervical cancer is very low (1.4/100,000 women), 90% of cervical cancer deaths occur in third world countries (the risk of the disease is also very low 7/100,000 women.) Moreover, the risk of death from cancer the cervix continues to fall rapidly, in the 90s, without any vaccinations, it fell 2 times.)<br><br> An even greater reduction in deaths from cervical cancer due to vaccination in the developed is very unlikely.<br><i>Efficacy:</i><br><br> Since the development of cancer of the uterus gang takes decades, and the pharmaceutical company does not want to wait that long, surrogate markers, that is, dysplasias CIN 1-3, develop faster in clinical trials of vaccines, but because the vast majority of these dysplasias go by themselves, they are rather bad marker for cancer of the uterus.<br><br> about yourself, the test for dysplasia, especially CIN 2, is very inaccurate, which also makes it a bad marker.<br><br> Therefore, the effectiveness of a vaccine, determined based on dysplasia, is not evidence of the effectiveness of a vaccination against cervical cancer.<br> - Analyzing clinical studies, the effectiveness of Gardasil in the prevention of CIN 2-3 associated with any strain of HPV was only 14-17%. (This is the real effectiveness of the vaccine, but even it is too high, because not all of these dysplasias will go to cancer.) - The effectiveness of the vaccine for those already infected with HPV was negative (from -33% to - 44%). That is, in those who are already infected, inoculation increases the chance of dysplasia. These results were not mentioned in the article published by Merck. Nevertheless, the FDA does not require checking before vaccination, was there already an infection.<br> - Prevention of CIN 1-3 from strains 16/18 was 100%. But the statistical significance of these results is rather doubtful.<br> First, the confidence interval is very wide. The vaccination prevented 3 CIN 1-3 cases in one group, and 7 cases in another. Second, CIN 1 only passes into cancer in 1% of cases. But since the number of CIN 1 cases is much higher compared to CIN 2-3, the summation of CIN 1 with CIN 2-3 completely distorts statistics.<br> - The authors further analyze the clinical studies of the Cervarix vaccine, with similar conclusions.<br> - After 7 -and years the effectiveness of Cervarix in the prevention of CIN 2 was only 40.6%, with a confidence interval of -106.0 to 84.7.<br> <i> Safety: </ i><br> - Between 2006 and 2012, more than 20,000 cases of side effects from this vaccination, of which 8% are serious. 73 people died, 581 became disabled. Since the system of registration of vaccine side effects (VAERS) is passive, according to various estimates, it registers only 1% to 10% of all cases. Therefore, the real number of side effects is 10-100 times greater.<br><br> Of all the side effects of vaccinations in girls in the age group of 6-29 years, 65% of all serious side effects are due to HPV vaccinations.<br> - 82% of disabilities in girls younger than 30 years associated with vaccination against HPV.<br><br> In Australia, the number of serious side effects increased by 85% due to vaccination against HPV. The same thing happens in other countries.<br><br> In the Cervarix test, which included 9000 women, 8% had a serious side effect, 32% had a significant side effect, 9% had spontaneous abortion, 3% had a new chronic disease. Similar side effects were observed in the control group, but we remember that the control group received the same vaccine, but without the antigen.<br><br> In the UK, side effects from Cervarix were observed 8 times more often than from the MMR vaccine. "
+},
+{
+"num": 9,
+"title": "Effectiveness of the Quadrivalent Human Papillomavirus Vaccine Against Cervical Dysplasia in Manitoba, Canada.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24395857",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Mahmud",
+"infoID": "24395857",
+"info_place": "J Clin Oncol",
+"digest": "Another study proving the poor efficacy of Gardasil, and negative efficacy for already infected HPV.<br><br> About the negative effectiveness of vaccination for already infected, CDC on their site [write==https://www.cdc .gov/std/hpv/stdfact-hpv-vaccine-young-women.htm] as follows: \"HPV types\" HPV-related disease in young women who have already been exposed to one or more \"HPV types\" . \"Less Effective\", according to the CDC, it means negative effectiveness, but formally they are right, you will not even undermine it. Negative efficiency, it is really less than positive. m the next time, reading the CDC recommendations.<br> And that's what [writes==https://www.cancer.gov/about-cancer/causes-prevention/risk/infectious-agents/hpv-vaccine-fact-sheet] on its website the National Institute of Oncology (which owns several patents for the production of this vaccine): It is likely that someone has been exposed to  HPV will still get some residual benefit from vaccination, even if he or she has been infected with one or more of the HPV types included in the vaccines. Interested or not, the national institute of oncology in reducing the number of cancer patients, decide for yourself. But can the FDA not be aware of the negative effectiveness of Gardasil? Very much [in the course==http://www.fda.gov/ohrms/dockets/ac/06/briefing/2006-4222B3.pdf] (page 13). "
+},
+{
+"num": 10,
+"title": "Human papillomavirus (HPV) vaccine policy and evidence-based medicine: are they at odds?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22188159",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Tomljenovic",
+"infoID": "22188159",
+"info_place": "Ann Med",
+"digest": "Despite the fact that the HPV vaccination is positioned as an inoculation against cervical cancer, to date it has not prevented any case of cancer, let alone preventing death from cancer.<br><br> Benefit from this vaccine In the long term, it is based on theoretical assumptions and not on research. (It has not been established that immunity from this vaccine will last for decades).<br> Side effects from it include convulsions, paralysis, Guillain-Barre syndrome, transverse myelitis, neuritis of the facial nerve, anaphylactic shock, thrombosis deep veins, chronic fatigue syndrome, cervical cancer and death.<br><br> In developed countries, more people suffer from serious side effects from HPV vaccination than die from cervical cancer.While this comparison is not entirely correct, it should be remembered that this vaccination is done to children, and so even if the vaccine was very effective, and would prevent all 70% of cancer cases from HPV 16 and 18, this cancer would appear only after several decades. Is it worth changing the theoretical risk of cervical cancer in 50 years, the practical risk of lifelong paralysis, autoimmune disease or death at 9 years old? "
+},
+{
+"num": 11,
+"title": "Behavioral abnormalities in female mice following the administration of aluminum adjuvants and the human papillomavirus (HPV) vaccine Gardasil.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27421722",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Inbar",
+"infoID": "27421722",
+"info_place": "Immunol Res",
+"digest": "Mice were injected with Gardasil in equivalent human doses, and compared to control mice. The vaccinated mice had signs of depression, as well as inflammation of the brain's neural tissues and autoimmune reactions. "
+},
+{
+"num": 12,
+"title": "A case-control study of quadrivalent human papillomavirus vaccine-associated autoimmune negative events.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4475239/",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Geier",
+"infoID": "PMC4475239",
+"info_place": "Clin Rheumatol",
+"I_S_codenames": ["gastroenteritis", "arthritis", "lupus", "vasculitis", "alopecia"],
+"digest": "The authors analyzed the serious side effects of Gardasil in the US The vaccination increased the risk of gastroenteritis 4.6 times, arthritis 2.5 times, systemic lupus 5.3 times, vasculitis 4 times, baldness 8.3 times, diseases of the nervous system 1.8 times.<br> Vasculitis (inflammation of the blood vessels) started on average 6 days after inoculation, lupus after 19 days, atrial after 55 days. "
+},
+{
+"num": 13,
+"title": "Adverse events following HPV vaccination, Alberta 2006-2014.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26921782",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Liu",
+"infoID": "26921782",
+"info_place": "Vaccine",
+"digest": "Out of the 195,000 girls who received Gardasil, 10% went to the emergency department within 42 days after vaccination, 958 were hospitalized. The authors conclude that the vaccine is safe. 10% of calls to the ambulance among 10-year-old girls, this, of course, is quite normal, and with vaccination is not connected. "
+},
+{
+"num": 14,
+"title": "Prevalence of HPV After the Introduction of the Vaccination Program in the United States.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26908697",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Markowitz",
+"infoID": "26908697",
+"info_place": "Pediatrics",
+"I_S_codenames": ["strain_replacement"],
+"digest": "There is no holy place, preventing the infection of two or four strains of HPV, vaccination leads only to the fact that they are replaced by other strains. Here are some studies on this topic:<br> There is a decrease in the prevalence of 4 strains of HPV in young girls, but there is no change in the prevalence of HPV, given all strains of the virus."
+},
+{
+"num": 14,
+"title": "Shift in the prevalence of HPV types in cervical cytology specimens in the era of HPV vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4907297/",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Fischer",
+"infoID": "PMC4907297",
+"info_place": "Oncol Lett",
+"I_S_codenames": ["strain_replacement"],
+"digest": "Oncogenic strains of HPV 16 and 18 were replaced by other oncogenic strains 31, 51, 53, 56 and 66.<br> Three more studies with the same findings in Italy, the Netherlands and the US:",
+"sources_pool": [{
+"title": "Comparison of HPV prevalence between HPV-vaccinated and non-vaccinated young adult women (20-26 years).",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4635939/",
+"info_date": "2015",
+"info_authors": "Guo",
+"infoID": "PMC4635939",
+"info_place": "Hum Vaccin Immunother"
+},
+{
+"title": "Population- and type-specific clustering of multiple HPV types across diverse populations in the Netherlands.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24714726",
+"info_date": "2014",
+"info_authors": "Mollers",
+"infoID": "24714726",
+"info_place": "Am J Epidemiol"
+},
+{
+"title": "A cross-sectional study to estimate high-risk human papillomavirus prevalence and type distribution in Italian women aged 18-26 years.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3599585/",
+"info_date": "2013",
+"info_authors": "Giambi",
+"infoID": "PMC3599585",
+"info_place": "BMC Infect Dis"
+}]
+},
+{
+"num": 15,
+"digest": "After the European Medicines Agency (EBA) published a report that the vaccine against HPV is completely safe, the Scandinavian department of Cochrane filed a complaint [http://nordic.cochrane.org/sites/nordic.cochrane .org/files/uploads/ResearchHighlights/Complaint-to-EMA-over-EMA.pdf] in the EALS In Cochrane's 19-page letter, evidence is provided that the report was written by people with conflicts of interest that they forgot to mention, and the fact that they completely ignored the testimony, expert opinions and evidence of the insecurity of this vaccine. "
+},
+{
+"num": 16,
+"title": "Death after Quadrivalent Human Papillomavirus (HPV) Vaccination: Causal or Coincidental?",
+"link": "http://rescuepost.com/files/ltshaw-death-after-quadrivalent-hpv-vaccination-pharma-reg-affairs-2012.pdf",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Tomljenovic",
+"info_place": "Pharma Reg Affairs",
+"digest": "The two girls died after being vaccinated against HPV, the first, 19, died six months after the third vaccination, the second, 14, died two weeks after the second inoculation. Both had an autopsy that showed no pathologies. <br> The authors of the study analyzed samples of the brain tissue of girls, and found both autoimmune cerebral vasculitis (inflammation of the blood vessels of the brain) caused by antibodies on HPV 16. They also found the vaccine virus-like particles HPV-16L1 themselves adhered to the blood vessels of the brain.<br> Accumulated e of immune cells in the brain tissue can occur in one of three cases: 1) direct infection of the brain, 2) brain injury, 3) excessive stimulation of the immune system, for example through vaccination .. From the histories of girls' illness and autopsy analyzes it follows that only the third the reason is right.The brain is very sensitive to a decrease in blood supply (ischemia), so vasculitis of the nervous system without treatment easily leads to permanent disability.Cerebral vasculitis is believed to be a rather rare disease. But this is because his symptoms are fickle and difficult to diagnose. Symptoms include headaches, orthostatic hypotension, dizziness, fainting, tremors, tingling, weakness, cognitive and motor disorders, etc. Both girls had a majority of these symptoms. "
+},
+{
+"num": 17,
+"title": "Orthostatic intolerance and postural tachycardia syndrome as suspected adverse effects of vaccination against human papilloma virus.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25882168",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Brinth",
+"infoID": "25882168",
+"info_place": "Vaccine",
+"I_S_codenames": ["orthostatic_intolerance"],
+"digest": "Orthostatic intolerance is a decrease in pressure when you get up from a sitting or lying position.The authors analyzed the symptoms of 35 girls who received them.Overall started orthostatic hypotension on average 9 days after vaccination, but the diagnosis was made on average, in two years.The majority also had severe headaches, nausea, cognitive impairment, heart palpitations, weakness, tremor, sleep problems, rash, neuropathic pain, etc. Five girls could not move without a wheelchair. Except for one, they could not function properly, and 21 of them were forced to quit school or work.<br><b>Before the inoculation, all the girls professionally went in for sports, half of them on sports national or international level.</b><br> What sports do lead to an increased response to vaccinations has been established in other studies. </ b> Another similar case [study==https://www.ncbi.nlm.nih.gov/pubmed/24102827] 6 girls. "
+},
+{
+"num": 18,
+"title": "Suspected side effects to the quadrivalent human papilloma vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25872549",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Brinth",
+"infoID": "25872549",
+"info_place": "Dan Med J",
+"digest": "The authors analyzed the symptoms of 53 girls after the inoculation.The common symptoms were headaches, orthostatic hypotension, fainting, weakness, cognitive impairment, insomnia, irregular menstruation, tremors, twitching, difficulty walking, abdominal pain, chest and neuropathic pain, etc. No girls had chronic illnesses before vaccination.<br> Symptoms started on average 11 days after vaccination Before vaccination, all patients professionally engaged in sports After vaccination 98% could not function normally, 75 % bp Sealy study or work for at least two months<br> Related [study==https://www.ncbi.nlm.nih.gov/pubmed/25274229]. 40 girls in Japan. "
+},
+{
+"num": 19,
+"title": "Human papilloma virus vaccine and primary ovarian failure: another facet of the autoimmune/inflammatory syndrome induced by adjuvants.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23902317",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Colafrancesco",
+"infoID": "23902317",
+"info_place": "Am J Reprod Immunol",
+"I_S_codenames": ["menopause"],
+"digest": "Three men (ages 13, 14 and 21) had menopause after vaccination, they had autoantibodies hinting at the role of the HPV vaccine, and all the usual symptoms began - nausea, headaches, insomnia, cognitive and psychiatric disorders.<br><br> The HPV virus for Cervarix is ​​grown in caterpillar cages, and the Gardasil virus is grown in yeast.Europe Yeast is a known trigger for autoimmune reactions. "
+},
+{
+"num": 20,
+"title": "Adolescent Premature Ovarian Insufficiency Following Human Papillomavirus Vaccination: A Case Series Seen in General Practice.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4528880/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Little",
+"infoID": "PMC4528880",
+"info_place": "J Investig Med High Impact Case Rep",
+"I_S_codenames": ["menopause"],
+"digest": "Three more girls with menopause after vaccination, all from the same Australian state. The authors write that menopause in adolescence until now did not practically exist.<br> (But, after one of the girls after menopause, there were fewer teenage pimples In general, if your daughter has pimples and you do not need grandchildren, then you can advise Gardasil.)<br><br> But I cite this article because it also analyzes preclinical, clinical and post-clinical trials of the vaccine in terms of influence on fertility, and its worth to read completely.<br> Preclinical toxicological studies conducted in rats Merck refused to provide a toxicological report of the reproductive organs of females but provided a report of male reproductive organs<br><br> Female rats after vaccination conceived only once, after which they were killed.Rats received only two doses of vaccination, and not three, as people.<br> Clinical trials were no better: First, safety was mainly studied in girls aged 16-23. There were very few girls under the age of 16, although the vaccine is intended for them. Secondly, everyone was required to take birth control pills for at least seven months, from which it follows that the violation of the monthly cycle was, in principle, impossible to verify. If something happened after 7 months, it by definition could not be connected with the vaccination. And if something happened in those seven months, but the experimenter believed that this is not related to the vaccination, it means that it is not connected. And yes, two girls stopped monthly, but Merck did not publish these data. Thirdly, serious side effects were checked within two weeks after vaccination. To notice the termination of menstruation for two weeks is rather difficult. But what's more, stopping menstruation at all is not considered a serious side effect. Serious include only hospitalization, disability or death. Menopause at 12 years is not a serious problem.<br> In VAERS (a system of recording side effects in the US), 104 cases of menopause have been reported after Gardasil from 2006 to 2013.<br> Post-clinical studies are usually based on hospitalization data, and therefore also unable to identify early menopause, since it does not require hospitalization. "
+},
+{
+"num": 21,
+"header": "Polysorbate 80",
+"digest": "One component of Gardasil is Polysorbate 80. This is an emulsifier that is often used in food and cosmetics, and is considered safe enough to be used in vaccines, although, of course, its safety in vaccines is not In the study, in rats, however, it turned out that when the newborn female rats are pricked with polysorbate 80, they are in violation of the estrus cycle (increases from 4.3 days to 9-14 days.) In addition, they had low ovarian weight, abnormal cytology of the uterus, enlarged uterus and the accelerated aging of the reproductive organs. "
+},
+{
+"num": 22,
+"digest": "In addition, polysorbate 80 can penetrate the barrier between the blood and the brain (BBB) ​​[1==https://www.ncbi.nlm.nih.gov/pubmed/3995684] [2==http://www.sciencedirect.com/science/article/pii/0378517389902664]. Moreover, because of this property, it is often [added==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC539316/ ] in medicines intended for the central nervous system. This, in addition to aluminum, also explains why most of the side effects of the vaccine are neurological and psychiatric disorders. "
+},
+{
+"num": 23,
+"digest": "According to the toxicological [manufacturer's report==http://indenta.com/wp-content/uploads/2017/03/Tween-80.pdf], polysorbate 80 is a carcinogen and leads to mutations in DNA. by experiments on animals, he leads to cardiological changes, to psychological changes, and to weight loss.It penetrates through the skin is unclear, which does not prevent to widely use it in soap, shampoos and other cosmetics. "
+},
+{
+"num": 24,
+"digest": "In healthy mice, in which a low concentration of polysorbate 80 was added to the diet, [started hysterectomy]. obesity, metabolic syndrome and colitis, Polysorbate 80 also altered the intestinal microflora and increased the proinflammatory potential.The authors conclude that the use of polysorbate 80 and similar emulsifiers contributed to an increase in obesity, metabolic syndrome and chronic inflammatory bowel diseases.<br> Polysorbate 80 [ plays==http://gut.bmj.com/content/59/10/1331.full] so e role in the development of Crohn's disease.<br> Polysorbate 80 is usually added to the ice cream, chewing gum, gelatin, mayonnaise, various sauces, etc. "
+},
+{
+"num": 25,
+"digest": "Polysorbate 80 [contains==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/B/excipient-table-2.pdf] also in some vaccines from diphtheria, tetanus, pertussis, poliomyelitis, Hib, hepatitis A and B, influenza, pneumococcus, meningococcus and rotavirus. "
+},
+{
+"num": 26,
+"digest": "In clinical trials of both vaccines, aluminum was used instead of placebo, which means that it is impossible to establish the actual number of side effects. It is [document==http://www.fda.gov/downloads/BiologicsBloodVaccines /Vaccines/ApprovedProducts/UCM111274.pdf], which Merck presented to the FDA for the licensing of Gardasil, 20,000 girls participated in the vaccine trials, 75% of young girls and girls aged 9 to 26 years had a new disease in three years of testing ( 137) A lot or a little, decide for yourself.<br><br> But one small control group of girls in and Gardasil was not saline (saline), but this solution also contained the remaining components of the vaccine, except aluminum: Polysorbate 80 already known to us, yeast protein, borax and L-histidine .L-histidine is a precursor of histamine, of which We'll talk another time.<br> The presence of this small group allows Merck to claim that not only aluminum but also saline was used as a placebo. The other components of this saline are usually modestly silent. In the liner to the vaccine, for example, you will not find this information. But it can be found [here==https://www.ncbi.nlm.nih.gov/pubmed/17484215]. However, data on the side effects of only this group compared to other groups are usually hidden. Merck summarizes the serious side effects of all control groups together. "
+},
+{
+"num": 27,
+"digest": "For a long time I could not understand how they managed to create such a dangerous vaccine, because unlike most vaccinations given to young children, with an undeveloped immune system, this vaccine is given already to large children and adults. The vaccine advocates have a simple answer to this question, which, in their opinion, is due to the fact that large children and adults, unlike babies, are able to speak.<br> A baby is expressed only with tears, and crying is possible write off everything that is pleasing If a 16-year-old girl begins to faint, she stops thinking, and can not continue to learn, it's impossible not to notice, and it's impossible to write off the genetic factors. And if the baby stops thinking, it only becomes visible in years, and you can to conclude that he was born this way. "
+},
+{
+"num": 28,
+"digest": "But there is another answer: In these vaccines, new types of aluminum salts were used as adjuvants, Aluminum hydroxide (AlOH) and aluminum phosphate (AlPO4) were disassembled in aluminum, but there are new, more potent aluminum adjuvants.<br> In Gardasil, Amorphous Aluminum Hydrophosphate Sulfate (AAHS) was used Amorphous Aluminum Hydrophosphate Sulfate (AAHS), in Gardasil-9 this aluminum is 2.2 times more than in the previous version of the vaccine (500 mg).<br> In Cervarix used adjuvant system 04 (AS04 ), this is aluminum hydroxide mixed with salmonella endotoxin. <b No studies of the safety of these new adjuvants have, of course, been carried out.Aluminum, despite numerous studies proving its toxicity, is recognized by the FDA as \"Generally Recognized As Safe.\" This means that its new compounds too, are safe enough to add them to vaccines. "
+},
+{
+"num": 28,
+"title": "Effect of alternative aluminum adjuvants on the absorption and immunogenicity of HPV16 L1 VLPs in mice.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17581283",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Caulfield",
+"infoID": "17581283",
+"info_place": "Hum Vaccin",
+"I_S_codenames": ["adjuvants"],
+"digest": "This article compares the immune response of these new adjuvants to aluminum hydroxide in mice.The authors joyfully conclude that both new adjuvants cause an immune response that is 3-8 times greater than the immune response to aluminum hydroxide. , do not write anywhere that an eightfold immune reaction also means an eight-fold risk of an autoimmune reaction. "
+},
+{
+"num": 29,
+"digest": "Very interesting [https://www.youtube.com/watch?v=WRyz56hhRto], which explains more about these new adjuvants, about what exactly is \" amorphous\", and how does it affect that each dose of the vaccine contains a different amount of antigen, why AAHS can not be patented (it is unstable), about the fact that the same adjuvant was used in the DTP vaccine that is not used more in developed countries due to too frequent side effects , as well as in other vaccinations against hepatitis, in the liner to which, Merck forgot to indicate this ingredient. "
+},
+{
+"num": 30,
+"title": "Detection of human papillomavirus (HPV) L1 gene DNA bound to particulate aluminum adjuvant in the HPV vaccine Gardasil.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23078778",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Lee",
+"infoID": "23078778",
+"info_place": "J Inorg Biochem",
+"digest": "Despite the manufacturer's claims that the vaccine has been cleaned and there is no papillomavirus DNA in it, 16 of the tested doses of Gardasil collected from around the world have found fragments of the virus DNA. Since these fragments are adhered to aluminum, ( which devour macrophages, and spread it all over the body through the lymphatic system), these fragments of the virus DNA enter all organs, and further strengthen the autoimmune reaction, but there may well be not only fragments, but also a whole living virus that, instead of the usual pathways of infection only cells of the skin, vagina, or throat will spread and infect the entire body.Also, because the virus is attached to aluminum, and the macrophages do not know what to do with this aluminum, DNA fragments are protected by aluminum and not disposed of. > Also, the DNA of the guard papillomavirus was found in the blood and spleen died six months after the vaccination of the 16-year-old girl.<br> In this [video==http://www.youtube.com/watch?v= y7hjwXODy_8] the author details explains to what the DNA of papillomavirus in the vaccine can lead.<br> FDA [hurried up==https://www.fda.gov/biologicsblo odvaccines/vaccines/approvedproducts/ucm276859.htm] state that the presence of DNA fragments of the virus is not at all dangerous, and generally even expected. Although according to the documents that Merck filed with the FDA, [they are not there==https://www.fda.gov/ohrms/dockets/ac/06/briefing/2006-4222B1.pdf]. "
+},
+{
+"num": 31,
+"title": "Identification of vaccine human papillomavirus genotypes in squamous intraepithelial lesions (CIN2 - 3)",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18684497",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "González-Bosquet",
+"infoID": "18684497",
+"info_geo": "Spain",
+"info_place": "Gynecol Oncol",
+"digest": "Among unvaccinated women with CIN 2-3, only 28% were infected with HPV strains 16 and 18. 9% of women with CIN 2-3 were not at all infected with HPV. (Barcelona)<br> In [ friend==https://www.ncbi.nlm.nih.gov/pubmed/11812085] study, HPV was found in only 60% of cases of invasive cervical cancer. "
+},
+{
+"num": 32,
+"digest": "From 2006 to 2017 [after==http://sanevax.org/vaers-report/] vaccinations against HPV in the United States, 14,518 people went to the hospital, 4,795 were hospitalized, 1924 became disabled, 324 died, 279 dysplasia of the cervix appeared, 618 abnormal Pap smears, and 129 had cervical cancer (Data taken from VAERS, ie, they include approximately 1-10% of all cases) "
+},
+{
+"num": 33,
+"title": "Too fast or not too fast: the FDA's approval of Merck's HPV vaccine Gardasil.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23061593",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Tomljenovic",
+"infoID": "23061593",
+"info_place": "J Law Med Ethics",
+"digest": "The process of licensing a new drug is quite long, but for some drugs, the FDA makes exceptions, and licenses them much faster if it has reason to believe that they are very effective, safe, better than those available on the market, and improve the health of the community. This is called the fast track.The Gardasila licensing process has followed this path and took only six months.<br> This article analyzes the process of authorizing Gardasil, and proves that Gardasil does not meet any of the four criteria required for a fast track."
+},
+{
+"num": 34,
+"title": "Pharmaceutical companies' role in state vaccination policymaking: the case of human papillomavirus vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3483914/",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Mello",
+"infoID": "PMC3483914",
+"info_place": "Am J Public Health",
+"digest": "Here is analyzed the aggressive lobbying of Merck, and how it led to the fact that the vaccination against HPV just one year after licensing has become mandatory in some states."
+},
+{
+"num": 35,
+"digest": "Two interesting lectures about this vaccination:",
+"sources_pool": [{
+"title": "Dr. Lucija Tomljenovic - HPV Vaccine Safety and Efficacy Issues",
+"link": "https://www.youtube.com/watch?v=9Uu3iWA1UWw"
+},
+{
+"title": "Dr. Suzanne Humphries on Gardasil",
+"link": "https://www.youtube.com/watch?v=AkyjgY70yPA"
+}]
+},
+{
+"num": 36,
+"title": "Probiotics enhance the clearance of human papillomavirus-related cervical lesions: a prospective controlled pilot study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22706167",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Verhoeven",
+"infoID": "22706167",
+"info_place": "Eur J Cancer Prev",
+"I_S_codenames": ["probiotics"],
+"digest": "Probiotics probably help in the treatment of cervical dysplasia.<br> Also significantly reduces the risk of dysplasia [vitamins C, A, E==https://www.ncbi.nlm.nih.gov/pubmed/20375804], [vitamin D==https://www.ncbi.nlm.nih.gov/pubmed/28471122], [vitamins B==https://www.ncbi.nlm.nih.gov/pubmed/14682443], [ extract of green tea==https://www.ncbi.nlm.nih.gov/pubmed/14512803], [turmeric==https://www.ncbi.nlm.nih.gov/pubmed/24289574] and [healthy vaginal microflora==https://www.ncbi.nlm.nih.gov/pubmed/27802830]. That is, if you simply do not smoke, do not use oral contraceptives, eat normally, do not destroy the vaginal microflora with douche chemicals, and elat sometimes pap smears, the risk of cervical cancer, which is already very low, reduced to almost zero without vaccination. "
+},
+{
+"num": 37,
+"digest": "Let's now see what the pro-vaccination writers write about this vaccine. For example, the molecular biologist Zoe Kogan in the FB-1's [http://www.facebook.com/groups/iznakurnozh/permalink/1226816370709216/] molecular biologist, (whose moderator she is), where she proves the safety of the vaccine, she immediately waves away from numerous case reports, and cites three articles as proof of safety: [1==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4230467] [2==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4159543/] [3==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3805482].<br> The first two articles are meta-analyzes of randomized clinical trials All of these tests used aluminum as a placebo, which implies that it is impossible to conclude absolutely nothing about vaccine safety. The third study is much better, but it is: a) it is not a randomized trial but a retrospective study. <br > b) is based only on hospital data, that is, if the illness does not require hospitalization, it is not taken into account. Not all diseases require hospitalization. Menopause at age 13, for example, does not require.<br> c) lasted only 6 months, whereas the diagnosis of autoimmune diseases can take several years. D) includes in the same way those who received a single dose of a vaccine, two doses or three doses (on average, all received 2.3 doses).<br> e) has so broad confidence intervals that such statistics are difficult to be considered seriously as a safety argument. Even this study established that vaccination increases the chance of developing a diabetes of the first type, Behcet's disease (systemic vasculitis) and disease New Reynaud (type of ischemia). Take for example Behcet's disease, the risk of which increases from vaccination by 3.4 times and is 2 per 100,000. If we remember that mortality from cervical cancer is 1.4 per 100,000, then the risk of cancer exchange in 40 years, at the same risk of an incurable autoimmune disease now, does not look like a very good deal. This, you might say, is the worst health deal in the history of health deals. And this is not even starting to talk about other autoimmune incurable diseases, the risk of which this vaccine increases (diabetes by 1.98 and Reynaud at 6.91/100,000). Moreover, the vaccine, according to this study, reduces (!) The risk of epilepsy and paralysis. Given the numerous cases of paralysis after HPV vaccination (for example, [one==https://www.youtube.com/watch?v=CHYmb9Hwj4A], for example), as well as conflicts of interest of authors who received funding from Merck and GSK, it is unlikely this study can be taken seriously, and based on it the decision to do or not this vaccine, given that this decision may prove fatal.<br><br> I quote this article for two reasons. First, because unlike most others, it refers to scientific research. And secondly, because writers and readers of the above-mentioned community are mostly scientists, doctors, and other people who consider themselves to be scientific and intellectual elite. And none of the ten thousand highly educated and intelligent readers and commentators paid no attention to any of the above facts. Naive scientists of her \"genius\" article believe Zoe, amicably applaud her, and go to vaccinate their children with this terrible vaccine.<br><br> I think that for such \"well-wishers\" as Zoya Kogan, in hell is prepared separate boiler. "
+}],
+"summary": "It's not the fact that HPV causes cervical cancer.<br> In most cases, HPV passes by itself without any symptoms.<br><br> The risk of cancer of the uterus in developed countries is very low (7/100,000) , and continues to decline rapidly.<br> The vaccine has not prevented any case of cancer so far. (hello, evidence-based medicine)<br> The vaccine increases the risk of cervical dysplasia by 44% in already infected with HPV, that is, it is contraindicated to nedevstvennitsam. too, because they could well get infected from parents or friends.<br> Vaccine Container Gardasil also contains polysorbate 80, which leads to rapid aging of reproductive organs.<br> There are no safety studies for vaccines that use the real placebo.<br> There are more effective and safer methods of preventing cervical cancer (Pap test, LEEP ). Vaccination is especially dangerous for athletes. "
+}

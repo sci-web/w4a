@@ -1,0 +1,311 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Hepatitis B",
+"I_S_codename": "hepatitisB",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Hepatitis B",
+"date": ISODate ("2017-08-01T12: 18: 00Z"),
+"epigraph": {
+"text": "Primum non nocere"
+},
+"points": [{
+"num": 1,
+"digest": "If there is anything more stupid than inculcating a teenager from HPV, then it will certainly inculcate a newborn baby from hepatitis B."
+},
+{
+"num": 2,
+"digest": "Like HPV, hepatitis B is a virus that is transmitted mainly through sexual contact, or through the blood.If a mother is infected with hepatitis B, the virus can pass to the child through the placenta, or during labor. Hepatitis B does not pass through mother's milk. [[1]== https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3557270] [[2]==http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2875%2990724-2/ ​​abstract]"
+},
+{
+"num": 3,
+"digest": "In 80% of infected adults, the disease passes without symptoms, or with very mild symptoms, and they do not even know they were sick. After infection, they get lifelong immunity. Of the remaining 20% ​​who are diagnosed with hepatitis B, 95% completely recover, and receive lifelong immunity. <br> Of the remaining 5%, only 25% (ie 0.25% of all infected) will develop, 20-30 years after infection, cirrhosis or cancer. Cirrhosis or cancer develops not because of the virus itself, but because of the immune reaction to it. <br> 70% of patients with hepatitis B are the people's commissar ana, gay, alcoholics, homeless, having many sexual partners. <br> In cirrhosis or in cancer, hepatitis B [goes == http: //www.mdedge.com/ccjm/article/94870/gastroenterology/hepatitis-b-virus -infection-understanding-its-epidemiology / page / 0/1? channel = 213] mainly in alcoholics, smokers, hepatitis C patients, obese and with diabetes. "
+},
+{
+"num": 4,
+"digest": "Why should a newborn child be vaccinated against STDs, which he practically can not catch? Well, simply [because==http://www.nytimes.com/1991/03/01/us/us-panel-urges-that-all-children-be-vaccinated-for-hepatitis-b.html] that adult drug addicts and gay men refused to vaccinate, so it was decided to vaccinate children immediately after birth, when they are not yet able to refuse. "
+},
+{
+"num": 5,
+"digest": "Three doses of the vaccine are usually given, the first immediately after birth, the second in a month, and the third at 6 months. This is the only inoculation given immediately after birth (except btszh, which is so ineffective that almost nowhere else in the world is not used.) If you think that the vaccine is given right after birth in order to prevent possible infection from the mother, then no.In the USA and in other countries all women before birth are tested for hepatitis B. Children of infected mothers receive immunoglobulin together with immunization passive vaccination). In some countries, however, vaccinate all children simply [because==http://journals.sagepub.com/doi/abs/10.1177/0272989X9301300103] that it is much cheaper than checking all mothers. "
+},
+{
+"num": 6,
+"title": "Epidemiology of Hepatitis B in the United States",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3290915/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Ray Kim",
+"infoID": "PMC3290915",
+"info_place": "Hepatology",
+"digest": "Before the start of the universal vaccination of infants, in 1990, only 1 in 100,000 children under the age of 15 had hepatitis B in the US At the moment, the risk of contracting hepatitis B to 20 years [is==https://www.cdc.gov/hepatitis/statistics/2013surveillance/pdfs/2013hepsurveillancerpt.pdf] 0.3 per million In developed countries, hepatitis B is a rare disease, and it is more common in Africa and in Southeast Asia. "
+},
+{
+"num": 7,
+"digest": "The first vaccine against hepatitis B appeared in 1981. It was made on the basis of a live virus, and after its introduction the number of hepatitis B infected rapidly [increased==http://www.cdc.gov/vaccines/pubs/ pinkbook/hepb.html.] In 1994, it was found that despite the presence of a vaccine, the number of patients with hepatitis B does not decrease. "
+},
+{
+"num": 8,
+"digest": "There are many manufacturers of this vaccine, but in developed countries they use mainly Recombivax (Merck) and Engerix-B (GSK), as well as combined vaccines. <br> Engerix-B contains aluminum hydroxide, and Recombivax amorphous hydrogen phosphate sulfate Aluminum (AAHS, the same adjuvant that contains Gardasil.) In Recombivax aluminum is twice as large (500 micrograms vs. 250mkg). Previously, it was indicated on the Recombivax package that it contains aluminum hydroxide, and now [write== https://www.fda.gov/BiologicsBloodVaccines/Vaccines/ApprovedProducts/ucm110098.htm] as follows: 0.5 mg of aluminum is provided as an aluminum hydroxyphosphate sulfate, previously referred to as aluminum hydroxide. poll as generally can be trusted list of vaccine ingredients. <br> Viruses for both vaccines are grown in leaps and bounds, so contain 1% yeast protein, which may well lead to an allergy to yeast. "
+},
+{
+"num": 9,
+"digest": "In most European countries, newborns are not vaccinated against hepatitis B, and they are vaccinated 2-3 months after birth.In some countries (Finland, Iceland, Denmark, Hungary) children in general [do not vaccinate==http://vaccine-schedule.ecdc.europa.eu/Pages/Scheduler.aspx] from hepatitis B, but there are no epidemics there: on the contrary, the mortality rate from hepatitis B is much [lower==http://global-disease-burden.healthgrove.com/l/27593/Hepatitis-B-in-Iceland# Impact%20in%20Similar%20Locations&s=1hHHUH] than the average for Europe."
+},
+{
+"num": 10,
+"digest": "Clinical trials of the safety of these vaccines did not have a control group at all, because it is considered extremely unethical not to vaccinate a newborn baby from STDs, which he practically can not catch."
+},
+{
+"num": 11,
+"title": "Recombinant hepatitis B vaccine and the risk of multiple sclerosis: a prospective study.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15365133",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Hern & aacute; n",
+"infoID": "15365133",
+"info_place": "Neurology",
+"digest": "Vaccinated from hepatitis B, three years after the vaccination, they had multiple sclerosis 3.1 times more often than not vaccinated. <br> Several other studies that did not find an increased risk of multiple sclerosis in vaccinated patients are also being analyzed [Here are==https://www.ncbi.nlm.nih.gov/pubmed/10470051], for example, a study that did not find an increased risk, because they used the date of diagnosis, rather than the date of the onset of the first symptoms.The diagnosis of multiple sclerosis is usually made after a few years after the onset of symptoms. "
+},
+{
+"num": 12,
+"title": "Hepatitis B vaccine and the risk of CNS inflammatory demyelination in childhood.",
+"link": "http://www.neurology.org/content/72/10/873",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Mikaeloff",
+"infoID": "18843097",
+"info_place": "Neurology",
+"digest": "The Engerix-B vaccine increased the risk of multiple sclerosis 2.77 times compared to other hepatitis B vaccines."
+},
+{
+"num": 13,
+"title": "Evolution of multiple sclerosis in France since the beginning of hepatitis B vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4266455/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Hou & eacute; zec",
+"infoID": "PMC4266455",
+"info_place": "Immunol Res",
+"digest": "After the vaccination against hepatitis B in France, the number of cases of multiple sclerosis increased by 65%. There is a high correlation (0.93 / 0.73) between the number of vaccine doses made and the number of cases of multiple sclerosis after 1-2 years. "
+},
+{
+"num": 14,
+"title": "A case-control study of serious autoimmune adverse events following hepatitis B immunization.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16206512",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Geier",
+"infoID": "16206512",
+"info_place": "Autoimmunity",
+"digest": "VAES analysis: Grafted from hepatitis B, adults developed multiple sclerosis 5.2 times more often than those vaccinated against tetanus. The risk of vasculitis was 2.6 times higher, alopecia 7.2 times, lupus 9 times, arthritis 2 times, rheumatoid arthritis 18 times, thrombocytopenia 2 times, inflammation of the optic nerve 14 times higher. "
+},
+{
+"num": 15,
+"title": "Adverse events associated with hepatitis B vaccine in U.S. children less than six years of age, 1993 and 1994.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/11164115",
+"info_type": "article",
+"info_date": "2001",
+"info_authors": "Fisher",
+"infoID": "11164115",
+"info_place": "Ann Epidemiol",
+"digest": "Vaccination against hepatitis B increased the risk of arthritis 5.9 times, acute otitis 1.6 times, pharyngitis 1.4 times."
+},
+{
+"num": 16,
+"title": "Hepatitis B vaccine and liver problems in U.S. children less than 6 years old, 1993 and 1994.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10230847",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Fisher",
+"infoID": "10230847",
+"info_place": "Epidemiology",
+"digest": "Vaccination from hepatitis B increased the risk of liver disease by 1.5-2.3 times."
+},
+{
+"num": 17,
+"title": "Hepatitis B vaccination of male neonates and autism diagnosis, NHIS 1997-2002.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21058170",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Gallagher",
+"infoID": "21058170",
+"info_place": "J Toxicol Environ Health A.",
+"digest": "Newborns grafted from hepatitis B had a 3-fold greater risk of developing autism, compared with the unvaccinated, or vaccinated at least one month after birth."
+},
+{
+"num": 18,
+"title": "Autoimmune hazards of hepatitis B vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/15722255",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Girard",
+"infoID": "15722255",
+"info_place": "Autoimmun Rev",
+"digest": "A review article on the autoimmune consequences of vaccination against hepatitis B, and how this vaccine is combined with evidence-based medicine (in no way)."
+},
+{
+"num": 19,
+"title": "Delayed acquisition of neonatal reflexes in newborn primates receiving a thimerosal-containing hepatitis B vaccine: the impact of gestational age and birth weight.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20711932",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Hewitson",
+"infoID": "20711932",
+"info_place": "J Toxicol Environ Health A.",
+"digest": "Newborn macaques were vaccinated against hepatitis B with thiomersal, and compared with unvaccinated. <br> The grafted macaques acquired survival reflexes, as well as motor and sensory-motor reflexes much later than the unvaccinated ones. Low weight and premature birth aggravated the effect <br> <br> Thiomersal (ethyl mercury) has not been added to vaccines since 2003 in the US and Western Europe, but is still used in other countries.In Canada, [for example==http://www.phac-aspc.gc.ca/publicat/ccdr-rmtc/07vol33/acs-06/index-eng.php], not to mention Russia, Eastern Europe and the Third World . "
+},
+{
+"num": 20,
+"title": "Hepatitis B triple series vaccine and developmental disability in US children aged 1-9 years.",
+"link": "http://www.tandfonline.com/doi/abs/10.1080/02772240701806501",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Gallagher",
+"infoID": "10.1080 / 02772240701806501",
+"info_place": "Toxicol Environ Chem",
+"digest": "In vaccinated against hepatitis B, the risk of developmental delay was 9 times higher than that of the unvaccinated."
+},
+{
+"num": 21,
+"title": "Clustering of Cases of IDDM 2 to 4 Years after Hepatitis B Immunization is Consistent with Clustering after Infections and Progression to IDDM in Autoantibody Positive Individuals.",
+"link": "https://benthamopen.com/contents/pdf/TOPEDJ/TOPEDJ-2-1.pdf",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Classen",
+"info_place": "Open Pediatr Med J",
+"digest": "After the start of the vaccination campaign, the number of children with type 1 diabetes increased in France by 61%, and in New Zealand by 48%. In Italy, hepatitis B vaccines were 40% more unvaccinated for adolescents. <br> The increase in the number of cases of juvenile diabetes occurs 2-4 years after the start of vaccination, which hints at a causal relationship. "
+},
+{
+"num": 22,
+"title": "Chronic fatigue syndrome and fibromyalgia following immunization with the hepatitis B vaccine: another angle of the 'autoimmune",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25427994",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Agmon-Levin",
+"infoID": "25427994",
+"info_place": "Immunol Res",
+"digest": "The hepatitis B vaccine is associated with chronic fatigue syndrome and with fibromyalgia."
+},
+{
+"num": 23,
+"title": "Autoimmunity following hepatitis B vaccine as part of the spectrum of 'Autoimmune'",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22235045",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Zafrir",
+"infoID": "22235045",
+"info_place": "Lupus",
+"digest": "ASIA, or Schonfeld Syndrome, is a common name for autoimmune diseases caused by adjuvants, and includes autoimmune effects of aluminum adjuvants, Gulf war syndrome, macrophage myositis (MMF), and silicones (autoimmune effects of silicone implants). neurological and psychiatric symptoms, cognitive impairment, muscle pain, arthritis, chronic fatigue, insomnia, vision problems and with the gastrointestinal tract, etc .. <br> 93 cases associated with vaccination against hepatitis B are analyzed here. "
+},
+{
+"num": 24,
+"title": "Vaccine-induced autoimmunity.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/9115571",
+"info_type": "article",
+"info_date": "1996",
+"info_authors": "Cohen",
+"infoID": "9115571",
+"info_place": "J Autoimmun",
+"digest": "With immunization from hepatitis B, such autoimmune diseases as Reiter syndrome, arthritis, lupus, inflammation of the choroid, myasthenia, erythema nodosum, thrombocytopenic purpura, Evans syndrome and demyelinating diseases of the central nervous system are associated."
+},
+{
+"num": 25,
+"title": "In vivo study of hepatitis B vaccine effects on inflammation and metabolism gene expression.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/21691704",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Hamza",
+"infoID": "21691704",
+"info_place": "Mol Biol Rep.",
+"digest": "The epigenetic effect of the vaccine: Mice were given one or two inoculations from hepatitis B (at the appropriate dose). One day later, they had significant changes in the expression of 144 genes in the liver. The authors analyzed in detail 7 of them, all changes were negative , and led to an easy trauma to the liver, mainly due to aluminum. "
+},
+{
+"num": 26,
+"title": "Hepatitis B vaccine induces apoptotic death in Hepa1-6 cells.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22249285",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Hamza",
+"infoID": "22249285",
+"info_place": "Apoptosis",
+"digest": "The hepatitis B vaccine destroys mitochondria, and kills liver cells in mice."
+},
+{
+"num": 27,
+"title": "Trained immunity in newborn infants of HBV-infected mothers.",
+"link": "https://www.nature.com/articles/ncomms7588",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "Hong",
+"infoID": "10.1038 / ncomms7588",
+"info_place": "Nature Comm",
+"digest": "Hepatitis B virus transmitted from mother to child is possible, contrary to popular belief, leads to better development of the immune system."
+},
+{
+"num": 28,
+"title": "Vertical HBV transmission in Jerusalem in the vaccine era.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23330257",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Michaiel",
+"infoID": "23330257",
+"info_place": "Harefuah",
+"digest": "Vaccination against hepatitis B does not work at all in children who were born to infected mothers. In [this==http://onlinelibrary.wiley.com/doi/10.1002/jmv.2187/abstract] study it is reported that less than 4% of children born to infected mothers have contracted hepatitis B. "
+},
+{
+"num": 29,
+"title": "Chronic hepatitis B infection in adolescents who received primary infantile vaccination.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22858989",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Wu",
+"infoID": "22858989",
+"info_place": "Hepatology",
+"digest": "Fifteen-year-old teenagers vaccinated in childhood checked the level of hepatitis B antibodies and it turned out to be very low, that is, the immunity from vaccination ends before the onset of sexual activity, when it finally becomes necessary. According to [another==https://www.ncbi.nlm.nih.gov/pubmed/15247604] study, antibodies disappear by the age of five."
+},
+{
+"num": 30,
+"digest": "In VAERS [registered==http: //www.medalerts.org/vaersdb/findfield.php?TABLE=ON& GROUP1=CAT&EVENTS=ON&VAX%5b%5d=HBHEPB&VAX%5b%5d= HEP&VAX%5b%5d=HEPAB&AGES%5b%5d=1&AGES%5b%5d=2] 999 deaths of children under one year and 390 cases of disability after vaccination against hepatitis B in the US (that is, the real number is 10-100 times greater) "
+},
+{
+"num": 31,
+"digest": "In Israel, since 2005 [the Israeli vaccine Sci-B-Vac has been used==https://www.israel21c.org/hepatitis-b-no-match-for-scigens-new-vaccine/] only in the center of Israel and in the south (because the whole market can not be given to one producer). In July 2015, this vaccine was [revoked==https://www.health.gov.il/NewsAndEvents/SpokemanMesseges/Pages/29072015_3.aspx]. According to a statement by the Ministry of Health, it was recalled because the ampoules arrived on the machine that glued the labels too quickly, which could theoretically result in micro-cracks and bacterial contamination.the population was asked not to worry, but the vaccine was withdrawn.Two years later, but the vaccine did not return to the market, and probably could not solve the problem of sticking labels."
+},
+{
+"num": 32,
+"digest": "Sci-B-Vac is a third-generation vaccine, the first generation was a live vaccine, the second generation is a recombinant (genetically modified) vaccine containing virus-like particles. The third generation vaccine contains two more antigens, and therefore gives more [strong==https://www.ncbi.nlm.nih.gov/pubmed/8779530] immune response. <br> The only published clinical trial of the vaccine [included==https://www.ncbi.nlm.nih.gov/pubmed/9194109] 150 children.The vaccine [did not receive a permission from the FDA.] The Ministries of Health Committee report which allowed the vaccination in Israel, somewhere [disappeared==http://www.ynet.co.il/articles/0,7340,L-4690411,00.html]. Many parents in the FB- groups argue that the children because of this vaccination had strong side effects, developmental delays, etc. What is not very surprising, since it contained twice as much aluminum, in addition, it has three antigens instead of one, which is still increases the risk of an autoimmune reaction. Why this will be dismantled in another part.<br> Vaccine [registered==https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BA%D1%86%D0%B8%D0%BD%D0%B0_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%B3%D0%B5% D0%BF%D0%B0%D1%82%D0%B8%D1%82%D0%B0_B] also in Russia. "
+},
+{
+"num": 33,
+"digest": "Lectures and interviews:<br> [Dr. Sherri Tenpenny==https://www.youtube.com/watch?v=iXL8whotroU] <br> [Dr. Michael Farley==https:// www .youtube.com/watch?v=884JDVPq05A] "
+},
+{
+"num": 34,
+"digest": "Ayurvedic medicine [like==https: //www.ncbi.nlm.nih.gov/pmc/articles/PMC3639642] cures acute and chronic hepatitis B."
+},
+{
+"num": 35,
+"digest": "Graphs of the number of cases and the number of deaths from hepatitis B, before and after vaccination in the US Data [provided==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/e/reported-cases.pdf] CDC.",
+"img_pool": [{
+"info_img": "http://vaccines.procon.org/files/1-vaccines-images/hep-b-cases-1966-2013.PNG"
+},
+{
+"info_img": "http://vaccines.procon.org/files/1-vaccines-images/hep-b-deaths-1979-2013.PNG"
+}]
+},
+{
+"num": 36,
+"digest": "How do vaccine advocates argue for the need for this vaccine for infants? [Listen==https://www.youtube.com/watch?v=hypTVwUo_IY] Paul Offit. <br> His first argument: a child can contract from a mother passing through the birth canal, but as we already know, in this case the inoculation is still ineffective, it is necessary to give an immunoglobulin. <br> The second argument: a child can get infected from someone else's toothbrush, or from some uncle.This method of infection is purely theoretical There is not a single study proving that a person has contracted hepatitis . Th In a similar way <br> third argument: those who are vaccinated immediately after birth, is much more likely to complete the entire series of three vaccinations No comment."
+},
+{
+"num": 37,
+"I_S_codenames": ["vitamin_C"],
+"digest": "Hepatitis B, it turns out, is also treated with vitamin C. [[Baur, 1954==https://www.seanet.com/~alexs/ascorbate/195x/baur-h-schweitz_med_wschr-1954-n21-p595-engl.htm]], [[Kirchmair, 1957== https://www.seanet.com/~alexs/ascorbate/195x/kirchmair-h_med_mschr-1957-v11-n6-p353-engl.htm]], [ [Calleja, 1960==https://www.seanet.com/~alexs/ascorbate/196x/calleja-hb-etal-ohio_st_med_j-1960-v56-p821.htm], [[Morishige, 1978== https://www.seanet.com/~alexs/ascorbate/197x/morishige-fetal-j_int_assn_prev_med-1978-v5-n1-p54.htm]], [[Smith, 1988== https://www.seanet.com/~ alexs/ascorbate/198x/smith-lh-clinical_guide_1988.htm]] "
+},
+{
+"num": 38,
+"digest": "It is meaningful to vaccinate children from hepatitis B only if you are planning a career in prostitution, or if the child shows homosexual tendencies, or if you are afraid that children will become addicts. And even then there is no sense in vaccinating newborns, and it is worth waiting for years until 18. The chance to get infected with hepatitis B before the onset of sexual activity is almost zero. <br> Vaccines contain 250-500mkg of aluminum, that is, three doses of this vaccine contain 15-30 times more aluminum than all the aluminum that the child will receive from breast milk for 6 months. Ati, the fact that a child usually receives aluminum from mother's milk does not mean that it is normal.This means that mothers are poisoned by aluminum, which they get through food and water, and give them their babies. <br> The vaccination is most likely , is useless even to children born to infected mothers. <br> The vaccine increases the risk of autoimmune diseases such as multiple sclerosis, arthritis, type 1 diabetes and many others. <br> In developed countries, the risk of complications from vaccination is much higher than the risk of complications from hepatitis B, and even much higher, h the risk of acquiring hepatitis B. "
+}]
+}

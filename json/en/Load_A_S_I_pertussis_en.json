@@ -1,0 +1,447 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Whooping cough",
+"I_S_codename": "pertussis",
+"I_S_type": "S_O",
+"I_S_type_this": "disease",
+"I_S_name": "Whooping cough",
+"date": ISODate ("2017-08-10T18: 09: 00Z"),
+"intro": "",
+"epigraph": {
+"text": "Vaccination is nothing short of attempted murder.",
+"source": "George Bernard Shaw"
+},
+"points":
+[{
+"num": 1,
+"digest": "If hepatitis B is simply an ineffective vaccination, and the graft from the papilloma has a negative efficacy for those already infected, then the vaccination against pertussis has a negative efficacy for everyone."
+},
+{
+"num": 2,
+"digest": "Pertussis is caused by the bacterium Bordetella pertussis, which settles in the airways.Such this bacterium itself is not so dangerous, but it secretes pertussis toxin.This toxin irritates the respiratory tract, which leads to the release of mucus, and to a severe cough, which is accompanied by a characteristic sound (whoop.) Cough can last for weeks, which is why in Japanese and Chinese it is called \"100-day cough\". This disease can be quite unpleasant for children and adults, but not dangerous. , especially at the age of up to 3 months, which e can not really cough and withdraw mucus, whooping cough can be fatal.In infants up to 4 months, about 1% of cases of whooping cough [end==https://www.ncbi.nlm.nih.gov/pubmed/26082502] fatal outcome . "
+},
+{
+"num": 3,
+"digest": "Pertussis is transmitted exclusively by airborne droplets, that is, it can only be infected near a sick person at a distance of no more than 2-3 meters. Outside a person, the bacterium dies very quickly."
+},
+{
+"num": 4,
+"I_S_codenames": ["DTP_vaccine", "DTaP_vaccine", "Tdap_vaccine"],
+"digest": "Since the 1950s, a separate pertussis vaccine has not been released, Pertussis is always part of a combination vaccine that also includes diphtheria and tetanus.<br><b>DTP</b> (or DPT) is a whole-cell vaccine from pertussis (plus diphtheria and tetanus) .It includes whole bacteria, killed with formalin.Not used in developed countries since 2001 because of its reactivity, but used throughout the rest of the world. In Russia/Ukraine known as DTP.<br><b>DTaP</b> is an acellular pertussis vaccine, which includes not whole bacteria, but individual ba bacterial membrane, as well as pertussis toxin.It is intended for children who receive five doses at 2, 4, 6, 15 months and 5-6 years.<br> <b> Tdap </b> is a DTaP-like vaccine, with a reduced amount of diphtheria and pertussis antigen.It is for adults.<br> Today, DTaP is rarely used, most countries switch to five- and six-valent vaccines, which also include hepatitis B, poliomyelitis and Hib (haemophilus influenzae B).<br> The whole-cell vaccine (DTP) is the most dangerous vaccine ever available, with a huge amount of neuritis ologic side effects. "
+},
+{
+"num": 5,
+"digest": "All pertussis vaccines contain aluminum, from 330μg (Daptacel) to 1500 μg (Pentacel) .Most contain also polysorbate 80 (which was sorted out in part about papilloma.) DTP (DTP) contains 1250μg of aluminum and 25μg of mercury."
+},
+{
+"num": 6,
+"title": "The True Story of Pertussis Vaccination: A Sordid Legacy?",
+"link": "https://www.researchgate.net/publication/11177062_The_True_Story_of_Pertussis_Vaccination_A_Sordid_Legacy",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Geier",
+"infoID": "12211972",
+"info_place": "J Hist Med Allied Sci.",
+"I_S_codenames": ["DTP_vaccine"],
+"digest": "A long but informative article on the history of pertussis vaccine, and not only if you still casually hope that the main goal of pharmaceutical companies is not profit but the creation of effective and safe drugs, this article will get you a little sober. [Here==http://homeoint.ru/vaccines/malady/geiers.htm] is a Russian translation .. I highly recommend reading it completely.<br><br> Tooth-cell vaccine is supplemented with pertussis toxin.This toxin increases the permeability of the blood brain barrier), which allows him, as well as other t oxins and viruses penetrate the brain, and the pertussis toxin itself is a neurotoxin.<br><br> The fact that the whole-cell vaccine (DTP) is quite dangerous and leads to neurological consequences was clear back in the 1930s.<br><br> The toxicity of vaccines with 1950s was tested in mice.The toxicity was determined by the number of surviving mice and a decrease in their weight.In 1963 it turned out that there is no correlation between the test in mice and the number of neurological consequences in children.- In addition to pertussis toxin (which is exotoxin ), another component of the vaccine is endotoxin. (Exotoxin is a toxin that a living bacterium secretes, endotoxin is a toxin that is released from the bacterium after its decay). This endotoxin is very toxic and its presence in the vaccine was carefully concealed by the manufacturers.<br> - In the article of 1953 it was stated that practically every vaccinated child had systemic intoxication, and the CNS lesion often remained permanent.<br><br> The first acellular vaccine appeared already in 1937. It was widely used in the 1940s, after which it was discontinued because the company did not want to invest in clinical trials. In the 1960s and 1970s, other acellular vaccines were widely used, which were also withdrawn from production because of their higher cost.<br><br> After the two babies died from vaccination in Japan, the Japanese developed a cell-free vaccine that has been used since 1981.<br><br> Sweden banned the whole-cell vaccine in the 1970s. Despite the lack of vaccination, no child died of pertussis in the next 15 years.<br><br> After four children in Tennessee died in 1979 after being vaccinated from one series, the CDC found that the vaccine was associated with sudden infant death syndrome. While the director of the vaccine department of the FDA was on vacation, the FDA withdrew the entire series. But when the director returned, he ordered to return the whole series for use. He also apologized to the pharmaceutical companies for this act, and promised them not to do so any more. After the incident, the manufacturers do not send the whole series of vaccines to the same place, but distribute each series across the country.<br><br> The article also about how this vaccine has passed a law on compensation to victims of vaccinations, as the Department of Health does everything possible to not compensate the injured, as it turns out that almost all experts on vaccines have a conflict of interest, how experts are selected for committees that are investigating whether the vaccine is associated with such or other side effects, and much more. > - Only in 2001 , 60 years after a safer cell-free vaccine was created, and 20 years after Japan did this, the US switched to a cell-free vaccine. But the whole-cell vaccine is still licensed in the US, as pharmaceutical companies sell it to WHO, which distributes it to other countries whose residents still do not know how dangerous it is. "
+},
+{
+"num": 7,
+"header": "Efficiency",
+"title": "Acellular pertussis vaccines protect against disease but fail to prevent infection and transmission in a nonhuman primate model.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3896208/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Warfel",
+"infoID": "PMC3896208",
+"info_place": "PNAS",
+"digest": "This is the most important study, because it compares the vaccinated and the unvaccinated, but not the people, but the baboons, in addition, it was conducted by the FDA. The baboons were divided into four groups: the first group received 3 doses of whole-cell vaccine, 3 doses of acellular vaccine were not vaccinated, the third group was not vaccinated, and the fourth group consisted of those who were not vaccinated and who had already had pertussis earlier.<br> A month after the last inoculation, all four groups were infected with pertussis.The entire cell group was infected 18 days, group - 35 days, n The injected group is 30 days old, and the unvaccinated group does not get infected at all.<br> In the unvaccinated group, the first two weeks had much more bacteria than both grafted groups, but the acellular group was infected longer. <b> nevertheless the group had even more antibodies to whooping cough than the sick group. </b> We will come back to this fact.<br> <b> Vaccination in any way does not prevent pertussis infection within a month after 3 doses of the vaccine. </ b ><br> It is also reported here that during clinical trials of cell-free vaccines, participants Checks to be infected with pertussis only if they coughed at least 1-3 weeks. Therefore, there is no evidence of the effects of vaccines on colonization and infectivity in humans."
+},
+{
+"num": 8,
+"title": "Duration of Pertussis Immunity After DTaP Immunization: A Meta-analysis.",
+"link": "http://pediatrics.aappublications.org/content/135/2/331",
+"info_type": "article",
+"info_date": "2015",
+"info_authors": "McGirr",
+"infoID": "25560446",
+"info_place": "Pediatrics",
+"digest": "A meta-analysis comparing the efficacy of 3 and 5 doses of DTaP.The authors concluded that 5 doses of the vaccine are not more effective than 3 doses and that the vaccine is valid for 3 years (this means that after 3 years in 50 % vaccinated children will not work.) Each year after vaccination, the risk of contracting pertussis increases by 33%. In fact, 3 years is a very high time, because they assume an initial effectiveness of 85% .Since other studies mentioned in the previous article (Geier ), the effectiveness of the cell-free vaccine is about 60%. For example, according to the recommendations of the CDC, every pregnancy should be vaccinated against whooping cough, even if it was only one year after the previous one, because this vaccination is effective at best for only a few months. The authors conclude that 5 doses of vaccination is not enough, we need more one."
+},
+{
+"num": 9,
+"title": "Waning Protection after Fifth Dose of Acellular Pertussis Vaccine in Children.",
+"link": "http://www.nejm.org/doi/full/10.1056/NEJMoa1200850",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Klein",
+"infoID": "10.1056/NEJMoa1200850",
+"info_place": "N Engl J Med",
+"digest": "The risk of contracting pertussis after a fifth dose is increasing by 42% every year, and after 5 years the vaccine is already ineffective, here they assume an initial efficacy of 95%. Of all pertussis-affected children in northern California, no one died, and no one was hospitalized. "
+},
+{
+"num": 10,
+"title": "Pertussis epidemic despite high levels of vaccination coverage with acellular pertussis vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24216286",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Sala-Farr & eacute;",
+"infoID": "24216286",
+"info_place": "Enferm Infecc Microbiol Clin.",
+"digest": "Pertussis epidemics in Spain. 421 cases, mostly children under one year, The vast majority of the diseased (90%) were fully vaccinated, mostly children aged 5-9 years who were fully vaccinated, no one died, 8% were hospitalized.The authors conclude that despite the high level of vaccination, whooping cough is completely uncontrollable, and that the real number of patients is much greater, as they only considered laboratory confirmed cases.<br> There are dozens of such studies.Despite the high level of vaccination, in the last 20 years around the world, more and more pertussis epidemics are occurring, and most of the diseased are vaccinated. "
+},
+{
+"num": 11,
+"title": "Finding the 'who' in whooping cough: vaccinated siblings are important pertussis sources in infants 6 months of age and under.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/25391405/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Bertilone",
+"infoID": "25391405",
+"info_place": "Commun Dis Intell Q Rep",
+"digest": "Most babies 6 months of age and younger get pertussis from their fully vaccinated siblings, especially two- and three-year-olds. Those who do not get infected from the brothers are infected from the parents. "
+},
+{
+"num": 12,
+"title": "Pathogen adaptation under imperfect vaccination: implications for pertussis.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1559845/",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "van Boven",
+"infoID": "PMC1559845",
+"info_place": "Proc Biol Sci",
+"digest": "The number of cases of whooping cough in the ungoverned has increased, but among the vaccinated it has increased even more. Pertussis is mostly sick with vaccines. "
+},
+{
+"num": 13,
+"title": "Prevalence of Antibody to Bordetella pertussis Antigens in Serum Specimens Obtained from 1793 Adolescents and Adults.",
+"link": "https://academic.oup.com/cid/article/39/11/1715/467830",
+"info_type": "article",
+"info_date": "2004",
+"info_authors": "Cherry",
+"infoID": "15578376",
+"info_place": "Clin Infect Dis",
+"digest": "Among 1800 adolescents and adults, only 20% had antibodies to pertussis toxin one month after vaccination, and antibodies to other vaccine antigens were found only in 39-68%."
+},
+{
+"num": 14,
+"title": "Unexpectedly limited durability of immunity following acellular pertussis vaccination in preadolescents in a North American outbreak.",
+"link": "https://academic.oup.com/cid/article/54/12/1730/452864/Unexpectedly-Limited-Durability-of-Immunity",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Witt",
+"infoID": "22423127",
+"info_place": "Clin Infect Dis",
+"digest": "In the 2010 pertussis epidemic, the vaccinated children of 8-12 years were most sick, there was no difference in the incidence between grafted, under-vaccinated and unvaccinated children from 2 to 12 years old."
+},
+{
+"num": 15,
+"title": "Whooping cough in adults.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1506984",
+"info_type": "article",
+"info_date": "1981",
+"info_authors": "Trollfors",
+"infoID": "PMC1506984",
+"info_place": "BMJ",
+"digest": "After 1978, it was found that 84% of pertussis patients were vaccinated with three doses of the vaccine, in 1979 Sweden canceled vaccination.<br> It was renewed in 1996, when the cell-free vaccine appeared."
+},
+{
+"num": 16,
+"title": "Increase in pertussis may be due to increased recognition and diagnosis.",
+"link": "http://www.bmj.com/content/345/bmj.e5463",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Jenkinson",
+"infoID": "22915721",
+"info_place": "BMJ",
+"info_geo": "UK",
+"digest": "The article of a British doctor who reports that according to his many years of practice, whooping cough did not go anywhere. After the vaccination began, he disappeared only from official statistics, simply because doctors stopped diagnosing him.<br>And in [this==https://academic.oup.com/aje/article-abstract/119/1/135/56509/RE-WHOOPING-COUGH-AND-WHOOPING-COUGH-VACCINE-THE] article reports that since the 1960s to The 1970th level of pertussis vaccination in England fell from 78% to 49%, while pertussis mortality fell 3 times at that time. "
+},
+{
+"num": 17,
+"digest": "Here is [example==https://www.facebook.com/9NewsPerth/videos/1701725426506277/] as doctors refuse to diagnose whooping cough in vaccinated. The mother of two, both with classic pertussis symptoms, repeatedly led them to four to various doctors in Australia who laughed at her and refused to check the children for whooping cough. This lasted two months, until she finally got to be tested, and it turned out that the children really had whooping cough."
+},
+{
+"num": 18,
+"title": "Pertussis Infection in Fully Vaccinated Children in Day Care Centers, Israel.",
+"link": "https://wwwnc.cdc.gov/eid/article/6/5/00-0512_article",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Srugo",
+"infoID": "10998384",
+"info_place": "Emerg Infect Dis",
+"digest": "I have not yet cited case reports that there are hundreds for every vaccination, but I can not resist it. The case occurred in 2000, when a whole-cell, i.e., more effective vaccine was used. > A 4-month-old child in Israel died of pertussis, he was vaccinated at the age of two months, his entire family (mother, aunt and three brothers - 2.5.11 years old) were fully vaccinated. the two younger brothers were fully vaccinated with 4 doses.<br> The mother of the child coughed for 3 consecutive months.The two of his brothers coughed heavily during the m The 18-year-old aunt who lived with them did not cough, but was ill.<br><br> Subsequently, it turned out that the whole family of the baby - 5 people - was infected with whooping cough, as well as 5 children in both kindergartens (11%), but only two of them fell under the new WHO definition of whooping cough.<br> The authors conclude that the vaccination does not fully protect children from whooping cough, its effectiveness does not reach even early childhood, and that grafted children play the role of a \"quiet reservoir\" infection in society. (hello, collective immunity!)"
+},
+{
+"num": 19,
+"digest": "By the way, you have noticed the \"new definition of whooping cough \" of the World Health Organization? The thing is that usually when a new vaccination appears on the market, the definition of the disease changes.For example, if earlier, to diagnose whooping cough, for pertussis cough, or to detect the presence of antibodies, or the presence of a culture of bacteria, then since 1991 (when clinical studies of the cell-free vaccine have begun), all this has already [not enough==http://apps.who.int/iris/bitstream/10665/66921 /1/MIM_EPI_PERT_91.1.pdf]. It is necessary that there should also be paroxysm (cough) for at least 3 weeks.Without this three-week strong cough, whooping cough - is no longer whooping cough.The new definition leads to a sharp decrease in the number of patients who are becoming very difficult to diagnose, and as a consequence, the effectiveness of the vaccination Similarly, as soon as the polio vaccine appeared, the definition of the disease was changed immediately, which caused fewer patients, and everyone is still convinced that the vaccination saved us from the polio epidemic, and not a new one ix disease."
+},
+{
+"num": 20,
+"digest": "Since the pertussis vaccine is extremely inefficient, and whooping cough is dangerous primarily for infants, a brilliant idea came to the scientists from the CDC, let us decide, as soon as a new baby is born in the family, we will vaccinate his entire family. Mother, father, brothers and sisters, grandmothers and grandfathers, as well as everyone else who is in contact with the child, so we will create a cocoon around the child, through which not a single pertussis bacterium will break through. This is called [cocooning==https:// en .wikipedia.org/wiki/Cocooning_ (immunization)]. This strategy has been used since 2005, and The number of cases of whooping cough did not decrease.<br><br> In [this article==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3922557/] is reported that in the mathematical model developed by the pharmaceutical company , it turned out that cocooning is the most effective vaccination strategy, but in reality it turned out that more than 10,000 people need to be vaccinated to prevent one hospitalization, and to prevent more than a million people from being infected with pertussis. This is undoubtedly a very effective strategy. For pharmaceutical companies. They, however, do not mention that some parents, whooping cough vaccine [does==https://au.news.yahoo.com/video/watch/33711079/father-suing-wa-government-over-whooping-cough-vaccination/] disabled. According to some studies, cell-free grafting [increased==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4482312/] the number of asymptomatic cases of whooping cough is 30 times, and this explains why cocooning does not work."
+},
+{
+"num": 21,
+"digest": "Since cocooning has not worked, since 2011, the CDC recommends that all pregnant women be vaccinated against pertussis during the third trimester so that the antibodies pass to the fetus through the placenta. The CDC does not mention that aluminum will cross the placenta. they complain that they started fights immediately after the vaccination, and that the vaccination led to premature births, but according to studies, they just think that the vaccination accelerated the birth, which happened quite accidentally, and with no vaccination associated.<br> Number of cases to Luca since 2011 only [increased==http://apps.who.int/immunization_monitoring/globalsummary/incidences? c = USA].<br> Cocooning has not been abolished, of course, and continue to be used along with vaccination of pregnant women.<br> By the way, as in the CDC [established==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6041a4.htm], that it is effective and completely safe to vaccinate pregnant women from whooping cough during pregnancy on the basis of two studies. 52 pregnant women participated in the [first==http://www.ajog.org/article/S0002-9378 (10) 02286-6/abstract], and in the second==https://www.ncbi.nlm. nih.gov/pubmed/20875487] sixteen. But how does this vaccine affect the fetus, no one checked it at all. Besides, it is not at all clear why CDC recommends vaccination only in the third trimester. According to [studies==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4787611/], vaccination in the second trimester is much more effective. In Switzerland, for example, [recommend==http://ge.ch/sante/media/site_sante/files/imce/epidemiologie-maladies-transmissibles/doc/recommand_coquluche_bull_ofsp_2013.pdf] vaccinated in the second trimester (from the 13th week of pregnancy).<br> In a couple of years, when the CDC will have to admit that this recommendation is ineffective, they will begin to vaccinate pregnant women in the first trimester. Well, in ten years, from whooping cough, they will probably begin to vaccinate the fetus directly. And then, most likely, they will start vaccinating eggs."
+},
+{
+"num": 22,
+"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/7819/7819_original.jpg",
+"digest": "I try not to go deep into biology, but in order to realize the absurdity of vaccination against whooping cough, we need to understand a little how the immune system works. Consider it using leprosy as it is not vaccinated, and therefore<br><br> Leprosa, roughly speaking, is of two kinds - tuberculoid and lepromatous.<br><br> Tuberculoid leprosy is a relatively mild form of the disease, only the skin is affected, and the disease can even pass by itself.<br> Lepromatous leprosy is very heavy All mucous membranes are affected and the disease itself can not pass, and it is often lethal.Also intermediate forms between these two forms of the disease are possible.<br><br> What affects whether a person will be ill with tuberculoid leprosy or lepromatous? Only the reaction of his immune system on the bacterium of leprosy.<br> The immune system is divided into two parts - the system of cellular immunity, and the system of humoral immunity. <b> Humoral immunity </b> (Nobel for which Paul Ehrlich received) is the immunity of antibodies. In response to the antigen, B cells produce antibodies. These antibodies cling to pathogens, neutralize them, or signal to other cells that, behold, they have a pathogen, and it must be destroyed. <B>Th2</b> cells are responsible for this system.<br><b>Cellular immunity</b> (Nobel for which Ilya Mechnikov received) is an immune response in which antibodies are involved, and cells are phagocytes, CD8 and others. They recognize the infected cells of the body, devour them, or kill them. For this system, <b> Th1 </b> cells are responsible.<br> Both these systems suppress each other through the cytokines they produce. Cytokines secreted by Th1 suppress Th2 cells, and vice versa.<br> In the case of leprosy, the more the immune response is shifted towards cellular immunity, the more easily the disease takes, and when the immune response shifts toward humoral immunity, the disease takes a severe form . We can say that in this case, cellular immunity (Th1) is much more effective than humoral immunity (Th2), which only prevents cellular immunity from doing its job. "
+},
+{
+"num": 23,
+"header": "Let's return to whooping cough.",
+"title": "What Is Wrong with Pertussis Vaccine Immunity? Why Immunological Memory to Pertussis Is Failing.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28289059",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Diavatopoulos",
+"infoID": "28289059",
+"info_place": "Cold Spring Harb Perspect Biol.",
+"digest": "The acellular pertussis vaccine shifts the immune response toward humoral immunity (Th2), whereas the whole cell vaccine is more associated with cellular immunity (Th1). The whole cell vaccine also shifts the immune response toward Th2, but not so much. )<br><br> The cell-free vaccine contains far fewer antigens than the whole-cell vaccine, however, the acellular vaccine contributes to the production of much more antibodies.<br><br> The more boosters (additional vaccinations) of the acellular vaccine the longer the immunity from these vaccinations is, which is because the additional doses of the vaccine shift the immune response further and further towards the humoral immunity (more antibodies are produced), that is, the immune response becomes less and less effective. (In other words , the more doses a person receives, the easier it will get sick, and the longer it will be contagious.)"
+},
+{
+"num": 24,
+"digest": "How is the effectiveness of vaccines measured during clinical trials? Experimenters can not simply vaccinate children, and then infect them, and see how many of them fall ill, so the effectiveness of vaccines is measured by the number of antibodies that the immune system produces in response to vaccination. in the case of whooping cough (and not only), we see that everything is exactly the opposite: the more antibodies the immune system produces, the higher the probability of contracting. Therefore, one of the recommendations of the authors of the previous article is to reduce the amount of antigen in vaccines, even CDC [state==https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5704a1.htm] that there is no correlation between the number of antibodies, and protection against pertussis.<br> That is, there is there is a big difference between the clinical effectiveness of the vaccine and its effectiveness during clinical trials.The more effective the pertussis vaccine looks during clinical trials, the less effective it is in reality, since the stronger it shifts immunity toward Th2."
+},
+{
+"num": 25,
+"header": "Original antigenic sin",
+"title": "What is Wrong with Pertussis Vaccine Immunity? Inducing and Recalling Vaccine-Specific Immunity.",
+"link": "http://www.ncbi.nlm.nih.gov/pubmed/28289058",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Eberhardt",
+"infoID": "28289058",
+"info_place": "Cold Spring Harb Perspect Biol.",
+"digest": "[Determination of Serum Antibody to Bordetella pertussis Adenylate Cyclase Toxin in Vaccinated and Unvaccinated Children and in Children and Adults with Pertussis (Cherry, 2004, Clin Infect Dis.)==https://academic.oup.com/ cid/article/38/4/502/351500/Determination-of-Serum-Antibody-to-Bordetella]<br> When the immune system meets the pathogen for the first time, it forms an immune response to it.The next time, or a similar pathogen, it forms the same immune response, even if another response would be more effective.This phenomenon is called & quot; [original antigenic sin==https://en.wikipedia.org/wiki/Original_antigenic_sin] & quot; br> In the case of whooping-cough, here's what happens. A key bacterium settles in the airways, one of the toxins that it secretes is ACT (Adenylate Cyclase Toxin), which deceives the immune system, and does not let it know that whooping cough is a pathogen. But after two weeks, the immune system realizes that its nadurili, and still begins to fight with pertussis. The next time the immune system meets ACT again, it will not be deceived, and immediately it will be suppressed, as a result of which the person will not become infected again. But since ACT is absent in the vaccine, the immune system of the vaccinated person does not know how to react to it, and the vaccinated person becomes infected with whooping cough. And because of the effect of original antigenic sin, she will never learn how to respond effectively to it. Moreover, the more doses a person receives, the more the original antigenic sin acts. This is because the immune system with each dose produces more and more specific B cells. These cells compete with naive B-cells that could adapt and react more efficiently to a slightly altered pathogen. That is, since the vaccine pathogen and the natural pathogen differ from each other, the immune response to real whooping cough in an uncharged person who has recovered will be much more effective than the immune response in the vaccinated. Therefore, the unvaccinated will suffer pertussis once, and the vaccinated will be ineffective for the rest of his life to react to pertussis. "
+},
+{
+"num": 26,
+"digest": "According to [data==http://www.cdc.gov/pertussis/downloads/pertuss-surv-report-2013.pdf] The CDC, most whooping with whooping cough, are vaccinated."
+},
+{
+"num": 27,
+"title": "Global Population Structure and Evolution of Bordetella pertussis and Their Relationship with Vaccination",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3994516/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Bart",
+"infoID": "PMC2815961",
+"info_place": "mBio",
+"digest": "Just as excessive use of antibiotics leads to a mutation of bacteria, and the emergence of antibiotic-resistant species, also universal vaccination leads to a rapid [appearance of ==] vaccine-resistant bacteria."
+},
+{
+"num": 27,
+"title": "Bordetella pertussis Strains with Increased Toxin Production Associated with Pertussis Resurgence.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2815961/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Mooi",
+"infoID": "PMC2815961",
+"info_place": "Emerg Infect Dis",
+"digest": "A new bacterium strain, with a more virulent pertussis toxin, appeared in vaccinated people whooping cough, this strain did not exist before the vaccination, and it leads to more hospitalizations and deaths than a normal strain."
+},
+{
+"num": 27,
+"title": "Why do pertussis vaccines fail?",
+"link": "http://pediatrics.aappublications.org/content/129/5/968",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Cherry",
+"infoID": "22529282",
+"info_place": "Pediatrics",
+"digest": "The place of the ordinary pertussis pertussis bacterium, in part began to occupy the bacterium B. parapertussis, from which the vaccine does not protect, and it is already responsible for 16% of the cases.<br> According to [another==https:// www .ncbi.nlm.nih.gov/ pmc/articles/PMC1719607 /] to the study, B. parapertussis is responsible for 36% of cases.<br> 62% of cases of B. pertussis were vaccinated, and 81% of cases of B. parapertussis were vaccinated.<br> According to [study==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2880100/] in mice, vaccination against whooping cough increases the chance of B. parapertussis getting sick 40 times compared to ungrafted .<br> Here [example==https://www.ncbi.nlm.nih.gov/pmc/articles/ PMC5440125 /] B. parapertussis outbreaks in Minnesota: 100% of the cases were vaccinated. "
+},
+{
+"num": 27,
+"digest": "One of the components of the cell-free vaccine is pertactin. Perthactin is one of the proteins of the pertussis bacterium membrane. In countries where the acellular vaccine is used, pertussis-driven pertussis bacteria are replaced with bacteria хwithout pertactin==https://www.cdc.gov/eid/article/20/4/13-1478_article], [Finland==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485885/], [United States==https://www.ncbi.nlm.nih.gov/pubmed/23388024] and [Japan==http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031985].<br>A non-pertactin strain is more [invasive==https://www.ncbi.nlm.nih.gov/pubmed/19579693] than a normal strain. "
+},
+{
+"num": 27,
+"title": "Bordetella holmesii: an under-recognized Bordetella species.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/24721229",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Pittet",
+"infoID": "24721229",
+"info_place": "Lancet Infect Dis",
+"digest": "Another bacterial strain that replaces the normal B. pertussis is B. holmesii, which causes the same symptoms, and from which the inoculation [is ineffective==https://wwwnc.cdc.gov/eid/article/18/11/11-1544_article]. "
+},
+{
+"num": 28,
+"header": "Security",
+"title": "Delay in diphtheria, pertussis, tetanus vaccination is associated with a reduced risk of childhood asthma.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18207561",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "McDonald",
+"infoID": "18207561",
+"info_place": "J Allergy Clin Immunol",
+
+"I_S_codenames": ["asthma"],
+"digest": "An analysis of 11,000 children who received a whole-cell vaccine in Canada, those who received the first dose of vaccine two months later than usual had asthma twice less often. Those who received all three doses later were at risk for developing asthma was 2.5 times lower.<br> This is because the immune reaction is shifting towards Th2 The exact cause of asthma is still unknown, but according to one of the prevailing theories, asthma is caused by increased hygiene.When a child grows in a too sterile environment, and not comes into contact with bacteria, it is immune the system moves to the side of Th2, which leads to the production of antibodies [IgE==https://en.wikipedia.org/wiki/Immunoglobulin_E] These IgE are responsible for asthma, allergies, dermatitis and other joys that are much more common in vaccinated children, because vaccinations also shift immunity towards Th2, this shift occurs directly (due to vaccine antigens), and also not directly (due to protection from bacteria)."
+},
+{
+"num": 29,
+"title": "Effects of diphtheria-tetanus-pertussis or tetanus vaccination on allergies and allergy-related respiratory symptoms among children and adolescents in the United States.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10714532/",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Hurwitz",
+"infoID": "10714532",
+"info_place": "J Manipulative Physiol Ther.",
+"I_S_codenames": ["asthma"],
+"digest": "The vaccinated suffered from asthma twice as often as the unvaccinated."
+},
+{
+"num": 30,
+"title": "Possible temporal association between diphtheria-tetanus toxoid-pertussis vaccination and sudden infant death syndrome.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/6835859",
+"info_type": "article",
+"info_date": "1983",
+"info_authors": "Baraff",
+"infoID": "6835859",
+"info_place": "Pediatr Infect Dis",
+"I_S_codenames": ["SIDS", "DTP_vaccine"],
+"digest": "The DTP vaccine is associated with sudden infant death syndrome (SIDS) in Los Angeles. Visits to the physician were also associated with SIDS."
+},
+{
+"num": 31,
+"title": "Severity of whooping cough in England before and after the decline in pertussis immunization.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1628449/",
+"info_type": "article",
+"info_date": "1984",
+"info_authors": "Pollock",
+"infoID": "PMC1628449",
+"info_place": "Arch Dis Child",
+"info_geo": "UK",
+"I_S_codenames": ["DTP_vaccine"],
+"digest": "After the vaccination coverage in England fell sharply due to fear of DTP vaccine, the number of pertussis cases and deaths from it fell 4-fold."
+},
+{
+"num": 32,
+"title": "Timing of the routine infant and allergy and eczema at one year of age.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/26707796",
+"info_type": "article",
+"info_date": "2016",
+"info_authors": "Kiraly",
+"infoID": "26707796",
+"info_place": "Allergy.",
+"I_S_codenames": ["DTaP_vaccine"],
+"digest": "For girls who received the first dose of DTaP at least one month after the term, the allergy was 4 times less frequent than those vaccinated on time. Eczema developed 2 times less often in boys and girls vaccinated at least a month later. "
+},
+{
+"num": 33,
+"digest": "The cell-free vaccine is, of course, much less dangerous than the whole-cell vaccine, but nevertheless [according to==http://medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=DTAP&VAX[]=DTAPH&VAX[]=DTAPH&VAX[]=DTAPIPV&VAX[]=DTAP&VAX[]=TDAPIPV&SERIOUS=ON&VAX_YEAR_LOW=2002&VAX_YEAR_HIGH=2017] VAERS, since 2002 in the US, 1,077 people died after this vaccination, 1009 became disabled, 8700 less than 200 people died from pertussis over the years (among them there are grafted ones), that is, the risk of dying from vaccination is at least 5 times higher than the risk of dying from pertussis.As VAERS figures should be multiplied by at least 10, the risk cm The cost of vaccination is 50 times higher than that of the disease. "
+},
+{
+"num": 34,
+"header": "Treatment",
+"title": "Antibiotics for whooping cough",
+"link": "https://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0012763/",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Altunaiji",
+"infoID": "17636756",
+"info_place": "Cochrane Database Syst Rev",
+"digest": "A systematic review of the effect of antibiotics on whooping cough, conducted by Cochrane.<br><br> Antibiotics kill pertussis, that is, they make a person not contagious, but they do not affect the course of the disease in any way.<br> Preventive prevention of infants' contact with antibiotics is ineffective. research, the use of antibiotics [leads==https://www.ncbi.nlm.nih.gov/pubmed/14595048] to only a longer illness"
+},
+{
+"num": 35,
+"info_img": "http://www.dissolvingillusions.com/wp-content/uploads/2013/03/G15.2-UK-Scurvy-Pertussis-1901-1967-1024x640.png",
+"digest": "In 1936 in the medical literature began to appear articles on the effective treatment of pertussis vitamin C. The first was [Otani==https://www.seanet.com/~alexs/ascorbate/193x/otani-t-klin_wchnschr-1936-v15-n51-p1884-eng.htm] in Japan, who used the vitamin intravenously, and in 1937, independently of him, Omerod [1]==https://www.ncbi.nlm.nih.gov/pmc/ articles/PMC536087 /], [[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC536087/] in Canada, whose group used the oral vitamin.In 1938, vitamin C successfully used [Vermillion==https://www.seanet.com/~alexs/ascorbate/193x/vermillion-el-etal-kansas_city_med_j-1938-v39-n11-p469.htm] .Disease passed within a few days. It is also reported that the baby in breast milk practically do not get pertussis, because they get enough vitamin from their mother.<br> In 1938 also [appeared==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2210412 /] controlled trial, which did not find that vitamin C is more effective than the control substance. However, as a control substance, they for some reason used fish oil, belladonna and bromide. Despite the fact that in the article of 1871 in Lancet [http://www.thelancet.com/journals/lancet/article/PIIS0140-6736 (02) 78664-9/fulltext] about the successful treatment of whooping cough with fish oil. Even then, scientists knew the choice of placebo. In the 1950s, several more articles were published on the treatment of pertussis with vitamin C. Well, then a vaccine appeared, and vitamin C was completely forgotten. For the last 70 years, no one has investigated it, which, however, does not prevent some doctors and parents from successfully [using http://drsuzanne.net/2015/04/the-vitamin-c-treatment-of-whooping-cough-suzanne -humphries-md /] it in the treatment and prevention of pertussis.<br> Comparison of mortality charts for whooping cough and scurvy:"
+},
+{
+"num": 36,
+"title": "Childhood infectious diseases and risks of leukaemia in an adult population.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23575988",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Parodi",
+"infoID": "23575988",
+"info_place": "Int J Cancer",
+"digest": "Children who have recovered whooping cough in childhood, the risk of developing some types of leukemia is 1.5-2 times lower."
+},
+{
+"num": 37,
+"digest": "The most common argument for the effectiveness of pertussis vaccination is that in the 1950s, when pertussis began to be vaccinated, 1,000 people died a year from it, and now only 1 die. But this is a cherry picking. from whooping cough from the beginning of the 20th century, it becomes clear that the vaccine has nothing to do with reducing pertussis mortality, as more than 90% of the decline in mortality occurred before vaccination began, and even before antibiotics began.",
+"img_pool": [{
+"info_img": "http://www.vaccinationinformationnetwork.com/wp-content/uploads/2013/08/uk-pertussis-1838-1978.jpg"
+},
+{
+"info_img": "http://www.vaccinationinformationnetwork.com/wp-content/uploads/2013/08/us-pertussis-1900-1967.jpg"
+}]
+},
+{
+"num": 37,
+"info_img": "https://www.cdc.gov/mmwr/preview/mmwrhtml/figures/r704a1f2.gif",
+"digest": "A similar picture emerges, if you look at the number of cases of whooping cough."
+},
+{
+"num": 38,
+"I_S_codenames": ["DTP vaccine"],
+"digest": "Films and Lectures:<br>[DPT Vaccine Roulette==https://www.youtube.com/watch?v=qpUsg4bDH5w] A 1982 film about the DTP vaccine was shown on NBC. the main role is that the US switched to a cell-free vaccine, and that the legislation related to vaccination was completely changed, it's impossible to imagine that this is shown on TV. [Dr. Suzanne Humphries==https:// www .youtube.com/watch?v=XBhQPpKZIqI]<br> [Dr. Sherri Tenpenny==https://www.youtube.com/watch?v=w1RVMozzDcE] "
+},
+{
+"num": 39,
+"header": "The therapeutic role of pertussis toxin",
+"title": "Pertussis toxin-sensitive G-proteins and regulation of blood pressure in the spontaneously hypertensive rat.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/10386237",
+"info_type": "article",
+"info_date": "1999",
+"info_authors": "Kost",
+"infoID": "10386237",
+"info_place": "Clin Exp Pharmacol Physiol",
+"digest": "Pertussis toxin lowers blood pressure in hypertonic rats."
+},
+{
+"num": 39,
+"title": "The B-Oligomer of Pertussis Toxin Inhibits Human Immunodeficiency Virus Type 1 Replication at Multiple Stages.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC116391",
+"info_type": "article",
+"info_date": "2000",
+"info_authors": "Alfano",
+"infoID": "10386237",
+"info_place": "J Virol",
+"digest": "Pertussis toxin prevents reproduction of HIV."
+},
+{
+"num": 39,
+"digest": "The incompetent toxin suppresses autoimmune reactions.",
+"sources_pool": [{
+"title": "Pertussis toxin and the adenylate cyclase toxin from Bordetella pertussis activate human monocyte-derived dendritic cells and dominantly inhibit cytokine production through a cAMP-dependent pathway.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/12429718",
+"info_type": "article",
+"info_date": "2002",
+"info_authors": "Bagley",
+"info_place": "J Leukoc Biol",
+"infoID": "12429718"
+},
+{
+"title": "Pertussis toxin gene: nucleotide sequence and genetic organization.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/3704651",
+"info_type": "article",
+"info_date": "1986",
+"info_authors": "Locht",
+"info_place": "Science",
+"infoID": "3704651"
+},
+{
+"title": "Cloning and sequencing of the pertussis toxin genes: operon structure and gene duplication.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC323795",
+"info_type": "article",
+"info_date": "1986",
+"info_authors": "Nicosia",
+"info_place": "Proc Natl Acad Sci U S A",
+"infoID": "3704651"
+}]
+},
+{
+"num": 40,
+"digest": "Conclusions:<br><br> Pertussis is dangerous only for infants, but since vaccination does not work for infants, adults and children are vaccinated against whooping cough with one goal - to create a collective immunity that will protect infants from this disease. First, instead of having pertussis once, and forgetting about it for the rest of your life, grafted children and adults can be sick with whooping cough many times. Moreover, since the illness is often asymptomatic, they become \"quiet\" reservoir of infection , spreading it to their families and to infants, and the more vaccine doses they received, the more they are exposed to the infection.Rather than alienating a brother who has fallen ill with a pertussis from a baby, it is difficult to diagnose a brother because of an atypical course of the disease, definition of the disease, and because of the reluctance of doctors to diagnose whooping cough in vaccinated.In order to really protect infants from pertussis, and to create population immunity, you must first stop vaccinating.<br> - The effectiveness of DTaP is negative, because of the phenomenon antigenic sin, and because of the shift of immunity from cellular to humoral.<br> - DTP (DTP) is the most reactive of existing vaccines.<br><br> DTaP contains aluminum, and DTP is also ethyl mercury.<br> - Risk die from vaccination (even DTaP, much safer) is many times higher than the risk of dying from whooping cough.<br> - In recent years, the incidence of pertussis has been increasing steadily. This is not because anti-vaccines have appeared, but on the contrary, because they vaccinate more. We vaccinate pregnant women, vaccinate parents, grandparents, uncles and aunts, and introduce new boosters for children into the vaccination schedule. The more doses the vaccine makes, the further immunity shifts toward Th2, and the more the organism is susceptible to the disease.<br> - When treated with vitamin C, whooping cough takes several days. "
+}]
+}
+

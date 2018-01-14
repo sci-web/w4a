@@ -1,0 +1,301 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Doctors",
+"I_S_codename": "physicians",
+"I_S_type_ref": "S_S",
+"I_S_type_this": "human",
+"I_S_name": "Doctors",
+"date": ISODate ("2017-06-26T15: 21: 00Z"),
+"epigraph": {
+"text": "Doctors are those who prescribe medications that little is known about, to treat illnesses that they know even less, <br> in people about whom they know nothing at all"
+"source": "Voltaire"
+},
+"points": [{
+"num": 1,
+"digest": "Argument: \" If there were any problem with vaccinations, if they were unsafe or ineffective, doctors would know about it. But at the present time there is almost complete medical consensus - vaccinations are safe and effective. After all, doctors, for their long years of training, probably learned more about vaccinations than you read about them on the Internet. ""
+},
+{
+"num": 2,
+"digest": "My wife also believed that vaccinations are safe and effective, so they were taught." I asked her how many hours she had been devoted to vaccination during her entire study. It turned out that only a few hours. the vaccination schedule, and another two hours was a lecture on the topic of "how to respond to the arguments of anti-vaccination." By the way, after this lecture almost all the students stated that the arguments of the lecturer were not convinced, and that the arguments of anti-vaccination agents are more convincing: they, of course, They did not think that anti-vaccination was right. and that the speaker simply do not prepare for this lecture. "
+},
+{
+"num": 3,
+"digest": "But maybe it's different in other universities? [Here == https: //www.youtube.com/watch?v=buQvtnQ7VXA], how many are taught about inoculations in the most prestigious American universities. Of the 6.700 pages that the student Medvuza should learn, only 4 pages are devoted to vaccinations. "
+},
+{
+"num": 4,
+"digest": "Physicians have a financial interest in vaccinations." The more vaccinations they sell, the higher their bonus. <br> Blue Cross Blue Shield, for example, [pays == https: //wellnessandequality.com/tag/blue -cross-blue-shields-physician-incentive-program /] to doctors at $ 400 for each fully vaccinated child, but only if the percentage of vaccinated in practice is above 63% .This is the main reason that pediatricians in the US [refuse == https : //www.forbes.com/sites/tarahaelle/2016/08/29/as-more-parents-refuse-vaccines-more-doctors-dismiss-them-with-aaps-blessing/#678539881f22] treat unvaccinated children. "
+},
+{
+"num": 5,
+"digest": "Argument: \" But I talked with several doctors, and they all say that vaccinations are safe. Moreover, doctors would not vaccinate their children if they considered the vaccinations to be unsafe. "
+},
+{
+"num": 6,
+"digest": "Most people believe that a doctor can treat as he sees fit, which is far from the case." If, for example, the doctor read several scientific articles and concluded that a particular disease should be treated in some other way , he has no right to do it.The doctor must follow the permitted protocols of treatment, otherwise he will lose his license.If the doctor advises the patient about any disapproved medicine, well, for example, to treat whooping cough with vitamin C, and not with an antibiotic, and something happens to the patient , then the doctor will go to court .If the doctor writes out t antibiotics ([not particularly effective == https: //www.ncbi.nlm.nih.gov/pubmed/15674946] in the case of whooping cough), and the patient will experience something, the doctor will not be held responsible. to advise the patient something that is not approved by the protocol? <br> Similarly, the doctor, by and large, does not have the right to advise the patient not to get vaccinated, he can very quickly lose his license (especially in the US), and even if he does not lose it, his career will not go far. <br> Nevertheless, there are many doctors openly speaking against vaccinations. Of course, it's always doctors with their own private practice. "
+},
+{
+"num": 7,
+"digest": "If you ask my wife as a doctor whether she advises to vaccinate and she does not trust you, she will answer that she advises." Vaccinations, she declares, this is the greatest gift of medicine to humanity, they saved millions of lives. br> If you ask her whether she instills her child and she trusts you completely, then she will explain that she will scratch her eyes to someone who will approach the child with the vaccine and advise you to do likewise. It is therefore important to ask the right question It is even more important that the doctor to whom you are asking the question completely believed, and did not think you could complain to him, or publish his advice. <br> <br> Of course, most doctors most likely vaccinate their children, but only because they did not learn anything about vaccines, so it's also important to ask a doctor , how many scientific articles on the safety and effectiveness of vaccines he read, ask him to also give you to read at least one study proving the safety of the vaccine that he is about to inject. <br> <br> Still, many doctors take risks, and do not advise their patients get vaccinated. Here are a few studies: "
+},
+{
+"num": 8,
+"title": "Despite awareness of recommendations, why do not health care workers not immunize pregnant women?",
+"link": "https://www.ncbi.nlm.nih.gov/labs/articles/28063725/",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Gesser-Edelsburg",
+"infoID": "28063725",
+"info_place": "Am J Infect Control",
+"info_geo": "Israel",
+"I_S_codenames": ["physicians"],
+"digest": "In spite of the fact that 93% of doctors know that the Ministry of Health recommends vaccinating pregnant women against influenza and pertussis, only 70% follow these recommendations." A third of doctors believe that both vaccinations are dangerous, or that their safety is questionable. % of doctors from those who believe that these vaccinations are dangerous, still recommend them to their patients. (Israel) "
+},
+{
+"num": 9,
+"title": "How do physicians immunize their own children? Differences among pediatricians and nonpediatricians.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16263976",
+"info_type": "article",
+"info_date": "2005",
+"info_authors": "Posfay-Barbe",
+"infoID": "16263976",
+"info_place": "Pediatrics",
+"info_geo": "Switzerland",
+"I_S_codenames": ["physicians"],
+"digest": "5% of non-pediatric doctors do not vaccinate their children from measles-mumps-rubella, they believe that combined vaccines are not safe, that it is better to have the disease than to be vaccinated, and that homeopathic treatment works well for these diseases. % will postpone the DTAP vaccination at a later date, 15% will postpone the MMR vaccination. <br> <br> A third of doctors did not vaccinate their children against hepatitis B and hemophilic rods, only 12% were vaccinated against influenza, and only 3% were vaccinated against chickenpox. did not vaccinate their children according to the schedule of vaccinations. <br> The survey involved l all InfoVac subscribers, that is, doctors who are actively interested in vaccination, which means that the real number of doctors who do not vaccinate their children is probably much larger. (Switzerland) "
+},
+{
+"num": 10,
+"title": "Vaccination practices among physicians and their children.",
+"link": "https://www.scirp.org/journal/PaperInformation.aspx?PaperID=22932",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Martin",
+"info_place": "OJPed.",
+"info_geo": "US",
+"I_S_codenames": ["physicians"],
+"digest": "21% of specialist pediatricians and 10% of general pediatricians will refuse at least one vaccination for their child." 19% of pediatric specialists and 5% of general pediatricians will postpone MMR vaccination until age 1.5. % pediatric specialists will not make their child vaccinated against rotavirus, 6% will not be vaccinated against hepatitis A. (USA) "
+},
+{
+"num": 11,
+"title": "Physicians who do and do not recommend children get all vaccinations.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18726813",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Gust",
+"infoID": "18726813",
+"info_place": "J Health Commun",
+"info_geo": "US",
+"I_S_codenames": ["physicians"],
+"digest": "11% of doctors did not recommend their patients to vaccinate their children with all the vaccines. <br> Doctors-therapists did not recommend vaccinating twice (pediatricians earn less). <br> Doctors trust medical journals more than CDC and the FDA. "They trust the pharmaceutical companies less than the Internet. (USA)"
+},
+{
+"num": 12,
+"title": "Paediatricians knowledge, attitudes, and practices for immunizations for infants in Italy.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2801680/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Anastasi",
+"infoID": "PMC2801680",
+"info_place": "BMC Public Health",
+"info_geo": "Italy",
+"I_S_codenames": ["physicians"],
+"digest": "Only 10% of doctors had a good opinion about all vaccines. <br> 60% of doctors would like to know more about vaccines. Only 25% of doctors did their patients with optional vaccinations (whooping cough, measles, mumps, chickenpox, rubella, Hib, pneumococcus, meningococcus) (Italy) "
+},
+{
+"num": 13,
+"title": "Factors associated with vaccination for hepatitis B, pertussis, seasonal and pandemic influenza among French general practitioners: a 2010 survey.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23806242",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Pulcini",
+"infoID": "23806242",
+"info_place": "Vaccine",
+"info_geo": "France",
+"I_S_codenames": ["physicians"],
+"digest": "27% of family doctors were not vaccinated against hepatitis B, 36% were not vaccinated against pertussis, 23% were not vaccinated against influenza." (France) "
+},
+{
+"num": 14,
+"title": "Knowledge, attitudes, beliefs and practices of general practitioners towards measles and MMR vaccination in southeastern France in 2012.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23517454",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Pulcini",
+"infoID": "23517454",
+"info_place": "Clin Microbiol Infect",
+"info_geo": "France",
+"digest": "13% of doctors do not consider measles a dangerous disease." 12% of physicians consider the second dose of MMR useless. <br> 33% of doctors do not believe that MMR vaccination should be mandatory for children under 2 years.
+},
+{
+"num": 15,
+"title": "What lies behind the low rates of vaccinations among nurses who treat infants?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22446637",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Baron-Epel",
+"infoID": "22446637",
+"info_place": "Vaccine",
+"info_geo": "Israel",
+"I_S_codenames": ["nurses", "DTaP"],
+"digest": "After the Israeli nurses were asked to get a cough for whooping cough for 3 months, only 2% (two percent) deigned to do it, and this refers to nurses working in mother and child centers (type hlavav), that is, those whose main role is to vaccinate children. <br> Most nurses do not trust health authorities, and desperately resist mandatory vaccinations. <br> Nurses fear side effects and believe that the risk from influenza and pertussis is lower than the risk from They believe that parents should have a choice, Do not or do not vaccinate a child, and require the same respect for their rights. <br> <br> Nurses share work and personal life.The fact that their job is to vaccinate children is one thing: whether they are vaccinated themselves or not, it is their personal case, and they do not consider it necessary to inform parents about their opinion about vaccinations, or about whether they are vaccinated themselves. The authors of the study concluded that nurses who make vaccinations are essentially anti-vaccination drugs. (Israel) <br> <br> This is probably the most important study, of all presented here. Practically in all other studies, the data were collected from a survey of doctors. Doctors perfectly understand that they should not negatively react about vaccinations, so it is logical to assume that the real number of doctors who do not vaccinate their children is much higher. The data in this study is real, they are not based on surveys. <b> 98% of nurses, whose main role is to make children vaccinated, refuse to vaccinate themselves! </ b> <br> Israeli doctors, however, too [refuse == https: //www.vesty.co.il/articles /0,7340,L-5028846,00.html] vaccinated against influenza. "
+},
+{
+"num": 16,
+"title": "Influenza vaccination among healthcare workers in Italy.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4514208/",
+"info_type": "article",
+"info_date": "2014",
+"info_authors": "Alicino",
+"infoID": "PMC4514208",
+"info_place": "Hum Vaccin Immunother",
+"info_geo": "Italy",
+"I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+"digest": "Health workers are resistant to influenza vaccinations, despite 10 years of efforts to increase the level of vaccination, only 30% of doctors, 11% of nurses and 9% of clinical staff are vaccinated against influenza." (Italy) "
+},
+{
+"num": 17,
+"title": "Vaccinating health care workers during an influenza pandemic.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/22773657",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Head",
+"infoID": "22773657",
+"info_place": "Occup Med Lond",
+"info_geo": "UK",
+"I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+"digest": "41% of health workers refused to get vaccinated against swine flu during the 2009 pandemic." They believed that the vaccine was ineffective, and that it had side effects, and generally this infection easily passes. "57% of the workers in the system public health services refused to be vaccinated against routine influenza. (London, UK) "
+},
+{
+"num": 18,
+"title": "Influenza vaccination amongst hospital health care workers in Beijing.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20418403",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Seale",
+"infoID": "20418403",
+"info_place": "Occup Med Lond",
+"info_geo": "China",
+"I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+"digest": "Only 13% of physicians and 21% of nurses are vaccinated against influenza." 40% of health workers believe that an inoculation against influenza can lead to flu. "(Beijing, China)"
+},
+{
+"num": 19,
+"title": "Seasonal and Pandemic A",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20471438",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "V & iacute; rseda",
+"infoID": "20471438",
+"info_place": "Vaccine",
+"info_geo": "Spain",
+"I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+"digest": "More than half of health workers refused to get vaccinated against influenza and only 16.5% were swallowed by swine flu during the 2009 pandemic." They doubted the effectiveness of the vaccination and were afraid of side effects. "(Madrid, Spain)"
+},
+{
+"num": 20,
+"title": "Influenza vaccination compliance among health care workers in a German university hospital.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19139807",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Wicker",
+"infoID": "19139807",
+"info_place": "Infection",
+"info_geo": "Germany",
+"I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+"digest": "Over 20 years of German health workers are being persuaded to get vaccinated against the flu, but only 39% of doctors and 17% of nurses are vaccinated." They fear the side effects, believe that vaccination can lead to illness and do not believe in its effectiveness. , Germany) "
+},
+{
+"num": 21,
+"title": "Influenza vaccination attitudes and practices among US registered nurses.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19556035",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Clark",
+"infoID": "19556035",
+"info_place": "Am J Infect Control",
+"info_geo": "US",
+"I_S_codenames": ["nurses", "influeza vaccine"],
+"digest": "41% of nurses did not get vaccinated against the flu, they feared side effects, believed that the risk of contracting a low, and in general, did not consider this vaccine effective. (USA)"
+},
+{
+"num": 22,
+"header": "The same story is repeated everywhere, doctors and nurses in all countries refuse to be vaccinated against the flu.",
+"title": "Influenza vaccination in pediatric nurses: cross-sectional study of coverage, refusal, and factors in acceptance.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/18448210",
+"info_type": "article",
+"info_date": "2008",
+"info_authors": "Norton",
+"infoID": "",
+"info_place": "Vaccine",
+"info_geo": "Canada",
+"digest": "Canada"
+},
+{
+"num": 23,
+"title": "Attitudes of health care workers to influenza vaccination: why are they not vaccinated?",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/17276792",
+"info_type": "article",
+"info_date": "2007",
+"info_authors": "Takayanagi",
+"infoID": "",
+"info_place": "Am J Infect Control",
+"info_geo": "Brazil",
+"digest": "Brazil"
+},
+{
+"num": 24,
+"digest": "France:",
+"sources_pool": [{
+"title": "Influenza vaccination coverage for patients and healthcare workers in a university hospital during the 2006-2007 influenza season.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/23116695",
+"info_type": "article",
+"info_date": "2012",
+"info_authors": "Landelle",
+"infoID": "23116695",
+"info_place": "Vaccine",
+"info_geo": "France"
+},
+{
+"title": "Knowledge and attitudes to influenza vaccination of health care workers in emergency services.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/27919630",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Hulo",
+"infoID": "27919630",
+"info_place": "Vaccine",
+"info_geo": "France"
+}]
+},
+{
+"num": 25,
+"digest": "The whole world:",
+"sources_pool": [{
+"title": "Influenza vaccination of health care workers in hospitals - a review of studies on attitudes and predictors.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/19467744",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Hollmeyer",
+"infoID": "19467744",
+"info_place": "Vaccine"
+},
+{
+"title": "Influenza vaccination of health care workers: a literature review of attitudes and beliefs.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16804657",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "Hofmann",
+"infoID": "16804657",
+"info_place": "Infection"
+}]
+},
+{
+"num": 26,
+"digest": "How many do not talk to doctors and nurses, that all vaccinations are safe and effective, not all believe in it." Scientific evidence indicates that the medical consensus on the safety and effectiveness of vaccinations is a myth. "
+},
+{
+"num": 27,
+"digest": "Australian doctors who [help =] https: //www.facebook.com/9NewsMelbourne/videos/1886631838267135/] to their patients to refuse vaccinations [are prosecuted == http: //www.abc.net.au / news / 2017-08-24 / melbourne-doctors-investigated-over-anti-vaccination-allegations / 8837554] by law. [More == https: //www.facebook.com/iwakeupwithtoday/videos/1711307558903902/]. < br> Doctors in India who order many vaccines, [get == http: //economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/pharma-firm-lures-doctors-with-gold-coins-to-push -its-vaccines / articleshow / 56700011.cms] presents from a pharmaceutical company. "
+}]
+}

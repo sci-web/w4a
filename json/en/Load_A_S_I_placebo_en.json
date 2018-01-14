@@ -1,0 +1,101 @@
+{
+"analyst": "amantonio",
+"namespace": "vaccines",
+"title": "Placebo",
+"I_S_codename": "placebo",
+"I_S_type_ref": "S_S",
+"I_S_type_this": "???",
+"I_S_name": "Placebo",
+"intro": "",
+"date": ISODate ("2017-06-29T17: 58: 00Z"),
+"epigraph": {
+"text": "Those who would give up essential Liberty to purchase a little temporary safety,<br> deserve alt Liberty nor Safety.",
+"source": "Benjamin Franklin"
+},
+"points": [{
+"num": 1,
+"digest": "How is vaccination safety checked? A randomized, double-blind, placebo-controlled study is conducted, see what side effects occur in those who received the vaccine and compare them with the control group. "
+},
+{
+"num": 2,
+"digest": "Clinical trials are very expensive, they cost tens of millions of dollars.The development of drugs costs hundreds of millions, but these are trivial things for pharmaceutical companies. The FDA-licensed vaccine very quickly enters the vaccination schedule of most countries, and yields billions in profits per year. , sales of one of the latest licensed vaccines, Gardasil (from HPV), [make up==https://www.bloomberg.com/news/articles/2016-10-25/merck-beats-estimates-as-sales-of- gardasil-vaccine-surge] more than 3 billion a year. "
+},
+{
+"num": 3,
+"digest": "Pharmaceutical companies want to, of course, reduce the likelihood of unsuccessful clinical trials, but does they have such a legitimate opportunity? It turns out that it's very simple, instead of using a placebo instead of a placebo, toxic, which leads to the same side effects as the vaccine being tested.One of the most toxic components of vaccination is aluminum (this is proven in another part), which is used as an adjuvant in most vaccines. If you use aluminum, or for example aluminum with ethyl mercury, or just another vaccine, you can increase the number of side effects in the control group, and then it will be comparable to the number of side effects in the group that received the new vaccine. From here we conclude that the new vaccine there are no side effects, and it is completely safe.From these data, the FDA and CDC also conclude that the vaccine is safe, and after them all other countries.<br> Is it legal? Absolutely."
+},
+{
+"num": 4,
+"digest": "In principle, even with the choice of placebo, it's not necessary to suffer. It's not necessary to use placebo in randomized clinical trials of vaccines, and studies need not be either randomized or blind.You can just get everyone vaccinated and see what side effects there are. If the majority survive, then the vaccine is absolutely safe. "
+},
+{
+"num": 5,
+"header": "Here are two very interesting articles",
+"title": "What's in placebos: who knows? Analysis of randomized, controlled trials.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/20956710",
+"info_type": "article",
+"info_date": "2010",
+"info_authors": "Golomb",
+"infoID": "20956710",
+"info_place": "Ann Intern Med.",
+
+"I_S_codenames": ["placebo"],
+"digest": "There are no inert substances, and there are no standards what the placebo composition should be.This, of course, affects the results of the research. The results of clinical trials are not required to disclose what was the composition of the placebo used. journals also do not require this information.<br> The authors analyzed 167 clinical studies published in four of the most prestigious medical journals, most of the clinical trials did not disclose the placebo composition.Only studies of 8% tablets and 26 % of injections reported that they were used as a placebo.<br><br> For example, in a study of a drug for cancer-related anorexia, it turned out that the drug had a beneficial effect on the gastrointestinal tract, however, lactose was used as a placebo.On cancer patients who undergo chemo- and radiotherapy is usually lactose intolerance, which led to the fact that the lactose-free medicine was favorably different from the placebo"
+},
+{
+"num": 6,
+"title": "Testing vaccines in pediatric research subjects.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2831649/",
+"info_type": "article",
+"info_date": "2009",
+"info_authors": "Jacobson",
+"infoID": "PMC2831649",
+"info_place": "Vaccine",
+"I_S_codenames": ["placebo"],
+"digest": "In 1930, two doctors from the German city of Lübeck decided to vaccinate children against tuberculosis in large numbers with BCG vaccine, which although it was available since 1921, but was not particularly used.For 12 months of this campaign, 208 children fell ill tuberculosis due to vaccination, and 77 died.The doctors were arrested and convicted for murder.<br> This led to a discussion about the use of people in medical experiments.<br> In 2008, the US abandoned the Helsinki Declaration. (Instead, it uses Good Clinical Practice, which does not restrict pharmaceutical companies such as Xe Jinskaya Declaration).<br><br> Salines can be used in the study of vaccines, but researchers often choose other drugs.The article gives four examples:<br> In a study of the pneumococcus vaccine (PCV9), another vaccine was used as a placebo DTP-Hib).<br> A vaccine against E. coli was used as a placebo in a study of the cholera vaccine.<br> In another study of the pneumococcus vaccine (PCV23) vaccines against hepatitis A and B were used as a placebo. <Br > In the fourth study, placebo was used ovan aluminum hydroxide mixed with thiomersal (ethyl mercury). "
+},
+{
+"num": 7,
+"digest": "Unlike clinical trials of drugs, where the placebo composition is often hidden, vaccine manufacturers usually do not hide the placebo used. To find out, it's enough to read the inserts to the vaccines. Here are just a few examples."
+},
+{
+"num": 8,
+"digest": "[Daptacel==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm103037.pdf], vaccine against diphtheria, tetanus and pertussis (DTaP, Sanofi Pasteur). As placebo, there were three other vaccines - DTP, DT and an experimental pertussis vaccine - were used.<br> Yes, yes, an experimental vaccine was used as a placebo. Let that sink in."
+},
+{
+"num": 9,
+"digest": "[Infanrix==https://www.gsksource.com/pharma/content/dam/GlaxoSmithKline/US/en/Prescribing_Information/Infanrix/pdf/INFANRIX.PDF], another vaccine for diphtheria, tetanus and pertussis (DTaP, GlaxoSmithKline), Pediarix vaccine was used as a placebo, and both groups received these vaccines together with hepatitis B, pneumococcal, chickenpox, polio, haemophilus, measles, mumps and rubella vaccines. "
+},
+{
+"num": 10,
+"digest": "[Pediarix==https://www.gsksource.com/pharma/content/dam/GlaxoSmithKline/US/en/Prescribing_Information/Pediarix/pdf/PEDIARIX.PDF], vaccine against diphtheria, tetanus, whooping cough, hepatitis B and poliomyelitis (DTaP-HepB-IPV, GlaxoSmithKline) This vaccine was tested together with the haemophilus influenza vaccine.The control group received the Infanrix vaccine, as well as the vaccine against poliomyelitis and hemophilic rod.<br><br> That is, roughly speaking , Infantrix was used as a placebo by Pediarix, and in the Pediarix trials, Infanrix was used as a placebo, all of which were flavored with a mixture of several more vaccines to completely void the possibility of distinguishing any side effects from the vaccine being tested. "
+},
+{
+"num": 11,
+"digest": "The first vaccines for diphtheria, tetanus and whooping cough appeared long before someone bothered with clinical trials, and even with a placebo, so here it can be argued that using placebo for their testing, that is, not vaccinating part children are unethical, but even clinical trials of new vaccines, from new diseases, use other vaccines as placebo. "
+},
+{
+"num": 12,
+"digest": "[Havrix==https://www.gsksource.com/pharma/content/dam/GlaxoSmithKline/US/en/Prescribing_Information/Havrix/pdf/HAVRIX.PDF], the hepatitis A vaccine (GlaxoSmithKline). The clinical trial included three groups: the first was Havrix, the second was Havrix + MMR (measles / mumps / rubella vaccination), the third received MMR + chickenpox, and also Havrix after 42 days. "
+},
+{
+"num": 13,
+"digest": "[Prevnar == https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm137038.pdf], pneumococcal vaccine (PCV7, Wyeth) .The placebo was an experimental (!) vaccine from meningococcus C.<br> The next version of this vaccine [Prevnar-13 == https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm201669.pdf] (Pfizer) already used Prevnar as a placebo. "
+},
+{
+"num": 14,
+"digest": "[Cervarix == https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm186981.pdf], human papillomavirus vaccine (GlaxoSmithKline) .The placebo vaccine was a hepatitis A vaccine, as well as aluminum hydroxide. "
+},
+{
+"num": 15,
+"digest": "[Engerix-B == https://www.gsksource.com/pharma/content/dam/GlaxoSmithKline/US/en/Prescribing_Information/Engerix-B/pdf/ENGERIX-B.PDF], the vaccine against hepatitis B (GlaxoSmithKline) .The control group was not. "
+},
+{
+"num": 16,
+"digest": "[Recombivax==http://www.merck.com/product/usa/pi_circulars/r/recombivax_hb/recombivax_pi.pdf], hepatitis B vaccine (Merck). There was no control group."
+},
+{
+"num": 17,
+"digest": "To allow a new vaccine, it is enough for the FDA that it is no more dangerous than some other vaccine, or than an experimental vaccine, or aluminum hydroxide, or than any other substance that the pharmaceutical company even is not required to disclose. <b>In clinical trials of vaccines, a real, inactive placebo is almost never used.</b><br> Therefore, the next time someone claims that vaccines are completely safe, ask him, compared to what they are absolutely safe. s only absolutely safe compared to other vaccines, or as compared to highly toxic substances. "
+}]
+}

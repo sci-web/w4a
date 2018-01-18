@@ -220,82 +220,16 @@
         "digest": "41% медсестер не привились от гриппа. Они опасались побочных эффектов, считали, что риск заразиться низкий, и вообще, не считали эту прививку эффективной. (США)"
     },
     {
-        "num": 22,
-        "header": "Та же история повторяется везде. Врачи и медсестры во всех странах отказываются прививаться от гриппа.",
-        "title": "Influenza vaccination in paediatric nurses: cross-sectional study of coverage, refusal, and factors in acceptance.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/18448210",
-        "info_type": "article",
-        "info_date": "2008",
-        "info_authors": "Norton",
-        "infoID": "",
-        "info_place": "Vaccine",
-        "info_geo": "Canada",
-        "digest": "Канада"
+        "num": 22, 
+        "digest": "Та же история повторяется в [Канаде==https://www.ncbi.nlm.nih.gov/pubmed/18448210], [Бразилии==https://www.ncbi.nlm.nih.gov/pubmed/17276792], [Франции==https://www.ncbi.nlm.nih.gov/pubmed/23116695] [[1]==https://www.ncbi.nlm.nih.gov/pubmed/27919630] и во всем остальном мире [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19467744], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/16804657]. Врачи и медсестры во всех странах отказываются прививаться от гриппа."
     },
     {
         "num": 23,
-        "title": "Attitudes of health care workers to influenza vaccination: why are they not vaccinated?",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/17276792",
-        "info_type": "article",
-        "info_date": "2007",
-        "info_authors": "Takayanagi",
-        "infoID": "",
-        "info_place": "Am J Infect Control",
-        "info_geo": "Brazil",
-        "digest": "Бразилия"
-    },
-    {
-        "num": 24,
-        "digest": "Франция:",
-        "sources_pool": [{
-        "title": "Influenza vaccination coverage among patients and healthcare workers in a university hospital during the 2006-2007 influenza season.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/23116695",
-        "info_type": "article",
-        "info_date": "2012",
-        "info_authors": "Landelle",
-        "infoID": "23116695",
-        "info_place": "Vaccine",
-        "info_geo": "France"
-        },
-        {
-         "title": "Knowledge and attitudes towards influenza vaccination of health care workers in emergency services.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/27919630",
-        "info_type": "article",
-        "info_date": "2017",
-        "info_authors": "Hulo",
-        "infoID": "27919630",
-        "info_place": "Vaccine",
-        "info_geo": "France"
-        }]
-    },
-    {
-        "num": 25,
-"digest": "Весь мир:",
-"sources_pool": [{
-        "title": "Influenza vaccination of health care workers in hospitals--a review of studies on attitudes and predictors.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/19467744",
-        "info_type": "article",
-        "info_date": "2009",
-        "info_authors": "Hollmeyer",
-        "infoID": "19467744",
-        "info_place": "Vaccine"
-},
-{
- "title": "Influenza vaccination of healthcare workers: a literature review of attitudes and beliefs.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16804657",
-        "info_type": "article",
-        "info_date": "2006",
-        "info_authors": "Hofmann",
-        "infoID": "16804657",
-        "info_place": "Infection"
-}]
-    },
-    {
-        "num": 26,
         "digest": "Сколько не толкуй врачам и медсестрам, что все прививки безопасны и эффективны, далеко не все в это верят.<br>Научные данные свидетельствуют о том, что медицинский консенсус о безопасности и эффективности прививок - это миф."
     },
     {
-        "num": 27,
+        "num": 24,
+        "header": "Разное",
         "digest": "Австралийские врачи, которые [помогают==https://www.facebook.com/9NewsMelbourne/videos/1886631838267135/] своим пациентам отказываться от прививок [преследуются==http://www.abc.net.au/news/2017-08-24/melbourne-doctors-investigated-over-anti-vaccination-allegations/8837554] законом. [Еще==https://www.facebook.com/iwakeupwithtoday/videos/1711307558903902/].<br>Врачи в Индии, которые заказывают много вакцин, [получают==http://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/pharma-firm-lures-doctors-with-gold-coins-to-push-its-vaccines/articleshow/56700011.cms] подарки от фармацевтической компании."
     }]
 }

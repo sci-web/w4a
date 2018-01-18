@@ -1,6 +1,7 @@
-from app import app, lm
+from app import app
 import re
 from flask import request, redirect, render_template, url_for, flash, Response, g, jsonify
+from flask_login import login_user, logout_user, login_required, current_user
 from datetime import date
 import datetime
 from flask_admin.model import typefmt
@@ -8,9 +9,7 @@ import os
 from .model import DB
 from .forms import LoginForm, makeform, searchForm
 from bson.json_util import dumps
-from .auth import Auth
 import json
-
 
 @app.before_request
 def load_vars():
@@ -35,6 +34,7 @@ MY_DEFAULT_FORMATTERS.update({
 def rehref(jsonstring):
     jsonstring = re.sub(r'\[\]', r'', "".join(jsonstring))
     return re.sub(r'\[(.*?)\=\=(.*?)\]', r'<a href=\2>\1</a>', "".join(jsonstring)) # join: make it string
+
 app.jinja_env.filters['rehref'] = rehref
 
 
@@ -136,13 +136,21 @@ def chapters(namespace):
                             items=g.items, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=namespace)
 
 
+@app.route('/tmpl', methods=['GET', 'POST'])
+def tmpl():
+    start = datetime.datetime.strptime("2016-11-04 00:00:00", '%Y-%m-%d %H:%M:%S')
+    end = datetime.datetime.strptime("2016-11-14 23:59:59", '%Y-%m-%d %H:%M:%S')
+    items = DB().get_data(start, end)
+    return render_template('tmpl.html', items=items)
+
+
 @app.errorhandler(404)
 def page_not_found(error):
     form = makeform()
-    return render_template('404.html', form=g.form, items=g.items, objects=g.objects), 404
+    return render_template('404.html', items=g.items, objects=g.objects, form=g.form), 404
 
 
 @app.errorhandler(500)
 def internal_error(error):
     form = makeform()
-    return render_template('500.html', form=g.form, items=g.items, objects=g.objects), 500
+    return render_template('500.html', items=g.items, objects=g.objects, form=g.form), 500

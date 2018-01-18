@@ -5,6 +5,7 @@ from flask import redirect, url_for, render_template, g
 from flask_login import login_user, logout_user, login_required
 from .auth import Auth
 from .model import DB
+from .forms import editIntro
 
 
 def extension_ok(filename, ff):
@@ -44,6 +45,14 @@ def load_user(email):
     if not u:
         return None
     return Auth(u['email'], u['access'], u['author'])
+
+
+@app.route('/editspace/<author>')
+def editspace(author):
+    i_data = DB().get_intros()
+    sform = editIntro()
+    return render_template('form_intro.html', form=g.form, items=g.items, 
+        objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, data=i_data, sform=sform)
 
 
 @app.context_processor

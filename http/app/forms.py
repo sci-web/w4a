@@ -36,3 +36,8 @@ class LoginForm(Form):
     email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     from_url = HiddenField('', validators=[DataRequired()])
+
+
+class editIntro(Form):
+	subject = StringField('Subject', validators=[DataRequired()])
+	

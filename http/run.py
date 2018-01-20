@@ -11,5 +11,5 @@ for w_dir in watch_dirs:
             filename = os.path.join(dirname, filename)
             if os.path.isfile(filename):
                 watch_files.append(filename)
-app.run('0.0.0.0', port=8080, extra_files=watch_files)
+app.run('0.0.0.0', port=5000, extra_files=watch_files)
 app.debug = True

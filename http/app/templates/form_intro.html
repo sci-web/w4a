@@ -4,55 +4,232 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:40px 20px 30px 10px;" align=left>
-<form action="/edit/intro/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
-{{ form.hidden_tag() }}
-{{ form.from_url }}
+<div style="margin:50px 20px 30px 50px;" align=left>
+<sform.action="/edit/intro/{{ namespace }}" method="POST" name="sform">
+{{ sform.hidden_tag() }}
+{{ sform.from_url }}
 <h1>Edit topic {{ subject }} </h1>
-    <div style="margin:10px 0 0 0">
-        <div style="height:60px">
-            Subject (research title): {{ form.subject }} <font color="red">(*)</font><br>
-            Namespace: {{ form.namespace }} <font color="red">(*)</font>
-        </div>
-        <div style="margin:0 45px 0 0; line-height:16px">
-            Epigraph text: {{ form.epigraph_text }}<br>
-            Epigraph source: {{ form.epigraph_source }}
-        </div>
-        <div style="margin:10px 40px 0 0;">
-        Introduction: {{ form.intro }}
+<br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Subject (research title): </div>
+        <div style="float:right; width:830px;" class="form-group">
+            <input type="text" placeholder="Subject" name=subject size=95> <font color="red">(*)</font></div>
+    </div>
+    <br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Namespace: </div>
+        <div style="float:right; width:830px" class="form-group">
+            <input type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
+            must be a unique word in latin letters</div>
+    </div>
+    <br>
+    <div style="height:75px; width:1010px;">
+        <div style="float:left; width:180px">Epigraph text: </div>
+        <div style="float:right; width:830px" class="form-group"><textarea rows=3 cols=97 name=ep_text></textarea></div>
+    </div>
+    <br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Epigraph source: </div>
+        <div style="float:right; width:830px" class="form-group"><input type="text" name=ep_source size=75></div>
+    </div>
+    <br>
+    <div style="height:155px; width:1010px;">
+        <div style="float:left; width:180px">Short introduction: </div>
+        <div style="float:right; width:830px" class="form-group"><textarea rows=7 cols=97 name=intro></textarea></div>
+    </div>
+    <br>
+    <div id="pnt_target" style="width:1010px;"></div>
+    <div style="height:25px; width:980px;" id="l_1">
+        <div style="float:left; width:180px"></div>
+        <div align=right style="float:right; width:800px">
+            <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target', '#l_1', 1, 'pcross')" class="linknav pointer">add next point</a>
         </div>
     </div>
-    <div style="margin:0 30px 40px 0">
-        <ol>
-            <li style="margin:10px;">
-            Point: {{ form.point }}<br>
-            <a href="/edit/?add_intro_point">add next point</a>
-            </li>
-        </ol>
-            <div style="margin:10px">
+    <hr size=1 style="width: 100%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0" align=center>
+            <div style="margin:5px">
             <h3>Introduction references:</h3>
-            References header: {{ form.ref_header }}<br>
-            <p>
-            References intro: {{ form.ref_intro }}
-                <div style="margin:0 0 0 20px">
-                References block #1 title: {{ form.ref_title_1 }}<br>
-                References block #1 digest: {{ form.ref_digest_1 }}
-                    <div>
-                        References block #1 links:<br>
-                        Link #1 title: {{ form.ref_1_link_title_1 }}<br>
-                        Link #1 address: {{ form.ref_1_link_href_1 }}<br>
-                        Link #1 type: {{ form.ref_1_link_type_1 }}<br>
-                        Link #1 digest: {{ form.ref_1_link_digest_1 }}<br>
-                    </div>
-                    <a href="/edit/?add_ref_1_link_1">add next link</a>
-                </div>
-                <a href="/edit/?add_ref_block_1">add next ref. block</a>
+            <div style="height:25px; width:1000px;">
+                <div style="float:left; width:180px">References header: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name=ref_header size=95></div>
             </div>
-            <div style="margin:10px 100px 10px 10px; text-align:justify">
-                Summary: {{ form.summary }}
+            <br>
+            <div style="height:115px; width:1000px;">
+                <div style="float:left; width:180px">References intro: </div>
+                <div style="float:right; width:820px" class="form-group"><textarea rows=5 cols=97 name=ref_intro></textarea></div>
+            </div>
+            <div style="margin:0 0 0 50px"><h4><u>References</u>:</h4>
+                <div id="refs_target" style="width:1000px;"></div>
+            </div>
+            <div id="refs_target" style="width:1000px;"></div>
+            <div style="height:25px; width:1000px;" id="rln_1">
+                <div style="float:left; width:180px"></div>
+                <div align=right style="float:right; width:820px">
+                    <a onClick="loadTmpl('#refs_tmpl', '#refs_target', '#rln_1', 1, 'rcross', 1)" class="linknav pointer">add next refBlock</a>
+                </div>
+            </div>
+            <div id="refs_target" style="width:1000px;"></div>
+            </div>
+    <br>
+    <div style="height:175px; width:1000px;">
+        <div style="float:left; width:180px">Summary: </div>
+        <div style="float:right; width:820px" class="form-group">
+            <textarea rows=7 cols=97 name=summary></textarea></div>
+    </div>
+    <div style="height:25px; width:980px;">
+        <div style="float:left; width:180px"></div>
+        <div align=right style="float:right; width:800px">
+            <a href="/edit/?add_ref_1_link_1"><button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</sform>
+</div>
+{% raw %}
+<script id="pnt_tmpl" type="x-tmpl-mustache">
+    <div style="height:195px; width:1000px;" id="p_{{ num }}">
+        <div style="float:left; width:180px">Point #{{ num }}: </div>
+        <div style="float:right; width:820px" class="form-group"><textarea rows=7 cols=97 name=points_{{ num }}></textarea></div>
+        <div style="display:cell;margin-left:1010px; width:12px; float:right; position:absolute" id=pcross>
+            <a onClick = "javascript:loadTmpl('', '!', '#p_{{ num }}', {{ num }}, 'pcross')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+    </div>
+        <div style="height:25px; width:980px;" id="l_{{ num }}">
+            <div style="float:left; width:180px"></div>
+            <div align="right" style="float:right; width:800px">
+                <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target', '#l_{{ num }}', {{ num }}, 'pcross')" class="linknav pointer">add one more point</a>
+            </div>
+        </div>
+</script>
+<script id="lnk_tmpl" type="x-tmpl-mustache">
+    <div style="width:880px;height:100%" id="lnk_{{ num }}">
+        <div style="display:cell;margin-left:850px; width:12px; float:right; position:absolute" id=lcross>
+            <a onClick = "javascript:loadTmpl('', '!', '#lnk_{{ num }}', {{ num }}, 'lcross')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <hr size=1 style="width:9%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 10px 40px" align=left>
+        <div style="margin:0 0 0 50px;">
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Link #{{ num }} title: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="link_title_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Link #{{ num }} URL: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="link_url_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Link #{{ num }} type: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="link_type_{{ num }}_{{ rnum }}" size=35> i.e. article, media, report, torrent</div>
+            </div>
+            <br>
+            <div style="height:180px; width:940px;">
+                <div style="float:left; width:120px">Link #{{ num }} digest :</div>
+                <div style="float:right; width:820px" class="form-group">
+                    <textarea rows=5 cols=77 name="link_digest_{{ num }}_{{ rnum }}"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="lnk_target_{{ rnum }}" style="width:1000px;"></div>
+    <div style="height:15px; width:810px;" id="ln_{{ num }}_{{ rnum }}">
+           <div style="float:left; width:160px;"></div>
+           <div align=right style="float:right; width:650px;margin-top:-10px">
+               <a onClick="loadTmpl('#lnk_tmpl', '#lnk_target_{{ rnum }}', '#ln_{{ num }}_{{ rnum }}', {{ num }}, 'lcross', {{ rnum }})" class="linknav pointer">add next {{ num }}-link to {{ rnum }}-RefBlock</a>
+           </div>
+    </div>
+</script>
+<script id="refs_tmpl" type="x-tmpl-mustache">
+    <div style="width:1000px;" id="ref_{{ rnum }}">
+        <div style="display:cell;margin-left:960px; width:12px; float:right; position:absolute" id=rcross>
+            <a onClick = "javascript:loadTmpl('', '!', '#ref_{{ rnum }}', {{ rnum }}, 'rcross', {{ rnum }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>
+                <div style="height:25px; width:1000px;" id="rcnt">
+                    <div style="float:left; width:200px">RefBlock #{{rnum}} title: </div>
+                    <div style="float:right; width:800px;" class="form-group">
+                        <input type="text" placeholder="{{ num }}_{{ rnum }}" name="ref_block_ttl_{{ rnum }}" size=86></div>
+                </div>
+                <br>
+                <div style="height:115px; width:1000px;">
+                    <div style="float:left; width:200px">RefBlock #{{rnum}} digest:</div>
+                    <div style="float:right; width:800px" class="form-group">
+                        <textarea rows=5 cols=88 name="ref_block_digest_{{ rnum }}"></textarea>
+                    </div>
+                </div>
+                <h4>References block #{{rnum}} links:</h4>
+                <div style="margin:0 0 0 50px;">
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ num }} title: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" name="link_title_{{ num }}_{{ rnum }}" size=75></div>
+                    </div>
+                    <br>
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ num }} URL: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" placeholder="http://" name="link_url_{{ num }}_{{ rnum }}" size=75></div>
+                    </div>
+                    <br>
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ num }} type: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" name="link_type_{{ num }}_{{ rnum }}" size=35> i.e. article, media, report</div>
+                    </div>
+                    <br>
+                    <div style="height:130px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ num }} digest:</div>
+                        <div style="float:right; width:820px" class="form-group">
+                            <textarea rows=5 cols=77 name="link_digest_{{ num }}_{{ rnum }}"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div style="height:15px; width:810px;" id="ln_{{ num }}_{{ rnum }}">
+                        <div style="float:left; width:160px;"></div>
+                        <div align=right style="float:right; width:650px;margin-top:-10px">
+                            <a onClick="loadTmpl('#lnk_tmpl', '#lnk_target_{{ rnum }}', '#ln_{{ num }}_{{ rnum }}', {{ num }}, 'lcross', {{ rnum }})"
+                            class="linknav pointer">add one more {{ num }}-link to {{ rnum }}-RefBlock</a>
+                        </div>
+                </div>
+                <div id="lnk_target_{{ rnum }}" style="width:1000px;"></div>
+            </div>
+            <div style="height:25px; width:1000px;" id="rln_{{ rnum }}">
+                <div style="float:left; width:180px"></div>
+                <div align=right style="float:right; width:820px">
+                    <a onClick="loadTmpl('#refs_tmpl', '#refs_target', '#rln_{{ rnum }}', 0, 'rcross', {{ rnum }})"
+                    class="linknav pointer">add next refBlock</a>
+                </div>
             </div>
     </div>
-<button type="submit" class="btn btn-default">Submit</button>
-</form>
-</div>
+</script>
+{% endraw %}
+<script>
+$(document).ready(function() {
+    loadTmpl('#pnt_tmpl', '#pnt_target', '#l_1', 0, 'pcross', 0);
+    loadTmpl('#lnk_tmpl', '#lnk_target_1', '#ln_1', 0, 'lcross', 0);
+    loadTmpl('#refs_tmpl', '#refs_target', '#rln_1', 0, 'rcross', 0);
+});
+function loadTmpl(thtml, target, div, cnt, id, rcnt) {
+    $( div ).remove();
+    if (cnt != 0 && id == 'pcross') {
+        cnt = $("div[id=" + id + "]").length;
+    }
+    if (cnt != 0 && id == 'lcross') {
+        cnt = $("div[id=" + id + "]").length + 1;
+    }
+    if (cnt != 0 && id == 'rcross') {
+        cnt = $("div[id=" + id + "]").length;
+    }
+    if (rcnt == 0 || id == 'rcross') {
+        rcnt = $("div[id^=ref_]").length + 1;
+    }
+    if (target != '!') {
+        template = $(thtml).html();
+        Mustache.parse(template);
+        $(target).append(Mustache.render(template, {num: cnt+1, rnum: rcnt}));
+    }
+}
+</script>
 {% endblock %}

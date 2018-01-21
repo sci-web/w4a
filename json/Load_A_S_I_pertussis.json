@@ -86,14 +86,14 @@
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/24216286",
         "info_type": "article",
         "info_date": "2013",
-        "info_authors": "Sala-Farr&eacute;",
+        "info_authors": "Sala-Farré",
         "infoID": "24216286",
         "info_place": "Enferm Infecc Microbiol Clin.",
         "digest": "Эпидемия коклюша в Испании. 421 случая, в основном дети до года. Подавляющее большинство заболевших (90%) были полностью привиты. Болезнь переносили в основном дети 5-9 лет, которые были полностью привиты. Никто не умер, 8% были госпитализированы. Авторы заключают, что несмотря на высокий уровень вакцинации, коклюш совершенно не поддается контролю, и что реальное количество больных намного больше, так как они рассматривали лишь лабораторно подтвержденные случаи.<br>Таких исследований десятки. Несмотря на высокий уровень вакцинации, в последние 20 лет во всем мире происходят все больше и больше эпидемий коклюша, и большинство заболевших привиты."
     },
     {
         "num": 11,
-        "title": "Finding the &#39;who&#39; in whooping cough: vaccinated siblings are important pertussis sources in infants 6 months of age and under.",
+        "title": "Finding the 'who' in whooping cough: vaccinated siblings are important pertussis sources in infants 6 months of age and under.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/25391405/",
         "info_type": "article",
         "info_date": "2014",
@@ -224,7 +224,7 @@
     },
     {
         "num": 27,
-        "title": "Global Population Structure and Evolution of Bordetella pertussis and Their Relationship with Vaccination",
+        "title": "Global Population Structure and Evolution of Bordetella pertussis and Their Relationship with Vaccination.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3994516/",
         "info_type": "article",
         "info_date": "2014",
@@ -340,7 +340,7 @@
     {
         "num": 34,
 "header": "Лечение",
-        "title": "Antibiotics for whooping cough",
+        "title": "Antibiotics for whooping cough (pertussis).",
         "link": "https://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0012763/",
         "info_type": "article",
         "info_date": "2007",

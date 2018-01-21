@@ -45,7 +45,7 @@
     {
         "num": 6,
         "header": "Естественный иммунитет",
-        "title": "Naturally Acquired Immunity to Tetanus Toxin in an Isolated Community",
+        "title": "Naturally Acquired Immunity to Tetanus Toxin in an Isolated Community.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC261948/",
         "info_type": "article",
         "info_date": "1985",
@@ -69,7 +69,7 @@
     },
     {
         "num": 8,
-        "title": "Naturally acquired antibodies to tetanus toxin in humans and animals from the Gal&aacute;pagos islands.",
+        "title": "Naturally acquired antibodies to tetanus toxin in humans and animals from the Galápagos islands.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/6827147",
         "info_type": "article",
         "info_date": "1983",
@@ -160,7 +160,7 @@
     },
     {
         "num": 16,
-        "title": "A systematic review of tetanus in individuals with previous tetanus toxoid immunization",
+        "title": "A systematic review of tetanus in individuals with previous tetanus toxoid immunization.",
         "link": "https://www.canada.ca/en/public-health/services/reports-publications/canada-communicable-disease-report-ccdr/monthly-issue/2014-40/ccdr-volume-40-17-october-16-2014/ccdr-volume-40-17-october-16-2014-1.html",
         "info_type": "article",
         "info_date": "2014",
@@ -224,7 +224,7 @@
     },
     {
         "num": 24,
-        "title": "Tetanus Despite Preexisting Antitetanus Antibody",
+        "title": "Tetanus Despite Preexisting Antitetanus Antibody.",
         "link": "http://jamanetwork.com/journals/jama/article-abstract/360968",
         "info_type": "article",
         "info_date": "1978",
@@ -251,7 +251,7 @@
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3294684/",
         "info_type": "article",
         "info_date": "2006",
-        "info_authors": "Hahn&eacute;",
+        "info_authors": "Hahné",
         "infoID": "PMC3294684",
         "info_place": "Emerg Infect Dis",
         "info_geo": "UK",
@@ -259,7 +259,7 @@
     },
     {
         "num": 27,
-        "title": "Tetanus in Injecting Drug Users",
+        "title": "Tetanus in Injecting Drug Users.",
         "link": "http://www.bmj.com/content/330/7485/208",
         "info_type": "article",
         "info_date": "2005",
@@ -443,7 +443,7 @@
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/24226506/",
         "info_type": "article",
         "info_date": "2013",
-        "info_authors": "Hemil&auml;",
+        "info_authors": "Hemilä",
         "infoID": "24226506",
         "info_place": "Cochrane Database Syst Rev.",
          "I_S_codenames": ["vitamin_C"],

@@ -200,7 +200,7 @@
     },
     {
         "num": 12,
-        "title": "Mumps outbreak in Israel&#39;s highly vaccinated society: are two doses enough?",
+        "title": "Mumps outbreak in Israel's highly vaccinated society: are two doses enough?",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/21554780",
         "info_type": "article",
         "info_date": "2012",
@@ -347,12 +347,12 @@
     },
     {
         "num": 22,
-        "title": "Henoch-Sch&ouml;nlein purpura and drug and vaccine use in childhood: a case-control study.",
+        "title": "Henoch-Schönlein purpura and drug and vaccine use in childhood: a case-control study.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4912703/",
         "info_type": "article",
         "info_date": "2016",
         "info_authors": "Da Dalt",
-        "infoID": "",
+        "infoID": "PMC4912703",
         "info_place": "Ital J Pediatr",
         "I_S_codenames": ["MMR", "hemorrhagic_vasculitis"],
         "digest": "MMR повышает риск геморрагического васкулита в 3.4 раза. Обычно эта болезнь у детей сама проходит, но в 1% случаев приводит к отказу почек."

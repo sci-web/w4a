@@ -6,7 +6,7 @@
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
 "I_S_name": "Грипп",
-"date": ISODate("2017-09-09T01:15:00Z"),
+"date": ISODate("2017-11-09T01:15:00Z"),
 "intro": "",
 "epigraph": {
 "text": "I've never had a flu shot, and I've never had the flu.<br>I don't like the idea of injecting bad stuff into your body, which is basically what they do.",
@@ -368,7 +368,7 @@
     },
     {
         "num": 32,
-        "title": "Randomized Controlled Ferret Study to Assess the Direct Impact of 2008&ndash;09 Trivalent Inactivated Influenza Vaccine on A(H1N1)pdm09 Disease Risk.",
+        "title": "Randomized Controlled Ferret Study to Assess the Direct Impact of 2008-09 Trivalent Inactivated Influenza Vaccine on A(H1N1)pdm09 Disease Risk.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3903544/",
         "info_type": "article",
         "info_date": "2014",
@@ -380,7 +380,7 @@
     },
     {
         "num": 33,
-        "title": "Clinical and Epidemiologic Characteristics of an Outbreak of Novel H1N1",
+        "title": "Clinical and Epidemiologic Characteristics of an Outbreak of Novel H1N1 (Swine Origin) Influenza A Virus among United States Military Beneficiaries.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2878199/",
         "info_type": "article",
         "info_date": "2009",
@@ -449,7 +449,7 @@
     },
     {
         "num": 39,
-        "title": "Guillain-Barr&eacute; syndrome after vaccination in United States: data from the Centers for Disease Control and Prevention/Food and Drug Administration Vaccine Adverse Event Reporting System",
+        "title": "Guillain-Barré syndrome after vaccination in United States: data from the Centers for Disease Control and Prevention/Food and Drug Administration Vaccine Adverse Event Reporting System (1990-2005).",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/19730016",
         "info_type": "article",
         "info_date": "2009",
@@ -526,7 +526,7 @@
     },
     {
         "num": 47,
-        "title": "Trends in Recorded Influenza Mortality: United States, 1900&ndash;2004.",
+        "title": "Trends in Recorded Influenza Mortality: United States, 1900-2004.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2374803/",
         "info_type": "article",
         "info_date": "2008",
@@ -560,7 +560,7 @@
     },
     {
         "num": 50,
-        "title": "WHO and the pandemic flu &ldquo;conspiracies&rdquo;.",
+        "title": "WHO and the pandemic flu \"conspiracies\".",
         "link": "http://www.bmj.com/content/340/bmj.c2912",
         "info_type": "article",
         "info_date": "2010",
@@ -786,7 +786,7 @@
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3136969/",
         "info_type": "article",
         "info_date": "2011",
-        "info_authors": "Hemil&auml;",
+        "info_authors": "Hemilä",
         "infoID": "PMC3136969",
         "info_place": "Open Respir Med J",
         "I_S_codenames": ["zinc"],
@@ -934,7 +934,7 @@
     },
     {
         "num": 85,
-        "title": "An association of serum vitamin D concentrations &lt; 40 nmol/L with acute respiratory tract infection in young Finnish men.",
+        "title": "An association of serum vitamin D concentrations < 40 nmol/L with acute respiratory tract infection in young Finnish men.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/17823437",
         "info_type": "article",
         "info_date": "2007",
@@ -1205,7 +1205,7 @@
     },
     {
         "num": 95,
-        "title": "Use of the Inactivated Intranasal Influenza Vaccine and the Risk of Bell&#39;s Palsy in Switzerland.",
+        "title": "Use of the Inactivated Intranasal Influenza Vaccine and the Risk of Bell's Palsy in Switzerland.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/14985487",
         "info_type": "article",
         "info_date": "2004",

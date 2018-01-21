@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
-<sform.action="/edit/intro/{{ namespace }}" method="POST" name="sform">
+<form action="/editspace/intro:{{ author }}" method="POST" name="sform">
 {{ sform.hidden_tag() }}
 {{ sform.from_url }}
 <h1>Edit topic {{ subject }} </h1>

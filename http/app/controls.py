@@ -1,8 +1,8 @@
 from app import app, lm
 import datetime
 # import xlrd
-from flask import redirect, url_for, render_template, g
-from flask_login import login_user, logout_user, login_required
+from flask import request, redirect, render_template, flash, Response, send_from_directory, url_for, g
+from flask_login import login_user, logout_user, login_required, current_user
 from .auth import Auth
 from .model import DB
 from .forms import editIntro
@@ -48,11 +48,34 @@ def load_user(email):
 
 
 @app.route('/editspace/<author>')
+@login_required
 def editspace(author):
     i_data = DB().get_intros()
     sform = editIntro()
-    return render_template('form_intro.html', form=g.form, items=g.items, 
+    return render_template('form_intro.html', form=g.form, items=g.items, author=author,
         objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, data=i_data, sform=sform)
+
+
+@app.route('/editspace/intro:<author>', methods=['GET', 'POST'])
+@login_required
+def edit_intro(author):
+    # sp_data = DB().get_intros_by_namespace(namespace)
+    sform = editIntro(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
+    if request.method == 'POST' and sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+        if sform.data:
+            # bd = datetime.datetime.strptime(str(form.date_of_birth.data), "%Y-%m-%d")
+            # form.date_of_birth.data = bd
+            error = 0
+            print sform.data
+        else:
+            error = 1
+            flash("Something wrong with data update!", category='error')
+        if error == 0:
+            flash("Data updated successfully!", category='info')
+        else:
+            flash("Something wrong happened!", category='error')
+    return render_template('form_intro.html', form=g.form, items=g.items, 
+        objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, sform=sform)
 
 
 @app.context_processor

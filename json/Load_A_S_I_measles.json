@@ -144,6 +144,7 @@
     "link" : "https://www.ncbi.nlm.nih.gov/pubmed/9921727",
     "info_type": "article",
     "info_date": "1999",
+    "info_authors": "CDC",
     "infoID": "9921727"
     },
     {
@@ -250,6 +251,17 @@
 "digest": "Несмотря на охват вакцинации в 98.5% в одной из провинций Китая, количество случаев кори только растет, а вместо детей болеют взрослые.<br>Авторы выделили 16 штаммов вируса у 14 привитых и двух непривитых, и заключают, что вирус мутирует, поэтому привитые заболевают. Они призывают разработать новые вакцины от кори."
 },
 {
+"num": 14,
+"title": "An increasing, potentially measles-susceptible population over time after vaccination in Korea.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/28669617",
+"info_type": "article",
+"info_date": "2017",
+"info_authors": "Kang",
+"infoID": "28669617",
+"info_place": "Vaccine",
+"digest": "В Корее корью болеют в основном младенцы до года. Лишь у 71.5% населения есть антитела против кори. С 2010 по 2014 среднее количество антител снизилось на 16.5%. То же самое наблюдается в [Финляндии==https://www.ncbi.nlm.nih.gov/pubmed/22966129], [Португалии==https://www.ncbi.nlm.nih.gov/pubmed/26319061] и [США==https://www.ncbi.nlm.nih.gov/pubmed/17339511].<br>Иммунитет после болезни сохраняется дольше, чем иммунитет после прививки. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5234812/], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/8147093].<br>Mатеринские антитела против кори исчезают у младенцев к 8-месячному возрасту, из-за того, что у привитых матерей меньше антител, чем у переболевших."
+},          
+{
 "num": 15,
 "title": "Detection of measles virus RNA in urine specimens from vaccine recipients.",
 "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC228449/",
@@ -269,7 +281,7 @@
 "info_authors": "Koskiniemi",
 "infoID": "2563011",
 "info_place": "Lancet",
-"digest": "Поскольку у привитых меньше антител, чем у переболевших, привитые матери передают меньше антител младенцам через плаценту, чем непривитые.<br>Дети матерей, которые родились до 1957 года (т.е. до того, как начали прививать) защищены от кори в среднем до шестимесячного возраста посредством материнских антител. А дети матерей, которые родились после 1963 года имеют защиту в среднем до 4-х месяцев."
+"digest": "Поскольку у привитых меньше антител, чем у переболевших, привитые матери передают меньше антител младенцам через плаценту, чем непривитые.<br>Дети матерей, которые родились до 1957 года (т.е. до того, как начали прививать) защищены от кори в среднем до шестимесячного возраста посредством материнских антител. А дети матерей, которые родились после 1963 года имеют защиту в среднем до 4-х месяцев. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/23661802], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/18815232], [[3]==https://www.ncbi.nlm.nih.gov/pubmed/17629601]."
 },
 {
 "num": 17,
@@ -901,6 +913,18 @@
 "digest": "Исследование 14,900 детей из пяти европейских стран. У тех, кто переболел корью, аллергия встречалась в 2 раза реже. Прививка тоже снижала случаи аллергии, но меньше.<br>У привитых и незаболевших корью, риск риноконъюнктивита был на 70% выше, чем у непривитых и незаболевших.<br>11% привитых детей болели корью. 31% непривитых детей корью не болели. Похожее [исследование==https://www.ncbi.nlm.nih.gov/pubmed/16387585].<br>Антибиотики в первый год жизни повышали риск риноконъюнктивита в 2 раза, астмы в 2.8 раз, экземы в 1.6 раз. Жаропонижающие повышали риск астмы на 54%, а экземы на 32%."
 },
 {
+"num": 61.1,
+"title": "Frequency of allergic diseases following measles.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/16854347",
+"info_type": "article",
+"info_date": "2006",
+"info_authors": "Kucukosmanoglu",
+"infoID": "16854347",
+"info_place": "Allergol Immunopathol (Madr)",
+"I_S_codenames": ["allergy"],
+"digest": "Переболевшие корью реже болели аллергическими заболеваниями."
+},
+{
 "num": 62,
 "title": "Atopy in children of families with an anthroposophic lifestyle.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/10232315",
@@ -959,6 +983,17 @@
 {
 "num": 67,
 "header": "Безопасность",
+"title": "Long-term regulation of interferon production by lymphocytes from children inoculated with live measles virus vaccine.",
+"link": "https://www.ncbi.nlm.nih.gov/pubmed/3143767",
+"info_type": "article",
+"info_date": "1988",
+"info_authors": "Nakayama",
+"infoID": "3143767",
+ "info_place": "J Infect Dis",
+"digest": "У детей, привитых от кори, был понижен уровень интерферона-альфа (цитокин, ответственный за иммунитет от вирусных заболеваний). Исследование продолжалось год, и за это время уровень интерферона так и не восстановился."
+},
+{
+"num": 67,
 "title": "The Risk of Seizures after Receipt of Whole-Cell Pertussis or Measles, Mumps, and Rubella Vaccine.",
 "link": "http://www.nejm.org/doi/full/10.1056/NEJMoa003077#t=article",
 "info_type": "article",

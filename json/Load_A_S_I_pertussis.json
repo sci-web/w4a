@@ -292,9 +292,21 @@
         "info_date": "2000",
         "info_authors": "Hurwitz",
         "infoID": "10714532",
-        "info_place": "J Manipulative Physiol Ther.",
+        "info_place": "J Manipulative Physiol Ther",
         "I_S_codenames": ["asthma"],
         "digest": "Привитые болели астмой в два раза чаще непривитых."
+    },
+    {
+        "num": 29.1,
+        "title": "Early childhood infection and atopic disorder.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1745117/",
+        "info_type": "article",
+        "info_date": "1998",
+        "info_authors": "Farooqi",
+        "infoID": "PMC1745117",
+        "info_place": "Thorax",
+        "I_S_codenames": ["asthma"],
+        "digest": "У привитых цельноклеточной вакциной риск аллергии был на 76% выше. У принимавших антибиотики в первые два года жизни риск аллергии был в 2 раза выше.<br>Один курс антибиотиков повышал риск аллергии на 85; два курса антибиотиков повышали риск в 3 раза; а три курса антибиотиков повышали риск аллергии в 8 раз.<br>У тех, кто переболели корью, и не получили прививку, риск аллергии был на 45% ниже (здесь нет статистической значимости)."
     },
     {
         "num": 30,

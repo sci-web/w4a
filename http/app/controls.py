@@ -1,4 +1,5 @@
 from app import app, lm
+import re
 import datetime
 # import xlrd
 from flask import request, redirect, render_template, flash, Response, send_from_directory, url_for, g
@@ -61,11 +62,67 @@ def editspace(author):
 def edit_intro(author):
     # sp_data = DB().get_intros_by_namespace(namespace)
     sform = editIntro(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
-    if request.method == 'POST' and sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+    in_data = {}
+    in_data["date"] = datetime.datetime.now().strftime('%d-%m-%Y %H:%M')
+    in_data["points"] = []
+    if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
-            # bd = datetime.datetime.strptime(str(form.date_of_birth.data), "%Y-%m-%d")
-            # form.date_of_birth.data = bd
+            f = request.form
+            points = {}
+            refs = []
+            in_refs = {}
+            in_refs_pool = {}
+            ep_text = ""
+            ep_source = ""
             error = 0
+            for key in f.keys():
+                for value in f.getlist(key):
+                    print key,":",value
+                    if key == "namespace": in_data["namespace"] = value
+                    if key == "subject": in_data["subject"] = value
+                    if (key == "intro" and value != ""): in_data["intro"] = value
+                    if (key == "ref_intro" and value != ""): in_data["ref_intro"] = value
+                    if (key == "ref_title" and value != ""): in_data["ref_title"] = value
+                    if key == "ep_text": ep_text = value
+                    if key == "ep_source": ep_source = value
+                    if (re.match("points", key) and value != ""):
+                        p, k = key.split("_")
+                        points[k] = value
+            #         if (re.match("refBlockTtl", key) and value != ""):
+            #             p, r = key.split("_")
+            #             in_refs[r].append({"ref_title": value})
+            #         if (re.match("refBlockDigest", key) and value != ""):
+            #             p, r = key.split("_")
+            #             in_refs[r].append({"ref_digest": value})
+            #         if (re.match("refBlockType", key) and value != ""):
+            #             p, r = key.split("_")
+            #             in_refs[r].append({"ref_type": value})
+            #         if (re.match("linkTitle", key) and value != ""):
+            #             p, l, r = key.split("_")
+            #             in_refs_pool[r][l].append({"title": value})
+            #         if (re.match("linkURL", key) and value != ""):
+            #             p, l, r = key.split("_")
+            #             in_refs_pool[r][l].append({"link": value})
+            #         if (re.match("linkType", key) and value != ""):
+            #             p, l, r = key.split("_")
+            #             in_refs_pool[r][l].append({"linktype": value})
+            #         if (re.match("linkDigest", key) and value != ""):
+            #             p, l, r = key.split("_")
+            #             in_refs_pool[r][l].append({"digest": value})
+            #         if (re.match("linkAuthor", key) and value != ""):
+            #             p, l, r = key.split("_")
+            #             in_refs_pool[r][l].append({"author": value})
+            # for r in in_refs.keys():
+            #     refs.append(in_refs[r])
+            #     ref_pool = []
+            #     for l in in_refs_pool[r].keys():
+            #         ref_pool.append(in_refs_pool[r][l])
+            #     refs.append({"ref_pool": ref_pool})
+            for n, p in sorted(points.iteritems()):
+                in_data["points"].append({"num": n, "item": p})
+            if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
+            # in_data["refs"] = refs
+            print in_data
             print sform.data
         else:
             error = 1

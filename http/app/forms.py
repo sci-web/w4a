@@ -3,7 +3,7 @@ from flask_wtf import Form
 from flask import request, flash
 from flask_admin.form.upload import FileUploadField
 from flask_login import login_user, logout_user, login_required, current_user
-from wtforms import StringField, PasswordField, HiddenField, DateField
+from wtforms import StringField, PasswordField, HiddenField, DateField, SelectField, TextAreaField, RadioField, BooleanField
 from wtforms.validators import DataRequired
 from werkzeug.utils import secure_filename
 import os.path as op
@@ -40,20 +40,11 @@ class LoginForm(Form):
 
 class editIntro(Form):
 	subject = StringField('Subject', validators=[DataRequired()])
-	namespace = StringField('Subject', validators=[DataRequired()])
-
-	    #  Namespace: {{ sform.namespace }} <font color="red">(*)</font>
-        #     Epigraph text: {{ sform.epigraph_text }}<br>
-        #     Epigraph source: {{ sform.epigraph_source }}
-        # Introduction: {{ sform.intro }}
-        #     Point: {{ sform.point }}<br>
-        #     <a href="/edit/?add_intro_point">add next point</a>
-        #     References header: {{ sform.ref_header }}<br>
-        #     References intro: {{ sform.ref_intro }}
-        #         References block #1 title: {{ sform.ref_title_1 }}<br>
-        #         References block #1 digest: {{ sform.ref_digest_1 }}
-        #                 Link #1 title: {{ sform.ref_1_link_title_1 }}<br>
-        #                 Link #1 address: {{ sform.ref_1_link_href_1 }}<br>
-        #                 Link #1 type: {{ sform.ref_1_link_type_1 }}<br>
-        #                 Link #1 digest: {{ sform.ref_1_link_digest_1 }}<br>
-        #         Summary: {{ sform.summary }}
+	namespace = StringField('Namespace', validators=[DataRequired()])
+	ep_text = TextAreaField('')
+	ep_source = StringField('')
+	intro = TextAreaField('')
+	ref_header = StringField('')
+	ref_intro = TextAreaField('')
+	summary = TextAreaField('')
+	numrefs = HiddenField('')

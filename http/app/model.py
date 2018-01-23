@@ -75,3 +75,12 @@ class DB(object):
 
     def get_a_user(self, email):
         return app.config['CORE'].find_one({"email": email})
+
+    def find_intro_by_author(self, author, namespace):
+        return app.config['INTROS'].find_one({"analyst": author, "namespace": namespace})
+
+    def insert_an_intro(self, data):
+        app.config['INTROS'].insert_one(data)
+        
+    def update_an_intro(self, author, namespace, data):
+        app.config['INTROS'].update_one({"analyst": author, "namespace": namespace}, {'$set': data})

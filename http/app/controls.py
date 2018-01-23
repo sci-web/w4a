@@ -65,6 +65,7 @@ def edit_intro(author):
     in_data = {}
     in_data["date"] = datetime.datetime.now().strftime('%d-%m-%Y %H:%M')
     in_data["points"] = []
+    in_data["refs"] = []
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
             f = request.form
@@ -77,53 +78,129 @@ def edit_intro(author):
             error = 0
             for key in f.keys():
                 for value in f.getlist(key):
-                    print key,":",value
+                    # print key,":",value
                     if key == "namespace": in_data["namespace"] = value
                     if key == "subject": in_data["subject"] = value
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "ref_intro" and value != ""): in_data["ref_intro"] = value
-                    if (key == "ref_title" and value != ""): in_data["ref_title"] = value
+                    if (key == "ref_header" and value != ""): in_data["ref_header"] = value
+                    if (key == "summary" and value != ""): in_data["summary"] = value
                     if key == "ep_text": ep_text = value
                     if key == "ep_source": ep_source = value
                     if (re.match("points", key) and value != ""):
                         p, k = key.split("_")
                         points[k] = value
-            #         if (re.match("refBlockTtl", key) and value != ""):
-            #             p, r = key.split("_")
-            #             in_refs[r].append({"ref_title": value})
-            #         if (re.match("refBlockDigest", key) and value != ""):
-            #             p, r = key.split("_")
-            #             in_refs[r].append({"ref_digest": value})
-            #         if (re.match("refBlockType", key) and value != ""):
-            #             p, r = key.split("_")
-            #             in_refs[r].append({"ref_type": value})
-            #         if (re.match("linkTitle", key) and value != ""):
-            #             p, l, r = key.split("_")
-            #             in_refs_pool[r][l].append({"title": value})
-            #         if (re.match("linkURL", key) and value != ""):
-            #             p, l, r = key.split("_")
-            #             in_refs_pool[r][l].append({"link": value})
-            #         if (re.match("linkType", key) and value != ""):
-            #             p, l, r = key.split("_")
-            #             in_refs_pool[r][l].append({"linktype": value})
-            #         if (re.match("linkDigest", key) and value != ""):
-            #             p, l, r = key.split("_")
-            #             in_refs_pool[r][l].append({"digest": value})
-            #         if (re.match("linkAuthor", key) and value != ""):
-            #             p, l, r = key.split("_")
-            #             in_refs_pool[r][l].append({"author": value})
-            # for r in in_refs.keys():
-            #     refs.append(in_refs[r])
-            #     ref_pool = []
-            #     for l in in_refs_pool[r].keys():
-            #         ref_pool.append(in_refs_pool[r][l])
-            #     refs.append({"ref_pool": ref_pool})
+                    if (re.match("refBlockTtl", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):
+                            try:
+                                in_refs[r].update({"ref_title": value})
+                            except:
+                                in_refs[r] = {"ref_title": value}
+
+                    if (re.match("refBlockDigest", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_refs[r].update({"ref_digest": value})
+                            except:
+                                in_refs[r] = {"ref_digest": value}
+
+                    if (re.match("refBlockType", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_refs[r].update({"ref_type": value})
+                            except:
+                                in_refs[r] = {"ref_type": value}
+
+                    if (re.match("linkTitle", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""):                        
+                            try:
+                                in_refs_pool[r][l].update({"title": value})
+                            except:
+                                try:
+                                    in_refs_pool[r].update({l : {"title": value}})
+                                except:
+                                    in_refs_pool[r] = ({l : {"title": value}})
+
+                    if (re.match("linkURL", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""):                        
+                            try:
+                                in_refs_pool[r][l].update({"link": value})
+                            except:
+                                try:
+                                    in_refs_pool[r].update({l: {"link": value}})
+                                except:
+                                    in_refs_pool[r] = ({l : {"link": value}})
+
+                    if (re.match("linkType", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""):
+                            try:
+                                in_refs_pool[r][l].update({"linktype": value})
+                            except:
+                                try:
+                                    in_refs_pool[r].update({l : {"linktype": value}})
+                                except:
+                                    in_refs_pool[r] = ({l : {"linktype": value}})
+
+                    if (re.match("linkDigest", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""): 
+                            try:
+                                in_refs_pool[r][l].update({"digest": value})
+                            except:
+                                try:
+                                    in_refs_pool[r].update({l: {"digest": value}})
+                                except:
+                                    in_refs_pool[r] = ({l : {"digest": value}})
+                    if (re.match("linkAuthor", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""): 
+                            try:
+                                in_refs_pool[r][l].update({"author": value})
+                            except:
+                                try:
+                                    in_refs_pool[r].update({l: {"author": value}})
+                                except:
+                                    in_refs_pool[r] = ({l : {"author": value}})
+
+            for r in in_refs.keys():
+                ref_pool = []
+                for l in in_refs_pool[r].keys():
+                    # print l, in_refs_pool[r][l]
+                    try:
+                        ref_pool.append(in_refs_pool[r][l])
+                    except:
+                        if len(in_refs_pool[r][l]) > 0:
+                            ref_pool = in_refs_pool[r][l]
+                try:
+                    in_refs[r].update({"ref_pool": ref_pool})
+                except:
+                    in_refs[r] = {"ref_pool": ref_pool}
+
             for n, p in sorted(points.iteritems()):
                 in_data["points"].append({"num": n, "item": p})
+
+            for n, rf in sorted(in_refs.iteritems()):
+                try:
+                    refs.append(in_refs[n])
+                except:
+                    if (len(in_refs[n])) > 0:
+                        refs = in_refs[n]
+            in_data["refs"] = refs
+
             if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
-            # in_data["refs"] = refs
-            print in_data
-            print sform.data
+            intro = DB().find_intro_by_author(author, in_data["namespace"])
+            if not intro:
+                in_data["analyst"] = author
+                DB().insert_an_intro(in_data)
+            else:
+                DB().update_an_intro(author, in_data["namespace"], in_data)
+
         else:
             error = 1
             flash("Something wrong with data update!", category='error')

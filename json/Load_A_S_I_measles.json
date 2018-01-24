@@ -713,7 +713,7 @@
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/1450674",
 "info_type": "article",
 "info_date": "1992",
-"info_authors": "K&ouml;lmel",
+"info_authors": "Kölmel",
 "infoID": "1450674",
 "info_place": "Melanoma Res",
 "I_S_codenames": ["melanoma"],
@@ -725,7 +725,7 @@
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/10596918",
 "info_type": "article",
 "info_date": "1999",
-"info_authors": "K&ouml;lmel",
+"info_authors": "Kölmel",
 "infoID": "10596918",
 "info_place": "Melanoma Res",
 "I_S_codenames": ["melanoma"],
@@ -970,7 +970,7 @@
 },
 {
 "num": 66,
-"title": "Infections and atopy: an exploratory study for a meta-analysis of the &quot;hygiene hypothesis&quot;.",
+"title": "Infections and atopy: an exploratory study for a meta-analysis of the \"hygiene hypothesis"\.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/15741918",
 "info_type": "article",
 "info_date": "2004",
@@ -979,6 +979,18 @@
 "info_place": "Rev Epidemiol Sante Publique",
 "I_S_codenames": ["allergy", "asthma", "dermatitis"],
 "digest": "Предварительный анализ 10 статей для последующего мета-анализа. Судя по косвенным маркерам, инфекционные заболевания понижали риск дерматита на 20%, риск аллергического ринита на 30%, а риск астмы на 40%."
+},
+{
+"num": 66.1,
+"title": "Nodding syndrome in Mundri county, South Sudan: environmental, nutritional and infectious factors.",
+"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3824482/",
+"info_type": "article",
+"info_date": "2013",
+"info_authors": "Spencer",
+"infoID": "PMC3824482",
+"info_place": "Afr Health Sci",
+"info_geo": "South Sudan",
+"digest": "Кивательный синдром - это новое смертельное заболевание, встречающиеся исключительно в некоторых странах Африки. Дети, которые переболели корью, заболевали им в 7 раз реже."
 },
 {
 "num": 67,

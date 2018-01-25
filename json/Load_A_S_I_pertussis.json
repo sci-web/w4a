@@ -260,7 +260,7 @@
         "digest": "Одним из компонентов бесклеточный вакцины является пертактин. Пертактин - это один из белков мембраны коклюшной бактерии. В странах, где используется бесклеточная вакцина, коклюшные бактерии с пертактином заменяются бактериями без пертактина. Вот исследования этого феномена в [Австралии==https://wwwnc.cdc.gov/eid/article/20/4/13-1478_article], [Финляндии==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485885/], [США==https://www.ncbi.nlm.nih.gov/pubmed/23388024] и [Японии==http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031985].<br>Безпертактиновый штамм более [инвазивный==https://www.ncbi.nlm.nih.gov/pubmed/19579693], чем обычный штамм."
     },
     {
-        "num": 27,
+        "num": 27.1,
         "title": "Bordetella holmesii: an under-recognised Bordetella species.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/24721229",
         "info_type": "article",
@@ -307,6 +307,18 @@
         "info_place": "Thorax",
         "I_S_codenames": ["asthma"],
         "digest": "У привитых цельноклеточной вакциной риск аллергии был на 76% выше. У принимавших антибиотики в первые два года жизни риск аллергии был в 2 раза выше.<br>Один курс антибиотиков повышал риск аллергии на 85; два курса антибиотиков повышали риск в 3 раза; а три курса антибиотиков повышали риск аллергии в 8 раз.<br>У тех, кто переболели корью, и не получили прививку, риск аллергии был на 45% ниже (здесь нет статистической значимости)."
+    },
+     {
+        "num": 29.2,
+        "title": "Pertussis vaccination and asthma: is there a link?",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/8057511",
+        "info_type": "article",
+        "info_date": "1994",
+        "info_authors": "Odent",
+        "infoID": "8057511",
+        "info_place": "JAMA",
+        "I_S_codenames": ["asthma"],
+        "digest": "Привитые цельнокклеточной вакциной болели астмой в 5.4 раза чаще непривитых."
     },
     {
         "num": 30,

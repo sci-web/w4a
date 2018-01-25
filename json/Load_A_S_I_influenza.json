@@ -55,7 +55,7 @@
     },
     {
         "num": 5,
-        "digest": "Как вычисляют эффективность вакцины? Кому как удобно.<br>В обсервационных исследованиях, которых большинство, проверяют всех госпитализированных с ОРЗ на предмет заражения вирусами гриппа. Но проверяют только заражение теми штаммами, которые есть в вакцине.<br>Эффективность вакцины вычисляется по формуле VE = 1-OR = 1 - Oi/Oni, где Oi это соотношение привитых к непривитым среди заболевших гриппом, а Оni это соотношение привитых к непривитым среди заболевших не гриппом, а другими ОРЗ.<br>То есть эффективность вакцины обычно измеряют лишь среди госпитализированных, или среди заболевших. В предыдущем исследовании, например, медианный возраст госпитализированных был 80 лет, и 94% из них болели также другой болезнью, которая предрасполагает к ОРЗ."
+        "digest": "Как вычисляют эффективность вакцины? Кому как удобно.<br>В обсервационных исследованиях, которых большинство, проверяют всех госпитализированных с ОРЗ на предмет заражения вирусами гриппа. Но проверяют только заражение теми штаммами, которые есть в вакцине.<br>Эффективность вакцины вычисляется по формуле VE = 1-OR = 1 - Oi/Oni, где Oi это соотношение привитых к непривитым среди заболевших гриппом, а Оni это соотношение привитых к непривитым среди заболевших не гриппом, а другими ОРЗ.<br>То есть эффективность вакцины обычно измеряют лишь среди госпитализированных, или среди заболевших. В предыдущем исследовании, например, медианный возраст госпитализированных был 80 лет, и 94% из них болели также другой болезнью, которая предрасполагает к ОРЗ.<br>Поскольку циркулирующие штаммы гриппа каждый год меняются, а вакцина от гриппа каждый год новая, то ее эффективность невозможно проверить до начала сезона гриппа, и она устанавливается лишь в конце сезона."
     },
     {
         "num": 6,
@@ -249,7 +249,7 @@
         "info_authors": "Demicheli",
         "infoID": "24623315",
         "info_place": "Cochrane Database Syst Rev",
-        "digest": "Систематический обзор Cochrane эффективности вакцин от гриппа для взрослых (90 исследований). Менее 10% исследований были качественные.<br>Вакцинация имеет очень скромный эффект. Необходимо привить 40 человек для предотвращения одного случая ОРВИ, и 71 человек для предотвращения одного случая гриппа. Вакцинация никак не влияла на госпитализацию от гриппа, или на пропуск рабочих дней. Необходимо привить 92 беременные женщины для предотвращения одного случая ОРВИ у беременных, и 27 женщин для предотвращения одного случая гриппа у новорожденных.<br>Не обнаружилось никаких свидетельств того, что вакцинация снижает риск серьезных осложнений."
+        "digest": "Систематический обзор Cochrane эффективности вакцин от гриппа для взрослых (90 исследований). Менее 10% исследований были качественные.<br>Вакцинация имеет очень скромный эффект. Необходимо привить 40 человек для предотвращения одного случая ОРВИ, и 71 человек для предотвращения одного случая гриппа. Вакцинация никак не влияла на госпитализацию от гриппа, или на пропуск рабочих дней. Необходимо привить 92 беременные женщины для предотвращения одного случая ОРВИ у беременных, и 27 женщин для предотвращения одного случая гриппа у новорожденных.<br>Не обнаружилось никаких свидетельств того, что вакцинация снижает риск серьезных осложнений.<br>Существуют более 200 вирусов, способные вызвать симптомы, похожие на грипп, и которые невозможно различить без лабораторной проверки. Вирусы гриппа А и В представлют собой примерно 10% всех этих вирусов."
     },
     {
         "num": 23,
@@ -790,7 +790,7 @@
         "infoID": "PMC3136969",
         "info_place": "Open Respir Med J",
         "I_S_codenames": ["zinc"],
-        "digest": "Цинк, возможно, тоже лечит простудные заболевания, но только в достаточно больших дозах.<br>Также противогриппозный эффект имеют [женшень==http://www.mdpi.com/2072-6643/6/2/517/htm], [зеленый чай==https://www.ncbi.nlm.nih.gov/pubmed/21832025] и [прополис==https://www.ncbi.nlm.nih.gov/pubmed/18610553]."
+        "digest": "Цинк, возможно, тоже лечит простудные заболевания, но только в достаточно больших дозах.<br>Также противогриппозный эффект имеют [женьшень==http://www.mdpi.com/2072-6643/6/2/517/htm], [зеленый чай==https://www.ncbi.nlm.nih.gov/pubmed/21832025] и [прополис==https://www.ncbi.nlm.nih.gov/pubmed/18610553]."
     },
     {
         "num": 74,
@@ -915,8 +915,8 @@
         "info_authors": "Wayse",
         "infoID": "15042122",
         "info_place": "Eur J Clin Nutr",
-        
-        "I_S_codenames": ["vitamin_D"],
+        "info_geo": "India",
+        "I_S_codenames": ["vitamin_D","breast_feeding"],
         "digest": "Дети с уровнем витамина D выше 22.5 nmol/L болели пневмонией на 91% реже. Исключительное ГВ на протяжении 4 месяцев снижало риск пневмонии на 58%."
     },
     {
@@ -928,7 +928,7 @@
         "info_authors": "Khaw",
         "infoID": "PMC4196486",
         "info_place": "Am J Clin Nutr",
-        
+        "info_geo": "UK",
         "I_S_codenames": ["vitamin_D"],
         "digest": "Проспективное исследование 14 тысяч человек в Великобритании, за которыми наблюдали 13 лет.<br>Чем выше был уровень витамина D, тем ниже была смертность. Среди тех, у кого уровень витамина D был выше 90 nmol/L, смертность была на 34% ниже, чем у людей с уровнем витамина 30 nmol/L и ниже. Риск смерти от сердечно-сосудистых заболеваний у них был на 38% ниже, от рака - на 15% ниже, от респираторных заболеваний - на 78% ниже."
     },
@@ -941,7 +941,7 @@
         "info_authors": "Laaksi",
         "infoID": "17823437",
         "info_place": "Am J Clin Nutr",
-        
+        "info_geo": "Finland",
         "I_S_codenames": ["vitamin_D"],
         "digest": "Солдаты с низким уровнем витамина D (ниже 40 nmol/L) болели респираторными заболеваниями на 63% чаще, чем солдаты с уровнем витамина выше 40 nmol/L.<br>У курящих солдат уровень витамина D был ниже, чем у некурящих. У солдат занимающихся спортом более 5 часов в неделю, уровень витамина D был выше."
     },
@@ -960,17 +960,19 @@
     },
     {
         "num": 87,
-        "title": "Reduced primary care respiratory infection visits following pregnancy and infancy vitamin D supplementation: a randomised controlled trial.",
+        "digest": "Eще несколько исследований о связи витамина D с гриппом и другими ОРЗ:",
+        "sources_pool": [
+        "title": "[1]",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/25283480",
         "info_type": "article",
         "info_date": "2015",
         "info_authors": "Grant",
         "infoID": "25283480",
         "info_place": "Acta Paediatr",
-        "I_S_codenames": ["vitamin_D"],
-        "digest": "Eще несколько исследований о связи витамина D с гриппом и другими ОРЗ:",
-        "sources_pool": [{
-        "title": "The seasonality of pandemic and non-pandemic influenzas: the roles of solar radiation and vitamin D.",
+        "I_S_codenames": ["vitamin_D"]
+         },
+         {
+        "title": "[2]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/21036090",
         "info_type": "article",
         "info_date": "2010",
@@ -979,7 +981,7 @@
         "infoID": "21036090"
         },
         {
-        "title": "Vitamin D status has a linear association with seasonal infections and lung function in British adults.",
+        "title": "[3]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/21736791",
         "info_type": "article",
         "info_date": "2011",
@@ -988,7 +990,7 @@
         "infoID": "21736791"
         },
         {
-        "title": "The prevalence of vitamin D deficiency among schoolchildren: a cohort study from Xinxiang, China.",
+        "title": "[4]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/25581743",
         "info_type": "article",
         "info_date": "2015",
@@ -997,7 +999,7 @@
         "infoID": "25581743"
         },
         {
-        "title": "Randomized trial of vitamin D supplementation for winter-related atopic dermatitis in children.",
+        "title": "[5]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/25282565",
         "info_type": "article",
         "info_date": "2014",
@@ -1006,7 +1008,7 @@
         "infoID": "25282565"
         },
         {
-        "title": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data.",
+        "title": "[6]",
         "link" : "http://www.bmj.com/content/356/bmj.i6583",
         "info_type": "article",
         "info_date": "2017",
@@ -1014,7 +1016,7 @@
         "info_place": "BMJ"
         },
         {
-        "title": "The role of UV radiation and vitamin D in the seasonality and outcomes of infectious disease.",
+        "title": "[7]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/28078341",
         "info_type": "article",
         "info_date": "2017",
@@ -1023,7 +1025,7 @@
         "infoID": "28078341"
         },
         {
-        "title": "Cord blood 25(OH)D levels and the subsequent risk of lower respiratory tract infections in early childhood: the Ulm birth cohort.",
+        "title": "[8]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/24859820",
         "info_type": "article",
         "info_date": "2014",
@@ -1032,7 +1034,7 @@
         "infoID": "24859820"
         },
         {
-        "title": "Vitamin D status and acute lower respiratory infection in early childhood in Sylhet, Bangladesh.",
+        "title": "[9]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/19900174",
         "info_type": "article",
         "info_date": "2010",
@@ -1041,7 +1043,7 @@
         "infoID": "19900174"
         },
         {
-        "title": "Serum vitamin D concentrations and associated severity of acute lower respiratory tract infections in Japanese hospitalized children.",
+        "title": "[10]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/21648117",
         "info_type": "article",
         "info_date": "2011",
@@ -1050,7 +1052,7 @@
         "infoID": "21648117"
         },
         {
-        "title": "Vitamin D deficiency in young children with severe acute lower respiratory infection.",
+        "title": "[11]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/19746437",
         "info_type": "article",
         "info_date": "2009",
@@ -1059,7 +1061,7 @@
         "infoID": "19746437"
         },
         {
-        "title": "Effect of daily cod liver oil and a multivitamin-mineral supplement with selenium on upper respiratory tract pediatric visits by young, inner-city, Latino children: randomized pediatric sites.",
+        "title": "[12]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/15562899",
         "info_type": "article",
         "info_date": "2004",
@@ -1068,7 +1070,7 @@
         "infoID": "15562899"
         },
         {
-        "title": "Low Retinol-Binding Protein and Vitamin D Levels Are Associated with Severe Outcomes in Children Hospitalized with Lower Respiratory Tract Infection and Respiratory Syncytial Virus or Human Metapneumovirus Detection.",
+        "title": "[13]",
         "link" : "https://www.ncbi.nlm.nih.gov/pubmed/28578159",
         "info_type": "article",
         "info_date": "2017",
@@ -1077,7 +1079,7 @@
         "infoID": "28578159"
         },
         {
-        "title": "Association Between Serum 25-Hydroxyvitamin D Level and Upper Respiratory Tract Infection in the Third National Health and Nutrition Examination Survey.",
+        "title": "[14]",
         "link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3447082/",
         "info_type": "article",
         "info_date": "2009",
@@ -1086,7 +1088,7 @@
         "infoID": "PMC3447082"
         },
         {
-        "title": "Low Serum 25-Hydroxyvitamin D Level and Risk of Upper Respiratory Tract Infection in Children and Adolescents.",
+        "title": "[15]",
         "link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3888147/",
         "info_type": "article",
         "info_date": "2013",
@@ -1095,7 +1097,7 @@
         "infoID": "PMC3888147"
         },
         {
-        "title": "Maternal vitamin D supplementation during pregnancy and lactation to prevent acute respiratory infections in infancy in Dhaka, Bangladesh (MDARI trial): protocol for a prospective cohort study nested within a randomized controlled trial.",
+        "title": "[16]",
         "link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5064894/",
         "info_type": "article",
         "info_date": "2016",
@@ -1104,7 +1106,7 @@
         "infoID": "PMC5064894"
         },
         {
-        "title": "Re: Epidemic influenza and vitamin D.",
+        "title": "[17]",
         "link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2870688/",
         "info_type": "article",
         "info_date": "2007",
@@ -1113,7 +1115,7 @@
         "infoID": "PMC2870688"
         },
         {
-        "title": "The possible roles of solar ultraviolet-B radiation and vitamin D in reducing case-fatality rates from the 1918-1919 influenza pandemic in the United States.",
+        "title": "[18]",
         "link" : "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835877/",
         "info_type": "article",
         "info_date": "2009",
@@ -1130,8 +1132,7 @@
         "info_authors": "Cannell",
         "infoID": "PMC2279112",
         "info_place": "Virol J",
-        
-        
+        "I_S_codenames": ["vitamin_D"],
         "digest": "Очень интересная обзорная статья про эпидемиологию гриппа и витaмин D, стоит прочитать полностью. Среди прочего, оказывается, что в многочисленных лабораторных экспериментах так и не смогли доказать, что больной гриппом человек может заразить здорового."
     },
     {
@@ -1169,13 +1170,13 @@
         "info_authors": "Edlich",
         "infoID": "20102323",
         "info_place": "J Environ Pathol Toxicol Oncol",
-        
+        "info_geo": "US",
         "I_S_codenames": ["vitamin_D"],
         "digest": "Некоторые медицинские работники, возможно, не захотят прививаться от свиного гриппа, поскольку вакцина содержит ртутный консервант тиомерсал, который может быть вреден для здоровья. Им следует проверить уровень витамина D, и восполнить дефицит в случае необходимости.<br>Оптимальный уровень витамина D составляет 50-75 ng/mL, а оптимальная доза для взрослых составляет 4000-5000 МЕ в день."
     },
     {
         "num": 92,
-        "digest": "P.S.: Под витамином D здесь имеется в виду D3. Подходите осторожно к выбору препарата, не все они они одинаково безопасны. А лучше всего вообще не использовать добавок, а просто больше бывать на солнце.<br>P.S. 2: Лично я склоняюсь к тому, что профилактический прием витамина D - это, возможно, неплохая идея для взрослых и пожилых, но я пока не уверен, что это хорошая идея для детей, и тем более для младенцев.<br>P.S.3: Статьи Weston A Price о витамине D: [[1]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/from-seafood-to-sunshine-a-new-understanding-of-vitamin-d-safety/], [[2]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/update-on-vitamins-a-and-d/]. Там пишут, что слишком высокий уровень витамина D повышает риск сердечных болезней и остеопороза."
+        "digest": "P.S.: <b>Из этих статай следует лишь, что существует корреляция между уровнем витамина D в плазме, и заболеваемостью. Из них никак не следует, что прием витамина D оправдан, полезен или безопасен. Из них лишь следует, что бывать на солнце полезно.</b><br>- Под витамином D здесь имеется в виду D3. Подходите осторожно к выбору препарата, не все они они одинаково безопасны. А лучше всего вообще не использовать добавок, а просто больше бывать на солнце.<br>- Лично я склоняюсь к тому, что профилактический прием витамина D - это, возможно, неплохая идея для взрослых и пожилых, но я пока не уверен, что это хорошая идея для детей, и тем более для младенцев.<br>- Статьи Weston A Price о витамине D: [[1]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/from-seafood-to-sunshine-a-new-understanding-of-vitamin-d-safety/], [[2]==https://www.westonaprice.org/health-topics/abcs-of-nutrition/update-on-vitamins-a-and-d/]. Там пишут, что слишком высокий уровень витамина D повышает риск сердечных болезней и остеопороза."
     },
     {
         "num": 93,
@@ -1186,9 +1187,8 @@
         "info_authors": "Mina",
         "infoID": "PMC3944816",
         "info_place": "MBio",
-        
-        
-        "digest": "Вакцинация живой вакциной от гриппа значительно повышает колонизацию пневмококка и золотистого стрептококка верхних дыхательных путей у мышей."
+        "I_S_codenames": ["pneumococcus", "streptococcus_aureus"],
+        "digest": "Живая вакцина от гриппа значительно повышает колонизацию пневмококка и золотистого стрептококка верхних дыхательных путей у мышей."
     },
     {
         "num": 94,
@@ -1199,9 +1199,8 @@
         "info_authors": "Mina",
         "infoID": "PMC4654764",
         "info_place": "J Infect Dis",
-        
-        
-        "digest": "Вакцинация живой вакциной от гриппа также повышает колонизацию пневмококка в среднем ухе у мышей, что может повысить вероятность отита."
+        "I_S_codenames": ["pneumococcus"],
+        "digest": "Живая вакцина от гриппа также повышает колонизацию пневмококка в среднем ухе у мышей, что может повысить вероятность отита."
     },
     {
         "num": 95,
@@ -1212,8 +1211,8 @@
         "info_authors": "Mutsch",
         "infoID": "14985487",
         "info_place": "N Engl J Med",
-        
-        
+        "info_geo": "Switzerland",
+        "I_S_codenames": ["bells_palsy"],
         "digest": "Инактивированная назальная вакцина, которая использовалась в Швейцарии, повышала риск паралича лицевого нерва в 84 раза."
        }
    ]

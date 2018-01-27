@@ -6,8 +6,6 @@
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
 <form action="/editspace/intro:{{ current_user.author }}" method="POST" name="sform">
-{{ sform.hidden_tag() }}
-{{ sform.from_url }}
 <h1>Edit topic {{ subject }} </h1>
 <br>
     <div style="height:25px; width:1010px;">
@@ -78,7 +76,7 @@
             <a href="/edit/?add_ref_1_link_1"><button type="submit" class="btn btn-default">Submit</button>
         </div>
     </div>
-</sform>
+</form>
 </div>
 {% raw %}
 <script id="pnt_tmpl" type="x-tmpl-mustache">
@@ -102,8 +100,6 @@
             <a onClick = "javascript:RemoveDiv('#lnk_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <hr size=1 style="width:94%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 40px" align=left>
-        <input type=hidden name={{ rnum }} value={{ num }}>
-        <div style="margin:0 0 0 50px;" id="blk_{{ gnum }}">
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Link #{{ num }} title: </div>
                 <div style="float:right; width:820px;" class="form-group">

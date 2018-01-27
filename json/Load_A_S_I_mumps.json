@@ -370,7 +370,7 @@
         "digest": "Орхит вполне может возникнуть как следствие прививки от свинки:",
         "sources_pool": [{
                 "num": 1,
-                "title": "Case of mumps orchitis after vaccination.",
+                "title": "[1]",
                 "link": "https://www.ncbi.nlm.nih.gov/pubmed/24164648",
                 "info_type": "article",
                 "info_date": "2014",
@@ -380,7 +380,7 @@
             },
             {
                 "num": 2,
-                "title": "Unilateral Epididymo-Orchitis: A Rare Complication of MMR Vaccine.",
+                "title": "[2]",
                 "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2647202",
                 "info_type": "article",
                 "info_date": "2008",
@@ -390,7 +390,7 @@
             },
             {
                 "num": 3,
-                "title": "Orchitis following Mumps Vaccination in an Adult.",
+                "title": "[3]",
                 "link": "https://www.ncbi.nlm.nih.gov/pubmed/7645149",
                 "info_type": "article",
                 "info_date": "1994",
@@ -400,7 +400,7 @@
             },
             {
                 "num": 4,
-                "title": "А case of orchitis following vaccination with freeze-dried live attenuated mumps vaccine.",
+                "title": "[4]",
                 "link": "https://www.jstage.jst.go.jp/article/jpnjurol1989/93/4/93_4_577/_article",
                 "info_type": "article",
                 "info_date": "2002",
@@ -553,7 +553,7 @@
         "info_date": "2016",
         "info_authors": "Wei",
         "infoID": "",
-        "info_place": "Nature",
+        "info_place": "Sci Rep",
         "I_S_codenames": ["MMR", "fetal_bovine_serum"],
         "digest": "Эмбриональная бычья сыворотка содержит внеклеточную РНК, которую невозможно от сыворотки отделить. Эта РНК взаимодействует с РНК человеческих клеток, в которых выращивают вирусы для вакцин."
     },

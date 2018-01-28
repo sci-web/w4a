@@ -264,9 +264,21 @@
     {
         "num": 30,
         "digest": "Одним из компонентов бесклеточный вакцины является пертактин. Пертактин - это один из белков мембраны коклюшной бактерии. В странах, где используется бесклеточная вакцина, коклюшные бактерии с пертактином заменяются бактериями без пертактина. Вот исследования этого феномена в [Австралии==https://wwwnc.cdc.gov/eid/article/20/4/13-1478_article], [Финляндии==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485885/], [США==https://www.ncbi.nlm.nih.gov/pubmed/23388024] и [Японии==http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031985].<br>Безпертактиновый штамм более [инвазивный==https://www.ncbi.nlm.nih.gov/pubmed/19579693], чем обычный штамм. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/25301209]."
+     },
+     {
+        "num": 31,
+        "title": "Adaptation of Bordetella pertussis to vaccination: a cause for its reemergence?",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2631860/",
+        "info_type": "article",
+        "info_date": "2001",
+        "info_authors": "Mooi",
+        "infoID": "PMC2631860",
+        "info_place": "Emerg Infect Dis",
+        "info_geo": "Netherlands",
+        "digest": "Авторы провели генетический анализ штаммов коклюшной бактерии в Нидерландах, и заключили, что бактерия мутировала и адаптировалась к вакцине. Стали преобладать штаммы, в которых пертактин и коклюшный токсин отличаются от вакцинного штамма. Эти штаммы не существовали до начала вакцинации. То же самое наблюдалось в Финляндии, США и Италии."
     },
     {
-        "num": 31,
+        "num": 32,
         "title": "Bordetella holmesii: an under-recognised Bordetella species.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/24721229",
         "info_type": "article",
@@ -277,7 +289,7 @@
         "digest": "Другой штамм бактерии, который заменяет обычную B. pertussis, это B. holmesii, который вызывает те же симптомы, и от которого прививка [неэффективна==https://wwwnc.cdc.gov/eid/article/18/11/11-1544_article]."
     },
     {
-        "num": 32,
+        "num": 33,
         "header": "Безопасность",
         "title": "Delay in diphtheria, pertussis, tetanus vaccination is associated with a reduced risk of childhood asthma.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/18207561",
@@ -291,7 +303,7 @@
         "digest": "Анализ 11,000 детей, которые получили цельноклеточную вакцину в Канаде. Те, кто получили первую дозу вакцины на два месяца позже обычного срока, болели астмой в два раза реже. У тех, кто получил все три дозы вакцины позже - риск развития астмы был в 2.5 раза ниже.<br>Это происходит из-за того, что иммунная реакция смещается в сторону Th2. Точная причина астмы еще неизвестна, но согласно одной из господствующих теорий, астма вызывается повышенной гигиеной. Когда ребенок растет в слишком стерильной среде, и не соприкасается с бактериями, его иммунная система смещается в сторону Th2. Это приводит к выработке антител [IgE==https://en.wikipedia.org/wiki/Immunoglobulin_E]. Эти IgE и ответственны за астму, аллергии, дерматит и прочие радости, которые намного чаще встречаются у привитых детей, поскольку прививки тоже сдвигают иммунитет в сторону Th2. Этот сдвиг происходит напрямую (благодаря вакцинным антигенам), а также не напрямую (благодаря защите от бактерий)."
     },
     {
-        "num": 33,
+        "num": 34,
         "title": "Effects of diphtheria-tetanus-pertussis or tetanus vaccination on allergies and allergy-related respiratory symptoms among children and adolescents in the United States.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/10714532/",
         "info_type": "article",
@@ -303,7 +315,7 @@
         "digest": "Привитые болели астмой в два раза чаще непривитых. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/18086216]."
     },
     {
-        "num": 34,
+        "num": 35,
         "title": "Early childhood infection and atopic disorder.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1745117/",
         "info_type": "article",
@@ -315,7 +327,7 @@
         "digest": "У привитых цельноклеточной вакциной риск аллергии был на 76% выше. У принимавших антибиотики в первые два года жизни риск аллергии был в 2 раза выше.<br>Один курс антибиотиков повышал риск аллергии на 85; два курса антибиотиков повышали риск в 3 раза; а три курса антибиотиков повышали риск аллергии в 8 раз.<br>У тех, кто переболели корью, и не получили прививку, риск аллергии был на 45% ниже (здесь нет статистической значимости)."
     },
      {
-        "num": 35,
+        "num": 36,
         "title": "Pertussis vaccination and asthma: is there a link?",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/8057511",
         "info_type": "article",
@@ -327,7 +339,7 @@
         "digest": "Привитые цельноклеточной вакциной болели астмой в 5.4 раза чаще непривитых."
     },
     {
-        "num": 36,
+        "num": 37,
         "title": "Possible temporal association between diphtheria-tetanus toxoid-pertussis vaccination and sudden infant death syndrome.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/6835859",
         "info_type": "article",
@@ -339,7 +351,7 @@
         "digest": "Вакцина DTP ассоциирована с синдромом внезапной детской смерти (СВДС) в Лос-Анжелесе. Визиты к врачу также были ассоциированы с СВДС."
     },
     {
-        "num": 37,
+        "num": 38,
         "title": "Severity of whooping cough in England before and after the decline in pertussis immunisation.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1628449/",
         "info_type": "article",
@@ -352,7 +364,7 @@
         "digest": "После того, как в Англии резко упал охват вакцинации из-за страха перед DTP вакциной, количество случаев коклюша и смертность от него упали в 4 раза."
     },
     {
-        "num": 38,
+        "num": 39,
         "title": "Timing of routine infant vaccinations and risk of food allergy and eczema at one year of age.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/26707796",
         "info_type": "article",
@@ -364,12 +376,12 @@
         "digest": "У девочек, которые получили первую дозу DTaP хотя бы на месяц позже срока, аллергия разививалась в 4 раза реже, чем у привитых в срок.<br>Экзема развивалась в 2 раза реже и у мальчиков и у девочек, привитых хотя бы на месяц позже."
     },
     {
-        "num": 39,
+        "num": 40,
         "digest": "Бесклеточная вакцина, конечно, намного менее опасна, чем цельноклеточная, но, тем не менее, [согласно==http://medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&VAX[]=DTAP&VAX[]=DTAPH&VAX[]=DTAPHEPBIP&VAX[]=DTAPIPV&VAX[]=DTAPIPVHIB&VAX[]=TDAP&VAX[]=TDAPIPV&SERIOUS=ON&VAX_YEAR_LOW=2002&VAX_YEAR_HIGH=2017 ] VAERS, с 2002 года в США 1077 человек умерли после этой прививки, 1009 стали инвалидами, 8700 были госпитализированы. От коклюша за эти годы умерли менее 200 человек (среди них есть и привитые). То есть риск умереть от прививки как минимум в 5 раз выше, чем риск умереть от коклюша. Поскольку цифры VAERS следует умножать как минимум на 10, риск смерти от прививки раз в 50 выше, чем от болезни."
     },
     {
-        "num": 40,
-"header": "Лечение",
+        "num": 41,
+        "header": "Лечение",
         "title": "Antibiotics for whooping cough (pertussis).",
         "link": "https://www.ncbi.nlm.nih.gov/pubmedhealth/PMH0012763/",
         "info_type": "article",
@@ -380,16 +392,16 @@
         "digest": "Систематический обзор влияния антибиотиков на коклюш, проведенный Cochrane.<br>Антибиотики уничтожают коклюшную бактерию, то есть делают человека незаразным, но они никак не влияют на течение болезни. Превентивная профилактика контактов младенцев антибиотиками неэффективна.<br>Согласно некоторым исследованиям, использование антибиотиков [приводит==https://www.ncbi.nlm.nih.gov/pubmed/14595048] лишь к более длительной болезни."
     },
     {
-        "num": 41,
+        "num": 42,
         "digest": "В 1936 году в медицинской литературе начали появляться статьи об эффективном лечении коклюша витамином С. Первым был [Otani==https://www.seanet.com/~alexs/ascorbate/193x/otani-t-klin_wchnschr-1936-v15-n51-p1884-eng.htm] в Японии, который использовал витамин внутривенно, а в 1937 году независимо от него Omerod [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC536087/], [[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC536087/] в Канаде, чья группа использовала витамин орально. В 1938 витамин С успешно использовал [Vermillion==https://www.seanet.com/~alexs/ascorbate/193x/vermillion-el-etal-kansas_city_med_j-1938-v39-n11-p469.htm]. Болезнь проходила за считанные дни. Также сообщается, что младенцы на грудном вскармливании практически не болеют коклюшем, т.к. получают от матери достаточное количество витамина.<br>В 1938-ом также [появилось==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2210412/] контролируемое исследование, которое не обнаружило, что витамин С эффективнее контрольной субстанции. Правда, в качестве контрольной субстанции они почему-то использовали рыбий жир, белладонну и бромид. Несмотря на то, что в статье 1871 года в Lancet [сообщается==http://www.thelancet.com/journals/lancet/article/PIIS0140-6736(02)78664-9/fulltext] об успешном лечении коклюша рыбьим жиром. Уже тогда ученые знали толк в выборе плацебо.<br>В 1950 годы были опубликованы еще несколько статей о лечении коклюша витамином С. Ну а потом появилась вакцина, и о витамине С полностью забыли. Последние 70 лет никто его не исследует, что, однако, не мешает некоторым врачам и родителям успешно [использовать==http://drsuzanne.net/2015/04/the-vitamin-c-treatment-of-whooping-cough-suzanne-humphries-md/] его в лечении и профилактике коклюша."
     },
      {
-        "num": 42,       
+        "num": 43,       
         "digest": "Сравнение графиков смертности от коклюша и от цинги:",
         "info_img": "http://www.dissolvingillusions.com/wp-content/uploads/2013/03/G15.2-UK-Scurvy-Pertussis-1901-1967-1024x640.png",
     },
     {
-        "num": 43,
+        "num": 44,
         "title": "Childhood infectious diseases and risk of leukaemia in an adult population.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/23575988",
         "info_type": "article",
@@ -400,7 +412,7 @@
         "digest": "У детей, переболевших коклюшем в детстве, риск развития некоторых видов лейкемии был в 1.5-2 раза ниже."
     },
     {
-        "num": 44,
+        "num": 45,
         "digest": " Самый частый аргумент эффективности прививки от коклюша, это что в 1950-е годы, когда от коклюша начали прививать, от него умирали 1000 человек в год, а сейчас умирают единицы. Однако если взглянуть на графики смертности от коклюша с начала 20-го века, становится ясно, что вакцина не имеет никакого отношения к снижению смертности от коклюша, так как более чем 90% снижения смертности произошло до начала вакцинации, и даже до начала использования антибиотиков. Вот графики для США и Англии",
         "img_pool": [{
         "info_img": "http://www.vaccinationinformationnetwork.com/wp-content/uploads/2013/08/uk-pertussis-1838-1978.jpg"
@@ -410,12 +422,12 @@
         }]
     },
     {
-        "num": 45,
+        "num": 46,
         "info_img": "https://www.cdc.gov/mmwr/preview/mmwrhtml/figures/r704a1f2.gif",
         "digest": "Похожая картина вырисовывается, если взглянуть на количество случаев коклюша."
     },
     {
-        "num": 46,
+        "num": 47,
 "header": "Терапевтическая роль коклюшного токсина",
         "title": "Pertussis toxin-sensitive G-proteins and regulation of blood pressure in the spontaneously hypertensive rat.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/10386237",
@@ -427,7 +439,7 @@
         "digest": "Коклюшный токсин понижает давление у гипертонических крыс."
 },
 {
-"num": 47,
+"num": 48,
         "title": "The B-Oligomer of Pertussis Toxin Inhibits Human Immunodeficiency Virus Type 1 Replication at Multiple Stages.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC116391",
         "info_type": "article",
@@ -438,7 +450,7 @@
         "digest": "Коклюшный токсин предотвращает размножение ВИЧ."
 },
 {
-"num": 48,
+"num": 49,
 "digest": "Kоклюшный токсин подавляет аутоиммунные реакции:",
 "sources_pool": [{
     "title": "[1]",
@@ -469,7 +481,7 @@
     }]
     },
     {
-        "num": 49,
+        "num": 50,
         "I_S_codenames": ["DTP vaccine"],
         "digest": "Фильмы и лекции:<br>[DPT Vaccine Roulette==https://www.youtube.com/watch?v=qpUsg4bDH5w] Фильм 1982 года, про вакцину DTP, был показан на NBC. Этот фильм сыграл главную роль в том, что США перешли на бесклеточную вакцину, и в том, что законодательство связанное с прививками было полностью изменено. Сегодня невозможно представить, чтобы такое показали по ТВ.<br>[Dr. Suzanne Humphries==https://www.youtube.com/watch?v=XBhQPpKZIqI]<br>[Dr. Sherri Tenpenny==https://www.youtube.com/watch?v=w1RVMozzDcE]"
     },

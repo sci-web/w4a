@@ -229,6 +229,17 @@
         "digest": "В этом исследовании решили проверить, как вакцинация от гриппа влияет на коллективный иммунитет.<br>Учеников привили в школе ослабленной вакциной. Семьи привитых учеников меньше болели ОРЗ, чем семьи непривитых, но, парадоксальным образом, в семьях привитых было значительно больше случаев госпитализации.<br>Не было разницы в количестве пропущенных дней в школе между привитыми и непривитыми."
     },
     {
+        "num": 20.1,
+        "title": "Infectious virus in exhaled breath of symptomatic seasonal influenza cases from a college community.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/",
+        "info_type": "article",
+        "info_date": "2018",
+        "info_authors": "Yan",
+        "infoID": "29348203",
+        "info_place": "Proc Natl Acad Sci U S A",
+        "digest": "Привитые от гриппа (2 сезона подряд) выдыхают в 6.3 раза больше вирусных частиц, чем непривитые."
+    },
+    {
         "num": 21,
 "header": "Систематические обзоры",
         "title": "Vaccines for preventing influenza in healthy children.",

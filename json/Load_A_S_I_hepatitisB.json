@@ -55,10 +55,7 @@
     },
     {
         "num": 10,
-        "digest": "Клинические испытания безопасности Recombivax {проводились==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm110114.pdf] на 147 младенцах и детях, а также на 1252 взрослых, и длились 5 дней после каждой дозы. Контрольной группы не было.<br>Клинические испытания безопасности Engeriх-B [длились==https://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM224503.pdf] 4 дня после каждой дозы. Контрольной группы не было."
-    },
-    {
-        "num": 10.1,
+        "header": "Эффективность",
         "title": "Evaluation of the Protection Provided by Hepatitis B Vaccination in India.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/29318526",
         "info_type": "article",
@@ -70,192 +67,17 @@
     },
     {
         "num": 11,
-        "title": "Recombinant hepatitis B vaccine and the risk of multiple sclerosis: a prospective study.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15365133",
+        "title": "Long-term immunogenicity and efficacy of hepatitis B vaccine in homosexual men.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/2941687",
         "info_type": "article",
-        "info_date": "2004",
-        "info_authors": "Hernán",
-        "infoID": "15365133",
-        "info_place": "Neurology",
-        "digest": "Привитые от гепатита В, через три года после прививки болели рассеянным склерозом в 3.1 раза чаще непривитых.<br>Там же анализируются несколько других исследований, которые не нашли повышенный риск рассеянного склероза у привитых. [Вот==https://www.ncbi.nlm.nih.gov/pubmed/10470051], например, исследование, которое не нашло повышенного риска. Это потому, что они использовали дату диагноза, а не дату появления первых симптомов. Диагноз рассеянного склероза ставится обычно через несколько лет после начала симптомов."
+        "info_date": "1986",
+        "info_authors": "Hadler",
+        "infoID": "2941687",
+        "info_place": "N Engl J Med",
+        "digest": "773-х гомосексуалистов привили от гепатита и наблюдали за ними в течение 5 лет.<br>У 82% уровень антител после прививки был достаточным. У 15% из них антитела исчезли, а у 27% опустились ниже защитного уровня.<br>55 заразились гепатитом, 5 стали хроническими больными. У заразившихся было в среднем по 29 непостоянных половых партнеров, а не заразившихся 11.5."
     },
     {
         "num": 12,
-        "title": "Hepatitis B vaccine and the risk of CNS inflammatory demyelination in childhood.",
-        "link": "http://www.neurology.org/content/72/10/873",
-        "info_type": "article",
-        "info_date": "2009",
-        "info_authors": "Mikaeloff",
-        "infoID": "18843097",
-        "info_place": "Neurology",
-        "digest": "Вакцина Engerix-B повышала риск рассеянного склероза в 2.77 раз по сравнению с другими вакцинами от гепатита В."
-    },
-    {
-        "num": 13,
-        "title": "Evolution of multiple sclerosis in France since the beginning of hepatitis B vaccination.",
-        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4266455/",
-        "info_type": "article",
-        "info_date": "2014",
-        "info_authors": "Le Houézec",
-        "infoID": "PMC4266455",
-        "info_place": "Immunol Res",
-        "digest": "После того, как во Франции начали прививать от гепатита В, количество случаев рассеянного склероза выросло на 65%. Есть высокая корреляция (0.93/0.73) между количеством сделанных доз вакцины и количеством случаев рассеянного склероза через 1-2 года."
-    },
-    {
-        "num": 14,
-        "title": "A case-control study of serious autoimmune adverse events following hepatitis B immunization.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16206512",
-        "info_type": "article",
-        "info_date": "2005",
-        "info_authors": "Geier",
-        "infoID": "16206512",
-        "info_place": "Autoimmunity",
-        "digest": "Анализ VAERS. Привитые от гепатита B взрослые заболевали рассеянным склерозом в 5.2 раза чаще, чем привитые от столбняка. Риск васкулита был выше в 2.6 раза, облысения в 7.2 раза, волчанки в 9 раз, артрита в 2 раза, ревматоидного артрита в 18 раз, тромбоцитопении в 2 раза, воспаления глазного нерва в 14 раз выше."
-    },
-    {
-        "num": 15,
-        "title": "Adverse events associated with hepatitis B vaccine in U.S. children less than six years of age, 1993 and 1994.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11164115",
-        "info_type": "article",
-        "info_date": "2001",
-        "info_authors": "Fisher",
-        "infoID": "11164115",
-        "info_place": "Ann Epidemiol",
-        "digest": "Прививка от гепатита В повышала риск артрита в 5.9 раз, острого отита в 1.6 раз, фарингита в 1.4 раза."
-    },
-    {
-        "num": 16,
-        "title": "Hepatitis B vaccine and liver problems in U.S. children less than 6 years old, 1993 and 1994.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/10230847",
-        "info_type": "article",
-        "info_date": "1999",
-        "info_authors": "Fisher",
-        "infoID": "10230847",
-        "info_place": "Epidemiology",
-        "digest": "Прививка от гепатита В повышала риск болезней печени в 1.5-2.3 раза."
-    },
-    {
-        "num": 17,
-        "title": "Hepatitis B vaccination of male neonates and autism diagnosis, NHIS 1997-2002.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21058170",
-        "info_type": "article",
-        "info_date": "2010",
-        "info_authors": "Gallagher",
-        "infoID": "21058170",
-        "info_place": "J Toxicol Environ Health A.",
-        "digest": "Привитые от гепатита В новорожденные мальчики имели в 3 раза больший риск развития аутизма, по сравнению с непривитыми, или привитыми хотя бы через месяц после рождения."
-    },
-    {
-        "num": 18,
-        "title": "Autoimmune hazards of hepatitis B vaccine.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15722255",
-        "info_type": "article",
-        "info_date": "2005",
-        "info_authors": "Girard",
-        "infoID": "15722255",
-        "info_place": "Autoimmun Rev",
-        "digest": "Обзорная статья про аутоиммунные последствия вакцинации от гепатита В, и о том, как эта прививка сочетается с доказательной медициной (никак)."
-    },
-    {
-        "num": 19,
-        "title": "Delayed acquisition of neonatal reflexes in newborn primates receiving a thimerosal-containing hepatitis B vaccine: influence of gestational age and birth weight.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20711932",
-        "info_type": "article",
-        "info_date": "2010",
-        "info_authors": "Hewitson",
-        "infoID": "20711932",
-        "info_place": "J Toxicol Environ Health A",
-        "digest": "Новорожденным макакам сделали прививку от гепатита В с тиомерсалем, и сравнили с непривитыми.<br>Привитые макаки приобрели рефлексы выживания, а также двигательные и сенсорно-двигательные рефлексы значительно позже, чем непривитые. Низкий вес и преждевременные роды усугубляли эффект.<br>Тиомерсал (этилртуть) не добавляется в вакцины с 2003 года в США и в Западной Европе, но до сих пор используется в других странах. В Канаде, [например==http://www.phac-aspc.gc.ca/publicat/ccdr-rmtc/07vol33/acs-06/index-eng.php]. Не говоря уже о России, Восточной Европе и странах третьего мира."
-    },
-    {
-        "num": 20,
-        "title": "Hepatitis B triple series vaccine and developmental disability in US children aged 1-9 years.",
-        "link": "http://www.tandfonline.com/doi/abs/10.1080/02772240701806501",
-        "info_type": "article",
-        "info_date": "2008",
-        "info_authors": "Gallagher",
-        "infoID": "10.1080/02772240701806501",
-        "info_place": "Toxicol Environ Chem",
-        "digest": "У привитых от гепатита В риск задержки развития был в 9 раз выше, чем у непривитых."
-    },
-    {
-        "num": 21,
-        "title": "Clustering of Cases of IDDM 2 to 4 Years after Hepatitis B Immunization is Consistent with Clustering after Infections and Progression to IDDM in Autoantibody Positive Individuals.",
-        "link": "https://benthamopen.com/contents/pdf/TOPEDJ/TOPEDJ-2-1.pdf",
-        "info_type": "article",
-        "info_date": "2008",
-        "info_authors": "Classen",
-        "info_place": "Open Pediatr Med J",
-        "digest": "После начала кампании вакцинации, количество детей больных диабетом первого типа увеличилось во Франции на 61%, а в Новой Зеландии на 48%.<br>В Италии, привитые от гепатита В болели юношеским диабетом на 40% чаще непривитых.<br>Увеличение количества случаев юношеского диабета происходит через 2-4 года после начала вакцинации, что намекает на причинно-следственную связь."
-    },
-    {
-        "num": 22,
-        "title": "Chronic fatigue syndrome and fibromyalgia following immunization with the hepatitis B vaccine: another angle of the 'autoimmune (auto-inflammatory) syndrome induced by adjuvants' (ASIA).",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/25427994",
-        "info_type": "article",
-        "info_date": "2014",
-        "info_authors": "Agmon-Levin",
-        "infoID": "25427994",
-        "info_place": "Immunol Res",
-        "digest": "Прививка от гепатита В ассоцированна с синдромом хронической усталости и с фибромиалгией."
-    },
-    {
-        "num": 23,
-        "title": "Autoimmunity following hepatitis B vaccine as part of the spectrum of 'Autoimmune (Auto-inflammatory) Syndrome induced by Adjuvants' (ASIA): analysis of 93 cases.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22235045",
-        "info_type": "article",
-        "info_date": "2012",
-        "info_authors": "Zafrir",
-        "infoID": "22235045",
-        "info_place": "Lupus",
-        "digest": "ASIA, или синдром Шонфельда, это общее название аутоиммунных болезней вызванных адьювантами, и включает в себя аутоиммунные последствия алюминиевых адьювантов, Gulf war syndrome, макрофагальный миозит (MMF) и силиконоз (аутоиммунные последствия силиконовых имплантов). Он приводит к неврологическим и психиатрическим симптомам, когнитивным нарушениям, мышечным болям, артриту, хронической усталости, бессоннице, проблемам со зрением и с ЖКТ и т.д..<br>Здесь анализируются 93 случая ассоциированных с прививкой от гепатита В."
-    },
-    {
-        "num": 24,
-        "title": "Vaccine-induced autoimmunity.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/9115571",
-        "info_type": "article",
-        "info_date": "1996",
-        "info_authors": "Cohen",
-        "infoID": "9115571",
-        "info_place": "J Autoimmun",
-        "digest": "С прививкой от гепатита В ассоциированы такие аутоиммунные заболевания как синдром Рейтера, артрит, волчанка, воспаление сосудистой оболочки глаза, миастения, узловатая эритема, тромбоцитопеническая пурпура, синдром Эванса и демиелинизирующие заболевания ЦНС."
-    },
-    {
-        "num": 25,
-        "title": "In vivo study of hepatitis B vaccine effects on inflammation and metabolism gene expression.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21691704",
-        "info_type": "article",
-        "info_date": "2012",
-        "info_authors": "Hamza",
-        "infoID": "21691704",
-        "info_place": "Mol Biol Rep",
-        "digest": "Эпигенетическое влияние вакцины. Мышам сделали одну или две прививку от гепатита В (в соответствующей дозе). Через один день у них были существенные изменения в экспрессии 144 генов в печени. Авторы детально проанализировали 7 из них. Все изменения были негативны, и привели к легкой травме печени. Главным образом из-за алюминия."
-    },
-    {
-        "num": 26,
-        "title": "Hepatitis B vaccine induces apoptotic death in Hepa1-6 cells.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22249285",
-        "info_type": "article",
-        "info_date": "2012",
-        "info_authors": "Hamza",
-        "infoID": "22249285",
-        "info_place": "Apoptosis",
-        "digest": "Вакцина от гепатита В разрушает митохондрии, и убивает клетки печени у мышей."
-    },
-    {
-        "num": 27,
-        "title": "Trained immunity in newborn infants of HBV-infected mothers.",
-        "link": "https://www.nature.com/articles/ncomms7588",
-        "info_type": "article",
-        "info_date": "2015",
-        "info_authors": "Hong",
-        "infoID": "10.1038/ncomms7588",
-        "info_place": "Nature Comm",
-        "digest": "Вирус гепатита В, переданный от матери ребенку возможно, вопреки распространенному мнению, приводит к лучшему развитию иммунной системы."
-    },
-    {
-        "num": 28,
         "title": "Vertical HBV transmission in Jerusalem in the vaccine era.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/23330257",
         "info_type": "article",
@@ -266,7 +88,7 @@
         "digest": "Прививка от гепатита В вообще не работает у детей, которые родились у зараженных матерей.<br>В [этом==http://onlinelibrary.wiley.com/doi/10.1002/jmv.2187/abstract] исследовании сообщается, что менее 4% детей, родившихся у зараженных матерей заразились гепатитом В."
     },
     {
-        "num": 29,
+        "num": 13,
         "title": "Chronic hepatitis B infection in adolescents who received primary infantile vaccination.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/22858989",
         "info_type": "article",
@@ -275,21 +97,239 @@
         "infoID": "22858989",
         "info_place": "Hepatology",
         "digest": "У пятнадцатилетних подростков, привитых в детстве, проверили уровень антител гепатита В, и он оказался очень низким. То есть, иммунитет от прививки заканчивается еще до начала половой жизни, когда он становится, наконец-то, нужным.<br>Согласно [другому==https://www.ncbi.nlm.nih.gov/pubmed/15247604] исследованию, антитела пропадают уже к пятилетнему возрасту."
+    },          
+    {
+        "num": 14,
+        "title": "Persistence of antibody in healthcare workers vaccinated against hepatitis B.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/2146315",
+        "info_type": "article",
+        "info_date": "1990",
+        "info_authors": "Street",
+        "infoID": "2146315",
+        "info_place": "Infect Control Hosp Epidemiol",
+        "digest": "Через 4 года после прививки уровень антител у 50% медиков снизился ниже защитного.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1404632/] сообщяется, что у 36% медиков уровень антител через 3 года был ниже защитного."
+    },
+    {
+        "num": 15,
+        "title": "Hepatitis B immunisation induces higher antibody and memory Th2 responses in new-borns than in adults.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/14670334",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Ota",
+        "infoID": "2146315",
+        "info_place": "Vaccine",
+        "digest": "В отличие от других вакцин, у привитых от гепатита В младенцев образуется больше антител, чем у взрослых, но меньше интерферона гамма. То есть иммунный ответ у младенцев смещен в сторону гуморального иммунитета по сравнению со взрослыми. (см. часть про коклюш) То же самое обнаружилось с оральной вакциной от полиомиелита.<br>Ревакцинация у взрослых вызывает ответ клеточного иммунитета, а у младенцев не вызывает.<br>У тех, кто получили BCG при рождении вместе с вакциной от гепатита В, было значительно больше антител в возрасте 12 месяцев, чем у тех, кто получили BCG в 4.5 месяца."
+    }, 
+    {
+        "num": 16,
+        "header": "Безопасность",
+        "title": "Recombinant hepatitis B vaccine and the risk of multiple sclerosis: a prospective study.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15365133",
+        "info_type": "article",
+        "info_date": "2004",
+        "info_authors": "Hernán",
+        "infoID": "15365133",
+        "info_place": "Neurology",
+        "digest": "Привитые от гепатита В, через три года после прививки болели рассеянным склерозом в 3.1 раза чаще непривитых.<br>Там же анализируются несколько других исследований, которые не нашли повышенный риск рассеянного склероза у привитых. [Вот==https://www.ncbi.nlm.nih.gov/pubmed/10470051], например, исследование, которое не нашло повышенного риска. Это потому, что они использовали дату диагноза, а не дату появления первых симптомов. Диагноз рассеянного склероза ставится обычно через несколько лет после начала симптомов."
+    },
+    {
+        "num": 17,
+        "title": "Hepatitis B vaccine and the risk of CNS inflammatory demyelination in childhood.",
+        "link": "http://www.neurology.org/content/72/10/873",
+        "info_type": "article",
+        "info_date": "2009",
+        "info_authors": "Mikaeloff",
+        "infoID": "18843097",
+        "info_place": "Neurology",
+        "digest": "Вакцина Engerix-B повышала риск рассеянного склероза в 2.77 раз по сравнению с другими вакцинами от гепатита В."
+    },
+    {
+        "num": 18,
+        "title": "Evolution of multiple sclerosis in France since the beginning of hepatitis B vaccination.",
+        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4266455/",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Le Houézec",
+        "infoID": "PMC4266455",
+        "info_place": "Immunol Res",
+        "digest": "После того, как во Франции начали прививать от гепатита В, количество случаев рассеянного склероза выросло на 65%. Есть высокая корреляция (0.93/0.73) между количеством сделанных доз вакцины и количеством случаев рассеянного склероза через 1-2 года."
+    },
+    {
+        "num": 19,
+        "title": "A case-control study of serious autoimmune adverse events following hepatitis B immunization.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/16206512",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Geier",
+        "infoID": "16206512",
+        "info_place": "Autoimmunity",
+        "digest": "Анализ VAERS. Привитые от гепатита B взрослые заболевали рассеянным склерозом в 5.2 раза чаще, чем привитые от столбняка. Риск васкулита был выше в 2.6 раза, облысения в 7.2 раза, волчанки в 9 раз, артрита в 2 раза, ревматоидного артрита в 18 раз, тромбоцитопении в 2 раза, воспаления глазного нерва в 14 раз выше."
+    },
+    {
+        "num": 20,
+        "title": "Adverse events associated with hepatitis B vaccine in U.S. children less than six years of age, 1993 and 1994.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/11164115",
+        "info_type": "article",
+        "info_date": "2001",
+        "info_authors": "Fisher",
+        "infoID": "11164115",
+        "info_place": "Ann Epidemiol",
+        "digest": "Прививка от гепатита В повышала риск артрита в 5.9 раз, острого отита в 1.6 раз, фарингита в 1.4 раза."
+    },
+    {
+        "num": 21,
+        "title": "Hepatitis B vaccine and liver problems in U.S. children less than 6 years old, 1993 and 1994.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/10230847",
+        "info_type": "article",
+        "info_date": "1999",
+        "info_authors": "Fisher",
+        "infoID": "10230847",
+        "info_place": "Epidemiology",
+        "digest": "Прививка от гепатита В повышала риск болезней печени в 1.5-2.3 раза."
+    },
+    {
+        "num": 22,
+        "title": "Hepatitis B vaccination of male neonates and autism diagnosis, NHIS 1997-2002.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21058170",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Gallagher",
+        "infoID": "21058170",
+        "info_place": "J Toxicol Environ Health A",
+        "I_S_codenames": ["autism"],
+        "digest": "Привитые от гепатита В новорожденные мальчики имели в 3 раза больший риск развития аутизма, по сравнению с непривитыми, или привитыми хотя бы через месяц после рождения."
+    },
+    {
+        "num": 23,
+        "title": "Delayed acquisition of neonatal reflexes in newborn primates receiving a thimerosal-containing hepatitis B vaccine: influence of gestational age and birth weight.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/20711932",
+        "info_type": "article",
+        "info_date": "2010",
+        "info_authors": "Hewitson",
+        "infoID": "20711932",
+        "info_place": "J Toxicol Environ Health A",
+        "digest": "Новорожденным макакам сделали прививку от гепатита В с тиомерсалем, и сравнили с непривитыми.<br>Привитые макаки приобрели рефлексы выживания, а также двигательные и сенсорно-двигательные рефлексы значительно позже, чем непривитые. Низкий вес и преждевременные роды усугубляли эффект.<br>Тиомерсал (этилртуть) не добавляется в вакцины с 2003 года в США и в Западной Европе, но до сих пор используется в других странах. В Канаде, [например==http://www.phac-aspc.gc.ca/publicat/ccdr-rmtc/07vol33/acs-06/index-eng.php]. Не говоря уже о России, Восточной Европе и странах третьего мира."
+    },
+    {
+        "num": 24,
+        "title": "Hepatitis B triple series vaccine and developmental disability in US children aged 1-9 years.",
+        "link": "http://www.tandfonline.com/doi/abs/10.1080/02772240701806501",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Gallagher",
+        "infoID": "10.1080/02772240701806501",
+        "info_place": "Toxicol Environ Chem",
+        "I_S_codenames": ["developmental_disability"],
+        "digest": "У привитых от гепатита В риск задержки развития был в 9 раз выше, чем у непривитых."
+    },
+    {
+        "num": 25,
+        "title": "Clustering of Cases of IDDM 2 to 4 Years after Hepatitis B Immunization is Consistent with Clustering after Infections and Progression to IDDM in Autoantibody Positive Individuals.",
+        "link": "https://benthamopen.com/contents/pdf/TOPEDJ/TOPEDJ-2-1.pdf",
+        "info_type": "article",
+        "info_date": "2008",
+        "info_authors": "Classen",
+        "info_place": "Open Pediatr Med J",
+        "I_S_codenames": ["type1_diabetes"],
+        "digest": "После начала кампании вакцинации, количество детей больных диабетом первого типа увеличилось во Франции на 61%, а в Новой Зеландии на 48%.<br>В Италии, привитые от гепатита В болели юношеским диабетом на 40% чаще непривитых.<br>Увеличение количества случаев юношеского диабета происходит через 2-4 года после начала вакцинации, что намекает на причинно-следственную связь."
+    },
+    {
+        "num": 26,
+        "title": "Chronic fatigue syndrome and fibromyalgia following immunization with the hepatitis B vaccine: another angle of the 'autoimmune (auto-inflammatory) syndrome induced by adjuvants' (ASIA).",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/25427994",
+        "info_type": "article",
+        "info_date": "2014",
+        "info_authors": "Agmon-Levin",
+        "infoID": "25427994",
+        "info_place": "Immunol Res",
+        "digest": "Прививка от гепатита В ассоцированна с синдромом хронической усталости и с фибромиалгией."
+    },
+    {
+        "num": 27,
+        "title": "Autoimmunity following hepatitis B vaccine as part of the spectrum of 'Autoimmune (Auto-inflammatory) Syndrome induced by Adjuvants' (ASIA): analysis of 93 cases.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22235045",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Zafrir",
+        "infoID": "22235045",
+        "info_place": "Lupus",
+        "digest": "ASIA, или синдром Шонфельда, это общее название аутоиммунных болезней вызванных адьювантами, и включает в себя аутоиммунные последствия алюминиевых адьювантов, Gulf war syndrome, макрофагальный миозит (MMF) и силиконоз (аутоиммунные последствия силиконовых имплантов). Он приводит к неврологическим и психиатрическим симптомам, когнитивным нарушениям, мышечным болям, артриту, хронической усталости, бессоннице, проблемам со зрением и с ЖКТ и т.д..<br>Здесь анализируются 93 случая ассоциированных с прививкой от гепатита В."
+    },
+    {
+        "num": 28,
+        "title": "Vaccine-induced autoimmunity.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/9115571",
+        "info_type": "article",
+        "info_date": "1996",
+        "info_authors": "Cohen",
+        "infoID": "9115571",
+        "info_place": "J Autoimmun",
+        "digest": "С прививкой от гепатита В ассоциированы такие аутоиммунные заболевания как синдром Рейтера, артрит, волчанка, воспаление сосудистой оболочки глаза, миастения, узловатая эритема, тромбоцитопеническая пурпура, синдром Эванса и демиелинизирующие заболевания ЦНС."
+    },
+    {
+        "num": 29,
+        "title": "In vivo study of hepatitis B vaccine effects on inflammation and metabolism gene expression.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/21691704",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Hamza",
+        "infoID": "21691704",
+        "info_place": "Mol Biol Rep",
+        "digest": "Эпигенетическое влияние вакцины. Мышам сделали одну или две прививку от гепатита В (в соответствующей дозе). Через один день у них были существенные изменения в экспрессии 144 генов в печени. Авторы детально проанализировали 7 из них. Все изменения были негативны, и привели к легкой травме печени. Главным образом из-за алюминия."
     },
     {
         "num": 30,
-        "digest": " В VAERS [зарегистрированы==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&EVENTS=ON&VAX%5b%5d=HBHEPB&VAX%5b%5d=HEP&VAX%5b%5d=HEPAB&AGES%5b%5d=1&AGES%5b%5d=2] 1017 случаев смерти, 406 случаев инвалидности и 8456 серьезных [осложнений==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=SER&VAX[]=6VAX-F&VAX[]=DTAPHEPBIP&VAX[]=DTPHEP&VAX[]=HBHEPB&VAX[]=HEP&VAX[]=HEPAB&VAXTYPES[]=Hepatitis B&AGES[]=1&AGES[]=2] у детей до года после прививки от гепатита В (то есть реальное количество в 10-100 раз больше).
+        "title": "Hepatitis B vaccine induces apoptotic death in Hepa1-6 cells.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/22249285",
+        "info_type": "article",
+        "info_date": "2012",
+        "info_authors": "Hamza",
+        "infoID": "22249285",
+        "info_place": "Apoptosis",
+        "digest": "Вакцина от гепатита В разрушает митохондрии, и убивает клетки печени у мышей."
     },
     {
         "num": 31,
-        "digest": "В Израиле с 2005 года [использовали==https://www.israel21c.org/hepatitis-b-no-match-for-scigens-new-vaccine/] израильскую вакцину Sci-B-Vac. Но только в центре Израиля и на юге (потому что нельзя весь рынок отдать одному производителю). В июле 2015 года эта вакцина была [отозвана==https://www.health.gov.il/NewsAndEvents/SpokemanMesseges/Pages/29072015_3.aspx].<br>Согласно заявлению министерства здравоохранения, отозвали ее из-за того, что ампулы поступали на станок, который приклеивал этикетки, слишком быстро, из-за чего в них, теоретически, могли возникнуть микро-трещины и бактериальное заражение. Зараженных ампул обнаружено не было, поэтому население попросили не волноваться, но вакцину отозвали. С тех пор прошло два года, но вакцина на рынок не вернулась. Наверное так и не смогли решить проблему наклеивания этикеток."
+        "title": "Trained immunity in newborn infants of HBV-infected mothers.",
+        "link": "https://www.nature.com/articles/ncomms7588",
+        "info_type": "article",
+        "info_date": "2015",
+        "info_authors": "Hong",
+        "infoID": "10.1038/ncomms7588",
+        "info_place": "Nature Comm",
+        "digest": "Вирус гепатита В, переданный от матери ребенку, возможно, вопреки распространенному мнению, приводит к лучшему развитию иммунной системы."
     },
     {
         "num": 32,
+        "title": "Autoimmune hazards of hepatitis B vaccine.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/15722255",
+        "info_type": "article",
+        "info_date": "2005",
+        "info_authors": "Girard",
+        "infoID": "15722255",
+        "info_place": "Autoimmun Rev",
+        "digest": "Обзорная статья про аутоиммунные последствия вакцинации от гепатита В, и о том, как эта прививка сочетается с доказательной медициной (никак).<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/9326478] описываются 60 случаев потери волос после прививок в основном у женщин. Большинство случаев произошли после прививки от гепатита В."
+    },        
+    {
+        "num": 33,
+        "digest": "Клинические испытания безопасности Recombivax {проводились==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm110114.pdf] на 147 младенцах и детях, а также на 1252 взрослых, и длились 5 дней после каждой дозы. Контрольной группы не было.<br>Клинические испытания безопасности Engeriх-B [длились==https://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM224503.pdf] 4 дня после каждой дозы. Контрольной группы не было."
+    },
+    {
+        "num": 34,
+        "digest": "В VAERS [зарегистрированы==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=CAT&EVENTS=ON&VAX%5b%5d=HBHEPB&VAX%5b%5d=HEP&VAX%5b%5d=HEPAB&AGES%5b%5d=1&AGES%5b%5d=2] 1017 случаев смерти, 406 случаев инвалидности и 8456 серьезных [осложнений==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON&GROUP1=SER&VAX[]=6VAX-F&VAX[]=DTAPHEPBIP&VAX[]=DTPHEP&VAX[]=HBHEPB&VAX[]=HEP&VAX[]=HEPAB&VAXTYPES[]=Hepatitis B&AGES[]=1&AGES[]=2] у детей до года после прививки от гепатита В (то есть реальное количество в 10-100 раз больше).
+    },          
+    {
+        "num": 35,
+        "info_geo": "Israel",
+        "digest": "В Израиле с 2005 года [использовали==https://www.israel21c.org/hepatitis-b-no-match-for-scigens-new-vaccine/] израильскую вакцину Sci-B-Vac. Но только в центре Израиля и на юге (потому что нельзя весь рынок отдать одному производителю). В июле 2015 года эта вакцина была [отозвана==https://www.health.gov.il/NewsAndEvents/SpokemanMesseges/Pages/29072015_3.aspx].<br>Согласно заявлению министерства здравоохранения, отозвали ее из-за того, что ампулы поступали на станок, который приклеивал этикетки, слишком быстро, из-за чего в них, теоретически, могли возникнуть микро-трещины и бактериальное заражение. Зараженных ампул обнаружено не было, поэтому население попросили не волноваться, но вакцину отозвали. С тех пор прошло два года, но вакцина на рынок не вернулась. Наверное так и не смогли решить проблему наклеивания этикеток."
+    },
+    {
+        "num": 36,
+        "info_geo": "Israel",
         "digest": "Sci-B-Vac это вакцина третьего поколения. Первое поколение - это была живая вакцина. Второе поколение это рекомбинантная (генетически модифицированная) вакцина, содержащая вирусоподобные частицы. Вакцина третьего поколения содержит в придачу еще два антигена, и поэтому дает более [сильную==https://www.ncbi.nlm.nih.gov/pubmed/8779530] иммунную реакцию.<br>Единственное опубликованное клиническое испытание вакцины [включало==https://www.ncbi.nlm.nih.gov/pubmed/9194109] 150 детей. Вакцина [не получила==http://www.globes.co.il/news/article.aspx?did=1000865960] разрешение FDA. Протокол комиссии министерства здравоохранения, которая разрешила прививку в Израиле, куда-то [пропал==http://www.ynet.co.il/articles/0,7340,L-4690411,00.html].<br>Многие родители утверждают, что у детей из-за этой прививки были сильные побочные эффекты, задержки в развитии и т. д. Что не очень удивительно, поскольку она содержала в два раза больше алюминия. Кроме того, в ней три антигена вместо одного, что еще больше повышает риск аутоиммунной реакции. Почему это происходит будет разобрано в другой части.<br>Вакцина [зарегистрирована==https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%BA%D1%86%D0%B8%D0%BD%D0%B0_%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2_%D0%B3%D0%B5%D0%BF%D0%B0%D1%82%D0%B8%D1%82%D0%B0_B] также в России."
     },
     {
-        "num": 33,
+        "num": 37,
         "digest": "Графики количества случаев болезни и количество смертей от гепатита В, до и после начала вакцинации в США. Данные [предоставлены==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/e/reported-cases.pdf] CDC.",
 "img_pool": [{
         "info_img": "http://vaccines.procon.org/files/1-vaccines-images/hep-b-cases-1966-2013.PNG"
@@ -299,12 +339,12 @@
         }]
     },
     {
-        "num": 34,
+        "num": 38,
         "I_S_codenames": ["vitamin_C"],
         "digest": "Аюрведическое лекарство [вроде бы==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3639642/] излечивает острый и хронический гепатит В. Моринга [тоже==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3553072/]. И [десмодиум==https://data.epo.org/gpi/EP0309342A1-Use-of-desmodium-in-the-treatment-of-hepatitis-and-medicaments-thereof].<br>Гепатит B возможно также лечится витамином С. [[Baur, 1954==https://www.seanet.com/~alexs/ascorbate/195x/baur-h-schweitz_med_wschr-1954-n21-p595-engl.htm]], [[Kirchmair, 1957==https://www.seanet.com/~alexs/ascorbate/195x/kirchmair-h_med_mschr-1957-v11-n6-p353-engl.htm]], [[Calleja, 1960==https://www.seanet.com/~alexs/ascorbate/196x/calleja-hb-etal-ohio_st_med_j-1960-v56-p821.htm]], [[Morishige, 1978==https://www.seanet.com/~alexs/ascorbate/197x/morishige-f-etal-j_int_assn_prev_med-1978-v5-n1-p54.htm]], [[Smith, 1988==https://www.seanet.com/~alexs/ascorbate/198x/smith-lh-clinical_guide_1988.htm]]"
     }
     {
-        "num": 35,
+        "num": 39,
         "digest": "Как защитники прививок аргументируют необходимость этой прививки для младенцев? [Послушаем==https://www.youtube.com/watch?v=hypTVwUo_IY] Пола Оффита.<br>Его первый аргумент: ребенок может заразиться от матери проходя через родовые пути. Но в этом случае прививка все равно неэффективна, нужно давать иммуноглобулин. Кроме того всех беременных с США проверяют на заражение гепатитом.<br>Второй аргумент: ребенок может заразиться от чужой зубной щетки, или от какого-то дяди. Такой способ заражения чисто теоретический. Не существует ни единого исследованя, доказывающего, что какой-либо человек заразился гепатитом В подобным способом.<br>Третий аргумент: у тех, кто делает прививку сразу после рождения, намного выше вероятность закончить всю серию из трех прививок. Без комментариев."
     }]
 "summary": "Прививать детей от гепатита В есть смысл только если вы планируете им карьеру в области проституции, или если ребенок проявляет гомосексуальные наклонности, или если опасаетесь, что дети станут наркоманами.<br>И даже тогда нет смысла прививать новорожденных, а стоит подождать лет до 18-и. Шанс заразиться гепатитом В до начала половой жизни практически нулевой.<br>Вакцины содержат 250-500мкг алюминия. То есть три дозы этой прививки содержат в 15-30 раз больше алюминия, чем весь алюминий который ребенок получит из грудного молока за 6 месяцев. Кстати, то, что ребенок получает обычно алюминий из материнского молока это не значит, что это нормально. Это значит, что матери отравлены алюминием, который.они получают через пищу и воду, и отрявляют им своих младенцев.<br>Прививка, скорее всего, бесполезна даже для детей родившихся у зараженных матерей.<br>Прививка повышает риск аутоиммунных заболеваний, таких как рассеянный склероз, артрит, диабет первого типа и многих других.<br>В развитых странах риск осложнений от прививки намного выше, чем риск осложнений от гепатита В, и даже намного выше, чем риск заражения гепатитом В."

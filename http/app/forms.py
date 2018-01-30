@@ -47,4 +47,10 @@ class editIntro(Form):
 	ref_header = StringField('')
 	ref_intro = TextAreaField('')
 	summary = TextAreaField('')
-	numrefs = HiddenField('')
+
+class editContent(Form):
+	subject = StringField('Title', validators=[DataRequired()])
+	ep_text = TextAreaField('')
+	ep_source = StringField('')
+	intro = TextAreaField('')
+	summary = TextAreaField('')

@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <div style="margin:35px 30px 30px 0px;">
-<form action="/edit/content:{{ current_user.author }}" method="POST" name="cform" enctype="multipart/form-data">
+<form action="/edit/content:{{namespace}}:{{ current_user.author }}" method="POST" name="cform" enctype="multipart/form-data">
 <h1>Edit chapter {{ chapter }}</h1>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
@@ -53,19 +53,47 @@
         </div>
         <hr size=1 style="width:94%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 40px" align=left>
             <div style="height:25px; width:940px;">
-                <div style="float:left; width:120px">Image #{{ num }} link (URL): </div>
+                <div style="float:left; width:120px">Source #{{ num }} title: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="imgLink_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" placeholder="http://" name="srcTitle_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
-            source pool #1 title: {{ form.pnt_1_sourcepool_title_1 }}<br>
-            source pool #1 link: {{ form.pnt_1_sourcepool_link_1 }} (link)<br>
-            source pool #1 paper's ID: {{ form.pnt_1_sourcepool_id_1 }} (pubmed/doi/PMC id if present)<br>
-            source pool #1paper's date: {{ form.pnt_1_sourcepool_date_1 }}<br>
-            source pool #1 paper's authors: {{ form.pnt_1_sourcepool_authors_1 }}<br>
-            source pool #1 publication place: {{ form.pnt_1_sourcepool_place_1 }} (journal's name or acronim)<br>
-            source pool #1 geo location: {{ form.pnt_geo_1 }}<br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Source #{{ num }} link (URL): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="srcLink_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Source #{{ num }} paper's ID (pubmed/doi): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="srcID_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Source #{{ num }} date: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="srcDate_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Source #{{ num }} authors: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="srcAuth_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Source #{{ num }} place (journal): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="srcPlace_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
 
+            <div style="height:25px; width:940px;">
+                <div style="float:left; width:120px">Source #{{ num }} geo (country/city): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="srcGeo_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
         </div>
     </div>
 </script>

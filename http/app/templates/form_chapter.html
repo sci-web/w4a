@@ -7,5 +7,14 @@
 <div style="margin:50px 20px 30px 50px;" align=left>
 <form action="/editspace:{{ current_user.author }}" method="POST" name="sform">
 <h1>Edit your space</h1>
+{{ namespace }}: <a href="/edit/content:{{namespace}}:{{ current_user.author }}">add a chapter</a><br>
+{% if chapters %}
+<div>
+or edit a chapter:
 
+{% for ch in chapters %}
+<a href="/edit/content:{{namespace}}:{{ current_user.author }}:{{ ch }}">{{ ch }}</a><br>
+{% endfor %}
+</div>
+{% endif %}
 {% endblock %}

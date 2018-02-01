@@ -67,13 +67,20 @@ def editspace(author):
     return render_template('cms_start.html', form=g.form, items=g.items, author=author, namespaces=namespaces, chapters=chapters)
 
 
-@app.route('/editspace/intro:<author>', methods=['GET', 'POST'])
+@app.route('/editspace/intro:<namespace>:<author>', methods=['GET', 'POST'])
 @login_required
-def edit_intro(author):
+def edit_intro(namespace, author):
+    i_data = DB().get_an_intro(namespace)
+    return render_template('form_intro_edit.html', form=g.form, items=i_data)
+
+
+@app.route('/editspace/save_intro:<author>', methods=['GET', 'POST'])
+@login_required
+def save_intro(author):
     # sp_data = DB().get_intros_by_namespace(namespace)
     sform = editIntro(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
     in_data = {}
-    in_data["date"] = datetime.datetime.now().strftime('%d-%m-%Y %H:%M')
+    in_data["date"] = datetime.now()
     in_data["points"] = []
     in_data["refs"] = []
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
@@ -90,6 +97,10 @@ def edit_intro(author):
                 for value in f.getlist(key):
                     # print key,":",value
                     if key == "namespace": in_data["namespace"] = value
+                    i_data = DB().get_an_intro(in_data["namespace"])
+                    if i_data:
+                        error = "This namespace:" + in_data["namespace"] + " already exists!"
+                        break   
                     if key == "subject": in_data["subject"] = value
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "ref_intro" and value != ""): in_data["ref_intro"] = value
@@ -177,47 +188,45 @@ def edit_intro(author):
                                     in_refs_pool[r].update({l: {"author": value}})
                                 except:
                                     in_refs_pool[r] = ({l : {"author": value}})
-
-            for r in in_refs.keys():
-                ref_pool = []
-                for l in in_refs_pool[r].keys():
-                    # print l, in_refs_pool[r][l]
+            if error == 0:                                        
+                for r in in_refs.keys():
+                    ref_pool = []
+                    for l in in_refs_pool[r].keys():
+                        # print l, in_refs_pool[r][l]
+                        try:
+                            ref_pool.append(in_refs_pool[r][l])
+                        except:
+                            if len(in_refs_pool[r][l]) > 0:
+                                ref_pool = in_refs_pool[r][l]
                     try:
-                        ref_pool.append(in_refs_pool[r][l])
+                        in_refs[r].update({"ref_pool": ref_pool})
                     except:
-                        if len(in_refs_pool[r][l]) > 0:
-                            ref_pool = in_refs_pool[r][l]
-                try:
-                    in_refs[r].update({"ref_pool": ref_pool})
-                except:
-                    in_refs[r] = {"ref_pool": ref_pool}
+                        in_refs[r] = {"ref_pool": ref_pool}
 
-            for n, p in sorted(points.iteritems()):
-                in_data["points"].append({"num": n, "item": p})
+                for n, p in sorted(points.iteritems()):
+                    in_data["points"].append({"num": n, "item": p})
 
-            for n, rf in sorted(in_refs.iteritems()):
-                try:
-                    refs.append(in_refs[n])
-                except:
-                    if (len(in_refs[n])) > 0:
-                        refs = in_refs[n]
-            in_data["refs"] = refs
+                for n, rf in sorted(in_refs.iteritems()):
+                    try:
+                        refs.append(in_refs[n])
+                    except:
+                        if (len(in_refs[n])) > 0:
+                            refs = in_refs[n]
+                in_data["refs"] = refs
 
-            if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
-            intro = DB().find_intro_by_author(author, in_data["namespace"])
-            if not intro:
-                in_data["analyst"] = author
-                DB().insert_an_intro(in_data)
-            else:
-                DB().update_an_intro(author, in_data["namespace"], in_data)
-
+                if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
+                intro = DB().find_intro_by_author(author, in_data["namespace"])
+                if not intro:
+                    in_data["analyst"] = author
+                    DB().insert_an_intro(in_data)
+                else:
+                    DB().update_an_intro(author, in_data["namespace"], in_data)
         else:
-            error = 1
-            flash("Something wrong with data update!", category='error')
+            error = "Something wrong with data update!"
         if error == 0:
             flash("Data updated successfully!", category='info')
         else:
-            flash("Something wrong happened!", category='error')
+            flash(error, category='error')
     return render_template('form_intro.html', form=g.form, items=g.items, 
         objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, sform=sform)
 

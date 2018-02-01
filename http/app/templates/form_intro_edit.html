@@ -6,37 +6,65 @@
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
 <form action="/editspace/save_intro:{{ current_user.author }}" method="POST" name="sform">
-<h1>Edit topic {{ subject }} </h1>
+{% for entry in items %}
+<h1>Edit topic {{ entry.subject }} </h1>
 <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Subject (research title): </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Subject" name=subject size=95> <font color="red">(*)</font></div>
+            <input type="text" placeholder="Subject" name=subject size=95 value="{{ entry.subject }}"> <font color="red">(*)</font></div>
     </div>
     <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Namespace: </div>
         <div style="float:right; width:830px" class="form-group">
-            <input type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
+            <input type="text" placeholder="Namespace for your research" name=namespace size=20 value="{{ entry.namespace }}">
+            <font color="red">(*)</font>
             must be a unique word in latin letters</div>
     </div>
     <br>
     <div style="height:75px; width:1010px;">
         <div style="float:left; width:180px">Epigraph text: </div>
-        <div style="float:right; width:830px" class="form-group"><textarea rows=3 cols=97 name=ep_text></textarea></div>
+        <div style="float:right; width:830px" class="form-group">
+            <textarea rows=3 cols=97 name=ep_text>{{ entry.epigraph.text }}</textarea>
+        </div>
     </div>
     <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Epigraph source: </div>
-        <div style="float:right; width:830px" class="form-group" align=right><input type="text" name=ep_source size=75></div>
+        <div style="float:right; width:830px" class="form-group" align=right>
+            <input type="text" name=ep_source size=75 value="{{ entry.epigraph.source }}">
+        </div>
     </div>
+
     <br>
     <div style="height:155px; width:1010px;">
         <div style="float:left; width:180px">Short introduction: </div>
-        <div style="float:right; width:830px" class="form-group"><textarea rows=7 cols=97 name=intro></textarea></div>
+        <div style="float:right; width:830px" class="form-group"><textarea rows=7 cols=97 name=intro>{{ entry.intro }}</textarea></div>
     </div>
     <br>
+    <div>
+    {% set p_num = [1] %}
+    {% for p in entry.points %}
+    <div style="height:195px; width:1000px;" id="p_{{ p.num }}">
+        <div style="float:left; width:180px">Point #{{ p.num }}:</div>
+        <div style="float:right; width:820px" class="form-group">
+            <textarea rows=7 cols=97 name=points_{{ p.num }}>{{ p.item }}</textarea>
+        </div>
+        <div style="display:cell;margin-left:1010px; width:12px; float:right; position:absolute" id=pcross>
+            <a onClick = "javascript:RemoveDiv('#p_{{ p.num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+    </div>
+    {% if p_num.append(p_num.pop() + 1) %}{% endif %}
+    {% endfor %}
+    </div>
     <div id="pnt_target" style="width:1010px;"></div>
+        <div style="height:25px; width:980px;" id="l_{{ p_num|join }}">
+            <div style="float:left; width:180px"></div>
+            <div align="right" style="float:right; width:800px" id="p_{{ p_num|join }}">
+                <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target', '#l_{{ p_num|join }}', {{ p_num|join }}, 'pcross')" class="linknav pointer">add another point</a>
+            </div>
+        </div>
 
     <hr size=1 style="width: 100%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0" align=center>
             <div style="margin:5px">
@@ -44,21 +72,97 @@
             <div style="height:25px; width:1000px;">
                 <div style="float:left; width:180px">References header: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name=ref_header size=95></div>
+                    <input type="text" name=ref_header size=95 value="{{ entry.ref_header }}"></div>
             </div>
             <br>
             <div style="height:115px; width:1000px;">
                 <div style="float:left; width:180px">References intro: </div>
-                <div style="float:right; width:820px" class="form-group"><textarea rows=5 cols=97 name=ref_intro></textarea></div>
+                <div style="float:right; width:820px" class="form-group">
+                    <textarea rows=5 cols=97 name=ref_intro>{{ entry.ref_intro }}</textarea>
+                </div>
             </div>
             <div style="margin:0 0 0 50px"><h4><u>References</u>:</h4>
                 <div id="refs_target" style="width:1000px;"></div>
             </div>
+    {% set r_num = [1] %}
+    {% for r in entry.refs %}
+    <div style="width:1000px;" id="ref_{{ r_num|join }}">
+        <div style="display:cell;margin-left:960px; width:12px; float:right; position:absolute" id=rcross>
+            <a onClick = "javascript:RemoveDiv('#ref_{{ r_num|join }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>
+                <div style="height:25px; width:1000px;" id="rcnt">
+                    <div style="float:left; width:200px">RefBlock #{{r_num|join}} title: </div>
+                    <div style="float:right; width:800px;" class="form-group">
+                        <input type="text" name="refBlockTtl_{{ r_num|join }}" size=86 value="{{ r.ref_title }}"></div>
+                </div>
+                <br>
+                <div style="height:115px; width:1000px;">
+                    <div style="float:left; width:200px">RefBlock #{{r_num|join}} digest:</div>
+                    <div style="float:right; width:800px" class="form-group">
+                        <textarea rows=5 cols=88 name="refBlockDigest_{{ r_num|join }}">{{ r.ref_digest }}</textarea>
+                    </div>
+                </div>
+                <div style="height:115px; width:1000px;">
+                    <div style="float:left; width:200px">RefBlock #{{r_num|join}} type:</div>
+                    <div style="float:right; width:800px" class="form-group">
+                        <input type="text" name="refBlockType_{{ r_num|join }}" size=86 value="{{ r.ref_type }}">
+                    </div>
+                </div>
+                <h4>References block #{{r_num|join}} links:</h4>
+                {% set l_num = [1] %}
+                {% for l in r.ref_pool %}
+                <div style="margin:0 0 0 50px;">
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ l_num|join }} title: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" name="linkTitle_{{ l_num|join }}_{{ r_num|join }}" size=75 value="{{ l.title }}"></div>
+                    </div>
+                    <br>
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ l_num|join }} URL: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" name="linkURL_{{ l_num|join }}_{{ r_num|join }}" size=75 value="{{ l.link }}"></div>
+                    </div>
+                    <br>
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ l_num|join }} author: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" name="linkAuthor_{{ l_num|join }}_{{ r_num|join }}" size=35 value="{{ l.author }}"> i.e. article, media, report</div>
+                    </div>
+                    <br>
+                    <div style="height:25px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ l_num|join }} type: </div>
+                        <div style="float:right; width:820px;" class="form-group">
+                            <input type="text" name="linkType_{{ l_num|join }}_{{ r_num|join }}" size=35 value="{{ l.linktype }}"> i.e. article, media, report</div>
+                    </div>
+                    <br>
+                    <div style="height:130px; width:940px;">
+                        <div style="float:left; width:120px">Link #{{ l_num|join }} digest:</div>
+                        <div style="float:right; width:820px" class="form-group">
+                            <textarea rows=5 cols=77 name="linkDigest_{{ l_num|join }}_{{ r_num|join }}">{{ l.digest }}</textarea>
+                        </div>
+                    </div>
+                </div>
+                {% if l_num.append(l_num.pop() + 1) %}{% endif %}
+                {% endfor %}
+                <div style="height:15px; width:810px;" id="ln_{{ l_num|join }}_{{ r_num|join }}">
+                    <div style="float:left; width:160px;"></div>
+                    <div align=right style="float:right; width:650px;margin-top:-10px">
+                        <a onClick="loadTmpl('#lnk_tmpl', '#lnk_target_{{ r_num|join }}', '#ln_{{ l_num|join }}_{{ r_num|join }}', {{ l_num|join }}, 'lcross', {{ r_num|join }})"
+                            class="linknav pointer">add one more {{ l_num|join }}-link to {{ r_num|join }}-RefBlock</a>
+                    </div>
+                </div>
+                <div id="lnk_target_{{ r_num|join }}" style="width:1000px;"></div>
+            </div>
+    </div>
+    {% if r_num.append(r_num.pop() + 1) %}{% endif %}
+    {% endfor %}
             <div id="refs_target" style="width:1000px;"></div>
             <div style="height:25px; width:1000px;" id="rln_1">
                 <div style="float:left; width:180px"></div>
                 <div align=right style="float:right; width:820px">
-                    <a onClick="loadTmpl('#refs_tmpl', '#refs_target', '#rln_1', 1, 'rcross', 1)" class="linknav pointer">add next refBlock</a>
+        <a onClick="loadTmpl('#refs_tmpl', '#refs_target', '#rln_{{ r_num|join }}', 1, 'rcross', {{ r_num|join }})" class="linknav pointer">add next refBlock</a>
                 </div>
             </div>
             <div id="refs_target" style="width:1000px;"></div>
@@ -67,7 +171,7 @@
     <div style="height:175px; width:1000px;">
         <div style="float:left; width:180px">Summary: </div>
         <div style="float:right; width:820px" class="form-group">
-            <textarea rows=7 cols=97 name=summary></textarea></div>
+            <textarea rows=7 cols=97 name=summary>{{ entry.summary }}</textarea></div>
     </div>
     <div style="height:25px; width:980px;">
         <div style="float:left; width:180px" id=form_info>
@@ -76,6 +180,7 @@
             <button type="submit" class="btn btn-default">Submit</button>
         </div>
     </div>
+{% endfor %}
 </form>
 </div>
 {% raw %}
@@ -149,7 +254,8 @@
         <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>
                 <div style="height:25px; width:1000px;" id="rcnt">
                     <div style="float:left; width:200px">RefBlock #{{rnum}} title: </div>
-                    <div style="float:right; width:800px;" class="form-group"><input type="text" name="refBlockTtl_{{ rnum }}" size=86></div>
+                    <div style="float:right; width:800px;" class="form-group">
+                        <input type="text" placeholder="{{ num }}_{{ rnum }}" name="refBlockTtl_{{ rnum }}" size=86></div>
                 </div>
                 <br>
                 <div style="height:115px; width:1000px;">
@@ -215,11 +321,6 @@
 </script>
 {% endraw %}
 <script>
-$(document).ready(function() {
-    loadTmpl('#pnt_tmpl', '#pnt_target', '#l_1', 0, 'pcross', 0);
-    loadTmpl('#lnk_tmpl', '#lnk_target_1', '#ln_1', 0, 'lcross', 0);
-    loadTmpl('#refs_tmpl', '#refs_target', '#rln_1', 0, 'rcross', 0);
-});
 function RemoveDiv(div) {
     $( div ).remove();
 }

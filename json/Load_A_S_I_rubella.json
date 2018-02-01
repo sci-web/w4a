@@ -393,18 +393,6 @@
         "digest": "Анализ VAERS. Прививка от краснухи повышает риск хронического артрита в 32-59 раз, а прививка от гепатита В повышает риск хронического артрита в 5.1-9 раз."
     },
     {
-        "num": 21,
-        "title": "Effect of measles-mumps-rubella vaccination on polymorphonuclear neutrophil functions in children.",
-        "link": "https://www.ncbi.nlm.nih.gov/pubmed/1467611",
-        "info_type": "article",
-        "info_date": "1992",
-        "info_authors": "Toraldo",
-        "infoID": "1467611",
-        "info_place": "Acta Paediatr",
-        "I_S_codenames": ["MMR"],
-        "digest": "MMR значительно понижает функцию нейтрофильных лейкоцитов (т.е. повышает восприимчивость к инфекциям). Это, скорее всего, происходит потому что вакцинные штаммы не размножаются в лимфатических тканях как дикие штаммы."
-    },
-    {
         "num": 22,
         "digest": "Поскольку MMR противопоказан беременным (а также за 1-3 месяцев до зачатия), CDC [рекомендует==https://www.cdc.gov/vaccines/pregnancy/hcp/guidelines.html] беременным женщинам, у которых отсутствуют антитела к краснухе, привиться сразу после родов.<br>  Однако тест на беременность перед прививкой от краснухи CDC делать [не рекомендует==https://www.cdc.gov/vaccines/pubs/pinkbook/rubella.html]."
     },

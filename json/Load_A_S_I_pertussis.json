@@ -111,7 +111,7 @@
         "info_authors": "van Boven",
         "infoID": "PMC1559845",
         "info_place": "Proc Biol Sci",
-        "digest": "Количество случаев коклюша среди непривитых возросло, но среди привитых оно возросло еще больше. Коклюшем в основном болеют привитые.<br>Также согласно [данным==http://www.cdc.gov/pertussis/downloads/pertuss-surv-report-2013.pdf] CDC, большинство заболевших коклюшем, это привитые."
+        "digest": "Количество случаев коклюша среди непривитых возросло, но среди привитых оно возросло еще больше. Коклюшем в основном болеют привитые.<br>Также согласно [данным==http://www.cdc.gov/pertussis/downloads/pertuss-surv-report-2013.pdf] CDC, большинство заболевших коклюшем - это привитые."
     },
     {
         "num": 13,
@@ -194,7 +194,7 @@
     },
     {
         "num": 22,
-        "digest": "Поскольку cocooning не сработал, с 2011 года CDC рекомендует всем беременным женщинам прививаться от коклюша в течение третьего триместра, чтобы антитела перешли к плоду через плаценту. То, что через плаценту перейдет также и алюминий, CDC не упоминает. Многие женщины жалуются, что у них начались схватки сразу после прививки, и что прививка привела к преждевременным родам. Но согласно проведенным исследованиям, им лишь кажется, что прививка ускорила роды. Это произошло совершенно случайно, и с прививкой никак не связано.<br>Количество случаев коклюша с 2011 года только [увеличилось==http://apps.who.int/immunization_monitoring/globalsummary/incidences?c=USA].<br>Cocooning не отменили, конечно, и продолжают использовать вместе с вакцинацией беременных.<br>Кстати, как в CDC [установили==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6041a4.htm], что прививать беременных женщин от коклюша во время беременности это эффективно и совершенно безопасно? На основании двух исследований. В [первом==http://www.ajog.org/article/S0002-9378(10)02286-6/abstract] участвовали 52 беременные женщины, а во [втором==https://www.ncbi.nlm.nih.gov/pubmed/20875487] шестнадцать. Ну а как влияет ли эта прививка на плод, никто вообще не проверял.<br>Кроме того, вообще непонятно, почему CDC рекомендует прививаться лишь в третьем триместре. Согласно [исследованиям==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4787611/], прививка во втором триместре намного эффективнее. В Швейцарии, например, [рекомендуют==http://ge.ch/sante/media/site_sante/files/imce/epidemiologie-maladies-transmissibles/doc/recommand_coquluche_bull_ofsp_2013.pdf ] прививаться во втором триместре (с 13 недели беременности)."
+        "digest": "Поскольку cocooning не сработал, с 2011 года CDC рекомендует всем беременным женщинам прививаться от коклюша в течение третьего триместра, чтобы антитела перешли к плоду через плаценту. То, что через плаценту перейдет также и алюминий, CDC не упоминает. Многие женщины жалуются, что у них начались схватки сразу после прививки, и что прививка привела к преждевременным родам. Но согласно проведенным исследованиям, им лишь кажется, что прививка ускорила роды. Это произошло совершенно случайно, и с прививкой никак не связано.<br>Количество случаев коклюша с 2011 года только [увеличилось==http://apps.who.int/immunization_monitoring/globalsummary/incidences?c=USA].<br>Cocooning не отменили, конечно, и продолжают использовать вместе с вакцинацией беременных.<br>В Австралии cocooning тоже практиковали, но установили, что он неэффективен, и [отменили==http://www.news.com.au/breaking-news/states-ending-free-parent-whooping-vaccine/news-story/03235c4dc2b3fe6456b7e6c3aeae1d83] его.<br>Кстати, как в CDC [установили==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6041a4.htm], что прививать беременных женщин от коклюша во время беременности это эффективно и совершенно безопасно? На основании двух исследований. В [первом==http://www.ajog.org/article/S0002-9378(10)02286-6/abstract] участвовали 52 беременные женщины, а во [втором==https://www.ncbi.nlm.nih.gov/pubmed/20875487] шестнадцать. Ну а как влияет ли эта прививка на плод, никто вообще не проверял.<br>Кроме того, вообще непонятно, почему CDC рекомендует прививаться лишь в третьем триместре. Согласно [исследованиям==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4787611/], прививка во втором триместре намного эффективнее. В Швейцарии, например, [рекомендуют==http://ge.ch/sante/media/site_sante/files/imce/epidemiologie-maladies-transmissibles/doc/recommand_coquluche_bull_ofsp_2013.pdf ] прививаться во втором триместре (с 13 недели беременности)."
     },
     {
         "num": 23,
@@ -230,6 +230,7 @@
     },
     {
         "num": 27,
+        "header": "Замена штаммов",
         "title": "Global Population Structure and Evolution of Bordetella pertussis and Their Relationship with Vaccination.",
         "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3994516/",
         "info_type": "article",
@@ -263,7 +264,7 @@
     },
     {
         "num": 30,
-        "digest": "Одним из компонентов бесклеточный вакцины является пертактин. Пертактин - это один из белков мембраны коклюшной бактерии. В странах, где используется бесклеточная вакцина, коклюшные бактерии с пертактином заменяются бактериями без пертактина. Вот исследования этого феномена в [Финляндии==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485885/], [США==https://www.ncbi.nlm.nih.gov/pubmed/23388024], [Японии==http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031985] и [Австралии==https://wwwnc.cdc.gov/eid/article/20/4/13-1478_article] (где штаммы без пертактина почти полностью вытеснили штаммы с пертактином всего за 4 года).<br>Безпертактиновый штамм более [инвазивный==https://www.ncbi.nlm.nih.gov/pubmed/19579693], чем обычный штамм. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/25301209]."
+        "digest": "Одним из компонентов бесклеточный вакцины является пертактин. Пертактин - это один из белков мембраны коклюшной бактерии. В странах, где используется бесклеточная вакцина, коклюшные бактерии с пертактином заменяются бактериями без пертактина. Вот исследования этого феномена в [Финляндии==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3485885/], [США==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5115783/] [[1]==https://www.ncbi.nlm.nih.gov/pubmed/25301209], [Японии==http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0031985] и [Австралии==https://wwwnc.cdc.gov/eid/article/20/4/13-1478_article] (где штаммы без пертактина почти полностью вытеснили штаммы с пертактином всего за 4 года).<br>Безпертактиновый штамм более [инвазивный==https://www.ncbi.nlm.nih.gov/pubmed/19579693], чем обычный штамм. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/25301209]."
      },
      {
         "num": 31,
@@ -434,12 +435,6 @@
     },
     {
         "num": 46,
-        "info_img": "https://www.cdc.gov/mmwr/preview/mmwrhtml/figures/r704a1f2.gif",
-        "digest": "Похожая картина вырисовывается, если взглянуть на количество случаев коклюша."
-    },
-    {
-        "num": 47,
-"header": "Терапевтическая роль коклюшного токсина",
         "title": "Pertussis toxin-sensitive G-proteins and regulation of blood pressure in the spontaneously hypertensive rat.",
         "link": "https://www.ncbi.nlm.nih.gov/pubmed/10386237",
         "info_type": "article",
@@ -447,22 +442,7 @@
         "info_authors": "Kost",
         "infoID": "10386237",
         "info_place": "Clin Exp Pharmacol Physiol",
-        "digest": "Коклюшный токсин понижает давление у гипертонических крыс."
-},
-{
-"num": 48,
-        "title": "The B-Oligomer of Pertussis Toxin Inhibits Human Immunodeficiency Virus Type 1 Replication at Multiple Stages.",
-        "link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC116391",
-        "info_type": "article",
-        "info_date": "2000",
-        "info_authors": "Alfano",
-        "infoID": "10386237",
-        "info_place": "J Virol",
-        "digest": "Коклюшный токсин предотвращает размножение ВИЧ."
-},
-{
-"num": 49,
-"digest": "Kоклюшный токсин подавляет аутоиммунные реакции:",
+        "digest": "Терапевтическая роль коклюшного токсина:<br>Коклюшный токсин понижает давление у гипертонических крыс.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC116391] сообщается, что коклюшный токсин предотвращает размножение ВИЧ.<br>Kоклюшный токсин подавляет аутоиммунные реакции:",
 "sources_pool": [{
     "title": "[1]",
     "link" : "https://www.ncbi.nlm.nih.gov/pubmed/12429718",
@@ -492,7 +472,7 @@
     }]
     },
     {
-        "num": 50,
+        "num": 47,
         "I_S_codenames": ["DTP vaccine"],
         "digest": "Фильмы и лекции:<br>[DPT Vaccine Roulette==https://www.youtube.com/watch?v=qpUsg4bDH5w] Фильм 1982 года, про вакцину DTP, был показан на NBC. Этот фильм сыграл главную роль в том, что США перешли на бесклеточную вакцину, и в том, что законодательство связанное с прививками было полностью изменено. Сегодня невозможно представить, чтобы такое показали по ТВ.<br>[Dr. Suzanne Humphries==https://www.youtube.com/watch?v=XBhQPpKZIqI]<br>[Dr. Sherri Tenpenny==https://www.youtube.com/watch?v=w1RVMozzDcE]"
     },

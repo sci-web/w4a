@@ -289,6 +289,17 @@
         "digest": "Другой штамм бактерии, который заменяет обычную B. pertussis, это B. holmesii, который вызывает те же симптомы, и от которого прививка [неэффективна==https://wwwnc.cdc.gov/eid/article/18/11/11-1544_article]."
     },
     {
+        "num": 32.1,
+        "title": "Whooping cough and pertussis vaccine: a comparison of risks and benefits in Britain during the period 1968-83.",
+        "link": "https://www.ncbi.nlm.nih.gov/pubmed/3835080",
+        "info_type": "article",
+        "info_date": "1985",
+        "info_authors": "Stewart",
+        "infoID": "3835080",
+        "info_place": "Dev Biol Stand",
+        "digest": "В Британии прививочный охват упал после 1975 года. Госпитализация уменьшилась в 1970-83. Не было зарегистрировано ни одного случая энцефалопатии, повреждения мозга, повреждения легких или смерти в 1975-82.<br>Не обнаружилось свидетельств коллективного иммунитета, достаточного для защиты младенцев.<br>Автор заключает, что риск прививки у проживающих в не нищих районах Британии выше, чем риск коклюша. У проживающих в нищих районах риск коклюша возмножно незначительно выше, но нет никаких свидетельств, что коклюш в них ассоциирован с повышенной смертностью или с хроническими осложнениями."
+    },
+    {
         "num": 33,
         "header": "Безопасность",
         "title": "Delay in diphtheria, pertussis, tetanus vaccination is associated with a reduced risk of childhood asthma.",

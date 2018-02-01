@@ -65,6 +65,12 @@ class DB(object):
     def get_an_intro(self, namespace):
         return app.config['INTROS'].find({"namespace": namespace})
 
+    def get_intros_by_author(self, author):
+        return app.config['INTROS'].find({"analyst": author},{"date":1, "namespace":1}).sort("namespace", 1)
+
+    def get_spaces_by_author(self, author):
+        return app.config['SPACES'].find({"analyst": author},{"date":1, "namespace":1, "title":1, "I_S_codename":1}).sort("date", -1)        
+
     def get_data_search(self, title, released):
         try:
             return app.config['INTROS'].find({

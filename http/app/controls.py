@@ -7,6 +7,9 @@ from flask_login import login_user, logout_user, login_required, current_user
 from .auth import Auth
 from .model import DB
 from .forms import editIntro
+from bson.json_util import dumps
+import json
+from collections import defaultdict
 
 
 def extension_ok(filename, ff):
@@ -51,10 +54,17 @@ def load_user(email):
 @app.route('/editspace/<author>')
 @login_required
 def editspace(author):
-    i_data = DB().get_intros()
-    sform = editIntro()
-    return render_template('form_intro.html', form=g.form, items=g.items, author=author,
-        objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, data=i_data, sform=sform)
+    namespaces = DB().get_intros_by_author(author)
+    spaces = DB().get_spaces_by_author(author)
+    data = json.loads(dumps(spaces))
+    chapters = defaultdict(list)
+    for d in range(0, len(data)):
+        ns = data[d]["namespace"]
+        c_date = datetime.datetime.fromtimestamp( data[d]["date"]['$date'] / 1e3 )
+        ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date.strftime('%d-%m-%Y %H:%M')
+        chapters[ns].append(ch)
+
+    return render_template('cms_start.html', form=g.form, items=g.items, author=author, namespaces=namespaces, chapters=chapters)
 
 
 @app.route('/editspace/intro:<author>', methods=['GET', 'POST'])

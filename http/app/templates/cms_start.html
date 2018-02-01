@@ -4,25 +4,36 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:40px 20px 30px 10px;">
-<h2>Chose a chapter to edit:</h2>
-    {% if chapters %}
-    <div style="margin:0 0 0 10px">
-        {% for ch in chapters %}
-            {{ loop.index }}. <a href="/edit_chapter/{{ ch.namespace }}/{{ ch.I_S_codename }}">{{ ch.I_S_name }}</a><br>
+<div style="margin:50px 20px 30px 10px;" align=left>
+<h1>Edit your space</h1>
+
+{% for ns in namespaces %}
+<h3>for existing namespace</h3>
+<b>{{ ns.namespace }}:</b> <a href="/editspace/content:{{ ns.namespace }}:{{ current_user.author }}">add a chapter</a>
+<p>or
+<div style="margin:-20px 0 0 40px;">
+<h3>choose chapter to edit in <b>{{ ns.namespace }}</b>:</h3>
+    {% if chapters and chapters[ ns.namespace ] %}
+ <div style="display: table;">
+  <div style="display:table-row;">
+    <div style="display:table-cell; width:30px; margin:2px"></div>
+    <div style="display:table-cell; width:300px; margin:2px"><i>chapter</i></div>
+    <div style="display:table-cell; width:200px; margin:2px"><i>added on</i></div>
+  </div>
+        {% for ch in chapters[ ns.namespace ]  %}
+            {% set lst = ch.split('|') %}
+  <div style="display:table-row;">
+    <div style="display:table-cell; width:30px; margin:2px">{{ loop.index }}.</div>
+    <div style="display:table-cell; width:300px; margin:2px"><a href="/editspace/content:{{ ns.namespace }}:{{ current_user.author }}:{{ lst[1] }}">{{ lst[0] }}</a></div>
+    <div style="display:table-cell; width:200px; margin:2px">{{ lst[2] }}</div>
+  </div>
         {% endfor %}
-Or: <a href="/new_chapter/{{ namespace }}">add a chapter</h2>
-    </div>
+ </div>
     {% endif %}
-<h2>Introduce a topic:</h2>
-<form action="/edit/intro/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
-{{ form.hidden_tag() }}
-{{ form.from_url }}
-        <div style="height:60px">
-            <label class="control-label" for="subject"></label>Subject (research title): {{ form.subject }} <font color="red">(*)</font><br>
-            <label class="control-label" for="namespace"></label>Namespace: {{ form.namespace }} <font color="red">(*)</font>
-        </div>
-<button type="submit" class="btn btn-default">Next</button>
-</form>
 </div>
+{% endfor %}
+<br>or
+<h3>start a new namespace of research notes:</h3>
+<a href="/edit/intro:{{ current_user.author }}">create a namespace</a>
+
 {% endblock %}

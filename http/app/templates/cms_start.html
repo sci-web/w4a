@@ -13,8 +13,8 @@
 or <a href="/editspace/intro:{{ ns.namespace }}:{{ current_user.author }}">edit introduction</a>
 <p>or
 <div style="margin:-20px 0 0 40px;">
-<h3>choose chapter to edit in <b>{{ ns.namespace }}</b>:</h3>
     {% if chapters and chapters[ ns.namespace ] %}
+<h3>choose chapter to edit in <b>{{ ns.namespace }}</b>:</h3>
  <div style="display: table;">
   <div style="display:table-row;">
     <div style="display:table-cell; width:30px; margin:2px"></div>
@@ -35,6 +35,6 @@ or <a href="/editspace/intro:{{ ns.namespace }}:{{ current_user.author }}">edit 
 {% endfor %}
 <br>or
 <h3>start a new namespace of research notes:</h3>
-<a href="/edit/intro:{{ current_user.author }}">create a namespace</a>
+<a href="/editspace/intro:0:{{ current_user.author }}">create a namespace</a>
 
 {% endblock %}

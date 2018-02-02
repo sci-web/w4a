@@ -1,12 +1,12 @@
 from app import app, lm
 import re
-import datetime
+from datetime import datetime
 # import xlrd
 from flask import request, redirect, render_template, flash, Response, send_from_directory, url_for, g
 from flask_login import login_user, logout_user, login_required, current_user
 from .auth import Auth
 from .model import DB
-from .forms import editIntro
+from .forms import saveIntro, newIntro, saveContent, newContent
 from bson.json_util import dumps
 import json
 from collections import defaultdict
@@ -60,7 +60,7 @@ def editspace(author):
     chapters = defaultdict(list)
     for d in range(0, len(data)):
         ns = data[d]["namespace"]
-        c_date = datetime.datetime.fromtimestamp( data[d]["date"]['$date'] / 1e3 )
+        c_date = datetime.fromtimestamp( data[d]["date"]['$date'] / 1e3 )
         ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date.strftime('%d-%m-%Y %H:%M')
         chapters[ns].append(ch)
 
@@ -70,19 +70,27 @@ def editspace(author):
 @app.route('/editspace/intro:<namespace>:<author>', methods=['GET', 'POST'])
 @login_required
 def edit_intro(namespace, author):
-    i_data = DB().get_an_intro(namespace)
-    return render_template('form_intro_edit.html', form=g.form, items=i_data)
+    if namespace == "0":
+        return render_template('form_intro.html', form=g.form)
+    else:
+        i_data = DB().get_an_intro(namespace)
+        return render_template('form_intro_edit.html', form=g.form, items=i_data)
 
 
-@app.route('/editspace/save_intro:<author>', methods=['GET', 'POST'])
+@app.route('/editspace/save_intro:<namespace>:<author>', methods=['GET', 'POST'])
 @login_required
-def save_intro(author):
+def save_intro(namespace, author):
     # sp_data = DB().get_intros_by_namespace(namespace)
-    sform = editIntro(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
+    if namespace == "0":
+        sform = newIntro(request.values)
+    else:
+        sform = saveIntro(request.values)
     in_data = {}
-    in_data["date"] = datetime.now()
     in_data["points"] = []
     in_data["refs"] = []
+    error = 0
+    new_namespace = ""
+    # {{ form.hidden_tag() }} must be in template for sform.validate_on_submit() True if fields are ok
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
             f = request.form
@@ -92,15 +100,17 @@ def save_intro(author):
             in_refs_pool = {}
             ep_text = ""
             ep_source = ""
-            error = 0
             for key in f.keys():
                 for value in f.getlist(key):
-                    # print key,":",value
-                    if key == "namespace": in_data["namespace"] = value
-                    i_data = DB().get_an_intro(in_data["namespace"])
-                    if i_data:
-                        error = "This namespace:" + in_data["namespace"] + " already exists!"
-                        break   
+                    print key,":",value
+                    if key == "namespace" and namespace == "0": 
+                        in_data["namespace"] = value              
+                        i_data = DB().get_an_intro(in_data["namespace"])  # before update/insert
+                        if i_data and namespace == 0:
+                            error = "This namespace:" + in_data["namespace"] + " already exists!"
+                            break
+                        else:
+                            new_namespace = in_data["namespace"] 
                     if key == "subject": in_data["subject"] = value
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "ref_intro" and value != ""): in_data["ref_intro"] = value
@@ -215,29 +225,42 @@ def save_intro(author):
                 in_data["refs"] = refs
 
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
-                intro = DB().find_intro_by_author(author, in_data["namespace"])
-                if not intro:
+
+                if namespace == "0":
+                    in_data["date"] = datetime.now()
                     in_data["analyst"] = author
                     DB().insert_an_intro(in_data)
                 else:
-                    DB().update_an_intro(author, in_data["namespace"], in_data)
+                    DB().update_an_intro(author, namespace, in_data)
+            else:
+                flash(error, category='error')    
         else:
             error = "Something wrong with data update!"
         if error == 0:
             flash("Data updated successfully!", category='info')
         else:
             flash(error, category='error')
-    return render_template('form_intro.html', form=g.form, items=g.items, 
-        objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, sform=sform)
+    else:
+        error = "Something wrong with a form or authentification!"
+        flash(error, category='error')                
+    if namespace != "0":
+        i_data = DB().get_an_intro(namespace)  # after update/insert
+        return render_template('form_intro_edit.html', form=g.form, items=i_data)
+    else:
+        if error == 0:
+            i_data = DB().get_an_intro(namespace)
+            return redirect("/editspace/intro:" + new_namespace + ":" + author + "")
+        else:
+            i_data = in_data
+            return render_template('form_intro.html', form=g.form, items=i_data)
 
-
-@app.route('/editspace/content:<namespace>:<author>', methods=['GET', 'POST'])
+@app.route('/editspace/content:<namespace>:<author>:<chapter>', methods=['GET', 'POST'])
 @login_required
-def edit_content(author):
+def save_content(author):
     # sp_data = DB().get_intros_by_namespace(namespace)
-    sform = editContent(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
+    sform = saveContent(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
     in_data = {}
-    in_data["date"] = datetime.datetime.now().strftime('%d-%m-%Y %H:%M')
+    in_data["date"] = datetime.now()
     in_data["points"] = []
     in_data["refs"] = []
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):

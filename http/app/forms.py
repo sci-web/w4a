@@ -37,20 +37,15 @@ class LoginForm(Form):
     password = PasswordField('Password', validators=[DataRequired()])
     from_url = HiddenField('', validators=[DataRequired()])
 
+class saveIntro(Form):
+	subject = StringField('Subject', validators=[DataRequired()])
 
-class editIntro(Form):
+class newIntro(Form):
 	subject = StringField('Subject', validators=[DataRequired()])
 	namespace = StringField('Namespace', validators=[DataRequired()])
-	ep_text = TextAreaField('')
-	ep_source = StringField('')
-	intro = TextAreaField('')
-	ref_header = StringField('')
-	ref_intro = TextAreaField('')
-	summary = TextAreaField('')
 
-class editContent(Form):
+class saveContent(Form):
 	subject = StringField('Title', validators=[DataRequired()])
-	ep_text = TextAreaField('')
-	ep_source = StringField('')
-	intro = TextAreaField('')
-	summary = TextAreaField('')
+
+class newContent(Form):
+	subject = StringField('Title', validators=[DataRequired()])

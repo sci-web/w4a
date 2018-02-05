@@ -9,8 +9,8 @@
 
 {% for ns in namespaces %}
 <h3>for existing namespace</h3>
-<b>{{ ns.namespace }}:</b> <a href="/editspace/content:{{ ns.namespace }}:{{ current_user.author }}">add a chapter</a>
-or <a href="/editspace/intro:{{ ns.namespace }}:{{ current_user.author }}">edit introduction</a>
+<b>{{ ns.namespace }}:</b> <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">add a chapter</a>
+or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit introduction</a>
 <p>or
 <div style="margin:-20px 0 0 40px;">
     {% if chapters and chapters[ ns.namespace ] %}
@@ -25,7 +25,9 @@ or <a href="/editspace/intro:{{ ns.namespace }}:{{ current_user.author }}">edit 
             {% set lst = ch.split('|') %}
   <div style="display:table-row;">
     <div style="display:table-cell; width:30px; margin:2px">{{ loop.index }}.</div>
-    <div style="display:table-cell; width:300px; margin:2px"><a href="/editspace/content:{{ ns.namespace }}:{{ current_user.author }}:{{ lst[1] }}">{{ lst[0] }}</a></div>
+    <div style="display:table-cell; width:300px; margin:2px">
+        <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
+    </div>
     <div style="display:table-cell; width:200px; margin:2px">{{ lst[2] }}</div>
   </div>
         {% endfor %}
@@ -35,6 +37,6 @@ or <a href="/editspace/intro:{{ ns.namespace }}:{{ current_user.author }}">edit 
 {% endfor %}
 <br>or
 <h3>start a new namespace of research notes:</h3>
-<a href="/editspace/intro:0:{{ current_user.author }}">create a namespace</a>
+<a href="/editspace/intro:{{ current_user.author }}:0">create a namespace</a>
 
 {% endblock %}

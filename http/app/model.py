@@ -63,7 +63,10 @@ class DB(object):
         return app.config['INTROS'].find({}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1})
 
     def get_an_intro(self, namespace):
-        return app.config['INTROS'].find({"namespace": namespace})
+        return app.config['INTROS'].find_one({"namespace": namespace})
+
+    def get_a_chapter(self, namespace, chapter):
+        return app.config['SPACES'].find_one({"namespace": namespace, "I_S_codename": chapter})
 
     def get_intros_by_author(self, author):
         return app.config['INTROS'].find({"analyst": author},{"date":1, "namespace":1}).sort("namespace", 1)

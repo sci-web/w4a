@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
-<form action="/editspace/save_intro:0:{{ current_user.author }}" method="POST" name="sform">
+<form action="/editspace/save_intro:{{ current_user.author }}:0" method="POST" name="sform">
 <h1>Edit topic {{ subject }} </h1>
 {{ form.hidden_tag() }}
 <br>
@@ -83,7 +83,9 @@
 <script id="pnt_tmpl" type="x-tmpl-mustache">
     <div style="height:195px; width:1000px;" id="p_{{ num }}">
         <div style="float:left; width:180px">Point #{{ num }}: </div>
-        <div style="float:right; width:820px" class="form-group"><textarea rows=7 cols=97 name=points_{{ num }}></textarea></div>
+        <div style="float:right; width:820px" class="form-group">
+            <textarea rows=7 cols=97 name=points_{{ num }}></textarea>
+        </div>
         <div style="display:cell;margin-left:1010px; width:12px; float:right; position:absolute" id=pcross>
             <a onClick = "javascript:RemoveDiv('#p_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>

@@ -67,9 +67,9 @@ def editspace(author):
     return render_template('cms_start.html', form=g.form, items=g.items, author=author, namespaces=namespaces, chapters=chapters)
 
 
-@app.route('/editspace/intro:<namespace>:<author>', methods=['GET', 'POST'])
+@app.route('/editspace/intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
-def edit_intro(namespace, author):
+def edit_intro(author, namespace):
     if namespace == "0":
         return render_template('form_intro.html', form=g.form)
     else:
@@ -77,9 +77,9 @@ def edit_intro(namespace, author):
         return render_template('form_intro_edit.html', form=g.form, items=i_data)
 
 
-@app.route('/editspace/save_intro:<namespace>:<author>', methods=['GET', 'POST'])
+@app.route('/editspace/save_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
-def save_intro(namespace, author):
+def save_intro(author, namespace):
     # sp_data = DB().get_intros_by_namespace(namespace)
     if namespace == "0":
         sform = newIntro(request.values)
@@ -102,7 +102,7 @@ def save_intro(namespace, author):
             ep_source = ""
             for key in f.keys():
                 for value in f.getlist(key):
-                    print key,":",value
+                    # print key,":",value
                     if key == "namespace" and namespace == "0": 
                         in_data["namespace"] = value              
                         i_data = DB().get_an_intro(in_data["namespace"])  # before update/insert
@@ -254,159 +254,365 @@ def save_intro(namespace, author):
             i_data = in_data
             return render_template('form_intro.html', form=g.form, items=i_data)
 
-@app.route('/editspace/content:<namespace>:<author>:<chapter>', methods=['GET', 'POST'])
+
+@app.route('/editspace/chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @login_required
-def save_content(author):
+def edit_chapter(author, namespace, chapter):
+    if chapter == "0":
+        return render_template('form_chapter.html', form=g.form, namespace=namespace)
+    else:
+        i_data = DB().get_a_chapter(namespace, chapter)
+        return render_template('form_chapter_edit.html', form=g.form, items=i_data, namespace=namespace, chapter=chapter)
+
+
+def value_match_assign(match, field, dhash):
+    if (re.match(match, key) and value != ""):
+        p, r = key.split("_")
+        if (value != ""):
+            try:
+                dhash[r].update({field: value})
+            except:
+                dhash[r] = {field: value}
+    return dhash
+
+@app.route('/editspace/save_chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
+@login_required
+def save_chapter(author):
     # sp_data = DB().get_intros_by_namespace(namespace)
     sform = saveContent(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
     in_data = {}
     in_data["date"] = datetime.now()
     in_data["points"] = []
-    in_data["refs"] = []
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
             f = request.form
             points = {}
-            refs = []
-            in_refs = {}
-            in_refs_pool = {}
+            in_pnts = {}
+            in_imgs_pool = {}
+            in_sources_pool = {}
             ep_text = ""
             ep_source = ""
             error = 0
             for key in f.keys():
                 for value in f.getlist(key):
-                    # print key,":",value
-                    if key == "namespace": in_data["namespace"] = value
-                    if key == "subject": in_data["subject"] = value
+                    in_data["I_S_codename"] = new_chapter
+                    if key == "chapter" and chapter == "0": 
+                        in_data["I_S_codename"] = value              
+                        i_data = DB().get_a_chapter(namespace, in_data["I_S_codename"])  # before update/insert
+                        if i_data and chapter == 0:
+                            error = "This chapter:" + in_data["I_S_codename"] + " already exists!"
+                            break
+                        else:
+                            new_chapter = in_data["I_S_codename"] 
+
+                    if key == "title": in_data["title"] = value
                     if (key == "intro" and value != ""): in_data["intro"] = value
-                    if (key == "ref_intro" and value != ""): in_data["ref_intro"] = value
-                    if (key == "ref_header" and value != ""): in_data["ref_header"] = value
                     if (key == "summary" and value != ""): in_data["summary"] = value
                     if key == "ep_text": ep_text = value
                     if key == "ep_source": ep_source = value
-                    if (re.match("points", key) and value != ""):
+                    if (re.match("point", key) and value != ""):
                         p, k = key.split("_")
                         points[k] = value
-                    if (re.match("refBlockTtl", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):
-                            try:
-                                in_refs[r].update({"ref_title": value})
-                            except:
-                                in_refs[r] = {"ref_title": value}
 
-                    if (re.match("refBlockDigest", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_refs[r].update({"ref_digest": value})
-                            except:
-                                in_refs[r] = {"ref_digest": value}
+                    value_match_assign("pointHeader", "field", in_pnts) 
+                       
+                    # if (re.match("pointHeader", key) and value != ""):
+                    #     p, r = key.split("_")
+                    #     if (value != ""):
+                    #         try:
+                    #             in_pnts[r].update({"header": value})
+                    #         except:
+                    #             in_pnts[r] = {"header": value}
 
-                    if (re.match("refBlockType", key) and value != ""):
+                    if (re.match("pointTitle", key) and value != ""):
                         p, r = key.split("_")
                         if (value != ""):                         
                             try:
-                                in_refs[r].update({"ref_type": value})
+                                in_pnts[r].update({"title": value})
                             except:
-                                in_refs[r] = {"ref_type": value}
+                                in_pnts[r] = {"title": value}
 
-                    if (re.match("linkTitle", key) and value != ""):
+                    if (re.match("pointLink", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"link": value})
+                            except:
+                                in_pnts[r] = {"link": value}
+
+                    if (re.match("pointType", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_type": value})
+                            except:
+                                in_pnts[r] = {"info_type": value}
+
+                    if (re.match("pointPID", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"infoID": value})
+                            except:
+                                in_pnts[r] = {"infoID": value}
+
+                    if (re.match("pointPdate", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_date": value})
+                            except:
+                                in_pnts[r] = {"info_date": value}
+                    if (re.match("pointPauths", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_authors": value})
+                            except:
+                                in_pnts[r] = {"info_authors": value}
+
+                    if (re.match("pointPub", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_place": value})
+                            except:
+                                in_pnts[r] = {"info_place": value}
+
+                    if (re.match("pointGeo", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_geo": value})
+                            except:
+                                in_pnts[r] = {"info_geo": value}
+
+                    if (re.match("pointTags", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                            
+                            lst = value.split(",")
+                            for e in lst:
+                                e.replace(" ", "")                   
+                            try:
+                                in_pnts[r].update({"I_S_codenames": lst})
+                            except:
+                                in_pnts[r] = {"I_S_codenames": lst}
+
+                    if (re.match("pointImage", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_img": value})
+                            except:
+                                in_pnts[r] = {"info_img": value}                            
+
+                    if (re.match("pointIsource", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_imgSource": value})
+                            except:
+                                in_pnts[r] = {"info_imgSource": value}                            
+
+                    if (re.match("pointIdescr", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"info_imgDescr": value})
+                            except:
+                                in_pnts[r] = {"info_imgDescr": value}                            
+
+                    if (re.match("pointDigest", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                         
+                            try:
+                                in_pnts[r].update({"digest": value})
+                            except:
+                                in_pnts[r] = {"digest": value}                            
+
+
+                    if (re.match("imgPoolDescr", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""):                        
                             try:
-                                in_refs_pool[r][l].update({"title": value})
+                                in_imgs_pool[r][l].update({"info_imgDesc": value})
                             except:
                                 try:
-                                    in_refs_pool[r].update({l : {"title": value}})
+                                    in_imgs_pool[r].update({l : {"info_imgDesc": value}})
                                 except:
-                                    in_refs_pool[r] = ({l : {"title": value}})
+                                    in_imgs_pool[r] = ({l : {"info_imgDesc": value}})
 
-                    if (re.match("linkURL", key) and value != ""):
+                    if (re.match("imgPoolLink", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""):                        
                             try:
-                                in_refs_pool[r][l].update({"link": value})
+                                in_imgs_pool[r][l].update({"info_img": value})
                             except:
                                 try:
-                                    in_refs_pool[r].update({l: {"link": value}})
+                                    in_imgs_pool[r].update({l: {"info_img": value}})
                                 except:
-                                    in_refs_pool[r] = ({l : {"link": value}})
+                                    in_imgs_pool[r] = ({l : {"info_img": value}})
 
-                    if (re.match("linkType", key) and value != ""):
+                    if (re.match("imgPoolSrcURL", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""):
                             try:
-                                in_refs_pool[r][l].update({"linktype": value})
+                                in_imgs_pool[r][l].update({"info_imgSource": value})
                             except:
                                 try:
-                                    in_refs_pool[r].update({l : {"linktype": value}})
+                                    in_imgs_pool[r].update({l : {"info_imgSource": value}})
                                 except:
-                                    in_refs_pool[r] = ({l : {"linktype": value}})
+                                    in_imgs_pool[r] = ({l : {"info_imgSource": value}})
 
-                    if (re.match("linkDigest", key) and value != ""):
+                    if (re.match("imgSrcTitle", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_refs_pool[r][l].update({"digest": value})
+                                in_imgs_pool[r][l].update({"info_imgSource_title": value})
                             except:
                                 try:
-                                    in_refs_pool[r].update({l: {"digest": value}})
+                                    in_imgs_pool[r].update({l: {"info_imgSource_title": value}})
                                 except:
-                                    in_refs_pool[r] = ({l : {"digest": value}})
-                    if (re.match("linkAuthor", key) and value != ""):
+                                    in_imgs_pool[r] = ({l : {"info_imgSource_title": value}})
+
+                    if (re.match("srcTitle", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_refs_pool[r][l].update({"author": value})
+                                in_sources_pool[r][l].update({"info_imgSource_title": value})
                             except:
                                 try:
-                                    in_refs_pool[r].update({l: {"author": value}})
+                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
                                 except:
-                                    in_refs_pool[r] = ({l : {"author": value}})
+                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
 
-            for r in in_refs.keys():
-                ref_pool = []
-                for l in in_refs_pool[r].keys():
-                    # print l, in_refs_pool[r][l]
+
+                    if (re.match("srcLink", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""):                        
+                            try:
+                                in_sources_pool[r][l].update({"info_imgDesc": value})
+                            except:
+                                try:
+                                    in_sources_pool[r].update({l : {"info_imgDesc": value}})
+                                except:
+                                    in_sources_pool[r] = ({l : {"info_imgDesc": value}})
+
+                    if (re.match("srcID", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""):                        
+                            try:
+                                in_sources_pool[r][l].update({"info_img": value})
+                            except:
+                                try:
+                                    in_sources_pool[r].update({l: {"info_img": value}})
+                                except:
+                                    in_sources_pool[r] = ({l : {"info_img": value}})
+
+                    if (re.match("srcDate", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""):
+                            try:
+                                in_sources_pool[r][l].update({"info_imgSource": value})
+                            except:
+                                try:
+                                    in_sources_pool[r].update({l : {"info_imgSource": value}})
+                                except:
+                                    in_sources_pool[r] = ({l : {"info_imgSource": value}})
+
+                    if (re.match("srcAuth", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""): 
+                            try:
+                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                            except:
+                                try:
+                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                except:
+                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+
+                    if (re.match("srcPlace", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""): 
+                            try:
+                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                            except:
+                                try:
+                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                except:
+                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+
+                    if (re.match("srcGeo", key) and value != ""):
+                        p, l, r = key.split("_")
+                        if (value != ""): 
+                            try:
+                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                            except:
+                                try:
+                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                except:
+                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+            if error == 0:                
+                for r in in_pnts.keys():
+                    imgs_pool = []
+                    for l in in_imgs_pool[r].keys():
+                        # print l, in_refs_pool[r][l]
+                        try:
+                            imgs_pool.append(in_imgs_pool[r][l])
+                        except:
+                            if len(in_imgs_pool[r][l]) > 0:
+                                imgs_pool = in_imgs_pool[r][l]
                     try:
-                        ref_pool.append(in_refs_pool[r][l])
+                        in_pnts[r].update({"img_pool": imgs_pool})
                     except:
-                        if len(in_refs_pool[r][l]) > 0:
-                            ref_pool = in_refs_pool[r][l]
-                try:
-                    in_refs[r].update({"ref_pool": ref_pool})
-                except:
-                    in_refs[r] = {"ref_pool": ref_pool}
+                        in_pnts[r] = {"img_pool": imgs_pool}
 
-            for n, p in sorted(points.iteritems()):
-                in_data["points"].append({"num": n, "item": p})
+                    src_pool= []
+                    for l in in_sources_pool[r].keys():
+                        # print l, in_refs_pool[r][l]
+                        try:
+                            src_pool.append(in_sources_pool[r][l])
+                        except:
+                            if len(in_imgs_pool[r][l]) > 0:
+                                src_pool = in_sources_pool[r][l]
+                    try:
+                        in_pnts[r].update({"sources_pool": imgs_pool})
+                    except:
+                        in_pnts[r] = {"sources_pool": imgs_pool}
 
-            for n, rf in sorted(in_refs.iteritems()):
-                try:
-                    refs.append(in_refs[n])
-                except:
-                    if (len(in_refs[n])) > 0:
-                        refs = in_refs[n]
-            in_data["refs"] = refs
+                for n, p in sorted(in_pnts.iteritems()):
+                    p.update({"num": n})
+                    in_data["points"].append(p)
 
-            if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
-            intro = DB().find_intro_by_author(author, in_data["namespace"])
-            if not intro:
-                in_data["analyst"] = author
-                DB().insert_an_intro(in_data)
+                if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
+
+                if chapter == "0":
+                    in_data["date"] = datetime.now()
+                    in_data["analyst"] = author
+                    DB().insert_a_chapter(namespace, in_data)
+                else:
+                    DB().update_a_chapter(author, namespace, chapter, in_data)
             else:
-                DB().update_an_intro(author, in_data["namespace"], in_data)
-
+                flash(error, category='error')    
         else:
-            error = 1
-            flash("Something wrong with data update!", category='error')
+            error = "Something wrong with data update!"
         if error == 0:
             flash("Data updated successfully!", category='info')
         else:
-            flash("Something wrong happened!", category='error')
-    return render_template('form_content.html', form=g.form, items=g.items, 
-        objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, sform=sform)
+            flash(error, category='error')
+    else:
+        error = "Something wrong with a form or authentification!"
+        flash(error, category='error')                
+    if chapter != "0":
+        i_data = DB().get_a_chapter(namespace, chapter)  # after update/insert
+        return render_template('form_intro_edit.html', form=g.form, items=i_data)
+    else:
+        if error == 0:
+            i_data = DB().get_an_intro(namespace)
+            return redirect("/editspace/chapter:" + author + ":" + namespace + ":" + new_chapter)
+        else:
+            i_data = in_data
+            return render_template('form_intro.html', form=g.form, items=i_data)
 
 
 

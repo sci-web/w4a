@@ -4,13 +4,19 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:35px 30px 30px 0px;">
-<form action="/edit/content:{{namespace}}:{{ current_user.author }}" method="POST" name="cform" enctype="multipart/form-data">
+<div style="margin:35px 30px 30px 0px;" align=left>
+<form action="/editspace/save_chapter:{{ current_user.author }}:{{ namespace }}:0" method="POST" name="cform" enctype="multipart/form-data">
 <h1>Edit chapter {{ chapter }}</h1>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group">
             <input type="text" placeholder="Title" name=title size=95> <font color="red">(*)</font></div>
+    </div>
+    <br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Alias: </div>
+        <div style="float:right; width:830px;" class="form-group">
+            <input type="text" placeholder="Title" name=chapter size=35> in latin letters <font color="red">(*)</font></div>
     </div>
     <br>
     <div style="height:75px; width:1010px;">
@@ -55,7 +61,7 @@
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Source #{{ num }} title: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="srcTitle_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcTitle_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
@@ -67,25 +73,25 @@
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Source #{{ num }} paper's ID (pubmed/doi): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="srcID_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcID_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Source #{{ num }} date: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="srcDate_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcDate_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Source #{{ num }} authors: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="srcAuth_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcAuth_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Source #{{ num }} place (journal): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="srcPlace_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcPlace_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
 
@@ -106,25 +112,25 @@
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Image #{{ num }} link (URL): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="imgLink_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" placeholder="http://" name="imgPoolLink_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Image #{{ num }} source (URL): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="imgSrcURL_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" placeholder="http://" name="imgPoolSrcURL_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Image #{{ num }} source title: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="imgSrcTitle_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" placeholder="http://" name="imgPoolSrcTitle_{{ num }}_{{ rnum }}" size=75></div>
             </div>
             <br>
             <div style="height:25px; width:940px;">
                 <div style="float:left; width:120px">Image #{{ num }} description: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <textarea rows=2 cols=97 name=imgDescr_{{ num }}_{{ rnum }}></textarea></div>
+                    <textarea rows=2 cols=97 name=imgPoolDescr_{{ num }}_{{ rnum }}></textarea></div>
             </div>
         </div>
     </div>
@@ -145,6 +151,9 @@
             <br>
             <div style="display:inline">Link (to the paper):</div>
             <div style="display:inline"><input type="text" name=pointLink_{{ rnum }} size=95></div>
+            <br>
+            <div style="display:inline">Type (article/media/report):</div>
+            <div style="display:inline"><input type="text" name=pointType_{{ rnum }} size=95></div>
             <br>
             <div style="display:inline">paper's ID (pubmed/doi/PMC id if present):</div>
             <div style="display:inline"><input type="text" name=pointPID_{{ rnum }} size=95></div>

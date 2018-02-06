@@ -468,90 +468,90 @@ def save_chapter(author):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_imgs_pool[r][l].update({"info_imgSource_title": value})
+                                in_imgs_pool[r][l].update({"info_imgTitle": value})
                             except:
                                 try:
-                                    in_imgs_pool[r].update({l: {"info_imgSource_title": value}})
+                                    in_imgs_pool[r].update({l: {"info_imgTitle": value}})
                                 except:
-                                    in_imgs_pool[r] = ({l : {"info_imgSource_title": value}})
+                                    in_imgs_pool[r] = ({l : {"info_imgTitle": value}})
 
                     if (re.match("srcTitle", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                                in_sources_pool[r][l].update({"title": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                    in_sources_pool[r].update({l: {"title": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+                                    in_sources_pool[r] = ({l : {"title": value}})
 
 
                     if (re.match("srcLink", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""):                        
                             try:
-                                in_sources_pool[r][l].update({"info_imgDesc": value})
+                                in_sources_pool[r][l].update({"link": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l : {"info_imgDesc": value}})
+                                    in_sources_pool[r].update({l : {"link": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_imgDesc": value}})
+                                    in_sources_pool[r] = ({l : {"link": value}})
 
                     if (re.match("srcID", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""):                        
                             try:
-                                in_sources_pool[r][l].update({"info_img": value})
+                                in_sources_pool[r][l].update({"infoID": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l: {"info_img": value}})
+                                    in_sources_pool[r].update({l: {"infoID": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_img": value}})
+                                    in_sources_pool[r] = ({l : {"infoID": value}})
 
                     if (re.match("srcDate", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""):
                             try:
-                                in_sources_pool[r][l].update({"info_imgSource": value})
+                                in_sources_pool[r][l].update({"info_date": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l : {"info_imgSource": value}})
+                                    in_sources_pool[r].update({l : {"info_date": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_imgSource": value}})
+                                    in_sources_pool[r] = ({l : {"info_date": value}})
 
                     if (re.match("srcAuth", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                                in_sources_pool[r][l].update({"info_authors": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                    in_sources_pool[r].update({l: {"info_authors": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+                                    in_sources_pool[r] = ({l : {"info_authors": value}})
 
                     if (re.match("srcPlace", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                                in_sources_pool[r][l].update({"info_place": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                    in_sources_pool[r].update({l: {"info_place": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+                                    in_sources_pool[r] = ({l : {"info_place": value}})
 
-                    if (re.match("srcGeo", key) and value != ""):
+                    if (re.match("srcType", key) and value != ""):
                         p, l, r = key.split("_")
                         if (value != ""): 
                             try:
-                                in_sources_pool[r][l].update({"info_imgSource_title": value})
+                                in_sources_pool[r][l].update({"info_type": value})
                             except:
                                 try:
-                                    in_sources_pool[r].update({l: {"info_imgSource_title": value}})
+                                    in_sources_pool[r].update({l: {"info_type": value}})
                                 except:
-                                    in_sources_pool[r] = ({l : {"info_imgSource_title": value}})
+                                    in_sources_pool[r] = ({l : {"info_type": value}})
             if error == 0:                
                 for r in in_pnts.keys():
                     imgs_pool = []

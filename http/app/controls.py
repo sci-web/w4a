@@ -12,10 +12,10 @@ import json
 from collections import defaultdict
 
 
-def extension_ok(filename, ff):
-    """ return whether file's extension is ok or not"""
-    return '.' in filename and \
-           filename.rsplit('.', 1)[1] in app.config[ff]
+# def extension_ok(filename, ff):
+#     """ return whether file's extension is ok or not"""
+#     return '.' in filename and \
+#            filename.rsplit('.', 1)[1] in app.config[ff]
 
 
 def packed(val_dict):

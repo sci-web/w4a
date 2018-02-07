@@ -28,7 +28,7 @@
         <div style="float:left; width:180px">Epigraph text: </div>
         <div style="float:right; width:830px" class="form-group">
             <textarea rows=3 cols=97 name=ep_text>
-{% if items.epigraph and items.epigraph.text %}{{ items.epigraph.text }}{% endif %}
+{% if items.epigraph and items.epigraph.text %}{{ items.epigraph.text | replace("<br>", "\n") }}{% endif %}
             </textarea>
         </div>
     </div>
@@ -44,15 +44,18 @@
     <div style="height:155px; width:1010px;">
         <div style="float:left; width:180px">Introduction: </div>
         <div style="float:right; width:830px" class="form-group">
-            <textarea rows=5 cols=97 name=intro>{{ items.intro }}</textarea>
+            <textarea rows=5 cols=97 name=intro>{{ items.intro | replace("<br>", "\n") }}</textarea>
         </div>
     </div>
     <h3>Points:</h3>
-    <div>
+<div>
     {% set p_num = [1] %}
     {% for p in items.points %}
     <hr size=1 style="width:1100px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0px" align=left>
-        <div style="height:100%; width:1100px;" id="p_{{ p.num }}">
+    <div style="height:100%; width:1100px;" id="p_{{ p_num|join }}">
+            <div style="display:cell;margin-left:1010px; width:12px; float:right; position:absolute" id=pcross>
+                <a onClick = "javascript:RemoveDiv('#p_{{ p_num|join }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+            </div>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px"><b>Point #{{ p_num|join }}</b>:</div>
                 <div style="float:right; width:710px"> </div>
@@ -67,7 +70,8 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">Digest:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <textarea rows=7 cols=97 name=pointDigest_{{ p_num|join }}>{{ p.digest }}</textarea>
+                    <textarea rows=7 cols=97 name=pointDigest_{{ p_num|join }}>{{ p.digest | replace("<br>", "\n") }}
+                    </textarea>
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
@@ -143,11 +147,9 @@
                     <input type="text" name=pointIdescr_{{ p_num|join }} size=95 value="{{ p.info_imgDesc }}">
                 </div>
             </div>
+{% set s_num = [1] %}
 {% if p.sources_pool %}
-            <div style="margin:0 0 0 50px"><h4><u>Sources pool</u>:</h4>
-                <div id="src_target" style="width:1000px;"></div>
-            </div>
-    {% set s_num = [1] %}
+            <div style="margin:0 0 0 50px"><h4><u>Sources pool</u>:</h4></div>
     {% for s in p.sources_pool %}
     <div style="width:1000px;margin:0 0 0 50px" id="srcPool_{{ s_num|join }}">
         <div style="display:cell;margin:5px 0 0 850px; width:12px; float:right; position:absolute" id=scross>
@@ -155,35 +157,35 @@
         </div>
         <hr size=1 style="width:870px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0" align=left>
             <div style="height:25px;">
-                <div style="float:left; width:170px">#{{ s_num|join }} title: </div>
+                <div style="float:left; width:170px">Source #{{ s_num|join }} title: </div>
                 <div style="float:right; width:820px;" class="form-group">
                     <input type="text" name="srcTitle_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.title }}">
                 </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:170px">#{{ s_num|join }} link (URL): </div>
+                <div style="float:left; width:170px">Source #{{ s_num|join }} link (URL): </div>
                 <div style="float:right; width:820px;" class="form-group">
                     <input type="text" name="srcLink_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.link }}">
                 </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:170px">#{{ s_num|join }} paper's ID (pubmed/doi): </div>
+                <div style="float:left; width:170px">Source #{{ s_num|join }} paper's ID (pubmed/doi): </div>
                 <div style="float:right; width:820px;" class="form-group">
                     <input type="text" name="srcID_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.infoID }}">
                 </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:170px">#{{ s_num|join }} date: </div>
+                <div style="float:left; width:170px">Source #{{ s_num|join }} date: </div>
                 <div style="float:right; width:820px;" class="form-group">
                     <input type="text" name="srcDate_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_date }}">
                 </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:170px">#{{ s_num|join }} authors: </div>
+                <div style="float:left; width:170px">Source #{{ s_num|join }} authors: </div>
                 <div style="float:right; width:820px;" class="form-group">
                     <input type="text" name="srcAuth_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_authors }}">
                 </div>
@@ -197,7 +199,7 @@
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:170px">#{{ s_num|join }} type (article/report): </div>
+                <div style="float:left; width:170px">Source #{{ s_num|join }} type (article/report): </div>
                 <div style="float:right; width:820px;" class="form-group">
                     <input type="text" name="srcType_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_type }}">
                 </div>
@@ -206,20 +208,14 @@
     {% if s_num.append(s_num.pop() + 1) %}{% endif %}
     {% endfor %}
 {% endif %}
-    <div style="height:15px; width:810px;" id="src_{{ s_num|join }}_{{ p_num|join }}">
-        <div style="float:left; width:160px;"></div>
-            <div align=right style="float:right; width:650px;margin-top:-10px">
-                <a onClick="loadTmpl('#src_tmpl', '#src_target_{{ p_num|join }}', '#src_{{ s_num|join }}_{{ p_num|join }}', {{ s_num|join }}, 'scross', {{ p_num|join }})"
-                class="linknav pointer">add a {{ s_num|join }}-source to {{ p_num|join }}-point</a>
-            </div>
+        <div id="src_target_{{ p_num|join }}" style="width:1000px;"></div>
+        <div style="height:25px; width:1000px;" id="src_{{ s_num|join }}_{{ p_num|join }}" align=right >
+            <a onClick="loadTmpl('#srcPool_tmpl', '#src_target_{{ p_num|join }}', '#src_{{ s_num|join }}_{{ p_num|join }}', {{ s_num|join }}, 'scross', {{ p_num|join }})"
+            class="linknav pointer">add a {{ s_num|join }} source to {{ p_num|join }}-point</a>
         </div>
-    <div id="src_target_{{ p_num|join }}" style="width:1000px;"></div>
-    <br>
+{% set i_num = [1] %}
 {% if p.img_pool %}
-            <div style="margin:0 0 0 50px"><h4><u>Images pool</u>:</h4>
-                <div id="imgs_target" style="width:1000px;"></div>
-            </div>
-    {% set i_num = [1] %}
+    <div style="margin:0 0 0 50px"><h4><u>Images pool</u>:</h4></div>
     {% for i in p.img_pool %}
     <div style="width:1000px;margin:0 0 0 50px" id="imgPool_{{ i_num|join }}">
         <hr size=1 style="width:870px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0" align=left>
@@ -250,7 +246,8 @@
         <div style="height:25px;">
             <div style="float:left; width:180px">Image #{{ i_num|join }} description: </div>
             <div style="float:right; width:800px;" class="form-group">
-                <textarea rows=2 cols=97 name=imgDescr_{{ i_num|join }}_{{ p_num|join }}>{{ i.info_imgDesc }}
+                <textarea rows=2 cols=97 name=imgDescr_{{ i_num|join }}_{{ p_num|join }}>
+                {{ i.info_imgDesc | replace("<br>", "\n") }}
                 </textarea>
             </div>
         </div>
@@ -258,20 +255,19 @@
     {% if i_num.append(i_num.pop() + 1) %}{% endif %}
     {% endfor %}
 {% endif %}
-    <div style="height:15px; width:810px;" id="img_{{ i_num|join }}_{{ p_num|join }}">
-        <div style="float:left; width:160px;"></div>
-            <div align=right style="float:right; width:650px;margin-top:-10px">
-                <a onClick="loadTmpl('#img_tmpl', '#img_target_{{ p_num|join }}', '#img_{{ i_num|join }}_{{ p_num|join }}', {{ i_num|join }}, 'icross', {{ p_num|join }})"
-                class="linknav pointer">add a {{ i_num|join }}-image pool to {{ p_num|join }}-point</a>
-            </div>
-        </div>
         <div id="img_target_{{ p_num|join }}" style="width:1000px;"></div>
+        <div style="height:25px; width:1000px;" id="img_{{ i_num|join }}_{{ p_num|join }}" align=right >
+            <a onClick="loadTmpl('#imgPool_tmpl', '#img_target_{{ p_num|join }}', '#img_{{ i_num|join }}_{{ p_num|join }}', {{ i_num|join }}, 'icross', {{ p_num|join }})"
+            class="linknav pointer">add a {{ i_num|join }} image pool to {{ p_num|join }}-point</a>
+        </div>
+    <div id="pnt_target_{{ p_num|join }}" style="width:1100px;"></div>
+    <div style="height:25px; width:1100px;" id="l_{{ p_num|join }}" align="right">
+        <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target_{{ p_num|join }}', '#l_{{ p_num|join }}', {{ p_num|join }}, 'pcross')" class="linknav pointer">append another point to {{ p_num|join }} point ↑</a>
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
-    </div>
+</div>
 
-    <div id="pnt_target" style="width:1010px;"></div>
     <br>
     <div style="height:175px; width:1000px;">
         <div style="float:left; width:180px">Summary: </div>
@@ -289,59 +285,79 @@
 </div>
 {% raw %}
 <script id="srcPool_tmpl" type="x-tmpl-mustache">
-    <div style="width:880px;height:100%" id="srcPool_{{ num }}">
-        <div style="display:cell;margin:5px 0 0 850px; width:12px; float:right; position:absolute" id=lcross>
-            <a onClick = "javascript:RemoveDiv('#srcPool_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+    <div style="width:1050px;margin:5px 0 0 50px;" id="srcPool_{{ num }}">
+        <hr size=1 style="width:950px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 20px 0" align=left>
+        <div style="display:cell;margin:-10px 0 0 910px; width:12px; float:right; position:absolute" id=scross>
+        <a onClick = "RemoveDiv(
+        '#srcPool_{{ num }}', {{ num }}, {{ rnum }}, '#srcLink_tmpl', '#srcPool_target_{{ rnum }}','#src_{{ num }}_{{ rnum }}'
+        )" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
-        <hr size=1 style="width:94%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 40px" align=left>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} title: </div>
+                <div style="float:left; width:220px">Source #{{ a2 }} title: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name="srcTitle_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcTitle_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} link (URL): </div>
+                <div style="float:left; width:220px">Source #{{ a2 }} link (URL): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" placeholder="http://" name="srcLink_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcLink_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} paper's ID (pubmed/doi): </div>
+                <div style="float:left; width:220px">Source #{{ a2 }} paper's ID (pubmed/doi): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name="srcID_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcID_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} date: </div>
+                <div style="float:left; width:220px">Source #{{ a2 }} date: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name="srcDate_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcDate_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} authors: </div>
+                <div style="float:left; width:220px">Source #{{ a2 }} authors: </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name="srcAuth_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcAuth_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} place (journal): </div>
+                <div style="float:left; width:220px"> Source #{{ a2 }} place (journal): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name="srcPlace_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcPlace_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
             <br>
             <div style="height:25px;">
-                <div style="float:left; width:120px">#{{ num }} geo (country/city): </div>
+                <div style="float:left; width:220px">Source #{{ a2 }} type (article/report): </div>
                 <div style="float:right; width:820px;" class="form-group">
-                    <input type="text" name="srcGeo_{{ num }}_{{ rnum }}" size=75></div>
+                    <input type="text" name="srcType_{{ num }}_{{ rnum }}" size=75>
+                </div>
             </div>
+        <br>
+        <div style="width:900px;" id="src_{{ num }}_{{ rnum }}">
+            <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
         </div>
     </div>
+    <div id="srcPool_target_{{ rnum }}" style="width:1000px;"></div>
 </script>
+
+<script id="srcLink_tmpl" type="x-tmpl-mustache">
+        <div style="height:30px; width:900px;" id="src_{{ num }}_{{ rnum }}">
+            <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
+        </div>
+</script>
+
 <script id="imgPool_tmpl" type="x-tmpl-mustache">
-    <div style="width:880px;height:100%" id="imgPool_{{ num }}">
+    <div style="width:880px;" id="imgPool_{{ num }}">
         <div style="display:cell;margin:5px 0 0 850px; width:12px; float:right; position:absolute" id=lcross>
-            <a onClick = "javascript:RemoveDiv('#imgPool_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        <a onClick = "RemoveDiv('#imgPool_{{ num }}', {{ num }}, {{ rnum }}, '#imgLink_tmpl', '#imgPool_target_{{ rnum }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <hr size=1 style="width:94%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 40px" align=left>
             <div style="height:25px;">
@@ -371,96 +387,133 @@
     </div>
 </script>
 <script id="pnt_tmpl" type="x-tmpl-mustache">
-    <div style="height:195px; width:1000px;" id="pnt_{{ rnum }}">
+    <div style="height:100%; width:1100px;" id="pnt_{{ rnum }}">
+    <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>
         <div style="display:cell;margin-left:960px; width:12px; float:right; position:absolute" id=pcross>
             <a onClick = "javascript:RemoveDiv('#pnt_{{ rnum }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
-        <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>
-        <div style="float:left; width:30px">Point #{{ rnum }}: </div>
-        <div style="float:right; width:970px" class="form-group">
-            <div style="">Header (of next point(s)):</div>
-            <div style=""><input type="text" name=pointHeader_{{ rnum }} size=95></div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px"><b>Point #{{ rnum }} to {{ a2 }}</b>:</div>
+                <div style="float:right; width:710px"> </div>
+            </div>
             <br>
-            <div style="">Title (paper's title):</div>
-            <div style=""><input type="text" name=pointTitle_{{ rnum }} size=95></div>
-            <br>
-            <div style="">Link (to the paper):</div>
-            <div style=""><input type="text" name=pointLink_{{ rnum }} size=95></div>
-            <br>
-            <div style="">Type (article/media/report):</div>
-            <div style=""><input type="text" name=pointType_{{ rnum }} size=95></div>
-            <br>
-            <div style="">paper's ID (pubmed/doi/PMC id if present):</div>
-            <div style=""><input type="text" name=pointPID_{{ rnum }} size=95></div>
-            <br>
-            <div style="">paper's date:</div>
-            <div style=""><input type="text" name=pointPdate_{{ rnum }} size=95></div>
-            <br>
-            <div style="">paper's authors:</div>
-            <div style=""><input type="text" name=pointPauths_{{ rnum }} size=95></div>
-            <br>
-            <div style="">publication place:</div>
-            <div style=""><input type="text" name=pointPub_{{ rnum }} size=95></div>
-            <br>
-            <div style="">geo location:</div>
-            <div style=""><input type="text" name=pointGeo_{{ rnum }} size=95></div>
-            <br>
-            <div style="">tags:</div>
-            <div style=""><input type="text" name=pointTags_{{ rnum }} size=95></div>
-            <br>
-            <div style="">image:</div>
-            <div style=""><input type="text" name=pointImage_{{ rnum }} size=95></div>
-            <br>
-            <div style="">image source: (link)</div>
-            <div style=""><input type="text" name=pointIsource_{{ rnum }} size=95></div>
-            <br>
-            <div style="">image description:</div>
-            <div style=""><input type="text" name=pointIdescr_{{ rnum }} size=95></div>
-            <br>
-            <div style="">Digest:</div>
-            <div style=""><textarea rows=7 cols=97 name=pointDigest_{{ rnum }}></textarea></div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Header (of next point(s)):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointHeader_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Digest:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <textarea rows=7 cols=97 name=pointDigest_{{ rnum }}></textarea>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Title (paper's title):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointTitle_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Link (to the paper):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointLink_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Type (article/media/report):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointType_{{ rnum }} size=35>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's ID (pubmed/doi/PMC):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPID_{{ rnum }} size=8>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's date:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPdate_{{ rnum }} size=8>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's authors:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPauths_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">publication place (journal/channel):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPub_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">geo location:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointGeo_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">tags:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointTags_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointImage_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image source: (link)</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointIsource_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image description:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointIdescr_{{ rnum }} size=95>
+                </div>
+            </div>
 
             <div id="imgPool_target_{{ rnum }}" style="width:1000px;"></div>
-            <div style="height:15px; width:710px;" id="img_{{ num }}_{{ rnum }}">
-                <div style="float:left; width:160px;"></div>
-                    <div align=right style="float:right; width:650px;margin-top:-10px">
-                    <a onClick="loadTmpl('#imgPool_tmpl', '#imgPool_target_{{ rnum }}', '#img_{{ num }}_{{ rnum }}', {{ num }}, 'icross', {{ rnum }})"
-                            class="linknav pointer">add one more {{ num }}-image to {{ rnum }}-point</a>
-                    </div>
+            <div style="height:25px; width:900px;" id="img_{{ num }}_{{ rnum }}" align=right >
+                <a onClick="loadTmpl('#imgPool_tmpl', '#imgPool_target_{{ rnum }}', '#img_{{ num }}_{{ rnum }}', {{ num }}, 'icross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-image to {{ rnum }}-point</a>
             </div>
-
             <div id="srcPool_target_{{ rnum }}" style="width:1000px;"></div>
-            <div style="height:15px; width:710px;" id="src_{{ num }}_{{ rnum }}">
-                <div style="float:left; width:160px;"></div>
-                    <div align=right style="float:right; width:650px;margin-top:-10px">
-                    <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})"
-                            class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
-                    </div>
+            <div style="height:25px; width:900px;" id="src_{{ num }}_{{ rnum }}" align=right >
+                <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
             </div>
         </div>
-        <div style="height:25px; width:980px;" id="p_{{ rnum }}">
-            <div style="float:left; width:180px"></div>
-            <div align="right" style="float:right; width:800px" id="p_{{ rnum }}">
-                <a onClick="loadTmpl('#pnt_tmpl', '#pnt_{{ rnum }}', '#p_{{ rnum }}', 0, 'pcross', {{ rnum }})" class="linknav pointer">add point</a>
-            </div>
-        </div>
-    </div>
 </script>
 {% endraw %}
 <script>
-function RemoveDiv(div) {
+function RemoveDiv(div, num, rnum, thtml, target, pdiv) {
     $( div ).remove();
+    $( pdiv ).remove();
+    template = $(thtml).html();
+    num = num - 1;
+    $(target).append(Mustache.render(template, {num: num, rnum: rnum}));
 }
 function loadTmpl(thtml, target, div, cnt, id, rcnt) {
+    a2 = cnt // appeded to this item
     if (rcnt == 0 || id == 'pcross') {
         rcnt = $("div[id^=pnt_]").length + 1;
         cnt = 0
     }
-    $( div ).remove();
+    if (id != 'pcross') {
+        $( div ).remove()
+    }
     cnt += 1;
     template = $(thtml).html();
     Mustache.parse(template);
-    $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt}));
+    $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt, a2: a2}));
 }
 </script>
 {% endblock %}

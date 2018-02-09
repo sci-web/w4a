@@ -126,6 +126,7 @@
         "infoID": "23517454",
         "info_place": "Clin Microbiol Infect",
         "info_geo": "France",
+        "I_S_codenames": ["physicians", "MMR"],
         "digest": "13% врачей не считают корь опасной болезнью. 12% врачей считают вторую дозу MMR бесполезной.<br>33% врачей не считают, что прививка MMR должна быть обязательной для детей до 2-х лет. (Франция)"
     },
     {
@@ -151,7 +152,7 @@
         "infoID": "PMC4514208",
         "info_place": "Hum Vaccin Immunother",
         "info_geo": "Italy",
-        "I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+        "I_S_codenames": ["physicians", "nurses", "influeza_vaccine"],
         "digest": "Работники системы здравоохранения сопротивляются прививкам от гриппа, несмотря на десять лет усилий, направленных на повышение уровня вакцинации. Лишь 30% врачей, 11% медсестер и 9% клинического персонала привились от гриппа. (Италия)"
     },
     {
@@ -164,7 +165,7 @@
         "infoID": "22773657",
         "info_place": "Occup Med Lond",
         "info_geo": "UK",
-        "I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+        "I_S_codenames": ["physicians", "nurses", "influeza_vaccine"],
         "digest": "41% работников системы здравоохранения отказались вакцинироваться от свиного гриппа во время пандемии 2009 года. Они считали, что вакцина неэффективна, и нее есть побочные эффекты, и вообще, инфекция эта обычно легко проходит.<br>57% работников системы здравоохранения отказались вакцинироваться от обычного гриппа. (Лондон, Великобритания)"
     },
     {
@@ -177,7 +178,7 @@
         "infoID": "20418403",
         "info_place": "Occup Med Lond",
         "info_geo": "China",
-        "I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+        "I_S_codenames": ["physicians", "nurses", "influeza_vaccine"],
         "digest": "Лишь 13% врачей и 21% медсестер прививаются от гриппа.<br>40% работников здравоохранения считают, что прививка от гриппа может привести к заболеванию гриппом. (Пекин, Китай)"
     },
     {
@@ -190,7 +191,7 @@
         "infoID": "20471438",
         "info_place": "Vaccine",
         "info_geo": "Spain",
-        "I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+        "I_S_codenames": ["physicians", "nurses", "influeza_vaccine"],
         "digest": "Более половины работников здравоохранения отказались прививаться от гриппа и лишь 16.5% привились от свиного гриппа во время \"пандемии\" 2009-го года. Они сомневались в эффективности прививки и боялись побочных эффектов. (Мадрид, Испания)"
     },
     {
@@ -203,7 +204,7 @@
         "infoID": "19139807",
         "info_place": "Infection",
         "info_geo": "Germany",
-        "I_S_codenames": ["physicians", "nurses", "influeza vaccine"],
+        "I_S_codenames": ["physicians", "nurses", "influeza_vaccine"],
         "digest": "Более 20 лет немецких работников здравоохранения уговаривают прививаться от гриппа, но лишь 39% врачей и 17% медсестер прививаются. Они опасаются побочных эффектов, считают, что прививка может привести к болезни, и не верят в ее эффективность. (Берлин, Германия)"
     },
     {
@@ -216,7 +217,7 @@
         "infoID": "19556035",
         "info_place": "Am J Infect Control",
         "info_geo": "US",
-        "I_S_codenames": ["nurses", "influeza vaccine"],
+        "I_S_codenames": ["nurses", "influeza_vaccine"],
         "digest": "41% медсестер не привились от гриппа. Они опасались побочных эффектов, считали, что риск заразиться низкий, и вообще, не считали эту прививку эффективной. (США)"
     },
     {
@@ -229,7 +230,7 @@
         "infoID": "28375808",
         "info_place": "J Health Commun",
         "info_geo": "US",
-        "I_S_codenames": ["nurses", "influeza vaccine"],
+        "I_S_codenames": ["nurses", "influeza_vaccine"],
         "digest": "Швейцарские медсестры скептически относятся к инфекционным заболеваниям и к вакцине от гриппа.<br>Вспышки заболеваний, которые оказываются каждый раз менее опасными, чем объявлено органами общественного здравоохранения и СМИ, снижают доверие общества к достоверности экспертных источников информации. Конфликт интересов между общественными организациями и частными корпорациями также снижает доверие общественности."
     },
     {
@@ -237,12 +238,16 @@
         "digest": "Та же история повторяется в [Канаде==https://www.ncbi.nlm.nih.gov/pubmed/18448210], [Бразилии==https://www.ncbi.nlm.nih.gov/pubmed/17276792], [Франции==https://www.ncbi.nlm.nih.gov/pubmed/23116695] [[1]==https://www.ncbi.nlm.nih.gov/pubmed/27919630] и во всем остальном мире [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19467744], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/16804657]. Врачи и медсестры во всех странах отказываются прививаться от гриппа. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/21956456]"
     },
     {
-        "num": 24,
-        "digest": "Сколько не толкуй врачам и медсестрам, что все прививки безопасны и эффективны, далеко не все в это верят.<br>Научные данные свидетельствуют о том, что медицинский консенсус о безопасности и эффективности прививок - это миф."
+        "num": 24, 
+        "digest": "Лекции:<br>[Daniel Neides, MD - A Doctor's Perspective==https://www.youtube.com/watch?v=vMJ6AaugP5w]"
     },
     {
         "num": 25,
         "header": "Разное",
         "digest": "Австралийские врачи, которые [помогают==https://www.facebook.com/9NewsMelbourne/videos/1886631838267135/] своим пациентам отказываться от прививок [преследуются==http://www.abc.net.au/news/2017-08-24/melbourne-doctors-investigated-over-anti-vaccination-allegations/8837554] законом. [Еще==https://www.facebook.com/iwakeupwithtoday/videos/1711307558903902/].<br>Врачи в Индии, которые заказывают много вакцин, [получают==http://economictimes.indiatimes.com/industry/healthcare/biotech/pharmaceuticals/pharma-firm-lures-doctors-with-gold-coins-to-push-its-vaccines/articleshow/56700011.cms] подарки от фармацевтической компании."
+    }
+    {
+        "num": 26,
+        "digest": "Сколько не толкуй врачам и медсестрам, что все прививки безопасны и эффективны, далеко не все в это верят.<br>Научные данные свидетельствуют о том, что медицинский консенсус о безопасности и эффективности прививок - это миф."
     }]
 }

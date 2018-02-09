@@ -113,13 +113,14 @@ def browse_geo(geo):
 def show_intro(namespace):
     i_data = DB().get_an_intro(namespace)
     data = json.loads(dumps(i_data))
-    f_date = datetime.datetime.fromtimestamp( data[0]["date"]['$date'] / 1e3 )
-    data[0]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
+    print 
+    f_date = datetime.datetime.fromtimestamp( data["date"]['$date'] / 1e3 )
+    data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     if 'div' in request.args:
         return jsonify( {'data': render_template('intro_div.html', idata=data, chapters=g.chapters)} )
     else:
         return render_template('intro.html', idata=data, form=g.form, 
-            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=data[0]["subject"])
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=data["subject"])
 
 
 @app.route('/chapters/<namespace>',methods=['GET','POST'])

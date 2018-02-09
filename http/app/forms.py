@@ -44,8 +44,9 @@ class newIntro(Form):
 	subject = StringField('Subject', validators=[DataRequired()])
 	namespace = StringField('Namespace', validators=[DataRequired()])
 
-class saveContent(Form):
-	subject = StringField('Title', validators=[DataRequired()])
+class saveChapter(Form):
+	title = StringField('Title', validators=[DataRequired()])
 
-class newContent(Form):
-	subject = StringField('Title', validators=[DataRequired()])
+class newChapter(Form):
+	title = StringField('Title', validators=[DataRequired()])
+	chapter = StringField('Namespace', validators=[DataRequired()])

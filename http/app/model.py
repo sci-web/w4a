@@ -93,3 +93,9 @@ class DB(object):
         
     def update_an_intro(self, author, namespace, data):
         app.config['INTROS'].update_one({"analyst": author, "namespace": namespace}, {'$set': data})
+
+    def insert_a_chapter(self, data):
+        app.config['SPACES'].insert_one(data)
+        
+    def update_a_chapter(self, author, namespace, chapter, data):
+        app.config['SPACES'].update_one({"analyst": author, "namespace": namespace, "I_S_codename":chapter}, {'$set': data})

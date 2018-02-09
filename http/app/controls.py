@@ -6,7 +6,7 @@ from flask import request, redirect, render_template, flash, Response, send_from
 from flask_login import login_user, logout_user, login_required, current_user
 from .auth import Auth
 from .model import DB
-from .forms import saveIntro, newIntro, saveContent, newContent
+from .forms import saveIntro, newIntro, saveChapter, newChapter
 from bson.json_util import dumps
 import json
 from collections import defaultdict
@@ -248,8 +248,7 @@ def save_intro(author, namespace):
         return render_template('form_intro_edit.html', form=g.form, items=i_data)
     else:
         if error == 0:
-            i_data = DB().get_an_intro(namespace)
-            return redirect("/editspace/intro:" + new_namespace + ":" + author + "")
+            return redirect("/editspace/intro:" + author + ":" + new_namespace + "")
         else:
             i_data = in_data
             return render_template('form_intro.html', form=g.form, items=i_data)
@@ -265,7 +264,7 @@ def edit_chapter(author, namespace, chapter):
         return render_template('form_chapter_edit.html', form=g.form, items=i_data, namespace=namespace, chapter=chapter)
 
 
-def value_match_assign(match, field, dhash):
+def value_match_assign(match, field, key, value, dhash):
     if (re.match(match, key) and value != ""):
         p, r = key.split("_")
         if (value != ""):
@@ -277,9 +276,11 @@ def value_match_assign(match, field, dhash):
 
 @app.route('/editspace/save_chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @login_required
-def save_chapter(author):
-    # sp_data = DB().get_intros_by_namespace(namespace)
-    sform = saveContent(request.values) #, namespace=sp_data["namespace"])  # keep defaul values here to see updated results on the edit page
+def save_chapter(author, namespace, chapter):
+    if chapter == "0":
+        sform = newChapter(request.values)
+    else:
+        sform = saveChapter(request.values)
     in_data = {}
     in_data["date"] = datetime.now()
     in_data["points"] = []
@@ -295,10 +296,9 @@ def save_chapter(author):
             error = 0
             for key in f.keys():
                 for value in f.getlist(key):
-                    in_data["I_S_codename"] = new_chapter
                     if key == "chapter" and chapter == "0": 
                         in_data["I_S_codename"] = value              
-                        i_data = DB().get_a_chapter(namespace, in_data["I_S_codename"])  # before update/insert
+                        i_data = DB().get_a_chapter(namespace, value)  # before update/insert
                         if i_data and chapter == 0:
                             error = "This chapter:" + in_data["I_S_codename"] + " already exists!"
                             break
@@ -314,7 +314,7 @@ def save_chapter(author):
                         p, k = key.split("_")
                         points[k] = value
 
-                    value_match_assign("pointHeader", "field", in_pnts) 
+                    value_match_assign("pointHeader", "heaeder", key, value, in_pnts) 
                        
                     # if (re.match("pointHeader", key) and value != ""):
                     #     p, r = key.split("_")
@@ -555,30 +555,42 @@ def save_chapter(author):
             if error == 0:                
                 for r in in_pnts.keys():
                     imgs_pool = []
-                    for l in in_imgs_pool[r].keys():
-                        # print l, in_refs_pool[r][l]
-                        try:
-                            imgs_pool.append(in_imgs_pool[r][l])
-                        except:
-                            if len(in_imgs_pool[r][l]) > 0:
-                                imgs_pool = in_imgs_pool[r][l]
+                    is_i_pool = 1
                     try:
-                        in_pnts[r].update({"img_pool": imgs_pool})
+                        in_imgs_pool[r].keys()
                     except:
-                        in_pnts[r] = {"img_pool": imgs_pool}
+                        is_i_pool = 0
+                    if is_i_pool == 1:
+                        for l in in_imgs_pool[r].keys():
+                            # print l, in_refs_pool[r][l]
+                            try:
+                                imgs_pool.append(in_imgs_pool[r][l])
+                            except:
+                                if len(in_imgs_pool[r][l]) > 0:
+                                    imgs_pool = in_imgs_pool[r][l]
+                        try:
+                            in_pnts[r].update({"img_pool": imgs_pool})
+                        except:
+                            in_pnts[r] = {"img_pool": imgs_pool}
 
                     src_pool= []
-                    for l in in_sources_pool[r].keys():
-                        # print l, in_refs_pool[r][l]
-                        try:
-                            src_pool.append(in_sources_pool[r][l])
-                        except:
-                            if len(in_imgs_pool[r][l]) > 0:
-                                src_pool = in_sources_pool[r][l]
+                    is_s_pool = 1
                     try:
-                        in_pnts[r].update({"sources_pool": imgs_pool})
+                        in_sources_pool[r].keys()
                     except:
-                        in_pnts[r] = {"sources_pool": imgs_pool}
+                        is_s_pool = 0
+                    if is_s_pool == 1:
+                        for l in in_sources_pool[r].keys():
+                            # print l, in_refs_pool[r][l]
+                            try:
+                                src_pool.append(in_sources_pool[r][l])
+                            except:
+                                if len(in_imgs_pool[r][l]) > 0:
+                                    src_pool = in_sources_pool[r][l]
+                        try:
+                            in_pnts[r].update({"sources_pool": imgs_pool})
+                        except:
+                            in_pnts[r] = {"sources_pool": imgs_pool}
 
                 for n, p in sorted(in_pnts.iteritems()):
                     p.update({"num": n})
@@ -589,7 +601,8 @@ def save_chapter(author):
                 if chapter == "0":
                     in_data["date"] = datetime.now()
                     in_data["analyst"] = author
-                    DB().insert_a_chapter(namespace, in_data)
+                    in_data["namespace"] = namespace 
+                    DB().insert_a_chapter(in_data)
                 else:
                     DB().update_a_chapter(author, namespace, chapter, in_data)
             else:
@@ -608,11 +621,10 @@ def save_chapter(author):
         return render_template('form_intro_edit.html', form=g.form, items=i_data)
     else:
         if error == 0:
-            i_data = DB().get_an_intro(namespace)
             return redirect("/editspace/chapter:" + author + ":" + namespace + ":" + new_chapter)
         else:
             i_data = in_data
-            return render_template('form_intro.html', form=g.form, items=i_data)
+            return render_template('form_chapter.html', form=g.form, items=i_data, namespace=namespace)
 
 
 

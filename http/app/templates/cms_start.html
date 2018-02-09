@@ -11,9 +11,9 @@
 <h3>for existing namespace</h3>
 <b>{{ ns.namespace }}:</b> <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">add a chapter</a>
 or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit introduction</a>
-<p>or
 <div style="margin:-20px 0 0 40px;">
     {% if chapters and chapters[ ns.namespace ] %}
+    <p>or
 <h3>choose chapter to edit in <b>{{ ns.namespace }}</b>:</h3>
  <div style="display: table;">
   <div style="display:table-row;">

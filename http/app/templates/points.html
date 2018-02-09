@@ -1,12 +1,12 @@
   <ol>
-    {% for pnt in entry.points %}
+    {% for pnt in idata.points %}
         <li style="margin:10px 15px 0 -20px; text-align:justify">{{ pnt.item | rehref | safe  }}
     {% endfor %}
   </ol>
     <div style="margin:1%" align=left>
-    <h3>{{ entry.ref_header }}</h3>
-    <p style="text-align:justify">{{ entry.ref_intro | safe }}
-        {% for item in entry.refs %}
+    <h3>{{ idata.ref_header }}</h3>
+    <p style="text-align:justify">{{ idata.ref_intro | safe }}
+        {% for item in idata.refs %}
             <h4>{{ item.ref_title }}</h4>
             {{ item.ref_digest | rehref | safe  }}
             <ol>
@@ -19,7 +19,7 @@
 
     </div>
     <div style="margin:10px 2% 10px 2%; text-align:justify">
-    {{ entry.summary | rehref | safe  }}
+    {{ idata.summary | rehref | safe  }}
     </div>
     <div style="margin:10px 2% 10px 2%; text-align:justify">
     {% include "bottom_nav.html" %}

@@ -51,6 +51,12 @@ def load_user(email):
     return Auth(u['email'], u['access'], u['author'])
 
 
+@app.route('/profile/<author>')
+@login_required
+def profile(author):
+    return render_template('profile.html', form=g.form, items=g.items)
+
+
 @app.route('/editspace/<author>')
 @login_required
 def editspace(author):
@@ -75,6 +81,30 @@ def edit_intro(author, namespace):
     else:
         i_data = DB().get_an_intro(namespace)
         return render_template('form_intro_edit.html', form=g.form, items=i_data)
+
+
+def value_match_assign(match, field, key, value, dhash):
+    if (re.match(match, key) and value != ""):
+        p, r = key.split("_")
+        if (value != ""):
+            try:
+                dhash[r].update({field: value})
+            except:
+                dhash[r] = {field: value}
+    return dhash
+
+def nest_value_match_assign(match, field, key, value, dhash):
+    if (re.match(match, key) and value != ""):
+        p, l, r = key.split("_")
+        if (value != ""):                        
+            try:
+                dhash[r][l].update({field: value})
+            except:
+                try:
+                    dhash[r].update({l : {field: value}})
+                except:
+                    dhash[r] = ({l : {field: value}})
+    return dhash
 
 
 @app.route('/editspace/save_intro:<author>:<namespace>', methods=['GET', 'POST'])
@@ -121,83 +151,16 @@ def save_intro(author, namespace):
                     if (re.match("points", key) and value != ""):
                         p, k = key.split("_")
                         points[k] = value
-                    if (re.match("refBlockTtl", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):
-                            try:
-                                in_refs[r].update({"ref_title": value})
-                            except:
-                                in_refs[r] = {"ref_title": value}
 
-                    if (re.match("refBlockDigest", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_refs[r].update({"ref_digest": value})
-                            except:
-                                in_refs[r] = {"ref_digest": value}
+                    in_refs = value_match_assign("refBlockTtl", "ref_title", key, value, in_refs)
+                    in_refs = value_match_assign("refBlockDigest", "ref_digest", key, value, in_refs)
+                    in_refs = value_match_assign("refBlockType", "ref_type", key, value, in_refs)
+                    in_refs_pool = nest_value_match_assign("linkTitle", "title", key, value, in_refs_pool)
+                    in_refs_pool = nest_value_match_assign("linkURL", "link", key, value, in_refs_pool)
+                    in_refs_pool = nest_value_match_assign("linkType", "linktype", key, value, in_refs_pool)
+                    in_refs_pool = nest_value_match_assign("linkDigest", "digest", key, value, in_refs_pool)
+                    in_refs_pool = nest_value_match_assign("linkAuthor", "author", key, value, in_refs_pool)
 
-                    if (re.match("refBlockType", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_refs[r].update({"ref_type": value})
-                            except:
-                                in_refs[r] = {"ref_type": value}
-
-                    if (re.match("linkTitle", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):                        
-                            try:
-                                in_refs_pool[r][l].update({"title": value})
-                            except:
-                                try:
-                                    in_refs_pool[r].update({l : {"title": value}})
-                                except:
-                                    in_refs_pool[r] = ({l : {"title": value}})
-
-                    if (re.match("linkURL", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):                        
-                            try:
-                                in_refs_pool[r][l].update({"link": value})
-                            except:
-                                try:
-                                    in_refs_pool[r].update({l: {"link": value}})
-                                except:
-                                    in_refs_pool[r] = ({l : {"link": value}})
-
-                    if (re.match("linkType", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):
-                            try:
-                                in_refs_pool[r][l].update({"linktype": value})
-                            except:
-                                try:
-                                    in_refs_pool[r].update({l : {"linktype": value}})
-                                except:
-                                    in_refs_pool[r] = ({l : {"linktype": value}})
-
-                    if (re.match("linkDigest", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_refs_pool[r][l].update({"digest": value})
-                            except:
-                                try:
-                                    in_refs_pool[r].update({l: {"digest": value}})
-                                except:
-                                    in_refs_pool[r] = ({l : {"digest": value}})
-                    if (re.match("linkAuthor", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_refs_pool[r][l].update({"author": value})
-                            except:
-                                try:
-                                    in_refs_pool[r].update({l: {"author": value}})
-                                except:
-                                    in_refs_pool[r] = ({l : {"author": value}})
             if error == 0:                                        
                 for r in in_refs.keys():
                     ref_pool = []
@@ -264,15 +227,6 @@ def edit_chapter(author, namespace, chapter):
         return render_template('form_chapter_edit.html', form=g.form, items=i_data, namespace=namespace, chapter=chapter)
 
 
-def value_match_assign(match, field, key, value, dhash):
-    if (re.match(match, key) and value != ""):
-        p, r = key.split("_")
-        if (value != ""):
-            try:
-                dhash[r].update({field: value})
-            except:
-                dhash[r] = {field: value}
-    return dhash
 
 @app.route('/editspace/save_chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @login_required
@@ -296,6 +250,8 @@ def save_chapter(author, namespace, chapter):
             error = 0
             for key in f.keys():
                 for value in f.getlist(key):
+                    value = value.replace("\r\n","<br>")
+                    value = value.replace("\n","<br>")
                     if key == "chapter" and chapter == "0": 
                         in_data["I_S_codename"] = value              
                         i_data = DB().get_a_chapter(namespace, value)  # before update/insert
@@ -314,78 +270,19 @@ def save_chapter(author, namespace, chapter):
                         p, k = key.split("_")
                         points[k] = value
 
-                    value_match_assign("pointHeader", "heaeder", key, value, in_pnts) 
-                       
-                    # if (re.match("pointHeader", key) and value != ""):
-                    #     p, r = key.split("_")
-                    #     if (value != ""):
-                    #         try:
-                    #             in_pnts[r].update({"header": value})
-                    #         except:
-                    #             in_pnts[r] = {"header": value}
-
-                    if (re.match("pointTitle", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"title": value})
-                            except:
-                                in_pnts[r] = {"title": value}
-
-                    if (re.match("pointLink", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"link": value})
-                            except:
-                                in_pnts[r] = {"link": value}
-
-                    if (re.match("pointType", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_type": value})
-                            except:
-                                in_pnts[r] = {"info_type": value}
-
-                    if (re.match("pointPID", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"infoID": value})
-                            except:
-                                in_pnts[r] = {"infoID": value}
-
-                    if (re.match("pointPdate", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_date": value})
-                            except:
-                                in_pnts[r] = {"info_date": value}
-                    if (re.match("pointPauths", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_authors": value})
-                            except:
-                                in_pnts[r] = {"info_authors": value}
-
-                    if (re.match("pointPub", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_place": value})
-                            except:
-                                in_pnts[r] = {"info_place": value}
-
-                    if (re.match("pointGeo", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_geo": value})
-                            except:
-                                in_pnts[r] = {"info_geo": value}
+                    in_pnts = value_match_assign("pointHeader", "header", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointTitle", "title", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointLink", "link", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointType", "info_type", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointPID", "infoID", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointPdate", "info_date", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointPauths", "info_authors", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointPub", "info_place", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointGeo", "info_geo", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointImage", "info_img", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointIsource", "info_imgSource", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointIdescr", "info_imgDescr", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointDigest", "digest", key, value, in_pnts) 
 
                     if (re.match("pointTags", key) and value != ""):
                         p, r = key.split("_")
@@ -397,161 +294,21 @@ def save_chapter(author, namespace, chapter):
                                 in_pnts[r].update({"I_S_codenames": lst})
                             except:
                                 in_pnts[r] = {"I_S_codenames": lst}
+                                                                                                  
+                    in_imgs_pool = nest_value_match_assign("imgDescr", "info_imgDesc", key, value, in_imgs_pool) 
+                    in_imgs_pool = nest_value_match_assign("imgLink", "info_img", key, value, in_imgs_pool) 
+                    in_imgs_pool = nest_value_match_assign("imgSrcURL", "info_imgSource", key, value, in_imgs_pool) 
+                    in_imgs_pool = nest_value_match_assign("imgSrcTitle", "info_imgTitle", key, value, in_imgs_pool)
 
-                    if (re.match("pointImage", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_img": value})
-                            except:
-                                in_pnts[r] = {"info_img": value}                            
+                    in_sources_pool = nest_value_match_assign("srcTitle", "title", key, value, in_sources_pool) 
+                    in_sources_pool = nest_value_match_assign("srcLink", "link", key, value, in_sources_pool)
+                    in_sources_pool = nest_value_match_assign("srcID", "infoID", key, value, in_sources_pool)
+                    in_sources_pool = nest_value_match_assign("srcDate", "info_date", key, value, in_sources_pool)
+                    in_sources_pool = nest_value_match_assign("srcAuth", "info_authors", key, value, in_sources_pool)
+                    in_sources_pool = nest_value_match_assign("srcPlace", "info_place", key, value, in_sources_pool)
+                    in_sources_pool = nest_value_match_assign("srcType", "info_type", key, value, in_sources_pool)
 
-                    if (re.match("pointIsource", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_imgSource": value})
-                            except:
-                                in_pnts[r] = {"info_imgSource": value}                            
-
-                    if (re.match("pointIdescr", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"info_imgDescr": value})
-                            except:
-                                in_pnts[r] = {"info_imgDescr": value}                            
-
-                    if (re.match("pointDigest", key) and value != ""):
-                        p, r = key.split("_")
-                        if (value != ""):                         
-                            try:
-                                in_pnts[r].update({"digest": value})
-                            except:
-                                in_pnts[r] = {"digest": value}                            
-
-
-                    if (re.match("imgPoolDescr", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):                        
-                            try:
-                                in_imgs_pool[r][l].update({"info_imgDesc": value})
-                            except:
-                                try:
-                                    in_imgs_pool[r].update({l : {"info_imgDesc": value}})
-                                except:
-                                    in_imgs_pool[r] = ({l : {"info_imgDesc": value}})
-
-                    if (re.match("imgPoolLink", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):                        
-                            try:
-                                in_imgs_pool[r][l].update({"info_img": value})
-                            except:
-                                try:
-                                    in_imgs_pool[r].update({l: {"info_img": value}})
-                                except:
-                                    in_imgs_pool[r] = ({l : {"info_img": value}})
-
-                    if (re.match("imgPoolSrcURL", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):
-                            try:
-                                in_imgs_pool[r][l].update({"info_imgSource": value})
-                            except:
-                                try:
-                                    in_imgs_pool[r].update({l : {"info_imgSource": value}})
-                                except:
-                                    in_imgs_pool[r] = ({l : {"info_imgSource": value}})
-
-                    if (re.match("imgSrcTitle", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_imgs_pool[r][l].update({"info_imgTitle": value})
-                            except:
-                                try:
-                                    in_imgs_pool[r].update({l: {"info_imgTitle": value}})
-                                except:
-                                    in_imgs_pool[r] = ({l : {"info_imgTitle": value}})
-
-                    if (re.match("srcTitle", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_sources_pool[r][l].update({"title": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l: {"title": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"title": value}})
-
-
-                    if (re.match("srcLink", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):                        
-                            try:
-                                in_sources_pool[r][l].update({"link": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l : {"link": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"link": value}})
-
-                    if (re.match("srcID", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):                        
-                            try:
-                                in_sources_pool[r][l].update({"infoID": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l: {"infoID": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"infoID": value}})
-
-                    if (re.match("srcDate", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""):
-                            try:
-                                in_sources_pool[r][l].update({"info_date": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l : {"info_date": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"info_date": value}})
-
-                    if (re.match("srcAuth", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_sources_pool[r][l].update({"info_authors": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l: {"info_authors": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"info_authors": value}})
-
-                    if (re.match("srcPlace", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_sources_pool[r][l].update({"info_place": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l: {"info_place": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"info_place": value}})
-
-                    if (re.match("srcType", key) and value != ""):
-                        p, l, r = key.split("_")
-                        if (value != ""): 
-                            try:
-                                in_sources_pool[r][l].update({"info_type": value})
-                            except:
-                                try:
-                                    in_sources_pool[r].update({l: {"info_type": value}})
-                                except:
-                                    in_sources_pool[r] = ({l : {"info_type": value}})
+            print in_sources_pool
             if error == 0:                
                 for r in in_pnts.keys():
                     imgs_pool = []
@@ -588,9 +345,9 @@ def save_chapter(author, namespace, chapter):
                                 if len(in_imgs_pool[r][l]) > 0:
                                     src_pool = in_sources_pool[r][l]
                         try:
-                            in_pnts[r].update({"sources_pool": imgs_pool})
+                            in_pnts[r].update({"sources_pool": src_pool})
                         except:
-                            in_pnts[r] = {"sources_pool": imgs_pool}
+                            in_pnts[r] = {"sources_pool": src_pool}
 
                 for n, p in sorted(in_pnts.iteritems()):
                     p.update({"num": n})
@@ -618,7 +375,7 @@ def save_chapter(author, namespace, chapter):
         flash(error, category='error')                
     if chapter != "0":
         i_data = DB().get_a_chapter(namespace, chapter)  # after update/insert
-        return render_template('form_intro_edit.html', form=g.form, items=i_data)
+        return render_template('form_chapter_edit.html', form=g.form, items=i_data)
     else:
         if error == 0:
             return redirect("/editspace/chapter:" + author + ":" + namespace + ":" + new_chapter)

@@ -4,24 +4,25 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:40px 20px 30px 10px;">
-<h2>{{ analyst }}'s profile</h2>
+<div style="margin:50px 20px 30px 10px;" align=left>
+
+<h2>{{ current_user.author }}'s profile</h2>
 
 <form action="/profile/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
 {{ form.from_url }}
-Поменять пароль:
-        <div style="height:60px">
-            <label class="control-label" for="old_passwd"></label>Old password: {{ form.old_passwd }}<br>
+<h3>Поменять пароль</h3>
+        <div>
+            Old password:
             <hr>
-            <label class="control-label" for="new_passwd_1"></label>New password: {{ form.new_passwd_1 }}<br>
-            <label class="control-label" for="new_passwd_2"></label>Please repeat it: {{ form.new_passwd_2 }}
+            New password: <br>
+            Please repeat it:
         </div>
 Profile info:
     <div>
-        <label class="control-label" for="info"></label>{{ form.info }}<br>
     </div>
 <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<a href="/editspace/{{ current_user.author }}">Your materials</a>
 </div>
 {% endblock %}

@@ -5,9 +5,9 @@
 {% endblock %}
 {% block content %}
 <div style="margin:60px 20px 30px 50px; width:1100px;" align=left>
-<form action="/editspace/chapter:{{ current_user.author }}:{{ namespace }}:{{ chapter }}" method="POST" name="cform" enctype="multipart/form-data">
+<form action="/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
-<h1>Edit chapter <b>{{ chapter }}</b> in namespace <b>{{ namespace }}</b></h1>
+<h1>Edit chapter <b>{{ chapter }}</b> in namespace <b>{{ items.namespace }}</b></h1>
 <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
@@ -27,9 +27,10 @@
     <div style="height:75px; width:1010px;">
         <div style="float:left; width:180px">Epigraph text: </div>
         <div style="float:right; width:830px" class="form-group">
-            <textarea rows=3 cols=97 name=ep_text>
-{% if items.epigraph and items.epigraph.text %}{{ items.epigraph.text | replace("<br>", "\n") }}{% endif %}
-            </textarea>
+            {% if items.epigraph and items.epigraph.text %}<textarea rows=3 cols=97 name=ep_text>{{ items.epigraph.text | replace("<br>", "\n") }}</textarea>
+            {% else %}
+            <textarea rows=3 cols=97 name=ep_text></textarea>
+            {% endif %}
         </div>
     </div>
     <br>
@@ -68,16 +69,15 @@
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
-                <div style="float:left;width:250px" class="form-group">Digest:</div>
-                <div style="float:right; width:710px" class="form-group">
-                    <textarea rows=7 cols=97 name=pointDigest_{{ p_num|join }}>{{ p.digest | replace("<br>", "\n") }}
-                    </textarea>
-                </div>
-            </div>
-            <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">Title (paper's title):</div>
                 <div style="float:right; width:710px" class="form-group">
                     <input type="text" name=pointTitle_{{ p_num|join }} size=95 value="{{ p.title }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Digest:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <textarea rows=7 cols=97 name=pointDigest_{{ p_num|join }}>{{ p.digest | replace("<br>", "\n") }}</textarea>
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
@@ -126,11 +126,11 @@
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
                     <input type="text" name=pointTags_{{ p_num|join }} size=95
-                        value="{% for t in p.I_S_codenames %}{{ t }}, {% endfor %}">
+                        value="{{ p.I_S_codenames|join(', ') }}">
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
-                <div style="float:left;width:250px" class="form-group">image:</div>
+                <div style="float:left;width:250px" class="form-group">image (src link):</div>
                 <div style="float:right; width:710px" class="form-group">
                     <input type="text" name=pointImage_{{ p_num|join }} size=95 value="{{ p.info_img }}">
                 </div>
@@ -138,13 +138,13 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">image source: (link)</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointIsource_{{ p_num|join }} size=95 value="{{ p.info_imgSources }}">
+                    <input type="text" name=pointIsource_{{ p_num|join }} size=95 value="{{ p.info_imgSource }}">
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">image description:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointIdescr_{{ p_num|join }} size=95 value="{{ p.info_imgDesc }}">
+                    <input type="text" name=pointIdescr_{{ p_num|join }} size=95 value="{{ p.info_imgDescr }}">
                 </div>
             </div>
 {% set s_num = [1] %}
@@ -247,9 +247,7 @@
         <div style="height:25px;">
             <div style="float:left; width:180px">Image #{{ i_num|join }} description: </div>
             <div style="float:right; width:800px;" class="form-group">
-                <textarea rows=2 cols=97 name=imgDescr_{{ i_num|join }}_{{ p_num|join }}>
-                {{ i.info_imgDesc | replace("<br>", "\n") }}
-                </textarea>
+                <textarea rows=2 cols=97 name=imgDescr_{{ i_num|join }}_{{ p_num|join }}>{{ i.info_imgDesc | replace("<br>", "\n") }}</textarea>
             </div>
         </div>
     </div>
@@ -275,7 +273,7 @@
     <div style="height:175px; width:1000px;">
         <div style="float:left; width:180px">Summary: </div>
         <div style="float:right; width:820px" class="form-group">
-            <textarea rows=7 cols=110 name=summary></textarea></div>
+            <textarea rows=7 cols=110 name=summary>{{ items.summary | replace("<br>", "\n") }}</textarea></div>
     </div>
     <div style="height:25px; width:980px;">
         <div style="float:left; width:180px" id=form_info>
@@ -425,15 +423,15 @@
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
-                <div style="float:left;width:250px" class="form-group">Digest:</div>
-                <div style="float:right; width:710px" class="form-group">
-                    <textarea rows=7 cols=97 name=pointDigest_{{ rnum }}></textarea>
-                </div>
-            </div>
-            <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">Title (paper's title):</div>
                 <div style="float:right; width:710px" class="form-group">
                     <input type="text" name=pointTitle_{{ rnum }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Digest:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <textarea rows=7 cols=97 name=pointDigest_{{ rnum }}></textarea>
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
@@ -527,7 +525,7 @@ function RemoveDiv(div, num, rnum, thtml, target, pdiv) {
 function loadTmpl(thtml, target, div, cnt, id, rcnt) {
     a2 = cnt // appeded to this item
     if (rcnt == 0 || id == 'pcross') {
-        rcnt = $("div[id^=pnt_]").length + 1;
+        rcnt = $("div[id^=pnt_]").length;
         cnt = 0
     }
     if (id != 'pcross') {

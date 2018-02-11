@@ -48,12 +48,12 @@ def index():
 def show_item(namespace, codename):
     i_data = DB().get_a_space(namespace, codename)
     data = json.loads(dumps(i_data))
-    title = data[0]["title"]
-    chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
-    f_date = datetime.datetime.fromtimestamp( data[0]["date"]['$date'] / 1e3 )
-    data[0]["date"] = f_date.strftime('%d-%m-%Y %H:%M')    
+    title = data["title"]
+    chapters = DB().get_spaces_by_key_sorted(namespace, "date")
+    f_date = datetime.datetime.fromtimestamp( data["date"]['$date'] / 1e3 )
+    data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
-                            title=namespace.title() + ": " + title, chapters=g.chapters)
+                            title=namespace.title() + ": " + title, chapters=chapters)
 
 
 @app.route('/search', methods=['GET','POST'])

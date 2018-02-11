@@ -261,7 +261,7 @@ def save_chapter(author, namespace, chapter):
                         else:
                             new_chapter = in_data["I_S_codename"] 
 
-                    if key == "title": in_data["title"] = value
+                    if key == "title": in_data["I_S_name"] = value
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "summary" and value != ""): in_data["summary"] = value
                     if key == "ep_text": ep_text = value
@@ -383,6 +383,8 @@ def save_chapter(author, namespace, chapter):
             i_data = in_data
             return render_template('form_chapter.html', form=g.form, items=i_data, namespace=namespace)
 
+
+# TODO delete points, insertion points
 
 
 @app.context_processor

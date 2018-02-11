@@ -34,7 +34,7 @@ class DB(object):
                             ])
 
     def get_a_space(self, namespace, key):
-        return app.config['SPACES'].find({"namespace": namespace, "I_S_codename": key})
+        return app.config['SPACES'].find_one({"namespace": namespace, "I_S_codename": key})
 
     def get_points_by_codename(self, codename):
         return app.config['SPACES'].aggregate([

@@ -1,0 +1,244 @@
+{
+	"_id": {
+		"$oid": "5a81d5a21467746fd84805e6"
+	},
+	"analyst": "amantonio",
+	"namespace": "vaccines",
+	"title": "Непривитые",
+	"I_S_codename": "unvaccinated",
+	"I_S_type_ref": "S_S",
+	"I_S_type_this": "human",
+	"I_S_name": "Непривитые",
+	"date": {
+		"$date": "2017-07-06T14:40:00.000Z"
+	},
+	"epigraph": {
+		"text": "Never doubt that a small group of thoughtful, committed citizens can change the world;<br>indeed, it's the only thing that ever has",
+		"source": "Margaret Mead"
+	},
+	"points": [
+		{
+			"num": 1,
+			"digest": "Ни CDC, ни FDA, ни, тем более, фармацевтические компании не проводят исследования, сравнивающие привитых и непривитых детей. [Здесь==https://www.youtube.com/watch?v=eP6v2f4ylpU] директор из CDC, после того, как ее прижали к стенке, признает этот факт на слушаниях в Конгрессе (20 секунд). ([полная версия==https://www.youtube.com/watch?time_continue=202\u0026v=uNWTOmEi_6A])"
+		},
+		{
+			"info_place": "Am J Public Health",
+			"title": "Vaccination and Allergic Disease: A Birth Cohort Study.",
+			"infoID": "PMC1448377",
+			"info_date": "2004",
+			"info_type": "article",
+			"num": 10,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1448377/",
+			"digest": "Исследование 30 тысяч детей из Великобритании.<br>Привитые от дифтерии/столбняка/коклюша/полио в 14 раз чаще болели астмой, и в 9 раз чаще экземой.<br>Привитые от кори/свинки/краснухи в 3.5 раза чаще болели астмой, и в 4.5 раза чаще экземой.<br>Вроде бы цифры говорят сами за себя, не так ли? Но авторам не подходят такие цифры, они хотят оправдать прививки. Поэтому они делают два финта ушами.<br>Сначала они установили, что непривитые ходят к врачам реже. Это, по их мнению, означает не то, что непривитые меньше болеют, а то, что их шанс диагностироваться ниже, чем у привитых! Поэтому они делают коррекцию. Но этого оказывается недостаточно.<br>Они идут дальше, и зачем-то делят всех детей на 4 возрастные группы, а затем анализируют каждую группу отдельно. И, о чудо, статистическая значимость пропадает! Ну не во всех группах, конечно, в группе детей до 6-и лет все равно привитые болеют астмой и экземой в 10-15 раз чаще непривитых. Но вот у детей постарше статистическая значимость в некоторых (но не во всех) возрастных группах уже пропадает, хотя и среди них привитые болеют чаще.<br>Авторы с чистой совестью заключают, что прививки никак не повышают шанс астмы и экземы.<br>Врачи, которые читали только абстракт (то есть примерно все, ведь мало кто читает эти статьи полностью), узнают только вывод, и со спокойным сердцем идут и дальше прививать детей.<br>Подобные финты ушами очень часто встречаются в исследованиях, якобы доказывающих безопасность прививок.",
+			"info_geo": "UK",
+			"info_authors": "McKeever",
+			"I_S_codenames": [
+				"unvaxxed",
+				" allergy",
+				" MMR"
+			]
+		},
+		{
+			"info_type": "article",
+			"info_place": "J Manipulative Physiol Ther",
+			"num": 11,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/10714532",
+			"I_S_codenames": [
+				"DTP",
+				" asthma",
+				" allergy",
+				" unvaxxed"
+			],
+			"info_date": "2000",
+			"title": "Effects of diphtheria-tetanus-pertussis or tetanus vaccination on allergies and allergy-related respiratory symptoms among children and adolescents in the United States.",
+			"info_authors": "Hurwitz",
+			"digest": "Привитые от столбняка или вакциной DTP болели астмой в два раза чаще, аллергией на 63% чаще, а синуситом на 81% чаще, чем непривитые.",
+			"infoID": "10714532"
+		},
+		{
+			"info_type": "article",
+			"info_place": "Arerugi",
+			"num": 12,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/10944825",
+			"I_S_codenames": [
+				"DTP",
+				" asthma",
+				" unvaxxed"
+			],
+			"info_date": "2000",
+			"title": "The effect of DPT and BCG vaccinations on atopic disorders.",
+			"info_authors": "Yoneyama",
+			"digest": "Среди привитых вакциной DTP 56% болели астмой, хроническим насморком или дерматитом. Среди непривитых болели лишь 9%.",
+			"infoID": "10944825"
+		},
+		{
+			"info_place": "Hum Exp Toxicol",
+			"title": "Relative trends in hospitalizations and mortality among infants by the number of vaccine doses and age, based on the Vaccine Adverse Event Reporting System (VAERS), 1990–2010.",
+			"infoID": "PMC3547435",
+			"info_date": "2012",
+			"header": "Комбинирование прививок",
+			"info_type": "article",
+			"num": 13,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3547435/",
+			"digest": "Чем больше прививок делается за один раз, тем выше вероятность госпитализации и смерти. Смертность среди тех, кто получил 5-8 прививок была в 1.5 раза выше, чем у тех, кто получил 1-4 прививки.",
+			"info_img": "http://oi64.tinypic.com/vo65vp.jpg",
+			"info_authors": "Goldman",
+			"I_S_codenames": [
+				"mortality",
+				" co-administration"
+			]
+		},
+		{
+			"info_place": "Vaccine",
+			"title": "DTP with or after measles vaccination is associated with increased in-hospital mortality in Guinea-Bissau.",
+			"infoID": "17092614",
+			"info_date": "2007",
+			"info_type": "article",
+			"num": 14,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/17092614",
+			"digest": "Дети из Гвинеи-Биссау, которым сделали прививку от дифтерии/столбняка/коклюша вместе с прививкой от кори умирали в 2 раза чаще, чем те, которым сделали только прививку от кори.<br>Авторы приводят еще несколько исследований с такими же результатами в Гамбии, Малави, Конго, Гане и Сенегале.",
+			"info_geo": "Guinea_Bissau",
+			"info_authors": "Aaby",
+			"I_S_codenames": [
+				"mortality",
+				" DTP",
+				" MMR",
+				" co-administration"
+			]
+		},
+		{
+			"info_place": "Vaccine",
+			"title": "Co-administration of live measles and yellow fever vaccines and inactivated pentavalent vaccines is associated with increased mortality compared with measles and yellow fever vaccines only. An observational study from Guinea-Bissau.",
+			"infoID": "24325827",
+			"info_date": "2014",
+			"info_type": "article",
+			"num": 15,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/24325827",
+			"digest": "Дети, которым сделали пятивалентную прививку (дифтерия/столбняк/коклюш/Hib/гепатит В) в придачу к прививкам от кори и желтой лихорадки, умирали в 7.7 раза чаще, чем дети, которым не сделали пятивалентную прививку.<br>В [этой лекции==https://www.youtube.com/watch?v=PWP6e2CYPo8] Сюзен Хамфриз объясняет, почему комбинирование живых и мертвых вакцин приводит к такому эффекту.",
+			"info_geo": "Guinea_Bissau",
+			"info_authors": "Fisker",
+			"I_S_codenames": [
+				"mortality",
+				" pentavalent_vaccine",
+				" MMR",
+				" co-administration"
+			]
+		},
+		{
+			"num": 2,
+			"digest": "Тем не менее, некоторые исследования сравнивающие привитых и непривитых всё-же имеются. Эти исследования небольшие, у всех есть недостатки, но ничего лучше них на данный момент не существует. Только исследования сравнивающие привитых и непривитых могут дать адекватную картину действительной пользы и вреда прививок, и поэтому несмотря на все их недостатки, это самые важные исследования из всех существующих."
+		},
+		{
+			"info_type": "article",
+			"num": 3,
+			"link": "http://www.oatext.com/Pilot-comparative-study-on-the-health-of-vaccinated-and-unvaccinated-6-to-12-year-old-U-S-children.php",
+			"digest": "Исследование сравнивает детей на домашнем обучении в 4-х штатах в США. 405 привитых и 261 непривитых.<br><em>Острые болезни:</em><br>Привитые в 4 раза реже болели ветрянкой, в 3 раза реже коклюшем, и в 10 раз реже краснухой.<br>Привитые в 4 раза чаще болели отитом, и в 6 раз чаще пневмонией.<br><em>Хронические болезни:</em><br>У привитых в 30 раз чаще был аллергический насморк, у них было в 4 раза больше аллергий, в 4 раза больше аутизма, в 4 раза больше СДВГ (ADHD), в 3 раза больше экзем, в 5 раз больше learning disabilities, в 4 раза больше неврологических расстройств, и у них в 2.5 раза чаще было какое-либо хроническое заболевание.<br>Привитые в 21 раз чаще использовали лекарства от аллергии, в 4.5 раза чаще - жаропонижающие, в 8 раз чаще использовали ушные дренажные трубки, в 3 раза чаще ходили к врачам из-за болезни, в 1.8 раз чаще были госпитализированы.<br>Еще интересные результаты оттуда: риск неврологических расстройств повышается от использования антибиотиков во время беременности в 2.3 раза, от лекарств во время беременности в 2.5 раза, недоношенность повышает его в 5 раз, УЗИ в 1.7 раз, а УЗИ более 3-х раз за беременность в 3.2 раза.<br>Количество неврологических расстройств у привитых (14.4%) совпадает с исследованиями CDC (15%). Также совпадает количество learning disabilities (5.6% у привитых в этом исследовании, и 5% согласно имеющейся статистике).<br>Однако, судя по этому исследованию аутистов среди привитых уже 3.3%, т.е. 1 из 30 детей. Но возможно это переоценка, так как вероятно аутисты чаще остаются на домашнем обучении. (Согласно данным CDC аутистов 2.24%, т.е. 1 из 45 на 2015 год, и 1 из 36 на 2017 год).",
+			"info_date": "2017",
+			"title": "Pilot comparative study on the health of vaccinated and unvaccinated 6- to 12- year old U.S. children.",
+			"info_place": "JTS",
+			"info_authors": "Mawson",
+			"I_S_codenames": [
+				"unvaxxed",
+				" asthma",
+				" allergy",
+				" autism",
+				" otitis",
+				" ultrasound"
+			]
+		},
+		{
+			"info_place": "EBioMedicine",
+			"title": "The Introduction of Diphtheria-Tetanus-Pertussis and Oral Polio Vaccine Among Young Infants in an Urban African Community: A Natural Experiment.",
+			"infoID": "PMC5360569",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 4,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5360569/",
+			"I_S_codenames": [
+				"unvaxxed",
+				" DTP",
+				" OPV"
+			],
+			"info_geo": "Guinea_Бissau",
+			"info_authors": "Mogensen",
+			"digest": "Из-за того, что в Гвинее-Бисау прививали детей раз в три месяца, получился натуральный эксперимент. Некоторые дети в 3-5 месяцев уже были привиты, а некоторые нет.<br>Риск смерти у детей привитых от дифтерии/столбняка/коклюша (DTP) был в 10 раз выше, чем у непривитых детей. Дети, которые были привиты также от полио (OPV) умирали лишь в 5 раз чаще непривитых.<br>После того, как началась вакцинация, младенческая смертность в возрасте выше 3-х месяцев повысилась в 2 раза.<br>Авторы исследования заключают, что прививка от дифтерии/столбняка/коклюша убивает больше детей, чем она спасает.<br>Авторов трудно заподозрить в антипрививочничестве. [Peter Aaby==https://en.wikipedia.org/wiki/Peter_Aaby], один из авторов исследования, создал в Гвинее-Биссау [Bandim Health Project==https://en.wikipedia.org/wiki/Bandim_Health_Project], одна из главных целей которого - это прививать детей."
+		},
+		{
+			"info_place": "Epidemiology",
+			"title": "Is infant immunization a risk factor for childhood asthma or allergy?",
+			"infoID": "9345669",
+			"info_date": "1997",
+			"info_type": "article",
+			"num": 5,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9345669",
+			"I_S_codenames": [
+				"unvaxxed",
+				" DTP",
+				" asthma",
+				" allergy"
+			],
+			"info_geo": "New Zealand",
+			"info_authors": "Kemp",
+			"digest": "Новая Зеландия, 23 непривитых (от DTP и полио) из 1265 десятилетних детей. Среди привитых у 23% была астма, 22% консультировались насчет астмы, и у 30% была аллергия.<br>Среди непривитых не было ни одного случая астмы, ни консультаций насчет астмы, ни аллергий."
+		},
+		{
+			"info_authors": "Glanz",
+			"info_place": "JAMA Pediatr",
+			"num": 6,
+			"link": "http://jamanetwork.com/journals/jamapediatrics/fullarticle/1558057",
+			"digest": "Исследование сравнивает привитых и недопривитых в США. Недопривитые это дети, которые не получили хотя бы одну прививку, или получили как минимум одну прививку даже на один день позже установленного срока.<br>Те, кто были недопривиты по выбору родителей, пользовались неотложной помощью на 9% реже, посещали врачей на 5% реже, а также болели фарингитом и ОРВИ на 11% реже.<br>Kоличество недопривитых неуклонно растёт (от 42% в 2004 до 54% в 2008).",
+			"info_date": "2013",
+			"title": "A Population-Based Cohort Study of Undervaccination in 8 Managed Care Organizations Across the United States.",
+			"info_type": "article",
+			"I_S_codenames": [
+				"unvaxxed"
+			],
+			"infoID": "23338829"
+		},
+		{
+			"info_type": "article",
+			"num": 7,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/20628439",
+			"digest": "Макакам сделали детские прививки согласно календарю прививок в США 1999 года, и сравнили с непривитыми макаками.<br>У привитых был намного больший объем мозга (такое [наблюдается==http://www.nature.com/nature/journal/v542/n7641/full/nature21369.html ] у аутистов).<br>Миндалина (область мозга, ответственная за эмоции) у привитых была намного больше, чем у непривитых. (Это тоже [наблюдается==http://www.nature.com/nature/journal/v542/n7641/full/nature21369.html ] у аутистов).",
+			"info_date": "2010",
+			"title": "Influence of pediatric vaccines on amygdala growth and opioid ligand binding in rhesus macaque infants: A pilot study.",
+			"info_place": "Acta Neurobiol Exp Wars",
+			"info_authors": "Hewitson",
+			"I_S_codenames": [
+				"unvaxxed"
+			],
+			"infoID": "20628439"
+		},
+		{
+			"info_place": "Hum Exp Toxicol",
+			"title": "Infant mortality rates regressed against number of vaccine doses routinely given: Is there a biochemical or synergistic toxicity?",
+			"infoID": "PMC3170075",
+			"info_date": "2011",
+			"info_type": "article",
+			"num": 8,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3170075/",
+			"I_S_codenames": [
+				"mortality"
+			],
+			"info_img": "http://oi67.tinypic.com/257ev5i.jpg",
+			"info_authors": "Miller",
+			"digest": "Авторы сравнивают младенческую смертность в 30 странах, и количество прививок в них до 12-месячного возраста. Между ними получается линейная зависимость. Чем больше в стране прививок, тем выше в ней уровень младенческой смертности."
+		},
+		{
+			"info_type": "mass media",
+			"num": 9,
+			"link": "http://necepljen.si/files/studija_Nova_Zelandija.pdf",
+			"digest": "Опрос в Новой Зеландии. 226 привитых детей и 269 непривитых.<br>У привитых в 5 раз чаще была астма, в 10 раз чаще ангина, в 2 раза чаще экзема, в 4 раза чаще апноэ, в 4 раза чаще гиперактивность, в 4 раза чаще отит, и им в 8 раз чаще вставляли ушную дренажную трубку.<br>У 5% привитых удаляли миндалины. Среди непривитых не было удаления мигдалин.<br>У 1.7% привитых была эпилепсия. Среди непривитых не было случаев эпилепсии.",
+			"info_date": "2005",
+			"title": "Unvaccinated children are healthier.",
+			"info_geo": "New Zealand",
+			"info_authors": "Claridge",
+			"I_S_codenames": [
+				"unvaxxed"
+			]
+		}
+	],
+	"editdate": {
+		"$date": "2018-02-12T19:05:16.868Z"
+	}
+}

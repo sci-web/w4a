@@ -1,0 +1,697 @@
+{
+	"_id": {
+		"$oid": "5a81d5621467746fd848058a"
+	},
+	"analyst": "amantonio",
+	"namespace": "vaccines",
+	"title": "Гемофильная инфекция",
+	"I_S_codename": "hib",
+	"I_S_type": "S_O",
+	"I_S_type_this": "disease",
+	"I_S_name": "Гемофильная инфекция",
+	"date": {
+		"$date": "2017-11-24T23:37:00.000Z"
+	},
+	"intro": "",
+	"epigraph": {
+		"text": "In a time of universal deceit, telling the truth is a revolutionary act.",
+		"source": "George Orwell"
+	},
+	"points": [
+		{
+			"num": 1,
+			"digest": "Гемофильная палочка, пневмококк и менингококк - это три основных вида бактерий, которые могут привести к менингиту и к другим инвазивным заболеваниям. Бактериальный менингит, в отличие от вирусного менингита, может быть очень опасным."
+		},
+		{
+			"info_place": "Eur J Pub Health",
+			"num": 10,
+			"link": "https://academic.oup.com/eurpub/article-abstract/3/4/290/425168",
+			"info_date": "1993",
+			"title": "A case-control assessment of risk factors for Haemophilus influenzae type b meningitis.",
+			"info_geo": "US",
+			"digest": "ГВ дольше месяца понижало риск менингита от Hib на 62%. ГВ дольше 9 месяцев понижало риск на 88%. Детский сад повышал риск в 2.6-4.7 раз.",
+			"info_type": "article",
+			"I_S_codenames": [
+				"breast_feeding",
+				" day_care"
+			],
+			"info_authors": "Sherry"
+		},
+		{
+			"info_place": "J Pediatr",
+			"title": "Risk factors for primary invasive Haemophilus influenzae disease: increased risk from day care attendance and school-aged household members.",
+			"infoID": "3871478",
+			"info_date": "1985",
+			"info_type": "article",
+			"num": 11,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/3871478",
+			"I_S_codenames": [
+				"breast_feeding",
+				" day_care"
+			],
+			"info_geo": "Sweden",
+			"info_authors": "Istre",
+			"digest": "Среди детей младше 6 месяцев, исключительное ГВ снижало риск Hib на 90%. Посещение детского сада повышало риск в 1.9-5.9 раз. Чем больше была группа в саду, тем выше был риск."
+		},
+		{
+			"info_place": "Pediatr Infect Dis J",
+			"title": "Long term enhancement of the IgG2 antibody response to Haemophilus influenzae type b by breast-feeding.",
+			"infoID": "12352801",
+			"info_date": "2002",
+			"info_type": "article",
+			"num": 12,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/12352801/",
+			"I_S_codenames": [
+				"breast_feeding"
+			],
+			"info_geo": "Sweden",
+			"info_authors": "Silfverdal",
+			"digest": "Среди заболевших Hib детей, у тех, кто были дольше на ГВ, было больше антител."
+		},
+		{
+			"info_place": "Lancet",
+			"title": "Effect of breast-feeding on antibody response to conjugate vaccine.",
+			"infoID": "1973970",
+			"info_date": "1990",
+			"info_type": "article",
+			"num": 13,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/1973970",
+			"I_S_codenames": [
+				"breast_feeding"
+			],
+			"info_geo": "Canada",
+			"info_authors": "Pabst",
+			"digest": "У детей на ГВ образовалось значительно больше антител после прививки, чем у детей на искусственном вскармливании."
+		},
+		{
+			"info_place": "Am J Epidemiol",
+			"title": "Risk factors for invasive Haemophilus influenzae type b in Los Angeles County children 18-60 months of age.",
+			"infoID": "1415144",
+			"info_date": "1992",
+			"info_type": "article",
+			"num": 14,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/1415144",
+			"digest": "Анализ всех случаев Hib в Лос Анджелесе в 1988/9 (8.7 млн населения, из них 750 тыс детей до 5 лет). Всего было зарегистрировано 88 случаев среди детей за год. Летальность составляла 4.5%.<br>Риск Hib у детей в домах, где живут более 2-х курящих, был в 6 раз выше.<br>Шесть и более проживающих в одном доме повышают риск Hib в 3.71 раз. Негры болеют в 3.47 раз чаще. Также риск повышают хроническая болезнь и низкий доход.<br>Вакцинация и грудное вскармливание (у белых) понижают риск Hib. Вакцинация полисахаридной вакциной повышала риск Hib.<br>В другом исследовании обнаружилось, что курящий родитель повышал риск Hib в 2.37 раз.",
+			"info_geo": "US",
+			"info_authors": "Vadheim",
+			"I_S_codenames": [
+				"smoking",
+				" breast_feeding"
+			]
+		},
+		{
+			"info_geo": "US",
+			"num": 15,
+			"digest": "До начала вакцинации эскимосы на Аляске [болели==https://www.ncbi.nlm.nih.gov/pubmed/6112604] Hib в 10 раз чаще, чем остальные жители США.<br>Австралийские аборигены, индейцы, эскимосы и африканцы в Гамбии и Сомали [болели==https://www.ncbi.nlm.nih.gov/pubmed/6112604] в 3-4 раза чаще, чем американцы, и в 10 раз чаще, чем европейцы."
+		},
+		{
+			"info_place": "JAMA",
+			"title": "Lack of efficacy of Haemophilus b polysaccharide vaccine in Minnesota.",
+			"infoID": "3261350",
+			"info_date": "1988",
+			"header": "Эффективность",
+			"info_type": "article",
+			"num": 16,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/3261350",
+			"info_geo": "US",
+			"info_authors": "Osterholm",
+			"digest": "Полисахаридная вакцина от Hib была лицензирована в США в 1985 году. В клиническом исследовании в Финляндии выяснилось, что вакцина неэффективна для детей младше 2-х лет, и на 80% эффективна с 2-х до 3-х лет. До лицензирования, в единственном исследовании в США среди 16,000 детей не обнаружилось, что вакцина эффективна, поэтому она была лицензирована на основании финского исследования только для детей старше 2-х лет (хотя большинство случаев заболевания приходились на детей младше года). Как только вакцина была лицензирована, провести рандомизированное исследование оказалось невозможно. Но поскольку Hib это редкое заболевание, провести такое исследование всё равно сложно, так как требуются очень много участников.<br>В обсервационном исследовании в Миннесоте оказалось, что эффективность этой вакцины отрицательна, и она повышает риск болезни на 58%.<br>В других исследованиях выяснилось, что вакцина повышает риск болезни в первую неделю после прививки. Впоследствии IOM тоже [установил==https://www.ncbi.nlm.nih.gov/pubmed/8182813/], что неконъюгированная вакцина от Hib увеличивает риск заболевания."
+		},
+		{
+			"info_type": "article",
+			"num": 17,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/12737867",
+			"info_authors": "Trotter",
+			"title": "Antibody to Haemophilus influenzae type b after routine and catch-up vaccination.",
+			"info_geo": "UK",
+			"digest": "У детей, которым сделали прививку от Hib в младенчестве, было значительно меньше антител, чем у детей, которым сделали прививку после 1 года.",
+			"info_place": "Lancet",
+			"info_date": "2003",
+			"infoID": "12737867"
+		},
+		{
+			"header": "Замена штаммов",
+			"num": 18,
+			"digest": "Конъюгированная вакцина довольно эффективна против серотипа B, но также, как и в случае с ВПЧ, штаммы серотипа В просто заменяются другими штаммами, и другими бактериями. Как мы увидим в следующей части, снижение заболеваемости гемофильной инфекцией привело к увеличению заболеваемости пневмококком. Поэтому в 2000-м году была начата вакцинация от пневмококка, которая, в свою очередь, привела к увеличению заболеваемости гемофильной инфекцией и стрептококком."
+		},
+		{
+			"info_type": "article",
+			"info_place": "Clin Infect Dis",
+			"num": 19,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/17516405",
+			"info_date": "2007",
+			"title": "Characterization of invasive Haemophilus influenzae disease in Manitoba, Canada, 2000-2006: invasive disease due to non-type b strains.",
+			"info_geo": "Canada",
+			"infoID": "17516405",
+			"digest": "Заболеваемость Hib в Манитобе (Канада) благодаря вакцинации снизилась, но потом стала вновь повышаться и уже достигла уровня заболеваемости в допрививочную эпоху.<br>Если раньше лишь 10% больных были старше 10 лет, то сейчас их 56%. Похожее изменение эпидемиологии наблюдается и в США.<br>Авторы сравнили данные своего исследования с официальными данными заболеваемости, и обнаружили, что лишь 1 из 17 случаев болезни в 2000-2004 годах был официально зарегистрирован. Они заключают, что статистика заболеваемости Hib очень занижена, и скорее всего, также занижена статистика заболеваемости другими штаммами гемофильной бактерии.",
+			"info_authors": "Tsang"
+		},
+		{
+			"info_type": "cdc",
+			"num": 2,
+			"link": "https://www.cdc.gov/vaccines/pubs/pinkbook/hib.html",
+			"digest": "Гемофильная палочка (Haemophilus influenzae), это бактерия, которая изначально считалась возбудителем гриппа (откуда и получила свое название).<br>Бактерия образует вокруг себя полисахаридную капсулу. Существует шесть серотипов гемофильной палочки (a, b, c, d, e, f), по типам капсулы. Вакцина существует лишь от серотипа b, который в допрививочную эпоху вызывал 95% случаев гемофильной инфекции. Существуют также штаммы без капсулы.<br>До появления вакцины один из 200 детей болел гемофильной инфекцией. Hib обнаруживался в носоглотке у 0.5-3% здоровых младенцев.<br>Почти все случаи болезни приходятся на детей младше 5 лет, и две трети приходятся на детей до 18 месяцев.<br>Инвазивная инфекция может привести к менингиту, эпиглоттиту, пневмонии, артриту и целлюлиту. Летальность менингита составляет 3-6%, неврологические нарушения остаются у 15-30% выживших. Как именно бактерия попадает в кровеносную систему \u0026ndash; неизвестно.<br>В 2010-2011, 33% Hib приходилось на младенцев младше 6 месяцев (то есть не полностью привитых). Среди оставшихся, 36% случаев Hib приходилось на полностью привитых. Остальные были непривиты, или привиты менее чем тремя дозами, или неизвестно, сколькими дозами привиты.<br>Факторами риска гемофильной инфекции являются теснота, низкий социально-экономический уровень, низкий уровень образования родителей, хронические болезни, химиотерапия и др. Латиноамериканцы и индейцы болеют чаще, чем белые.<br>Грудное вскармливание дает защитный эффект в первые 6 месяцев. В допрививочную эпоху большинство детей развивали естественный иммунитет к 5-6 летнему возрасту.<br>Первая вакцина от Hib (полисахаридная) использовалась с 1985 по 1988, но она не была эффективна для детей младше 18 месяцев, а для детей старше эффективность варьировалась от 88% до -69%.<br>С 1988 года используется конъюгированная вакцина, которую обычно делают в 2, 4, 6 и 12 месяцев.<br>Существует моновалентная вакцина от Hib, но обычно она идет в составе пятивалентных и шестивалентных вакцин (с дифтерией, столбняком, коклюшем, полиомиелитом и гепатитом В).",
+			"title": "CDC Pinkbook"
+		},
+		{
+			"info_place": "Vaccine",
+			"title": "Changing epidemiology of invasive Haemophilus influenzae in Ontario, Canada: evidence for herd effects and strain replacement due to Hib vaccination.",
+			"infoID": "20398617",
+			"info_date": "2010",
+			"info_type": "article",
+			"num": 20,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/20398617",
+			"digest": "Вакцинация снизила заболеваемость Hib в Онтарио (Канада) на 57%, но заболеваемость серотипом f выросла в 2.4 раза, а заболеваемость бескапсульными штаммами - в 3 раза. Заболеваемость Hib снижалась среди детей младше 5 лет на 7% в год, а заболеваемость от бескапсульных штаммов увеличивалась среди детей 5-19 лет на 7% в год. В целом, заболеваемость гемофильной инфекцией почти не изменилась, просто заболеваемость менингитом снизилась, а заболеваемость сепсисом увеличилась.<br>Бескапсульные штаммы [колонизируют==https://www.ncbi.nlm.nih.gov/pubmed/21054663] верхние дыхательные пути у 65% детей.",
+			"info_geo": "Canada",
+			"info_authors": "Adam",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_authors": "Ramsay",
+			"info_place": "J Infect Dis",
+			"num": 21,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/12898433",
+			"info_date": "2003",
+			"title": "Estimating Haemophilus influenzae type b vaccine effectiveness in England and Wales by use of the screening method.",
+			"info_geo": "UK",
+			"info_type": "article",
+			"digest": "В Великобритании вакцинация от Hib началась в 1992-м, после чего заболеваемость резко снизилась, но с 1999-го начала снова повышаться.<br>С 1993 по 2001-й было зарегистрировано 443 случаев Hib, из них 82% были полностью привиты. Эффективность вакцины составляла 56.7%.<br>Эффективность у тех, кто были привиты в младенчестве, была ниже, чем у привитых после года.<br>Эффективность вакцины падала через 2 года после прививки.<br>Эффективность у детей, родившихся после 2000 года была ниже, чем у детей родившихся ранее.<br>Эффективность у тех, кто были привиты комбинированной вакциной DTap-Hib была ниже, чем у привитых другими вакцинами.",
+			"infoID": "12898433"
+		},
+		{
+			"info_place": "J Infect Dis",
+			"title": "Prevention of Haemophilus influenzae type b (Hib) meningitis and emergence of serotype replacement with type a strains after introduction of Hib immunization in Brazil.",
+			"infoID": "12508153",
+			"info_date": "2003",
+			"info_type": "article",
+			"num": 22,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/12508153",
+			"digest": "Через год после начала вакцинации в Бразилии, количество случаев менингита от Hib снизилось на 69% (с 2.62 до 0.81 на 100,000). Количество случаев менингита от Hia (гемофильной палочки серотипа А) выросло в 8 раз (с 0.02 до 0.16 на 100,000).<br>Клинически вирулентность Hib и Hia не отличаются. Смертность от Hia составляла 23%.",
+			"info_geo": "Brazil",
+			"info_authors": "Ribeiro",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "Emerg Infect Dis",
+			"title": "Haemophilus influenzae Serotype a Invasive Disease, Alaska, USA, 1983-2011.",
+			"infoID": "PMC3713835",
+			"info_date": "2013",
+			"info_type": "article",
+			"num": 23,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3713835/",
+			"digest": "До начала вакцинации заболеваемость Hib на Аляске была самой высокой в мире. Благодаря вакцине, количество случаев Hib резко снизилось, но увеличились случаи заболевания от других серотипов, в основном серотипом А и бескапсульными штаммами.",
+			"info_geo": "US",
+			"info_authors": "Bruce",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "Epidemiol Infect",
+			"title": "Invasive Haemophilus influenzae disease in adults.",
+			"infoID": "PMC2810930",
+			"info_date": "2000",
+			"info_type": "article",
+			"num": 24,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2810930/",
+			"digest": "После начала вакцинации, количество случаев Hib среди взрослых в Англии (15 и старше) снизилось, но общее количество случаев гемофильной инфекции повысилось из-за резкого увеличения инфекций бескапсульными штаммами, особенно среди пожилых. Смертность составляла 59%.",
+			"info_geo": "UK",
+			"info_authors": "Sarangi",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "BMJ",
+			"title": "Trends in Haemophilus influenzae type b infections in adults in England and Wales: surveillance study.",
+			"infoID": "PMC517642",
+			"info_date": "2004",
+			"info_type": "article",
+			"num": 25,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC517642/",
+			"digest": "Заболеваемость Hib среди взрослых в Англии снизилась после введения вакцинации (благодаря, вероятно, коллективному иммунитету), достигла минимума в 1998-м году, а в 2003 уже вернулась на допрививочный уровень.<br>Количество антител к Hib у взрослых снизилось после начала вакцинации.<br>Среди детей произошло то же самое. Сначала заболеваемость Hib резко снизилась, а потом, несмотря на высокий охват вакцинации, начала резко повышаться.<br>С 1998 года количество случаев заболевания среди детей удваивается каждый год, и большинство заболевших были полностью привиты.",
+			"info_geo": "UK",
+			"info_authors": "McVernon",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "Emerg Infect Dis",
+			"title": "Increasing incidence of invasive Haemophilus influenzae disease in adults, Utah, USA.",
+			"infoID": "PMC3322072",
+			"info_date": "2011",
+			"info_type": "article",
+			"num": 26,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3322072/",
+			"digest": "Вакцинация снизила количество случаев Hib среди детей на 99%, но заболеваемость гемофильной инфекцией среди взрослых выросла между 1998-м и 2008-м в 11.5 раз. Большинство случаев заболевания приходились на серотип F и на бескапсульные штаммы. Смертность составляла 22%.",
+			"info_geo": "US",
+			"info_authors": "Rubach",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "Int J Infect Dis",
+			"title": "Invasive Haemophilus influenzae in British Columbia: non-Hib and non-typeable strains causing disease in children and adults.",
+			"infoID": "21134777",
+			"info_date": "2011",
+			"info_type": "article",
+			"num": 27,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/21134777",
+			"digest": "В 1989-м, до начала вакцинации в Канаде, в Британской Колумбии было зарегистрировано 24 случая Hib за год. В 2008-2009 было зарегистрировано 45-53 случая в год. Понизилась заболеваемость серотипом В, и повысилась заболеваемость серотипом А. Если раньше болели в основном дети, то сейчас стали болеть и взрослые.",
+			"info_geo": "Canada",
+			"info_authors": "Shuel",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "Clin Infect Dis",
+			"title": "The changing epidemiology of invasive Haemophilus influenzae disease, especially in persons > or = 65 years old.",
+			"infoID": "17304452",
+			"info_date": "2007",
+			"info_type": "article",
+			"num": 28,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/17304452",
+			"digest": "С 1996 по 2004, количество случаев Hib в Иллинойсе возросло в 2.5 раза, а среди пожилых в 3.5 раза.<br>Количество случаев инфекции бескапсульной Hib возросло на 657%. Если в 1996-м бескапсульная Hib была ответственна за 17.5% случаев болезни, то в 2004 она была ответственна уже за 70.7% случаев. Летальность составляла 12.7%, а среди пожилых - 20.6%.<br>Летальность серотипа F среди пожилых составляла 11.1%, а серотипа E - 38.5%.",
+			"info_geo": "US",
+			"info_authors": "Dworkin",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_authors": "Urwin",
+			"num": 29,
+			"info_place": "Clin Infect Dis",
+			"I_S_codenames": [
+				"strain_replacement"
+			],
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/8783712",
+			"digest": "Заболеваемость серотипом F увеличилась в 3.8 раз между 1989 и 1994-м, и составляет уже 17% всех случаев гемофильной инфекции. Смертность этого серотипа составляет 30% среди взрослых и 21% среди детей.",
+			"title": "Invasive disease due to Haemophilus influenzae serotype f: clinical and epidemiologic characteristics in the H. influenzae serotype b vaccine era. The Haemophilus influenzae Study Group.",
+			"info_type": "article",
+			"info_date": "1996",
+			"infoID": "8783712"
+		},
+		{
+			"num": 3,
+			"digest": "Конъюгированные вакцины - это особый класс вакцин. Капсула гемофильной бактерии представляет собой углевод (полисахарид). Создать эффективную вакцину от полисахарида оказалось невозможным, так как иммунная система, почему-то, не очень желает создавать антитела к углеводам. Чтобы решить эту проблему, к полисахариду присоединили белок (обычно для этого используют дифтерийный или столбнячный токсоид), и таким образом иммунная система создает в придачу к антителам от белка также антитела от углевода.<br>Другие конъюгированные вакцины - это пневмококк и менингококк."
+		},
+		{
+			"info_place": "Ned Tijdschr Geneeskd",
+			"title": "Increase in the number of invasive Haemophilus influenzae type b infections.",
+			"infoID": "16375019",
+			"info_date": "2005",
+			"info_type": "article",
+			"num": 30,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/16375019",
+			"digest": "Нидерландах заболеваемость Hib снизилась после начала вакцинации, достигла минимума в 1993 году, а затем снова начала расти. Вероятно, потому что из-за исчезновения бактерии \"естественные бустеры\" происходят намного реже, что приводит к ослаблению иммунитета, и к повышенной восприимчивости к инфекции.<br>А может [потому==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2267795/], что вакцинация уничтожила штаммы с тонкой капсулой, и оставила штаммы с более толстой капсулой. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/16088831], [[2]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC174444/], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC257846/].",
+			"info_geo": "Netherlands",
+			"info_authors": "Spanjaard",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_place": "Int J Infect Dis",
+			"title": "Epidemiology of invasive pneumococcal and Haemophilus influenzae diseases in Northwestern Ontario, Canada, 2010-2015.",
+			"infoID": "28951105",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 31,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28951105",
+			"digest": "Заболеваемость серотипом А (Hia) в Онтарио уже на 76% превышает заболеваемость Hib в допрививочную эпоху.",
+			"info_geo": "Canada",
+			"info_authors": "Eton",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"num": 32,
+			"digest": "Еще несколько статей о замене штаммов с серотипа B на другие: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/24268829], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/21945960], [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3630022/], [[4]==https://www.ncbi.nlm.nih.gov/pubmed/21054663], [[5]==https://www.ncbi.nlm.nih.gov/pubmed/19761408], [[6]==https://www.ncbi.nlm.nih.gov/pubmed/17984810], [[7]==https://www.ncbi.nlm.nih.gov/pubmed/20178414], [[8]==https://www.ncbi.nlm.nih.gov/pubmed/21459175], [[9]==https://www.ncbi.nlm.nih.gov/pubmed/15917960], [[10]==https://www.ncbi.nlm.nih.gov/pubmed/25762194], [[11]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5382729/].",
+			"I_S_codenames": [
+				"strain_replacement"
+			]
+		},
+		{
+			"info_type": "article",
+			"num": 33,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/24445822",
+			"digest": "В Израиле, после начала вакцинации заболеваемость гемофильной инфекцией упала на 90% к 1996-у, и осталась низкой и в последующие годы.",
+			"title": "Pediatric invasive Haemophilus influenzae infections in Israel in the era of Haemophilus influenzae type b vaccine: a nationwide prospective study.",
+			"info_place": "Pediatr Infect Dis J",
+			"info_geo": "Israel",
+			"info_authors": "Bamberger",
+			"info_date": "2014",
+			"infoID": "24445822"
+		},
+		{
+			"num": 34,
+			"digest": "Вакцина от Hib далеко не всегда срабатывает. Несколько исследований о случаях заболевания несмотря на вакцинацию: [423 случая==http://www.ncbi.nlm.nih.gov/pubmed/19889054], [40 случаев==https://www.ncbi.nlm.nih.gov/pubmed/12663101], [251 случай==https://www.ncbi.nlm.nih.gov/pubmed/18171249], [323 случая==https://www.ncbi.nlm.nih.gov/pubmed/19580418], [115 случаев==https://www.ncbi.nlm.nih.gov/pubmed/11049779], [93 случая==https://www.ncbi.nlm.nih.gov/pubmed/12716702], [90 случаев==https://www.ncbi.nlm.nih.gov/pubmed/16088831], [21 случай==https://www.ncbi.nlm.nih.gov/pubmed/11360210], [12 случаев==https://www.ncbi.nlm.nih.gov/pubmed/11740707].<br>Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/14743044], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/25612943], [[3]==https://www.ncbi.nlm.nih.gov/pubmed/9623117]."
+		},
+		{
+			"info_img": "https://vaccines.procon.org/files/1-vaccines-images/hib-cases-1991-2013.PNG",
+			"num": 35,
+			"digest": "Количество случаев гемофильной инфекции в США с 1991 по 2013:<br>Конъюгированная вакцина была введена в 1988 году, но до 1991 статистика случаев гемофильной инфекции не велась. CDC утверждает, что до введения прививки каждый год регистрировалось 20,000 случаев Hib, но эти данные невозможно проверить."
+		},
+		{
+			"info_place": "Pediatr Infect Dis J",
+			"title": "Diminution of the anti-polyribosylribitol phosphate response to a combined diphtheria-tetanus-acellular pertussis/Haemophilus influenzae type b vaccine by concurrent inactivated poliovirus vaccination.",
+			"infoID": "10819337",
+			"info_date": "2000",
+			"header": "Комбинированные вакцины",
+			"info_type": "article",
+			"num": 36,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/10819337",
+			"digest": "Когда делают прививку от Hib одновременно с инактивированной вакциной от полиомиелита (ИПВ), то вырабатываются значительно меньше антител к Hib, чем если делать ее одновременно с живой вакциной от полиомиелита.<br>Также обнаружилось, что у детей, которым одновременно делают прививки от Hib и DTaP, вырабатывается значительно меньше антител от столбняка.<br>Вакцины кололи в разные места (одну в руку, другую в ногу). Раньше не было известно, что если колоть две вакцины одновременно, то между ними возникает иммунная интерференция. Биологический механизм этого явления неизвестен.",
+			"info_authors": "Rennels",
+			"I_S_codenames": [
+				"DTaP/Hib",
+				" IPV"
+			]
+		},
+		{
+			"info_type": "article",
+			"num": 37,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9306481",
+			"I_S_codenames": [
+				"DTaP/Hib"
+			],
+			"info_date": "1997",
+			"title": "Vaccine antigen interactions after a combination diphtheria-tetanus toxoid-acellular pertussis/purified capsular polysaccharide of Haemophilus influenzae type b-tetanus toxoid vaccine in two-, four- and six-month-old infants.",
+			"info_place": "Pediatr Infect Dis J",
+			"info_authors": "Pichichero",
+			"digest": "Комбинированная вакцина DTaP/Hib вырабатывает значительно меньше антител от Hib и от столбняка, чем если их делать раздельно. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/9576383], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/22513932], [[3]==https://www.ncbi.nlm.nih.gov/pubmed/16524648].<br>Hib почти во всех странах идет в составе пятивалентной или шестивалентной вакцины, вместе с ИПВ и столбняком (пентаксим, пентасел, инфанрикс и т. д.).",
+			"infoID": "9306481"
+		},
+		{
+			"info_type": "article",
+			"num": 38,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/10600209",
+			"I_S_codenames": [
+				"DTaP/Hib"
+			],
+			"info_date": "1999",
+			"title": "Non-pertussis components of combination vaccines: problems with potency testing.",
+			"info_place": "Biologicals",
+			"info_authors": "Sesardic",
+			"digest": "Комбинированная вакцина DTaP/Hib (с бесклеточной коклюшной вакциной) вырабатывает в 10 раз меньше антител от Hib, чем комбинированная вакцина DTP/Hib.<br>Если колоть Hib и DTaP в одно и то же место, то вырабатываются в 5-15 раз меньше антител от Hib, чем если колоть их в разные места.<br>DTaP вырабатывает значительно меньше антител от дифтерии, чем DTP.",
+			"infoID": "10600209"
+		},
+		{
+			"info_place": "Lancet",
+			"title": "Risk of vaccine failure after Haemophilus influenzae type b (Hib) combination vaccines with acellular pertussis.",
+			"infoID": "12737866",
+			"info_date": "2003",
+			"info_type": "article",
+			"num": 39,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/12737866",
+			"digest": "После того, как в Великобритании перешли на бесклеточную коклюшную вакцину (DTaP/Hib), было зарегистрировано почти семикратное увеличение случаев Hib.",
+			"info_geo": "UK",
+			"info_authors": "McVernon",
+			"I_S_codenames": [
+				"DTaP/Hib"
+			]
+		},
+		{
+			"info_place": "Mem Inst Oswaldo Cruz",
+			"title": "Naturally acquired immunity to Haemophilus influenzae type B in healthy Cuban children.",
+			"infoID": "15654422",
+			"info_date": "2004",
+			"header": "Естественный иммунитет",
+			"info_type": "article",
+			"num": 4,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/15654422",
+			"I_S_codenames": [
+				"natural_immunity"
+			],
+			"info_geo": "Cuba",
+			"info_authors": "Toraño Peraza",
+			"digest": "Авторы проанализировали 974 здоровых непривитых детей на Кубе, и обнаружили, что к 4-5 летнему возрасту 99.7% из них обладали естественным иммунитетом к Hib. Естественный иммунитет к Hib обнаружился также в Финляндии (79%) и в Индии (80%).<br>Поэтому ВОЗ рекомендует вводить эту вакцину в национальный календарь только в тех странах, которые могут себе это финансово позволить, не отнимая ресурсы от других важных вакцин.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4313637/] сообщается про естественный иммунитет к Hia у аборигенов в Канаде. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/25738817]."
+		},
+		{
+			"info_place": "Lancet",
+			"title": "Why the rise in Haemophilus influenzae type b infections?",
+			"infoID": "12892974",
+			"info_date": "2003",
+			"info_type": "article",
+			"num": 40,
+			"link": "http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2803%2913986-4/",
+			"I_S_codenames": [
+				"breast_feeding"
+			],
+			"info_geo": "[u'Sweden', u'Finland']",
+			"info_authors": "Silfverdal",
+			"digest": "В Швеции и Финляндии не было увеличения количества случаев Hib после перехода на бесклеточную коклюшную вакцину. Авторы считают, что это из-за того, что в этих странах распространено более продолжительное грудное вскармливание."
+		},
+		{
+			"info_place": "Autoimmunity",
+			"title": "Clustering of cases of insulin dependent diabetes (IDDM) occurring three years after hemophilus influenza B (HiB) immunization support causal relationship between immunization and IDDM.",
+			"infoID": "12482192",
+			"info_date": "2002",
+			"header": "Безопасность",
+			"info_type": "article",
+			"num": 41,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/12482192/",
+			"I_S_codenames": [
+				"type_1_diabetes"
+			],
+			"info_geo": "Finland",
+			"info_authors": "Classen",
+			"digest": "Анализ данных клинического испытания вакцины от Hib в Финляндии (116,000 детей). Вакцина от Hib повышает риск юношеского диабета на 26%. Диабет начинался через 38 месяцев после вакцинации.<br>Вакцина была проверена также на склонных к диабету мышах. У привитых мышей диабет развивался значительно чаще.<br>В других исследованиях был выявлен похожий повышенный риск диабета, но поскольку эти исследования были небольшими, результаты не были статистически значимыми."
+		},
+		{
+			"info_type": "article",
+			"num": 42,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1116914/",
+			"digest": "Уже только один этот побочный эффект (повышенный риск юношеского диабета) превышает пользу вакцины, которая должна предотвратить 7 случаев смерти и 7-26 случаев инвалидности на 100,000 привитых. На каждого спасенного от Hib ребенка, будут приходиться четверо заболевших диабетом.<br>В США и в Великобритании количество случаев диабета резко увеличилось после начала вакцинации Hib, особенно среди детей младше 4 лет.<br>Авторы заключают, что потенциальный вред вакцины превышает потенциальную пользу. Еще: [[1]==http://www.bmj.com/content/315/7110/713].",
+			"info_date": "1999",
+			"title": "Association between type 1 diabetes and Hib vaccine. Causal relation is likely.",
+			"info_place": "BMJ",
+			"infoID": "PMC1116914",
+			"I_S_codenames": [
+				"type_1_diabetes"
+			],
+			"info_authors": "Classen"
+		},
+		{
+			"info_type": "article",
+			"num": 43,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1114674/",
+			"digest": "Исследования вакцин основываются на теории, согласно которой преимущества вакцинации намного перевешивают риски от долгосрочных побочных эффектов, и поэтому в долгосрочных исследованиях безопасности нет необходимости.<br>Мы обнаружили, что лишь повышенный риск лишь одного осложнения (диабета) уже перевешивает пониженный риск менингита. Мы считаем, что общественность должна быть информирована о том, что вакцины могут привести к долгосрочным осложнениям. Это приведет к тому, что общественность потребует более адекватные исследования безопасности до начала вакцинации, что, в свою очередь, приведет к разработке более безопасных вакцин.",
+			"info_date": "1999",
+			"title": "Public should be told that vaccines may have long term adverse effects.",
+			"info_place": "BMJ",
+			"infoID": "PMC1114674",
+			"I_S_codenames": [
+				"type_1_diabetes"
+			],
+			"info_authors": "Classen"
+		},
+		{
+			"info_type": "article",
+			"num": 44,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/14679101",
+			"digest": "Прививка от Hib повышает в 5.9 раз риск образования антител к GAD, и в 3.4 раза антител к IA-2, которые считаются аутоиммунными маркерами развития диабета 1-го типа.",
+			"info_date": "2003",
+			"title": "Vaccinations may induce diabetes-related autoantibodies in one-year-old children.",
+			"info_place": "Ann N Y Acad Sci",
+			"infoID": "14679101",
+			"I_S_codenames": [
+				"type_1_diabetes"
+			],
+			"info_authors": "Wahlberg"
+		},
+		{
+			"info_type": "VAERS",
+			"num": 45,
+			"digest": "Согласно VAERS, с 1991 по 2010, 1904 человек [умерли==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON\u0026GROUP1=CAT\u0026VAX[]=6VAX-F\u0026VAX[]=DTAPH\u0026VAX[]=DTAPIPVHIB\u0026VAX[]=DTPHIB\u0026VAX[]=DTPIHI\u0026VAX[]=DTPPHIB\u0026VAX[]=HBHEPB\u0026VAX[]=HBPV\u0026VAX[]=HIBV\u0026VAX[]=MENHIB\u0026VAX[]=MNQHIB\u0026VAXTYPES[]=Haemophilus\u0026VAX_YEAR_LOW=1991\u0026VAX_YEAR_HIGH=2010] после прививки, содержащую Hib, и 1147 стали инвалидами (это 1-2% всех случаев). От самой болезни за это время [умерли==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/e/reported-cases.pdf] 160 человек."
+		},
+		{
+			"info_type": "article",
+			"num": 46,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/25598306/",
+			"digest": "Здесь авторы анализируют VAERS, находят 5179 серьезных осложнений и 896 случаев смерти после вакцинации от Hib, и заключают, что вакцина безопасна. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/3497381].",
+			"info_date": "2015",
+			"title": "Adverse events following Haemophilus influenzae type b vaccines in the Vaccine Adverse Event Reporting System, 1990-2013.",
+			"info_place": "J Pediatr",
+			"infoID": "25598306s",
+			"I_S_codenames": [
+				"VAERS"
+			],
+			"info_authors": "Moro"
+		},
+		{
+			"info_type": "article",
+			"num": 47,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/8354324",
+			"digest": "Изредка прививка от Hib приводит к синдрому Гийена-Барре.",
+			"info_date": "1993",
+			"title": "Guillain-Barré; syndrome following immunisation with Haemophilus influenzae type b conjugate vaccine.",
+			"info_place": "Eur J Pediatr",
+			"infoID": "8354324",
+			"I_S_codenames": [
+				"guillain-barre"
+			],
+			"info_authors": "Gervaix"
+		},
+		{
+			"info_type": "article",
+			"num": 48,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/11529542/",
+			"info_date": "2001",
+			"title": "Adverse events following vaccination in premature infants.",
+			"info_place": "Acta Paediatr",
+			"infoID": "11529542",
+			"digest": "DPT/Hib вакцина часто приводит к кардиореспираторным осложнениям у недоношенных детей, особенно если прививку делают до 70-дневного возраста. Побочные явления были зарегистрированы у 38% младенцев.",
+			"info_authors": "Sen"
+		},
+		{
+			"info_type": "article",
+			"num": 49,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9152284/",
+			"info_date": "1997",
+			"title": "Apnea after immunization of preterm infants.",
+			"info_place": "J Pediatr",
+			"infoID": "9152284",
+			"digest": "У недоношенных детей прививки DPT и Hib повышали риск апноэ (остановки дыхания) и брадикардии (снижения частоты сердечного ритма). Еще: [[1]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1720966/].",
+			"info_authors": "Sánchez"
+		},
+		{
+			"info_place": "Pediatrics",
+			"title": "Changing incidence of Hemophilus influenzae meningitis.",
+			"infoID": "4538894",
+			"info_date": "1972",
+			"header": "Факторы риска",
+			"info_type": "article",
+			"num": 5,
+			"link": "http://pediatrics.aappublications.org/content/50/5/723",
+			"info_geo": "US",
+			"info_authors": "Smith",
+			"digest": "С 1940-х годов по 1960-е заболеваемость Hib в США увеличилась в 5 раз."
+		},
+		{
+			"info_type": "article",
+			"num": 50,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/2107522",
+			"digest": "Риск Hib в первую неделю после прививки повышен в 6 раз. Согласно CDC, риск Hib после прививки повышается в 1.8 раз.",
+			"title": "Disease caused by Haemophilus influenzae type b in the immediate period after homologous immunization: immunologic investigation.",
+			"info_place": "Pediatrics",
+			"info_authors": "Sood",
+			"info_date": "1990",
+			"infoID": "2107522"
+		},
+		{
+			"info_type": "article",
+			"num": 51,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/1955715",
+			"digest": "Это происходит потому, что через 2-3 дня после прививки количество антител падает, а на седьмой день возрастает. Еще [[1]==https://www.ncbi.nlm.nih.gov/pubmed/2788860], [[2]==https://www.jstor.org/stable/3971972].<br>То есть при бессимптомном заражении Hib, прививка может привести к инвазивной инфекции.",
+			"title": "Serum anticapsular antibody response in the first week after immunization of adults and infants with the Haemophilus influenzae type b-Neisseria meningitidis outer membrane protein complex conjugate vaccine.",
+			"info_place": "J Infect Dis",
+			"info_authors": "Daum",
+			"info_date": "1991",
+			"infoID": "1955715"
+		},
+		{
+			"info_type": "article",
+			"num": 52,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3431063/",
+			"digest": "Еще в 1901 году Wright ввел термин \"негативная фаза\", для описания снижения бактерицидной активности, которую он наблюдал в течение 21 дня после вакцинации от тифа. Этот феномен наблюдался также в клинических испытаниях конъюгированных и неконъюгированных вакцин от Hib: у тех, у кого антитела к Hib уже были, концентрация антител после прививки снижалась. Предполагается, что этот феномен происходит со всеми четырьмя существующими вакцинами. Некоторые считают, что снижение количества антител происходит из-за того, что существующие антитела присоединяются к вакцинным антигенам. Если это происходит во время бессимптомной колонизации, то риск инвазивного заболевания повышается.",
+			"title": "Haemophilus influenzae Type b Meningitis in the Short Period after Vaccination: A Reminder of the Phenomenon of Apparent Vaccine Failure.",
+			"info_place": "Case Rep Infect Dis",
+			"info_authors": "Greenberg-Kushnir",
+			"info_date": "2012",
+			"infoID": "PMC3431063"
+		},
+		{
+			"info_place": "Med Hypotheses",
+			"title": "Hypothesis: conjugate vaccines may predispose children to autism spectrum disorders.",
+			"infoID": "21993250",
+			"info_date": "2011",
+			"header": "Молекулярная мимикрия и аутизм",
+			"info_type": "article",
+			"num": 53,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/21993250",
+			"I_S_codenames": [
+				"autism"
+			],
+			"info_geo": "[u'US', u'Denmark', u'Israel']",
+			"info_authors": "Richmand",
+			"digest": "Я долго сомневался насчет прививок от Hib и от пневмококка, поскольку эти болезни действительно могут быть опасны. То, что лично для меня поставило на этих прививках окончательный крест, была следующая статья, опубликованная в довольно маргинальном журнале, специализирующемся на гипотезах. Похоже, что даже для этого маргинального журнала статья была слишком маргинальна, и ее [сопроводили==https://www.ncbi.nlm.nih.gov/pubmed/21907498] редакционной статьей, в которой они пишут, что несмотря на то, что тема связи вакцин и аутизма уже заезженна до дыр и опровергнута, и что хотя автор статьи вообще не ученый, его гипотеза, тем не менее, вполне правдоподобна, и ее стоит проверить.<br>Очень рекомендую прочитать эту статью полностью. Редакционную статью тоже стоит прочитать.<br>Конъюгированные вакцины в корне меняют иммунологический ответ на углеводные антигены. В отсутствие конъюгированной вакцины, углеводные антигены обычно не вызывают иммунный ответ Т-клеток, а индуцируют более слабый ответ (Т-cell independent). Это происходит из-за того, что клетки В2 не синтезируют антитела без сигнала Т-хелперных клеток. Для того, чтобы это произошло, В2-клетка, и ее родственная Т-хелперная клетка, должны распознавать тот же, или похожий [эпитоп==https://ru.wikipedia.org/wiki/%D0%AD%D0%BF%D0%B8%D1%82%D0%BE%D0%BF]. Но поскольку Т-клетки распознают только белковые эпитопы, Т-хелперные клетки обычно способны активировать В2-клетки в ответ на белковые антигены.<br>В ответ на бактериальные капсулярные полисахариды иммунная система формирует ответ посредством клеток В1 и MZB (Marginal zone B). B1-клетки не начинают реагировать на бактериальные углеводные антигены до 18-24 месяцев, и их ответ не полностью созревает до примерно 5 летнего возраста. Поэтому младенцы и маленькие дети неспособны на эффективный иммунный ответ на капсульные бактерии.<br><br>Конъюгированные вакцины используют тот факт, что клетки B2 и их родственные Т-хелперные клетки не обязаны реагировать на идентичный эпитоп, а скорее должны распознавать тесно связанные эпитопы. Хотя механизмы, с помощью которых работают конъюгированные вакцины, до конца не поняты, считается, что [антигенпредставляющие клетки==https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B8%D0%B3%D0%B5%D0%BD%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D1%8F%D1%8E%D1%89%D0%B8%D0%B5_%D0%BA%D0%BB%D0%B5%D1%82%D0%BA%D0%B8], обрабатывают объединенный белковый носитель и углеводный [гаптен==https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D0%BF%D1%82%D0%B5%D0%BD%D1%8B], что приводит к распознаванию белкового носителя посредством T-хелперных клеток, и распознаванию углеводных антигенов посредством B2-клеток. То есть конъюгированные вакцины изменяют иммунологический ответ на углеводные антигены у младенцев и детей младшего возраста, из гипочувствительного на полноценный ответ T-клеток.<br>Поскольку антитела против углеводных антигенов часто являются автореактивными с собственными углеводами, дифференциация B-клеток на B2-клетки может провести к аутоиммунной реакции. Поэтому В-клетки против углеводных антигенов тщательно регулируются иммунной системой.<br>Антитела к собственным углеводам ассоциированы с несколькими аутоиммунными заболеваниями, такие как системная красная волчанка, миокардит и ревматическая болезнь сердца, хорея Сиденгама, и детские аутоиммунные нервно-психические расстройства, ассоциированные со стрептококковыми инфекциями (PANDAS).<br>В отличие от антител, вырабатываемых клетками B2, антитела вырабатываемые клетками B1 и MZB короткоживущие и [низкоаффинные==https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%B3%D0%B0%D0%BD%D0%B4_(%D0%B1%D0%B8%D0%BE%D1%85%D0%B8%D0%BC%D0%B8%D1%8F)], и проводят к аутоиммунной реакции с меньшей вероятностью.<br>У аутистов наблюдается повышенный уровень антител к нервным структурам и повышенный уровень провоспалительных цитокинов в мозгу, что свидетельствует о том, что аутоиммунные и нейровоспалительные процессы могут играть роль в некоторых случаях аутизма.<br>Поскольку [миелинизация==https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%B5%D0%BB%D0%B8%D0%BD] (образование изолирующей оболочки нервных волокон) наиболее интенсивна в течение первых 9 месяцев жизни, и продолжается в раннем детстве, нейронное развитие у младенцев и детей младшего возраста может быть особенно уязвимым к самореактивным антителам, включая те, которые реагируют с гликопротеинами в миелиновых оболочках.<br><br>Первая конъюгированная вакцина (от Hib) появилась в США в 1988, а потом была лицензирована в большинстве других развитых стран, включая Данию в 1993, и Израиль, где она была лицензирована в 1992-м, и введена в национальный календарь прививок в 1994-м.<br>Количество случаев аутизма начало резко расти в США начиная с рожденных в середине 1987 года. В Дании и в Израиле скачок аутизма начался примерно на 5 лет позже.<br>В 1990 году вакцина была лицензирована для младенцев начиная с двухмесячного возраста, что может объяснить дальнейшей рост аутизма. Другое объяснение увеличения случаев аутизма в середине 90-х может заключаться в изменении белкового носителя, используемого в вакцине, что сделало ее более иммуногенной. Если вакцина от Hib является триггером аутизма, то увеличение ее иммуногенности и изменение [активного сайта рецептора==https://ru.wikipedia.org/wiki/%D0%A3%D1%87%D0%B0%D1%81%D1%82%D0%BE%D0%BA_%D1%81%D0%B2%D1%8F%D0%B7%D1%8B%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F_%D0%BB%D0%B8%D0%B3%D0%B0%D0%BD%D0%B4%D0%B0_%D1%81_%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%BE%D1%80%D0%BE%D0%BC] может увеличить вероятность аутизма.<br>Лицензирование вакцины от пневмококка в 2000-м году может частично объяснить дальнейший рост аутизма. Дети, рожденные в 1995, были первыми, кто получили прививку от пневмококка, и это согласуется с данными CDC, согласно которым уровень аутизма в 1992-1994 не изменялся, а в 1998-м аутизтов уже было на 57% больше, чем в 1994-м.<br>В Дании вакцина от Hib была лицензирована в 1993-м, но сразу за этим последовала агрессивная кампания вакцинации детей, начиная с 1988 года рождения, что совпадает с начавшимся ростом аутизма среди рожденных в 1988-м и позже.<br>В Израиле, количество детей получающих пособия по инвалидности из-за аутизма не изменялось с 1972-го по 1995-й. Но с 1996-го по 1998-й их количество выросло в 5 раз, что объясняется данной гипотезой. В 2004 году, среди получающих пособия, 11% были рождены в 1985-89 (до лицензирования вакцины), 21.1% были рождены в 1990-94 (начало вакцинации), и 37% были рождены в 1995-99 (сразу после введения прививки в национальный календарь).<br><br>Иммунная система в ответ на углеводную оболочку капсульных бактерий вырабатывает антитела посредством клеток B1 и MZB у взрослых, и у детей старше 5-и лет. Но дети до 5-и лет плохо реагируют на углеводные антигены. Конъюгированные вакцины состоят из белкового носителя, присоединенному к углеводному антигену, и способны обойти это ограничение иммунной системы на углеводные антигены у детей. Благодаря белковому носителю, эти вакцины способны индуцировать выработку антител посредством клеток В2.<br>Выработка антител на углеводные антигены посредством клеток B2 является значительным отходом от естественной парадигмы, в которой клетки B1 и MZB обычно вырабатывают короткоживущие антитела против углеводных антигенов, а клетки B2 вырабатывают более долгоживущие против белковых антигенов.<br><br>В добавок к тому, что иммунная система детей младше 5 лет плохо реагирует на капсульные бактерии, материнские антитела IgM и IgG2 плохо проходят через плаценту, из чего следует, что и зародыши, вероятно, тоже не защищены от капсульных бактерий. С точки зрения эволюции - это довольно неожиданно. Возможно, что этот эволюционный недостаток сопровождается компенсационным эволюционным преимуществом. Одно из возможных объяснений заключается в том, что антитела к углеводным антигенам могут быть кросс-реактивными с нейронными гликопротеинами, и между защитой от капсульных бактерий и необходимостью развития нервной системы было достигнуто, путем эволюции, тонкое равновесие. Это согласуется с тем, что миелинизация начинается с младенчества, и длится до раннего детства, что совпадает с периодом, в течение которого иммунная система гипочувствительна к углеводным антигенам. Более того, период, в течение которого иммунная система наименее чувствительна к углеводным антигенам, соответствует периоду наиболее интенсивной миелинизации.<br>Возможно, что антитела к углеводам не только мешают развитию нервной системы у младенцев и детей младшего возраста, но их отрицательные эффекты усиливаются устойчивой реакцией иммунной системы, индуцированной конъюгированными вакцинами, что значительно нарушает баланс, достигнутый эволюцией."
+		},
+		{
+			"info_place": "Int J Epidemiol",
+			"title": "Protective effect of breastfeeding: an ecologic study of Haemophilus influenzae meningitis and breastfeeding in a Swedish population.",
+			"infoID": "10195681",
+			"info_date": "1999",
+			"info_type": "article",
+			"num": 6,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/10195681/",
+			"I_S_codenames": [
+				"breast_feeding"
+			],
+			"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/5323/5323_original.jpg",
+			"info_geo": "Sweden",
+			"info_authors": "Silfverdal",
+			"digest": "Заболеваемость Hib до начала вакцинации составляла 30/100,000 среди белых, и 600/100,000 среди аборигенов на Аляске. Заболеваемость в США возросла в 4 раза с 1940 по 1970-й. То же самое произошло в Шотландии и в Швеции.<br>Грудное вскармливание обладает защитным эффектом от менингита, вызванного Hib, и этот эффект длится 5-10 лет.<br>Короткий период грудного вскармливания (менее 13 недель) повышает риск Hib в 3.79 раз. Болезненные дети болеют в 4.5 раза чаще.<br>Грудное молоко обладает ингибирующим эффектом на присоединение бактерии к слизистой оболочке носоглотки.<br>Как видно на графике, вслед за снижением количества детей на грудном вскармливании заболеваемость Hib повысилась, а когда их процент снова повысился, заболеваемость Hib понизилась."
+		},
+		{
+			"info_place": "Int J Epidemiol",
+			"title": "Protective effect of breastfeeding on invasive Haemophilus influenzae infection: a case-control study in Swedish preschool children.",
+			"infoID": "9169183",
+			"info_date": "1997",
+			"info_type": "article",
+			"num": 7,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9169183",
+			"I_S_codenames": [
+				"breast_feeding"
+			],
+			"info_geo": "Sweden",
+			"info_authors": "Silfverdal",
+			"digest": "Среди детей старше 1 года, короткий период грудного вскармливания (ГВ) повышал риск Hib в 7.79 раз. Каждая дополнительная неделя ГВ снижала риск Hib на 5%. Защитный эффект ГВ начинался уже с 13 недель исключительно грудного вскармливания, и длился месяцы и годы."
+		},
+		{
+			"info_place": "J Pediatr",
+			"title": "Risk factors of invasive Haemophilus influenzae type b disease among children in Finland.",
+			"infoID": "2809900",
+			"info_date": "1989",
+			"info_type": "article",
+			"num": 8,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/2809900",
+			"I_S_codenames": [
+				"breast_feeding",
+				" day_care"
+			],
+			"info_geo": "Finland",
+			"info_authors": "Takala",
+			"digest": "Посещение детского сада повышало риск Hib в 5 раз. Предыдущие госпитализации повышали риск на 90%. ГВ дольше 6 месяцев понижало риск на 53%."
+		},
+		{
+			"info_place": "Am J Epidemiol",
+			"title": "Day care attendance and other risk factors for invasive Haemophilus influenzae type b disease.",
+			"infoID": "8356972",
+			"info_date": "1993",
+			"info_type": "article",
+			"num": 9,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/8356972",
+			"I_S_codenames": [
+				"smoking",
+				" day_care",
+				" breast_feeding"
+			],
+			"info_geo": "US",
+			"info_authors": "Arnold",
+			"digest": "Пассивное курение повышало риск Hib на 40%. Детский сад повышал риск в 2.9 раз. ГВ понижало риск на 50%. Негры болели в 4.1 раза чаще."
+		}
+	],
+	"editdate": {
+		"$date": "2018-02-12T19:02:55.753Z"
+	}
+}

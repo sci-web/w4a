@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Spell out scientific service{% endblock %}
+{% block title %}SciBook for everyone to study or learn the information from the sources{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
@@ -9,9 +9,9 @@
             <h4 style="text-align:right;"><a href="" class="linknav">{{ entry.analyst }}</a></h4>
             <h1 style="margin:-25px 0 0 0 ">{{ entry.subject }}</h1>
             <div  style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
-            {{ entry.epigraph.source }}</small>
+            <i>{{ entry.epigraph.source }}</i></small>
             </div>
-            <p style="text-align:justify">{{ entry.intro | rehref | safe }}
+            <p style="text-align:justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ entry.intro | rehref | safe }}
             <div style="margin:10px 0 0 0; font-size:17px;height:30px;">
                 <div style="float:left; margin-left:-3px">
                     <a id="opentxt" href="/intro/{{ entry.namespace }}" class="linknav">Введение</a>
@@ -30,13 +30,13 @@
                     <a id="opencontent" href="/chapters/{{ entry.namespace }}" class="linknav">Оглавление</a>
                 </div>
             </div>
-<hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 0 15%" align=center>
-{% endfor %}
-</div>
+<hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:1% 0 0 15%" align=center>
 <div id="fill" class="boxed_sh" style="display:none; margin:-12px 1% 80px 0; padding:0 2%; ">
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>
+</div>
+{% endfor %}
 </div>
 <script>
 $(document).ready(function() {

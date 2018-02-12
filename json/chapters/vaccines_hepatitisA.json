@@ -1,0 +1,309 @@
+{
+	"_id": {
+		"$oid": "5a81d2b21467746fd848044a"
+	},
+	"analyst": "amantonio",
+	"namespace": "vaccines",
+	"title": "Гепатит A",
+	"I_S_codename": "hepatitisA",
+	"I_S_type": "S_O",
+	"I_S_type_this": "disease",
+	"I_S_name": "Гепатит A",
+	"date": {
+		"$date": "2018-02-07T11:00:00.000Z"
+	},
+	"epigraph": {
+		"text": "I am dying from the treatment of too many physicians.",
+		"source": "Alexander the Great"
+	},
+	"points": [
+		{
+			"num": 1,
+			"digest": "Если от коклюша прививают детей и взрослых, чтобы защитить младенцев, а от краснухи прививают младенцев, чтобы защитить еще не родившихся младенцев, то от гепатита А прививают младенцев, чтобы защитить взрослых."
+		},
+		{
+			"info_place": "Turk J Pediatr",
+			"title": "The prevalence of atopy in children with antibodies against hepatitis A virus and hepatitis B virus.",
+			"infoID": "17172060",
+			"info_date": "2006",
+			"info_type": "article",
+			"num": 10,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/17172060",
+			"I_S_codenames": [
+				"asthma",
+				" allergy"
+			],
+			"info_geo": "Turkey",
+			"info_authors": "Kocabaş",
+			"digest": "Дети, у которых не было антител от гепатита А, болели астмой и аллергическим ринитом в 9 раз чаще. Те, у кого не было антител от гепатита B, болели аллергическими заболеваниями в 5.9 раз чаще. Еще: [[1]==https://www.nature.com/articles/425576a]."
+		},
+		{
+			"info_type": "article",
+			"num": 11,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/18182335",
+			"infoID": "18182335",
+			"info_date": "2009",
+			"title": "Clearance of HCV RNA following acute hepatitis A superinfection.",
+			"info_geo": "Italy",
+			"info_place": "Dig Liver Dis",
+			"digest": "Считается, что суперинфекция (инфекция, развивающаяся на фоне другой инфекции) гепатита А у хронических больных гепатитом В и С, приводит к отказу печени и к высокой вероятности летального исхода. Однако также сообщается, что инфекция гепатита А может привести к полному или временному выздоровлению от хронического гепатита. Механизмы этого явления неизвестны.<br>Здесь описывается случай 24-летнего наркомана, у которого был хронический гепатит С. Он съел сырую рыбу и заболел гепатитом А, после чего у него прошел хронический гепатит С.<br>Скорее всего за это отственен интерферон гамма (цитокин, выделяемый клетками Th1), уровень которого значительно повысился после инфекции.<br>Сообщается также о случаях подавления гепатита В во время гепатита А: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/11169072], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/6491642], [[3]==https://www.ncbi.nlm.nih.gov/pubmed/4088008].",
+			"info_authors": "Cacopardo"
+		},
+		{
+			"info_type": "article",
+			"info_place": "Cancer Res",
+			"num": 12,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/18134519",
+			"digest": "До 1966 все виды гепатита называли просто \"вирусный гепатит\".<br>Здесь описываются 3 случая вирусного гепатита у больных лимфомой Ходжкина. У двоих из них после гепатита А прошла также и лимфома, но третий умер.<br>Вдохновленные этим открытием, авторы заразили гепатитом 21 добровольца с лимфомой Ходжкина. По предварительным результатам на момент написания статьи 13 из них заболели гепатитом и у 7-и из заболевших симптомы лимфомы улучшились. На момент написания статьи никто не умер.",
+			"title": "Studies in Hodgkin's syndrome; the association of viral hepatitis and Hodgkin's disease; a preliminary report.",
+			"info_authors": "Hoster",
+			"info_date": "1949",
+			"infoID": "18134519"
+		},
+		{
+			"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/9057/9057_original.jpg",
+			"info_geo": "US",
+			"num": 13,
+			"digest": "До лицензирования вакцины заболеваемость гепатитом А в США составляла примерно 1 на 10,000, а смертность 1 на 3 миллиона. В 1999-м была введена вакцинация в 11 штатах, где заболеваемость была выше, чем 1 на 5,000.<br>В 2006-м вакцина была добавлена в национальный календарь прививок. Заболеваемость гепатитом А на этот момент [составляла==https://www.cdc.gov/mmwr/preview/mmwrhtml/ss5803a1.htm] 1 на 100,000, а смертность [составляла==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/e/reported-cases.pdf] 1 на десять миллионов. И почти все умершие были люди старше 50-и, с сопутствующими заболеваниями."
+		},
+		{
+			"info_place": "J Investig Allergol Clin Immunol",
+			"title": "Autoimmunity and hepatitis A vaccine in children.",
+			"infoID": "21905502",
+			"info_date": "2011",
+			"header": "Безопасность",
+			"info_type": "article",
+			"num": 14,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/21905502",
+			"I_S_codenames": [
+				"autoimmunity"
+			],
+			"info_geo": "Turkey",
+			"info_authors": "Karali",
+			"digest": "Не существует принятых критериев диагностики аутоиммунных заболеваний вследствие вакцинации. Аутоиммунные заболевания начинаются через продолжительный период после вакцинации, и из-за этого трудно заключить причинно-следственную связь. Вакцины содержат адъюванты, консерванты, антигены и другие ингредиенты, каждый из которых может вызвать или обострить аутоиммунные реакции.<br>Авторы привили 40 детей от гепатита А, и у 25% из них образовались аутоантитела (антитела к собственным антигенам), у одного появилась временная лейкопения (снижение количества лейкоцитов). Через год после прививки у двух детей все еще выявлялись аутоантитела."
+		},
+		{
+			"num": 15,
+			"digest": "В клинических испытаниях Vaqta в качестве плацебо [использовался==https://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM110049.pdf] алюминий.<br>У 1-10% привитых детей в течение 14 дней после вакцинации наблюдался конъюктивит, средний отит, анорексия, бессонница и другие заболевания, а у взрослых также менструальные нарушения и боли в спине.<br>У 0.7% привитых были зарегистрированы серьезные негативные случаи, и у 0.1% они были, по мнению исследователей, связаны с вакциной.<br>В клинических испытаниях Havrix в качестве плацебо [использовалась==https://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/Approvedproducts/UCM224555.pdf] вакцина от гепатита В.<br>У 0.9% привитых наблюдались серьезные негативные случаи.",
+			"I_S_codenames": [
+				"otitis_media",
+				" conjunctivitis",
+				" insomnia",
+				" anorexia"
+			]
+		},
+		{
+			"info_place": "Emerg Microbes Infect",
+			"title": "Hepatitis A virus infections and outbreaks in asylum seekers arriving to Germany, September 2015 to March 2016.",
+			"infoID": "PMC5457677",
+			"info_date": "2017",
+			"header": "Факторы риска",
+			"info_type": "article",
+			"num": 16,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5457677/",
+			"info_geo": "Germany",
+			"info_authors": "Michaelis",
+			"digest": "В 2015-16 количество случаев гепатита А в Германии, которое постоянно снижалось, увеличилось на 45%, и средний возраст больных значительно снизился. Оказалось, что это из-за миллиона беженцев, которых Германия приняла."
+		},
+		{
+			"info_type": "article",
+			"info_place": "Lancet Infect Dis",
+			"num": 17,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/29303741",
+			"info_date": "2018",
+			"title": "Hepatitis A outbreak in the USA.",
+			"info_geo": "US",
+			"info_authors": "Nelson",
+			"digest": "В 2001 году консультативный комитет Сан Диего (Калифорния) подчеркнул необходимость увеличения количества общественных туалетов в центре города.<br>В 2010 году был разработал план финансирования этих туалетов.<br>В 2016 году были установлены два туалета. Один из них впоследствии был закрыт из-за эксплуатационных расходов и из-за опасений по поводу преступлений, и лишь один туалет оставался рабочим в 2017 году. Всего в Сан Диего было 8 общественных туалетов, но лишь три были доступны 24 часа в сутки.<br>В Сан Франциско, где количество бездомных сравнимо с Сан Диего, есть 25 общественных туалетов, и все открыты 24 часа в сутки.<br>В 2017 году началась вспышка гепатита А в США, затрагивая главным образом бездомных в Сан Диего, где более 500 заболели и 20 умерли. После этого были установлены 16 переносных туалетов.<br>Из-за опасения гепатита А, власти [арестовывают==http://www.latimes.com/local/lanow/la-me-homeless-feeding-arrests-20180115-story.html] тех, кто раздает еду бездомным в пригороде Сан Диего.",
+			"infoID": "29303741"
+		},
+		{
+			"info_place": "Euro Surveill",
+			"title": "Outbreak of hepatitis A associated with men who have sex with men (MSM), England, July 2016 to January 2017.",
+			"infoID": "PMC5388117",
+			"info_date": "2017",
+			"header": "MSM",
+			"info_type": "article",
+			"num": 18,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5388117/",
+			"digest": "В 2016-17 большие города Европы захлестнула волна вспышек гепатита А. Подавляющее большинство заболевших были гомосексуалисты.<br>В Англии было зарегистрировано 37 случаев.",
+			"info_geo": "UK",
+			"info_authors": "Beebeejaun",
+			"I_S_codenames": [
+				"MSM"
+			]
+		},
+		{
+			"info_place": "Liver Int",
+			"title": "Hepatitis A outbreak in Barcelona among men who have sex with men (MSM), January-June 2017: A hospital perspective.",
+			"infoID": "28980376",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 19,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28980376",
+			"I_S_codenames": [
+				"MSM"
+			],
+			"info_geo": "Spain",
+			"info_authors": "Rodríguez-Tajes",
+			"digest": "В Барселонской больнице было зарегистрировано 46 случаев, из них 96% среди мужчин, и 67% определили себя гомосексуалистами. Авторы пишут, что главным фактором риска является орально-анальный контакт во время секса, что последние вспышки в Европе были между 2008 и 2011, и что из-за этих вспышек гепатит А стали классифицировать как ЗППП."
+		},
+		{
+			"info_type": "cdc",
+			"num": 2,
+			"link": "https://www.cdc.gov/vaccines/pubs/pinkbook/hepa.html",
+			"digest": "У детей младше 6 лет в 70% случаев гепатит А проходит бессимптомно. У детей постарше и у взрослых болезнь проходит симптоматично, и у 70% сопровождается желтухой. Перенесенная инфекция дает пожизненный иммунитет.<br>Группы риска гепатита А включают гомосексуалистов, наркоманов, путешественников в эндемические страны и работников с зараженными приматами.<br>В США доступны две вакцины - Havrix (GSK) и Vaqta (Merck), которые были лицензированы в 1995-6. Вакцины эффективны на 94-100%. Есть также вакцина, комбинированная с гепатитом В (Twinrix).<br>Обе вакцины [содержат==https://www.cdc.gov/vaccines/pubs/pinkbook/downloads/appendices/B/excipient-table-2.pdf] алюминий (225-250 мкг). Havrix содержит гидроксид алюминия, а Vaqta - AAHS (тот же вид алюминия, что и Гардасил). Обе вакцины выращиваются на человеческих фибробластных клетках (MRC-5).<br>В отличие от гепатита В и С, гепатит А - это кишечная инфекция, передающаяся фекально-оральным путем, и не переходит в хроническую форму.<br>Менее чем у 10% зараженных детей младше 6 лет [диагностируется==https://www.ncbi.nlm.nih.gov/pubmed/8951284] гепатит А.<br>Индейцы [болеют==https://www.cdc.gov/mmwr/PDF/rr/rr4812.pdf] в 19 раз чаще белых, латиноамериканцы - в 3 раза чаще.",
+			"title": "CDC Pinkbook Hepatitis A"
+		},
+		{
+			"info_place": "Euro Surveill",
+			"title": "Ongoing outbreaks of hepatitis A among men who have sex with men (MSM), Berlin, November 2016 to January 2017 – linked to other German cities and European countries.",
+			"infoID": "PMC5388120",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 20,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5388120/",
+			"digest": "Вспышка в Берлине. 38 случаев, 37 мужчин, 30 сообщили о гомосексуальных отношениях. Женщина тоже сообщила об однополых отношениях.<br>Один из заболевших был привит 11 месяцев до начала болезни.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695276/] сообщается о вспышке в Риме и окрестностях, 513 случаев, из них 87.5% мужчины. [[1]==https://www.ncbi.nlm.nih.gov/pubmed/29380498]<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695276/] сообщается о вспышке в Тель Авиве, 19 случаев, из них 17 гомосексуалисты. [[1]==https://www.ncbi.nlm.nih.gov/pubmed/29380498]<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695276/] сообщается, что всего в 16 европейских странах было зарегистрировано 1500 случаев гепатита А, и 2660 неподтвержденных\u0026nbsp;случаев, в основном среди гомосексуалистов.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5695276/] сообщается, что с января по август 2017 было зарегистрировано 11,212 случаев заболевания в Европе, в основном среди гомосексуалистов.<br>ВОЗ [сообщает==http://www.who.int/csr/don/07-june-2017-hepatitis-a/en/] также о вспышке среди гомосексуалистов в Чили.",
+			"info_geo": "Germany",
+			"info_authors": "Werber",
+			"I_S_codenames": [
+				"MSM"
+			]
+		},
+		{
+			"info_place": "Euro Surveill",
+			"title": "Hepatitis A outbreak among men who have sex with men (MSM) predominantly linked with the EuroPride, the Netherlands, July 2016 to February 2017.",
+			"infoID": "PMC5356436",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 21,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5356436/",
+			"digest": "А началось всё с гей-парада в Амстердаме в 2016 году, который привлек полмиллиона посетителей. Всего в Нидерландах было зарегистрировано 48 случаев среди мужчин.",
+			"info_geo": "Netherlands",
+			"info_authors": "Freidl",
+			"I_S_codenames": [
+				"MSM"
+			]
+		},
+		{
+			"info_place": "Euro Surveill",
+			"title": "Hepatitis A outbreak in HIV-infected MSM and in PrEP-using MSM despite a high level of immunity, Lyon, France, January to June 2017.",
+			"infoID": "PMC5725789",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 22,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5725789/",
+			"digest": "Вспышка гепатита А в Лионе в первом полугодии 2017-го. 46 случаев, из них 38 мужчин, 33 гомосексуалисты, и 15 зараженных ВИЧ. Большинство были привиты или имели антитела.<br>Согласно имеющейся модели, достаточно 70% имеющих иммунитет, чтобы предотвратить заражение гепатитом А среди гомосексуалистов. Авторы заключают, что 70% - это недостаточно.<br>Также сообщается, что поскольку заразиться гепатитом А можно и от повторного использования игл, [slamming==http://www.independent.co.uk/news/uk/crime/experts-warn-of-rise-in-gay-slamming-9069571.html] (внутривенное введение наркотиков во время анального контакта) - практика, которая набирает популярность среди некоторых групп гомосексуалистов, тоже может увеличить риск заболевания. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/28534888], [[2]==https://www.ncbi.nlm.nih.gov/pubmed/28510643].",
+			"info_geo": "France",
+			"info_authors": "Charre",
+			"I_S_codenames": [
+				"MSM"
+			]
+		},
+		{
+			"info_place": "J Infect Dis",
+			"title": "Hepatitis A Outbreak Among Men Who Have Sex With Men in a Country of Low Endemicity of Hepatitis A Infection.",
+			"infoID": "28329351",
+			"info_date": "2017",
+			"info_type": "article",
+			"num": 23,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28329351",
+			"digest": "Вспышка гепатита А в Тайване. Более 1000 случаев, из них 70% гомосексуалисты, 60% заражены ВИЧ, и более 60% были заражены сифилисом, гонореей или шигеллёзом.<br>Нигде не упоминается, чтобы во всех этих вспышках кто-либо умер от гепатита А.",
+			"info_geo": "Taiwan",
+			"info_authors": "Chen",
+			"I_S_codenames": [
+				"MSM"
+			]
+		},
+		{
+			"info_type": "VAERS",
+			"num": 24,
+			"digest": "В VAERS [зарегистрированы==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON\u0026GROUP1=CAT\u0026VAX[]=HEPA\u0026VAX[]=HEPAB\u0026VAX[]=HEPATYP] 131 случаев смерти после прививки от гепатита А, 773 случаев инвалидности, и 3888 [серьезных==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON\u0026GROUP1=AGE\u0026GROUP2=VCT\u0026GRAPH=ON\u0026GROUP6=AGE\u0026EVENTS=ON\u0026VAX[]=HEPA\u0026VAX[]=HEPAB\u0026VAX[]=HEPATYP\u0026SERIOUS=ON] негативных случаев. До начала вакцинации практически не было случаев смерти детей от гепатита А."
+		},
+		{
+			"info_type": "article",
+			"info_place": "Wkly Epidemiol Rec",
+			"num": 3,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/22905367",
+			"info_date": "2012",
+			"title": "WHO position paper on hepatitis A vaccines - June 2012",
+			"infoID": "22905367",
+			"digest": "Заболеваемость гепатитом А зависит от социоэкономических условий. С повышением доходов, и при наличии доступа к чистой воде и адекватной санитарии, заболеваемость понижается.<br>В эндемических странах почти все переносят бессимптомную инфекцию в детстве, что эффективно предотвращает клинический гепатит среди подростков и взрослых. В этих странах ВОЗ не рекомендует универсальнаую вакцинацию."
+		},
+		{
+			"info_place": "Clin Chem",
+			"title": "Type A viral hepatitis: epidemiology, diagnosis, and prevention.",
+			"infoID": "9265900",
+			"info_date": "1997",
+			"info_type": "article",
+			"num": 4,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9265900",
+			"digest": "От гепатита А умирают 70-80 человек в год в США, и это почти исключительно люди старше 50-и лет. Тяжелые проявления гепатита А более вероятны у людей с алкогольной болезнью печени или с хронических гепатитом.<br>У некоторых привитых начался синдром Гийена-Барре, но неизвестно точно, связано ли это с вакцинацией.",
+			"info_geo": "US",
+			"info_authors": "Lemon",
+			"I_S_codenames": [
+				"guillain-barre"
+			]
+		},
+		{
+			"info_type": "article",
+			"info_place": "J Viral Hepat",
+			"num": 5,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/27386835",
+			"info_date": "2016",
+			"title": "Hospitalization and mortality due to hepatitis A in Taiwan: a 15-year nationwide cohort study.",
+			"info_geo": "Taiwan",
+			"infoID": "27386835",
+			"digest": "В Тайване от гепатита А прививают туземное население с 1995 года. В одном исследовании было установлено, что заболеваемость в Тайване снизилась более чем в 3 раза благодаря вакцинации, и это несмотря на то, что было привито лишь 2% населения, и большинство привитых жили в горах и на изолированных островах.<br>В другом исследовании было установлено, что лишь у 0.4% непривитого населения были антитела к гепатиту А, из чего авторы заключают, что за снижение заболеваемости ответственна скорее гигиена, чем вакцинация. С улучшением гигиены заболеваемость сместилась от детей в более старший возраст.",
+			"info_authors": "Chen"
+		},
+		{
+			"info_authors": "Bassal",
+			"info_place": "Pediatr Infect Dis J",
+			"num": 6,
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28498301",
+			"digest": "Израиль был первой в мире страной, которая в 1999 году добавила прививку от гепатита А в национальный календарь прививок. В течение трех лет заболеваемость гепатитом А упала более чем на 98% среди привитых детей, и на 95% среди всего населения.<br>До начала вакцинации у 47% еврейского населения были антитела, а через 12 лет они были уже у 67%. Среди арабского населения у 83% были антитела до начала вакцинации, и через 12 лет они были у 88%. То есть, как и в Тайване, не факт, что за снижение заболеваемости была ответственна лишь вакцина.",
+			"title": "Seroprevalence of Hepatitis A Twelve Years After the Implementation of Toddlers\u0026#39; Vaccination: A Population-Based Study in Israel.",
+			"info_geo": "Israel",
+			"info_type": "article",
+			"info_date": "2017",
+			"infoID": "28498301"
+		},
+		{
+			"num": 7,
+			"digest": "Лишь в двух европейских странах прививка от гепатита А [входит==https://vaccine-schedule.ecdc.europa.eu/Scheduler/ByDisease?SelectedDiseaseId=16\u0026SelectedCountryIdByDisease=-1] в национальный календарь (Греция и Австрия), и только в Греции вакцина финансируется государством."
+		},
+		{
+			"info_type": "article",
+			"info_place": "BMJ",
+			"num": 8,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2541147/",
+			"info_date": "1994",
+			"title": "Is travel prophylaxis worth while? Economic appraisal of prophylactic measures against malaria, hepatitis A, and typhoid in travellers.",
+			"info_geo": "UK",
+			"infoID": "PMC2541147",
+			"digest": "Прививка от гепатита А и от тифа для тех, кто едет в эндемические страны экономически нецелесообразна, а таблетки от малярии экономически целесообразны.<br>Лишь 1 из 2000 заражался гепатитом А в поездке, и в 90% случаев болезнь проходила легко.<br>Оценивается, что в Англии вакцинация от гепатита А предотвратила 0.29 смертей за год.",
+			"info_authors": "Behrens"
+		},
+		{
+			"info_place": "BMJ",
+			"title": "Cross sectional retrospective study of prevalence of atopy among Italian military students with antibodies against hepatitis A virus.",
+			"infoID": "PMC2126410",
+			"info_date": "1997",
+			"header": "Польза гепатита А",
+			"info_type": "article",
+			"num": 9,
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2126410/",
+			"digest": "Новобранцы в Италии, у которых были антитела к гепатиту А, болели астмой и аллергическим ринитом в 2 раза реже, чем солдаты, у которых не было антител.<br>Новобранцы, у которых были старшие братья, тоже болели аллергическими заболеваниями реже, из чего следует, что гепатит А это не единственная инфекция, снижающая риск аллергических заболеваний.<br>В Италии гепатит А был эндемическим заболеванием в 1970-е, им обычно заражались в детстве, и он проходил бессимптомно.<br>Другие исследования также выявляют в последние десятилетия обратную связь между антителами к гепатиту А и аллергиями в разных странах. В США в 1970-х у старшего поколения чаще выявлялись антитела к гепатиту А, чем у младшего поколения, тогда как у младшего поколения было больше атопических заболеваний.",
+			"info_geo": "Italy",
+			"info_authors": "Matricardi",
+			"I_S_codenames": [
+				"asthma",
+				" allergy"
+			]
+		}
+	],
+	"editdate": {
+		"$date": "2018-02-12T18:58:49.222Z"
+	}
+}

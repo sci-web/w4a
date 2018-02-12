@@ -72,7 +72,7 @@ class DB(object):
         return app.config['INTROS'].find({"analyst": author},{"date":1, "namespace":1}).sort("namespace", 1)
 
     def get_spaces_by_author(self, author):
-        return app.config['SPACES'].find({"analyst": author},{"date":1, "namespace":1, "title":1, "I_S_codename":1}).sort("date", -1)        
+        return app.config['SPACES'].find({"analyst": author},{"date":1, "editdate":1, "namespace":1, "title":1, "I_S_codename":1}).sort("date", -1)        
 
     def get_data_search(self, title, released):
         try:
@@ -99,3 +99,18 @@ class DB(object):
         
     def update_a_chapter(self, author, namespace, chapter, data):
         app.config['SPACES'].update_one({"analyst": author, "namespace": namespace, "I_S_codename":chapter}, {'$set': data})
+
+    def del_point_from_a_chapter(self, author, namespace, chapter, point):
+        app.config['SPACES'].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter}, { '$pull': { 'points': { "num": int(point) } } } );
+
+    def del_srcpool_from_a_chapter(self, author, namespace, chapter, point, src):
+        print author, namespace, chapter, point, src
+        app.config['SPACES'].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter ,'points.num': int(point)}, 
+                                        { '$pull': { 'points.$.sources_pool': { "num": int(src) } } } );
+
+    def del_imgpool_from_a_chapter(self, author, namespace, chapter, point, img):
+        app.config['SPACES'].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter ,'points.num': int(point)}, 
+                                        { '$pull': { 'points.$.img_pool': { "num": int(img) } } } );
+
+    # def put_task(self, data):
+    #     app.config['TASKS'].insert_one(data)

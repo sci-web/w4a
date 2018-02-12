@@ -2,14 +2,16 @@ from app import app, lm
 import re
 from datetime import datetime
 # import xlrd
-from flask import request, redirect, render_template, flash, Response, send_from_directory, url_for, g
+from flask import request, redirect, render_template, flash, Response, send_from_directory, url_for, g, jsonify, make_response
 from flask_login import login_user, logout_user, login_required, current_user
 from .auth import Auth
 from .model import DB
 from .forms import saveIntro, newIntro, saveChapter, newChapter
 from bson.json_util import dumps
 import json
+from subprocess import call
 from collections import defaultdict
+from .tools import Tools
 
 
 # def extension_ok(filename, ff):
@@ -67,7 +69,8 @@ def editspace(author):
     for d in range(0, len(data)):
         ns = data[d]["namespace"]
         c_date = datetime.fromtimestamp( data[d]["date"]['$date'] / 1e3 )
-        ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date.strftime('%d-%m-%Y %H:%M')
+        e_date = datetime.fromtimestamp( data[d]["editdate"]['$date'] / 1e3 )
+        ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date.strftime('%d-%m-%Y %H:%M') + "|" + e_date.strftime('%d-%m-%Y %H:%M')
         chapters[ns].append(ch)
 
     return render_template('cms_start.html', form=g.form, items=g.items, author=author, namespaces=namespaces, chapters=chapters)
@@ -236,7 +239,10 @@ def save_chapter(author, namespace, chapter):
     else:
         sform = saveChapter(request.values)
     in_data = {}
-    in_data["date"] = datetime.now()
+    if chapter == 0:
+        in_data["date"] = datetime.now()
+    else:
+        in_data["editdate"] = datetime.now()
     in_data["points"] = []
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
@@ -252,7 +258,10 @@ def save_chapter(author, namespace, chapter):
                 for value in f.getlist(key):
                     value = value.replace("\r\n","<br>")
                     value = value.replace("\n","<br>")
-                    if key == "chapter" and chapter == "0": 
+                    if key == "chapter" and chapter == "0":
+                        in_data["analyst"] = author
+                        in_data["date"] = datetime.now()                        
+                        in_data["namespace"] = namespace
                         in_data["I_S_codename"] = value              
                         i_data = DB().get_a_chapter(namespace, value)  # before update/insert
                         if i_data and chapter == 0:
@@ -307,8 +316,6 @@ def save_chapter(author, namespace, chapter):
                     in_sources_pool = nest_value_match_assign("srcAuth", "info_authors", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcPlace", "info_place", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcType", "info_type", key, value, in_sources_pool)
-
-            print in_sources_pool
             if error == 0:                
                 for r in in_pnts.keys():
                     imgs_pool = []
@@ -319,11 +326,13 @@ def save_chapter(author, namespace, chapter):
                         is_i_pool = 0
                     if is_i_pool == 1:
                         for l in in_imgs_pool[r].keys():
-                            # print l, in_refs_pool[r][l]
+                            print r, l
                             try:
+                                in_imgs_pool[r][l].update({"num": int(l)})
                                 imgs_pool.append(in_imgs_pool[r][l])
                             except:
                                 if len(in_imgs_pool[r][l]) > 0:
+                                    in_imgs_pool[r][l].update({"num": int(l)})
                                     imgs_pool = in_imgs_pool[r][l]
                         try:
                             in_pnts[r].update({"img_pool": imgs_pool})
@@ -338,11 +347,12 @@ def save_chapter(author, namespace, chapter):
                         is_s_pool = 0
                     if is_s_pool == 1:
                         for l in in_sources_pool[r].keys():
-                            # print l, in_refs_pool[r][l]
                             try:
+                                in_sources_pool[r][l].update({"num": int(l)})
                                 src_pool.append(in_sources_pool[r][l])
                             except:
                                 if len(in_imgs_pool[r][l]) > 0:
+                                    in_sources_pool[r][l].update({"num": int(l)})
                                     src_pool = in_sources_pool[r][l]
                         try:
                             in_pnts[r].update({"sources_pool": src_pool})
@@ -350,15 +360,12 @@ def save_chapter(author, namespace, chapter):
                             in_pnts[r] = {"sources_pool": src_pool}
 
                 for n, p in sorted(in_pnts.iteritems()):
-                    p.update({"num": n})
+                    p.update({"num": int(n)})
                     in_data["points"].append(p)
 
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
 
                 if chapter == "0":
-                    in_data["date"] = datetime.now()
-                    in_data["analyst"] = author
-                    in_data["namespace"] = namespace 
                     DB().insert_a_chapter(in_data)
                 else:
                     DB().update_a_chapter(author, namespace, chapter, in_data)
@@ -384,7 +391,36 @@ def save_chapter(author, namespace, chapter):
             return render_template('form_chapter.html', form=g.form, items=i_data, namespace=namespace)
 
 
-# TODO delete points, insertion points
+@app.route('/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])
+@login_required
+def del_point(author, namespace, chapter, point):
+    DB().del_point_from_a_chapter(author, namespace, chapter, point)
+    return jsonify( {'data': "point <b>" + point + "</b> is deleted!"} )
+
+
+@app.route('/editspace/del_source:<author>:<namespace>:<chapter>:<point>:<source>', methods=['GET', 'POST'])
+@login_required
+def del_sources_pool(author, namespace, chapter, point, source):
+    DB().del_srcpool_from_a_chapter(author, namespace, chapter, point, source)
+    return jsonify( {'data': "source <b>" + source + "</b> from <b>" + point + "</b> point is deleted!"} )
+
+
+@app.route('/editspace/del_img:<author>:<namespace>:<chapter>:<point>:<img>', methods=['GET', 'POST'])
+@login_required
+def del_img_pool(author, namespace, chapter, point, img):
+    DB().del_imgpool_from_a_chapter(author, namespace, chapter, point, img)
+    return jsonify( {'data': "image pool <b>" + img +  "</b> from <b>" + point + "</b> point is deleted!"} )
+
+
+@app.route('/editspace/export_json:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
+@login_required
+def export_json(author, namespace, chapter):
+    data = Tools().exportJson(author, namespace, chapter)
+    # print data
+    json =  namespace + "_" + chapter + ".json"
+    response = make_response(data)
+    response.headers["Content-Disposition"] = "attachment; filename=" + json
+    return response
 
 
 @app.context_processor

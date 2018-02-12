@@ -41,7 +41,8 @@ app.jinja_env.filters['rehref'] = rehref
 @app.route('/')
 def index():
     i_data = DB().get_intros()
-    return render_template('index.html', form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, data=i_data)
+    return render_template('index.html', form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
+                    chapters=g.chapters, data=i_data)
 
 
 @app.route('/content/<namespace>/<codename>')

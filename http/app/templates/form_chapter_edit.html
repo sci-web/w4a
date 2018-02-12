@@ -5,10 +5,23 @@
 {% endblock %}
 {% block content %}
 <div style="margin:60px 20px 30px 50px; width:1100px;" align=left>
+    <div id="wait" style="height:25px; display:none; padding:0 5px 0 1100px;position:fixed">
+        <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
+    </div>
+    <div id="done" style="height:35px; display:none; margin:0 5px 0 1000px; width:270px; position:fixed; border:2px solid #f466cc" align=right>
+    <div id="result" style="display:table-cell; padding:0 5px 5px 5px;" align=center></div><div style="display:table-cell; padding:0 5px;"> <a class="close" onClick = "hideDiv('done');">&times;</a></div>
+    </div>
 <form action="/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
-<h1>Edit chapter <b>{{ chapter }}</b> in namespace <b>{{ items.namespace }}</b></h1>
-<br>
+<h1>Edit chapter <b>{{ items.I_S_codename }}</b> in namespace <b>{{ items.namespace }}</b></h1>
+
+<div align=right><a href="/editspace/export_json:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" class="pointer linknav">Export Json</a></div>
+    <div style="height:25px; width:980px;">
+        <div align=right style="float:right; width:800px">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+    <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group">
@@ -42,7 +55,7 @@
         </div>
     </div>
     <br>
-    <div style="height:145px; width:1010px;border:1px solid green">
+    <div style="height:145px; width:1010px;">
         <div style="float:left; width:180px">Introduction: </div>
         <div style="float:right; width:830px" class="form-group">
             <textarea rows=5 cols=97 name=intro>{{ items.intro | replace("<br>", "\n") }}</textarea>
@@ -54,9 +67,9 @@
     {% set p_num = [1] %}
     {% for p in items.points %}
     <hr size=1 style="width:1100px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0px" align=left>
-        <div style="height:100%; width:1100px;" id="p_{{ p_num|join }}">
+        <div style="height:100%; width:1100px;" id="p_{{ p.num }}">
             <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
-                <a onClick = "javascript:RemoveOneDiv('#p_{{ p_num|join }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+                <a onClick = "javascript:RemoveOneDiv('#p_{{ p.num }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
             </div>
             <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>:</div>
             <br>
@@ -148,10 +161,11 @@
 {% set s_num = [1] %}
 {% if p.sources_pool %}
             <div style="margin:0 0 0 50px"><h4><u>Sources pool</u>:</h4></div>
-    {% for s in p.sources_pool %}
+    {% for s in p.sources_pool|sort(attribute='num') %}
             <div style="width:1000px;margin:0 0 0 50px;" id="srcPool_{{ s_num|join }}">
         <div style="display:cell;margin:5px 0 0 850px; width:12px; float:right; position:absolute" id=scross>
-            <a onClick = "javascript:RemoveOneDiv('#srcPool_{{ s_num|join }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+            <a onClick = "javascript:RemoveOneDiv('#srcPool_{{ s_num|join }}', 'source', {{ s.num }}, {{ p.num }})"
+                class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <hr size=1 style="width:870px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0" align=left>
             <div style="height:25px;">
@@ -216,11 +230,12 @@
 {% set i_num = [1] %}
 {% if p.img_pool %}
             <div style="margin:0 0 0 50px"><h4><u>Images pool</u>:</h4></div>
-    {% for i in p.img_pool %}
+    {% for i in p.img_pool|sort(attribute='num') %}
             <div style="width:1000px;margin:0 0 0 50px;" id="imgPool_{{ i_num|join }}">
         <hr size=1 style="width:870px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0" align=left>
         <div style="display:cell;margin:0 0 0 850px; width:12px; float:right; position:absolute" id=icross>
-            <a onClick = "javascript:RemoveOneDiv('#imgPool_{{ i_num|join }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+            <a onClick = "javascript:RemoveOneDiv('#imgPool_{{ i_num|join }}', 'img', {{ i.num }}, {{p.num }})"
+                class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <div style="height:25px;">
             <div style="float:left; width:180px">Image #{{ i_num|join }} link (URL): </div>
@@ -279,7 +294,7 @@
     <div style="height:25px; width:980px;">
         <div style="float:left; width:180px" id=form_info></div>
         <div align=right style="float:right; width:800px">
-            <a href="/edit/?add_ref_1_link_1"><button type="submit" class="btn btn-default">Submit</button>
+            <button type="submit" class="btn btn-default">Submit</button>
         </div>
     </div>
 </form>
@@ -515,9 +530,36 @@
 </script>
 {% endraw %}
 <script>
-function RemoveOneDiv(div) {
+function RemoveOneDiv(div, obj, num, pnt) {
     if (confirm("Are you sure?")) {
-        $( div ).remove()
+        if (obj == 'point') {
+            url = "/editspace/del_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num
+        }
+        if (obj == 'source') {
+            url = "/editspace/del_source:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
+        }
+        if (obj == 'img') {
+            url = "/editspace/del_img:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
+        }
+
+        $.getJSON({
+            url: url,
+            beforeSend: function() {
+                $('#wait').show();
+            },
+            complete: function() {
+                $('#wait').hide();
+            },
+            success: function(result){
+                $('#done').show();
+                $('#result').html(result.data).show();
+                $( div ).remove();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            // if does not work with some browser extension or firewall's blocking async requests etc.
+                alert("ouch! cannot delete, say it to the master!");
+            }
+        });
     }
 }
 function RemoveDiv(div, num, rnum, thtml, target, pdiv) {

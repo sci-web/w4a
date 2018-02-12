@@ -20,6 +20,8 @@ or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit 
     <div style="display:table-cell; width:30px; margin:2px"></div>
     <div style="display:table-cell; width:300px; margin:2px"><i>chapter</i></div>
     <div style="display:table-cell; width:200px; margin:2px"><i>added on</i></div>
+    <div style="display:table-cell; width:200px; margin:2px"><i>edited on</i></div>
+    <div style="display:table-cell; width:200px; margin:2px"><i>export</i></div>
   </div>
         {% for ch in chapters[ ns.namespace ]  %}
             {% set lst = ch.split('|') %}
@@ -29,6 +31,8 @@ or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit 
         <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
     </div>
     <div style="display:table-cell; width:200px; margin:2px">{{ lst[2] }}</div>
+    <div style="display:table-cell; width:200px; margin:2px">{{ lst[3] }}</div>
+    <div style="display:table-cell; width:200px; margin:2px"><a href="/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav">[↑]</a></div>
   </div>
         {% endfor %}
  </div>

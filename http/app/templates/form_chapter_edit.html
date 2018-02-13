@@ -16,8 +16,8 @@
 <h1>Edit chapter <b>{{ items.I_S_codename }}</b> in namespace <b>{{ items.namespace }}</b></h1>
 
 <div align=right><a href="/editspace/export_json:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" class="pointer linknav">Export Json</a></div>
-    <div style="height:25px; width:980px;">
-        <div align=right style="float:right; width:800px">
+    <div style="height:25px; width:1200px;position:fixed">
+        <div align=right style="float:right; margin:10px">
             <button type="submit" class="btn btn-default">Submit</button>
         </div>
     </div>
@@ -65,11 +65,11 @@
         <h3>Points:</h3>
     </div>
     {% set p_num = [1] %}
-    {% for p in items.points %}
+    {% for p in items.points|sort(attribute='num') %}
     <hr size=1 style="width:1100px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0px" align=left>
-        <div style="height:100%; width:1100px;" id="p_{{ p.num }}">
+        <div style="height:100%; width:1100px;" id="p_{{ p_num|join }}">
             <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
-                <a onClick = "javascript:RemoveOneDiv('#p_{{ p.num }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+                <a onClick = "javascript:RemoveOneDiv('#p_{{ p_num|join }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
             </div>
             <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>:</div>
             <br>
@@ -427,7 +427,7 @@
             <a onClick = "javascript:RemoveOneDiv('#pnt_{{ rnum }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
             <div style="display:table-row;width:1000px">
-                <div style="float:left;width:250px"><b>Point #{{ rnum }} to {{ a2 }}, id {{ nID }}</b>:</div>
+                <div style="float:left;width:250px"><b>Point #{{ rnum }} to {{ a2 }}:</div>
                 <div style="float:right; width:710px"> </div>
             </div>
             <br>
@@ -532,6 +532,7 @@
 <script>
 function RemoveOneDiv(div, obj, num, pnt) {
     if (confirm("Are you sure?")) {
+        $( div ).remove();
         if (obj == 'point') {
             url = "/editspace/del_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num
         }
@@ -541,7 +542,6 @@ function RemoveOneDiv(div, obj, num, pnt) {
         if (obj == 'img') {
             url = "/editspace/del_img:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
         }
-
         $.getJSON({
             url: url,
             beforeSend: function() {
@@ -553,7 +553,6 @@ function RemoveOneDiv(div, obj, num, pnt) {
             success: function(result){
                 $('#done').show();
                 $('#result').html(result.data).show();
-                $( div ).remove();
             },
             error: function (xhr, ajaxOptions, thrownError) {
             // if does not work with some browser extension or firewall's blocking async requests etc.
@@ -581,7 +580,7 @@ function loadTmpl(thtml, target, div, cnt, id, rcnt) {
     cnt += 1;
     template = $(thtml).html();
     Mustache.parse(template);
-    nID = a2 + rcnt/10;
+    nID = a2 + rcnt/1000;
     $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt, a2: a2, nID: nID}));
 }
 </script>

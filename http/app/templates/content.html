@@ -25,7 +25,7 @@
         </div>
     </div>
     <ol style="margin:20px 2% 0 0px;">
-    {% for pnt in idata.points %}
+    {% for pnt in idata.points|sort(attribute='num') %}
         {% if pnt.header %}
         <h3>{{ pnt.header | safe }}</h3>
         {% endif %}

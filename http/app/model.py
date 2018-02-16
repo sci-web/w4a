@@ -62,7 +62,7 @@ class DB(object):
         return app.config['OBJECTS'].find({"I_S_type_this": val}, {"I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
 
     def get_intros(self):
-        return app.config['INTROS'].find({}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1})
+        return app.config['INTROS'].find({"published":1}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1})
 
     def get_an_intro(self, namespace):
         return app.config['INTROS'].find_one({"namespace": namespace})

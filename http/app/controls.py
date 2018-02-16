@@ -360,7 +360,8 @@ def save_chapter(author, namespace, chapter):
                         except:
                             in_pnts[r] = {"sources_pool": src_pool}
 
-                for n, p in sorted(in_pnts.iteritems(), key=lambda x: x[0]):
+                for n, p in sorted(in_pnts.iteritems(), key=lambda x: float(x[0])):
+# https://dzone.com/articles/pymongo-and-key-order
                     p.update({"num": float(n)})
                     in_data["points"].append(p)
 

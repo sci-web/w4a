@@ -68,9 +68,12 @@ def editspace(author):
     chapters = defaultdict(list)
     for d in range(0, len(data)):
         ns = data[d]["namespace"]
-        c_date = datetime.fromtimestamp( data[d]["date"]['$date'] / 1e3 )
-        e_date = datetime.fromtimestamp( data[d]["editdate"]['$date'] / 1e3 )
-        ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date.strftime('%d-%m-%Y %H:%M') + "|" + e_date.strftime('%d-%m-%Y %H:%M')
+        c_date = datetime.fromtimestamp( data[d]["date"]['$date'] / 1e3 ).strftime('%d-%m-%Y %H:%M')
+        try:
+            e_date = datetime.fromtimestamp( data[d]["editdate"]['$date'] / 1e3 ).strftime('%d-%m-%Y %H:%M')
+        except:
+            e_date = ""
+        ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date + "|" + e_date
         chapters[ns].append(ch)
 
     return render_template('cms_start.html', form=g.form, items=g.items, author=author, namespaces=namespaces, chapters=chapters)
@@ -241,6 +244,7 @@ def save_chapter(author, namespace, chapter):
     in_data = {}
     if chapter == 0:
         in_data["date"] = datetime.now()
+        in_data["editdate"] = ""
     else:
         in_data["editdate"] = datetime.now()
     in_data["points"] = []

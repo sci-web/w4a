@@ -50,9 +50,11 @@ app.jinja_env.filters['rehref'] = rehref
 
 
 @app.route('/')
+@app.route('/en')
 def index():
-    i_data = DB().get_intros()
-    return render_template('index.html', form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
+    i_data = DB().get_intros_en() if request.path.split('/')[1] == "en" else DB().get_intros()
+    tmpl = 'en/index.html' if request.path.split('/')[1] == "en" else 'index.html'
+    return render_template(tmpl, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
                     chapters=g.chapters, data=i_data)
 
 

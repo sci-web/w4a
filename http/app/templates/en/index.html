@@ -5,14 +5,13 @@
 {% endblock %}
 {% block content %}
 <div style="margin:55px 1% 10px 0; height:100%" align=left>
-<h2 style="color:#52398C; margin-left:24px">Добро пожаловать!</h2>
-<p style="font-size:110%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Представляем Вашему вниманию <b style="color:#8389f9;">SciBook</b> — здесь мы проводим анализ по различным интересным и важным темам, основываясь на достоверных источниках, стараясь придерживаться научной информации. Мы указываем все наши источники, чтобы каждый мог сам проверить и составить свое мнение или исправить нас. Не верьте нам — Проверьте сами!<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Начнём с одной из самых важных, пожалуй, для любого человека темы: его здоровье в контексте обязательного назначения прививок.
-<p style="font-size:110%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Прививки</u>: для чего они, каково их действие, как их производят, какие могут быть побочные последствия? Почти любой медпрепарат имеет побочные действия. И прививки — едва ли исключение.
-<p style="font-size:110%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Неважно, сколько у вас есть времени на изучение материала — важна ваша мотивация: здоровье ваших детей и/или любознательность.
-<!--Вы можете углубиться в чтение по главам ( ← левый навигатор), по частям-поинтам внутри глав, обращая внимание на заголовки и дайджесты статей.
-Также вы можете пройтись по разделам заболеваний, по странам и континентам, по препаратам и условиям, при которых были зафиксированы результаты прививок (правый навигатор → ).--><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Итак…
+<h2 style="color:#52398C; margin-left:24px">Welcome!</h2>
+<p style="font-size:110%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+We suggest to your attention <b style="color:#8389f9;">SciBook</b> — here we analyze various interesting and important topics, based on reliable sources, trying to adhere to scientific information. We put referrences to all our sources so that everyone can check and make up their own opinion or correct us. Do not believe us - Check it out for yourself!<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let's start with one of the most important, may be, topics: health in the context of the mandatory vaccinations.
+<p style="font-size:110%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<u>Vaccinations</u>: what they are for, what is their effect, how they are designed and produced, what side effects can there be? Almost any medication has side effects. And vaccinations are hardly an exception.
+<p style="font-size:110%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It does not matter how much time you have to study the material - your motivation is important: your children's health and / or curiosity.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thus…
 
 
 <hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:2% 0 0 15%" align=center>
@@ -52,7 +51,7 @@
 </div>
 <script>
 $(document).ready(function() {
-  Retrieve('/intro/vaccines?div', "#none");
+  Retrieve('/en/intro/vaccines?div', "#none");
   $("#opentxt").bind('click', function(event) {
     event.preventDefault();
     Retrieve($(this).attr('href'), "#ihide");

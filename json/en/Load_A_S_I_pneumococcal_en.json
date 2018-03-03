@@ -5,8 +5,8 @@
 "I_S_codename": "pneumococcal",
 "I_S_type": "S_O",
 "I_S_type_this": "disease",
-"I_S_name": "Pneumococcus,"
-"date": ISODate ("2017-12-13T14: 01: 00Z"),
+"I_S_name": "Pneumococcus",
+"date": ISODate ("2017-12-13T14:01:00Z"),
 "intro": "",
 "epigraph": {
 "text": "If I were to remain silent, I'd be guilty of complicity.",
@@ -415,8 +415,7 @@
 "digest": "After vaccination began, between 1997 and 2003, the number of cases of pneumococcal infection in Salt Lake City (Utah) decreased by 27% .The incidence of vaccine serotypes decreased from 73% to 50% .The number of cases of non-vaccine serotypes increased The number of cases with complicated pleural empyema increased from 16% to 30%, and the proportion of severe cases increased from 57% to 71%. [1]==https://www.ncbi.nlm.nih.gov/pubmed/16511389]. "
 },
 {
-"num":
-36,
+"num":36,
 "title": "Invasive pneumococcal disease caused by nonvaccine serotypes among Alaska native children with high levels of 7-valent pneumococcal conjugate vaccine coverage.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/17456820",
 "info_type": "article",
@@ -535,7 +534,7 @@
 },
 {
 "num": 47,
-"title": "Post-PCV7 changes in the colonization of pneumococcal serotypes in 16 Massachusetts communities, 2001 and 2004."
+"title": "Post-PCV7 changes in the colonization of pneumococcal serotypes in 16 Massachusetts communities, 2001 and 2004.",
 "link": "https://www.ncbi.nlm.nih.gov/pubmed/16140686",
 "info_type": "article",
 "info_date": "2005",

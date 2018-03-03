@@ -23,7 +23,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     </head>
 <body>
-{% include "navbar.html" %}
+{% include "en/navbar_en.html" %}
 <div id="masthead"><a name="top"></a>
 </div>
 <div class="container-fluid" align=center>
@@ -34,17 +34,17 @@
       <div class="wscreen">
         <div style="display:none;margin-top:-14px; margin:0; width:200px; white-space:nowrap;"
             onClick="javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" id=show>
-            <a onClick = "javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav">показать меню</a>
+            <a onClick = "javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav">show menu</a>
         </div>
         <div style="display:cell;margin-top:-14px; margin-right:-20px; width:12px; float:left;"
             onClick="javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" id=cross>
             <a onClick = "javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav"><font size=5>×</font></a>
         </div>
         <ul style="list-style: none; font-size:17px;" id=leftbar>
-          <li><span style="margin:0 0 0 3px;white-space: nowrap">Изложение по главам:</span></li>
-          <li><a href="/intro/vaccines" class="linknav">Введение</a></li>
+          <li><span style="margin:0 0 0 3px;white-space: nowrap">By Chapters:</span></li>
+          <li><a href="/en/intro/vaccines" class="linknav">Introduction</a></li>
           {% for entry in items %}
-              <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">
+              <li class="sqnav" style="white-space: nowrap"><a href="/en/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">
                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                 {{ entry.title }}</a>
             </li>
@@ -67,20 +67,20 @@ var sc_security="59e332e0";
     </div>
     <div class="col-xs-2 col-md-3" style="width:352px;margin:25px 0 0 0">
     {% if sitepart != "editspace" and sitepart != "profile" %}
-    <div align=center style="max-width:327px;padding:10px 0 10px 0;" id=sidebar>
+    <div align=center style="max-width:327px;padding-top:10px;" id=sidebar>
         <ul class="nav nav-tabs" style="margin-right:80px;">
-            <li class="active"><a data-toggle="tab" href="#ill">Болезни</a></li>
-            <li><a data-toggle="tab" href="#drugs">Препараты</a></li>
-            <li><a data-toggle="tab" href="#conds">Условия</a></li>
-            <li><a data-toggle="tab" href="#geo">Гео</a></li>
+            <li class="active"><a data-toggle="tab" href="#ill">Diseases</a></li>
+            <li><a data-toggle="tab" href="#drugs">Drugs</a></li>
+            <li><a data-toggle="tab" href="#conds">Conditions</a></li>
+            <li><a data-toggle="tab" href="#geo">Geo</a></li>
         </ul>
         <div style="border-top:1px solid #e1e6f0; margin-top:-1px;"> </div>
-        <div class="tab-content tab-col" align=left style="padding:3px;">
+        <div class="tab-content tab-col" align=left>
             <div id=ill class="tab-pane fade in active" style=margin-top:1px>
                 <ul class="sqmenu">
                 {% for entry in objects %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
+                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -89,7 +89,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in drugs %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
+                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -98,7 +98,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in conditions %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
+                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -107,7 +107,7 @@ var sc_security="59e332e0";
                 <ul  class="sqmenu">
                     {% for entry in geo_objects %}
                         <li style="color:#4d4df6" class="rightnav">
-                            <a href="/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name }}</a>
+                            <a href="/en/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
                         </li>
                     {% endfor %}
                 </ul>

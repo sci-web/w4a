@@ -169,10 +169,10 @@ class DB(object):
         return app.config['OBJECTS'].find({"I_S_codename": codename})
 
     def get_objects_by_key_sorted_filter_no_en(self, val, key):
-        return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}}, {"I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
+        return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}}, {"I_S_codename": 1, "I_S_name_en": 1, "I_S_codename":1 }).sort(key, 1)
 
     def get_objects_by_key_sorted_filter_yes_en(self, val, key):
-        return app.config['OBJECTS'].find({"I_S_type_this": val}, {"I_S_codename": 1, "I_S_name": 1}).sort(key, 1)
+        return app.config['OBJECTS'].find({"I_S_type_this": val}, {"I_S_codename": 1, "I_S_name_en": 1}).sort(key, 1)
 
     def get_intros_en(self):
         return app.config['INTROS_EN'].find({"published":1}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1})

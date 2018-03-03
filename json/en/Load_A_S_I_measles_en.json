@@ -7,7 +7,7 @@
 "I_S_type_this": "disease",
 "I_S_name": "Measles",
 "intro": "",
-"date": ISODate ("2017-09-13T09: 05: 00Z"),
+"date": ISODate ("2017-09-13T09:05:00Z"),
 "epigraph": {
 "text": "I have seen 200 cases of cancer, and never saw a case in an unvaccinated person.",
 "source": "W.B. Clark, New York Times, 1909"
@@ -910,7 +910,7 @@
 "infoID": "10232315",
 "info_place": "Lancet",
 "I_S_codenames": ["allergy", "MMR"],
-"digest": "Those who were not vaccinated with MMR, allergies were 33% less common, those who fed mainly organic allergy products were 37% less likely." "Allergies were also less common in those who did not use antibiotics, did not use antipyretic drugs, were ill with measles, ate fermented vegetables, or were at breastfeeding for at least 4 months. "
+"digest": "Those who were not vaccinated with MMR, allergies were 33% less common, those who fed mainly organic allergy products were 37% less likely. Allergies were also less common in those who did not use antibiotics, did not use antipyretic drugs, were ill with measles, ate fermented vegetables, or were at breastfeeding for at least 4 months. "
 },
 {
 "num": 63,
@@ -1061,7 +1061,7 @@
 "info_authors": "Garly",
 "infoID": "12505179",
 "info_place": "Acta Trop",
-"digest": "The role of cellular immunity in measles protection is unclear, and if we understood it, we could develop a more effective vaccine." "Thanks to vaccination, Senegal's adult and pregnant women began to suffer from measles. pregnancy measles is the most dangerous for both mother and child. <br> <br> The fact that the vaccine with high titers was dying more girls, so it could have happened not because the vaccine with high titers is worse, but because the vaccine with Average titers have a beneficial effect on mortality, which is not found in vaccines with higher True, this hypothesis does not explain why only girls died more than boys, but we (the authors) still consider this hypothesis to be logical. <br> <br> It is known that those who have recovered measles die less often than those who have not had it, and that measles have a positive impact on the immune system, so it can be assumed that vaccination has the same effect! There are no studies showing that the reduction in mortality in developing countries is a consequence of prevented measles cases, and not some kind of nonspecific effect of vaccine tsins. Therefore, it will be unreasonable to stop vaccination even after the complete eradication of measles, as infant mortality may rise again. <br> <br> Moreover, if after measles elimination has been stopped vaccination and people are immunized against measles, measles virus can be used as a weapon for bio-terrorism. "
+"digest": "The role of cellular immunity in measles protection is unclear, and if we understood it, we could develop a more effective vaccine. Thanks to vaccination, Senegal's adult and pregnant women began to suffer from measles. pregnancy measles is the most dangerous for both mother and child. <br> <br> The fact that the vaccine with high titers was dying more girls, so it could have happened not because the vaccine with high titers is worse, but because the vaccine with Average titers have a beneficial effect on mortality, which is not found in vaccines with higher True, this hypothesis does not explain why only girls died more than boys, but we (the authors) still consider this hypothesis to be logical. <br> <br> It is known that those who have recovered measles die less often than those who have not had it, and that measles have a positive impact on the immune system, so it can be assumed that vaccination has the same effect! There are no studies showing that the reduction in mortality in developing countries is a consequence of prevented measles cases, and not some kind of nonspecific effect of vaccine tsins. Therefore, it will be unreasonable to stop vaccination even after the complete eradication of measles, as infant mortality may rise again. <br> <br> Moreover, if after measles elimination has been stopped vaccination and people are immunized against measles, measles virus can be used as a weapon for bio-terrorism. "
 },
 {
 "num": 76,

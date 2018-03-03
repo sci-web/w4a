@@ -13,6 +13,7 @@ SPACES = DATABASE.chapters
 SPACES_EN = DATABASE.chapters_en
 CORE = DATABASE.core
 MONGOEXP = "/opt/mongodb/bin/mongoexport"
+GEOCITY = "/home/jes/Code/w4a/geo/GeoLite2-City_20180206/GeoLite2-City.mmdb"
 
 CSV = set(['csv', 'txt'])
 

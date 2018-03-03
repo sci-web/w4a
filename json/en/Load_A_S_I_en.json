@@ -1,13 +1,13 @@
 {
 "analyst": "amantonio",
 "namespace": "vaccines",
-"title": "Anti-vaccination",
+"title": "Anti-vaxxers",
 "I_S_codename": "anti-vaxx",
 "I_S_type_ref": "S_S",
 "I_S_type_this": "human",
 "I_S_name": "Anti-vaccination",
 "intro": "Scientists are usually given very few grants to study the safety of vaccines, adjuvants and other vaccine components, but there is more than enough research to investigate why people are not vaccinated and how to get them to chop their children, characterizing anti-vaccination parents. ",
-"date": ISODate ("2017-06-22T23: 26: 00Z"),
+"date": ISODate ("2017-06-22T23:26:00Z"),
 "epigraph": {
 "text": "The minority can be right, the majority is always wrong.",
 "source": "Henrik Ibsen"
@@ -15,7 +15,7 @@
 "points":
 [{
 "num": 1,
-"digest": "It is believed that anti-vaccination is usually uneducated, religious and anti-scientific people, but scientific evidence suggests otherwise." "Most antiperspirants are well-educated and rich. Some Los Angeles private schools have less than 20% of children [vaccinated == http://www.latimes.com/opinion/opinion-la/la-oe-shapiro-schools-and-vaccination-rates-20130811-story.html]. How can it be that these rich and educated people do not plant their own children? Do not they know that vaccinations are completely safe, and that they save from terrible diseases? Or maybe they know ? Vaccination is something that others do not know <br> <br> Here are a few studies "
+"digest": "It is believed that anti-vaccination is usually uneducated, religious and anti-scientific people, but scientific evidence suggests otherwise.<br>Most antiperspirants are well-educated and rich. Some Los Angeles private schools have less than 20% of children [vaccinated == http://www.latimes.com/opinion/opinion-la/la-oe-shapiro-schools-and-vaccination-rates-20130811-story.html]. How can it be that these rich and educated people do not plant their own children? Do not they know that vaccinations are completely safe, and that they save from terrible diseases? Or maybe they know ? Vaccination is something that others do not know <br> <br> Here are a few studies "
 },
 {
 "num": 2,

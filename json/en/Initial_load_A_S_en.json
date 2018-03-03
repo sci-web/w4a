@@ -1,7 +1,8 @@
 {
 "analyst": "amantonio",
 "namespace": "vaccines",
-"date": ISODate ("2017-06-19T15: 44: 00Z"),
+"date": ISODate ("2017-06-19T15:44:00Z"),
+
 "subject": "We deal with vaccinations",
 "epigraph": {
 "text": "Vaccination is the leading cause of coincidences",

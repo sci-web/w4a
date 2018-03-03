@@ -10,15 +10,36 @@ from .model import DB
 from .forms import LoginForm, makeform, searchForm
 from bson.json_util import dumps
 import json
+import geoip2.database
 
 @app.before_request
 def load_vars():
-    g.items = DB().get_spaces_by_key_sorted("vaccines", "date")
-    g.objects = DB().get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
-    g.drugs = DB().get_objects_by_key_sorted_filter_yes("drug", "I_S_name")
-    g.conditions = DB().get_objects_by_key_sorted_filter_yes("condition", "I_S_name")    
-    g.objects_geo = DB().get_objects_by_key_sorted_filter_yes("geo", "I_S_name")
-    g.chapters = DB().get_spaces_by_key_sorted("vaccines", "date")
+    reader = geoip2.database.Reader(app.config['GEOCITY'])
+    ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
+    location = "ru"
+    ccode = ""
+    if (ip != "127.0.0.1"):
+        response = reader.city(ip)
+        ccode = str(response.country.iso_code)  # country code
+    if (ccode == "RU" or ccode == "UA" or ccode == "BY" or ccode == "KZ"):
+        g.location = "ru"
+    else:
+        g.location = "en"
+    g.path = request.path.split('/')[1]
+    if (g.path == "en"):
+        g.location = "en"
+    else:
+        if (request.referrer == None and g.location != "ru"):
+            g.location = "en"
+        else:
+            g.location = "ru"
+    # g.location = request.path.split('/')[1]
+    g.items = DB().get_spaces_by_key_sorted_en("vaccines", "date") if g.location == "en" else DB().get_spaces_by_key_sorted("vaccines", "date")
+    g.objects = DB().get_objects_by_key_sorted_filter_yes_en("disease", "I_S_name_en") if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
+    g.drugs = DB().get_objects_by_key_sorted_filter_yes_en("drug", "I_S_name_en") if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("drug", "I_S_name")
+    g.conditions = DB().get_objects_by_key_sorted_filter_yes_en("condition", "I_S_name_en")  if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("condition", "I_S_name") 
+    g.objects_geo = DB().get_objects_by_key_sorted_filter_yes_en("geo", "I_S_codename") if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("geo", "I_S_name")
+    g.chapters = DB().get_spaces_by_key_sorted_en("vaccines", "date") if g.location == "en" else DB().get_spaces_by_key_sorted("vaccines", "date")
     g.form = makeform()
 
 @app.route('/', defaults={'path': ''})
@@ -51,22 +72,33 @@ app.jinja_env.filters['rehref'] = rehref
 
 @app.route('/')
 @app.route('/en')
+@app.route('/en/')
 def index():
-    i_data = DB().get_intros_en() if request.path.split('/')[1] == "en" else DB().get_intros()
-    tmpl = 'en/index.html' if request.path.split('/')[1] == "en" else 'index.html'
+    print g.path
+    print g.location
+    print request.referrer
+    if (request.referrer == None and g.location == "en" and g.path != "en"):
+        return redirect("/en")
+    i_data = DB().get_intros_en() if g.location == "en" else DB().get_intros()
+    tmpl = 'en/index_en.html' if g.location == "en" else 'index.html'
     return render_template(tmpl, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
                     chapters=g.chapters, data=i_data)
 
-
+@app.route('/en/content/<namespace>/<codename>')
 @app.route('/content/<namespace>/<codename>')
 def show_item(namespace, codename):
-    i_data = DB().get_a_space(namespace, codename)
+    i_data = DB().get_a_space_en(namespace, codename) if g.location == "en" else DB().get_a_space(namespace, codename)
     data = json.loads(dumps(i_data))
-    title = data["title"]
-    chapters = DB().get_spaces_by_key_sorted(namespace, "date")
+    try:
+        title = data["title"]
+    except:
+        return render_template('en/404_en.html', items=g.items, objects=g.objects, form=g.form), 404  # if there is no corresponding translation      
+    chapters = DB().get_spaces_by_key_sorted_en(namespace, "date") if g.location == "en" else DB().get_spaces_by_key_sorted(namespace, "date")
+
     f_date = datetime.datetime.fromtimestamp( data["date"]['$date'] / 1e3 )
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
-    return render_template('content.html', idata=data, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
+    tmpl = 'en/content_en.html' if g.location == "en" else 'content.html'
+    return render_template(tmpl, idata=data, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
                             title=namespace.title() + ": " + title, chapters=chapters)
 
 
@@ -104,38 +136,47 @@ def search():
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=searchfor)
 
 
-
+@app.route('/en/browse/obj/<codename>')
 @app.route('/browse/obj/<codename>')
 def browse(codename):
-    i_data = DB().get_points_by_codename(codename)
-    obj = DB().get_an_object_by_codename(codename)
+    i_data = DB().get_points_by_codename_en(codename) if g.location == "en" else DB().get_points_by_codename(codename)
+    obj = DB().get_an_object_by_codename_en(codename) if g.location == "en" else DB().get_an_object_by_codename(codename)
     objdata = json.loads(dumps(obj))
-    return render_template('browse.html', idata=i_data, obj=objdata, form=g.form, 
-            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=objdata[0]["I_S_name"])
+    tmpl = 'en/browse_en.html' if g.location == "en" else 'browse.html'
+    title = objdata[0]["I_S_name_en"] if g.location == "en" else objdata[0]["I_S_name"]
+    return render_template(tmpl, idata=i_data, obj=objdata, form=g.form, 
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 
 
+@app.route('/en/browse/geo/<geo>')
 @app.route('/browse/geo/<geo>')
 def browse_geo(geo):
-    i_data = DB().get_points_by_geo(geo)
-    obj = DB().get_an_object_by_codename(geo)
+    i_data = DB().get_points_by_geo_en(geo) if g.location == "en" else DB().get_points_by_geo(geo)
+    obj = DB().get_an_object_by_codename_en(geo) if g.location == "en" else DB().get_an_object_by_codename(geo)
     objdata = json.loads(dumps(obj))
-    return render_template('browse.html', idata=i_data, obj=objdata, form=g.form, 
-            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=objdata[0]["I_S_name"])
+    tmpl = 'en/browse_en.html' if g.location == "en" else 'browse.html'
+    title = objdata[0]["I_S_codename"] if g.location == "en" else objdata[0]["I_S_name"]
+    return render_template(tmpl, idata=i_data, obj=objdata, form=g.form, 
+            items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 
 
+@app.route('/en/intro/<namespace>',methods=['GET','POST'])
 @app.route('/intro/<namespace>',methods=['GET','POST'])
 def show_intro(namespace):
-    i_data = DB().get_an_intro(namespace)
+    i_data = DB().get_an_intro_en(namespace) if g.location == "en" else DB().get_an_intro(namespace)
     data = json.loads(dumps(i_data))
     f_date = datetime.datetime.fromtimestamp( data["date"]['$date'] / 1e3 )
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
+    tmpl = 'en/intro_en.html' if g.location == "en" else 'intro.html'
+    div = 'en/intro_div_en.html' if g.location == "en" else 'intro_div.html'
     if 'div' in request.args:
-        return jsonify( {'data': render_template('intro_div.html', idata=data, chapters=g.chapters)} )
+        return jsonify( {'data': render_template(div, idata=data, chapters=g.chapters)} )
     else:
-        return render_template('intro.html', idata=data, form=g.form, 
+        return render_template(tmpl, idata=data, form=g.form, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=data["subject"])
 
 
+@app.route('/en/chapters/<namespace>',methods=['GET','POST'])
 @app.route('/chapters/<namespace>',methods=['GET','POST'])
 def chapters(namespace):
     i_data = DB().get_spaces_by_key_sorted(namespace, "date")

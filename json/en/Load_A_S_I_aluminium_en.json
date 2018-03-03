@@ -6,7 +6,7 @@
 "I_S_type": "S_P",
 "I_S_type_this": "chemical",
 "I_S_name": "Aluminum",
-"date": ISODate ("2017-07-16T22: 44: 00Z"),
+"date": ISODate ("2017-07-16T22:44:00Z"),
 "intro": "",
 "epigraph": {
 "text": "A foolish faith in authority is the worst enemy of truth.",
@@ -107,7 +107,7 @@
 "info_place": "Birth Defects Res A Clin Mol Teratol",
 "I_S_codenames": ["pregnancy"],
 "digest": "A high level of aluminum in the mother's hair is associated with congenital heart defects in the child."
-}
+},
 {
 "num": 9.2,
 "title": "A study of the distribution of aluminum in human placental tissues based on alkaline solubilization with determination by electrothermal atomic absorption spectrometry.",
@@ -137,7 +137,7 @@
 "info_type": "article",
 "info_date": "2016",
 "info_authors": "Miller",
-"info_place": "JPANDS",
+"info_place": "JPANDS"
 }]
 },
 {

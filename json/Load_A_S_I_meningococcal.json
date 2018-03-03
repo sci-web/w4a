@@ -1,0 +1,527 @@
+{
+	"_id": {
+		"$oid": "5a9958c9cf1e8c6d1a328602"
+	},
+	"analyst": "amantonio",
+	"namespace": "vaccines",
+	"title": "Менингококк",
+	"I_S_codename": "meningococcal",
+	"I_S_type": "S_O",
+	"I_S_type_this": "disease",
+	"date": {
+		"$date": "2018-02-21T08:59:37.080Z"
+	},
+	"epigraph": {
+		"text": "The remedy is worse than the disease.",
+		"source": "Francis Bacon"
+	},
+	"points": [
+		{
+			"num": 1.0,
+			"digest": "Менингококк - это третий вид бактерий, вызывающий менингит и бактериемию. Заболеваемость менингококковой инфекцией значительно ниже заболеваемости пневмококковой и гемофильной инфекцией, но поскольку вакцина от менингококка является самой новой лицензированной вакциной, менингококк в последнее время стал самой большой страшилкой."
+		},
+		{
+			"num": 2.0,
+			"title": "CDC Pinkbook Meningococcal",
+			"link": "https://www.cdc.gov/vaccines/pubs/pinkbook/mening.html",
+			"info_type": "cdc",
+			"digest": "Существуют 13 серогрупп менингококка, но за инвазивные инфекции ответственны в основном пять: A,B,C,W,Y. 60% инвазивных инфекций у детей вызываются серогруппой B.<br>Летальность инвазивной инфекции составляет 10-15%, а летальность менингококцемии (менингококкового сепсиса) доходит до 40%.<br>Факторами риска являются активное и пассивное курение, алкоголь, теснота и аспления (отсутствие селезенки).<br>98% случаев заболевания спорадические, и лишь 2% происходят вследствие вспышек.<br>Первая полисахаридная вакцина появилась в 1974 году. Как и другие полисахаридные вакцины, она не эффективна для младенцев.<br>Первая конъюгированная вакцина от менингококка (Menactra) была лицензирована в 2005 году для подростков старше 11 лет. В 2010 году была лицензирована вторая вакцина (Menveo). Обе защищают от серогрупп ACWY. Ожидалось, что вакцины будут эффективны на 10 лет, но в последствии оказалось, что количество антител снижается уже через 3-5 лет, и привитые в 11 лет уже не будут защищены в 16-21 лет, когда риск менингококковой инфекции выше. Поэтому в 2010 году была добавлена ревакцинация в 16 лет.<br>В 2006-10 в CDC были зарегистрированы 30 случаев заболевания у привитых. Летальность среди них была такой же, как у непривитых.<br>В 2014-15 были лицензированы две вакцины от серогруппы В - Bexsero (GSK) и Trumenba (Pfizer), но они не добавлены еще в календарь прививок."
+		},
+		{
+			"num": 3.0,
+			"title": "Advances in the development of vaccines against Neisseria meningitidis.",
+			"link": "http://www.nejm.org/doi/full/10.1056/NEJMra0906357",
+			"info_type": "article",
+			"info_date": "2010",
+			"info_authors": "Tan",
+			"infoID": "10.1056/NEJMra0906357",
+			"info_place": "N Engl J Med",
+			"digest": "Заболеваемость менингококковой инфекцией составляет 1 на 300,000 в США, и в среднем 1 на 100,000 в Европе.<br>Раньше считалось, что самая высокая заболеваемость приходится на детей с 6-24 месяцев, но последние данные свидетельствуют о том, что больше всего болеют младенцы до 6 месяцев, которые не получили антитела от матери.<br>Конъюгированные вакцины от серогрупп ACWY не эффективны для младенцев.<br>Больше всего случаев заболевания приходятся на серогруппу В, но поскольку капсула этой серогруппы содержит молекулу, которая очень похожа на гликопротеины в мозгу, полисахаридные вакцины от этой серогруппы, во-первых, плохо вырабатывают антитела, а во-вторых, могут привести к аутоиммунной реакции из-за механизма молекулярной мимикрии. Поэтому были разработаны вакцины на основе белков наружной мембраны. Но так как белки наружной мембраны менингококка умеют [менять==https://ru.wikipedia.org/wiki/%D0%90%D0%BD%D1%82%D0%B8%D0%B3%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F_%D0%B8%D0%B7%D0%BC%D0%B5%D0%BD%D1%87%D0%B8%D0%B2%D0%BE%D1%81%D1%82%D1%8C] антигены, это может привести к неэффективности вакцины.<br>Поскольку менингококковая инфекция это очень редкое заболевание, все вакцины от менингококка были лицензированы лишь на основании иммуногенности (то есть уровня антител), а не на основании клинической эффективности."
+		},
+		{
+			"num": 4.0,
+			"title": "Changes in Neisseria meningitidis disease epidemiology in the United States, 1998-2007: implications for prevention of meningococcal disease.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/20001736",
+			"info_type": "article",
+			"info_date": "2010",
+			"info_authors": "Cohn",
+			"infoID": "20001736",
+			"info_place": "Clin Infect Dis",
+			"info_geo": "US",
+			"digest": "Между 1998 и 2007 заболеваемость менингококковой инфекцией снизилась на 64%. В среднем за эти годы заболеваемость составляла 1 на 200 тысяч, а к 2007-му году заболеваемость менингококком снизилась до 1 на 300 тысяч.<br>Самая высокая заболеваемость была среди младенцев младше года (5 на 100 тысяч). 50% случаев у них вызываются серогруппой B. А две трети случаев в первый год жизни происходят среди младенцев младше 6 месяцев.<br>Негры болеют на 44% чаще чем белые.<br>Летальность менингококковой инфекции составляла 11%, и увеличивалась с возрастом. Среди пожилых летальность составляла 24%, а среди младенцев 3-6%.<br>Больше всего случаев наблюдалось в январе и в феврале, а меньше всего в августе.<br>Авторы заключают, что до начала вакцинации заболеваемость менингококковой инфекцией в США была на историческом минимуме, и что после начала вакцинации не произошло значительного уменьшения заболеваемости у подростков, которых прививали, потому что были привиты всего лишь 32%.<br>(Мотив, который проходит красной нитью практически во всех исследованиях. Если после начала вакцинации не произошло снижения заболеваемости - то это потому что охват был недостаточный. А если произошло снижение - то это, разумеется, заслуга вакцинации, даже если были привиты лишь 2%)."
+		},
+		{
+			"num": 5.0,
+			"title": "Changes in bacterial meningitis.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1792153/",
+			"info_type": "article",
+			"info_date": "1990",
+			"info_authors": "Carter",
+			"infoID": "PMC1792153",
+			"info_place": "Arch Dis Child",
+			"info_geo": "UK",
+			"digest": "Летальность менингококковой инфекции в Шотландии упала с 10.3% в 1946-61 до 1.2% в 1971-86. Заболеваемость снизилась с 7.9 до 5.3 на 100,000 детей.<br>Заболеваемость гемофильной инфекцией за это время увеличилась в 4 раза, тогда как летальность упала с 19.2% до 3%."
+		},
+		{
+			"num": 6.0,
+			"title": "A retrospective epidemiological study of bacterial meningitis in an urban area in Belgium.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9128813",
+			"info_type": "article",
+			"info_date": "1997",
+			"info_authors": "van Hoeck",
+			"infoID": "9128813",
+			"info_place": "Eur J Pediatr",
+			"info_geo": "Belgium",
+			"digest": "Заболеваемость бактериальным менингитом в Бельгии выросла в 10 раз между 1988 и 1993, в основном из-за менингококка. Иммигранты и не белые болели чаще."
+		},
+		{
+			"num": 7.0,
+			"title": "Human immunity to the meningococcus. II. Development of natural immunity.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2138665/",
+			"info_type": "article",
+			"info_date": "1969",
+			"info_authors": "Goldschneider",
+			"infoID": "PMC2138665",
+			"info_place": "J Exp Med",
+			"I_S_codenames": [
+				"natural_immunity"
+			],
+			"digest": "В результате бессимптомной колонизации менингококком, от него в течение нескольких недель вырабатываются антитела.<br>Младенцы до полугода защищены антителами матери. Концентрация антител в крови у младенцев выше, чем в крови у матери.<br>Обычно естественный иммунитет вырабатывается в детстве."
+		},
+		{
+			"num": 8.0,
+			"title": "Neisseria meningitidis: an overview of the carriage state.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/15314188",
+			"info_type": "article",
+			"info_date": "2004",
+			"info_authors": "Yazdankhah",
+			"infoID": "15314188",
+			"info_place": "J Med Microbiol",
+			"digest": "10% населения являются носителями менингококковой бактерии. Среди детей менее 3% заражены, а среди 15-24 летних заражены 24-37%. Высокий уровень колонизации наблюдается также в армии. Например, среди норвежских солдат более 70% были носителями менингококка.<br>Недавнее исследование показало, что количество носителей менингококка, которое определяется конвенциональными методами (бакпосев), возможно занижено. Используя другой метод (иммуногистохимия) обнаружилось, что 45% были носителями менингококка, тогда как лишь у 10% из них менингококк обнаруживался конвенциональным методом.<br>Колонизация менингококка приводит к выработке антител в течение нескольких недель после заражения, и может защищать от болезни.<br>Примерно 50% штаммов, обнаруженных у носителей оказались бескапсульными. Раньше считалось, что бескапсульные штаммы не патогенны, но потом оказалось, что менингококки умеют включать и выключать выработку капсул с высокой частотой. Имеются свидетельства, что потеря капсулы усиливает способность менингококков колонизировать носоглотку, и избегать системы защиты организма. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/10834994]"
+		},
+		{
+			"num": 9.0,
+			"title": "Meningococcal disease: history, epidemiology, pathogenesis, clinical manifestations, diagnosis, antimicrobial susceptibility and prevention.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/16505549",
+			"info_type": "article",
+			"info_date": "2006",
+			"info_authors": "Manchanda",
+			"infoID": "16505549",
+			"info_place": "Indian J Med Microbiol",
+			"digest": "Менее чем у 1% может развиться хроническая доброкачественная менингококцемия. Как эти пациенты выносят потенциально летальные бактерии в кровотоке в течение нескольких недель - неизвестно."
+		},
+		{
+			"num": 10.0,
+			"title": "The risk of meningococcal disease in travelers and current recommendations for prevention.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/20849428",
+			"info_type": "article",
+			"info_date": "2010",
+			"info_authors": "Steffen",
+			"infoID": "20849428",
+			"info_place": "J Travel Med",
+			"info_geo": "",
+			"I_S_codenames": [
+				""
+			],
+			"digest": "Вспышки менингококковой болезни часто происходили среди паломников в Мекке, поэтому Саудовская Аравия ввела обязательную вакцинацию для желающих получить визу на Хадж. После этого вспышек не [наблюдалось==https://www.sciencedirect.com/science/article/pii/S1201971216310207].<br>Менингококковая болезнь наиболее распространена в \"африканском менингитном поясе\", который включает в себя страны к югу от Сахары. Больше всего случаев регистрируются в сухой сезон. Тем не менее, нет ни одного известного случая заболевания туриста.<br>Каждые 6 недель CDC расследует потенциальное заражение менингококком в самолетах. Однако лишь два таких случая известны."
+		},
+		{
+			"num": 11.0,
+			"header": "Факторы риска",
+			"title": "Tobacco smoke as a risk factor for meningococcal disease.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9380476",
+			"info_type": "article",
+			"info_date": "1997",
+			"info_authors": "Fischer",
+			"infoID": "9380476",
+			"info_place": "Pediatr Infect Dis J",
+			"info_geo": "US",
+			"I_S_codenames": [
+				"smoking"
+			],
+			"digest": "Риск менингококковой инфекции у ребенка младше 18 лет повышается в 3.8 раз, если его мать курит.<br>Среди взрослых курение увеличивает риск менингококковой инфекции в 2.4 раза, пассивное курение - в 2.5 раз, а хроническое заболевание - в 10.8 раз."
+		},
+		{
+			"num": 12.0,
+			"title": "Second hand smoke exposure and the risk of invasive meningococcal disease in children: systematic review and meta-analysis.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/23228219",
+			"info_type": "article",
+			"info_date": "2012",
+			"info_authors": "Murray",
+			"infoID": "23228219",
+			"info_place": "BMC Public Health",
+			"I_S_codenames": [
+				"smoking"
+			],
+			"info_geo": "Ghana",
+			"digest": "Пассивное курение повышает риск менингококковой инфекции в 2.2 раза. Когда оба родителя курят, риск повышается в 8 раз. Еще: [[1]==https://academic.oup.com/ije/article/35/2/330/694745] [[2]==https://www.ncbi.nlm.nih.gov/pubmed/2570968] [[3]==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2998445/]<br>В Гане, где менингококковый менингит распространен намного больше, чем в развитых странах, приготовление пищи на дровяных печах [повышает==https://www.ncbi.nlm.nih.gov/pubmed/11706652] риск заболевания в 9 раз."
+		},
+		{
+			"num": 13.0,
+			"title": "Passive smoking, invasive meningococcal disease and preventive measures: a commentary.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3568012/",
+			"info_type": "article",
+			"info_date": "2012",
+			"info_authors": "Rashid",
+			"infoID": "PMC3568012",
+			"info_place": "BMC Med",
+			"I_S_codenames": [
+				"smoking"
+			],
+			"digest": "Если родители курят только вне дома, это не снижает уровень никотина в волосах у детей, что, возможно, свидетельствует о том, что курильщики продолжают выдыхать никотин после курения. Это намекает на то, что риск менингококковой инфекции не понизится если запретить курение только в некоторых местах типа домов, автомобилей и больниц, и нужен тотальный запрет. Но известно, что сравнительно мало людей бросают курить, поэтому вакцинация детей будет, наверно, более эффективна. Кроме того есть надежда, что дети смогут уберечь от менингококка также своих курящих родителей посредством коллективного иммунитета."
+		},
+		{
+			"num": 14.0,
+			"title": "Increased Risk for Meningococcal Disease Among Men Who Have Sex With Men in the United States, 2012-2015.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737672/",
+			"info_type": "article",
+			"info_date": "2017",
+			"info_authors": "Folaranmi",
+			"infoID": "PMC5737672",
+			"info_place": "Clin Infect Dis",
+			"info_geo": [
+				"US",
+				"Germany",
+				"France"
+			],
+			"I_S_codenames": [
+				"MSM"
+			],
+			"digest": "Риск менингококковой инфекции у гомосексуалов в 4 раза выше, чем у гетеросексуалов. Зараженные ВИЧ гомосексуалы болеют менингококковой болезнью в 10 раз чаще, чем незараженные гомосексуалы. 45% заболевших менингококком сообщили о многочисленных партнерах и об участии в анонимном сексе.<br>Среди гомосексуалов 32% курят (по сравнению с 18% взрослых в США), и 48% используют наркотики (по сравнению с 10% в среднем).<br>В Нью Йорке риск менингококковой инфекции среди гомосексуалов был в 50 раз [выше==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3962794/], чем в среднем, в Германии в 13 раз [выше==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3962794/], в Париже в 10 раз [выше==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3962794/], в Южной Калифорнии в 50 раз [выше==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3962794/].<br>24% гомосексуалов [являются==https://www.ncbi.nlm.nih.gov/pubmed/7647127] носителями менингококка по сравнению с 6% среди гетеросексуальных женщин. Среди гомосексуалов, у которых недавно был орально-анальный контакт, носителями были 43%.<br>Менингококк был также [обнаружен==https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0] у 4.5% гомосексуалов в анальном канале.<br>В 2016 году был [открыт==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4864352/] новый штамм менингококка, который может передаваться половым путем.<br>CDC [сообщает==https://www.cdc.gov/meningococcal/downloads/NCIRD-EMS-Report.pdf], что в 2016 году среди заболевших менингококком мужчин старше 16 лет 57% заявили о гомосексуальном контакте. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/26562570] [[2]==https://www.ncbi.nlm.nih.gov/pubmed/23870095] [[3]==https://www.ncbi.nlm.nih.gov/pubmed/411836] [[4]==https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6151a4.htm]."
+		},
+		{
+			"num": 15.0,
+			"title": "Invasive meningococcal disease among men who have sex with men.",
+			"link": "http://ecdc.europa.eu/en/publications/Publications/rapid-risk-assessment-invasive-meningococcal-disease-among-MSM.pdf",
+			"info_type": "article",
+			"info_date": "2013",
+			"info_authors": "ECDC",
+			"I_S_codenames": [
+				"MSM"
+			],
+			"digest": "Заражение ВИЧ повышает риск менингококковой инфекции в 11 раз, а СПИД в 12 раз.<br>В 2010 году в Нью Йорке началась вспышка менингококка среди гомосексуалов. Это связано с мобильными приложениями знакомств и с посещением гей-баров."
+		},
+		{
+			"num": 16.0,
+			"title": "Risk and protective factors for meningococcal disease in adolescents: matched cohort study.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1382533/",
+			"info_type": "article",
+			"info_date": "2006",
+			"info_authors": "Tully",
+			"infoID": "PMC1382533",
+			"info_place": "BMJ",
+			"info_geo": "UK",
+			"digest": "Интимные поцелуи с многочисленными партнерами ассоциированы с повышением риска менингококковой инфекции среди подростков в 3.7 раз. Преждевременные роды тоже с повышением риска в 3.7 раз. Предшествующая болезнь повышала риск в 2.9 раз.<br>Посещение религиозных церемоний ассоциировано в понижением риска в 11 раз, а вакцинация с понижением риска в 8 раз.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/18277925] сообщается, что марихуана ассоциирована с повышением риска менингококковой инфекции в 4.2 раза, а посещение ночных клубов в 3.3 раза. Посещение пикников и танцев понижало риск в 3-4 раза."
+		},
+		{
+			"num": 17.0,
+			"title": "Prolonged university outbreak of meningococcal disease associated with a serogroup B strain rarely seen in the United States.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/23595832",
+			"info_type": "article",
+			"info_date": "2013",
+			"info_authors": "Mandal",
+			"infoID": "23595832",
+			"info_place": "Clin Infect Dis",
+			"info_geo": "US",
+			"I_S_codenames": [
+				""
+			],
+			"digest": "Вспышка менингококка в университете в Огайо (13 случаев). Посещение баров было ассоциировано с повышением риска заболевания в 8 раз, а поцелуи более чем с одним партнером в 13.6 раз.<br>В Чили факторами риска менингококковой инфекции [были==https://wwwnc.cdc.gov/eid/article/23/7/16-0129_article] теснота (больше чем 2.5 человека в спальне), низкий уровень образования матери, низкий уровень дохода, злоупотребление алкоголем и хроническая болезнь.<br>В Бразилии низкий уровень образования у родителей ассоциирован с [повышением==https://www.ncbi.nlm.nih.gov/pubmed/26222063] риска колонизации менингококка в 2 раза, что вероятно, отражает социоэкономические условия.<br>В Греции теснота и предшествующее ОРЗ [повышали==https://www.ncbi.nlm.nih.gov/pubmed/27351742] риск заболевания у детей в 3 раза, а курение отца в 4.5 раза. Еще: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/19788058] [[2]==https://www.ncbi.nlm.nih.gov/pubmed/15736029] [[3]==https://www.ncbi.nlm.nih.gov/pubmed/11811858]"
+		},
+		{
+			"num": 18.0,
+			"header": "Эффективность",
+			"title": "Updated Recommendations for Use of Meningococcal Conjugate Vaccines - Advisory Committee on Immunization Practices (ACIP), 2010.",
+			"link": "https://jamanetwork.com/journals/jama/fullarticle/896276",
+			"info_type": "article",
+			"info_date": "2011",
+			"info_authors": "CDC",
+			"info_place": "JAMA",
+			"info_geo": "US",
+			"digest": "Клиническая эффективность Менактры через год после прививки составляет 91%, а через 2-5 лет уменьшается до 58% (CI: -72-89)."
+		},
+		{
+			"num": 19.0,
+			"title": "Effectiveness of meningococcal serogroup C conjugate vaccine 4 years after introduction.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/15276396",
+			"info_type": "article",
+			"info_date": "2004",
+			"info_authors": "Trotter",
+			"infoID": "15276396",
+			"info_place": "Lancet",
+			"info_geo": "UK",
+			"digest": "В 1999 году в Англии ввели конъюгированную вакцину от менингококка (серогруппы С) в национальный календарь прививок для младенцев в возрасте 2, 3 и 4 месяца. Эффективность вакцины в первый год после прививки составила 93%, но после года эффективность стала отрицательной (-81%). Иммунитет после вакцинации в более позднем возрасте сохраняется дольше."
+		},
+		{
+			"num": 20.0,
+			"title": "Effect of outer membrane vesicle vaccine against group B meningococcal disease in Norway.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/1682541",
+			"info_type": "article",
+			"info_date": "1991",
+			"info_authors": "Bjune",
+			"infoID": "1682541",
+			"info_place": "Lancet",
+			"info_geo": "Norway",
+			"I_S_codenames": [
+				""
+			],
+			"digest": "В Норвегии наблюдается самая высокая заболеваемость менингококковой инфекцией в Европе, и 80% случаев приходятся на серогруппу В. (В 1970/80-х там была эпидемия, и заболеваемость составляла 1 на 14-21,000).<br>Было проведено двойное-слепое рандомизированное исследование (170,000 человек) вакциной на основе белков наружной мембраны (OMV). В качестве плацебо использовался гидроксид алюминия.<br>Эффективность вакцины составила всего 57%, поэтому ее решили не вносить в календарь прививок."
+		},
+		{
+			"num": 21.0,
+			"title": "Efficacy, safety, and immunogenicity of a meningococcal group B (15:P1.3) outer membrane protein vaccine in Iquique, Chile. Chilean National Committee for Meningococcal Disease.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/7483804",
+			"info_type": "article",
+			"info_date": "1995",
+			"info_authors": "Boslego",
+			"infoID": "7483804",
+			"info_place": "Vaccine",
+			"info_geo": "Chile",
+			"digest": "Клиническое испытание вакцины от серогруппы В в Чили (40,000 человек). В качестве плацебо была использована вакцина от других серогрупп менингококка.<br>Эффективность вакцины в течение 2.5 лет составила 51%, а среди детей младше 5 лет эффективность была отрицательной -23%."
+		},
+		{
+			"num": 22.0,
+			"title": "Antibody persistence following MeNZB vaccination of adults and children and response to a fourth dose in toddlers.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/21596727",
+			"info_type": "article",
+			"info_date": "2011",
+			"info_authors": "Jackson",
+			"infoID": "21596727",
+			"info_place": "Arch Dis Child",
+			"info_geo": "New Zealand",
+			"digest": "В 1991 году в Новой Зеландии началась эпидемия менингококка серогруппы В. В 2001 она достигла своего пика, и пошла на убыль.<br>К 2004-му году была разработана специальная вакцина для новозеландского штамма. Так как проводить рандомизированные испытания во время эпидемии посчитали неэтичным, в 2004 году была начата кампания вакцинации всех детей с 6-недельного возраста до 19 лет. К 2006-му году были привиты 80% детей, и кампания была прекращена.<br>Через 7 месяцев после третьей дозы вакцины, количество антител у младенцев вернулось практически к первоначальному уровню. Еще: [[1]==http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1\u0026objectid=10522985]<br>Подробное журналистское расследование этой кампании: [[1]==http://www.nzherald.co.nz/nz/news/article.cfm?c_id=1\u0026objectid=10522985] [[2]==http://www.scoop.co.nz/stories/HL0502/S00064.htm]"
+		},
+		{
+			"num": 23.0,
+			"title": "High Risk for Invasive Meningococcal Disease Among Patients Receiving Eculizumab (Soliris) Despite Receipt of Meningococcal Vaccine.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28846836",
+			"info_type": "article",
+			"info_date": "2017",
+			"info_authors": "McNamara",
+			"infoID": "28846836",
+			"info_place": "Am J Transplant",
+			"info_geo": "US",
+			"digest": "Экулизумаб - это лекарство от очень редких заболеваний, которое подавляет [систему комплемента==https://ru.wikipedia.org/wiki/%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BA%D0%BE%D0%BC%D0%BF%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0] (один из компонентов врожденной иммунной системы). Это лекарство ассоциировано с повышением риска менигококковой инфекции в 1000-2000 раз.<br>16 человек, использующих это лекарство, заболели менингококцемией, из них 14 были привиты."
+		},
+		{
+			"num": 24.0,
+			"digest": "[Фактор H==https://en.wikipedia.org/wiki/Factor_H] - это один из белков, которые регулируют систему комплемента. Будучи привязанным к клетке, фактор H подавляет реакцию системы комплемента против этой клетки, а в непривязанном виде он усиливает эту же реакцию против микроорганизмов. Если у бактерии есть белок, способный привязать к себе фактор H, то таким образом бактерия может избежать атаки системы комплемента. Этот механизм является частью вирулентности некоторых бактерий, в том числе менингококка.<br>Поскольку предыдущие типы вакцины от менингококка серогруппы В (полисахаридные, конъюгированные и вакцины на основе белков наружной мембраны) оказались неэффективными, в новые вакцины (Бексеро и Труменба) был [добавлен==https://www.cdc.gov/vaccines/pubs/pinkbook/supplement.html#ch14-mening] белок связывающий фактор H, в надежде, что это приведёт к более высокой эффективности.<br>Антитела, выработанные после прививки с Бексеро у животных, были кросс-реактивными с человеческим фактором H. На данный момент неизвестно, вырабатываются ли антитела против фактора H у людей, и будет ли это повышать риск аутоиммунной реакции.<br>(Антитела, кросс-реактивные с фактором H, могут также привести к подавлению системы комплемента, которая является [ключевой==https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3916388/] в подавлении менингококкковой инфекции организмом)."
+		},
+		{
+			"num": 25.0,
+			"title": "Capsule switching of Neisseria meningitidis.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC19312/",
+			"info_type": "article",
+			"info_date": "1997",
+			"info_authors": "Swartley",
+			"infoID": "PMC19312",
+			"info_place": "Proc Natl Acad Sci U S A",
+			"I_S_codenames": [
+				"strain_replacement"
+			],
+			"digest": "Также как и пневмококк, бактерии менингококка умеют менять свою серогруппу."
+		},
+		{
+			"num": 26.0,
+			"title": "Invasive meningococcal disease in Quebec, Canada, due to an emerging clone of ST-269 serogroup B meningococci with serotype antigen 17 and serosubtype antigen P1.19 (B:17:P1.19).",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1594649/",
+			"info_type": "article",
+			"info_date": "2006",
+			"info_authors": "Law",
+			"infoID": "PMC1594649",
+			"info_place": "J Clin Microbiol",
+			"info_geo": "Canada",
+			"I_S_codenames": [
+				"strain_replacement"
+			],
+			"digest": "В 2004 году в Квебеке была вспышка менингококковой болезни серогруппы В. Авторы считают, что это вероятно произошло вследствие замены серогруппы благодаря вакцинации полисахаридной вакциной от серогруппы С."
+		},
+		{
+			"num": 27.0,
+			"header": "Колонизация",
+			"title": "Meningococcal Carriage Evaluation in Response to a Serogroup B Meningococcal Disease Outbreak and Mass Vaccination Campaign at a College-Rhode Island, 2015-2016.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28158417",
+			"info_type": "article",
+			"info_date": "2017",
+			"info_authors": "Soeters",
+			"infoID": "28158417",
+			"info_place": "Clin Infect Dis",
+			"info_geo": "US",
+			"digest": "В начале 2015 произошла вспышка менингококковой инфекции серогруппы В в колледже в Род-Айленде (два случая). Оба выздоровели.<br>Вследствие вспышки были проведены 5 кампаний вакцинации тремя дозами для студентов и преподаватей на кампусе, а также для их интимных партнеров. Всего были привиты ~4000 человек только что лицензированой вакциной Труменба.<br>Поскольку не было известно, как эта вакцина влияет на колонизацию, авторы использовали кампанию вакцинации, чтобы это проверить.<br>20-24% были носителями менингококка, и 4% были носителями серогруппы В.<br>Среди курящих риск колонизации был повышен на 30%, а среди тех, кто посещает бары и клубы как минимум раз в неделю, риск колонизации был повышен на 80%.<br>Авторы заключили, что вакцинация никак не влияет на колонизацию менингококка и на коллективный иммунитет, и поэтому необходим высокий прививочный охват."
+		},
+		{
+			"num": 28.0,
+			"title": "Meningococcal carriage among a university student population - United States, 2015.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5737556/",
+			"info_type": "article",
+			"info_date": "2018",
+			"info_authors": "Breakwell",
+			"infoID": "PMC5737556",
+			"info_place": "Vaccine",
+			"info_geo": "US",
+			"digest": "Исследование колонизации менингококка в другом университете в Род-Айленде.<br>Вакцинация никак не повлияла на колонизацию.<br>Курение повышало риск колонизации в 1.5 раза, а посещение баров как минимум раз в неделю - в 2 раза."
+		},
+		{
+			"num": 29.0,
+			"title": "Meningococcal Carriage Following a Vaccination Campaign With MenB-4C and MenB-FHbp in Response to a University Serogroup B Meningococcal Disease Outbreak-Oregon, 2015-2016.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28968661",
+			"info_type": "article",
+			"info_date": "2017",
+			"info_authors": "McNamara",
+			"infoID": "28968661",
+			"info_place": "J Infect Dis",
+			"info_geo": "US",
+			"digest": "Вследствие вспышки в университете в Орегоне была проведена кампания вакцинации. 11%-17% были носителями менингококка, из них 1.2%-2.4% были носителями серогруппы В.<br>Вакцинация 1-2 дозами Бексеро и 1-3 дозами Труменбы никак не повлияла на колонизацию менингококка в целом, и на колонизацию серогруппы В в частности."
+		},
+		{
+			"num": 30.0,
+			"title": "Rise in Group W Meningococcal Carriage in University Students, United Kingdom.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5443439/",
+			"info_type": "article",
+			"info_date": "2017",
+			"info_authors": "Oldfield",
+			"infoID": "PMC5443439",
+			"info_place": "Emerg Infect Dis",
+			"info_geo": "UK",
+			"I_S_codenames": [
+				""
+			],
+			"digest": "В Англии начали недавно прививать подростков конъюгированной вакциной (от серогрупп ACWY). Авторы проверили колонизацию менингококка до и после вакцинации в университете, и оказалось, что несмотря на охват вакцинации в 71%, колонизация увеличилась с 14% до 46%, а колонизация серогруппой W выросла в 11 раз, с 0.7% до 8%."
+		},
+		{
+			"num": 31.0,
+			"header": "Разное",
+			"digest": "Др. Rodewald, директор отдела вакцинации в CDC, [заявил==http://www.nytimes.com/2004/10/27/health/panel-reviews-new-vaccine-that-could-be-controversial.html] в 2004 году, что у CDC плохо обстоят дела с вакцинацией подростков, и поэтому устрашение родителей о последствиях невакцинирования детей станет частью рекламной кампании. И что для этих целей идеально подходит менингококковая вакцина. Потому что после вакцины от менингококка в календарь прививок нужно будет добавить ревакцинацию от столбняка, дифтерии и коклюша, а также вакцины от ВПЧ и от герпеса.<br>Также в статье пишется, что обычно вакцинация намного дешевле, чем стоимость лечения, но в случае с менингококком это не так. Вакцинация будет стоить $3.5 миллиарда в год, и каждая спасенная жизнь будет стоить более миллиона долларов. Еще: [[1 (p.13)]==https://www.cdc.gov/mmwr/preview/mmwrhtml/rr5407a1.htm]"
+		},
+		{
+			"num": 32.0,
+			"title": "Depressive symptoms and immune response to meningococcal conjugate vaccine in early adolescence.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5771474/",
+			"info_type": "article",
+			"info_date": "2014",
+			"info_authors": "O’Connor",
+			"infoID": "PMC5771474",
+			"info_place": "Dev Psychopathol",
+			"digest": "У депрессивных детей после прививки от менингококка вырабатывается больше антител, чем у не депрессивных."
+		},
+		{
+			"num": 33.0,
+			"header": "Безопасность",
+			"title": "Guillain-Barré syndrome among recipients of Menactra meningococcal conjugate vaccine--United States, June-July 2005.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/16224452",
+			"info_type": "article",
+			"info_date": "2005",
+			"info_authors": "CDC",
+			"infoID": "16224452",
+			"info_place": "MMWR Morb Mortal Wkly Rep",
+			"info_geo": "US",
+			"I_S_codenames": [
+				"guillain-barre"
+			],
+			"digest": "Менактра была лицензирована в январе 2005-го, и была рекомендована для 11-12 летних, а также для студентов-первокурсников.<br>Среди привитых первокурсников между 10 июня и 25 июля 2005-го, в VAERS было зарегистрировано 5 случаев синдрома Гийена-Барре.<br>В одном из случаев у привитой девушки уже два раза был синдром Гийена-Барре до этого, в 2 и 5 лет, оба раза в течение 2-х недель после вакцинации.<br>CDC заключают, что это, возможно, случайное совпадение, и рекомендуют продолжать вакцинацию. Производитель добавил во [вкладыш==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm131170.pdf], что синдром Гийена-Барре возможно связан с вакцинацией."
+		},
+		{
+			"num": 34.0,
+			"title": "Safety of Quadrivalent Meningococcal Conjugate Vaccine in 11- to 21-Year-Olds.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/28025240/",
+			"info_type": "article",
+			"info_date": "2017",
+			"info_authors": "Tseng",
+			"infoID": "28025240",
+			"info_place": "Pediatrics",
+			"info_geo": "US",
+			"I_S_codenames": [
+				"bells_palsy"
+			],
+			"digest": "Среди тех, кто получал прививку от менингококка (Менактра/Менвео) вместе с другими прививками, риск лицевого паралича в течение 12 недель после прививки был в 5 раз выше по сравнению с контрольной группой. Правда, в качестве контрольной группы использовались те же самые привитые, только через 12 недель после прививки и далее.<br>Риск болезни Хашимото у привитых был в 5.5 раз выше, иридоциклита в 3.1 раз выше, а эпилептического припадка в 2.9 раз выше. Но потом все эти случаи были пересмотрены, некоторые из них исключены, и авторы заключили, что статистически значимой связи между прививкой и этими болезнями не существует."
+		},
+		{
+			"num": 35.0,
+			"title": "Safety of a quadrivalent meningococcal serogroups A, C, W and Y conjugate vaccine (MenACWY-CRM) administered with routine infant vaccinations: results of an open-label, randomized, phase 3b controlled study in healthy infants.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/24397906",
+			"info_type": "article",
+			"info_date": "2014",
+			"info_authors": "Abdelnour",
+			"infoID": "24397906",
+			"info_place": "Vaccine",
+			"digest": "Клинические испытания вакцины Менвео. 5700 получили Менвео и другие вакцины (DTaP/IPV/Hib/MMR/PCV), и 2000 получили только другие вакцины.<br>Среди младенцев, привитых вакциной Менвео и другими вакцинами, серьезные системные реакции наблюдались у 16%, а среди привитых только другими вакцинами - у 13%. Авторы немного поигрались со статистикой и заключили, что никакой разницы между двумя группами не было, и вакцина совершенно безопасна.<br>Также в группе привитых от менингококка было в два раза больше умерших, но их смерти никак с вакцинацией не были связаны.<br>Семь случаев возможно были связаны с прививкой (синдром Кавасаки, эпилепсия, острый рассеянный энцефаломиелит)."
+		},
+		{
+			"num": 36.0,
+			"digest": "В клинических испытаниях Bexsero в качестве плацебо [использовались==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm431447.pdf] гидроксид алюминия, другая вакцина от менингококка, или вакцина от японского энцефалита.<br>У 2.1% привитых были зарегистрированы серьезные негативные случаи. Вакцина не защищает от всех штаммов серогруппы B.<br>Bexsero содержит наибольшее количество алюминия среди всех прививок - 1500 мкг. Вакцина от гепатита В, например, [содержит==https://ca.gsk.com/media/590068/engerix-b.pdf] 250 мкг.<br>В клинических испытаниях Менактры для младенцев, контрольная группа [получила==https://www.fda.gov/downloads/biologicsbloodvaccines/vaccines/approvedproducts/ucm131170.pdf] вакцины от пневмококка, гепатита А и MMRV. В клинических испытаниях вакцины для детей и взрослых в качестве плацебо использовалась полисахаридная вакцина от менингококка.<br>Серьезные негативные случаи были зарегистрированы у 2-2.5%. У 60% младенцев наблюдалась раздражительность, у 30% потеря аппетита.<br>Вакцина возможно связана с лицевым параличем, поперечным миелитом и острым рассеянным энцефаломиелитом и некоторыми другими заболеваниями.<br>Когда Менактру сделали через месяц после вакцины Даптасел, у привитых образовалось значительно меньше антител, по сравнению с привитыми за месяц до вакцинации с Даптасел."
+		},
+		{
+			"num": 37.0,
+			"info_geo": "Chad",
+			"digest": "37. В Чаде 160 детей были [привиты==http://www.makaila.fr/article-campagne-de-vaccination-contre-la-meningite-tourne-au-drame-a-gouro-113690954.html] от менингококка, после чего у 40 из них начались неврологические осложнения."
+		},
+		{
+			"num": 38.0,
+			"info_geo": "France",
+			"digest": "Во Франции используется вакцина Meningitec (конъюгированная, от серогруппы С). Как минимум 680 детей [пострадали==https://nos-medias.fr/video/vaccin-meningitec-un-lot-juge-dangereux-pour-la-sante-france-3-auvergne] от этой вакцины. Они подали в суд на компанию, и их адвокат заказал лабораторную проверку вакцины. Оказалось, что она [содержит==https://www.lci.fr/societe/vaccin-meningitec-des-composants-dangereux-reperes-par-une-analyse-accablante-1507613.html] наночастицы тяжелых металлов, таких как титан, свинец и цирконий."
+		},
+		{
+			"num": 39.0,
+			"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/9460/9460_original.jpg",
+			"digest": "В 2006 году, когда вакцина от менингококка была добавлена в национальный календарь прививок, заболеваемость менингококковой инфекцией [составляла==https://www.cdc.gov/mmwr/volumes/64/wr/mm6453a1.htm] 1 на 250,000. Смертность [составляла==https://www.cdc.gov/mmwr/volumes/64/wr/mm6453a1.htm] 1 на 2.5 миллиона.<br>В 2015 году заболеваемость составляла 1 на миллион. В 2014 году всего 43 человека умерли от менингококка в США, из них 5 детей младше 5 лет. То есть смертность от менингококка [составляла==https://www.cdc.gov/mmwr/volumes/64/wr/mm6453a1.htm] 1 на 7 миллионов.<br>Для сравнения, в 2015 году 1015 человек [умерли==https://www.cdc.gov/abcs/reports-findings/survreports/hib15.html] от гемофильной инфекции, и 3350 человек [умерли==https://www.cdc.gov/abcs/reports-findings/survreports/hib15.html] от пневмококка. И это при том, что от них прививают.<br>Заболеваемость менингококковой инфекцией в 2017 году в России [составляет==http://www.rospotrebnadzor.ru/anticorruption/statistika/files/yanvar-oktybr%202017.xls] 1 на 200,000, в [Израиле==https://www.health.gov.il/PublicationsFiles/IWER01_2017.xlsx] 1 на 150,000, в [Украине==https://www.intechopen.com/books/meningoencephalitis-disease-which-requires-optimal-approach-in-emergency-manner/biosurveillance-of-meningococcal-infection-in-ukraine-43-years-of-survey-spatial-and-temporal-dynami] 1 на 100,000, в [Европе==http://ecdc.europa.eu/sites/portal/files/documents/AER_for_2015-meningococcal-disease.pdf] 1 на 200,000, но среди младенцев 1 на 10,000."
+		},
+		{
+			"num": 40.0,
+			"info_img": "https://ic.pics.livejournal.com/amantonio/68333260/9682/9682_original.jpg",
+			"digest": "Количество случаев смерти от менингококка среди детей младше 5 лет в США. Вакцинация от менингококка для детей до сих пор не введена, тем не менее смертность с середины 90-х упала более чем на 90%.<br>Источники: [[1]==https://www.ncbi.nlm.nih.gov/pubmed/27378572] [[2]==https://www.ncbi.nlm.nih.gov/pubmed/26905861] [[3]==https://www.ncbi.nlm.nih.gov/pubmed/26759855] [[4]==https://www.ncbi.nlm.nih.gov/pubmed/26222597] [[5]==https://www.ncbi.nlm.nih.gov/pubmed/24979972] [[6]==https://www.ncbi.nlm.nih.gov/pubmed/24974587] [[7]==https://www.ncbi.nlm.nih.gov/pubmed/22808755] [[8]==https://www.ncbi.nlm.nih.gov/pubmed/25075874] [[9]==https://www.ncbi.nlm.nih.gov/pubmed/19788058] [[10]==https://www.ncbi.nlm.nih.gov/pubmed/18512336] [[11]==https://www.ncbi.nlm.nih.gov/pubmed/17867520] [[12]==https://www.ncbi.nlm.nih.gov/pubmed/16689256] [[13]==https://www.ncbi.nlm.nih.gov/pubmed/15587328] [[14]==https://www.ncbi.nlm.nih.gov/pubmed/14570230] [[15]==https://www.ncbi.nlm.nih.gov/pubmed/12382630] [[16]==https://www.ncbi.nlm.nih.gov/pubmed/11591077] [[17]==https://www.ncbi.nlm.nih.gov/pubmed/10934859] [[18]==https://www.ncbi.nlm.nih.gov/pubmed/10410536] [[19]==https://www.ncbi.nlm.nih.gov/pubmed/9824931]."
+		},
+		{
+			"num": 41.0,
+			"header": "VAERS",
+			"digest": "Я часто писал, что оценивается, что в VAERS регистрируется 1-10% всех побочных эффектов. На чем основывается это утверждение?"
+		},
+		{
+			"num": 41.0,
+			"title": "Introducing MEDWatch. A new approach to reporting medication and device adverse effects and product problems.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/8492403",
+			"info_type": "article",
+			"info_date": "1993",
+			"info_authors": "Kessler",
+			"infoID": "8492403",
+			"info_place": "JAMA",
+			"info_geo": "US",
+			"digest": "От 3% до 11% госпитализаций могут быть результатом побочных эффектов лекарств. Лишь 1% серьезных побочных эффектов сообщаются в FDA.<br>Это приводит к тому, что проблемы с препаратами не выявляются вовремя. Например, несмотря на то, что силиконовые импланты существуют на рынке 30 лет, лишь недавно выяснилось, что они ассоциированы с аутоиммунными заболеваниями."
+		},
+		{
+			"num": 42.0,
+			"title": "Limitations and strengths of spontaneous reports data.",
+			"link": "https://www.ncbi.nlm.nih.gov/pubmed/9915089",
+			"info_type": "article",
+			"info_date": "1998",
+			"info_authors": "Goldman",
+			"infoID": "9915089",
+			"info_place": "Clin Ther",
+			"info_geo": "UK",
+			"digest": "Оценивается, что в Великобритании сообщаются не более 10% серьезных побочных эффектов, и 2%-4% несерьезных побочных эффектов лекарств.<br>FDA получает менее 1% подозреваемых серьезных побочных эффектов.<br>Пик сообщений о побочных эффектах приходится на конец второго года существования препарата на рынке, после чего количество сообщений уменьшается, хотя количество побочных эффектов не изменяется."
+		},
+		{
+			"num": 43,
+			"title": "The reporting sensitivities of two passive surveillance systems for vaccine adverse events.",
+			"link": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1615747/",
+			"info_type": "article",
+			"info_date": "1995",
+			"info_authors": "Rosenthal",
+			"infoID": "PMC1615747",
+			"info_place": "Am J Public Health",
+			"I_S_codenames": [
+				"vaers"
+			],
+			"digest": "В VAERS были зарегистрированы 72% случаев вакцинно-ассоциированного полиомиелита, но лишь 4% случаев [hypotonic-hyporesponsive episode==https://en.wikipedia.org/wiki/Hypotonic-hyporesponsive_episode] после DTP, и менее 1% случаев тромбоцитопении после MMR. Последствия, которые происходят через продолжительное время после вакцинации, и последствия, которые обычно не ассоциируются с вакцинацией, регистрируются значительно реже.<br>[Здесь==https://www.ncbi.nlm.nih.gov/pubmed/10438063] сообщается, что менее 5% отчетов в VAERS поступают от родителей."
+		},
+		{
+			"num": 44.0,
+			"I_S_codenames": [
+				"vaers"
+			],
+			"digest": "В VAERS [зарегистрированы==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON\u0026GROUP1=CAT\u0026VAX[]=MEN\u0026VAX[]=MENB\u0026VAX[]=MENHIB\u0026VAX[]=MNC\u0026VAX[]=MNQ\u0026VAX[]=MNQHIB\u0026VAXTYPES[]=Meningitis] 153 случая смерти после прививки от менингококка, и 366 случаев инвалидности.<br>В 2016 году 7 детей младше 3-х лет [умерли==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON\u0026GROUP1=CAT\u0026GROUP2=AGE\u0026VAX[]=MEN\u0026VAX[]=MENB\u0026VAX[]=MENHIB\u0026VAX[]=MNC\u0026VAX[]=MNQ\u0026VAX[]=MNQHIB\u0026VAXTYPES[]=Meningitis\u0026VAX_YEAR_LOW=2016\u0026VAX_YEAR_HIGH=2016] после прививки, и еще 15 стали инвалидами. В тот же год 9 детей младше 5 лет [умерли==http://www.medalerts.org/vaersdb/findfield.php?TABLE=ON\u0026GROUP1=CAT\u0026GROUP2=AGE\u0026VAX[]=MEN\u0026VAX[]=MENB\u0026VAX[]=MENHIB\u0026VAX[]=MNC\u0026VAX[]=MNQ\u0026VAX[]=MNQHIB\u0026VAXTYPES[]=Meningitis\u0026VAX_YEAR_LOW=2016\u0026VAX_YEAR_HIGH=2016] от менингококка. Учитывая, что в VAERS регистрируется лишь 1-10% всех случаев, и что лишь детей в группах риска вакцинируют, вакцина от менингококка вероятно убивает больше людей, чем менингококк."
+		}
+	],
+	"editdate": {
+		"$date": "2018-03-02T09:23:35.906Z"
+	}
+}

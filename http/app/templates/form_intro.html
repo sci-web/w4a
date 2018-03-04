@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
-<form action="/editspace/save_intro:{{ current_user.author }}:0" method="POST" name="sform">
+<form action="/editspace/save_intro:{{ current_user.author }}:0" method="POST" name="form">
 <h1>Edit topic {{ subject }} </h1>
 {{ form.hidden_tag() }}
 <br>

@@ -7,10 +7,13 @@ import datetime
 from flask_admin.model import typefmt
 import os
 from .model import DB
-from .forms import LoginForm, makeform, searchForm
+from .forms import LoginForm, makeform, searchForm, ContactForm
 from bson.json_util import dumps
 import json
 import geoip2.database
+from flask_mail import Mail, Message
+from flask_session_captcha import FlaskSessionCaptcha
+
 
 @app.before_request
 def load_vars():
@@ -29,7 +32,7 @@ def load_vars():
     if (g.path == "en"):
         g.location = "en"
     else:
-        if (request.referrer == None and g.location != "ru"):
+        if (request.referrer == None and g.location != "ru" and g.path != "ru"):
             g.location = "en"
         else:
             g.location = "ru"
@@ -73,11 +76,10 @@ app.jinja_env.filters['rehref'] = rehref
 @app.route('/')
 @app.route('/en')
 @app.route('/en/')
+@app.route('/ru/')
+@app.route('/ru')
 def index():
-    print g.path
-    print g.location
-    print request.referrer
-    if (request.referrer == None and g.location == "en" and g.path != "en"):
+    if (request.referrer == None and g.location == "en" and g.path != "en" and g.path != "ru"):
         return redirect("/en")
     i_data = DB().get_intros_en() if g.location == "en" else DB().get_intros()
     tmpl = 'en/index_en.html' if g.location == "en" else 'index.html'
@@ -181,14 +183,44 @@ def show_intro(namespace):
 def chapters(namespace):
     i_data = DB().get_spaces_by_key_sorted(namespace, "date")
     data = json.loads(dumps(i_data))
+    tmpl = 'en/chapt_en.html' if g.location == "en" else 'chapt.html'
+    div = 'en/chapt_div_en.html' if g.location == "en" else 'chapt_div.html'    
     for i in range(0, len(data)):
         f_date = datetime.datetime.fromtimestamp( data[i]["date"]['$date'] / 1e3 )
         data[i]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     if 'div' in request.args:
-        return jsonify( {'data': render_template('chapt_div.html', idata=data, chapters=chapters)} )
+        return jsonify( {'data': render_template(div, idata=data, chapters=chapters)} )
     else:
-        return render_template('chapt.html', idata=data, form=g.form, 
+        return render_template(tmpl, idata=data, form=g.form, 
                             items=g.items, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=namespace)
+
+@app.route('/en/contact/', methods=['GET', 'POST'])
+@app.route('/contact/', methods=['GET', 'POST'])
+def send_email():
+    captcha = FlaskSessionCaptcha(app)    
+    cform = ContactForm(request.values)
+    tmpl = 'en/contact_en.html' if g.location == "en" else 'contact.html'
+    reply = 'en/autoreply_en.html' if g.location == "en" else 'autoreply.html'
+    if request.method == 'POST':
+        if cform.validate_on_submit():
+            if captcha.validate():
+                mail = Mail(app)
+                msg = Message(">>> message from SciBook: " + cform.data["subject"],
+                    sender=cform.data["email"],
+                    recipients=[app.config["EMAILS"]])
+                msg.body = cform.data["msg"] + "\n\n" + "signed as from:\n" + cform.data["email"]
+                mail.send(msg)
+                flash("Your message is sent!", category='info')
+                return render_template(reply, form=g.form, cform=cform)
+
+            else:
+                flash("Captcha is wrong!", category='error')
+                return render_template(tmpl, form=g.form, cform=cform, email=cform.data["email"], subject=cform.data["subject"], msg=cform.data["msg"])
+        else:
+            flash("All fields are necessary to fill in!", category='error')
+            return render_template(tmpl, form=g.form, cform=cform, email=cform.data["email"], subject=cform.data["subject"], msg=cform.data["msg"])
+    else:
+        return render_template(tmpl, form=g.form, cform=cform)
 
 
 @app.route('/tmpl', methods=['GET', 'POST'])

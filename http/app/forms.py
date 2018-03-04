@@ -50,3 +50,9 @@ class saveChapter(Form):
 class newChapter(Form):
 	title = StringField('Title', validators=[DataRequired()])
 	chapter = StringField('Namespace', validators=[DataRequired()])
+
+class ContactForm(Form):
+	subject = StringField('Subject', validators=[DataRequired()])
+	email = StringField('Email', validators=[DataRequired()])
+	msg = TextAreaField('Message', validators=[DataRequired()])
+

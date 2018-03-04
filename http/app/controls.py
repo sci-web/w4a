@@ -210,7 +210,7 @@ def save_intro(author, namespace):
         else:
             flash(error, category='error')
     else:
-        error = "Something wrong with a form or authentification!"
+        error = "Something wrong with the form or authentification!"
         flash(error, category='error')                
     if namespace != "0":
         i_data = DB().get_an_intro(namespace)  # after update/insert
@@ -266,7 +266,8 @@ def save_chapter(author, namespace, chapter):
                         in_data["analyst"] = author
                         in_data["date"] = datetime.now()                        
                         in_data["namespace"] = namespace
-                        in_data["I_S_codename"] = value              
+                        in_data["I_S_codename"] = value
+
                         i_data = DB().get_a_chapter(namespace, value)  # before update/insert
                         if i_data and chapter == 0:
                             error = "This chapter:" + in_data["I_S_codename"] + " already exists!"
@@ -284,7 +285,8 @@ def save_chapter(author, namespace, chapter):
                     if (re.match("point", key) and value != ""):
                         p, k = key.split("_")
                         points[k] = value
-
+                    if key == "I_S_codename" and value.isalpha():
+                        in_data["I_S_codename"] = value
                     in_pnts = value_match_assign("pointHeader", "header", key, value, in_pnts) 
                     in_pnts = value_match_assign("pointTitle", "title", key, value, in_pnts) 
                     in_pnts = value_match_assign("pointLink", "link", key, value, in_pnts) 

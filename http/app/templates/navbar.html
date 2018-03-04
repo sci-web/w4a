@@ -30,7 +30,7 @@
       </form>
       <ul class="nav navbar-nav" >
         <li style="margin-left:705px"><a class="navbar-brand" href="{{ request.path | replace('/', '/en/', 1) }}">EN</a></li>
-        <li><a class="navbar-brand" href="{{ request.path | replace('/en', '', 1) }}">| &nbsp;&nbsp;RU</a></li>
+        <li><a class="navbar-brand">| &nbsp;&nbsp;RU</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right hli" style="font-size:17px;">
         {% if current_user.is_authenticated %}

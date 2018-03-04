@@ -1,5 +1,5 @@
 {% extends "en/base_en.html" %}
-{% block title %}Spell out scientific service{% endblock %}
+{% block title %}SciBook: Introduction. {{ idata.subject }} {% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
@@ -19,7 +19,7 @@
     </div>
     <div style="height:20px; margin:10px 10px 20px 0px; font-size:17px;">
         <div style="float:left; margin-left:-3px">
-            <a href="/chapters/{{ idata.namespace }}" class="linknav">List of contents</a>
+            <a href="/en/chapters/{{ idata.namespace }}" class="linknav">List of contents</a>
         </div>
         <div style="float:right; margin: 0">
             <small style="background-color:#e1e6f0;margin:5px">{{ idata.date }}</small>

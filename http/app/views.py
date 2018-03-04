@@ -181,7 +181,7 @@ def show_intro(namespace):
 @app.route('/en/chapters/<namespace>',methods=['GET','POST'])
 @app.route('/chapters/<namespace>',methods=['GET','POST'])
 def chapters(namespace):
-    i_data = DB().get_spaces_by_key_sorted(namespace, "date")
+    i_data = DB().get_spaces_by_key_sorted_en(namespace, "date") if g.location == "en" else DB().get_spaces_by_key_sorted(namespace, "date")
     data = json.loads(dumps(i_data))
     tmpl = 'en/chapt_en.html' if g.location == "en" else 'chapt.html'
     div = 'en/chapt_div_en.html' if g.location == "en" else 'chapt_div.html'    

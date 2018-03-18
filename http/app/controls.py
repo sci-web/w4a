@@ -12,6 +12,7 @@ import json
 from subprocess import call
 from collections import defaultdict, OrderedDict
 from .tools import Tools
+from tidylib import tidy_fragment
 
 
 # def extension_ok(filename, ff):
@@ -27,6 +28,14 @@ def packed(val_dict):
         exec(k + " = v")
         ll.append(k)
     return ll
+
+
+def check_html(text):
+    document, err = tidy_fragment(text,options={'numeric-entities':1})
+    for l in err.split("\n"):
+        if (re.search("missing </",l)):
+            return 0
+    return 1
 
 
 @app.route('/login/', methods=['GET', 'POST'])

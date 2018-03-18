@@ -51,7 +51,7 @@ def catch_all(path):
     try:
         DB().get_intros()
         flash("!")
-        return "ok"
+        return render_template('404.html', items=g.items, objects=g.objects, form=g.form), 404
     except Exception, e:
         flash(e)
         return redirect(url_for('index'))

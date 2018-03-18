@@ -6,7 +6,6 @@ WTF_CSRF_ENABLED = True
 # SECRET_KEY = 'devil in the sky'
 DB_NAME = 'w4a'
 
-# DATABASE = MongoClient("mongodb://ant-login7.linux.crg.es:27017")[DB_NAME]
 DATABASE = MongoClient()[DB_NAME]
 INTROS = DATABASE.intros
 INTROS_EN = DATABASE.intros_en
@@ -18,9 +17,9 @@ CORE = DATABASE.core
 MAIL_SERVER='smtp.gmail.com'
 MAIL_PORT=465
 MAIL_USE_SSL=True
-MAIL_USERNAME = 'wscibook@gmail.com'
-MAIL_PASSWORD = 'pass4sci'
-EMAILS = 'jescid@gmail.com, toni.amantonio@gmail.com'
+MAIL_USERNAME = 'www@gmail.com'
+MAIL_PASSWORD = 'wwwpass'
+EMAILS = 'www@gmail.com'
 
 # captcha
 SECRET_KEY = str(uuid.uuid4())

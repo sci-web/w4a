@@ -21,6 +21,15 @@
     <script type=text/javascript src="{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/mustache.min.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115629674-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115629674-1');
+</script>
     </head>
 <body>
 {% include "navbar.html" %}
@@ -51,13 +60,13 @@
           {% endfor %}
         </ul>
         <br>
-<script type="text/javascript">
+<!--<script type="text/javascript">
 var sc_project=11636746;
 var sc_invisible=1;
 var sc_security="59e332e0";
 </script>
 <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
-<noscript><div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11636746/0/59e332e0/1/" alt="Web Analytics"></a></div></noscript>
+<noscript><div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11636746/0/59e332e0/1/" alt="Web Analytics"></a></div></noscript>-->
       </div>
     </div>
 {% endif %}

@@ -4,12 +4,13 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:35px 0 0 0px;">
-    <div style="margin:10px 0 0 0">
+<div style="margin:35px 0 0 0px;" itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
+    <div style="margin:10px 0 0 0" itemscope itemtype="http://schema.org/PublicHealth">
         <div style="height:60px">
             <div style="float:left"><h1>{{ idata.title }}</h1></div>
             <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ idata.analyst }}</a></h4></div>
         </div>
+        {% if idata.epigraph %}
         <div style="margin:0 2% 0 0; line-height:16px" align=right><font color="#2d2df6">{{ idata.epigraph.text | safe }}<br>
             <em>{{ idata.epigraph.source }}</em>
             {% if idata.epigraph.link %}
@@ -17,6 +18,7 @@
             {% endif %}
             </font>
         </div>
+        {% endif %}
         <div style="margin:10px 5px; 0 0" align=right>
             <small style="background-color:#e1e6f0;margin:5px">{{ idata.date }}</small>
         </div>
@@ -29,7 +31,7 @@
         {% if pnt.header %}
         <h3>{{ pnt.header | safe }}</h3>
         {% endif %}
-        <li style="margin:10px 0 0 0; text-align:justify">
+        <li style="margin:10px 0 0 0; text-align:justify" itemprop="articleSection">
             {% if pnt.title %}
                 <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
             <em>

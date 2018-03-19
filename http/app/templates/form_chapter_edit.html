@@ -14,7 +14,7 @@
 <form action="/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
 <h1>Edit chapter <b>{{ items.I_S_codename }}</b> in namespace <b>{{ items.namespace }}</b></h1>
-
+<small>Hint: For saved points you can rearrange them with the help of «Swap with point below» link.</small>
 <div align=right><a href="/editspace/export_json:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" class="pointer linknav">Export Json</a></div>
     <div style="height:25px; width:1200px;position:fixed">
         <div align=right style="float:right; margin:10px">
@@ -71,7 +71,8 @@
             <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
                 <a onClick = "javascript:RemoveOneDiv('#p_{{ p_num|join }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
             </div>
-            <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>:</div>
+            <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>
+                <div style="display:inline" id="swap_id_{{ p_num|join }}"></div>:</div>
             <br>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">Header (of next point(s)):</div>
@@ -279,7 +280,8 @@
     <br>
         <div id="pnt_target_{{ p_num|join }}" style="width:1100px;border:"></div>
         <div style="height:25px; width:1100px;" id="l_{{ p_num|join }}" align="right">
-        <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target_{{ p_num|join }}', '#l_{{ p_num|join }}', {{ p_num|join }}, 'pcross')" class="linknav pointer">append another point to {{ p_num|join }} point ↑</a>
+        <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target_{{ p_num|join }}', '#l_{{ p_num|join }}', {{ p_num|join }}, 'pcross')" class="linknav pointer">append another point to {{ p_num|join }} point ↑</a><br>
+        <a onClick="SwapPoint('{{ p_num|join }}')" class="linknav pointer">Swap with point below</a> &nbsp;&nbsp;&nbsp;<br><br>
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
@@ -528,6 +530,9 @@
             </div>
         </div>
 </script>
+<script id="swap_tmpl" type="x-tmpl-mustache">
+<input type="text" name=pointNewID_{{ curId }} size=2 value="{{ newId }}">
+</script>
 {% endraw %}
 <script>
 function RemoveOneDiv(div, obj, num, pnt) {
@@ -582,6 +587,19 @@ function loadTmpl(thtml, target, div, cnt, id, rcnt) {
     Mustache.parse(template);
     nID = a2 + rcnt/1000;
     $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt, a2: a2, nID: nID}));
+}
+function SwapPoint(id) {
+    down = "#p_" + id;
+    next_id = id/1 + 1;
+    next = "#p_" + next_id;
+    new_next = $(down).html();
+    pDivId = "#swap_id_" + next_id;
+    template = $("#swap_tmpl").html();
+    $(next).append(Mustache.render(new_next));
+    new_id = id/1 - id/1000
+    alert(next_id);
+    $(pDivId).append(Mustache.render(template, {newId: new_id, curId: next_id}));
+    $(down).remove()
 }
 </script>
 {% endblock %}

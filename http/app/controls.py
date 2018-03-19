@@ -164,8 +164,8 @@ def save_intro(author, namespace):
                     if key == "ep_text": ep_text = value
                     if key == "ep_source": ep_source = value
                     if (re.match("points", key) and value != ""):
+                        print p, k
                         p, k = key.split("_")
-                        points[k] = value
 
                     in_refs = value_match_assign("refBlockTtl", "ref_title", key, value, in_refs)
                     in_refs = value_match_assign("refBlockDigest", "ref_digest", key, value, in_refs)
@@ -309,7 +309,7 @@ def save_chapter(author, namespace, chapter):
                     in_pnts = value_match_assign("pointIsource", "info_imgSource", key, value, in_pnts) 
                     in_pnts = value_match_assign("pointIdescr", "info_imgDescr", key, value, in_pnts) 
                     in_pnts = value_match_assign("pointDigest", "digest", key, value, in_pnts) 
-
+                    in_pnts = value_match_assign("pointNewID", "num", key, value, in_pnts)
                     if (re.match("pointTags", key) and value != ""):
                         p, r = key.split("_")
                         if (value != ""):                            
@@ -377,7 +377,10 @@ def save_chapter(author, namespace, chapter):
 
                 for n, p in sorted(in_pnts.iteritems(), key=lambda x: float(x[0])):
 # https://dzone.com/articles/pymongo-and-key-order
-                    p.update({"num": float(n)})
+                    try:
+                        p["num"] = float(p["num"])
+                    except: 
+                        p.update({"num": float(n)})
                     in_data["points"].append(p)
 
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}

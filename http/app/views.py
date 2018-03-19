@@ -20,7 +20,7 @@ def load_vars():
     reader = geoip2.database.Reader(app.config['GEOCITY'])
     ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
     location = "ru"
-    ccode = ""
+    ccode = "RU"
     if (ip != "127.0.0.1"):
         response = reader.city(ip)
         ccode = str(response.country.iso_code)  # country code

@@ -8,6 +8,7 @@
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core-dataTables.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='js/datatables.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <script type=text/javascript src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
@@ -53,7 +54,7 @@
           <li><span style="margin:0 0 0 3px;white-space: nowrap">Изложение по главам:</span></li>
           <li><a href="/intro/vaccines" class="linknav">Введение</a></li>
           {% for entry in items %}
-              <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">
+              <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                 {{ entry.title }}</a>
             </li>

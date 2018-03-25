@@ -531,7 +531,7 @@
         </div>
 </script>
 <script id="swap_tmpl" type="x-tmpl-mustache">
-<input type="text" name=pointNewID_{{ curId }} size=2 value="{{ newId }}">
+<input type="hidden" name=pointNewID_{{ curId }} size=2 value="{{ newId }}">
 </script>
 {% endraw %}
 <script>
@@ -596,8 +596,7 @@ function SwapPoint(id) {
     pDivId = "#swap_id_" + next_id;
     template = $("#swap_tmpl").html();
     $(next).append(Mustache.render(new_next));
-    new_id = id/1 - id/1000
-    alert(next_id);
+    new_id = id/1 - id/1000;
     $(pDivId).append(Mustache.render(template, {newId: new_id, curId: next_id}));
     $(down).remove()
 }

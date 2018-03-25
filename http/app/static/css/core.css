@@ -13,6 +13,7 @@
 }
 a.sqnav, a.rightnav {color:#024d60;text-decoration:none;}
 a.sqnav:hover, a.rightnav:hover {color:#3840ea;text-decoration:none;}
+
 li.sqnav {padding:1px}
 li.sqnav:hover {color:#3840ea;text-decoration:none;background-color:#f1f1f0;padding:1px}
 

@@ -21,21 +21,21 @@ def load_vars():
     ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
     location = "ru"
     ccode = "RU"
-    if (ip != "127.0.0.1"):
-        response = reader.city(ip)
-        ccode = str(response.country.iso_code)  # country code
-    if (ccode == "RU" or ccode == "UA" or ccode == "BY" or ccode == "KZ"):
-        g.location = "ru"
-    else:
-        g.location = "en"
-    g.path = request.path.split('/')[1]
-    if (g.path == "en"):
-        g.location = "en"
-    else:
-        if (request.referrer == None and g.location != "ru" and g.path != "ru"):
-            g.location = "en"
-        else:
-            g.location = "ru"
+    # if (ip != "127.0.0.1"):
+    #     response = reader.city(ip)
+    #     ccode = str(response.country.iso_code)  # country code
+    # if (ccode == "RU" or ccode == "UA" or ccode == "BY" or ccode == "KZ"):
+    #     g.location = "ru"
+    # else:
+    #     g.location = "en"
+    # g.path = request.path.split('/')[1]
+    # if (g.path == "en"):
+    #     g.location = "en"
+    # else:
+    #     if (request.referrer == None and g.location != "ru" and g.path != "ru"):
+    #         g.location = "en"
+    #     else:
+    #         g.location = "ru"
     # g.location = request.path.split('/')[1]
     g.items = DB().get_spaces_by_key_sorted_en("vaccines", "date") if g.location == "en" else DB().get_spaces_by_key_sorted("vaccines", "date")
     g.objects = DB().get_objects_by_key_sorted_filter_yes_en("disease", "I_S_name_en") if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
@@ -58,6 +58,9 @@ def catch_all(path):
 
 def date_format(view, value):
     return value.strftime('%d.%m.%Y')
+
+
+
 
 MY_DEFAULT_FORMATTERS = dict(typefmt.BASE_FORMATTERS)
 MY_DEFAULT_FORMATTERS.update({

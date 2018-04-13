@@ -14,6 +14,8 @@ SPACES = DATABASE.chapters
 SPACES_EN = DATABASE.chapters_en
 CORE = DATABASE.core
 
+# for export name of vars = collections: i.e. chapters = collection chapters in DATABASE
+
 MAIL_SERVER='smtp.gmail.com'
 MAIL_PORT=465
 MAIL_USE_SSL=True

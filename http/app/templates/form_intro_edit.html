@@ -142,6 +142,8 @@
                         </div>
                     </div>
                 </div>
+                <br>
+                <hr size=1 style="width: 65%; color:grey; height:1px; background-color:grey; margin:10px 80px 10px 200px" align=right><br>
                 {% if l_num.append(l_num.pop() + 1) %}{% endif %}
                 {% endfor %}
                 <div style="height:15px; width:810px;" id="ln_{{ l_num|join }}_{{ r_num|join }}">
@@ -324,7 +326,9 @@ function loadTmpl(thtml, target, div, cnt, id, rcnt) {
         cnt = 0
     }
     $( div ).remove();
-    cnt += 1;
+    if (id != 'lcross') {
+        cnt += 1;
+    }
     template = $(thtml).html();
     Mustache.parse(template);
     $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt}));

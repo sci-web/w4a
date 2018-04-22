@@ -13,6 +13,7 @@ import json
 import geoip2.database
 from flask_mail import Mail, Message
 from flask_session_captcha import FlaskSessionCaptcha
+from itertools import chain
 
 
 @app.before_request
@@ -28,7 +29,7 @@ def load_vars():
     #     g.location = "ru"
     # else:
     #     g.location = "en"
-    # g.path = request.path.split('/')[1]
+    g.path = request.path.split('/')[1]
     # if (g.path == "en"):
     #     g.location = "en"
     # else:
@@ -36,7 +37,7 @@ def load_vars():
     #         g.location = "en"
     #     else:
     #         g.location = "ru"
-    # g.location = request.path.split('/')[1]
+    g.location = request.path.split('/')[1]
     g.items = DB().get_spaces_by_key_sorted_en("vaccines", "date") if g.location == "en" else DB().get_spaces_by_key_sorted("vaccines", "date")
     g.objects = DB().get_objects_by_key_sorted_filter_yes_en("disease", "I_S_name_en") if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
     g.drugs = DB().get_objects_by_key_sorted_filter_yes_en("drug", "I_S_name_en") if g.location == "en" else DB().get_objects_by_key_sorted_filter_yes("drug", "I_S_name")
@@ -108,36 +109,31 @@ def show_item(namespace, codename):
 
 
 @app.route('/search', methods=['GET','POST'])
+@app.route('/en/search', methods=['GET','POST'])
 def search():
     i_data = {}
     searchfor = ""
     sform = searchForm(request.values)
-    fdata = []  # filtered data    
+    fdata = []  # filtered data
+    items = {}  
     if request.method == 'POST':
         if sform.data["search"]:
             searchfor = sform.data["search"]
-            i_data = DB().search(searchfor)
+            i_data = DB().search_en(searchfor) if g.location == "en" else DB().search(searchfor) 
             idata = json.loads(dumps(i_data))
+            # items = [x for x in chain(items, idata)]
             for r in idata:
                 m_regex = r'\[.*?\=\=.*?\]'
+                # print r[0]
                 txt = r["points"]["digest"]
                 fnd_link = re.findall(m_regex, txt, re.IGNORECASE)
-                words = []
-                if len(fnd_link) == 0:
-                    fdata.append(r)
-                else:
-                    for fl in fnd_link:
-                        (word, lnk) = fl.split("==")
-                        w = re.findall(searchfor, word, re.IGNORECASE)
-                        if len(w) > 0:
-                            words.append(word)
-                    if len(words) > 0:
-                        fdata.append(r)
+                fdata.append(r)
         else:
             flash("Cannot process your form: no data", category='error')
     else:
         flash("Form was not properly sent", category='error')
-    return render_template('srp.html', idata=fdata, found=len(fdata), form=g.form, 
+    tmpl = 'en/srp_en.html' if g.location == "en" else 'srp.html'
+    return render_template(tmpl, idata=fdata, found=len(fdata), form=g.form, 
             items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=searchfor)
 
 

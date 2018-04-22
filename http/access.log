@@ -49,3 +49,187 @@ INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 278-515-353
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:21:49] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:21:49] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:21:49] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:21:49] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:21:49] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:21:49] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/views.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/css/theme.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/css/bootstrap-select.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/jquery-2.1.4.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/css/core.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/datatables.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/moment.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/css/core-dataTables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/datatables.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/dataTables.searchHighlight.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/show-hide.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/fileinput.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/fileinput_locale_es.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/bootstrap-select.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/validator.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/mustache.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/jquery.smartmenus.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/highlightRegex.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:26] "GET /static/js/jquery.smartmenus.bootstrap.min.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:31] "GET /static/img/SciBoo.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:31] "GET /static/img/loading.gif HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:31] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:42] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:45] "GET /intro/vaccines?div&div HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:22:53] "GET /editspace/hpt HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:19] "GET /intro/vaccines?div&div HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/css/theme.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/css/fileinput.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/css/core-dataTables.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/css/bootstrap-select.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/img/SciBoo.gif HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/css/core.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/js/datatables.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:25:49] "GET /static/img/loading.gif HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/base.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:26:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:26:46] "GET /chapters/vaccines HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:26:49] "GET /static/favicon.ico HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:26:49] "GET /intro/vaccines HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/base.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/base.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:33:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:33:33] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.base.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:33:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:33:56] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/base.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.base.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/base.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:34:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:34:25] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/base.html', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:34:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:34:35] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.base.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:34:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.base.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates/.base.html.kate-swp', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:14] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/home/jes/Code/w4a/http/app/templates', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 100-434-364
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:21] "GET /static/favicon.ico HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/css/fileinput.min.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/css/theme.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/css/bootstrap-select.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/css/core-dataTables.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/css/core.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/datatables.css HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/jquery-2.1.4.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/datatables.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/dataTables.searchHighlight.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/moment.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/fileinput.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/validator.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/show-hide.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/fileinput_locale_es.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/bootstrap-select.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/jquery.smartmenus.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/mustache.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/highlightRegex.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/js/jquery.smartmenus.bootstrap.min.js HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/img/loading.gif HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /static/img/SciBoo.gif HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 14:35:28] "GET /intro/vaccines?div&div HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 15:21:12] "GET /en/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Apr/2018 15:21:13] "GET /en/intro/vaccines?div&div HTTP/1.1" 200 -

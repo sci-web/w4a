@@ -21,17 +21,17 @@ class DB(object):
         #         }, {'score': {'$meta': 'textScore'}})
         return app.config['SPACES'].aggregate([
                             {'$match':{ '$or': [
-                                {"points.digest":{'$regex':expression}}, 
-                                {"points.title":{'$regex':expression}}, 
-                                {"points.img_pool.info_imgDesc":{'$regex':expression }},
-                                {"points.sources_pool.title":{'$regex':expression}}
+                                {"points.digest":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.title":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.img_pool.info_imgDesc":{'$regex':expression, '$options' : 'i' }},
+                                {"points.sources_pool.title":{'$regex':expression, '$options' : 'i' }}
                                 ]}}, 
                             { '$unwind' : "$points" },
                             {'$match':{ '$or': [
-                                {"points.digest":{'$regex':expression}}, 
-                                {"points.title":{'$regex':expression}}, 
-                                {"points.img_pool.info_imgDesc":{'$regex':expression }},
-                                {"points.sources_pool.title":{'$regex':expression}}
+                                {"points.digest":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.title":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.img_pool.info_imgDesc":{'$regex':expression, '$options' : 'i' }},
+                                {"points.sources_pool.title":{'$regex':expression, '$options' : 'i' }}
                                 ]}}
                             ])
 
@@ -134,17 +134,17 @@ class DB(object):
         #         }, {'score': {'$meta': 'textScore'}})
         return app.config['SPACES_EN'].aggregate([
                             {'$match':{ '$or': [
-                                {"points.digest":{'$regex':expression}}, 
-                                {"points.title":{'$regex':expression}}, 
-                                {"points.img_pool.info_imgDesc":{'$regex':expression }},
-                                {"points.sources_pool.title":{'$regex':expression}}
+                                {"points.digest":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.title":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.img_pool.info_imgDesc":{'$regex':expression, '$options' : 'i' }},
+                                {"points.sources_pool.title":{'$regex':expression, '$options' : 'i' }}
                                 ]}}, 
                             { '$unwind' : "$points" },
                             {'$match':{ '$or': [
-                                {"points.digest":{'$regex':expression}}, 
-                                {"points.title":{'$regex':expression}}, 
-                                {"points.img_pool.info_imgDesc":{'$regex':expression }},
-                                {"points.sources_pool.title":{'$regex':expression}}
+                                {"points.digest":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.title":{'$regex':expression, '$options' : 'i' }}, 
+                                {"points.img_pool.info_imgDesc":{'$regex':expression, '$options' : 'i' }},
+                                {"points.sources_pool.title":{'$regex':expression, '$options' : 'i' }}
                                 ]}}
                             ])
 

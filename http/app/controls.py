@@ -164,9 +164,9 @@ def save_intro(author, namespace):
                     if key == "ep_text": ep_text = value
                     if key == "ep_source": ep_source = value
                     if (re.match("points", key) and value != ""):
-                        print p, k
                         p, k = key.split("_")
-
+                        points[k] = value
+                        
                     in_refs = value_match_assign("refBlockTtl", "ref_title", key, value, in_refs)
                     in_refs = value_match_assign("refBlockDigest", "ref_digest", key, value, in_refs)
                     in_refs = value_match_assign("refBlockType", "ref_type", key, value, in_refs)
@@ -436,6 +436,16 @@ def del_img_pool(author, namespace, chapter, point, img):
 @login_required
 def export_json(author, namespace, chapter):
     data = Tools().exportJson(author, namespace, chapter)
+    # print data
+    json =  namespace + "_" + chapter + ".json"
+    response = make_response(data)
+    response.headers["Content-Disposition"] = "attachment; filename=" + json
+    return response
+
+@app.route('/editspace/export_json_intro:<author>:<namespace>', methods=['GET', 'POST'])
+@login_required
+def export_json_intro(author, namespace, chapter):
+    data = Tools().exportJson_intro(author, namespace, chapter)
     # print data
     json =  namespace + "_" + chapter + ".json"
     response = make_response(data)

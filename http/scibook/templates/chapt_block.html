@@ -1,0 +1,30 @@
+{% for entry in idata %}
+    <div style="margin:10px 0 3% 0" align=right>
+        <small style="background-color:#e1e6f0;margin:5px">{{ entry.date }}</small>
+    </div>
+    <h3 style="margin:-20px 0 0 1%">
+        <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.title }}</a>
+    </h3>
+    {% if entry.epigraph %}
+    <div style="margin:5px 1% 10px 0; line-height:16px" align=right><small>{{ entry.epigraph.text | safe }}<br>
+        <em>{{ entry.epigraph.source }}</em></small>
+    </div>
+    {% endif %}
+    <div style="margin:5px 1% 0 1%;">
+        <p style="text-align:justify">
+        {% if entry.intro %}
+            {{ entry.intro | rehref | safe  }}
+        {% else %}
+            {{ entry.points[0].digest | rehref | safe  }}
+        {% endif %}
+    </div>
+    <div style="margin:-12px 0 0 0; width: 98%;" align=right>
+        <small><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">Далее &gt;&gt;</a></small>
+        <hr size=1 style="width: 80%; color:#c9ccff; height:1px; background-color:#c9ccff; margin:7px 0; text-align:right;">
+    </div>
+{% endfor %}
+<div style="height:30px; margin:-25px 0 10px 0">
+    <div>
+        <a href="#top" style="border:0px; width:11px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+    </div>
+</div>

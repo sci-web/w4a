@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<style>
+    .highlight {background: yellow;}
+</style>
+<script>
+$(document).ready(function() {
+    $('#hlight').highlightRegex(/{{ title }}/ig);
+});
+</script>
+<div style="margin:60px 20px 30px 20px;" id=hlight align=left>
+<input type="hidden" name="keyword" value="{{ title }}">
+    <h4>Found <b>{{ found }}</b> results for {{ title }}</h4>
+    {% for entry in idata %}
+        <div style="margin-left:70%">
+                <h3>
+                     {{ loop.index }}. <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="linknav">{{ entry.title }}</a>
+                </h3>
+        </div>
+           {{ entry.points.num }}.
+           {% if entry.points.title %}
+                <b><a href="{{ entry.points.link }}" rel="nofollow">{{ entry.points.title }}</a></b>
+                <em>
+                {% if entry.points.info_date %}
+                    {{ entry.points.info_date }},
+                {% endif %}
+                {% if entry.points.info_authors %}
+                    {{ entry.points.info_authors }},
+                {% endif %}
+                {% if entry.points.info_place %}
+                    {{ entry.points.info_place }}
+                {% endif %}
+                </em>
+                <br>
+            {% endif %}
+            <p style="text-align:justify">{{ entry.points.digest | rehref | safe  }}
+                {% if entry.points.info_img %}
+                <div style="height:400px;width:800px;margin:10px 20px 40px 0">
+                    <img src="{{ entry.points.info_img }}" hspace=5 vspace=5>
+                    {% if entry.points.info_imgSource %}
+                        <p align=right><a href="{{ entry.points.info_imgSource }}">source</a>
+                </div>
+                {% else %}
+            </div>
+                {% endif %}
+                {% if entry.points.info_imgDesc %}
+                    <br>
+                    {{ entry.points.info_imgDesc }}
+                {% endif %}
+            {% endif %}
+            {% if entry.points.img_pool %}<br>
+                {% for img in entry.points.img_pool %}
+                <div style="height:400px;width:800px;margin:20px 0 20px 0">
+                    <img src="{{ img.info_img }}" hspace=5 vspace=5 width=800>
+                    {% if img.info_imgSource %}
+                        <p align=right><a href="{{ img.info_imgSource }}">source</a>
+                </div>
+                    {% else %}
+                </div>
+                    {% endif %}
+                    {% if img.info_imgDesc %}
+                        <br>
+                        {{ img.info_imgDesc }}
+                    {% endif %}
+                <br>
+                {% endfor %}
+            {% endif %}
+            {% if entry.points.sources_pool %}<br>
+                {% for src in entry.points.sources_pool %}
+                    <div>
+                    <a href="{{ src.link }}">{{ src.title }}</a>
+                    <em>
+                        {% if src.info_date %}
+                            {{ src.info_date }},
+                        {% endif %}
+                        {% if src.info_authors %}
+                            {{ src.info_authors }},
+                        {% endif %}
+                        {% if src.info_place%}
+                            {{ src.info_place }}
+                        {% endif %}
+                    </em>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            <div align=right style="margin-top:-10px"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">Read more &gt;&gt;</a></div>
+    {% endfor %}
+</div>
+
+{% endblock %}

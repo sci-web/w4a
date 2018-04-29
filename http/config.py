@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-import uuid
+import uuid, os
 
 
 WTF_CSRF_ENABLED = True
@@ -13,15 +13,18 @@ OBJECTS = DATABASE.objects
 SPACES = DATABASE.chapters
 SPACES_EN = DATABASE.chapters_en
 CORE = DATABASE.core
+CONTACTS = DATABASE.contacts
 
 # for export name of vars = collections: i.e. chapters = collection chapters in DATABASE
 
-MAIL_SERVER='smtp.gmail.com'
-MAIL_PORT=465
-MAIL_USE_SSL=True
-MAIL_USERNAME = 'www@gmail.com'
-MAIL_PASSWORD = 'wwwpass'
-EMAILS = 'www@gmail.com'
+MAIL_SERVER = os.getenv('MAIL_SERVER', 'localhost')
+MAIL_PORT = int(os.getenv('MAIL_PORT', '25'))
+MAIL_USE_SSL = int(os.getenv('MAIL_USE_SSL', False))
+MAIL_USERNAME = os.getenv('MAIL_USERNAME', 'noreply@server')
+MAIL_PASSWORD = os.getenv('MAIL_PASSWORD', '')
+MAIL_DEFAULT_SENDER = os.getenv('MAIL_DEFAULT_SENDER', 'noreply@server')
+EMAIL_1 = 'toni.amantonio@gmail.com'
+EMAIL_2 = 'jescid@gmail.com'
 
 # captcha
 SECRET_KEY = str(uuid.uuid4())

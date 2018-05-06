@@ -97,6 +97,7 @@ def show_item(namespace, codename):
     data = json.loads(dumps(i_data))
     try:
         title = data["title"]
+        space = data["namespace"].title() if g.location == "en" else data["I_S_namespace"]
     except:
         return render_template('en/404_en.html', items=g.items, objects=g.objects, form=g.form), 404  # if there is no corresponding translation      
     chapters = DB().get_spaces_by_key_sorted_en(namespace, "date") if g.location == "en" else DB().get_spaces_by_key_sorted(namespace, "date")
@@ -105,7 +106,7 @@ def show_item(namespace, codename):
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     tmpl = 'en/content_en.html' if g.location == "en" else 'content.html'
     return render_template(tmpl, idata=data, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
-                            title=namespace.title() + ": " + title, chapters=chapters)
+                            title=space + " / " + namespace.title() + ": " + title, chapters=chapters)
 
 
 @app.route('/search', methods=['GET','POST'])
@@ -187,11 +188,12 @@ def chapters(namespace):
     for i in range(0, len(data)):
         f_date = datetime.datetime.fromtimestamp( data[i]["date"]['$date'] / 1e3 )
         data[i]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
+    space = data[0]["namespace"].title() if g.location == "en" else data[0]["I_S_namespace"]
     if 'div' in request.args:
         return jsonify( {'data': render_template(div, idata=data, chapters=chapters)} )
     else:
         return render_template(tmpl, idata=data, form=g.form, 
-                            items=g.items, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=namespace)
+                            items=g.items, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=space + " / " + namespace.title())
 
 @app.route('/en/contact/', methods=['GET', 'POST'])
 @app.route('/contact/', methods=['GET', 'POST'])

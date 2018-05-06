@@ -10,8 +10,8 @@ class DB(object):
 
     def get_spaces_by_key_sorted(self, namespace, key):
         return app.config['SPACES'].find(
-                                        {"namespace": namespace}, 
-                                        {"namespace": 1, "I_S_codename": 1, "I_S_name": 1, "I_S_type": 1, "intro": 1, "title": 1, "date":1, "epigraph": 1, "points": {"$slice": 1}}
+                            {"namespace": namespace}, 
+                            {"I_S_namespace":1, "namespace": 1, "I_S_codename": 1, "I_S_name": 1, "I_S_type": 1, "intro": 1, "title": 1, "date":1, "epigraph": 1, "points": {"$slice": 1}}
                                         ).sort(key, 1)
 
     def search(self, expression):
@@ -123,8 +123,8 @@ class DB(object):
 
     def get_spaces_by_key_sorted_en(self, namespace, key):
         return app.config['SPACES_EN'].find(
-                                        {"namespace": namespace}, 
-                                        {"namespace": 1, "I_S_codename": 1, "I_S_name": 1, "I_S_type": 1, "intro": 1, "title": 1, "date":1, "epigraph": 1, "points": {"$slice": 1}}
+                            {"namespace": namespace}, 
+                            {"namespace": 1, "I_S_codename": 1, "I_S_name": 1, "I_S_type": 1, "intro": 1, "title": 1, "date":1, "epigraph": 1, "points": {"$slice": 1}}
                                         ).sort(key, 1)
 
     def search_en(self, expression):

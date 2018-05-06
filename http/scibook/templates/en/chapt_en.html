@@ -1,5 +1,6 @@
 {% extends "en/base_en.html" %}
 {% block title %}{{ title }}{% endblock %}
+{% block descr %}{{ idata[0].namespace | title }}: contents{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}

@@ -1,5 +1,6 @@
 {% extends "en/base_en.html" %}
 {% block title %}{{ title }}{% endblock %}
+{% block descr %}{% if idata.intro %}{{ idata.intro | rehref | safe  }}{% else %}{{ idata.points[0].digest | rehref | safe  }}{% endif %}{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}

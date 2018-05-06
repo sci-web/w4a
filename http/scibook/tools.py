@@ -14,7 +14,6 @@ class Tools(object):
             json = ""
             output = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             content = output.stdout.read()
-            # print output.stderr.read()
             content = content.replace("\u003c","<")
             content = content.replace("\u003e",">")            
             return content
@@ -24,15 +23,14 @@ class Tools(object):
             return "there is a mistake in data export: " + e
 
 
-    def exportJson_intro(self, author, namespace, chapter):
+    def exportJson_intro(self, author, namespace):
 
-        command_line = app.config['MONGOEXP'] + " --db w4a --collection intros --query '{\"analyst\":\"" + author + "\",\"namespace\":\"" + namespace + "}' --pretty"
+        command_line = app.config['MONGOEXP'] + " --db w4a --collection intros --query '{\"analyst\":\"" + author + "\",\"namespace\":\"" + namespace + "\"}' --pretty"
         args = shlex.split(command_line)
         try:
             json = ""
             output = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             content = output.stdout.read()
-            # print output.stderr.read()
             content = content.replace("\u003c","<")
             content = content.replace("\u003e",">")            
             return content

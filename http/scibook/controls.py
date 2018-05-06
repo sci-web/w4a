@@ -444,10 +444,10 @@ def export_json(author, namespace, chapter):
 
 @app.route('/editspace/export_json_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
-def export_json_intro(author, namespace, chapter):
-    data = Tools().exportJson_intro(author, namespace, chapter)
+def export_json_intro(author, namespace):
+    data = Tools().exportJson_intro(author, namespace)
     # print data
-    json =  namespace + "_" + chapter + ".json"
+    json =  namespace + "_intro.json"
     response = make_response(data)
     response.headers["Content-Disposition"] = "attachment; filename=" + json
     return response

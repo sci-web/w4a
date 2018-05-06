@@ -8,6 +8,7 @@
 <form action="/editspace/save_intro:{{ current_user.author }}:{{ items.namespace }}" method="POST" name="sform">
 {{ form.hidden_tag() }}
 <h1>Edit introduction for the topic <b>{{ items.subject }}</b> (<b>{{ items.namespace }}</b>)</h1>
+<div align=right><a href="/editspace/export_json_intro:{{ current_user.author }}:{{ items.namespace }}" class="pointer linknav">Export Json</a></div>
 <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Subject (research title): </div>

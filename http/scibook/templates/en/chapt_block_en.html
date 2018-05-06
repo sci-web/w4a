@@ -3,7 +3,7 @@
         <small style="background-color:#e1e6f0;margin:5px">{{ entry.date }}</small>
     </div>
     <h3 style="margin:-20px 0 0 1%">
-        <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.title }}</a>
+        <a href="/en/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">{{ entry.title }}</a>
     </h3>
     {% if entry.epigraph %}
     <div style="margin:5px 1% 10px 0; line-height:16px" align=right><small>{{ entry.epigraph.text | safe }}<br>
@@ -19,7 +19,7 @@
         {% endif %}
     </div>
     <div style="margin:-12px 0 0 0; width: 98%;" align=right>
-        <small><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">Read more &gt;&gt;</a></small>
+        <small><a href="/en/content/{{ entry.namespace }}/{{ entry.I_S_codename }}">Read more &gt;&gt;</a></small>
         <hr size=1 style="width: 80%; color:#c9ccff; height:1px; background-color:#c9ccff; margin:7px 0; text-align:right;">
     </div>
 {% endfor %}

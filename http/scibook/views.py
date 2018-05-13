@@ -16,8 +16,27 @@ from flask_session_captcha import FlaskSessionCaptcha
 from itertools import chain
 
 
+@app.errorhandler(404)
+def page_not_found(error):
+    form = makeform()
+    return render_template('404.html', items=g.items, objects=g.objects, form=g.form), 404
+
+
+@app.errorhandler(500)
+def internal_server_error(error):
+    # useless: not working if no DB connection, 500 is handled by apache in production mode anyway
+    return render_template('500.html'), 500
+
+
+@app.errorhandler(Exception)
+def exception_handler(error):
+    return "!!!!"  + repr(error)
+
 @app.before_request
 def load_vars():
+    if app.config['DB'] == None:
+        print "No vars to load: ", e
+        return render_template('500.html'), 500    
     reader = geoip2.database.Reader(app.config['GEOCITY'])
     ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
     location = "ru"
@@ -46,21 +65,9 @@ def load_vars():
     g.chapters = DB().get_spaces_by_key_sorted_en("vaccines", "date") if g.location == "en" else DB().get_spaces_by_key_sorted("vaccines", "date")
     g.form = makeform()
 
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def catch_all(path):
-    try:
-        DB().get_intros()
-        flash("!")
-        return render_template('404.html', items=g.items, objects=g.objects, form=g.form), 404
-    except Exception, e:
-        flash(e)
-        return redirect(url_for('index'))
 
 def date_format(view, value):
     return value.strftime('%d.%m.%Y')
-
-
 
 
 MY_DEFAULT_FORMATTERS = dict(typefmt.BASE_FORMATTERS)
@@ -89,6 +96,7 @@ def index():
     tmpl = 'en/index_en.html' if g.location == "en" else 'index.html'
     return render_template(tmpl, form=g.form, items=g.items, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
                     chapters=g.chapters, data=i_data)
+    # return render_template('500.html'), 500
 
 @app.route('/en/content/<namespace>/<codename>')
 @app.route('/content/<namespace>/<codename>')
@@ -234,15 +242,3 @@ def tmpl():
     end = datetime.datetime.strptime("2016-11-14 23:59:59", '%Y-%m-%d %H:%M:%S')
     items = DB().get_data(start, end)
     return render_template('tmpl.html', items=items)
-
-
-@app.errorhandler(404)
-def page_not_found(error):
-    form = makeform()
-    return render_template('404.html', items=g.items, objects=g.objects, form=g.form), 404
-
-
-@app.errorhandler(500)
-def internal_error(error):
-    form = makeform()
-    return render_template('500.html', items=g.items, objects=g.objects, form=g.form), 500

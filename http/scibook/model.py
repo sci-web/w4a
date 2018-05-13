@@ -5,6 +5,9 @@ import re
 
 class DB(object):
 
+    def server_info(self):
+        return app.config['DB'].server_info()
+
     def get_any_chapter(self):
         return app.config['SPACES'].find_one({},{"namespace": 1})
 

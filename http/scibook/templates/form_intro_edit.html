@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Spell out scientific service :: analyst space{% endblock %}
+{% block title %}SciBook research notes :: analyst space{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
@@ -7,7 +7,7 @@
 <div style="margin:50px 20px 30px 50px; width:1100px;" align=left>
 <form action="/editspace/save_intro:{{ current_user.author }}:{{ items.namespace }}" method="POST" name="sform">
 {{ form.hidden_tag() }}
-<h1>Edit introduction for the topic <b>{{ items.subject }}</b> (<b>{{ items.namespace }}</b>)</h1>
+<h1>Редактировать введение для темы <b>{{ items.subject }}</b> (<b>{{ items.namespace }}</b>)</h1>
 <div align=right><a href="/editspace/export_json_intro:{{ current_user.author }}:{{ items.namespace }}" class="pointer linknav">Export Json</a></div>
 <br>
     <div style="height:25px; width:1010px;">

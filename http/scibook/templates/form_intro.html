@@ -1,12 +1,12 @@
 {% extends "base.html" %}
-{% block title %}Spell out scientific service :: analyst space{% endblock %}
+{% block title %}SciBook research notes :: analyst space{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
 <form action="/editspace/save_intro:{{ current_user.author }}:0" method="POST" name="form">
-<h1>Edit topic {{ subject }} </h1>
+<h1>Редактировать тему {{ subject }} </h1>
 {{ form.hidden_tag() }}
 <br>
     <div style="height:25px; width:1010px;">

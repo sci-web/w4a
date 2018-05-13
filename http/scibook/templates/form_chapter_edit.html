@@ -13,7 +13,7 @@
     </div>
 <form action="/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
-<h1>Edit chapter <b>{{ items.I_S_codename }}</b> in namespace <b>{{ items.namespace }}</b></h1>
+<h1>Добавление главы <b>{{ items.I_S_codename }}</b> в отдел <b>{{ items.namespace }}</b></h1>
 <small>Hint: For saved points you can rearrange them with the help of «Swap with point below» link.</small>
 <div align=right><a href="/editspace/export_json:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" class="pointer linknav">Export Json</a></div>
     <div style="height:25px; width:1200px;position:fixed">

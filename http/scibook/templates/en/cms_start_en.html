@@ -1,17 +1,17 @@
-{% extends "base.html" %}
-{% block title %}Spell out scientific service :: CMS {% endblock %}
+{% extends "en/base_en.html" %}
+{% block title %}SciBook research notes :: CMS {% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 10px;" align=left>
-<h1>Edit your space</h1>
+<h1>Edit your space / language: <a href="{{ request.path | replace('/en', '', 1) }}">RU</a> | EN</h1>
 
 {% for ns in namespaces %}
 <h3>for existing namespace</h3>
-<b>{{ ns.namespace }}:</b> <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">add a chapter</a>
-or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit introduction</a>
-<div style="margin:-20px 0 0 40px;">
+<b>{{ ns.namespace }}:</b> <a href="/en/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">add a chapter</a>
+or <a href="/en/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit introduction</a>
+<div style="margin:20px 0 0 40px;">
     {% if chapters and chapters[ ns.namespace ] %}
     <p>or
 <h3>choose chapter to edit in <b>{{ ns.namespace }}</b>:</h3>
@@ -28,11 +28,11 @@ or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit 
   <div style="display:table-row;">
     <div style="display:table-cell; width:30px; margin:2px">{{ loop.index }}.</div>
     <div style="display:table-cell; width:300px; margin:2px">
-        <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
+        <a href="/en/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
     </div>
     <div style="display:table-cell; width:200px; margin:2px">{{ lst[2] }}</div>
     <div style="display:table-cell; width:200px; margin:2px">{{ lst[3] }}</div>
-    <div style="display:table-cell; width:200px; margin:2px"><a href="/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav">[↑]</a></div>
+    <div style="display:table-cell; width:200px; margin:2px"><a href="/en/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav">[↑]</a></div>
   </div>
         {% endfor %}
  </div>
@@ -41,6 +41,6 @@ or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">edit 
 {% endfor %}
 <br>or
 <h3>start a new namespace of research notes:</h3>
-<a href="/editspace/intro:{{ current_user.author }}:0">create a namespace</a>
+<a href="/en/editspace/intro:{{ current_user.author }}:0">create a namespace</a>
 
 {% endblock %}

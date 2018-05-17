@@ -77,9 +77,9 @@ var sc_security="59e332e0";
         <div style="margin:0 0 0 200px">{% include "en/flash_en.html" %}</div>
         {% block content %}{% endblock %}
     </div>
-    <div class="col-xs-2 col-md-3" style="width:365px;margin:25px 0 0 0">
+    <div class="col-xs-2 col-md-3" style="width:365px;margin:20px 0 0 0">
     {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
-    <div align=center style="max-width:340px;padding:14px 0 10px 0;" id=sidebar>
+    <div class="simplebar-content" align=center style="width:345px;padding:14px 0 10px 0;" id=sidebar>
         <ul class="nav nav-tabs" style="margin-right:80px;">
             <li class="active"><a data-toggle="tab" href="#ill">Diseases</a></li>
             <li><a data-toggle="tab" href="#drugs">Drugs</a></li>
@@ -140,10 +140,6 @@ $(document).ready(function() {
             top: 1,
             bottom: navHeight
         }
-    });
-    $body.scrollspy({
-            target: '#sidebar',
-            offset: navHeight
     });
     $('#leftbar').affix({
         offset: {

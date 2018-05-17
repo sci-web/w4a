@@ -3,7 +3,6 @@
 <head>
 <title>{% block title %}{% endblock %}</title>
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/theme.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/fileinput.min.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-select.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core-dataTables.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core.css') }}">
@@ -76,16 +75,16 @@ var sc_security="59e332e0";
         <div style="margin:0 0 0 200px">{% include "flash.html" %}</div>
         {% block content %}{% endblock %}
     </div>
-    <div class="col-xs-2 col-md-3" style="width:352px;margin:25px 0 0 0">
+    <div class="col-xs-2 col-md-3" style="width:365px;margin:25px 0 0 0">
     {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
-    <div align=center style="max-width:327px;padding:14px 0 10px 0;" id=sidebar>
+    <div align=center style="max-width:340px;padding:14px 0 10px 0;" id=sidebar>
         <ul class="nav nav-tabs" style="margin-right:80px;">
             <li class="active"><a data-toggle="tab" href="#ill">Болезни</a></li>
             <li><a data-toggle="tab" href="#drugs">Препараты</a></li>
             <li><a data-toggle="tab" href="#conds">Условия</a></li>
             <li><a data-toggle="tab" href="#geo">Гео</a></li>
         </ul>
-        <div style="border-top:1px solid #e1e6f0; margin-top:-1px;"> </div>
+        <div style="border-top:1px solid #DCDBFF; margin-top:-1px;"> </div>
         <div class="tab-content tab-col" align=left style="padding:3px;">
             <div id=ill class="tab-pane fade in active" style=margin-top:1px>
                 <ul class="sqmenu">

@@ -30,7 +30,7 @@ a.linknav:hover {color:#DB7200;text-decoration:none;padding:3px}
 .topnav {
   -moz-border-radius:7px;-khtml-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;border:1px solid #555ce1;
   margin:15px 4px 3px 3px;
-  padding: 4px 4px 4px 4px; box-shadow: 4px 1px 6px #EAE5FF;-moz-box-shadow: 4px 1px 6px #EAE5FF;-webkit-box-shadow: 4px 1px 6px #EAE5FF;
+  padding: 4px; box-shadow: 4px 1px 6px #EAE5FF;-moz-box-shadow: 4px 1px 6px #EAE5FF;-webkit-box-shadow: 4px 1px 6px #EAE5FF;
   min-width:600px;
   background:#CDCCFF
 }

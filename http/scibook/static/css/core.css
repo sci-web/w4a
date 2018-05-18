@@ -8,7 +8,7 @@
   #sidebar.affix-bottom {position: relative;}
   #sidebar.affix {position: fixed;margin:10px 0 0 0;}
   #sidebar {font-size:90%}
- .sbox {margin-left:108px}
+ .sbox {margin-left:10px}
  .wscreen {position:fixed}
 }
 a.sqnav, a.rightnav {color:#024d60;text-decoration:none;}
@@ -29,12 +29,21 @@ a.linknav:hover {color:#DB7200;text-decoration:none;padding:3px}
 
 .topnav {
   -moz-border-radius:7px;-khtml-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;border:1px solid #555ce1;
-  padding: 5px; box-shadow: 4px 1px 6px #EAE5FF;-moz-box-shadow: 4px 1px 6px #EAE5FF;-webkit-box-shadow: 4px 1px 6px #EAE5FF;
-  min-width:600px;
-  margin:0 15px 0 5px;
+  box-shadow: 4px 1px 6px #EAE5FF;-moz-box-shadow: 4px 1px 6px #EAE5FF;-webkit-box-shadow: 4px 1px 6px #EAE5FF;
   background:#CDCCFF
 }
-
+.caret-m {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 2px;
+        vertical-align: middle;
+        right:0;
+        border-top: 5px dashed;
+        border-top: 5px solid \9;
+        border-right: 5px solid transparent;
+        border-left: 5px solid transparent;
+    }
 .bootstrap-select > .btn {height: 25px;padding: 1px 14px 1px 7px;}
 .tdv {vertical-align: top; width: 4%}
 .wrap {font-family: monospace;word-wrap:break-word;}

@@ -105,13 +105,6 @@ select.selectpicker {
   width: 100%;
   text-align: left;
 }
-.bootstrap-select.btn-group .dropdown-toggle .caret {
-  position: absolute;
-  top: 50%;
-  right: 12px;
-  margin-top: -2px;
-  vertical-align: middle;
-}
 .bootstrap-select.btn-group[class*="col-"] .dropdown-toggle {
   width: 100%;
 }
@@ -127,7 +120,7 @@ select.selectpicker {
   border: 0;
   padding: 0;
   margin: 0;
-  border-radius: 0;    
+  border-radius: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -185,11 +178,6 @@ select.selectpicker {
 }
 .bootstrap-select.btn-group.fit-width .dropdown-toggle .filter-option {
   position: static;
-}
-.bootstrap-select.btn-group.fit-width .dropdown-toggle .caret {
-  position: static;
-  top: auto;
-  margin-top: -1px;
 }
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
   position: absolute;

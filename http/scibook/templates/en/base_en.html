@@ -42,7 +42,7 @@
 {% set sitepart = request.path.split('/')[2] %}
 
 {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
-    <div class="col-md-2 col-xs-2" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
+    <div class="col-md-2 col-xs-2 visible-lg" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
       <div class="wscreen">
         <div style="display:none;margin-top:-14px; margin:0; width:200px; white-space:nowrap;"
             onClick="javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" id=show>

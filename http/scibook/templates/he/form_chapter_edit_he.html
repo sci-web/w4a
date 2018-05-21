@@ -1,0 +1,586 @@
+{% extends "he/base_he.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div style="margin:60px 20px 30px 50px; width:1100px;" align=left>
+    <div id="wait" style="height:25px; display:none; padding:0 5px 0 1100px;position:fixed">
+        <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
+    </div>
+    <div id="done" style="height:35px; display:none; margin:0 5px 0 1000px; width:270px; position:fixed; border:2px solid #f466cc" align=right>
+    <div id="result" style="display:table-cell; padding:0 5px 5px 5px;" align=center></div><div style="display:table-cell; padding:0 5px;"> <a class="close" onClick = "hideDiv('done');">&times;</a></div>
+    </div>
+<form action="/he/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
+{{ form.hidden_tag() }}
+<h1>ערוך פרק <b>{{ items.I_S_codename }}</b> במרחב שמות <b>{{ items.namespace }}</b></h1>
+
+<div align=right><a href="/he/editspace/export_json:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" class="pointer linknav">Export Json</a></div>
+    <div style="height:25px; width:1200px;position:fixed">
+        <div align=right style="float:right; margin:10px">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+    <br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Title: </div>
+        <div style="float:right; width:830px;" class="form-group">
+            <input type="text" placeholder="Title" name=title size=95 value="{{ items.title }}"> <font color="red">(*)</font>
+        </div>
+    </div>
+    <br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Alias: </div>
+        <div style="float:right; width:830px;" class="form-group">
+            <input type="text" placeholder="Title" name=I_S_codename size=35 value="{{ items.I_S_codename }}">
+                latin letters <font color="red">(*)</font>
+        </div>
+    </div>
+    <br>
+    <div style="height:75px; width:1010px;">
+        <div style="float:left; width:180px">Epigraph text: </div>
+        <div style="float:right; width:830px" class="form-group">
+            {% if items.epigraph and items.epigraph.text %}<textarea rows=3 cols=97 name=ep_text>{{ items.epigraph.text | replace("<br>", "\n") }}</textarea>
+            {% else %}
+            <textarea rows=3 cols=97 name=ep_text></textarea>
+            {% endif %}
+        </div>
+    </div>
+    <br>
+    <div style="height:25px; width:1010px;">
+        <div style="float:left; width:180px">Epigraph source: </div>
+        <div style="float:right; width:830px" class="form-group" align=right>
+            <input type="text" name=ep_source size=65
+            value="{% if items.epigraph and items.epigraph.source %}{{ items.epigraph.source }}{% endif %}">
+        </div>
+    </div>
+    <br>
+    <div style="height:145px; width:1010px;">
+        <div style="float:left; width:180px">Introduction: </div>
+        <div style="float:right; width:830px" class="form-group">
+            <textarea rows=5 cols=97 name=intro>{{ items.intro | replace("<br>", "\n") }}</textarea>
+        </div>
+    </div>
+    <div>
+        <h3>Points:</h3>
+    </div>
+    {% set p_num = [1] %}
+    {% for p in items.points|sort(attribute='num') %}
+    <hr size=1 style="width:1100px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0px" align=left>
+        <div style="height:100%; width:1100px;" id="p_{{ p_num|join }}">
+            <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
+                <a onClick = "javascript:RemoveOneDiv('#p_{{ p_num|join }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+            </div>
+            <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>:</div>
+            <br>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Header (of next point(s)):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointHeader_{{ p_num|join }} size=95 value="{{ p.header }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Title (paper's title):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointTitle_{{ p_num|join }} size=95 value="{{ p.title }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Digest:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <textarea rows=7 cols=97 name=pointDigest_{{ p_num|join }}>{{ p.digest | replace("<br>", "\n") }}</textarea>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Link (to the paper):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointLink_{{ p_num|join }} size=95 value="{{ p.link }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Type (article/media/report):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointType_{{ p_num|join }} size=35 value="{{ p.info_type }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's ID (pubmed/doi/PMC):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPID_{{ p_num|join }} size=8 value="{{ p.infoID }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's date:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPdate_{{ p_num|join }} size=8 value="{{ p.info_date }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's authors:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPauths_{{ p_num|join }} size=95 value="{{ p.info_authors }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">publication place (journal/channel):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPub_{{ p_num|join }} size=95 value="{{ p.info_place }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">geo location:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointGeo_{{ p_num|join }} size=95 value="{{ p.info_geo }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">tags:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointTags_{{ p_num|join }} size=95
+                        value="{{ p.I_S_codenames|join(', ') }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image (src link):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointImage_{{ p_num|join }} size=95 value="{{ p.info_img }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image source: (link)</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointIsource_{{ p_num|join }} size=95 value="{{ p.info_imgSource }}">
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image description:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointIdescr_{{ p_num|join }} size=95 value="{{ p.info_imgDescr }}">
+                </div>
+            </div>
+{% set s_num = [1] %}
+{% if p.sources_pool %}
+            <div style="margin:0 0 0 50px"><h4><u>Sources pool</u>:</h4></div>
+    {% for s in p.sources_pool|sort(attribute='num') %}
+            <div style="width:1000px;margin:0 0 0 50px;" id="srcPool_{{ s_num|join }}">
+        <div style="display:cell;margin:5px 0 0 850px; width:12px; float:right; position:absolute" id=scross>
+            <a onClick = "javascript:RemoveOneDiv('#srcPool_{{ s_num|join }}', 'source', {{ s.num }}, {{ p.num }})"
+                class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <hr size=1 style="width:870px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0" align=left>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">Source #{{ s_num|join }} title: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcTitle_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.title }}">
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">Source #{{ s_num|join }} link (URL): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcLink_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.link }}">
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">Source #{{ s_num|join }} paper's ID (pubmed/doi): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcID_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.infoID }}">
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">Source #{{ s_num|join }} date: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcDate_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_date }}">
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">Source #{{ s_num|join }} authors: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcAuth_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_authors }}">
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">#{{ s_num|join }} place (journal): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcPlace_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_place }}">
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:170px">Source #{{ s_num|join }} type (article/report): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcType_{{ s_num|join }}_{{ p_num|join }}" size=75 value="{{ s.info_type }}">
+                </div>
+            </div>
+    </div>
+    {% if s_num.append(s_num.pop() + 1) %}{% endif %}
+    {% endfor %}
+{% endif %}
+            <div id="src_target_{{ p_num|join }}" style="width:1050px;"></div>
+            <br>
+            <div style="width:1050px;" id="src_{{ s_num|join }}_{{ p_num|join }}">
+            <a onClick="loadTmpl('#srcPool_tmpl', '#src_target_{{ p_num|join }}', '#src_{{ s_num|join }}_{{ p_num|join }}', {{ s_num|join }}, 'scross', {{ p_num|join }})"
+            class="linknav pointer">add a {{ s_num|join }} source to {{ p_num|join }}-point</a>
+                <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 20px 0"  align=left>
+            </div>
+{% set i_num = [1] %}
+{% if p.img_pool %}
+            <div style="margin:0 0 0 50px"><h4><u>Images pool</u>:</h4></div>
+    {% for i in p.img_pool|sort(attribute='num') %}
+            <div style="width:1000px;margin:0 0 0 50px;" id="imgPool_{{ i_num|join }}">
+        <hr size=1 style="width:870px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0" align=left>
+        <div style="display:cell;margin:0 0 0 850px; width:12px; float:right; position:absolute" id=icross>
+            <a onClick = "javascript:RemoveOneDiv('#imgPool_{{ i_num|join }}', 'img', {{ i.num }}, {{p.num }})"
+                class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <div style="height:25px;">
+            <div style="float:left; width:180px">Image #{{ i_num|join }} link (URL): </div>
+            <div style="float:right; width:800px;" class="form-group">
+                <input type="text" name="imgLink_{{ i_num|join }}_{{ p_num|join }}" size=75 value="{{ i.info_img }}">
+            </div>
+        </div>
+        <br>
+        <div style="height:25px;">
+            <div style="float:left; width:180px">Image #{{ i_num|join }} source (URL): </div>
+            <div style="float:right; width:800px;" class="form-group">
+                <input type="text" name="imgSrcURL_{{ i_num|join }}_{{ p_num|join }}" size=75 value="{{ i.info_imgSource }}">
+            </div>
+        </div>
+        <br>
+        <div style="height:25px;">
+            <div style="float:left; width:180px">Image #{{ i_num|join }} source title: </div>
+            <div style="float:right; width:800px;" class="form-group">
+                <input type="text" name="imgSrcTitle_{{ i_num|join }}_{{ p_num|join }}" size=75 value="{{ i.info_imgTitle }}">
+            </div>
+        </div>
+        <br>
+        <div style="height:25px;">
+            <div style="float:left; width:180px">Image #{{ i_num|join }} description: </div>
+            <div style="float:right; width:800px;" class="form-group">
+                <textarea rows=2 cols=97 name=imgDescr_{{ i_num|join }}_{{ p_num|join }}>{{ i.info_imgDesc | replace("<br>", "\n") }}</textarea>
+            </div>
+        </div>
+    </div>
+    {% if i_num.append(i_num.pop() + 1) %}{% endif %}
+    {% endfor %}
+{% endif %}
+            <div id="img_target_{{ p_num|join }}" style="width:1050px;"></div>
+            <br>
+            <div style="width:1050px;" id="img_{{ i_num|join }}_{{ p_num|join }}">
+            <a onClick="loadTmpl('#imgPool_tmpl', '#img_target_{{ p_num|join }}', '#img_{{ i_num|join }}_{{ p_num|join }}', {{ i_num|join }}, 'icross', {{ p_num|join }})"
+            class="linknav pointer">add a {{ i_num|join }} image pool to {{ p_num|join }}-point</a>
+            <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 20px 0"  align=left>
+        </div>
+    </div>
+    <br>
+        <div id="pnt_target_{{ p_num|join }}" style="width:1100px;border:"></div>
+        <div style="height:25px; width:1100px;" id="l_{{ p_num|join }}" align="right">
+        <a onClick="loadTmpl('#pnt_tmpl', '#pnt_target_{{ p_num|join }}', '#l_{{ p_num|join }}', {{ p_num|join }}, 'pcross')" class="linknav pointer">append another point to {{ p_num|join }} point ↑</a>
+    </div>
+    {% if p_num.append(p_num.pop() + 1) %}{% endif %}
+    {% endfor %}
+
+    <br>
+    <div style="height:175px; width:1000px;">
+        <div style="float:left; width:180px">Summary: </div>
+        <div style="float:right; width:820px" class="form-group">
+            <textarea rows=7 cols=110 name=summary>{{ items.summary | replace("<br>", "\n") }}</textarea>
+        </div>
+    </div>
+    <div style="height:25px; width:980px;">
+        <div style="float:left; width:180px" id=form_info></div>
+        <div align=right style="float:right; width:800px">
+            <button type="submit" class="btn btn-default">Submit</button>
+        </div>
+    </div>
+</form>
+</div>
+{% raw %}
+<script id="srcPool_tmpl" type="x-tmpl-mustache">
+    <div style="width:1050px;margin:5px 0 0 50px;" id="srcPool_{{ num }}">
+        <hr size=1 style="width:950px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 20px 0" align=left>
+        <div style="display:cell;margin:-20px 0 0 910px; width:12px; float:right; position:absolute" id=scross>
+        <a onClick = "RemoveDiv(
+        '#srcPool_{{ num }}', {{ num }}, {{ rnum }}, '#srcLink_tmpl', '#srcPool_target_{{ rnum }}','#src_{{ num }}_{{ rnum }}'
+        )" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Source #{{ a2 }} title: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcTitle_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Source #{{ a2 }} link (URL): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcLink_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Source #{{ a2 }} paper's ID (pubmed/doi): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcID_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Source #{{ a2 }} date: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcDate_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Source #{{ a2 }} authors: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcAuth_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px"> Source #{{ a2 }} place (journal): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcPlace_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Source #{{ a2 }} type (article/report): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="srcType_{{ num }}_{{ rnum }}" size=75>
+                </div>
+            </div>
+        <br>
+        <div style="height:40px; width:1010px;" id="src_{{ num }}_{{ rnum }}">
+            <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
+            <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 20px 0"  align=left>
+        </div>
+    </div>
+    <div id="srcPool_target_{{ rnum }}" style="width:1050px;"></div>
+</script>
+
+<script id="srcLink_tmpl" type="x-tmpl-mustache">
+    <div style="height:40px; width:1010px;" id="src_{{ num }}_{{ rnum }}">
+        <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
+    <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 20px 0"  align=left>
+    </div>
+</script>
+
+<script id="imgPool_tmpl" type="x-tmpl-mustache">
+    <div style="width:1050px;margin:5px 0 0 50px;" id="imgPool_{{ num }}">
+    <hr size=1 style="width:950px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 20px 0"  align=left>
+        <div style="display:cell;margin:-20px 0 0 910px; width:12px; float:right; position:absolute" id=icross>
+        <a onClick = "RemoveDiv(
+        '#imgPool_{{ num }}', {{ num }}, {{ rnum }}, '#imgLink_tmpl', '#imgPool_target_{{ rnum }}','#img_{{ num }}_{{ rnum }}'
+        )" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Image #{{ a2 }} link (URL): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="imgLink_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Image #{{ a2 }} source (URL): </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" placeholder="http://" name="imgSrcURL_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:25px;">
+                <div style="float:left; width:220px">Image #{{ a2 }} source title: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <input type="text" name="imgSrcTitle_{{ num }}_{{ rnum }}" size=75></div>
+            </div>
+            <br>
+            <div style="height:50px;">
+                <div style="float:left; width:220px">Image #{{ a2 }} description: </div>
+                <div style="float:right; width:820px;" class="form-group">
+                    <textarea rows=2 cols=87 name=imgDescr_{{ num }}_{{ rnum }}></textarea>
+                </div>
+            </div>
+        <br>
+        <div style="height:40px; width:1010px;" id="img_{{ num }}_{{ rnum }}">
+            <a onClick="loadTmpl('#imgPool_tmpl', '#imgPool_target_{{ rnum }}', '#img_{{ num }}_{{ rnum }}', {{ num }}, 'icross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-image to {{ rnum }}-point</a>
+        <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 30px 0"  align=left>
+        </div>
+    </div>
+    <div id="imgPool_target_{{ rnum }}" style="width:1000px;"></div>
+</script>
+
+<script id="imgLink_tmpl" type="x-tmpl-mustache">
+    <div style="height:40px; width:1010px;" id="img_{{ num }}_{{ rnum }}">
+        <a onClick="loadTmpl('#imgPool_tmpl', '#imgPool_target_{{ rnum }}', '#img_{{ num }}_{{ rnum }}', {{ num }}, 'icross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-image to {{ rnum }}-point ↑</a>
+    <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 30px 0"  align=left>
+    </div>
+</script>
+
+<script id="pnt_tmpl" type="x-tmpl-mustache">
+    <div style="height:100%; width:1100px;" id="pnt_{{ rnum }}">
+    <hr size=1 style="width:1100px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0px" align=left>
+         <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
+            <a onClick = "javascript:RemoveOneDiv('#pnt_{{ rnum }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px"><b>Point #{{ rnum }} to {{ a2 }}:</div>
+                <div style="float:right; width:710px"> </div>
+            </div>
+            <br>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Header (of next point(s)):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointHeader_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Title (paper's title):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointTitle_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Digest:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <textarea rows=7 cols=97 name=pointDigest_{{ nID }}></textarea>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Link (to the paper):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" placeholder="http://" name=pointLink_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">Type (article/media/report):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointType_{{ nID }} size=35>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's ID (pubmed/doi/PMC):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPID_{{ nID }} size=8>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's date:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPdate_{{ nID }} size=8>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">paper's authors:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPauths_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">publication place (journal/channel):</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointPub_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">geo location:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointGeo_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">tags:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointTags_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointImage_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image source: (link)</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointIsource_{{ nID }} size=95>
+                </div>
+            </div>
+            <div style="display:table-row;width:1000px">
+                <div style="float:left;width:250px" class="form-group">image description:</div>
+                <div style="float:right; width:710px" class="form-group">
+                    <input type="text" name=pointIdescr_{{ nID }} size=95>
+                </div>
+            </div>
+            <div id="imgPool_target_{{ rnum }}" style="width:1000px;"></div>
+            <div style="height:50px; width:900px;" id="img_{{ num }}_{{ rnum }}">
+                <a onClick="loadTmpl('#imgPool_tmpl', '#imgPool_target_{{ rnum }}', '#img_{{ num }}_{{ rnum }}', {{ num }}, 'icross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-image to {{ rnum }}-point</a>
+                <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 20px 0"  align=left>
+            </div>
+            <div id="srcPool_target_{{ rnum }}" style="width:1000px;"></div>
+            <div style="height:50px; width:900px;" id="src_{{ num }}_{{ rnum }}">
+                <a onClick="loadTmpl('#srcPool_tmpl', '#srcPool_target_{{ rnum }}', '#src_{{ num }}_{{ rnum }}', {{ num }}, 'scross', {{ rnum }})" class="linknav pointer">add one more {{ num }}-source to {{ rnum }}-point</a>
+            <hr size=1 style="width:1000px; color:grey; height:1px; background-color:grey; margin:10px 0 20px 0"  align=left>
+            </div>
+        </div>
+</script>
+{% endraw %}
+<script>
+function RemoveOneDiv(div, obj, num, pnt) {
+    if (confirm("Are you sure?")) {
+        $( div ).remove();
+        if (obj == 'point') {
+            url = "/editspace/del_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num
+        }
+        if (obj == 'source') {
+            url = "/editspace/del_source:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
+        }
+        if (obj == 'img') {
+            url = "/editspace/del_img:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
+        }
+        $.getJSON({
+            url: url,
+            beforeSend: function() {
+                $('#wait').show();
+            },
+            complete: function() {
+                $('#wait').hide();
+            },
+            success: function(result){
+                $('#done').show();
+                $('#result').html(result.data).show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            // if does not work with some browser extension or firewall's blocking async requests etc.
+                alert("ouch! cannot delete, say it to the master!");
+            }
+        });
+    }
+}
+function RemoveDiv(div, num, rnum, thtml, target, pdiv) {
+    $( div ).remove();
+    $( pdiv ).remove();
+    template = $(thtml).html();
+    num = num - 1;
+    $(target).append(Mustache.render(template, {num: num, rnum: rnum}));
+}
+function loadTmpl(thtml, target, div, cnt, id, rcnt) {
+    a2 = cnt // appeded to this item
+    if (rcnt == 0 || id == 'pcross') {
+        rcnt = $("div[id^=pnt_]").length + 1;
+        cnt = 0
+    }
+    if (id != 'pcross') {
+        $( div ).remove()
+    }
+    cnt += 1;
+    template = $(thtml).html();
+    Mustache.parse(template);
+    nID = a2 + rcnt/1000;
+    $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt, a2: a2, nID: nID}));
+}
+</script>
+{% endblock %}

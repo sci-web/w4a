@@ -1,0 +1,201 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Explore
+ @am-ant
+Sign out
+0
+0 1 sci-web/w4a
+ Code  Issues 0  Pull requests 1  Projects 0  Wiki  Insights
+w4a/http/scibook/templates/en/base_en.html
+17580d1  3 days ago
+@sci-web sci-web mobile layouts fixed
+     
+173 lines (170 sloc)  8.79 KB
+<!doctype html>
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/theme.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/fileinput.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-select.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core-dataTables.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='js/datatables.css') }}"/>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script type=text/javascript src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/dataTables.searchHighlight.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/show-hide.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/validator.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/fileinput.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/fileinput_locale_es.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/mustache.min.js') }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="description" content="{% block descr %}{% endblock %}">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115629674-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-115629674-1');
+</script>
+    </head>
+<body>
+{% include "en/navbar_en.html" %}
+<div id="masthead"><a name="top"></a>
+</div>
+<div class="container-fluid" align=center>
+ <div class="row" style="margin:5px; width:100%">
+{% set sitepart = request.path.split('/')[2] %}
+
+{% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
+    <div class="col-md-2 col-xs-2 visible-lg" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
+      <div class="wscreen">
+        <div style="display:none;margin-top:-14px; margin:0; width:200px; white-space:nowrap;"
+            onClick="javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" id=show>
+            <a onClick = "javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav">show menu</a>
+        </div>
+        <div style="display:cell;margin-top:-14px; margin-right:-20px; width:12px; float:left;"
+            onClick="javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" id=cross>
+            <a onClick = "javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav"><font size=5>×</font></a>
+        </div>
+        <ul style="list-style: none; font-size:17px;" id=leftbar>
+          <li><span style="margin:0 0 0 3px;white-space: nowrap">תוכן העניינים</span></li>
+          <li><a href="/en/intro/vaccines" class="linknav">מבוא</a></li>
+          {% for entry in items %}
+            <li class="sqnav" style="white-space: nowrap"><a href="/en/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+                <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
+                {{ entry.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <br>
+<script type="text/javascript">
+var sc_project=11636746;
+var sc_invisible=1;
+var sc_security="59e332e0";
+</script>
+<script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11636746/0/59e332e0/1/" alt="Web Analytics"></a></div></noscript>
+      </div>
+    </div>
+{% endif %}
+    <div class="col-xs-12 col-md-6" style="margin:0 0 35px 10px">
+        <div style="margin:0 0 0 200px">{% include "en/flash_en.html" %}</div>
+        {% block content %}{% endblock %}
+    </div>
+    <div class="col-xs-2 col-md-3" style="width:365px;margin:20px 0 0 0">
+    {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
+    <div class="simplebar-content" align=center style="width:345px;padding:14px 0 10px 0;" id=sidebar>
+        <ul class="nav nav-tabs" style="margin-right:80px;">
+            <li class="active"><a data-toggle="tab" href="#ill">מחלות</a></li>
+            <li><a data-toggle="tab" href="#drugs">תכשירים</a></li>
+            <li><a data-toggle="tab" href="#conds">נסיבות</a></li>
+            <li><a data-toggle="tab" href="#geo">מדינות</a></li>
+        </ul>
+        <div style="border-top:1px solid #e1e6f0; margin-top:-1px;"> </div>
+        <div class="tab-content tab-col" align=left>
+            <div id=ill class="tab-pane fade in active" style=margin-top:1px>
+                <ul class="sqmenu">
+                {% for entry in objects %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="drugs" class="tab-pane fade" style=margin-top:5px>
+                <ul class="sqmenu">
+                {% for entry in drugs %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="conds" class="tab-pane fade" style=margin-top:5px>
+                <ul class="sqmenu">
+                {% for entry in conditions %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="geo" class="tab-pane fade" style=margin-top:5px>
+                <ul  class="sqmenu">
+                    {% for entry in geo_objects %}
+                        <li style="color:#4d4df6" class="rightnav">
+                            <a href="/en/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <small>↑ scrollable with mouse over ↑</small>
+    </div>
+    {% endif %}
+    </div>
+  </div>
+</div>
+<script type='text/javascript'>
+$(document).ready(function() {
+    var $body   = $(document.body);
+    var navHeight = $('.navbar').outerHeight(true);
+    $('#sidebar').affix({
+        offset: {
+            top: 1,
+            bottom: navHeight
+        }
+    });
+    $('#leftbar').affix({
+        offset: {
+            top: 1,
+            bottom: navHeight
+        }
+    });
+    $body.scrollspy({
+            target: '#leftbar',
+            offset: navHeight
+    });
+});
+$(function() {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        // save the latest tab; use cookies if you like 'em better:
+        localStorage.setItem('lastTab', $(this).attr('href'));
+    });
+    // go to the latest tab, if it exists:
+    var lastTab = localStorage.getItem('lastTab');
+    if (lastTab) {
+        $('[href="' + lastTab + '"]').tab('show');
+    }
+});
+</script>
+</body>
+</html>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.min.js') }}"></script>
+<script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.bootstrap.min.js') }}"></script>
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
+Press h to open a hovercard with more details.

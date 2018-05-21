@@ -10,7 +10,7 @@ Sign out
 0
 0 1 sci-web/w4a
  Code  Issues 0  Pull requests 1  Projects 0  Wiki  Insights
-w4a/http/scibook/templates/en/base_en.html
+w4a/http/scibook/templates/he/base_he.html
 17580d1  3 days ago
 @sci-web sci-web mobile layouts fixed
      
@@ -50,7 +50,7 @@ w4a/http/scibook/templates/en/base_en.html
 </script>
     </head>
 <body>
-{% include "en/navbar_en.html" %}
+{% include "he/navbar_he.html" %}
 <div id="masthead"><a name="top"></a>
 </div>
 <div class="container-fluid" align=center>
@@ -70,9 +70,9 @@ w4a/http/scibook/templates/en/base_en.html
         </div>
         <ul style="list-style: none; font-size:17px;" id=leftbar>
           <li><span style="margin:0 0 0 3px;white-space: nowrap">תוכן העניינים</span></li>
-          <li><a href="/en/intro/vaccines" class="linknav">מבוא</a></li>
+          <li><a href="/he/intro/vaccines" class="linknav">מבוא</a></li>
           {% for entry in items %}
-            <li class="sqnav" style="white-space: nowrap"><a href="/en/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+            <li class="sqnav" style="white-space: nowrap"><a href="/he/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                 {{ entry.title }}</a>
             </li>
@@ -90,7 +90,7 @@ var sc_security="59e332e0";
     </div>
 {% endif %}
     <div class="col-xs-12 col-md-6" style="margin:0 0 35px 10px">
-        <div style="margin:0 0 0 200px">{% include "en/flash_en.html" %}</div>
+        <div style="margin:0 0 0 200px">{% include "he/flash_he.html" %}</div>
         {% block content %}{% endblock %}
     </div>
     <div class="col-xs-2 col-md-3" style="width:365px;margin:20px 0 0 0">
@@ -108,7 +108,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in objects %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -117,7 +117,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in drugs %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -126,7 +126,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in conditions %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/en/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -135,7 +135,7 @@ var sc_security="59e332e0";
                 <ul  class="sqmenu">
                     {% for entry in geo_objects %}
                         <li style="color:#4d4df6" class="rightnav">
-                            <a href="/en/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
+                            <a href="/he/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
                         </li>
                     {% endfor %}
                 </ul>
@@ -186,16 +186,3 @@ $(function() {
 ================================================== -->
 <script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.min.js') }}"></script>
 <script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.bootstrap.min.js') }}"></script>
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.

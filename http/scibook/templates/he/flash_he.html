@@ -1,0 +1,26 @@
+<style>
+.alert {position:absolute; margin-top:100px;}
+.alert-danger {border-top:1px solid red; background:#fff; color:#555; font-size:15pt;}
+.alert-info {border-top:1px solid #5fa4e8; background:#fff; color:#555; font-size:15pt;}
+.alert-success {border-top:1px solid green; background:#fff; color:#555; font-size:15pt;}
+.alert .close {color: #222;}
+.alert .close:hover, .alert .close:focus {color: #555;opacity: 1;}
+</style>
+{% for error in get_flashed_messages(with_categories=true, category_filter=["error"]) %}
+<div class="alert alert-dismissable alert-danger" align="center" id="error">
+    <button type="button" class="close" data-dismiss="alert" onMouseOver="hideDiv('error');">&times;</button>
+    {{ error[1] }}
+</div>
+{% endfor %}
+{% for info in get_flashed_messages(with_categories=true, category_filter=["info"]) %}
+<div class="alert alert-dismissable alert-info" align="center" id="info">
+    <button type="button" class="close" data-dismiss="alert" onMouseOver="hideDiv('info');">&times;</button>
+    {{ info[1] }}
+</div>
+{% endfor %}
+{% for success in get_flashed_messages(with_categories=true, category_filter=["success"]) %}
+<div class="alert alert-dismissable alert-success" align="center" id="success">
+    <button type="button" class="close" data-dismiss="alert" onMouseOver="hideDiv('success');">&times;</button>
+    {{ success[1] }}
+</div>
+{% endfor %}

@@ -1,0 +1,120 @@
+{% extends "he/base_he.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block descr %}{% if idata.intro %}{{ idata.intro | rehref | safe  }}{% else %}{{ idata.points[0].digest | rehref | safe  }}{% endif %}{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div style="margin:60px 1% 1% 0" align=left itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
+    <div itemscope itemtype="http://schema.org/PublicHealth">
+        <div style="height:40px">
+            <div style="float:left; margin-top:-25px"><h1>{{ idata.title }}</h1></div>
+            <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ idata.analyst }}</a></h4></div>
+        </div>
+        {% if idata.epigraph %}
+        <div style="margin:0 2% 0 0; line-height:16px" align=right><font color="#2d2df6">{{ idata.epigraph.text | safe }}<br>
+            <em>{{ idata.epigraph.source }}</em>
+            {% if idata.epigraph.link %}
+                <small><a href={{ idata.epigraph.link }}>source</a></small>
+            {% endif %}
+            </font>
+        </div>
+        {% endif %}
+        <div style="margin:10px 5px; 0 0" align=right>
+            <small style="background-color:#e1e6f0;margin:5px">{{ idata.date }}</small>
+        </div>
+        <div style="margin:10px 1% 0 0; text-align:justify">
+        {{ idata.intro | rehref | safe}}
+        </div>
+    </div>
+    <ol style="margin:20px 2% 0 -20px">
+    {% for pnt in idata.points|sort(attribute='num') %}
+        {% if pnt.header %}
+        <h3>{{ pnt.header | safe }}</h3>
+        {% endif %}
+        <li style="margin:10px 0 0 0; text-align:justify" itemprop="articleSection">
+            {% if pnt.title %}
+                <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
+            <em>
+                {% if pnt.info_date %}
+                    {{ pnt.info_date }},
+                {% endif %}
+                {% if pnt.info_authors %}
+                    {{ pnt.info_authors }},
+                {% endif %}
+                {% if pnt.info_place%}
+                    {{ pnt.info_place }}
+                {% endif %}
+            </em><br>
+            {% endif %}
+            <p style="text-align:justify">{{ pnt.digest | rehref | safe  }}
+            {% if pnt.info_img %}
+                <div style="height:400px;width:800px;margin:10px 20px 40px 0">
+                    <img src="{{ pnt.info_img }}" hspace=5 vspace=5>
+                    {% if pnt.info_imgSource %}
+                    <p align=right><a href="{{ pnt.info_imgSource }}">מקור</a>
+                </div>
+                    {% else %}
+                </div>
+                {% endif %}
+                {% if pnt.info_imgDesc %}
+                    <br>
+                    {{ pnt.info_imgDesc }}
+                {% endif %}
+            {% endif %}
+            {% if pnt.img_pool %}<br>
+                {% for img in pnt.img_pool %}
+                <div style="height:400px;width:800px;margin:20px 0 20px 0">
+                    <img src="{{ img.info_img }}" hspace=5 vspace=5 width=800>
+                    {% if img.info_imgSource %}
+                        <p align=right><a href="{{ img.info_imgSource }}">מקור</a>
+                </div>
+                {% else %}
+                </div>
+                    {% endif %}
+                    {% if img.info_imgDesc %}
+                        <br>
+                        {{ img.info_imgDesc }}
+                    {% endif %}
+                <br>
+                {% endfor %}
+            {% endif %}
+            {% if pnt.sources_pool %}<br>
+                {% for src in pnt.sources_pool %}
+                    <div>
+                    <a href="{{ src.link }}">{{ src.title }}</a>
+                    <em>
+                        {% if src.info_date %}
+                            {{ src.info_date }},
+                        {% endif %}
+                        {% if src.info_authors %}
+                            {{ src.info_authors }},
+                        {% endif %}
+                        {% if src.info_place%}
+                            {{ src.info_place }}
+                        {% endif %}
+                    </em>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ol>
+    <div style="margin:10px 100px 10px 10px; text-align:justify">
+    {{ idata.summary | rehref | safe  }}
+    {% include "he/bottom_nav_he.html" %}
+    </div>
+    <div style="height:50px; margin:10px 25px 20px 5px;">
+        <div style="float:left">
+            <a href="/intro/{{ idata.namespace }}" class="linknav" style="margin:15px;">מבוא</a>
+            <p>
+            <a href="#top" style="border:0px; width:11px; margin:15px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+        </div>
+        <div style="float:right" align=right>
+            <a href="/chapters/{{ idata.namespace }}" class="linknav" style="margin:15px;">תוכן עניינים</a>
+            <p>
+            <a href="#top" style="border:0px; width:11px; margin:15px; text-decoration:none"><font color="#4d4df6" size=4>↑</font></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

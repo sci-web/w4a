@@ -1,11 +1,10 @@
-
-+    <p style="margin:10px 0 7px 8px"><span style="background:#dfe9f0;color:blue; margin:5px">לפי פרקים</span><br>
-+        {% for ch in chapters %}
-+            {% if ch.I_S_name == title %}
-+            <span style="white-space: nowrap"><div style="display:inline-block; min-width:25px; padding:0 2px 0 12px">{{ loop.index }}.</div>
-+            {{ ch.I_S_name }}</span>
-+            {% else %}
-+            <span style="white-space: nowrap"><div style="display:inline-block; min-width:25px; padding:0 2px 0 12px">{{ loop.index }}. </div>
-+            <a href="/he/content/{{ ch.namespace }}/{{ ch.I_S_codename }}">{{ ch.I_S_name }}</a></span>
-+            {% endif %}
-+        {% endfor %}
+    <p style="margin:10px 0 7px 8px"><span style="background:#dfe9f0;color:blue; margin:5px">לפי פרקים</span><br>
+        {% for ch in chapters %}
+            {% if ch.I_S_name == title %}
+            <span style="white-space: nowrap"><div style="display:inline-block; min-width:25px; padding:0 2px 0 12px">{{ loop.index }}.</div>
+            {{ ch.I_S_name }}</span>
+            {% else %}
+            <span style="white-space: nowrap"><div style="display:inline-block; min-width:25px; padding:0 2px 0 12px">{{ loop.index }}. </div>
+            <a href="/he/content/{{ ch.namespace }}/{{ ch.I_S_codename }}">{{ ch.I_S_name }}</a></span>
+            {% endif %}
+        {% endfor %}

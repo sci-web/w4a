@@ -1,0 +1,13 @@
+{% extends "he/base_he.html" %}
+{% block title %}{{ title }}{% endblock %}
+{% block descr %}{{ idata[0].namespace | title }}: contents{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<a name="top"></a>
+<div style="margin:57px 1% 30px 0px;" align=left>
+    <h1 style="margin:0 0 20px 0">תוכן העניינים</h1>
+{% include "he/chapt_block_he.html" %}
+</div>
+{% endblock %}

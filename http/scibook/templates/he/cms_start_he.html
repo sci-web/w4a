@@ -1,0 +1,46 @@
+{% extends "he/base_he.html" %}
+{% block title %}SciBook research notes :: CMS {% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block content %}
+<div style="margin:50px 20px 30px 10px;" align=left>
+<h1>ערוך את התוכן שלך / שפה: <a href="{{ request.path | replace('/he', '', 1) }}">RU</a> | HE</h1>
+
+{% for ns in namespaces %}
+<h3>בתוכן קיים</h3>
+<b>{{ ns.namespace }}:</b> <a href="/he/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">הוסף פרק</a>
+or <a href="/he/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ערוך מבוא</a>
+<div style="margin:20px 0 0 40px;">
+    {% if chapters and chapters[ ns.namespace ] %}
+    <p>or
+<h3>בחר פרק לעריכה <b>{{ ns.namespace }}</b>:</h3>
+ <div style="display: table;">
+  <div style="display:table-row;">
+    <div style="display:table-cell; width:30px; margin:2px"></div>
+    <div style="display:table-cell; width:300px; margin:2px"><i>chapter</i></div>
+    <div style="display:table-cell; width:200px; margin:2px"><i>added on</i></div>
+    <div style="display:table-cell; width:200px; margin:2px"><i>edited on</i></div>
+    <div style="display:table-cell; width:200px; margin:2px"><i>export</i></div>
+  </div>
+        {% for ch in chapters[ ns.namespace ]  %}
+            {% set lst = ch.split('|') %}
+  <div style="display:table-row;">
+    <div style="display:table-cell; width:30px; margin:2px">{{ loop.index }}.</div>
+    <div style="display:table-cell; width:300px; margin:2px">
+        <a href="/he/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
+    </div>
+    <div style="display:table-cell; width:200px; margin:2px">{{ lst[2] }}</div>
+    <div style="display:table-cell; width:200px; margin:2px">{{ lst[3] }}</div>
+    <div style="display:table-cell; width:200px; margin:2px"><a href="/he/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav">[↑]</a></div>
+  </div>
+        {% endfor %}
+ </div>
+    {% endif %}
+</div>
+{% endfor %}
+<br>or
+<h3>הוסף נושא חדש</h3>
+<a href="/he/editspace/intro:{{ current_user.author }}:0">צור מרחב שמות חדש</a>
+
+{% endblock %}

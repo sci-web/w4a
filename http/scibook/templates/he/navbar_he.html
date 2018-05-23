@@ -1,0 +1,63 @@
+<div class="navbar-default navbar-fixed-top" role="navigation">
+  <div class="topnav">
+    <div class="navbar-header">
+    <a class="navbar-brand" href="/he/" title="SciBook: חיסונים, ניתוח מאמרים מדעיים על חיסונים, עמוד ראשי"><img
+        src="{{ url_for('static', filename='img/SciBoo.gif') }}"></a>
+        <div class="hidden-lg" style="font-size:22px;color:#581AFF;font-weight:bold; line-height:50px; padding: 10px; display:inline; ">
+            <span style="margin:10px">SciBook</span></div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar" style="border: 1px solid #555ce1;" aria-expanded="false" aria-controls="top-navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="top-navbar" style="white-space: nowrap;">
+      <ul class="nav navbar-nav">
+        <li class="visible-lg" style="height:37px;border-right:1px solid #555ce1; margin:5px 0;">&nbsp;</li>
+        <li class="dropdown">
+            <a href="/chapters/vaccines" style="font-size:17px;">חיסונים <span class="caret-m"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="/intro/vaccines">מבוא</a></li>
+          {% for entry in navitems %}
+                <li><a href="/he/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+                    <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
+                    {{ entry.title }}</a>
+                </li>
+          {% endfor %}
+            </ul>
+        </li>
+        </ul>
+        <ul class="nav navbar-nav">
+        <li class="visible-lg" style="font-size:22px;color:#581AFF;font-weight:bold; padding: 10px 15px 0 110px">SciBook</li>
+        <form class="navbar-form" role="search" action="/he/search" method="POST" name="sform" enctype="multipart/form-data">
+        <li class="sbox" style="padding: 0 1px 0 3px">
+            <input type="text" class="form-control" placeholder="חיפוש..." name=search size=10>
+        </li>
+        </form>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" style="width:380px; padding:0 20px">
+            <li style="padding: 10px 0 10px 15px; line-height: 30px;">EN</li>
+            <li class="visible-lg visible-md" style="height:27px;border-right:1px solid #555ce1; margin:10px -5px 10px 5px;">&nbsp;</li>
+            <li><a href="{{ request.path | replace('/he', '', 1) }}">RU</a></li>
+            <li class="visible-lg visible-md" style="width:50px;">&nbsp;</li>
+            {% if current_user.is_authenticated %}
+            <li class="dropdown">
+                <a href="#" style="font-size:17px">Hey <b>{{ current_user.author }}</b>, you're in: <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="/he/profile/{{ current_user.author }}">Profile</a></li>
+                    <li><a href="/he/editspace/{{ current_user.author }}">Edit your materials</a></li>
+                    <li><a href="/logout/">Logout</a></li>
+                </ul>
+            </li>
+        {% else %}
+            <li><a href="/he/contact/">כתבו לנו</a></li>
+            <li><a onClick="javascript:showDiv('lf')" style="cursor:pointer;">Login</a></li>
+        {% endif %}
+        </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div>
+<br>
+{% include 'loginform.html' %}

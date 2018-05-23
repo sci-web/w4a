@@ -37,11 +37,15 @@
         </li>
         </form>
         </ul>
-        <ul class="nav navbar-nav navbar-right" style="width:380px; padding:0 10px">
-            <li><a href="{{ request.path | replace('/', '/en/', 1) }}" style="margin-right:-10px">EN</a></li>
-            <li class="visible-lg visible-md" style="height:27px;border-right:1px solid #555ce1; margin:10px -5px 10px 0;">&nbsp;</li>
-            <li style="padding: 10px 0 10px 15px; line-height: 30px;">RU</li>
-            <li class="visible-lg visible-md" style="width:50px;">&nbsp;</li>
+        <ul class="nav navbar-nav" style="width:35%; padding:0; float:right;white-space: nowrap;">
+            <li class="dropdown">
+            <a href="#" style="padding:8px 0 0 0"><img src="{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
+            <ul class="dropdown-menu" style="min-width: 30px !important;">
+                <li style="padding: 2px 0 2px 20px;"><b>RU</b></li>
+                <li><a href="{{ request.path | replace('/', '/en/', 1) }}" title="English">EN</a></li>
+                <li><a href="{{ request.path | replace('/', '/he/', 1) }}" title="Hebrew">HE</a></li>
+                </ul>
+            </li>
             {% if current_user.is_authenticated %}
             <li class="dropdown">
                 <a href="#" style="font-size:17px">Hey <b>{{ current_user.author }}</b>, you're in: <span class="caret"></span></a>

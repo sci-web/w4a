@@ -13,19 +13,13 @@ from subprocess import call
 from collections import defaultdict, OrderedDict
 from .tools import Tools
 from tidylib import tidy_fragment
-
+from views import tmpl_picker, load_vars
 
 # def extension_ok(filename, ff):
 #     """ return whether file's extension is ok or not"""
 #     return '.' in filename and \
 #            filename.rsplit('.', 1)[1] in app.config[ff]
 
-
-@app.before_request
-def load_vars():
-    g.ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
-    g.location = request.path.split('/')[1]
-    print g.location
 
 
 def packed(val_dict):
@@ -63,7 +57,7 @@ def logout():
 
 @lm.user_loader
 def load_user(email):
-    u = DB().get_a_user(email)
+    u = DB('').get_a_user(email)
     if not u:
         return None
     return Auth(u['email'], u['access'], u['author'])
@@ -71,18 +65,20 @@ def load_user(email):
 
 @app.route('/profile/<author>')
 @app.route('/en/profile/<author>')
+@app.route('/he/profile/<author>')
 @login_required
 def profile(author):
-    tmpl = 'en/profile_en.html' if g.location == "en" else 'profile.html' 
+    tmpl = tmpl_picker('profile') 
     return render_template(tmpl, form=g.form, items=g.items)
 
 
 @app.route('/editspace/<author>')
 @app.route('/en/editspace/<author>')
+@app.route('/he/editspace/<author>')
 @login_required
 def editspace(author):
-    namespaces = DB().get_intros_by_author_en(author) if g.location == "en" else DB().get_intros_by_author(author)
-    spaces = DB().get_spaces_by_author_en(author) if g.location == "en" else DB().get_spaces_by_author(author)
+    namespaces = DB(g.location).get_intros_by_author(author)
+    spaces = DB(g.location).get_spaces_by_author(author)
     data = json.loads(dumps(spaces))
     chapters = defaultdict(list)
     for d in range(0, len(data)):
@@ -94,20 +90,21 @@ def editspace(author):
             e_date = ""
         ch = data[d]["title"] + "|" + data[d]["I_S_codename"] + "|" + c_date + "|" + e_date
         chapters[ns].append(ch)
-    tmpl = 'en/cms_start_en.html' if g.location == "en" else 'cms_start.html' 
+    tmpl = tmpl_picker('cms_start')
     return render_template(tmpl, form=g.form, items=g.items, author=author, namespaces=namespaces, chapters=chapters)
 
 
-@app.route('/en/editspace/intro:<author>:<namespace>', methods=['GET', 'POST'])
 @app.route('/editspace/intro:<author>:<namespace>', methods=['GET', 'POST'])
+@app.route('/en/editspace/intro:<author>:<namespace>', methods=['GET', 'POST'])
+@app.route('/he/editspace/intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
 def edit_intro(author, namespace):
     if namespace == "0":
-        tmpl = 'en/form_intro_en.html' if g.location == "en" else 'form_intro.html'                 
+        tmpl = tmpl_picker('form_intro')
         return render_template(tmpl, form=g.form)
     else:
-        i_data = DB().get_an_intro_en(namespace) if g.location == "en" else DB().get_an_intro(namespace)
-        tmpl = 'en/form_intro_edit_en.html' if g.location == "en" else 'form_intro_edit.html' 
+        i_data = DB(g.location).get_an_intro(namespace)
+        tmpl = tmpl_picker('form_intro_edit')
         return render_template(tmpl, form=g.form, items=i_data)
 
 
@@ -137,9 +134,9 @@ def nest_value_match_assign(match, field, key, value, dhash):
 
 @app.route('/editspace/save_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @app.route('/en/editspace/save_intro:<author>:<namespace>', methods=['GET', 'POST'])
+@app.route('/he/editspace/save_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
 def save_intro(author, namespace):
-    # sp_data = DB().get_intros_by_namespace(namespace)
     if namespace == "0":
         sform = newIntro(request.values)
     else:
@@ -164,7 +161,7 @@ def save_intro(author, namespace):
                     # print key,":",value
                     if key == "namespace" and namespace == "0": 
                         in_data["namespace"] = value              
-                        i_data = DB().get_an_intro(in_data["namespace"])  # before update/insert
+                        i_data = DB(g.location).get_an_intro(in_data["namespace"])  # before update/insert
                         if i_data and namespace == 0:
                             error = "This namespace:" + in_data["namespace"] + " already exists!"
                             break
@@ -221,9 +218,9 @@ def save_intro(author, namespace):
                 if namespace == "0":
                     in_data["date"] = datetime.now()
                     in_data["analyst"] = author
-                    DB().insert_an_intro_en(in_data) if g.location == "en" else DB().insert_an_intro(in_data)
+                    DB(g.location).insert_an_intro_en(in_data)
                 else:
-                    DB().update_an_intro_en(author, namespace, in_data) if g.location == "en" else DB().update_an_intro(author, namespace, in_data)
+                    DB(g.location).update_an_intro(author, namespace, in_data)
             else:
                 flash(error, category='error')    
         else:
@@ -236,8 +233,8 @@ def save_intro(author, namespace):
         error = "Something wrong with the form or authentification!"
         flash(error, category='error')                
     if namespace != "0":
-        i_data = DB().get_an_intro_en(namespace) if g.location == "en" else DB().get_an_intro(namespace) # after update/insert
-        tmpl = 'en/form_intro_edit_en.html' if g.location == "en" else 'form_intro_edit.html'         
+        i_data = DB(g.location).get_an_intro(namespace) # after update/insert
+        tmpl = tmpl_picker('form_intro_edit')         
         return render_template(tmpl, form=g.form, items=i_data)
     else:
         if error == 0:
@@ -247,26 +244,28 @@ def save_intro(author, namespace):
                 return redirect("/editspace/intro:" + author + ":" + new_namespace + "")                
         else:
             i_data = in_data
-            itmpl = 'en/form_intro_en.html' if g.location == "en" else 'form_intro.html' 
+            itmpl = tmpl_picker('form_intro') 
             return render_template(itmpl, form=g.form, items=i_data)
 
 
 @app.route('/editspace/chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @app.route('/en/editspace/chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
+@app.route('/he/editspace/chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @login_required
 def edit_chapter(author, namespace, chapter):
     if chapter == "0":
-        tmpl = 'en/form_chapter_en.html' if g.location == "en" else 'form_chapter.html'
+        tmpl = tmpl_picker('form_chapter')
         return render_template(tmpl, form=g.form, namespace=namespace)
     else:
-        i_data = DB().get_a_chapter_en(namespace, chapter) if g.location == "en" else DB().get_a_chapter(namespace, chapter)
-        itmpl = 'en/form_chapter_edit_en.html' if g.location == "en" else 'form_chapter_edit.html' 
+        i_data = DB(g.location).get_a_chapter(namespace, chapter)
+        itmpl = tmpl_picker('form_chapter_edit')
         return render_template(itmpl, form=g.form, items=i_data, namespace=namespace, chapter=chapter)
 
 
 
 @app.route('/editspace/save_chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @app.route('/en/editspace/save_chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
+@app.route('/he/editspace/save_chapter:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @login_required
 def save_chapter(author, namespace, chapter):
     if chapter == "0":
@@ -300,7 +299,7 @@ def save_chapter(author, namespace, chapter):
                         in_data["namespace"] = namespace
                         in_data["I_S_codename"] = value
 
-                        i_data = DB().get_a_chapter(namespace, value)  # before update/insert
+                        i_data = DB(g.location).get_a_chapter(namespace, value)  # before update/insert
                         if i_data and chapter == 0:
                             error = "This chapter:" + in_data["I_S_codename"] + " already exists!"
                             break
@@ -409,9 +408,9 @@ def save_chapter(author, namespace, chapter):
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
 
                 if chapter == "0":
-                    DB().insert_a_chapter_en(in_data) if g.location == "en" else DB().insert_a_chapter(in_data)
+                    DB(g.location).insert_a_chapter(in_data)
                 else:
-                    DB().update_a_chapter_en(author, namespace, chapter, in_data) if g.location == "en" else DB().update_a_chapter(author, namespace, chapter, in_data)
+                    DB(g.location).update_a_chapter(author, namespace, chapter, in_data)
             else:
                 flash(error, category='error')    
         else:
@@ -424,8 +423,8 @@ def save_chapter(author, namespace, chapter):
         error = "Something wrong with a form or authentification!"
         flash(error, category='error')                
     if chapter != "0":
-        i_data = DB().get_a_chapter_en(namespace, chapter) if g.location == "en" else DB().get_a_chapter(namespace, chapter)  # after update/insert
-        tmpl = 'en/form_chapter_edit_en.html' if g.location == "en" else 'form_chapter_edit.html' 
+        i_data = DB(g.location).get_a_chapter(namespace, chapter) # after update/insert
+        tmpl = tmpl_picker('form_chapter_edit')
         return render_template(tmpl, form=g.form, items=i_data)
     else:
         if error == 0:
@@ -435,41 +434,45 @@ def save_chapter(author, namespace, chapter):
                 return redirect("/editspace/chapter:" + author + ":" + namespace + ":" + new_chapter)
         else:
             i_data = in_data
-            tmpl = 'en/form_chapter_en.html' if g.location == "en" else 'form_chapter.html' 
+            tmpl = tmpl_picker('form_chapter') 
             return render_template(tmpl, form=g.form, items=i_data, namespace=namespace)
 
 
 @app.route('/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])
 @app.route('/en/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])
+@app.route('/he/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])
 @login_required
 def del_point(author, namespace, chapter, point):
-    DB().del_point_from_a_chapter_en(author, namespace, chapter, point) if g.location == "en" else DB().del_point_from_a_chapter(author, namespace, chapter, point)
+    DB(g.location).del_point_from_a_chapter(author, namespace, chapter, point)
     return jsonify( {'data': "point <b>" + point + "</b> is deleted!"} )
 
 
 @app.route('/editspace/del_source:<author>:<namespace>:<chapter>:<point>:<source>', methods=['GET', 'POST'])
 @app.route('/en/editspace/del_source:<author>:<namespace>:<chapter>:<point>:<source>', methods=['GET', 'POST'])
+@app.route('/he/editspace/del_source:<author>:<namespace>:<chapter>:<point>:<source>', methods=['GET', 'POST'])
 @login_required
 def del_sources_pool(author, namespace, chapter, point, source):
-    DB().del_srcpool_from_a_chapter_en(author, namespace, chapter, point, source) if g.location == "en" else DB().del_srcpool_from_a_chapter(author, namespace, chapter, point, source)
+    DB(g.location).del_srcpool_from_a_chapter(author, namespace, chapter, point, source)
     return jsonify( {'data': "source <b>" + source + "</b> from <b>" + point + "</b> point is deleted!"} )
 
 
 @app.route('/editspace/del_img:<author>:<namespace>:<chapter>:<point>:<img>', methods=['GET', 'POST'])
 @app.route('/en/editspace/del_img:<author>:<namespace>:<chapter>:<point>:<img>', methods=['GET', 'POST'])
+@app.route('/he/editspace/del_img:<author>:<namespace>:<chapter>:<point>:<img>', methods=['GET', 'POST'])
 @login_required
 def del_img_pool(author, namespace, chapter, point, img):
-    DB().del_imgpool_from_a_chapter_en(author, namespace, chapter, point, img) if g.location == "en" else DB().del_imgpool_from_a_chapter(author, namespace, chapter, point, img)
+    DB(g.location).del_imgpool_from_a_chapter(author, namespace, chapter, point, img)
     return jsonify( {'data': "image pool <b>" + img +  "</b> from <b>" + point + "</b> point is deleted!"} )
 
 
 @app.route('/editspace/export_json:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @app.route('/en/editspace/export_json:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
+@app.route('/he/editspace/export_json:<author>:<namespace>:<chapter>', methods=['GET', 'POST'])
 @login_required
 def export_json(author, namespace, chapter):
     data = Tools().exportJson(author, namespace, chapter, g.location)
     # print data
-    json = namespace + "_" + chapter + "_en.json" if g.location == "en" else namespace + "_" + chapter + ".json"
+    json = namespace + "_" + chapter + "_" + g.location + ".json"
     response = make_response(data)
     response.headers["Content-Disposition"] = "attachment; filename=" + json
     return response
@@ -477,11 +480,12 @@ def export_json(author, namespace, chapter):
 
 @app.route('/editspace/export_json_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @app.route('/en/editspace/export_json_intro:<author>:<namespace>', methods=['GET', 'POST'])
+@app.route('/he/editspace/export_json_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
 def export_json_intro(author, namespace):
     data = Tools().exportJson_intro(author, namespace, g.location)
     # print data
-    json = namespace + "_intro_en.json"  if g.location == "en" else namespace + "_intro.json"
+    json = namespace + "_intro_" + g.location + ".json"
     response = make_response(data)
     response.headers["Content-Disposition"] = "attachment; filename=" + json
     return response

@@ -3,11 +3,10 @@ from flask_login import LoginManager
 from flask_session import Session
 
 app = Flask(__name__)
-
-app.config.from_object('config')
+app.config['DEBUG'] = True
 app.config['TRAP_HTTP_EXCEPTIONS'] = True
 app.config['PROPAGATE_EXCEPTIONS'] = True
-# app.register_error_handler()
+app.config.from_object('config')
 
 session = Session(app)
 session.sid = {}

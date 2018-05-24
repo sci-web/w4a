@@ -13,7 +13,7 @@
     </div>
 <form action="/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
-<h1>Добавление главы <b>{{ items.I_S_codename }}</b> в отдел <b>{{ items.namespace }}</b></h1>
+<h1>Редактирование главы <b>{{ items.I_S_codename }}</b> (<b>{{ items.title }}</b>) в отдел <b>{{ items.namespace }}</b></h1>
 <small>Hint: For saved points you can rearrange them with the help of «Swap with point below» link.</small>
 <div align=right><a href="/editspace/export_json:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" class="pointer linknav">Export Json</a></div>
     <div style="height:25px; width:1200px;position:fixed">
@@ -50,7 +50,7 @@
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Epigraph source: </div>
         <div style="float:right; width:830px" class="form-group" align=right>
-            <input type="text" name=ep_source size=65
+            <input type="text" name=ep_source size=50
             value="{% if items.epigraph and items.epigraph.source %}{{ items.epigraph.source }}{% endif %}">
         </div>
     </div>
@@ -137,8 +137,8 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointTags_{{ p_num|join }} size=95
-                        value="{{ p.I_S_codenames|join(', ') }}">
+                    <input type="text" name=pointTags_{{ p_num|join }} size=50
+                        value="{{ p.I_S_codenames|join(', ') }}"> (only latin letters, no spaces)
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
@@ -496,7 +496,7 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointTags_{{ nID }} size=95>
+                    <input type="text" name=pointTags_{{ nID }} size=50> (only latin letters, no spaces)
                 </div>
             </div>
             <div style="display:table-row;width:1000px">

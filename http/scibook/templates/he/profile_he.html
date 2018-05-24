@@ -8,7 +8,7 @@
 
 <h2>Here is your profile, <b>{{ current_user.author }}</b></h2>
 
-<form action="/profile/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
+<form action="/he/profile/{{ namespace }}" method="POST" name="form" enctype="multipart/form-data">
 {{ form.hidden_tag() }}
 {{ form.from_url }}
 <!--<h3>החלף סיסמא</h3>
@@ -28,6 +28,6 @@
 </form>
 <br>
 
-<a href="/editspace/{{ current_user.author }}">Your materials</a>
+<a href="/he/editspace/{{ current_user.author }}">Your materials</a>
 </div>
 {% endblock %}

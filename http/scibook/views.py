@@ -31,7 +31,7 @@ def internal_server_error(error):
 
 @app.errorhandler(Exception)
 def exception_handler(error):
-    return "!!!!"  + repr(error)
+    return render_template('en/404_en.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
 
 class c:
     pass
@@ -98,7 +98,6 @@ def tmpl_picker(name):
     if g.location == "en":
         return 'en/' + name + '_en.html'
     elif g.location == "he":
-        print 'he/' + name + '_he.html'
         return 'he/' + name + '_he.html'
     else:
         return name + '.html'
@@ -112,6 +111,7 @@ def tmpl_picker(name):
 def index():
     if (request.referrer == None and g.location == "en" and g.path != "en" and g.path != "ru"):
         return redirect("/en")
+
     i_data = DB(g.location).get_intros()
     tmpl = tmpl_picker('index')
     return render_template(tmpl, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
@@ -122,9 +122,7 @@ def index():
 @app.route('/he/content/<namespace>/<codename>')
 @app.route('/content/<namespace>/<codename>')
 def show_item(namespace, codename):
-    print g.location
     i_data = DB(g.location).get_a_space(namespace, codename)
-    print i_data
     data = json.loads(dumps(i_data))
     try:
         title = data["title"]

@@ -336,12 +336,14 @@ def save_chapter(author, namespace, chapter):
                         p, r = key.split("_")
                         if (value != ""):                            
                             lst = value.split(",")
+                            c_lst = []
                             for e in lst:
-                                e.replace(" ", "")                   
+                                c = e.replace(" ", "")
+                                c_lst.append(c)                   
                             try:
-                                in_pnts[r].update({"I_S_codenames": lst})
+                                in_pnts[r].update({"I_S_codenames": c_lst})
                             except:
-                                in_pnts[r] = {"I_S_codenames": lst}
+                                in_pnts[r] = {"I_S_codenames": c_lst}
                                                                                                   
                     in_imgs_pool = nest_value_match_assign("imgDescr", "info_imgDesc", key, value, in_imgs_pool) 
                     in_imgs_pool = nest_value_match_assign("imgLink", "info_img", key, value, in_imgs_pool) 
@@ -436,6 +438,49 @@ def save_chapter(author, namespace, chapter):
             i_data = in_data
             tmpl = tmpl_picker('form_chapter') 
             return render_template(tmpl, form=g.form, items=i_data, namespace=namespace)
+
+
+@app.route('/editspace/tags:<author>:<action>', methods=['GET', 'POST'])
+@app.route('/en/editspace/tags:<author>:<action>', methods=['GET', 'POST'])
+@app.route('/he/editspace/tags:<author>:<action>', methods=['GET', 'POST'])
+@login_required
+def edit_tags(author, action):
+    itmpl = tmpl_picker('form_tags')
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo)
+
+
+@app.route('/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
+@app.route('/en/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
+@app.route('/he/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
+@login_required
+def save_tags(author, action):
+    error = 0
+    if Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+        f = request.form
+        if f:
+            datadic = {}
+            for key in f.keys():
+                _id = key.rsplit('_', 1)[1]
+                k = key.rsplit('_', 1)[0]
+                if len(_id) == 24:
+                    try:
+                        datadic[_id].update({k: f.get(key)})
+                    except:
+                        datadic[_id] = {k: f.get(key)} 
+            for _id, data in datadic.iteritems():
+                DB(g.location).update_an_object(_id, data)
+        else:
+            error == 1
+    else:
+        error = "Something wrong with a form or authentification!"
+        flash(error, category='error')
+    if error == 0:
+        flash("Data updated successfully!", category='info')
+    else:
+        error = "Something wrong with a form or authentification!"
+        flash(error, category='error') 
+    itmpl = tmpl_picker('form_tags')
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo)
 
 
 @app.route('/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])

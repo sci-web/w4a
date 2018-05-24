@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 from scibook import app
 import re
+from bson.objectid import ObjectId
 
 
 class DB(object):
@@ -73,7 +74,14 @@ class DB(object):
         return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}}, {"I_S_codename": 1, "I_S_name_en": 1, "I_S_name": 1}).sort(key, 1)
 
     def get_objects_by_key_sorted_filter_yes(self, val, key):
-        return app.config['OBJECTS'].find({"I_S_type_this": val}, {"I_S_codename": 1, "I_S_name": 1, "I_S_name_en": 1}).sort(key, 1)
+        return app.config['OBJECTS'].find({"I_S_type_this": val}).sort(key, 1)
+
+    def get_an_objects(self):
+        return app.config['OBJECTS'].find({"I_S_codename": codename})
+
+    def update_an_object(self,_id, data):
+        # print _id
+        app.config['OBJECTS'].update_one({"_id": ObjectId(_id)}, {'$set': data})
 
     def get_intros(self):
         return app.config[self.intros].find({"published":1}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1})

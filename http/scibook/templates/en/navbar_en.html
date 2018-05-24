@@ -43,7 +43,7 @@
             <ul class="dropdown-menu" style="min-width: 30px !important;">
                 <li><a href="{{ request.path | replace('/en', '', 1) }}" title="Russian">RU</a></li>
                 <li style="padding: 2px 0 2px 20px;"><b>EN</b></li>
-                <li><a href="{{ request.path | replace('/en', '/he', 1) }}" title="Hebrew">HE</a></li>
+<!--                 <li><a href="{{ request.path | replace('/en', '/he', 1) }}" title="Hebrew">HE</a></li> -->
                 </ul>
             </li>
             {% if current_user.is_authenticated %}

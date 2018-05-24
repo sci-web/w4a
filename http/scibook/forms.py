@@ -1,5 +1,5 @@
 from scibook import app
-from flask_wtf import Form
+from flask_wtf import FlaskForm
 from flask import request, flash
 from flask_admin.form.upload import FileUploadField
 from flask_login import login_user, logout_user, login_required, current_user
@@ -14,7 +14,7 @@ def prefix_name(obj, file_data):
     parts = op.splitext(file_data.filename)
     return secure_filename('file-%s%s' % parts)
 
-class searchForm(Form):
+class searchForm(FlaskForm):
     search = StringField('search')
 
 def makeform():
@@ -31,27 +31,27 @@ def makeform():
     return form
 
 
-class LoginForm(Form):
+class LoginForm(FlaskForm):
     """Login form to access writing and settings pages"""
     email = StringField('Email', validators=[DataRequired()])
     password = PasswordField('Password', validators=[DataRequired()])
     from_url = HiddenField('', validators=[DataRequired()])
 
-class saveIntro(Form):
+class saveIntro(FlaskForm):
 	subject = StringField('Subject', validators=[DataRequired()])
 
-class newIntro(Form):
+class newIntro(FlaskForm):
 	subject = StringField('Subject', validators=[DataRequired()])
 	namespace = StringField('Namespace', validators=[DataRequired()])
 
-class saveChapter(Form):
+class saveChapter(FlaskForm):
 	title = StringField('Title', validators=[DataRequired()])
 
-class newChapter(Form):
+class newChapter(FlaskForm):
 	title = StringField('Title', validators=[DataRequired()])
 	chapter = StringField('Namespace', validators=[DataRequired()])
 
-class ContactForm(Form):
+class ContactForm(FlaskForm):
 	subject = StringField('Subject', validators=[DataRequired()])
 	email = StringField('Email', validators=[DataRequired()])
 	msg = TextAreaField('Message', validators=[DataRequired()])

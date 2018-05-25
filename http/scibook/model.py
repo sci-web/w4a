@@ -49,8 +49,6 @@ class DB(object):
                             ])
 
     def get_a_space(self, namespace, key):
-        print self.spaces
-        print namespace, key
         return app.config[self.spaces].find_one({"namespace": namespace, "I_S_codename": key})
 
     def get_points_by_codename(self, codename):
@@ -76,11 +74,19 @@ class DB(object):
     def get_objects_by_key_sorted_filter_yes(self, val, key):
         return app.config['OBJECTS'].find({"I_S_type_this": val}).sort(key, 1)
 
-    def get_an_objects(self):
+    def get_an_object(self, codename):
         return app.config['OBJECTS'].find({"I_S_codename": codename})
 
+    def search_objects(self, q):
+        return app.config['OBJECTS'].find({"I_S_codename": {'$regex': "^" + q, '$options': 'i' }, "I_S_type_this": {'$ne': "geo"}}, {"I_S_codename": 1})  # case insensitive
+
+    def search_objects_geo(self, q):
+        return app.config['OBJECTS'].find({"I_S_codename": {'$regex': "^" + q, '$options': 'i' }, "I_S_type_this": "geo"}, {"I_S_codename": 1})  # case insensitive
+
+    def insert_an_object(self, data):
+        app.config['OBJECTS'].insert_one(data)
+
     def update_an_object(self,_id, data):
-        # print _id
         app.config['OBJECTS'].update_one({"_id": ObjectId(_id)}, {'$set': data})
 
     def get_intros(self):

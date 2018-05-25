@@ -14,7 +14,7 @@ from collections import defaultdict, OrderedDict
 from .tools import Tools
 from tidylib import tidy_fragment
 from views import tmpl_picker, load_vars
-
+from flask import Markup
 # def extension_ok(filename, ff):
 #     """ return whether file's extension is ok or not"""
 #     return '.' in filename and \
@@ -218,7 +218,7 @@ def save_intro(author, namespace):
                 if namespace == "0":
                     in_data["date"] = datetime.now()
                     in_data["analyst"] = author
-                    DB(g.location).insert_an_intro_en(in_data)
+                    DB(g.location).insert_an_intro(in_data)
                 else:
                     DB(g.location).update_an_intro(author, namespace, in_data)
             else:
@@ -280,6 +280,7 @@ def save_chapter(author, namespace, chapter):
         in_data["editdate"] = datetime.now()
     in_data["points"] = []
     if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+        f_msg = ""
         if sform.data:
             f = request.form
             points = {}
@@ -344,7 +345,7 @@ def save_chapter(author, namespace, chapter):
                                 in_pnts[r].update({"I_S_codenames": c_lst})
                             except:
                                 in_pnts[r] = {"I_S_codenames": c_lst}
-                                                                                                  
+
                     in_imgs_pool = nest_value_match_assign("imgDescr", "info_imgDesc", key, value, in_imgs_pool) 
                     in_imgs_pool = nest_value_match_assign("imgLink", "info_img", key, value, in_imgs_pool) 
                     in_imgs_pool = nest_value_match_assign("imgSrcURL", "info_imgSource", key, value, in_imgs_pool) 
@@ -357,8 +358,13 @@ def save_chapter(author, namespace, chapter):
                     in_sources_pool = nest_value_match_assign("srcAuth", "info_authors", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcPlace", "info_place", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcType", "info_type", key, value, in_sources_pool)
+            all_tags = set()
             if error == 0:                
                 for r in in_pnts.keys():
+                    try:
+                        all_tags.update(in_pnts[r]["I_S_codenames"])
+                    except:
+                        pass
                     imgs_pool = []
                     is_i_pool = 1
                     try:
@@ -414,11 +420,18 @@ def save_chapter(author, namespace, chapter):
                 else:
                     DB(g.location).update_a_chapter(author, namespace, chapter, in_data)
             else:
-                flash(error, category='error')    
+                flash(error, category='error')
+            # print all_tags
+            for tag in list(all_tags):
+                o = DB(g.location).get_an_object(str(tag))
+                # print tag, list(o)
+                if len(list(o)) == 0:
+                    DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": ""})
+                    f_msg = "<b>" + tag + "</b> is a new tag! Mind to edit the tag list!<br>"
         else:
             error = "Something wrong with data update!"
         if error == 0:
-            flash("Data updated successfully!", category='info')
+            flash(Markup(f_msg + "Data updated successfully!"), category='info')
         else:
             flash(error, category='error')
     else:
@@ -446,7 +459,9 @@ def save_chapter(author, namespace, chapter):
 @login_required
 def edit_tags(author, action):
     itmpl = tmpl_picker('form_tags')
-    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo)
+    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_name")
+    # print list(new_objects)
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects)
 
 
 @app.route('/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
@@ -480,7 +495,8 @@ def save_tags(author, action):
         error = "Something wrong with a form or authentification!"
         flash(error, category='error') 
     itmpl = tmpl_picker('form_tags')
-    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo)
+    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_name")
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects)
 
 
 @app.route('/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])
@@ -534,6 +550,30 @@ def export_json_intro(author, namespace):
     response = make_response(data)
     response.headers["Content-Disposition"] = "attachment; filename=" + json
     return response
+
+
+@app.route('/editspace/autocomplete', methods=['GET', 'POST'])
+@login_required
+def autocomplete():
+    search = request.args.get('query')
+    data = DB(g.location).search_objects(str(search))
+    results = json.loads(dumps(data))
+    suggestions = []
+    for entry in results:
+        suggestions.append(entry["I_S_codename"])
+    return jsonify({"suggestions": suggestions})
+
+
+@app.route('/editspace/autocomplete_geo', methods=['GET', 'POST'])
+@login_required
+def autocomplete_geo():
+    search = request.args.get('query')
+    data = DB(g.location).search_objects_geo(str(search))
+    results = json.loads(dumps(data))
+    suggestions = []
+    for entry in results:
+        suggestions.append(entry["I_S_codename"])
+    return jsonify({"suggestions": suggestions})
 
 
 @app.context_processor

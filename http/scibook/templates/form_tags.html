@@ -21,51 +21,14 @@
             <li><a data-toggle="tab" href="#drugs">Препараты</a></li>
             <li><a data-toggle="tab" href="#conds">Условия</a></li>
             <li><a data-toggle="tab" href="#geo">Гео</a></li>
+            <li><a data-toggle="tab" href="#new">Непривязанные</a></li>
         </ul>
         <div style="border-top:1px solid #DCDBFF; margin-top:-1px;"> </div>
         <div class="tab-content tab-bigcol" align=left style="padding:0 5px 0 10px;">
             <div id=ill class="tab-pane fade in active" style=margin-top:1px>
     {% set p_num = [1] %}
     {% for p in objects %}
-    <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
-        <div style="height:100%;" id="p_{{ p._id }}">
-            <div style="display:table-row; height:25px;"><b>Tag #{{ p_num|join }}</b>:</div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_codename:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_codename_{{ p._id }} size=20 value="{{ p.I_S_codename }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_{{ p._id }} size=20 value="{{ p.I_S_type }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type_this:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_this_{{ p._id }} size=30 value="{{ p.I_S_type_this }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_{{ p._id }} size=30 value="{{ p.I_S_name }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_en:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="{{ p.I_S_name_en }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_he:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_he_{{ p._id }} size=30 value="{{ p.I_S_name_he }}">
-                </div>
-            </div>
+        {% include "edit_tags.html" %}
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
@@ -73,45 +36,7 @@
             <div id="drugs" class="tab-pane fade" style=margin-top:1px>
     {% set p_num = [1] %}
     {% for p in drugs %}
-    <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
-        <div style="height:100%;" id="p_{{ p._id }}">
-            <div style="display:table-row; height:25px;"><b>Tag #{{ p_num|join }}</b>:</div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_codename:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_codename_{{ p._id }} size=20 value="{{ p.I_S_codename }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_{{ p._id }} size=20 value="{{ p.I_S_type }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type_this:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_this_{{ p._id }} size=30 value="{{ p.I_S_type_this }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_{{ p._id }} size=30 value="{{ p.I_S_name }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_en:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="{{ p.I_S_name_en }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_he:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_he_{{ p._id }} size=30 value="{{ p.I_S_name_he }}">
-                </div>
-            </div>
+        {% include "edit_tags.html" %}
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
@@ -119,45 +44,7 @@
             <div id="conds" class="tab-pane fade" style=margin-top:1px>
     {% set p_num = [1] %}
     {% for p in conditions %}
-    <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
-        <div style="height:100%;" id="p_{{ p._id }}">
-            <div style="display:table-row; height:25px;"><b>Tag #{{ p_num|join }}</b>:</div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_codename:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_codename_{{ p._id }} size=20 value="{{ p.I_S_codename }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_{{ p._id }} size=20 value="{{ p.I_S_type }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type_this:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_this_{{ p._id }} size=30 value="{{ p.I_S_type_this }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_{{ p._id }} size=30 value="{{ p.I_S_name }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_en:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="{{ p.I_S_name_en }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_he:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_he_{{ p._id }} size=30 value="{{ p.I_S_name_he }}">
-                </div>
-            </div>
+        {% include "edit_tags.html" %}
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
@@ -165,45 +52,18 @@
             <div id="geo" class="tab-pane fade" style=margin-top:1px>
     {% set p_num = [1] %}
     {% for p in geo_objects %}
-    <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
-        <div style="height:100%;" id="p_{{ p._id }}">
-            <div style="display:table-row; height:25px;"><b>Tag #{{ p_num|join }}</b>:</div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_codename:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_codename_{{ p._id }} size=20 value="{{ p.I_S_codename }}">
-                </div>
+        {% include "edit_tags.html" %}
+    </div>
+    {% if p_num.append(p_num.pop() + 1) %}{% endif %}
+    {% endfor %}
             </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_{{ p._id }} size=20 value="{{ p.I_S_type }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_type_this:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_type_this_{{ p._id }} size=30 value="{{ p.I_S_type_this }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_{{ p._id }} size=30 value="{{ p.I_S_name }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_en:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="{{ p.I_S_name_en }}">
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">I_S_name_he:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=I_S_name_he_{{ p._id }} size=30 value="{{ p.I_S_name_he }}">
-                </div>
-            </div>
+            <div id="new" class="tab-pane fade" style=margin-top:1px>
+    {% set p_num = [1] %}
+    {% for p in new_objects %}
+        <b>привязка:</b>
+        для I_S_type_this выбрать 1 из 4: disease, drug, condition, geo<br>
+        и перевести для поля I_S_name_*<br>
+        {% include "edit_tags.html" %}
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
@@ -221,88 +81,4 @@
     </div>
 </form>
 </div>
-{% raw %}
-<script id="pnt_tmpl" type="x-tmpl-mustache">
-    <div style="height:100%;" id="pnt_{{ rnum }}">
-    <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
-         <div style="display:cell;margin:-20px 0 0 1080px;12px; float:right; position:absolute" id=pcross>
-            <a onClick = "javascript:RemoveOneDiv('#pnt_{{ rnum }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
-         </div>
-             <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">paper's ID (pubmed/doi/PMC):</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointPID_{{ nID }} size=20>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">paper's date:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointPdate_{{ nID }} size=20>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">paper's authors:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointPauths_{{ nID }} size=30>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">publication place (journal/channel):</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointPub_{{ nID }} size=30>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">geo location:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointGeo_{{ nID }} size=30>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">tags:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointTags_{{ nID }} size=30>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">image:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointImage_{{ nID }} size=30>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">image source: (link)</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointIsource_{{ nID }} size=30>
-                </div>
-            </div>
-            <div style="display:table-row; height:25px;">
-                <div style="float:left;width:250px" class="form-group">image description:</div>
-                <div style="float:right;" class="form-group">
-                    <input type="text" name=pointIdescr_{{ nID }} size=30>
-                </div>
-            </div>
-        </div>
-</script>
-<script id="swap_tmpl" type="x-tmpl-mustache">
-<input type="hidden" name=pointNewID_{{ curId }} size=2 value="{{ newId }}">
-</script>
-{% endraw %}
-<script>
-function loadTmpl(thtml, target, div, cnt, id, rcnt) {
-    a2 = cnt // appeded to this item
-    if (rcnt == 0 || id == 'pcross') {
-        rcnt = $("div[id^=pnt_]").length + 1;
-        cnt = 0
-    }
-    if (id != 'pcross') {
-        $( div ).remove()
-    }
-    cnt += 1;
-    template = $(thtml).html();
-    Mustache.parse(template);
-    nID = a2 + rcnt/1000;
-    $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt, a2: a2, nID: nID}));
-}
-</script>
 {% endblock %}

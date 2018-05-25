@@ -4,21 +4,15 @@
 <title>{% block title %}{% endblock %}</title>
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/theme.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-select.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core-dataTables.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='js/datatables.css') }}"/>
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <script type=text/javascript src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
+    <script type=text/javascript src="{{ url_for('static', filename='js/jquery.autocomplete.min.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/dataTables.searchHighlight.min.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/show-hide.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/validator.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/fileinput.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/fileinput_locale_es.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
     <script type=text/javascript src="{{ url_for('static', filename='js/mustache.min.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="{% block descr %}{% endblock %}">
@@ -28,9 +22,9 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-115629674-1');
 </script>
+
 </head>
 <style>
 

@@ -4,6 +4,14 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #581AFF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+</style>
 <div style="margin:60px 20px 30px 50px; width:1100px;" align=left>
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 1100px;position:fixed">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
@@ -131,15 +139,27 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">geo location:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointGeo_{{ p_num|join }} size=95 value="{{ p.info_geo }}">
+                    <input type="text" name=pointGeo_{{ p_num|join }} size=50 value="{{ p.info_geo }}" id=geo{{ p_num|join }}>
+                     (only latin letters, no spaces)
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
                     <input type="text" name=pointTags_{{ p_num|join }} size=50
-                        value="{{ p.I_S_codenames|join(', ') }}"> (only latin letters, no spaces)
+                        value="{{ p.I_S_codenames|join(', ') }}" id=tag{{ p_num|join }}> (only latin letters, no spaces)
                 </div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#geo{{ p_num|join }}").autocomplete({
+        serviceUrl: '/editspace/autocomplete_geo'
+    });
+    $("#tag{{ p_num|join }}").autocomplete({
+        serviceUrl: '/editspace/autocomplete',
+        delimiter: ','
+    });
+});
+</script>
             </div>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">image (src link):</div>
@@ -496,7 +516,7 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointTags_{{ nID }} size=50> (only latin letters, no spaces)
+                    <input type="text" name=pointTags_{{ nID }} size=50 id=tag> (only latin letters, no spaces)
                 </div>
             </div>
             <div style="display:table-row;width:1000px">

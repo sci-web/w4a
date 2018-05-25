@@ -29,12 +29,10 @@ def internal_server_error(error):
     return render_template('500.html'), 500
 
 
-@app.errorhandler(Exception)
-def exception_handler(error):
-    return render_template('en/404_en.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
+# @app.errorhandler(Exception)
+# def exception_handler(error):
+#     return render_template('en/404_en.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
 
-class c:
-    pass
 
 @app.before_request
 def load_vars():

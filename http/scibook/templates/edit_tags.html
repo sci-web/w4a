@@ -1,0 +1,47 @@
+    <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
+        <div style="height:100%;" id="p_{{ p._id }}">
+            <div style="display:table-row; height:25px;"><b>Tag #{{ p_num|join }}</b>:</div>
+            <div style="display:table-row; height:25px;">
+                <div style="float:left;width:250px" class="form-group">I_S_codename:</div>
+                <div style="float:right;" class="form-group">
+                    <input type="text" name=I_S_codename_{{ p._id }} size=20 value="{{ p.I_S_codename }}">
+                </div>
+            </div>
+            <div style="display:table-row; height:25px;">
+                <div style="float:left;width:250px" class="form-group">I_S_type:</div>
+                <div style="float:right;" class="form-group">
+                    <input type="text" name=I_S_type_{{ p._id }} size=20 value="{{ p.I_S_type }}">
+                </div>
+            </div>
+            <div style="display:table-row; height:25px;">
+                <div style="float:left;width:250px" class="form-group">I_S_type_this:</div>
+                <div style="float:right;" class="form-group">
+                    <input type="text" name=I_S_type_this_{{ p._id }} size=30 value="{{ p.I_S_type_this }}">
+                </div>
+            </div>
+            <div style="display:table-row; height:25px;">
+                <div style="float:left;width:250px" class="form-group">I_S_name:</div>
+                <div style="float:right;" class="form-group">
+                    <input type="text" name=I_S_name_{{ p._id }} size=30 value="{{ p.I_S_name }}">
+                </div>
+            </div>
+            <div style="display:table-row; height:25px;">
+                <div style="float:left;width:250px" class="form-group">I_S_name_en:</div>
+                <div style="float:right;" class="form-group">
+                {% if p.I_S_name_en %}
+                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="{{ p.I_S_name_en }}">
+                {% else %}
+                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="">
+                {% endif %}
+                </div>
+            </div>
+            <div style="display:table-row; height:25px;">
+                <div style="float:left;width:250px" class="form-group">I_S_name_he:</div>
+                <div style="float:right;" class="form-group">
+                {% if p.I_S_name_he %}
+                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="{{ p.I_S_name_he }}">
+                {% else %}
+                    <input type="text" name=I_S_name_en_{{ p._id }} size=30 value="">
+                {% endif %}
+                </div>
+            </div>

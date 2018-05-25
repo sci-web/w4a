@@ -252,7 +252,7 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointTags_{{ rnum }} size=95>
+                    <input type="text" name=pointTags_{{ rnum }} size=95 id=tag>
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
@@ -292,6 +292,11 @@ $(document).ready(function() {
     loadTmpl('#imgPool_tmpl', '#imgPool_target_1', '#img_1', 0, 'icross', 0);
     loadTmpl('#srcPool_tmpl', '#srcPool_target_1', '#src_1', 0, 'scross', 0);
     loadTmpl('#pnt_tmpl', '#pnt_target', '#p_1', 0, 'pcross', 0);
+    $("#tag").autocomplete('/editspace/autocomplete', { minChars: 1, max: 100, width: 325, selectFirst: false, formatResult: formatResult});
+    $("#tag").result( function(event, data, formatted) {
+        if (data)
+            $(this).parent().next().find("input").val(data[1]);
+    });
 });
 function RemoveDiv(div, num, rnum, thtml, target, pdiv) {
     $( div ).remove();

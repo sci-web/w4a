@@ -67,11 +67,13 @@
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}
+    {% if p_num == [1] %}
+        <center>непривязанных тэгов нет</center>
+    {% endif %}
             </div>
         </div>
     </div>
     <br>
-        <div id="pnt_target_{{ p_num|join }}" style="width:500px;border:"></div>
     <br>
     <div style="height:25px;980px;">
         <div style="float:left;180px" id=form_info></div>

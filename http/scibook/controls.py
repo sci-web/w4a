@@ -365,6 +365,11 @@ def save_chapter(author, namespace, chapter):
                         all_tags.update(in_pnts[r]["I_S_codenames"])
                     except:
                         pass
+                    try:
+                        print in_pnts[r]["info_geo"]
+                        all_tags.add(in_pnts[r]["info_geo"])
+                    except:
+                        pass                        
                     imgs_pool = []
                     is_i_pool = 1
                     try:
@@ -421,17 +426,18 @@ def save_chapter(author, namespace, chapter):
                     DB(g.location).update_a_chapter(author, namespace, chapter, in_data)
             else:
                 flash(error, category='error')
-            # print all_tags
-            for tag in list(all_tags):
-                o = DB(g.location).get_an_object(str(tag))
+            print all_tags
+            for tag in all_tags:
+                print tag
+                o = DB(g.location).get_an_object(tag)
                 # print tag, list(o)
                 if len(list(o)) == 0:
                     DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": ""})
-                    f_msg = "<b>" + tag + "</b> is a new tag! Mind to edit the tag list!<br>"
+                    f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=http://shalash:8080/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
         else:
             error = "Something wrong with data update!"
         if error == 0:
-            flash(Markup(f_msg + "Data updated successfully!"), category='info')
+            flash(Markup("<div align=left>" + f_msg + "Data updated successfully!</div>"), category='info')
         else:
             flash(error, category='error')
     else:

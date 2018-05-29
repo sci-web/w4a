@@ -109,6 +109,9 @@ def edit_intro(author, namespace):
 
 
 def value_match_assign(match, field, key, value, dhash):
+    if (match == "pointHidden" and re.match(match, key)):
+        print key, value
+        value = int(value)
     if (re.match(match, key) and value != ""):
         p, r = key.split("_")
         if (value != ""):
@@ -147,7 +150,7 @@ def save_intro(author, namespace):
     error = 0
     new_namespace = ""
     # {{ form.hidden_tag() }} must be in template for sform.validate_on_submit() True if fields are ok
-    if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+    if sform.validate() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
             f = request.form
             points = {}
@@ -202,8 +205,8 @@ def save_intro(author, namespace):
                     except:
                         in_refs[r] = {"ref_pool": ref_pool}
 
-                for n, p in sorted(points.iteritems()):
-                    in_data["points"].append({"num": n, "item": p})
+                for n, p in sorted(points.iteritems(), key=lambda x: float(x[0])):
+                    in_data["points"].append({"num": float(n), "item": p})
 
                 for n, rf in sorted(in_refs.iteritems()):
                     try:
@@ -279,7 +282,7 @@ def save_chapter(author, namespace, chapter):
     else:
         in_data["editdate"] = datetime.now()
     in_data["points"] = []
-    if sform.validate_on_submit() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+    if sform.validate() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         f_msg = ""
         if sform.data:
             f = request.form
@@ -333,6 +336,7 @@ def save_chapter(author, namespace, chapter):
                     in_pnts = value_match_assign("pointIdescr", "info_imgDescr", key, value, in_pnts) 
                     in_pnts = value_match_assign("pointDigest", "digest", key, value, in_pnts) 
                     in_pnts = value_match_assign("pointNewID", "num", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointHidden", "is_hidden", key, value, in_pnts)
                     if (re.match("pointTags", key) and value != ""):
                         p, r = key.split("_")
                         if (value != ""):                            
@@ -366,7 +370,7 @@ def save_chapter(author, namespace, chapter):
                     except:
                         pass
                     try:
-                        print in_pnts[r]["info_geo"]
+                        # print in_pnts[r]["info_geo"]
                         all_tags.add(in_pnts[r]["info_geo"])
                     except:
                         pass                        
@@ -426,9 +430,9 @@ def save_chapter(author, namespace, chapter):
                     DB(g.location).update_a_chapter(author, namespace, chapter, in_data)
             else:
                 flash(error, category='error')
-            print all_tags
+            # print all_tags
             for tag in all_tags:
-                print tag
+                # print tag
                 o = DB(g.location).get_an_object(tag)
                 # print tag, list(o)
                 if len(list(o)) == 0:
@@ -512,6 +516,20 @@ def save_tags(author, action):
 def del_point(author, namespace, chapter, point):
     DB(g.location).del_point_from_a_chapter(author, namespace, chapter, point)
     return jsonify( {'data': "point <b>" + point + "</b> is deleted!"} )
+
+
+@app.route('/editspace/hide_point:<author>:<namespace>:<chapter>:<point>:<h>', methods=['GET', 'POST'])
+@app.route('/en/editspace/hide_point:<author>:<namespace>:<chapter>:<point>:<h>', methods=['GET', 'POST'])
+@app.route('/he/editspace/hide_point:<author>:<namespace>:<chapter>:<point>:<h>', methods=['GET', 'POST'])
+@login_required
+def hide_point(author, namespace, chapter, point, h):
+    print author, namespace, chapter, point, h
+    DB(g.location).hide_point_in_a_chapter(author, namespace, chapter, point, int(h))
+    if int(h) == 1:
+        msg = "hidden now!"
+    else:
+        msg = "visible now!"
+    return jsonify( {'data': "point <b>" + point + "</b> is " + msg} )
 
 
 @app.route('/editspace/del_source:<author>:<namespace>:<chapter>:<point>:<source>', methods=['GET', 'POST'])

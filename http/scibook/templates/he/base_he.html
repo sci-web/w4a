@@ -33,6 +33,10 @@
   gtag('config', 'UA-115629674-1');
 </script>
     </head>
+<style>
+/* html {direction:rtl;} */
+.hebrew {direction:rtl;}
+</style>
 <body>
 {% include "he/navbar_he.html" %}
 <div id="masthead"><a name="top"></a>
@@ -40,23 +44,79 @@
 <div class="container-fluid" align=center>
  <div class="row" style="margin:5px; width:100%">
 {% set sitepart = request.path.split('/')[2] %}
+    <div class="col-md-4 col-lg-2 hebrew" style="width:365px;margin:20px 0 0 0">
+    {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
+    <div class="simplebar-content" align=center style="width:345px;padding:14px 0 10px 0;" id=sidebar>
+        <ul class="nav nav-tabs" style="margin-left:80px;">
+            <li class="active"><a data-toggle="tab" href="#ill">מחלות</a></li>
+            <li><a data-toggle="tab" href="#drugs">תכשירים</a></li>
+            <li><a data-toggle="tab" href="#conds">נסיבות</a></li>
+            <li><a data-toggle="tab" href="#geo">מדינות</a></li>
+        </ul>
+        <div style="border-top:1px solid #e1e6f0; margin-top:-1px;"> </div>
+        <div class="tab-content tab-col hebrew" align=right style="padding: 0 40px 0 0">
+            <div id=ill class="tab-pane fade in active" style=margin-top:1px>
+                <ul class="sqmenu">
+                {% for entry in objects %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="drugs" class="tab-pane fade" style=margin-top:1px>
+                <ul class="sqmenu">
+                {% for entry in drugs %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="conds" class="tab-pane fade" style=margin-top:1px>
+                <ul class="sqmenu">
+                {% for entry in conditions %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+            <div id="geo" class="tab-pane fade" style=margin-top:1px>
+                <ul  class="sqmenu">
+                    {% for entry in geo_objects %}
+                        <li style="color:#4d4df6" class="rightnav">
+                            <a href="/he/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name_he }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <small>↑ scrollable with mouse over ↑</small>
+    </div>
+    {% endif %}
+    </div>
+    <div class="col-sm-6 col-md-8 col-lg-6 hebrew" style="margin:0 0 35px 10px;">
+        <div style="margin:50px 0 0 600px; z-index:1500">{% include "he/flash_he.html" %}</div>
+        {% block content %}{% endblock %}
+    </div>
 
+    <div class="col-lg-2 visible-lg hebrew" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
 {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
-    <div class="col-lg-2 visible-lg" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
-      <div class="wscreen">
+     <div class="wscreen">
         <div style="display:none;margin-top:-14px; margin:0; width:200px; white-space:nowrap;"
             onClick="javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" id=show>
             <a onClick = "javascript:showDiv('leftbar');showDiv('cross');hideDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav">show menu</a>
         </div>
         <div style="display:cell;margin-top:-14px; margin-right:-20px; width:12px; float:left;"
             onClick="javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" id=cross>
-            <a onClick = "javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" style="cursor: pointer; border:0px; width:15px; margin:3px; text-decoration:none" class="linknav"><font size=5>×</font></a>
-        </div>
+            <a onClick = "javascript:hideDiv('leftbar');hideDiv('cross');showDiv('show');" style="cursor: pointer; border:0px; width:15px; text-decoration:none" class="linknav"><font size=5>×</font></a>
+        </div><br>
         <ul style="list-style: none; font-size:17px;" id=leftbar>
-          <li><span style="margin:0 0 0 3px;white-space: nowrap">תוכן העניינים</span></li>
-          <li><a href="/he/intro/vaccines" class="linknav">מבוא</a></li>
+          <li style="white-space: nowrap; text-align:right"><span style="margin:0 0 0 3px;white-space: nowrap">תוכן העניינים</span></li>
+          <li style="white-space: nowrap; text-align:right"><a href="/he/intro/vaccines" class="linknav">מבוא</a></li>
           {% for entry in items %}
-            <li class="sqnav" style="white-space: nowrap"><a href="/he/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+            <li class="sqnav" style="white-space: nowrap; text-align:right"><a href="/he/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                 {{ entry.title }}</a>
             </li>
@@ -71,63 +131,7 @@ var sc_security="59e332e0";
 <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
 <noscript><div class="statcounter"><a title="Web Analytics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11636746/0/59e332e0/1/" alt="Web Analytics"></a></div></noscript>
       </div>
-    </div>
 {% endif %}
-    <div class="col-sm-6 col-md-8 col-lg-6" style="margin:0 0 35px 10px">
-        <div style="margin:50px 0 0 600px; z-index:1500">{% include "he/flash_he.html" %}</div>
-        {% block content %}{% endblock %}
-    </div>
-    <div class="col-md-4 col-lg-2" style="width:365px;margin:20px 0 0 0">
-    {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
-    <div class="simplebar-content" align=center style="width:345px;padding:14px 0 10px 0;" id=sidebar>
-        <ul class="nav nav-tabs" style="margin-right:80px;">
-            <li class="active"><a data-toggle="tab" href="#ill">מחלות</a></li>
-            <li><a data-toggle="tab" href="#drugs">תכשירים</a></li>
-            <li><a data-toggle="tab" href="#conds">נסיבות</a></li>
-            <li><a data-toggle="tab" href="#geo">מדינות</a></li>
-        </ul>
-        <div style="border-top:1px solid #e1e6f0; margin-top:-1px;"> </div>
-        <div class="tab-content tab-col" align=left>
-            <div id=ill class="tab-pane fade in active" style=margin-top:1px>
-                <ul class="sqmenu">
-                {% for entry in objects %}
-                    <li style="color:#4d4df6" class="sqnav">
-                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-            <div id="drugs" class="tab-pane fade" style=margin-top:1px>
-                <ul class="sqmenu">
-                {% for entry in drugs %}
-                    <li style="color:#4d4df6" class="sqnav">
-                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-            <div id="conds" class="tab-pane fade" style=margin-top:1px>
-                <ul class="sqmenu">
-                {% for entry in conditions %}
-                    <li style="color:#4d4df6" class="sqnav">
-                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
-                    </li>
-                {% endfor %}
-                </ul>
-            </div>
-            <div id="geo" class="tab-pane fade" style=margin-top:1px>
-                <ul  class="sqmenu">
-                    {% for entry in geo_objects %}
-                        <li style="color:#4d4df6" class="rightnav">
-                            <a href="/he/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </div>
-        <small>↑ scrollable with mouse over ↑</small>
-    </div>
-    {% endif %}
     </div>
   </div>
 </div>

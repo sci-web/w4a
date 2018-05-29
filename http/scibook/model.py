@@ -133,12 +133,15 @@ class DB(object):
     def del_point_from_a_chapter(self, author, namespace, chapter, point):
         app.config[self.spaces].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter}, { '$pull': { 'points': { "num": float(point) } } } );
 
+    def hide_point_in_a_chapter(self, author, namespace, chapter, point, h):
+        app.config[self.spaces].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter, "points.num": float(point) }, { '$set': { 'points.$.is_hidden': h } } );
+
     def del_srcpool_from_a_chapter(self, author, namespace, chapter, point, src):
         app.config[self.spaces].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter ,'points.num': float(point)}, 
                                         { '$pull': { 'points.$.sources_pool': { "num": float(src) } } } );
 
     def del_imgpool_from_a_chapter(self, author, namespace, chapter, point, img):
-        app.config[self.spaces].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter ,'points.num': float(point)}, 
+        app.config[self.spaces].update_one({ "analyst": author, "namespace": namespace, "I_S_codename":chapter ,'points.num': float(point) }, 
                                         { '$pull': { 'points.$.img_pool': { "num": float(img) } } } );
 
     # def put_task(self, data):

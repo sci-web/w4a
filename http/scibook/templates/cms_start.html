@@ -10,7 +10,7 @@
 {% for ns in namespaces %}
 <h4>в текущих материлах:</h4>
 <b>{{ ns.namespace }}:</b> <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">добавить главу</a>
-or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">редактировать введение</a>
+или <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">редактировать введение</a>
 <div style="margin:20px 0 0 40px;">
     {% if chapters and chapters[ ns.namespace ] %}
     <p>или
@@ -39,10 +39,6 @@ or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ре�
     {% endif %}
 </div>
 {% endfor %}
-<br>or
-<h4>создать новую тему для анализа:</h4>
-<a href="/editspace/intro:{{ current_user.author }}:0">создать пространство имён (наименование темы, введение)</a>
-<br>or
-<h4>редактировать тэги для навигации:</h4>
-<a href="/editspace/tags:{{ current_user.author }}:0">перевод наименований новых и существующих тэгов</a>
+<h3>— создать новую тему: <a href="/editspace/intro:{{ current_user.author }}:0">заголовок темы, введение</a><h3>
+<h3>— <a href="/editspace/tags:{{ current_user.author }}:0">управление тэгами</a><h3>
 {% endblock %}

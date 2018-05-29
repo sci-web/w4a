@@ -64,14 +64,15 @@ def load_vars():
         g.location = g.location
     else:
         g.location = "ru"
-
-    g.items = list(DB(g.location).get_spaces_by_key_sorted("vaccines", "date"))
+    # g.items = list(DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date"))
+    g.items = list(DB(g.location).get_spaces_by_key_sorted('vaccines', "date"))
     g.navitems = g.items[:]
     g.objects = DB(g.location).get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
     g.drugs = DB(g.location).get_objects_by_key_sorted_filter_yes("drug", "I_S_name")
     g.conditions = DB(g.location).get_objects_by_key_sorted_filter_yes("condition", "I_S_name") 
     g.objects_geo = DB(g.location).get_objects_by_key_sorted_filter_yes("geo", "I_S_name")
-    g.chapters = DB(g.location).get_spaces_by_key_sorted("vaccines", "date")
+    # g.chapters = DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date")
+    g.chapters = DB(g.location).get_spaces_by_key_sorted('vaccines', "date")
     g.form = makeform()
 
 
@@ -201,6 +202,7 @@ def show_intro(namespace):
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     tmpl = tmpl_picker('intro')
     div = tmpl_picker('intro_div')
+    g.chapters = DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date")
     if 'div' in request.args:
         return jsonify( {'data': render_template(div, idata=data, chapters=g.chapters)} )
     else:

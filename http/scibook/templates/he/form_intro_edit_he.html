@@ -50,7 +50,7 @@
         <div style="float:right; width:820px" class="form-group">
             <textarea rows=7 cols=97 name=points_{{ p.num }}>{{ p.item }}</textarea>
         </div>
-        <div style="display:cell;margin-left:1010px; width:12px; float:right; position:absolute" id=pcross>
+        <div style="display:cell;margin: -25px 0 0 1120px; width:12px; float:right; position:absolute" id=pcross>
             <a onClick = "javascript:RemoveDiv('#p_{{ p.num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
     </div>
@@ -86,7 +86,7 @@
     {% set r_num = [1] %}
     {% for r in items.refs %}
     <div style="width:1000px;" id="ref_{{ r_num|join }}">
-        <div style="display:cell;margin-left:960px; width:12px; float:right; position:absolute" id=rcross>
+        <div style="display:cell;margin: -25px 0 0 1050px; width:12px; float:right; position:absolute" id=rcross>
             <a onClick = "javascript:RemoveDiv('#ref_{{ r_num|join }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>

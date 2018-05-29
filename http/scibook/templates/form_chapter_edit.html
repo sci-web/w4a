@@ -77,10 +77,16 @@
     <hr size=1 style="width:1100px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 0px" align=left>
         <div style="height:100%; width:1100px;" id="p_{{ p_num|join }}">
             <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
-                <a onClick = "javascript:RemoveOneDiv('#p_{{ p_num|join }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+                <a onClick="javascript:RemoveOneDiv('#p_{{ p_num|join }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
             </div>
             <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>
-                <div style="display:inline" id="swap_id_{{ p_num|join }}"></div>:</div>
+                [hidden: <input onMouseUp="HidePoint(this.id, {{ p.num }}, $(this).is(':checked'))" value=1
+                    type="checkbox" id="#p_{{ p_num|join }}" name="pointHidden_{{ p_num|join }}" {%if p.is_hidden == 1 %}checked{% endif %}>
+                    {%if p.is_hidden == 0 %}
+                    <input type="hidden" id="#_p_{{ p_num|join }}" name="pointHidden_{{ p_num|join }}" value=2>
+                    {% endif %}
+                    ]:
+                <div style="display:inline" id="swap_id_{{ p_num|join }}"></div></div>
             <br>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">Header (of next point(s)):</div>
@@ -567,7 +573,7 @@ function RemoveOneDiv(div, obj, num, pnt) {
         if (obj == 'img') {
             url = "/editspace/del_img:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
         }
-        $.getJSON({
+        $.ajax({
             url: url,
             beforeSend: function() {
                 $('#wait').show();
@@ -585,6 +591,32 @@ function RemoveOneDiv(div, obj, num, pnt) {
             }
         });
     }
+}
+
+
+function HidePoint(pnt, num, val) {
+        var h = 1;
+        alert(val);
+        if (val == true) {h = 0}
+        url = "/editspace/hide_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num + ":" + h;
+        alert(url);
+        $.ajax({
+            url: url,
+            beforeSend: function() {
+                $('#wait').show();
+            },
+            complete: function() {
+                $('#wait').hide();
+            },
+            success: function(result){
+                $('#done').show();
+                $('#result').html(result.data).show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            // if does not work with some browser extension or firewall's blocking async requests etc.
+                alert("ouch! cannot hide, say it to the master!");
+            }
+        });
 }
 function RemoveDiv(div, num, rnum, thtml, target, pdiv) {
     $( div ).remove();

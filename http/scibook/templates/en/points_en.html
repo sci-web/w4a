@@ -1,5 +1,5 @@
   <ol>
-    {% for pnt in idata.points %}
+    {% for pnt in idata.points|sort(attribute='num') %}
         <li style="margin:10px 15px 0 -20px; text-align:justify">{{ pnt.item | rehref | safe  }}
     {% endfor %}
   </ol>

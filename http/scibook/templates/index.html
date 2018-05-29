@@ -63,7 +63,7 @@ $(document).ready(function() {
     Retrieve($(this).attr('href'), "#chide");
   });
   function Retrieve(url, hide) {
-    $.getJSON({
+    $.ajax({
             url: url,
             data: "div",
             contentType: "application/json; charset=utf-8",

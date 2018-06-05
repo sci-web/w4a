@@ -29,12 +29,13 @@
     </div>
     <ol style="margin:20px 2% 0 -20px">
     {% for pnt in idata.points|sort(attribute='num') %}
+    {% if pnt.is_hidden != 1 %}
         {% if pnt.header %}
         <h3>{{ pnt.header | safe }}</h3>
         {% endif %}
         <li style="margin:10px 0 0 0; text-align:justify" itemprop="articleSection">
             {% if pnt.title %}
-                <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
+<!--                 <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
             <em>
                 {% if pnt.info_date %}
                     {{ pnt.info_date }},
@@ -45,7 +46,7 @@
                 {% if pnt.info_place%}
                     {{ pnt.info_place }}
                 {% endif %}
-            </em><br>
+            </em><br>-->
             {% endif %}
             <p style="text-align:justify">{{ pnt.digest | rehref | safe  }}
             {% if pnt.info_img %}
@@ -98,6 +99,7 @@
                 {% endfor %}
             {% endif %}
         </li>
+    {% endif %}
     {% endfor %}
     </ol>
     <div style="margin:10px 100px 10px 10px; text-align:justify">

@@ -71,7 +71,10 @@
             <div style="display:cell;margin:-20px 0 0 1080px; width:12px; float:right; position:absolute" id=pcross>
                 <a onClick = "javascript:RemoveOneDiv('#p_{{ p_num|join }}', 'point', {{ p.num }})" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
             </div>
-            <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>:</div>
+            <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>
+                [hidden: <input onMouseUp="HidePoint(this.id, {{ p.num }}, $(this).is(':checked'))" value=1
+                    type="checkbox" id="#p_{{ p_num|join }}" name="pointHidden_{{ p_num|join }}" {%if p.is_hidden == 1 %}checked{% endif %}>]:
+                <div style="display:inline" id="swap_id_{{ p_num|join }}"></div></div>
             <br>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">Header (of next point(s)):</div>
@@ -130,15 +133,31 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">geo location:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointGeo_{{ p_num|join }} size=95 value="{{ p.info_geo }}">
+                {% if p.info_geo is string %}
+                    <input type="text" name=pointGeo_{{ p_num|join }} size=50 value="{{ [p.info_geo]|join(', ') }}" id=geo{{ p_num|join }}>
+                {% else %}
+                    <input type="text" name=pointGeo_{{ p_num|join }} size=50 value="{{ p.info_geo|join(', ') }}" id=geo{{ p_num|join }}>
+                {% endif %}
+                     (only latin letters, no spaces)
                 </div>
             </div>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">tags:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointTags_{{ p_num|join }} size=95
-                        value="{{ p.I_S_codenames|join(', ') }}">
+                    <input type="text" name=pointTags_{{ p_num|join }} size=50
+                        value="{{ p.I_S_codenames|join(', ') }}" id=tag{{ p_num|join }}> (only latin letters, no spaces)
                 </div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#geo{{ p_num|join }}").autocomplete({
+        serviceUrl: '/editspace/autocomplete_geo'
+    });
+    $("#tag{{ p_num|join }}").autocomplete({
+        serviceUrl: '/editspace/autocomplete',
+        delimiter: ','
+    });
+});
+</script>
             </div>
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">image (src link):</div>
@@ -533,15 +552,15 @@ function RemoveOneDiv(div, obj, num, pnt) {
     if (confirm("Are you sure?")) {
         $( div ).remove();
         if (obj == 'point') {
-            url = "/editspace/del_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num
+            url = "/he/editspace/del_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num
         }
         if (obj == 'source') {
-            url = "/editspace/del_source:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
+            url = "/he/editspace/del_source:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
         }
         if (obj == 'img') {
-            url = "/editspace/del_img:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
+            url = "/he/editspace/del_img:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + pnt + ":" + num
         }
-        $.getJSON({
+        $.ajax({
             url: url,
             beforeSend: function() {
                 $('#wait').show();
@@ -559,6 +578,28 @@ function RemoveOneDiv(div, obj, num, pnt) {
             }
         });
     }
+}
+function HidePoint(pnt, num, val) {
+        var h = 1;
+        if (val == true) {h = 0}
+        url = "/he/editspace/hide_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num + ":" + h;
+        $.ajax({
+            url: url,
+            beforeSend: function() {
+                $('#wait').show();
+            },
+            complete: function() {
+                $('#wait').hide();
+            },
+            success: function(result){
+                $('#done').show();
+                $('#result').html(result.data).show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            // if does not work with some browser extension or firewall's blocking async requests etc.
+                alert("ouch! cannot hide, say it to the master!");
+            }
+        });
 }
 function RemoveDiv(div, num, rnum, thtml, target, pdiv) {
     $( div ).remove();

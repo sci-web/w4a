@@ -81,11 +81,7 @@
             </div>
             <div style="display:table-row;width:1000px"><b>Point #{{ p_num|join }}</b>
                 [hidden: <input onMouseUp="HidePoint(this.id, {{ p.num }}, $(this).is(':checked'))" value=1
-                    type="checkbox" id="#p_{{ p_num|join }}" name="pointHidden_{{ p_num|join }}" {%if p.is_hidden == 1 %}checked{% endif %}>
-                    {%if p.is_hidden == 0 %}
-                    <input type="hidden" id="#_p_{{ p_num|join }}" name="pointHidden_{{ p_num|join }}" value=2>
-                    {% endif %}
-                    ]:
+                    type="checkbox" id="#p_{{ p_num|join }}" name="pointHidden_{{ p_num|join }}" {%if p.is_hidden == 1 %}checked{% endif %}>]:
                 <div style="display:inline" id="swap_id_{{ p_num|join }}"></div></div>
             <br>
             <div style="display:table-row;width:1000px">
@@ -145,7 +141,11 @@
             <div style="display:table-row;width:1000px">
                 <div style="float:left;width:250px" class="form-group">geo location:</div>
                 <div style="float:right; width:710px" class="form-group">
-                    <input type="text" name=pointGeo_{{ p_num|join }} size=50 value="{{ p.info_geo }}" id=geo{{ p_num|join }}>
+                {% if p.info_geo is string %}
+                    <input type="text" name=pointGeo_{{ p_num|join }} size=50 value="{{ [p.info_geo]|join(', ') }}" id=geo{{ p_num|join }}>
+                {% else %}
+                    <input type="text" name=pointGeo_{{ p_num|join }} size=50 value="{{ p.info_geo|join(', ') }}" id=geo{{ p_num|join }}>
+                {% endif %}
                      (only latin letters, no spaces)
                 </div>
             </div>
@@ -592,14 +592,10 @@ function RemoveOneDiv(div, obj, num, pnt) {
         });
     }
 }
-
-
 function HidePoint(pnt, num, val) {
         var h = 1;
-        alert(val);
         if (val == true) {h = 0}
         url = "/editspace/hide_point:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}:" + num + ":" + h;
-        alert(url);
         $.ajax({
             url: url,
             beforeSend: function() {

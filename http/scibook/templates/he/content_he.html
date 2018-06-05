@@ -29,6 +29,7 @@
     </div>
     <ol style="margin:20px 2% 0 -20px">
     {% for pnt in idata.points|sort(attribute='num') %}
+    {% if pnt.is_hidden != 1 %}
         {% if pnt.header %}
         <h3>{{ pnt.header | safe }}</h3>
         {% endif %}
@@ -98,6 +99,7 @@
                 {% endfor %}
             {% endif %}
         </li>
+    {% endif %}
     {% endfor %}
     </ol>
     <div style="margin:10px 100px 10px 10px; text-align:justify">

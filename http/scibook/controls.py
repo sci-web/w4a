@@ -21,7 +21,6 @@ from flask import Markup
 #            filename.rsplit('.', 1)[1] in app.config[ff]
 
 
-
 def packed(val_dict):
     # vls = ", ".join(['{}={}'.format(k, v) for k, v in val_dict.iteritems()])
     ll = []
@@ -110,7 +109,7 @@ def edit_intro(author, namespace):
 
 def value_match_assign(match, field, key, value, dhash):
     if (match == "pointHidden" and re.match(match, key)):
-        print key, value
+        # print key, value
         value = int(value)
     if (re.match(match, key) and value != ""):
         p, r = key.split("_")
@@ -150,7 +149,7 @@ def save_intro(author, namespace):
     error = 0
     new_namespace = ""
     # {{ form.hidden_tag() }} must be in template for sform.validate_on_submit() True if fields are ok
-    if sform.validate() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+    if request.form and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
             f = request.form
             points = {}
@@ -282,7 +281,7 @@ def save_chapter(author, namespace, chapter):
     else:
         in_data["editdate"] = datetime.now()
     in_data["points"] = []
-    if sform.validate() and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
+    if request.form and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         f_msg = ""
         if sform.data:
             f = request.form
@@ -349,6 +348,18 @@ def save_chapter(author, namespace, chapter):
                                 in_pnts[r].update({"I_S_codenames": c_lst})
                             except:
                                 in_pnts[r] = {"I_S_codenames": c_lst}
+                    if (re.match("pointGeo", key) and value != ""):
+                        p, r = key.split("_")
+                        if (value != ""):                            
+                            lst = value.split(",")
+                            c_lst = []
+                            for e in lst:
+                                c = e.replace(" ", "")
+                                c_lst.append(c)                   
+                            try:
+                                in_pnts[r].update({"info_geo": c_lst})
+                            except:
+                                in_pnts[r] = {"info_geo": c_lst}
 
                     in_imgs_pool = nest_value_match_assign("imgDescr", "info_imgDesc", key, value, in_imgs_pool) 
                     in_imgs_pool = nest_value_match_assign("imgLink", "info_img", key, value, in_imgs_pool) 
@@ -366,12 +377,17 @@ def save_chapter(author, namespace, chapter):
             if error == 0:                
                 for r in in_pnts.keys():
                     try:
-                        all_tags.update(in_pnts[r]["I_S_codenames"])
+                        for ct in in_pnts[r]["I_S_codenames"].split(","):
+                            cn = ct.replace(" ", "")
+                            all_tags.update(cn)
                     except:
                         pass
                     try:
                         # print in_pnts[r]["info_geo"]
-                        all_tags.add(in_pnts[r]["info_geo"])
+                        for t in in_pnts[r]["info_geo"].split(","):
+                            n = t.replace(" ", "")
+                            all_tags.update(n)
+                        # all_tags.update(in_pnts[r]["info_geo"])
                     except:
                         pass                        
                     imgs_pool = []
@@ -423,6 +439,13 @@ def save_chapter(author, namespace, chapter):
                     in_data["points"].append(p)
 
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
+                for tag in all_tags:
+                    # print tag
+                    o = DB(g.location).get_an_object(tag)
+                    # print tag, list(o)
+                    if len(list(o)) == 0:
+                        DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": ""})
+                        f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=http://shalash:8080/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
 
                 if chapter == "0":
                     DB(g.location).insert_a_chapter(in_data)
@@ -431,13 +454,6 @@ def save_chapter(author, namespace, chapter):
             else:
                 flash(error, category='error')
             # print all_tags
-            for tag in all_tags:
-                # print tag
-                o = DB(g.location).get_an_object(tag)
-                # print tag, list(o)
-                if len(list(o)) == 0:
-                    DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": ""})
-                    f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=http://shalash:8080/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
         else:
             error = "Something wrong with data update!"
         if error == 0:

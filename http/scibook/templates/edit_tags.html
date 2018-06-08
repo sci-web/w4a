@@ -1,6 +1,9 @@
     <hr size=1 style="width:500px; color:#93a8fb; height:1px; background-color:#93a8fb; margin:0 0 10px 0px" align=left>
         <div style="height:100%;" id="p_{{ p._id }}">
             <div style="display:table-row; height:25px;"><b>Tag #{{ p_num|join }}</b>:</div>
+{% if new == 1 %}
+            <div style="float:right; margin: 0 50px 0 0"><a onClick="javascript:RemoveIt('#p_{{ p._id }}', '{{ p.I_S_codename }}')" class="pointer linknav">x</a></div>
+{% endif %}
             <div style="display:table-row; height:25px;">
                 <div style="float:left;width:250px" class="form-group">I_S_codename:</div>
                 <div style="float:right;" class="form-group">
@@ -45,3 +48,28 @@
                 {% endif %}
                 </div>
             </div>
+<script>
+function RemoveIt(div, code) {
+    if (confirm("Are you sure?")) {
+        $( div ).remove();
+        url = "/editspace/del_a_tag:{{ current_user.author }}:{{ namespace }}:" + code
+        $.ajax({
+            url: url,
+            beforeSend: function() {
+                $('#wait').show();
+            },
+            complete: function() {
+                $('#wait').hide();
+            },
+            success: function(result){
+                $('#done').show();
+                $('#result').html(result.data).show();
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            // if does not work with some browser extension or firewall's blocking async requests etc.
+                alert("ouch! cannot delete, say it to the master!");
+            }
+        });
+    }
+}
+</script>

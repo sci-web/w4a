@@ -38,7 +38,7 @@
  </div>
     {% endif %}
 </div>
+<h3>— <a href="/editspace/tags:{{ current_user.author }}:{{ ns.namespace }}:0">управление тэгами</a> в теме <b>{{ ns.namespace }}</b><h3>
 {% endfor %}
 <h3>— создать новую тему: <a href="/editspace/intro:{{ current_user.author }}:0">заголовок темы, введение</a><h3>
-<h3>— <a href="/editspace/tags:{{ current_user.author }}:0">управление тэгами</a><h3>
 {% endblock %}

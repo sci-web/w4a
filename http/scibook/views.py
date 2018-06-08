@@ -64,15 +64,16 @@ def load_vars():
         g.location = g.location
     else:
         g.location = "ru"
+    g.namespace = "vaccines"
     # g.items = list(DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date"))
-    g.items = list(DB(g.location).get_spaces_by_key_sorted('vaccines', "date"))
+    g.items = list(DB(g.location).get_spaces_by_key_sorted(g.namespace, "date"))
     g.navitems = g.items[:]
-    g.objects = DB(g.location).get_objects_by_key_sorted_filter_yes("disease", "I_S_name")
-    g.drugs = DB(g.location).get_objects_by_key_sorted_filter_yes("drug", "I_S_name")
-    g.conditions = DB(g.location).get_objects_by_key_sorted_filter_yes("condition", "I_S_name") 
-    g.objects_geo = DB(g.location).get_objects_by_key_sorted_filter_yes("geo", "I_S_name")
+    g.objects = DB(g.location).get_objects_by_key_sorted_filter_yes("disease", "I_S_codename", g.namespace)
+    g.drugs = DB(g.location).get_objects_by_key_sorted_filter_yes("drug", "I_S_codename", g.namespace)
+    g.conditions = DB(g.location).get_objects_by_key_sorted_filter_yes("condition", "I_S_codename", g.namespace) 
+    g.objects_geo = DB(g.location).get_objects_by_key_sorted_filter_yes("geo", "I_S_codename", g.namespace)
     # g.chapters = DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date")
-    g.chapters = DB(g.location).get_spaces_by_key_sorted('vaccines', "date")
+    g.chapters = DB(g.location).get_spaces_by_key_sorted(g.namespace, "date")
     g.form = makeform()
 
 
@@ -166,12 +167,12 @@ def search():
     return render_template(tmpl, idata=fdata, found=len(fdata), form=g.form, 
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=searchfor)
 
-@app.route('/en/browse/obj/<codename>')
-@app.route('/he/browse/obj/<codename>')
-@app.route('/browse/obj/<codename>')
-def browse(codename):
-    i_data = DB(g.location).get_points_by_codename(codename)
-    obj = DB(g.location).get_an_object_by_codename(codename)
+@app.route('/en/browse/obj/<namespace>:<codename>')
+@app.route('/he/browse/obj/<namespace>:<codename>')
+@app.route('/browse/obj/<namespace>:<codename>')
+def browse(codename, namespace):
+    i_data = DB(g.location).get_points_by_codename(codename, namespace)
+    obj = DB(g.location).get_an_object_by_codename(codename, namespace)
     objdata = json.loads(dumps(obj))
     tmpl = tmpl_picker('browse')
     title = objdata[0]["I_S_name_en"] if g.location == "en" else objdata[0]["I_S_name"]
@@ -179,11 +180,11 @@ def browse(codename):
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 
 
-@app.route('/en/browse/geo/<geo>')
-@app.route('/browse/geo/<geo>')
-def browse_geo(geo):
-    i_data = DB(g.location).get_points_by_geo(geo)
-    obj = DB(g.location).get_an_object_by_codename(geo)
+@app.route('/en/browse/geo/<namespace>:<geo>')
+@app.route('/browse/geo/<namespace>:<geo>')
+def browse_geo(geo, namespace):
+    i_data = DB(g.location).get_points_by_geo(geo, namespace)
+    obj = DB(g.location).get_an_object_by_codename(geo, namespace)
 
     objdata = json.loads(dumps(obj))
     tmpl = tmpl_picker('browse')

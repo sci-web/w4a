@@ -59,7 +59,7 @@
                 <ul class="sqmenu">
                 {% for entry in objects %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
+                        <a href="/he/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -68,7 +68,7 @@
                 <ul class="sqmenu">
                 {% for entry in drugs %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
+                        <a href="/he/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -77,7 +77,7 @@
                 <ul class="sqmenu">
                 {% for entry in conditions %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/he/browse/obj/{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
+                        <a href="/he/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_he }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -86,7 +86,7 @@
                 <ul  class="sqmenu">
                     {% for entry in geo_objects %}
                         <li style="color:#4d4df6" class="rightnav">
-                            <a href="/he/browse/geo/{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name_he }}</a>
+                            <a href="/he/browse/geo/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name_he }}</a>
                         </li>
                     {% endfor %}
                 </ul>

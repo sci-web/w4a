@@ -5,7 +5,7 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 50px;" align=left>
-<form action="/editspace/save_tags:{{ current_user.author }}:0" method="POST" name="form">
+<form action="/editspace/save_tags:{{ current_user.author }}:{{ namespace }}:0" method="POST" name="form">
 <h1>Редактор тэгов</h1>
 {{ form.hidden_tag() }}
     <div style="height:25px;1200px;position:fixed">
@@ -58,12 +58,14 @@
     {% endfor %}
             </div>
             <div id="new" class="tab-pane fade" style=margin-top:1px>
-    {% set p_num = [1] %}
-    {% for p in new_objects %}
         <b>привязка:</b>
         для I_S_type_this выбрать 1 из 4: disease, drug, condition, geo<br>
         и перевести для поля I_S_name_*<br>
+    {% set p_num = [1] %}
+    {% for p in new_objects %}
+        {% with new = 1 %}
         {% include "edit_tags.html" %}
+        {% endwith %}
     </div>
     {% if p_num.append(p_num.pop() + 1) %}{% endif %}
     {% endfor %}

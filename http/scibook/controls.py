@@ -441,10 +441,10 @@ def save_chapter(author, namespace, chapter):
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
                 for tag in all_tags:
                     # print tag
-                    o = DB(g.location).get_an_object(tag)
+                    o = DB(g.location).get_an_object_by_codename(tag, namespace)
                     # print tag, list(o)
                     if len(list(o)) == 0:
-                        DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": ""})
+                        DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": "", "namespace" : [namespace] })
                         f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=http://shalash:8080/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
 
                 if chapter == "0":
@@ -479,22 +479,22 @@ def save_chapter(author, namespace, chapter):
             return render_template(tmpl, form=g.form, items=i_data, namespace=namespace)
 
 
-@app.route('/editspace/tags:<author>:<action>', methods=['GET', 'POST'])
-@app.route('/en/editspace/tags:<author>:<action>', methods=['GET', 'POST'])
-@app.route('/he/editspace/tags:<author>:<action>', methods=['GET', 'POST'])
+@app.route('/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@app.route('/en/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@app.route('/he/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
 @login_required
-def edit_tags(author, action):
+def edit_tags(namespace, author, action):
     itmpl = tmpl_picker('form_tags')
-    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_name")
+    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
     # print list(new_objects)
-    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects)
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace)
 
 
-@app.route('/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
-@app.route('/en/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
-@app.route('/he/editspace/save_tags:<author>:<action>', methods=['GET', 'POST'])
+@app.route('/editspace/save_tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@app.route('/en/editspace/save_tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@app.route('/he/editspace/save_tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
 @login_required
-def save_tags(author, action):
+def save_tags(namespace, author, action):
     error = 0
     if Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         f = request.form
@@ -503,11 +503,12 @@ def save_tags(author, action):
             for key in f.keys():
                 _id = key.rsplit('_', 1)[1]
                 k = key.rsplit('_', 1)[0]
-                if len(_id) == 24:
+                if len(_id) == 24:  # ObjectID in Mongo
                     try:
                         datadic[_id].update({k: f.get(key)})
                     except:
-                        datadic[_id] = {k: f.get(key)} 
+                        datadic[_id] = {k: f.get(key)}
+            datadic[_id].update({"namespace" : [namespace]})
             for _id, data in datadic.iteritems():
                 DB(g.location).update_an_object(_id, data)
         else:
@@ -521,8 +522,15 @@ def save_tags(author, action):
         error = "Something wrong with a form or authentification!"
         flash(error, category='error') 
     itmpl = tmpl_picker('form_tags')
-    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_name")
-    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects)
+    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace)
+
+
+@app.route('/editspace/del_a_tag:<author>:<namespace>:<codename>', methods=['GET', 'POST'])
+@login_required
+def del_a_tag(author, namespace, codename):
+    DB(g.location).del_an_object(codename, namespace)
+    return jsonify( {'data': "tag with a codename <b>" + codename + "</b> is deleted!"} )
 
 
 @app.route('/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])

@@ -51,37 +51,37 @@ class DB(object):
     def get_a_space(self, namespace, key):
         return app.config[self.spaces].find_one({"namespace": namespace, "I_S_codename": key})
 
-    def get_points_by_codename(self, codename):
+    def get_points_by_codename(self, codename, namespace):
         return app.config[self.spaces].aggregate([
-                            {'$match':{"points.I_S_codenames":codename}}, 
+                            {'$match':{"points.I_S_codenames":codename, "namespace":namespace}}, 
                             { '$unwind' : "$points" },
-                            {'$match':{"points.I_S_codenames":codename}}
+                            {'$match':{"points.I_S_codenames":codename, "namespace":namespace}}
                             ])
 
-    def get_points_by_geo(self, codename):
+    def get_points_by_geo(self, codename, namespace):
         return app.config[self.spaces].aggregate([
-                            {'$match':{"points.info_geo":codename}}, 
+                            {'$match':{"points.info_geo":codename,"namespace":namespace}}, 
                             { '$unwind' : "$points" },
-                            {'$match':{"points.info_geo":codename}}
+                            {'$match':{"points.info_geo":codename,"namespace":namespace}}
                             ])
 
-    def get_an_object_by_codename(self, codename):
-        return app.config['OBJECTS'].find({"I_S_codename": codename})
+    def get_an_object_by_codename(self, codename, namespace):
+        return app.config['OBJECTS'].find({"I_S_codename": codename, "namespace": [namespace]})
 
-    def get_objects_by_key_sorted_filter_no(self, val, key):
-        return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}}, {"I_S_codename": 1, "I_S_name_en": 1, "I_S_name": 1}).sort(key, 1)
+    def get_objects_by_key_sorted_filter_no(self, val, key, namespace):
+        return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}, "namespace": [namespace]}, {"I_S_codename": 1, "I_S_name_en": 1, "I_S_name": 1}).sort(key, 1)
 
-    def get_objects_by_key_sorted_filter_yes(self, val, key):
-        return app.config['OBJECTS'].find({"I_S_type_this": val}).sort(key, 1)
+    def get_objects_by_key_sorted_filter_yes(self, val, key, namespace):
+        return app.config['OBJECTS'].find({"I_S_type_this": val, "namespace":[namespace] }).sort(key, 1)
 
-    def get_an_object(self, codename):
-        return app.config['OBJECTS'].find({"I_S_codename": codename})
-
-    def search_objects(self, q):
+    def search_objects(self, q, namespace):
         return app.config['OBJECTS'].find({"I_S_codename": {'$regex': "^" + q, '$options': 'i' }, "I_S_type_this": {'$ne': "geo"}}, {"I_S_codename": 1})  # case insensitive
 
-    def search_objects_geo(self, q):
+    def search_objects_geo(self, q, namespace):
         return app.config['OBJECTS'].find({"I_S_codename": {'$regex': "^" + q, '$options': 'i' }, "I_S_type_this": "geo"}, {"I_S_codename": 1})  # case insensitive
+
+    def del_an_object(self, codename, namespace):
+        return app.config['OBJECTS'].remove({"I_S_codename": codename, "namespace": [namespace]})
 
     def insert_an_object(self, data):
         app.config['OBJECTS'].insert_one(data)

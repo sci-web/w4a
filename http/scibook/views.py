@@ -22,11 +22,6 @@ def page_not_found(error):
     form = makeform()
     return render_template('404.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
 
-# @app.errorhandler(HTTPException)
-# def page_not_found(error):
-#     form = makeform()
-#     return render_template('404.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
-
 
 @app.errorhandler(500)
 def internal_server_error(error):

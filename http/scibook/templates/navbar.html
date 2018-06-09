@@ -46,7 +46,7 @@
 <!--                <li><a href="{{ request.path | replace('/', '/he/', 1) }}" title="Hebrew">HE</a></li>-->
                 </ul>
             </li>
-            {% if current_user.is_authenticated %}
+        {% if current_user.is_authenticated %}
             <li class="dropdown">
                 <a href="#" style="font-size:17px">Hey <b>{{ current_user.author }}</b>, you're in: <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -56,7 +56,7 @@
                 </ul>
             </li>
         {% else %}
-            <li><a href="/contact/">Обратая связь</a></li>
+            <li><a href="/contact/">Обратная связь</a></li>
             <li><a onClick="javascript:showDiv('lf')" style="cursor:pointer;">Login</a></li>
         {% endif %}
         </ul>

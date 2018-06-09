@@ -3,6 +3,7 @@ from flask_login import LoginManager
 from flask_session import Session
 
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 app.config['DEBUG'] = True
 app.config['TRAP_HTTP_EXCEPTIONS'] = True
 app.config['PROPAGATE_EXCEPTIONS'] = True

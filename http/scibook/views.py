@@ -22,6 +22,11 @@ def page_not_found(error):
     form = makeform()
     return render_template('404.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
 
+# @app.errorhandler(HTTPException)
+# def page_not_found(error):
+#     form = makeform()
+#     return render_template('404.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
+
 
 @app.errorhandler(500)
 def internal_server_error(error):
@@ -104,7 +109,7 @@ def tmpl_picker(name):
 
 
 @app.route('/')
-@app.route('/en')
+@app.route('/en', strict_slashes=False)
 @app.route('/en/')
 @app.route('/he')
 @app.route('/he/')
@@ -175,7 +180,11 @@ def browse(codename, namespace):
     obj = DB(g.location).get_an_object_by_codename(codename, namespace)
     objdata = json.loads(dumps(obj))
     tmpl = tmpl_picker('browse')
-    title = objdata[0]["I_S_name_en"] if g.location == "en" else objdata[0]["I_S_name"]
+    fld = "I_S_name" if g.location == "ru" else "I_S_name_" + g.location
+    try:
+        title = objdata[0][fld]
+    except:
+        title = "no data found"
     return render_template(tmpl, idata=i_data, obj=objdata, form=g.form, 
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 
@@ -188,7 +197,11 @@ def browse_geo(geo, namespace):
 
     objdata = json.loads(dumps(obj))
     tmpl = tmpl_picker('browse')
-    title = objdata[0]["I_S_codename"] if g.location == "en" else objdata[0]["I_S_name"]
+    fld = "I_S_name" if g.location == "ru" else "I_S_name_" + g.location
+    try:
+        title = objdata[0][fld]
+    except:
+        title = "no data found"
     return render_template(tmpl, idata=i_data, obj=objdata, form=g.form, 
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 

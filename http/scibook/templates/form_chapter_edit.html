@@ -17,7 +17,7 @@
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>
     <div id="done" style="height:35px; display:none; margin:0 5px 0 1000px; width:270px; position:fixed; border:2px solid #f466cc" align=right>
-    <div id="result" style="display:table-cell; padding:0 5px 5px 5px;" align=center></div><div style="display:table-cell; padding:0 5px;"> <a class="close" onClick = "hideDiv('done');">&times;</a></div>
+        <div id="result" style="display:table-cell; padding:0 5px 5px 5px;" align=center></div><div style="display:table-cell; padding:0 5px;"> <a class="close" onClick = "hideDiv('done');">&times;</a></div>
     </div>
 <form action="/editspace/save_chapter:{{ current_user.author }}:{{ items.namespace }}:{{ items.I_S_codename }}" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}

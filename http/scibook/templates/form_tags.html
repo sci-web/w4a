@@ -14,7 +14,10 @@
         </div>
     </div>
 
-
+    <div id="done" style="height:35px; display:none; margin:0 5px 0 800px; width:270px; position:fixed; border:2px solid #f466cc" align=right>
+        <div id="result" style="display:table-cell; padding:0 5px 5px 5px;" align=center></div>
+        <div style="display:table-cell; padding:0 5px;"> <a class="close" onClick = "hideDiv('done');">&times;</a></div>
+    </div>
     <div class="simplebar-content" align=center style="width:700px;padding:0 0 10px 0">
         <ul class="nav nav-tabs" style="margin-right:80px;">
             <li class="active"><a data-toggle="tab" href="#ill">Болезни</a></li>
@@ -26,6 +29,8 @@
         <div style="border-top:1px solid #DCDBFF; margin-top:-1px;"> </div>
         <div class="tab-content tab-bigcol" align=left style="padding:0 5px 0 10px;">
             <div id=ill class="tab-pane fade in active" style=margin-top:1px>
+        <b>отвязка тэга:</b>
+        сделать пустым поле I_S_type_this или щёлкнуть на «о» справа
     {% set p_num = [1] %}
     {% for p in objects %}
         {% include "edit_tags.html" %}
@@ -34,6 +39,8 @@
     {% endfor %}
             </div>
             <div id="drugs" class="tab-pane fade" style=margin-top:1px>
+        <b>отвязка тэга:</b>
+        сделать пустым поле I_S_type_this или щёлкнуть на «о» справа
     {% set p_num = [1] %}
     {% for p in drugs %}
         {% include "edit_tags.html" %}
@@ -42,6 +49,8 @@
     {% endfor %}
             </div>
             <div id="conds" class="tab-pane fade" style=margin-top:1px>
+        <b>отвязка тэга:</b>
+        сделать пустым поле I_S_type_this или щёлкнуть на «о» справа
     {% set p_num = [1] %}
     {% for p in conditions %}
         {% include "edit_tags.html" %}
@@ -50,6 +59,8 @@
     {% endfor %}
             </div>
             <div id="geo" class="tab-pane fade" style=margin-top:1px>
+        <b>отвязка тэга:</b>
+        сделать пустым поле I_S_type_this или щёлкнуть на «о» справа
     {% set p_num = [1] %}
     {% for p in geo_objects %}
         {% include "edit_tags.html" %}

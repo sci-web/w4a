@@ -486,8 +486,29 @@ def save_chapter(author, namespace, chapter):
 def edit_tags(namespace, author, action):
     itmpl = tmpl_picker('form_tags')
     new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
-    # print list(new_objects)
-    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace)
+    spaces = DB(g.location).get_spaces_by_author_ns(author, namespace)
+    data = json.loads(dumps(spaces))
+    chapters = {}
+    for d in range(0, len(data)):
+        arr = data[d]["points"]
+        points = []
+        for el in range(0, len(arr)):
+            try:
+                if len(arr[el]["I_S_codenames"]) > 0:
+                    points.append(str(int(arr[el]["num"])))
+                    for nm in arr[el]["I_S_codenames"]:
+                        try:
+                            chapters[nm].update({
+                                d: { 'I_S_codename' : data[d]["I_S_codename"], 'points' : ", ".join(points), 'title': data[d]["title"] },
+                                })
+
+                        except:
+                            chapters[nm] = {
+                                d: { 'I_S_codename' : data[d]["I_S_codename"], 'points' : ", ".join(points), 'title': data[d]["title"]},
+                                }
+            except:
+                pass
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace, chapters=chapters)
 
 
 @app.route('/editspace/save_tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
@@ -531,6 +552,13 @@ def save_tags(namespace, author, action):
 def del_a_tag(author, namespace, codename):
     DB(g.location).del_an_object(codename, namespace)
     return jsonify( {'data': "tag with a codename <b>" + codename + "</b> is deleted!"} )
+
+
+@app.route('/editspace/detach_a_tag:<author>:<namespace>:<codename>', methods=['GET', 'POST'])
+@login_required
+def detach_a_tag(author, namespace, codename):
+    DB(g.location).detach_an_object(codename, namespace)
+    return jsonify( {'data': "tag with a codename <b>" + codename + "</b> is detached!"} )
 
 
 @app.route('/editspace/del_point:<author>:<namespace>:<chapter>:<point>', methods=['GET', 'POST'])

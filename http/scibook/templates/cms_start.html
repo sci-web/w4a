@@ -17,22 +17,27 @@
 <h4>выбрать главу для редактирования <b>{{ ns.namespace }}</b>:</h4>
  <div style="display: table;">
   <div style="display:table-row;">
-    <div style="display:table-cell; width:30px; margin:2px"></div>
-    <div style="display:table-cell; width:300px; margin:2px"><i>chapter</i></div>
-    <div style="display:table-cell; width:200px; margin:2px"><i>added on</i></div>
-    <div style="display:table-cell; width:200px; margin:2px"><i>edited on</i></div>
-    <div style="display:table-cell; width:200px; margin:2px"><i>export</i></div>
+    <div style="display:table-cell; width:30px; padding:2px"></div>
+    <div style="display:table-cell; width:300px; padding:2px"><i>chapter</i></div>
+    <div style="display:table-cell; width:200px; padding:2px"><i>added on</i></div>
+    <div style="display:table-cell; width:200px; padding:2px"><i>edited on</i></div>
+    <div style="display:table-cell; width:200px; padding:2px"><i>export</i></div>
   </div>
         {% for ch in chapters[ ns.namespace ]  %}
             {% set lst = ch.split('|') %}
-  <div style="display:table-row;">
-    <div style="display:table-cell; width:30px; margin:2px">{{ loop.index }}.</div>
-    <div style="display:table-cell; width:300px; margin:2px">
+            {% set color = '#E6E5FF' %}
+            {% set num = loop.index %}
+            {% if num%2 == 1 %}
+                {% set color = '#f7f7f7' %}
+            {% endif %}
+  <div style="display:table-row;background:{{ color }}">
+    <div style="display:table-cell; width:30px; padding:2px; padding: 0 5px 0 5px">{{ loop.index }}.</div>
+    <div style="display:table-cell; width:300px; padding:2px">
         <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
     </div>
-    <div style="display:table-cell; width:200px; margin:2px">{{ lst[2] }}</div>
-    <div style="display:table-cell; width:200px; margin:2px">{{ lst[3] }}</div>
-    <div style="display:table-cell; width:200px; margin:2px"><a href="/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav">[↑]</a></div>
+    <div style="display:table-cell; width:200px; padding:2px">{{ lst[2] }}</div>
+    <div style="display:table-cell; width:200px; padding:2px">{{ lst[3] }}</div>
+    <div style="display:table-cell; width:200px; padding:2px"><a href="/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav" title="export '{{ lst[0] }}' to json">[↑]</a></div>
   </div>
         {% endfor %}
  </div>

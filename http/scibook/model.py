@@ -2,7 +2,7 @@
 from scibook import app
 import re
 from bson.objectid import ObjectId
-
+from pymongo.collation import Collation, CollationStrength
 
 class DB(object):
 
@@ -72,7 +72,12 @@ class DB(object):
         return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}, "namespace": [namespace]}, {"I_S_codename": 1, "I_S_name_en": 1, "I_S_name": 1}).sort(key, 1)
 
     def get_objects_by_key_sorted_filter_yes(self, val, key, namespace):
-        return app.config['OBJECTS'].find({"I_S_type_this": val, "namespace":[namespace] }).sort(key, 1)
+        print self.lang
+        if self.lang == 'ru':
+            key = "I_S_name"
+        else:
+            key = "I_S_name_" + self.lang
+        return app.config['OBJECTS'].find({"I_S_type_this": val, "namespace":[namespace] }).sort(key, 1).collation(Collation(locale=self.lang,strength=CollationStrength.SECONDARY))
 
     def search_objects(self, q, namespace):
         return app.config['OBJECTS'].find({"I_S_codename": {'$regex': "^" + q, '$options': 'i' }, "I_S_type_this": {'$ne': "geo"}}, {"I_S_codename": 1})  # case insensitive
@@ -82,6 +87,9 @@ class DB(object):
 
     def del_an_object(self, codename, namespace):
         return app.config['OBJECTS'].remove({"I_S_codename": codename, "namespace": [namespace]})
+
+    def detach_an_object(self, codename, namespace):
+        app.config['OBJECTS'].update_one({"I_S_codename": codename, "namespace": [namespace]}, {'$set': {"I_S_type_this" : ""}})
 
     def insert_an_object(self, data):
         app.config['OBJECTS'].insert_one(data)
@@ -103,6 +111,9 @@ class DB(object):
 
     def get_spaces_by_author(self, author):
         return app.config[self.spaces].find({"analyst": author},{"date":1, "editdate":1, "namespace":1, "title":1, "I_S_codename":1}).sort("date", -1)        
+
+    def get_spaces_by_author_ns(self, author, namespace):
+        return app.config[self.spaces].find({"analyst": author, "namespace": namespace},{ "title":1, "I_S_codename":1, "points.num":1, "points.I_S_codenames":1}).sort("date", -1)
 
     def get_data_search(self, title, released):
         try:

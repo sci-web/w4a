@@ -114,14 +114,16 @@
         </div><br>
         <ul style="list-style: none; font-size:17px;" id=leftbar>
           <li style="white-space: nowrap; text-align:right"><span style="margin:0 0 0 3px;white-space: nowrap">תוכן העניינים</span></li>
+        </ul>
+        <ol>
           <li style="white-space: nowrap; text-align:right"><a href="/he/intro/vaccines" class="linknav">מבוא</a></li>
           {% for entry in items %}
             <li class="sqnav" style="white-space: nowrap; text-align:right"><a href="/he/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
-                <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
+<!--                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div> -->
                 {{ entry.title }}</a>
             </li>
           {% endfor %}
-        </ul>
+        </ol>
         <br>
 <script type="text/javascript">
 var sc_project=11636746;

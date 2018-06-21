@@ -126,7 +126,7 @@ def show_item(namespace, codename):
     data = json.loads(dumps(i_data))
     try:
         title = data["title"]
-        space = data["namespace"].title() if g.location == "en" else data["I_S_namespace"]
+        space = data["namespace"].title()
     except:
         tmpl = tmpl_picker('404')
         return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404  # if there is no corresponding translation      

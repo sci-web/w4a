@@ -1,6 +1,6 @@
 {% extends "he/base_he.html" %}
 {% block title %}{{ title }}{% endblock %}
-{% block descr %}{% if idata.intro %}{{ idata.intro | rehref | safe  }}{% else %}{{ idata.points[0].digest | rehref | safe  }}{% endif %}{% endblock %}
+{% block descr %}{% if idata.intro %}{{ idata.intro | rehref | safe  }}{% elif idata.points %}{{ idata.points[0].digest | rehref | safe  }}{% else %} {% endif %}{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
@@ -104,6 +104,7 @@
     </ol>
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ idata.summary | rehref | safe  }}
+    <p style="margin:10px 0 7px 8px"><a href="https://drive.google.com/drive/folders/1qH5eNE7esVpRXDOJNzVisyjjxEG60LuG" style="background:#dfe9f0;color:darkgreen; margin:5px">Full-text of papers mentioned above on Google.Drive</a><br>
     {% include "he/bottom_nav_he.html" %}
     </div>
     <div style="height:50px; margin:10px 25px 20px 5px;">

@@ -32,11 +32,11 @@ or <a href="/he/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ע
   <div style="display:table-row;background:{{ color }}">
     <div style="display:table-cell; width:30px; padding:2px; padding: 0 5px 0 5px">{{ loop.index }}.</div>
     <div style="display:table-cell; width:300px; padding:2px">
-        <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
+        <a href="/he/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
     </div>
     <div style="display:table-cell; width:200px; padding:2px">{{ lst[2] }}</div>
     <div style="display:table-cell; width:200px; padding:2px">{{ lst[3] }}</div>
-    <div style="display:table-cell; width:200px; padding:2px"><a href="/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav" title="export '{{ lst[0] }}' to json">[↑]</a></div>
+    <div style="display:table-cell; width:200px; padding:2px"><a href="/he/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav" title="export '{{ lst[0] }}' to json">[↑]</a></div>
   </div>
         {% endfor %}
  </div>

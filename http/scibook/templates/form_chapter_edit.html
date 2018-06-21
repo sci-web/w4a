@@ -33,7 +33,7 @@
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Title" name=title size=95 value="{{ items.title }}"> <font color="red">(*)</font>
+            <input type="text" placeholder="Title" name=title size=65 value="{{ items.title }}"> <font color="red">(*)</font>
         </div>
     </div>
     <br>
@@ -64,7 +64,7 @@
     </div>
     <br>
     <div style="height:145px; width:1010px;">
-        <div style="float:left; width:180px">Introduction: </div>
+        <div style="float:left; width:180px">Introduction: </div> <font color="red">(*)</font> (or 1st point)
         <div style="float:right; width:830px" class="form-group">
             <textarea rows=5 cols=97 name=intro>{{ items.intro | replace("<br>", "\n") }}</textarea>
         </div>

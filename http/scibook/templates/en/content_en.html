@@ -1,6 +1,6 @@
 {% extends "en/base_en.html" %}
 {% block title %}{{ title }}{% endblock %}
-{% block descr %}{% if idata.intro %}{{ idata.intro | rehref | safe  }}{% else %}{{ idata.points[0].digest | rehref | safe  }}{% endif %}{% endblock %}
+{% block descr %}{% if idata.intro %}{{ idata.intro | rehref | safe  }}{% elif idata.points %}{{ idata.points[0].digest | rehref | safe  }}{% else %} {% endif %}{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
@@ -35,7 +35,7 @@
         {% endif %}
         <li style="margin:10px 0 0 0; text-align:justify" itemprop="articleSection">
             {% if pnt.title %}
-<!--                 <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
+                 <b><a href="{{ pnt.link }}" rel="nofollow">{{ pnt.title }}</a></b>
             <em>
                 {% if pnt.info_date %}
                     {{ pnt.info_date }},
@@ -46,7 +46,7 @@
                 {% if pnt.info_place%}
                     {{ pnt.info_place }}
                 {% endif %}
-            </em><br>-->
+            </em><br>
             {% endif %}
             <p style="text-align:justify">{{ pnt.digest | rehref | safe  }}
             {% if pnt.info_img %}
@@ -104,6 +104,7 @@
     </ol>
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ idata.summary | rehref | safe  }}
+    <p style="margin:10px 0 7px 8px"><a href="https://drive.google.com/drive/folders/1qH5eNE7esVpRXDOJNzVisyjjxEG60LuG" style="background:#dfe9f0;color:darkgreen; margin:5px">Full-text of papers mentioned above on Google.Drive</a><br>
     {% include "en/bottom_nav_en.html" %}
     </div>
     <div style="height:50px; margin:10px 25px 20px 5px;">

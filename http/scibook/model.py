@@ -72,7 +72,7 @@ class DB(object):
         return app.config['OBJECTS'].find({"I_S_type_this": {'$ne': val}, "namespace": [namespace]}, {"I_S_codename": 1, "I_S_name_en": 1, "I_S_name": 1}).sort(key, 1)
 
     def get_objects_by_key_sorted_filter_yes(self, val, key, namespace):
-        print self.lang
+        # print self.lang
         if self.lang == 'ru':
             key = "I_S_name"
         else:
@@ -110,7 +110,7 @@ class DB(object):
         return app.config[self.intros].find({"analyst": author},{"date":1, "namespace":1}).sort("namespace", 1)
 
     def get_spaces_by_author(self, author):
-        return app.config[self.spaces].find({"analyst": author},{"date":1, "editdate":1, "namespace":1, "title":1, "I_S_codename":1}).sort("date", -1)        
+        return app.config[self.spaces].find({"analyst": author},{"date":1, "editdate":1, "namespace":1, "title":1, "I_S_codename":1}).sort("date", 1)        
 
     def get_spaces_by_author_ns(self, author, namespace):
         return app.config[self.spaces].find({"analyst": author, "namespace": namespace},{ "title":1, "I_S_codename":1, "points.num":1, "points.I_S_codenames":1}).sort("date", -1)

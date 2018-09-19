@@ -42,7 +42,7 @@
             <a href="#" style="padding:8px 0 0 0"><img src="{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
             <ul class="dropdown-menu" style="min-width: 30px !important;">
                 <li style="padding: 2px 0 2px 20px;"><b>RU</b></li>
-                <li><a href="{{ request.path | replace('/', '/en/', 1) }}" title="English">EN</a></li>
+                <li><a href="https://en.scibook.org{{ request.path }}" title="English">EN</a></li>
 <!--                <li><a href="{{ request.path | replace('/', '/he/', 1) }}" title="Hebrew">HE</a></li>-->
                 </ul>
             </li>

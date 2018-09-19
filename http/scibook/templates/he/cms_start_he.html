@@ -5,12 +5,12 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 10px;" align=left>
-<h1>ערוך את התוכן שלך / שפה: <a href="{{ request.path | replace('/he', '', 1) }}">RU</a> | HE</h1>
+<h1>ערוך את התוכן שלך / שפה: <a href="{{ request.path | replace('', '', 1) }}">RU</a> | HE</h1>
 
 {% for ns in namespaces %}
 <h3>בתוכן קיים</h3>
-<b>{{ ns.namespace }}:</b> <a href="/he/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">הוסף פרק</a>
-or <a href="/he/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ערוך מבוא</a>
+<b>{{ ns.namespace }}:</b> <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:0">הוסף פרק</a>
+or <a href="/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ערוך מבוא</a>
 <div style="margin:20px 0 0 40px;">
     {% if chapters and chapters[ ns.namespace ] %}
 <h3>בחר פרק לעריכה <b>{{ ns.namespace }}</b>:</h3>
@@ -32,11 +32,11 @@ or <a href="/he/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ע
   <div style="display:table-row;background:{{ color }}">
     <div style="display:table-cell; width:30px; padding:2px; padding: 0 5px 0 5px">{{ loop.index }}.</div>
     <div style="display:table-cell; width:300px; padding:2px">
-        <a href="/he/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
+        <a href="/editspace/chapter:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}">{{ lst[0] }}</a>
     </div>
     <div style="display:table-cell; width:200px; padding:2px">{{ lst[2] }}</div>
     <div style="display:table-cell; width:200px; padding:2px">{{ lst[3] }}</div>
-    <div style="display:table-cell; width:200px; padding:2px"><a href="/he/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav" title="export '{{ lst[0] }}' to json">[↑]</a></div>
+    <div style="display:table-cell; width:200px; padding:2px"><a href="/editspace/export_json:{{ current_user.author }}:{{ ns.namespace }}:{{ lst[1] }}" class="pointer linknav" title="export '{{ lst[0] }}' to json">[↑]</a></div>
   </div>
         {% endfor %}
  </div>
@@ -44,6 +44,6 @@ or <a href="/he/editspace/intro:{{ current_user.author }}:{{ ns.namespace }}">ע
 </div>
 {% endfor %}
 <h3>הוסף נושא חדש</h3>
-<a href="/he/editspace/intro:{{ current_user.author }}:0">צור מרחב שמות חדש</a>
+<a href="/editspace/intro:{{ current_user.author }}:0">צור מרחב שמות חדש</a>
 
 {% endblock %}

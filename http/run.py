@@ -1,4 +1,4 @@
-from app import app, lm
+from scibook import app, lm
 import os
 import logging
 
@@ -13,3 +13,4 @@ for w_dir in watch_dirs:
                 watch_files.append(filename)
 app.run('0.0.0.0', port=8080, extra_files=watch_files, threaded=True)
 app.debug = True
+# app.config['DEBUG'] = True

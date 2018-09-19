@@ -1,8 +1,8 @@
 <div class="navbar-default navbar-fixed-top" role="navigation">
   <div class="topnav">
     <div class="navbar-header">
-    <a class="navbar-brand" href="/he/" title="SciBook: חיסונים, ניתוח מאמרים מדעיים על חיסונים, עמוד ראשי"><img
-        src="{{ url_for('static', filename='img/SciBoo.gif') }}"></a>
+    <a class="navbar-brand" href="/" title="SciBook: חיסונים, ניתוח מאמרים מדעיים על חיסונים, עמוד ראשי"><img
+        src="https://www.scibook.org{{ url_for('static', filename='img/SciBoo.gif') }}"></a>
         <div class="hidden-lg" style="font-size:22px;color:#581AFF;font-weight:bold; line-height:50px; padding: 10px; display:inline; ">
             <span style="margin:10px">SciBook</span></div>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar" style="border: 1px solid #555ce1;" aria-expanded="false" aria-controls="top-navbar">
@@ -17,11 +17,11 @@
       <ul class="nav navbar-nav">
         <li class="visible-lg" style="height:37px;border-right:1px solid #555ce1; margin:5px 0;">&nbsp;</li>
         <li class="dropdown">
-            <a href="/he/chapters/vaccines" style="font-size:17px;">חיסונים <span class="caret-m"></span></a>
+            <a href="/chapters/vaccines" style="font-size:17px;">חיסונים <span class="caret-m"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="/he/intro/vaccines">מבוא</a></li>
+                <li><a href="/intro/vaccines">מבוא</a></li>
           {% for entry in navitems %}
-                <li><a href="/he/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+                <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
                     <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                     {{ entry.title }}</a>
                 </li>
@@ -31,7 +31,7 @@
         </ul>
         <ul class="nav navbar-nav">
         <li class="visible-lg" style="font-size:22px;color:#581AFF;font-weight:bold; padding: 10px 15px 0 110px">SciBook</li>
-        <form class="navbar-form" role="search" action="/he/search" method="POST" name="sform" enctype="multipart/form-data">
+        <form class="navbar-form" role="search" action="/search" method="POST" name="sform" enctype="multipart/form-data">
         <li class="sbox" style="padding: 0 1px 0 3px">
             <input type="text" class="form-control" placeholder="חיפוש..." name=search size=10>
         </li>
@@ -39,10 +39,10 @@
         </ul>
         <ul class="nav navbar-nav" style="width:35%; padding:0; float:right;white-space: nowrap;">
             <li class="dropdown">
-            <a href="#" style="padding:8px 0 0 0"><img src="{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
+            <a href="#" style="padding:8px 0 0 0"><img src="https://www.scibook.org{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
             <ul class="dropdown-menu" style="min-width: 30px !important;">
-                <li><a href="{{ request.path | replace('/he', '', 1) }}" title="Russian">RU</a></li>
-                <li><a href="{{ request.path | replace('/he', '/en', 1) }}" title="English">EN</a></li>
+                <li><a href="https://www.scibook.org{{ request.path }}" title="Russian">RU</a></li>
+                <li><a href="https://en.scibook.org{{ request.path }}" title="English">EN</a></li>
                 <li style="padding: 2px 0 2px 20px;"><b>HE</b></li>
                 </ul>
             </li>
@@ -50,13 +50,13 @@
             <li class="dropdown">
                 <a href="#" style="font-size:17px">Hey <b>{{ current_user.author }}</b>, you're in: <span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="/he/profile/{{ current_user.author }}">Profile</a></li>
-                    <li><a href="/he/editspace/{{ current_user.author }}">Edit your materials</a></li>
+                    <li><a href="/profile/{{ current_user.author }}">Profile</a></li>
+                    <li><a href="/editspace/{{ current_user.author }}">Edit your materials</a></li>
                     <li><a href="/logout/">Logout</a></li>
                 </ul>
             </li>
         {% else %}
-            <li><a href="/he/contact/">כתבו לנו</a></li>
+            <li><a href="/contact/">כתבו לנו</a></li>
             <li><a onClick="javascript:showDiv('lf')" style="cursor:pointer;">Login</a></li>
         {% endif %}
         </ul>

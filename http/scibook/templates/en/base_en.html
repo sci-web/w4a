@@ -2,25 +2,18 @@
 <html>
 <head>
 <title>{% block title %}{% endblock %}</title>
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/theme.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/fileinput.min.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-select.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core-dataTables.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='js/datatables.css') }}"/>
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <script type=text/javascript src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/datatables.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/dataTables.searchHighlight.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/show-hide.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/validator.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/fileinput.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/fileinput_locale_es.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/mustache.min.js') }}"></script>
+    <link rel=stylesheet type=text/css href="https://www.scibook.org{{ url_for('static', filename='css/theme.css') }}">
+    <link rel=stylesheet type=text/css href="https://www.scibook.org{{ url_for('static', filename='css/bootstrap-select.css') }}">
+    <link rel=stylesheet type=text/css href="https://www.scibook.org{{ url_for('static', filename='css/core.css') }}">
+    <link rel="shortcut icon" href="https://www.scibook.org{{ url_for('static', filename='favicon.ico') }}">
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.autocomplete.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/show-hide.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/validator.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/mustache.min.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="{% block descr %}{% endblock %}">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -56,9 +49,9 @@
           <li><span style="margin:0 0 0 3px;white-space: nowrap">By Chapters:</span></li>
         </ul>
         <ol>
-          <li><a href="/en/intro/vaccines" class="linknav">Introduction</a></li>
+          <li><a href="/intro/vaccines" class="linknav">Introduction</a></li>
           {% for entry in items %}
-            <li class="sqnav" style="white-space: nowrap"><a href="/en/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+            <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
 <!--                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div> -->
                 {{ entry.title }}</a>
             </li>
@@ -94,7 +87,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in objects %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/en/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                        <a href="/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -103,7 +96,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in drugs %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/en/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                        <a href="/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -112,7 +105,7 @@ var sc_security="59e332e0";
                 <ul class="sqmenu">
                 {% for entry in conditions %}
                     <li style="color:#4d4df6" class="sqnav">
-                        <a href="/en/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
+                        <a href="/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name_en }}</a>
                     </li>
                 {% endfor %}
                 </ul>
@@ -121,7 +114,7 @@ var sc_security="59e332e0";
                 <ul  class="sqmenu">
                     {% for entry in geo_objects %}
                         <li style="color:#4d4df6" class="rightnav">
-                            <a href="/en/browse/geo/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
+                            <a href="/browse/geo/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_codename | replace("_", " ")}}</a>
                         </li>
                     {% endfor %}
                 </ul>
@@ -170,5 +163,5 @@ $(function() {
 </html>
 <!-- Bootstrap core JavaScript
 ================================================== -->
-<script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.min.js') }}"></script>
-<script type=text/javascript src="{{ url_for('static', filename='js/jquery.smartmenus.bootstrap.min.js') }}"></script>
+<script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.smartmenus.min.js') }}"></script>
+<script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.smartmenus.bootstrap.min.js') }}"></script>

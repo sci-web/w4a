@@ -1,5 +1,5 @@
 {% extends "en/base_en.html" %}
-{% block title %}SciBook: analysis of scientific and mass-media information from the sources; vaccinations, infections, drugs, conditions{% endblock %}
+{% block title %}SciBook: analysis of published information from the sources; vaccinations and infections{% endblock %}
 {% block head %}
     {{ super() }}
 {% endblock %}
@@ -24,7 +24,7 @@ Let's start with one of the most important, may be, topics: health in the contex
             <p style="text-align:justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ entry.intro | rehref | safe }}
             <div style="margin:10px 0 0 0; font-size:17px;height:30px;">
                 <div style="float:left; margin-left:-3px">
-                    <a id="opentxt" href="/en/intro/{{ entry.namespace }}" class="linknav">Introduction</a>
+                    <a id="opentxt" href="/intro/{{ entry.namespace }}" class="linknav">Introduction</a>
                     <div style="display:inline"><span id="none"></span>
                         <span id="ihide" style="display:none; font-size:14px" onClick="javascript:hideDiv('ihide')" >
                             <a onClick="javascript:hideDiv('fill')" href="#" class="linknav">(hide)</a>
@@ -37,7 +37,7 @@ Let's start with one of the most important, may be, topics: health in the contex
                             <a onClick="javascript:hideDiv('fill')" href="#" class="linknav">(hide)</a>
                         </span>
                     </div>
-                    <a id="opencontent" href="/en/chapters/{{ entry.namespace }}" class="linknav">List of contents</a>
+                    <a id="opencontent" href="/chapters/{{ entry.namespace }}" class="linknav">List of contents</a>
                 </div>
             </div>
 <hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:1% 0 0 15%" align=center>
@@ -50,7 +50,7 @@ Let's start with one of the most important, may be, topics: health in the contex
 </div>
 <script>
 $(document).ready(function() {
-  Retrieve('/en/intro/vaccines?div', "#none");
+  Retrieve('https://en.scibook.org/intro/vaccines?div', "#none");
   $("#opentxt").bind('click', function(event) {
     event.preventDefault();
     Retrieve($(this).attr('href'), "#ihide");
@@ -60,7 +60,7 @@ $(document).ready(function() {
     Retrieve($(this).attr('href'), "#chide");
   });
   function Retrieve(url, hide) {
-    $.getJSON({
+    $.ajax({
             url: url,
             data: "div",
             contentType: "application/json; charset=utf-8",

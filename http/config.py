@@ -1,21 +1,22 @@
-from pymongo import MongoClient
+from pymongo import MongoClient, errors
 import uuid, os
 
-
+# errors.ServerSelectionTimeoutMS = 5
 WTF_CSRF_ENABLED = True
-# SECRET_KEY = 'devil in the sky'
+SECRET_KEY = 'devil in the sky'
 DB_NAME = 'w4a'
+DB = MongoClient()[DB_NAME]
+INTROS = DB.intros
+INTROS_EN = DB.intros_en
+INTROS_HE = DB.intros_he
+OBJECTS = DB.objects
+SPACES = DB.chapters
+SPACES_EN = DB.chapters_en
+SPACES_HE = DB.chapters_he
+CORE = DB.core
+CONTACTS = DB.contacts
 
-DATABASE = MongoClient()[DB_NAME]
-INTROS = DATABASE.intros
-INTROS_EN = DATABASE.intros_en
-OBJECTS = DATABASE.objects
-SPACES = DATABASE.chapters
-SPACES_EN = DATABASE.chapters_en
-CORE = DATABASE.core
-CONTACTS = DATABASE.contacts
-
-# for export name of vars = collections: i.e. chapters = collection chapters in DATABASE
+# for export name of vars = collections: i.e. chapters = collection chapters in DB
 
 MAIL_SERVER = os.getenv('MAIL_SERVER', 'localhost')
 MAIL_PORT = int(os.getenv('MAIL_PORT', '25'))
@@ -38,5 +39,6 @@ GEOCITY = "/home/jes/Code/w4a/geo/GeoLite2-City_20180206/GeoLite2-City.mmdb"
 
 CSV = set(['csv', 'txt'])
 
-DEBUG = True
-PROPAGATE_EXCEPTIONS = True
+
+# DEBUG = True
+# PROPAGATE_EXCEPTIONS = True

@@ -575,7 +575,7 @@ def del_point(author, namespace, chapter, point):
 @app.route('/he/editspace/hide_point:<author>:<namespace>:<chapter>:<point>:<h>', methods=['GET', 'POST'])
 @login_required
 def hide_point(author, namespace, chapter, point, h):
-    print author, namespace, chapter, point, h
+    # print author, namespace, chapter, point, h
     DB(g.location).hide_point_in_a_chapter(author, namespace, chapter, point, int(h))
     if int(h) == 1:
         msg = "hidden now!"

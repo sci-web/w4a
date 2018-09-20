@@ -479,15 +479,7 @@ def save_chapter(author, namespace, chapter):
             return render_template(tmpl, form=g.form, items=i_data, namespace=namespace)
 
 
-@app.route('/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
-@app.route('/en/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
-@app.route('/he/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
-@login_required
-def edit_tags(namespace, author, action):
-    itmpl = tmpl_picker('form_tags')
-    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
-    spaces = DB(g.location).get_spaces_by_author_ns(author, namespace)
-    data = json.loads(dumps(spaces))
+def chapters_for_tags(data):
     chapters = {}
     for d in range(0, len(data)):
         arr = data[d]["points"]
@@ -508,6 +500,20 @@ def edit_tags(namespace, author, action):
                                 }
             except:
                 pass
+    return chapters
+
+
+@app.route('/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@app.route('/en/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@app.route('/he/editspace/tags:<author>:<namespace>:<action>', methods=['GET', 'POST'])
+@login_required
+def edit_tags(namespace, author, action):
+    itmpl = tmpl_picker('form_tags')
+    new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
+    spaces = DB(g.location).get_spaces_by_author_ns(author, namespace)
+    data = json.loads(dumps(spaces))
+    chapters = chapters_for_tags(data)
+
     return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace, chapters=chapters)
 
 
@@ -544,7 +550,10 @@ def save_tags(namespace, author, action):
         flash(error, category='error') 
     itmpl = tmpl_picker('form_tags')
     new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
-    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace)
+    spaces = DB(g.location).get_spaces_by_author_ns(author, namespace)
+    data = json.loads(dumps(spaces))
+    chapters = chapters_for_tags(data)
+    return render_template(itmpl, form=g.form, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, new_objects=new_objects, namespace=namespace, chapters=chapters)
 
 
 @app.route('/editspace/del_a_tag:<author>:<namespace>:<codename>', methods=['GET', 'POST'])

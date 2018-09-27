@@ -16,7 +16,9 @@
         {% if entry.intro %}
             {{ entry.intro | rehref | safe  }}
         {% else %}
-            {{ entry.points[0].digest | rehref | safe  }}
+            {% for points in entry.points %}
+            {{ points.digest | rehref | safe  }}
+            {% endfor %}
         {% endif %}
     </div>
     <div style="margin:-12px 0 0 0; width: 98%;" align=right>

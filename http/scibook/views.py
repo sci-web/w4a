@@ -211,7 +211,7 @@ def show_intro(namespace):
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
     tmpl = tmpl_picker('intro')
     div = tmpl_picker('intro_div')
-    g.chapters = DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date")
+    g.chapters = DB(g.location).get_spaces_by_key_sorted(g.namespace, "date")
     if 'div' in request.args:
         return jsonify( {'data': render_template(div, idata=data, chapters=g.chapters)} )
     else:

@@ -9,10 +9,10 @@
     <div itemscope itemtype="http://schema.org/PublicHealth">
         <div style="height:40px">
         <div style="float:left"><h4 style="text-align:right"><a href="" class="linknav">{{ idata.analyst }}</a></h4></div>
-        <div style="float:right; margin-top:-25px"><h1 align=right>{{ idata.title }}</h1></div>
+        <div style="float:right; margin-top:-25px"><h1 align=right>{{ idata.title }}  </h1></div>
         </div>
         {% if idata.epigraph %}
-        <div style="margin:0 2% 0 0; line-height:16px" align=right><font color="#2d2df6">{{ idata.epigraph.text | safe }}<br>
+        <div style="line-height:16px" align=right><font color="#2d2df6">{{ idata.epigraph.text | safe }}<br>
             <em>{{ idata.epigraph.source }}</em>
             {% if idata.epigraph.link %}
                 <small><a href={{ idata.epigraph.link }}>source</a></small>
@@ -20,14 +20,14 @@
             </font>
         </div>
         {% endif %}
-        <div style="margin:10px 5px; 0 0" align=right>
+        <div style="margin:10px 0 0 0" align=right>
             <small style="background-color:#e1e6f0;margin:5px">{{ idata.date }}</small>
         </div>
-        <div style="margin:10px 1% 0 0; text-align:justify">
+        <div style="margin:10px 0 0 0; text-align:justify">
         {{ idata.intro | rehref | safe}}
         </div>
     </div>
-    <ol style="margin:20px 2% 0 -20px">
+    <ol style="margin:20px 0 0 -20px">
     {% for pnt in idata.points|sort(attribute='num') %}
     {% if pnt.is_hidden != 1 %}
         {% if pnt.header %}
@@ -102,7 +102,7 @@
     {% endif %}
     {% endfor %}
     </ol>
-<div align=center class="boxed_sh"><a href=/contact/>כתבו לנו</a>אם ברצונכם לסייע בתרגום הפרק מרוסית לעברית (או לכל שפה אחרת), </div>
+<!-- <div align=center class="boxed_sh"><a href=/contact/>כתבו לנו</a>אם ברצונכם לסייע בתרגום הפרק מרוסית לעברית (או לכל שפה אחרת), </div>-->
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ idata.summary | rehref | safe  }}
     <p style="margin:10px 0 7px 8px"><a href="https://drive.google.com/drive/folders/1qH5eNE7esVpRXDOJNzVisyjjxEG60LuG" style="background:#dfe9f0;color:darkgreen; margin:5px">טקסטים מלאים של המאמרים שהוזכרו לעיל זמינים בגוגל דרייב</a><br>

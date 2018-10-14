@@ -16,7 +16,7 @@ Let's start with one of the most important, may be, topics: health in the contex
 <hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:2% 0 0 15%" align=center>
 
 {% for entry in data %}
-            <h4 style="text-align:right;"><a href="" class="linknav">{{ entry.analyst }}</a></h4>
+            <h4 style="text-align:right;padding-bottom:10px"><a href="" class="linknav">{{ entry.analyst }}</a></h4>
             <h1 style="margin:-25px 0 0 0 ">{{ entry.subject }}</h1>
             <div  style="margin:0 0 10px 0" align=right><small>{{ entry.epigraph.text | safe }}<br>
             <i>{{ entry.epigraph.source }}</i></small>
@@ -41,7 +41,7 @@ Let's start with one of the most important, may be, topics: health in the contex
                 </div>
             </div>
 <hr size=1 style="width: 70%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:1% 0 0 15%" align=center>
-<div id="fill" class="boxed_sh" style="display:none; margin:-12px 1% 80px 0; padding:0 2%; ">
+<div id="fill" class="boxed_sh" style="display:none;">
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 500px;position:absolute">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>

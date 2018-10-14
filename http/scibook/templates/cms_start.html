@@ -5,7 +5,8 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 10px;" align=left>
-<h1>Ваши материалы / на языке: RU | <a href="{{ request.path | replace('/', '/en/', 1) }}">EN</a></h1>
+<h1>Ваши материалы / на языке: <b>RU</b> | <a href="https://en.scibook.org{{ request.path | replace('^/', '^/en/', 1) }}" title="English">EN</a>
+| <a href="https://he.scibook.org{{ request.path | replace('^/', '^/he/', 1) }}" title="Hebrew">HE</a></li></h1>
 
 {% for ns in namespaces %}
 <h4>в текущих материлах:</h4>

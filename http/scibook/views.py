@@ -17,18 +17,6 @@ from itertools import chain
 from copy import deepcopy
 
 
-@app.errorhandler(404)
-def page_not_found(error):
-    form = makeform()
-    return render_template('404.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
-
-
-@app.errorhandler(500)
-def internal_server_error(error):
-    # useless: not working if no DB connection, 500 is handled by apache in production mode anyway
-    return render_template('500.html'), 500
-
-
 # @app.errorhandler(Exception)
 # def exception_handler(error):
 #     return render_template('en/404_en.html', items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404
@@ -62,10 +50,12 @@ def load_vars():
     g.location = request.path.split('/')[1]
     if g.location in locations:
         g.location = g.location
+    elif request.host.split(".")[0] in locations:
+        g.location = request.host.split(".")[0]
     else:
         g.location = "ru"
+    # print "location:", g.location
     g.namespace = "vaccines"
-    # g.items = list(DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date"))
     g.items = list(DB(g.location).get_spaces_by_key_sorted(g.namespace, "date"))
     g.navitems = g.items[:]
     g.objects = DB(g.location).get_objects_by_key_sorted_filter_yes("disease", "I_S_codename", g.namespace)
@@ -75,6 +65,28 @@ def load_vars():
     # g.chapters = DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date")
     g.chapters = DB(g.location).get_spaces_by_key_sorted(g.namespace, "date")
     g.form = makeform()
+
+
+def tmpl_picker(name):
+    if g.location == "en":
+        return 'en/' + name + '_en.html'
+    elif g.location == "he":
+        return 'he/' + name + '_he.html'
+    else:
+        return name + '.html'
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    form = makeform()
+    tmpl = tmpl_picker('404')
+    return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation      
+
+
+@app.errorhandler(500)
+def internal_server_error(error):
+    # useless: not working if no DB connection, 500 is handled by apache in production mode anyway
+    return render_template('500.html'), 500
 
 
 def date_format(view, value):
@@ -94,19 +106,11 @@ def rehref(jsonstring):
 
 app.jinja_env.filters['rehref'] = rehref
 
-def tmpl_picker(name):
-    if g.location == "en":
-        return 'en/' + name + '_en.html'
-    elif g.location == "he":
-        return 'he/' + name + '_he.html'
-    else:
-        return name + '.html'
-
 
 @app.route('/')
 @app.route('/en', strict_slashes=False)
 @app.route('/en/')
-@app.route('/he')
+@app.route('/he', strict_slashes=False)
 @app.route('/he/')
 def index():
     if (request.referrer == None and g.location == "en" and g.path != "en" and g.path != "ru"):
@@ -129,11 +133,14 @@ def show_item(namespace, codename):
         space = data["namespace"].title()
     except:
         tmpl = tmpl_picker('404')
-        return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, form=g.form), 404  # if there is no corresponding translation      
+        return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation      
     chapters = DB(g.location).get_spaces_by_key_sorted(namespace, "date")
     f_date = datetime.datetime.fromtimestamp( data["date"]['$date'] / 1e3 )
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
-    tmpl = tmpl_picker('content')
+    if data["translated"] == 1:
+        tmpl = tmpl_picker('content')
+    else:
+        tmpl = tmpl_picker('to_translate')
     return render_template(tmpl, idata=data, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
                             title=space + " / " + namespace.title() + ": " + title, chapters=chapters)
 

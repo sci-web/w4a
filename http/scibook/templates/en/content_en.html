@@ -12,7 +12,7 @@
             <div style="float:right"><h4 style="text-align:right"><a href="" class="linknav">{{ idata.analyst }}</a></h4></div>
         </div>
         {% if idata.epigraph %}
-        <div style="margin:0 2% 0 0; line-height:16px" align=right><font color="#2d2df6">{{ idata.epigraph.text | safe }}<br>
+        <div style="line-height:16px" align=right><font color="#2d2df6">{{ idata.epigraph.text | safe }}<br>
             <em>{{ idata.epigraph.source }}</em>
             {% if idata.epigraph.link %}
                 <small><a href={{ idata.epigraph.link }}>source</a></small>
@@ -20,14 +20,14 @@
             </font>
         </div>
         {% endif %}
-        <div style="margin:10px 5px; 0 0" align=right>
+        <div style="margin:10px 0 0 0" align=right>
             <small style="background-color:#e1e6f0;margin:5px">{{ idata.date }}</small>
         </div>
-        <div style="margin:10px 1% 0 0; text-align:justify">
+        <div style="margin:10px 0 0 0; text-align:justify">
         {{ idata.intro | rehref | safe}}
         </div>
     </div>
-    <ol style="margin:20px 2% 0 -20px">
+    <ol style="margin:20px 0 0 -20px">
     {% for pnt in idata.points|sort(attribute='num') %}
     {% if pnt.is_hidden != 1 %}
         {% if pnt.header %}
@@ -102,7 +102,7 @@
     {% endif %}
     {% endfor %}
     </ol>
-<div align=center class="boxed_sh">If you'd fancy to help us translate the contents of this or other chapters into another language — <a href=/contact/>contact us</a>!</div>
+<!-- <div align=center class="boxed_sh">If you'd fancy to help us translate the contents of this or other chapters into another language — <a href=/contact/>contact us</a>!</div>-->
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ idata.summary | rehref | safe  }}
     <p style="margin:10px 0 7px 8px"><a href="https://drive.google.com/drive/folders/1qH5eNE7esVpRXDOJNzVisyjjxEG60LuG" style="background:#dfe9f0;color:darkgreen; margin:5px">Full-text of papers mentioned above on Google.Drive</a><br>

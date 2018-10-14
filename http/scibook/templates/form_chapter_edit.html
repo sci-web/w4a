@@ -34,6 +34,7 @@
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group">
             <input type="text" placeholder="Title" name=title size=65 value="{{ items.title }}"> <font color="red">(*)</font>
+            Опубликовано: <input type=checkbox name="translated" value=1 {%if items.translated == 1 %}checked{% endif %}>
         </div>
     </div>
     <br>

@@ -31,7 +31,7 @@
 <div id="masthead"><a name="top"></a>
 </div>
 <div class="container-fluid" align=center>
- <div class="row" style="margin:5px; width:100%">
+ <div class="row" style="margin:0; width:100%">
 {% set sitepart = request.path.split('/')[2] %}
 
 {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
@@ -52,8 +52,12 @@
           <li><a href="/intro/vaccines" class="linknav">Introduction</a></li>
           {% for entry in items %}
             <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
-<!--                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div> -->
-                {{ entry.title }}</a>
+                {% if request.path.split('/')[3] == entry.I_S_codename or request.path.split('/')[4] == entry.I_S_codename %}
+                <b>{{ entry.title }}</b>
+                {% else %}
+                {{ entry.title }}
+                {% endif %}
+                </a>
             </li>
           {% endfor %}
         </ol>

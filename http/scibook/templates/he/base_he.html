@@ -32,12 +32,11 @@
 </style>
 <body>
 {% include "he/navbar_he.html" %}
-<div id="masthead"><a name="top"></a>
-</div>
+<div id="masthead"><a name="top"></a></div>
 <div class="container-fluid" align=center>
- <div class="row" style="margin:5px; width:100%">
+ <div class="row hebrew" style="margin:0; width:100%">
 {% set sitepart = request.path.split('/')[2] %}
-    <div class="col-md-4 col-lg-2 hebrew" style="width:365px;margin:20px 0 0 0">
+    <div class="col-md-4 col-lg-2 visible-lg" style="width:365px;margin:20px 0 0 0">
     {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
     <div class="simplebar-content" align=center style="width:345px;padding:14px 0 10px 0;" id=sidebar>
         <ul class="nav nav-tabs" style="margin-left:80px;">
@@ -111,9 +110,18 @@
         <ol>
           <li style="white-space: nowrap; text-align:right"><a href="/intro/vaccines" class="linknav">מבוא</a></li>
           {% for entry in items %}
-            <li class="sqnav" style="white-space: nowrap; text-align:right"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
-<!--                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div> -->
-                {{ entry.title }}</a>
+            <li class="sqnav" style="white-space: nowrap; text-align:right">
+            {% if entry.translated == 1 %}
+            <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+            {% else %}
+            <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" style="color:#777;text-decoration:none;">
+            {% endif %}
+            {% if request.path.split('/')[3] == entry.I_S_codename or request.path.split('/')[4] == entry.I_S_codename %}
+                <b>{{ entry.title }}</b>
+                {% else %}
+                {{ entry.title }}
+                {% endif %}
+            </a>
             </li>
           {% endfor %}
         </ol>

@@ -2,18 +2,18 @@
 <html>
 <head>
 <title>{% block title %}{% endblock %}</title>
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/theme.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootstrap-select.css') }}">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/core.css') }}">
-    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <script type=text/javascript src="{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/jquery.autocomplete.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/moment.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/show-hide.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/validator.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
-    <script type=text/javascript src="{{ url_for('static', filename='js/mustache.min.js') }}"></script>
+    <link rel=stylesheet type=text/css href="https://www.scibook.org{{ url_for('static', filename='css/theme.css') }}">
+    <link rel=stylesheet type=text/css href="https://www.scibook.org{{ url_for('static', filename='css/bootstrap-select.css') }}">
+    <link rel=stylesheet type=text/css href="https://www.scibook.org{{ url_for('static', filename='css/core.css') }}">
+    <link rel="shortcut icon" href="https://www.scibook.org{{ url_for('static', filename='favicon.ico') }}">
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery-2.1.4.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.autocomplete.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/moment.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/show-hide.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/validator.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/mustache.min.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="{% block descr %}{% endblock %}">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -34,7 +34,7 @@
 <div id="masthead"><a name="top"></a>
 </div>
 <div class="container-fluid" align=center>
- <div class="row" style="margin:5px; width:100%">
+ <div class="row" style="margin:0; width:100%">
 {% set sitepart = request.path.split('/')[1] %}
 {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
     <div class="col-lg-2 visible-lg" style="margin:65px 20px 0 0; height:100%; width:265px;" align=left>
@@ -54,8 +54,12 @@
           <li><a href="/intro/vaccines" class="linknav">Введение</a></li>
           {% for entry in items %}
             <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
-<!--                 <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div> -->
-                {{ entry.title }}</a>
+                {% if request.path.split('/')[3] == entry.I_S_codename or request.path.split('/')[4] == entry.I_S_codename %}
+                <b>{{ entry.title }}</b>
+                {% else %}
+                {{ entry.title }}
+                {% endif %}
+                </a>
             </li>
           {% endfor %}
         </ul>

@@ -5,7 +5,9 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 10px;" align=left>
-<h1>Edit your space / language: <a href="{{ request.path | replace('', '', 1) }}">RU</a> | EN</h1>
+<h1>Edit your space / language: <a href="https://www.scibook.org{{ request.path  | replace('/en/', '/', 1) }}" title="Russian">RU</a>
+                | <b>EN</b></li>
+                | <a href="https://he.scibook.org{{ request.path | replace('/en/', '/', 1) }}" title="Hebrew">HE</a></h1>
 
 {% for ns in namespaces %}
 <h3>for existing namespace</h3>

@@ -41,9 +41,9 @@
             <li class="dropdown">
             <a href="#" style="padding:8px 0 0 0"><img src="https://www.scibook.org{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
             <ul class="dropdown-menu" style="min-width: 30px !important;">
-                <li><a href="https://www.scibook.org{{ request.path }}" title="Russian">RU</a></li>
+                <li><a href="https://www.scibook.org{{ request.path  | replace('/en/', '/', 1) }}" title="Russian">RU</a></li>
                 <li style="padding: 2px 0 2px 20px;"><b>EN</b></li>
-<!--                 <li><a href="{{ request.path | replace('/en', '/he', 1) }}" title="Hebrew">HE</a></li> -->
+                <li><a href="https://he.scibook.org{{ request.path | replace('/en/', '/', 1) }}" title="Hebrew">HE</a></li>
                 </ul>
             </li>
             {% if current_user.is_authenticated %}
@@ -64,4 +64,4 @@
   </div><!-- /.container-fluid -->
 </div>
 <br>
-{% include 'loginform.html' %}
+{% include 'en/loginform_en.html' %}

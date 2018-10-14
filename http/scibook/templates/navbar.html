@@ -2,7 +2,7 @@
   <div class="topnav">
     <div class="navbar-header">
     <a class="navbar-brand" href="/" title="SciBook: прививки, анализ научных статей по теме вакцинации, главная страница"><img
-        src="{{ url_for('static', filename='img/SciBoo.gif') }}"></a>
+        src="https://www.scibook.org{{ url_for('static', filename='img/SciBoo.gif') }}"></a>
         <div class="hidden-lg" style="font-size:22px;color:#581AFF;font-weight:bold; line-height:50px; padding: 10px; display:inline; ">
             <span style="margin:10px">SciBook</span></div>
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar" style="border: 1px solid #555ce1;" aria-expanded="false" aria-controls="top-navbar">
@@ -39,11 +39,11 @@
         </ul>
         <ul class="nav navbar-nav" style="width:35%; padding:0; float:right;white-space: nowrap;">
             <li class="dropdown">
-            <a href="#" style="padding:8px 0 0 0"><img src="{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
+            <a href="#" style="padding:8px 0 0 0"><img src="https://www.scibook.org{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
             <ul class="dropdown-menu" style="min-width: 30px !important;">
                 <li style="padding: 2px 0 2px 20px;"><b>RU</b></li>
-                <li><a href="https://en.scibook.org{{ request.path }}" title="English">EN</a></li>
-<!--                <li><a href="{{ request.path | replace('/', '/he/', 1) }}" title="Hebrew">HE</a></li>-->
+                <li><a href="https://en.scibook.org{{ request.path | replace('^/', '^/en/', 1) }}" title="English">EN</a></li>
+                <li><a href="https://he.scibook.org{{ request.path | replace('^/', '^/he/', 1) }}" title="Hebrew">HE</a></li>
                 </ul>
             </li>
         {% if current_user.is_authenticated %}

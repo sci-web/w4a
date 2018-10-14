@@ -49,6 +49,7 @@ def login():
 
 
 @app.route('/logout/')
+@app.route('/en/logout/')
 def logout():
     logout_user()
     return redirect("/")
@@ -292,6 +293,7 @@ def save_chapter(author, namespace, chapter):
             ep_text = ""
             ep_source = ""
             error = 0
+            in_data["translated"] = 0 
             for key in f.keys():
                 for value in f.getlist(key):
                     value = value.replace("\r\n","<br>")
@@ -312,6 +314,9 @@ def save_chapter(author, namespace, chapter):
                     if key == "title": 
                         in_data["I_S_name"] = value
                         in_data["title"] = value
+                    if key == "translated" and value != "":
+                        in_data["translated"] = 1
+                        print "...", value, in_data["translated"]
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "summary" and value != ""): in_data["summary"] = value
                     if key == "ep_text": ep_text = value

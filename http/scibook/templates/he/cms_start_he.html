@@ -5,7 +5,11 @@
 {% endblock %}
 {% block content %}
 <div style="margin:50px 20px 30px 10px;" align=left>
-<h1>ערוך את התוכן שלך / שפה: <a href="{{ request.path | replace('', '', 1) }}">RU</a> | HE</h1>
+<h1>ערוך את התוכן שלך / שפה:
+<a href="https://www.scibook.org{{ request.path  | replace('/he/', '/', 1) }}" title="Russian">RU</a>
+                | <a href="https://en.scibook.org{{ request.path  | replace('/he/', '/', 1) }}" title="English">EN</a>
+                | <b>HE</b>
+</h1>
 
 {% for ns in namespaces %}
 <h3>בתוכן קיים</h3>

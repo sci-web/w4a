@@ -5,7 +5,7 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
-<div style="margin:60px 1% 1% 0" align=left itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
+<div style="margin:40px 0 30px 1%;" align=left itemscope itemtype="http://schema.org/Article" itemprop="articleBody">
     <div itemscope itemtype="http://schema.org/PublicHealth">
         <div style="height:40px">
             <div style="float:left; margin-top:-25px"><h1>{{ idata.title }}</h1></div>
@@ -102,7 +102,7 @@
     {% endif %}
     {% endfor %}
     </ol>
-<!-- <div align=center class="boxed_sh">If you'd fancy to help us translate the contents of this or other chapters into another language — <a href=/contact/>contact us</a>!</div>-->
+<div align=center class="boxed_sh">If you'd fancy to help us translate the contents of this or other chapters into another language — <a href=/contact/>contact us</a>!</div>
     <div style="margin:10px 100px 10px 10px; text-align:justify">
     {{ idata.summary | rehref | safe  }}
     <p style="margin:10px 0 7px 8px"><a href="https://drive.google.com/drive/folders/1qH5eNE7esVpRXDOJNzVisyjjxEG60LuG" style="background:#dfe9f0;color:darkgreen; margin:5px">Full-text of papers mentioned above on Google.Drive</a><br>

@@ -53,16 +53,21 @@
         <ol>
           <li><a href="/intro/vaccines" class="linknav">Введение</a></li>
           {% for entry in items %}
-            <li class="sqnav" style="white-space: nowrap"><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
-                {% if request.path.split('/')[3] == entry.I_S_codename or request.path.split('/')[4] == entry.I_S_codename %}
+            <li class="sqnav" style="white-space: nowrap;">
+            {% if entry.translated == 1 %}
+            <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+            {% else %}
+            <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" style="color:#777;text-decoration:none;">
+            {% endif %}
+            {% if request.path.split('/')[3] == entry.I_S_codename or request.path.split('/')[4] == entry.I_S_codename %}
                 <b>{{ entry.title }}</b>
                 {% else %}
                 {{ entry.title }}
                 {% endif %}
-                </a>
+            </a>
             </li>
           {% endfor %}
-        </ul>
+        </ol>
         <br>
 <script type="text/javascript">
 var sc_project=11636746;

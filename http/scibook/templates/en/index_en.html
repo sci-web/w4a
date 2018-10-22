@@ -46,7 +46,42 @@ Let's start with one of the most important, may be, topics: health in the contex
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
     </div>
 </div>
+<br>
+<style>
 {% endfor %}
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+</style>
+<center>
+<ul class="share-buttons">
+  <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fen.scibook.org&quote=Getting%20into%20vaccination" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Facebook.png') }}" /></a></li>
+  <li><a href="https://twitter.com/intent/tweet?source=https%3A%2F%2Fen.scibook.org&text=Getting%20into%20vaccination:%20https%3A%2F%2Fen.scibook.org%0AThe%20opportunity%20to%20deal%20with%20the%20vaccination%20problem%20itself%20appeared%20only%20a%20few%20years%20ago%E2%80%A6%20before%20that%2C%20almost%20all%20scientific%20research%20was%20inaccessible%20to%20the%20general%20public%E2%80%A6" target="_blank" title="Tweet"><img alt="Tweet" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Twitter.png') }}" /></a></li>
+  <li><a href="https://plus.google.com/share?url=https%3A%2F%2Fen.scibook.org" target="_blank" title="Share on Google+"><img alt="Share on Google+" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Google+.png') }}" /></a></li>
+  <li><a href="http://pinterest.com/pin/create/button/?url=https%3A%2F%2Fen.scibook.org&description=The%20opportunity%20to%20deal%20with%20the%20vaccination%20problem%20itself%20appeared%20only%20a%20few%20years%20ago%20thanks%20to%20the%20Kazakh%20student%20Alexandra%20Elbakyan.%20Before%20that%2C%20almost%20all%20scientific%20research%20was%20inaccessible%20to%20the%20general%20public%E2%80%A6" target="_blank" title="Pin it"><img alt="Pin it" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Pinterest.png') }}" /></a></li>
+  <li><a href="https://getpocket.com/save?url=https%3A%2F%2Fen.scibook.org&title=Getting%20into%20vaccination" target="_blank" title="Add to Pocket"><img alt="Add to Pocket" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Pocket.png') }}" /></a></li>
+  <li><a href="http://www.reddit.com/submit?url=https%3A%2F%2Fen.scibook.org&title=Getting%20into%20vaccination" target="_blank" title="Submit to Reddit"><img alt="Submit to Reddit" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Reddit.png') }}" /></a></li>
+  <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fen.scibook.org&title=Getting%20into%20vaccination&summary=The%20opportunity%20to%20deal%20with%20the%20vaccination%20problem%20itself%20appeared%20only%20a%20few%20years%20ago%20thanks%20to%20the%20Kazakh%20student%20Alexandra%20Elbakyan.%20Before%20that%2C%20almost%20all%20scientific%20research%20was%20inaccessible%20to%20the%20general%20public%E2%80%A6&source=https%3A%2F%2Fen.scibook.org" target="_blank" title="Share on LinkedIn"><img alt="Share on LinkedIn" src="https://www.scibook.org{{ url_for('static', filename='img/socials/LinkedIn.png') }}" /></a></li>
+  <li><a href="http://wordpress.com/press-this.php?u=https%3A%2F%2Fen.scibook.org&quote=Getting%20into%20vaccination&s=The%20opportunity%20to%20deal%20with%20the%20vaccination%20problem%20itself%20appeared%20only%20a%20few%20years%20ago%20thanks%20to%20the%20Kazakh%20student%20Alexandra%20Elbakyan.%20Before%20that%2C%20almost%20all%20scientific%20research%20was%20inaccessible%20to%20the%20general%20public%E2%80%A6" target="_blank" title="Publish on WordPress"><img alt="Publish on WordPress" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Wordpress.png') }}" /></a></li>
+  <li><a href="mailto:?subject=Getting%20into%20vaccination&body=The%20opportunity%20to%20deal%20with%20the%20vaccination%20problem%20itself%20appeared%20only%20a%20few%20years%20ago%20thanks%20to%20the%20Kazakh%20student%20Alexandra%20Elbakyan.%20Before%20that%2C%20almost%20all%20scientific%20research%20was%20inaccessible%20to%20the%20general%20public%E2%80%A6:%20https%3A%2F%2Fen.scibook.org" target="_blank" title="Send email"><img alt="Send email" src="https://www.scibook.org{{ url_for('static', filename='img/socials/Email.png') }}" /></a></li>
+</ul>
+</center>
 </div>
 <script>
 $(document).ready(function() {

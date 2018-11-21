@@ -26,7 +26,7 @@ from copy import deepcopy
 def load_vars():
     if app.config['DB'] == None:
         print "No vars to load: ", e
-        return render_template('500.html'), 500    
+        return render_template('500.html'), 500
     reader = geoip2.database.Reader(app.config['GEOCITY'])
     ip = request.environ.get('HTTP_X_REAL_IP', request.remote_addr)
     location = "ru"
@@ -60,7 +60,7 @@ def load_vars():
     g.navitems = g.items[:]
     g.objects = DB(g.location).get_objects_by_key_sorted_filter_yes("disease", "I_S_codename", g.namespace)
     g.drugs = DB(g.location).get_objects_by_key_sorted_filter_yes("drug", "I_S_codename", g.namespace)
-    g.conditions = DB(g.location).get_objects_by_key_sorted_filter_yes("condition", "I_S_codename", g.namespace) 
+    g.conditions = DB(g.location).get_objects_by_key_sorted_filter_yes("condition", "I_S_codename", g.namespace)
     g.objects_geo = DB(g.location).get_objects_by_key_sorted_filter_yes("geo", "I_S_codename", g.namespace)
     # g.chapters = DB(g.location).get_spaces_by_key_sorted(request.path.split('/')[2], "date")
     g.chapters = DB(g.location).get_spaces_by_key_sorted(g.namespace, "date")
@@ -80,7 +80,7 @@ def tmpl_picker(name):
 def page_not_found(error):
     form = makeform()
     tmpl = tmpl_picker('404')
-    return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation      
+    return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation
 
 
 @app.errorhandler(500)
@@ -118,7 +118,7 @@ def index():
 
     i_data = DB(g.location).get_intros()
     tmpl = tmpl_picker('index')
-    return render_template(tmpl, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
+    return render_template(tmpl, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo,
                     chapters=g.chapters, data=i_data)
     # return render_template('500.html'), 500
 
@@ -133,7 +133,7 @@ def show_item(namespace, codename):
         space = data["namespace"].title()
     except:
         tmpl = tmpl_picker('404')
-        return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation      
+        return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation
     chapters = DB(g.location).get_spaces_by_key_sorted(namespace, "date")
     f_date = datetime.datetime.fromtimestamp( data["date"]['$date'] / 1e3 )
     data["date"] = f_date.strftime('%d-%m-%Y %H:%M')
@@ -141,7 +141,7 @@ def show_item(namespace, codename):
         tmpl = tmpl_picker('content')
     else:
         tmpl = tmpl_picker('to_translate')
-    return render_template(tmpl, idata=data, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
+    return render_template(tmpl, idata=data, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo,
                             title=space + " / " + namespace.title() + ": " + title, chapters=chapters)
 
 
@@ -153,7 +153,7 @@ def search():
     searchfor = ""
     sform = searchForm(request.values)
     fdata = []  # filtered data
-    items = {}  
+    items = {}
     if request.method == 'POST':
         if sform.data["search"]:
             searchfor = sform.data["search"]
@@ -171,7 +171,7 @@ def search():
     else:
         flash("Form was not properly sent", category='error')
     tmpl = tmpl_picker('srp')
-    return render_template(tmpl, idata=fdata, found=len(fdata), form=g.form, 
+    return render_template(tmpl, idata=fdata, found=len(fdata), form=g.form,
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=searchfor)
 
 @app.route('/en/browse/obj/<namespace>:<codename>')
@@ -187,7 +187,7 @@ def browse(codename, namespace):
         title = objdata[0][fld]
     except:
         title = "no data found"
-    return render_template(tmpl, idata=i_data, obj=objdata, form=g.form, 
+    return render_template(tmpl, idata=i_data, obj=objdata, form=g.form,
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 
 
@@ -204,7 +204,7 @@ def browse_geo(geo, namespace):
         title = objdata[0][fld]
     except:
         title = "no data found"
-    return render_template(tmpl, idata=i_data, obj=objdata, form=g.form, 
+    return render_template(tmpl, idata=i_data, obj=objdata, form=g.form,
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=title)
 
 
@@ -222,7 +222,7 @@ def show_intro(namespace):
     if 'div' in request.args:
         return jsonify( {'data': render_template(div, idata=data, chapters=g.chapters)} )
     else:
-        return render_template(tmpl, idata=data, form=g.form, 
+        return render_template(tmpl, idata=data, form=g.form,
             items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, chapters=g.chapters, title=data["subject"])
 
 
@@ -233,7 +233,7 @@ def chapters(namespace):
     i_data = DB(g.location).get_spaces_by_key_sorted(namespace, "date")
     data = json.loads(dumps(i_data))
     tmpl = tmpl_picker('chapt')
-    div = tmpl_picker('chapt_div')    
+    div = tmpl_picker('chapt_div')
     for i in range(0, len(data)):
         f_date = datetime.datetime.fromtimestamp( data[i]["date"]['$date'] / 1e3 )
         data[i]["date"] = f_date.strftime('%d-%m-%Y %H:%M')
@@ -241,14 +241,14 @@ def chapters(namespace):
     if 'div' in request.args:
         return jsonify( {'data': render_template(div, idata=data, chapters=chapters)} )
     else:
-        return render_template(tmpl, idata=data, form=g.form, 
+        return render_template(tmpl, idata=data, form=g.form,
                             items=g.items, navitems=g.navitems, geo_objects=g.objects_geo, objects=g.objects, conditions=g.conditions, drugs=g.drugs, title=space + " / " + namespace.title())
 
 @app.route('/en/contact/', methods=['GET', 'POST'])
 @app.route('/he/contact/', methods=['GET', 'POST'])
 @app.route('/contact/', methods=['GET', 'POST'])
 def send_email():
-    captcha = FlaskSessionCaptcha(app)    
+    captcha = FlaskSessionCaptcha(app)
     cform = ContactForm(request.values)
     tmpl = tmpl_picker('contact')
     reply = tmpl_picker('autoreply')

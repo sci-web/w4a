@@ -130,7 +130,7 @@ def show_item(namespace, codename):
     data = json.loads(dumps(i_data))
     try:
         title = data["title"]
-        space = data["namespace"].title()
+        space = data["I_S_namespace"].title()
     except:
         tmpl = tmpl_picker('404')
         return render_template(tmpl, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, form=g.form), 404  # if there is no corresponding translation      
@@ -142,7 +142,7 @@ def show_item(namespace, codename):
     else:
         tmpl = tmpl_picker('to_translate')
     return render_template(tmpl, idata=data, form=g.form, items=g.items, navitems=g.navitems, objects=g.objects, conditions=g.conditions, drugs=g.drugs, geo_objects=g.objects_geo, 
-                            title=space + " / " + namespace.title() + ": " + title, chapters=chapters)
+                            title=namespace.title() + " / " + space + ": " + title, chapters=chapters)
 
 
 @app.route('/search', methods=['GET','POST'])

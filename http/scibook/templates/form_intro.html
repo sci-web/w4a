@@ -4,6 +4,9 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; border-bottom:1px solid #aaa; border-right: 1px solid #999;}
+</style>
 <div style="margin:50px 20px 30px 50px;" align=left>
 <form action="/editspace/save_intro:{{ current_user.author }}:0" method="POST" name="form">
 <h1>Редактировать тему {{ subject }} </h1>
@@ -12,14 +15,19 @@
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Subject (research title): </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Subject" name=subject size=95> <font color="red">(*)</font></div>
+            <input type="text" placeholder="Subject" name=subject size=80>&nbsp;<font color="red">(*)</font></div>
     </div>
     <br>
-    <div style="height:25px; width:1010px;">
+    <div style="height:65px; width:1010px; line-height:32px">
         <div style="float:left; width:180px">Namespace: </div>
-        <div style="float:right; width:830px" class="form-group">
-            <input type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
+        <div style="float:right; width:830px;" class="form-group">
+            <div><input style="line-height:25px" type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
             must be a unique word in latin letters</div>
+            <div><input style="line-height:25px" type="text" placeholder="Russian translation" name=namespace_ru size=20>
+            <font color="darkblue">ru</font> <font color="red">(*)</font>
+            <a onClick="loadTmpl('#lang_tmpl', '#lng_target', '#lng_0', 0, 'llcross', 0)" class="linknav pointer">add language</a></div>
+            <div id="lng_target"></div>
+        </div>
     </div>
     <br>
     <div style="height:75px; width:1010px;">
@@ -58,7 +66,7 @@
             <div id="refs_target" style="width:1000px;"></div>
             <div style="height:25px; width:1000px;" id="rln_1">
                 <div style="float:left; width:180px"></div>
-                <div align=right style="float:right; width:820px">
+                <div align=right style="float:right; width:880px">
                     <a onClick="loadTmpl('#refs_tmpl', '#refs_target', '#rln_1', 1, 'rcross', 1)" class="linknav pointer">add next refBlock</a>
                 </div>
             </div>
@@ -80,13 +88,23 @@
 </form>
 </div>
 {% raw %}
+<script id="lang_tmpl" type="x-tmpl-mustache">
+    <div id="lng_{{ num }}">
+        <div style="display:cell;margin-left:560px; width:12px; float:right; position:absolute" id=lcross>
+            <a onClick = "javascript:RemoveDiv('#lng_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <input style="line-height:25px" type="text" name=namespace_{{ num }} size=20>&nbsp;<input
+        style="line-height:25px" type="text" name=acronym_{{ num }} size=2> (language acronym)
+    </div>
+    <div id="lang_target"></div>
+</script>
 <script id="pnt_tmpl" type="x-tmpl-mustache">
-    <div style="height:195px; width:1000px;" id="p_{{ num }}">
+    <div style="height:195px; width:1100px;" id="p_{{ num }}">
         <div style="float:left; width:180px">Point #{{ num }}: </div>
-        <div style="float:right; width:820px" class="form-group">
+        <div style="float:right; width:920px" class="form-group">
             <textarea rows=7 cols=97 name=points_{{ num }}></textarea>
         </div>
-        <div style="display:cell;margin-left:1010px; width:12px; float:right; position:absolute" id=pcross>
+        <div style="display:cell;margin-left:1080px; width:12px; float:right; position:absolute" id=pcross>
             <a onClick = "javascript:RemoveDiv('#p_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
     </div>
@@ -99,7 +117,7 @@
 </script>
 <script id="lnk_tmpl" type="x-tmpl-mustache">
     <div style="width:880px;height:100%" id="lnk_{{ num }}">
-        <div style="display:cell;margin:5px 0 0 850px; width:12px; float:right; position:absolute" id=lcross>
+        <div style="display:cell;margin:5px 0 0 870px; width:12px; float:right; position:absolute" id=lcross>
             <a onClick = "javascript:RemoveDiv('#lnk_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <hr size=1 style="width:94%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:20px 0 20px 40px" align=left>
@@ -145,8 +163,8 @@
     </div>
 </script>
 <script id="refs_tmpl" type="x-tmpl-mustache">
-    <div style="width:1000px;" id="ref_{{ rnum }}">
-        <div style="display:cell;margin-left:960px; width:12px; float:right; position:absolute" id=rcross>
+    <div style="width:1050px;" id="ref_{{ rnum }}">
+        <div style="display:cell;margin-left:990px; width:12px; float:right; position:absolute" id=rcross>
             <a onClick = "javascript:RemoveDiv('#ref_{{ rnum }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
         </div>
         <hr size=1 style="width: 98%; color:#93a8fb; height:1px; background-color:#93a8fb; margin:10px 0 10px 0" align=left>

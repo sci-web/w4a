@@ -68,7 +68,7 @@ def load_user(email):
 @app.route('/he/profile/<author>')
 @login_required
 def profile(author):
-    tmpl = tmpl_picker('profile') 
+    tmpl = tmpl_picker('profile')
     return render_template(tmpl, form=g.form, items=g.items)
 
 
@@ -104,8 +104,12 @@ def edit_intro(author, namespace):
         return render_template(tmpl, form=g.form)
     else:
         i_data = DB(g.location).get_an_intro(namespace)
+        namespaces = {}
+        for l in i_data["langs"]:
+            if l != "en":
+                namespaces[l] = i_data["namespace_" + l]
         tmpl = tmpl_picker('form_intro_edit')
-        return render_template(tmpl, form=g.form, items=i_data)
+        return render_template(tmpl, form=g.form, items=i_data, namespaces=namespaces)
 
 
 def value_match_assign(match, field, key, value, dhash):
@@ -124,7 +128,7 @@ def value_match_assign(match, field, key, value, dhash):
 def nest_value_match_assign(match, field, key, value, dhash):
     if (re.match(match, key) and value != ""):
         p, l, r = key.split("_")
-        if (value != ""):                        
+        if (value != ""):
             try:
                 dhash[r][l].update({field: value})
             except:
@@ -140,20 +144,29 @@ def nest_value_match_assign(match, field, key, value, dhash):
 @app.route('/he/editspace/save_intro:<author>:<namespace>', methods=['GET', 'POST'])
 @login_required
 def save_intro(author, namespace):
+    i_data = {}
     if namespace == "0":
         sform = newIntro(request.values)
     else:
         sform = saveIntro(request.values)
+        i_data = DB(g.location).get_an_intro(namespace)  # before update/insert
     in_data = {}
     in_data["points"] = []
     in_data["refs"] = []
     error = 0
     new_namespace = ""
+    try:
+        langs = i_data["langs"]
+    except:
+        langs = ["ru", "en"]
+    print langs
     # {{ form.hidden_tag() }} must be in template for sform.validate_on_submit() True if fields are ok
     if request.form and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
             f = request.form
             points = {}
+            codenames = {}
+            acronyms = {}
             refs = []
             in_refs = {}
             in_refs_pool = {}
@@ -162,14 +175,14 @@ def save_intro(author, namespace):
             for key in f.keys():
                 for value in f.getlist(key):
                     # print key,":",value
-                    if key == "namespace" and namespace == "0": 
-                        in_data["namespace"] = value              
+                    if key == "namespace" and namespace == "0":
+                        in_data["namespace"] = value
                         i_data = DB(g.location).get_an_intro(in_data["namespace"])  # before update/insert
                         if i_data and namespace == 0:
                             error = "This namespace:" + in_data["namespace"] + " already exists!"
                             break
                         else:
-                            new_namespace = in_data["namespace"] 
+                            new_namespace = in_data["namespace"]
                     if key == "subject": in_data["subject"] = value
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "ref_intro" and value != ""): in_data["ref_intro"] = value
@@ -180,7 +193,21 @@ def save_intro(author, namespace):
                     if (re.match("points", key) and value != ""):
                         p, k = key.split("_")
                         points[k] = value
-                        
+                    if (re.match("namespace_", key) and value != ""):
+                        p, k = key.split("_")
+                        print p,k,value
+                        try:
+                            dg = int(k)
+                            codenames[k] = value
+                        except:
+                            dg = "xx"
+                        if k != dg:
+                            in_data[key] = value
+                    if (re.match("acronym_", key) and value != ""):
+                        p, k = key.split("_")
+                        langs.append(value)
+                        acronyms[k] = value
+
                     in_refs = value_match_assign("refBlockTtl", "ref_title", key, value, in_refs)
                     in_refs = value_match_assign("refBlockDigest", "ref_digest", key, value, in_refs)
                     in_refs = value_match_assign("refBlockType", "ref_type", key, value, in_refs)
@@ -189,8 +216,7 @@ def save_intro(author, namespace):
                     in_refs_pool = nest_value_match_assign("linkType", "linktype", key, value, in_refs_pool)
                     in_refs_pool = nest_value_match_assign("linkDigest", "digest", key, value, in_refs_pool)
                     in_refs_pool = nest_value_match_assign("linkAuthor", "author", key, value, in_refs_pool)
-
-            if error == 0:                                        
+            if error == 0:
                 for r in in_refs.keys():
                     ref_pool = []
                     for l in in_refs_pool[r].keys():
@@ -217,6 +243,9 @@ def save_intro(author, namespace):
                 in_data["refs"] = refs
 
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
+                in_data["langs"] = langs
+                for k, v in codenames.iteritems():
+                    in_data["namespace_" + acronyms[k]] = codenames[k]
 
                 if namespace == "0":
                     in_data["date"] = datetime.now()
@@ -225,7 +254,7 @@ def save_intro(author, namespace):
                 else:
                     DB(g.location).update_an_intro(author, namespace, in_data)
             else:
-                flash(error, category='error')    
+                flash(error, category='error')
         else:
             error = "Something wrong with data update!"
         if error == 0:
@@ -234,20 +263,24 @@ def save_intro(author, namespace):
             flash(error, category='error')
     else:
         error = "Something wrong with the form or authentification!"
-        flash(error, category='error')                
+        flash(error, category='error')
     if namespace != "0":
         i_data = DB(g.location).get_an_intro(namespace) # after update/insert
-        tmpl = tmpl_picker('form_intro_edit')         
-        return render_template(tmpl, form=g.form, items=i_data)
+        tmpl = tmpl_picker('form_intro_edit')
+        namespaces = {}
+        for l in i_data["langs"]:
+            if l != "en":
+                namespaces[l] = i_data["namespace_" + l]
+        return render_template(tmpl, form=g.form, items=i_data, namespaces=namespaces)
     else:
         if error == 0:
             if g.location == "en":
                 return redirect("/en/editspace/intro:" + author + ":" + new_namespace + "")
             else:
-                return redirect("/editspace/intro:" + author + ":" + new_namespace + "")                
+                return redirect("/editspace/intro:" + author + ":" + new_namespace + "")
         else:
             i_data = in_data
-            itmpl = tmpl_picker('form_intro') 
+            itmpl = tmpl_picker('form_intro')
             return render_template(itmpl, form=g.form, items=i_data)
 
 
@@ -293,14 +326,14 @@ def save_chapter(author, namespace, chapter):
             ep_text = ""
             ep_source = ""
             error = 0
-            in_data["translated"] = 0 
+            in_data["translated"] = 0
             for key in f.keys():
                 for value in f.getlist(key):
                     value = value.replace("\r\n","<br>")
                     value = value.replace("\n","<br>")
                     if key == "chapter" and chapter == "0":
                         in_data["analyst"] = author
-                        in_data["date"] = datetime.now()                        
+                        in_data["date"] = datetime.now()
                         in_data["namespace"] = namespace
                         in_data["I_S_codename"] = value
 
@@ -309,15 +342,17 @@ def save_chapter(author, namespace, chapter):
                             error = "This chapter:" + in_data["I_S_codename"] + " already exists!"
                             break
                         else:
-                            new_chapter = in_data["I_S_codename"] 
+                            new_chapter = in_data["I_S_codename"]
 
-                    if key == "title": 
+                    if key == "title":
                         in_data["I_S_name"] = value
                         in_data["title"] = value
                     if key == "translated" and value != "":
                         in_data["translated"] = 1
                         print "...", value, in_data["translated"]
                     if (key == "intro" and value != ""): in_data["intro"] = value
+                    if (key == "interpreter" and value != ""): in_data["interpreter"] = value
+                    if (key == "interpreter_link" and value != ""): in_data["interpreter_link"] = value
                     if (key == "summary" and value != ""): in_data["summary"] = value
                     if key == "ep_text": ep_text = value
                     if key == "ep_source": ep_source = value
@@ -326,52 +361,52 @@ def save_chapter(author, namespace, chapter):
                         points[k] = value
                     if key == "I_S_codename" and value.isalpha():
                         in_data["I_S_codename"] = value
-                    in_pnts = value_match_assign("pointHeader", "header", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointTitle", "title", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointLink", "link", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointType", "info_type", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointPID", "infoID", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointPdate", "info_date", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointPauths", "info_authors", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointPub", "info_place", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointGeo", "info_geo", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointImage", "info_img", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointIsource", "info_imgSource", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointIdescr", "info_imgDescr", key, value, in_pnts) 
-                    in_pnts = value_match_assign("pointDigest", "digest", key, value, in_pnts) 
+                    in_pnts = value_match_assign("pointHeader", "header", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointTitle", "title", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointLink", "link", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointType", "info_type", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointPID", "infoID", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointPdate", "info_date", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointPauths", "info_authors", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointPub", "info_place", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointGeo", "info_geo", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointImage", "info_img", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointIsource", "info_imgSource", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointIdescr", "info_imgDescr", key, value, in_pnts)
+                    in_pnts = value_match_assign("pointDigest", "digest", key, value, in_pnts)
                     in_pnts = value_match_assign("pointNewID", "num", key, value, in_pnts)
                     in_pnts = value_match_assign("pointHidden", "is_hidden", key, value, in_pnts)
                     if (re.match("pointTags", key) and value != ""):
                         p, r = key.split("_")
-                        if (value != ""):                            
+                        if (value != ""):
                             lst = value.split(",")
                             c_lst = []
                             for e in lst:
                                 c = e.replace(" ", "")
-                                c_lst.append(c)                   
+                                c_lst.append(c)
                             try:
                                 in_pnts[r].update({"I_S_codenames": c_lst})
                             except:
                                 in_pnts[r] = {"I_S_codenames": c_lst}
                     if (re.match("pointGeo", key) and value != ""):
                         p, r = key.split("_")
-                        if (value != ""):                            
+                        if (value != ""):
                             lst = value.split(",")
                             c_lst = []
                             for e in lst:
                                 c = e.replace(" ", "")
-                                c_lst.append(c)                   
+                                c_lst.append(c)
                             try:
                                 in_pnts[r].update({"info_geo": c_lst})
                             except:
                                 in_pnts[r] = {"info_geo": c_lst}
 
-                    in_imgs_pool = nest_value_match_assign("imgDescr", "info_imgDesc", key, value, in_imgs_pool) 
-                    in_imgs_pool = nest_value_match_assign("imgLink", "info_img", key, value, in_imgs_pool) 
-                    in_imgs_pool = nest_value_match_assign("imgSrcURL", "info_imgSource", key, value, in_imgs_pool) 
+                    in_imgs_pool = nest_value_match_assign("imgDescr", "info_imgDesc", key, value, in_imgs_pool)
+                    in_imgs_pool = nest_value_match_assign("imgLink", "info_img", key, value, in_imgs_pool)
+                    in_imgs_pool = nest_value_match_assign("imgSrcURL", "info_imgSource", key, value, in_imgs_pool)
                     in_imgs_pool = nest_value_match_assign("imgSrcTitle", "info_imgTitle", key, value, in_imgs_pool)
 
-                    in_sources_pool = nest_value_match_assign("srcTitle", "title", key, value, in_sources_pool) 
+                    in_sources_pool = nest_value_match_assign("srcTitle", "title", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcLink", "link", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcID", "infoID", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcDate", "info_date", key, value, in_sources_pool)
@@ -379,7 +414,7 @@ def save_chapter(author, namespace, chapter):
                     in_sources_pool = nest_value_match_assign("srcPlace", "info_place", key, value, in_sources_pool)
                     in_sources_pool = nest_value_match_assign("srcType", "info_type", key, value, in_sources_pool)
             all_tags = set()
-            if error == 0:                
+            if error == 0:
                 for r in in_pnts.keys():
                     try:
                         for ct in in_pnts[r]["I_S_codenames"].split(","):
@@ -394,7 +429,7 @@ def save_chapter(author, namespace, chapter):
                             all_tags.update(n)
                         # all_tags.update(in_pnts[r]["info_geo"])
                     except:
-                        pass                        
+                        pass
                     imgs_pool = []
                     is_i_pool = 1
                     try:
@@ -439,7 +474,7 @@ def save_chapter(author, namespace, chapter):
 # https://dzone.com/articles/pymongo-and-key-order
                     try:
                         p["num"] = float(p["num"])
-                    except: 
+                    except:
                         p.update({"num": float(n)})
                     in_data["points"].append(p)
 
@@ -450,7 +485,7 @@ def save_chapter(author, namespace, chapter):
                     # print tag, list(o)
                     if len(list(o)) == 0:
                         DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": "", "namespace" : [namespace] })
-                        f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=http://shalash:8080/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
+                        f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=https://www.scibook.org/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
 
                 if chapter == "0":
                     DB(g.location).insert_a_chapter(in_data)
@@ -467,7 +502,7 @@ def save_chapter(author, namespace, chapter):
             flash(error, category='error')
     else:
         error = "Something wrong with a form or authentification!"
-        flash(error, category='error')                
+        flash(error, category='error')
     if chapter != "0":
         i_data = DB(g.location).get_a_chapter(namespace, chapter) # after update/insert
         tmpl = tmpl_picker('form_chapter_edit')
@@ -480,7 +515,7 @@ def save_chapter(author, namespace, chapter):
                 return redirect("/editspace/chapter:" + author + ":" + namespace + ":" + new_chapter)
         else:
             i_data = in_data
-            tmpl = tmpl_picker('form_chapter') 
+            tmpl = tmpl_picker('form_chapter')
             return render_template(tmpl, form=g.form, items=i_data, namespace=namespace)
 
 
@@ -552,7 +587,7 @@ def save_tags(namespace, author, action):
         flash("Data updated successfully!", category='info')
     else:
         error = "Something wrong with a form or authentification!"
-        flash(error, category='error') 
+        flash(error, category='error')
     itmpl = tmpl_picker('form_tags')
     new_objects = DB(g.location).get_objects_by_key_sorted_filter_yes("", "I_S_codename", namespace)
     spaces = DB(g.location).get_spaces_by_author_ns(author, namespace)

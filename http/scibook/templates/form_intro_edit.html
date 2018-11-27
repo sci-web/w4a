@@ -4,6 +4,10 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; border-bottom:1px solid #aaa; border-right: 1px solid #999;}
+</style>
+
 <div style="margin:50px 20px 30px 50px; width:1100px;" align=left>
 <form action="/editspace/save_intro:{{ current_user.author }}:{{ items.namespace }}" method="POST" name="sform">
 {{ form.hidden_tag() }}
@@ -13,12 +17,22 @@
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Subject (research title): </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Subject" name=subject size=95 value="{{ items.subject }}"> <font color="red">(*)</font></div>
+            <input type="text" placeholder="Subject" name=subject size=80 value="{{ items.subject }}">&nbsp;<font color="red">(*)</font></div>
     </div>
     <br>
-    <div style="height:25px; width:1010px;">
-        <div style="float:left; width:180px">Namespace: </div>
-        <div style="float:right; width:830px" class="form-group">{{ items.namespace }}</div>
+    <div style="width:1010px; display:table">
+        <div style="float:left; width:180px">Namespaces: </div>
+        <div style="float:right; width:830px;" class="form-group">{{ items.namespace }}
+            {% for l in items.langs %}
+                {% set ns = "namespace_" + l %}
+                {% if l != "en" %}
+            <br><input style="line-height:25px" type="text" name={{ ns }} size=20 value={{ namespaces[l] }}> <font color="darkblue">{{ l }}</font>
+                {% endif %}
+            {% endfor %}
+            <a onClick="loadTmpl('#lang_tmpl', '#lng_target', '#lng_0', 0, 'llcross', 0)" class="linknav pointer">add language</a>
+            <div id="lng_target"></div>
+            </div>
+        </div>
     </div>
     <br>
     <div style="height:75px; width:1010px;">
@@ -178,6 +192,16 @@
 </form>
 </div>
 {% raw %}
+<script id="lang_tmpl" type="x-tmpl-mustache">
+    <div id="lng_{{ num }}">
+        <div style="display:cell;margin-left:560px; width:12px; float:right; position:absolute" id=lcross>
+            <a onClick = "javascript:RemoveDiv('#lng_{{ num }}')" class="pointer linknav"><font color="#4d4df6" size=5>×</font></a>
+        </div>
+        <input style="line-height:25px" type="text" name=namespace_{{ num }} size=20>&nbsp;<input
+        style="line-height:25px" type="text" name=acronym_{{ num }} size=2> (language acronym)
+    </div>
+    <div id="lang_target"></div>
+</script>
 <script id="pnt_tmpl" type="x-tmpl-mustache">
     <div style="height:195px; width:1000px;" id="p_{{ num }}">
         <div style="float:left; width:180px">Point #{{ num }}: </div>

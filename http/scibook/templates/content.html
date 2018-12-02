@@ -23,6 +23,15 @@
         <div style="margin:10px 0 0 0" align=right>
             <small style="background-color:#e1e6f0;margin:5px">{{ idata.date }}</small>
         </div>
+        <div style="margin:10px 0 0 0; text-align:right">
+        {% if idata.interpreter %}
+            {% if idata.interpreter_link %}
+                <a href={{ idata.interpreter_link }}>{{ idata.interpreter }}</a>
+            {% else %}
+                {{ idata.interpreter }}
+            {% endif %}
+        {% endif %}
+        </div>
         <div style="margin:10px 0 0 0; text-align:justify">
         {{ idata.intro | rehref | safe}}
         </div>

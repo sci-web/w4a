@@ -4,6 +4,9 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; border-bottom:1px solid #aaa; border-right: 1px solid #999;}
+</style>
 <div style="margin:50px 20px 30px 50px; width:1100px;" align=left>
 <form action="/he/editspace/save_intro:{{ current_user.author }}:{{ items.namespace }}" method="POST" name="sform">
 {{ form.hidden_tag() }}
@@ -17,8 +20,18 @@
     </div>
     <br>
     <div style="height:25px; width:1010px;">
-        <div style="float:left; width:180px">Namespace: </div>
-        <div style="float:right; width:830px" class="form-group">{{ items.namespace }}</div>
+        <div style="float:left; width:180px">Namespaces: </div>
+        <div style="float:right; width:830px;" class="form-group">{{ items.namespace }}
+            {% for l in items.langs %}
+                {% set ns = "namespace_" + l %}
+                {% if l != "en" %}
+            <br><input style="line-height:25px" type="text" name={{ ns }} size=20 value={{ namespaces[l] }}> <font color="darkblue">{{ l }}</font>
+                {% endif %}
+            {% endfor %}
+            <a onClick="loadTmpl('#lang_tmpl', '#lng_target', '#lng_0', 0, 'llcross', 0)" class="linknav pointer">add language</a>
+            <div id="lng_target"></div>
+            </div>
+        </div>
     </div>
     <br>
     <div style="height:75px; width:1010px;">

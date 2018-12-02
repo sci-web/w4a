@@ -336,20 +336,19 @@ def save_chapter(author, namespace, chapter):
                         in_data["date"] = datetime.now()
                         in_data["namespace"] = namespace
                         in_data["I_S_codename"] = value
-
                         i_data = DB(g.location).get_a_chapter(namespace, value)  # before update/insert
                         if i_data and chapter == 0:
                             error = "This chapter:" + in_data["I_S_codename"] + " already exists!"
                             break
                         else:
                             new_chapter = in_data["I_S_codename"]
-
+                    if key == "I_S_namespace":
+                        in_data["I_S_namespace"] = value
                     if key == "title":
                         in_data["I_S_name"] = value
                         in_data["title"] = value
                     if key == "translated" and value != "":
                         in_data["translated"] = 1
-                        print "...", value, in_data["translated"]
                     if (key == "intro" and value != ""): in_data["intro"] = value
                     if (key == "interpreter" and value != ""): in_data["interpreter"] = value
                     if (key == "interpreter_link" and value != ""): in_data["interpreter_link"] = value
@@ -486,8 +485,16 @@ def save_chapter(author, namespace, chapter):
                     if len(list(o)) == 0:
                         DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": "", "namespace" : [namespace] })
                         f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=https://www.scibook.org/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
-
                 if chapter == "0":
+                    intro = DB(g.location).get_an_intro(namespace)
+                    j_intro = json.loads(dumps(intro))
+                    for l in j_intro["langs"]:
+                        if l == g.location:
+                            if l != "en":
+                                I_S = "namespace_" + l
+                            else:
+                                I_S = "namespace"
+                            in_data["I_S_namespace"] = j_intro[I_S].capitalize()
                     DB(g.location).insert_a_chapter(in_data)
                 else:
                     DB(g.location).update_a_chapter(author, namespace, chapter, in_data)

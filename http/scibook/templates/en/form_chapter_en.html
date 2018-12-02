@@ -4,6 +4,9 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; border-bottom:1px solid #aaa; border-right: 1px solid #999;}
+</style>
 <div style="margin:60px 20px 30px 50px; width:1100px;" align=left>
 <form action="/en/editspace/save_chapter:{{ current_user.author }}:{{ namespace }}:0" method="POST" name="cform" enctype="multipart/form-data">
 {{ form.hidden_tag() }}

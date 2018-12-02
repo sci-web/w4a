@@ -4,6 +4,10 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; border-bottom:1px solid #aaa; border-right: 1px solid #999;}
+</style>
+
 <div style="margin:50px 20px 30px 50px;" align=left>
 <form action="/en/editspace/save_intro:{{ current_user.author }}:0" method="POST" name="sform">
 <h1>Edit topic {{ subject }} </h1>
@@ -17,9 +21,14 @@
     <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Namespace: </div>
-        <div style="float:right; width:830px" class="form-group">
-            <input type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
+        <div style="float:right; width:830px;" class="form-group">
+            <div><input style="line-height:25px" type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
             must be a unique word in latin letters</div>
+            <div><input style="line-height:25px" type="text" placeholder="Russian translation" name=namespace_ru size=20>
+            <font color="darkblue">ru</font> <font color="red">(*)</font>
+            <a onClick="loadTmpl('#lang_tmpl', '#lng_target', '#lng_0', 0, 'llcross', 0)" class="linknav pointer">add language</a></div>
+            <div id="lng_target"></div>
+        </div>
     </div>
     <br>
     <div style="height:75px; width:1010px;">

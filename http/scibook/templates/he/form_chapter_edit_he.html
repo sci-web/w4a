@@ -4,6 +4,15 @@
     {{ super() }}
 {% endblock %}
 {% block content %}
+<style>
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #581AFF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; border-bottom:1px solid #aaa; border-right: 1px solid #999;}
+</style>
 <div style="margin:60px 20px 30px 50px; width:1100px;" align=left>
     <div id="wait" style="height:25px; display:none; padding:0 5px 0 1100px;position:fixed">
         <img src="{{ url_for('static', filename='img/loading.gif') }}" style="margin:0 10px 0 20px" align="right">
@@ -34,7 +43,8 @@
         <div style="float:left; width:180px">Alias: </div>
         <div style="float:right; width:830px;" class="form-group">
             <input type="text" placeholder="Title" name=I_S_codename size=35 value="{{ items.I_S_codename }}">
-                latin letters <font color="red">(*)</font>
+                latin letters <font color="red">(*)</font> / this language:
+                <input type="text" name=I_S_namespace size=30 value="{{ items.I_S_namespace }}">
         </div>
     </div>
     <br>
@@ -60,6 +70,14 @@
         <div style="float:left; width:180px">Introduction: </div> <font color="red">(*)</font> (or 1st point)
         <div style="float:right; width:830px" class="form-group">
             <textarea rows=5 cols=97 name=intro>{{ items.intro | replace("<br>", "\n") }}</textarea>
+        </div>
+    </div>
+    <br>
+    <div style="height:45px; width:1010px;">
+        <div style="float:left; width:180px">Translator's name: </div>
+        <div style="float:right; width:830px" class="form-group">
+            <input type="text" name=interpreter size=30 value="{{ items.interpreter }}"> link:
+            <input type="text" name=interpreter_link size=50 value="{{ items.interpreter_link }}">
         </div>
     </div>
     <div>

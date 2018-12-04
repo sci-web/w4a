@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href={{ url_for('static', filename='css/main.min.css') }}>
+</head>
+<body>
+{% include "navbar.html" %}
+<main>
+	<div class="wrapper">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-5 col-lg-4 col-xl-4 order-md-1">
+					<div class="sidebar">
+					    <div class="collapse-menu">
+					        <button class="collapse-menu__item" data-toggle="collapse" data-target="#collapseMenu1" aria-expanded="false" aria-controls="collapseMenu1">Болезни</button>
+					        <div class="collapse-menu__content collapse" id="collapseMenu1">
+					            <ul class="sidebar-menu">
+                {% for entry in objects %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
+                    </li>
+                {% endfor %}
+					            </ul>
+					        </div>
+					    </div>
+					    <div class="collapse-menu">
+					        <button class="collapse-menu__item" data-toggle="collapse" data-target="#collapseMenu2" aria-expanded="false" aria-controls="collapseMenu2">Препараты</button>
+					        <div class="collapse-menu__content collapse" id="collapseMenu2">
+					            <ul class="sidebar-menu">
+                {% for entry in drugs %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
+                    </li>
+                {% endfor %}
+					            </ul>
+					        </div>
+					    </div>
+					    <div class="collapse-menu">
+					        <button class="collapse-menu__item" data-toggle="collapse" data-target="#collapseMenu3" aria-expanded="false" aria-controls="collapseMenu3">Условия</button>
+					        <div class="collapse-menu__content collapse" id="collapseMenu3">
+					            <ul class="sidebar-menu">
+                {% for entry in conditions %}
+                    <li style="color:#4d4df6" class="sqnav">
+                        <a href="/browse/obj/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="sqnav">{{ entry.I_S_name }}</a>
+                    </li>
+                {% endfor %}
+					            </ul>
+					        </div>
+					    </div>
+					    <div class="collapse-menu">
+					        <button class="collapse-menu__item" data-toggle="collapse" data-target="#collapseMenu4" aria-expanded="false" aria-controls="collapseMenu4">Гео</button>
+					        <div class="collapse-menu__content collapse" id="collapseMenu4">
+					            <ul class="sidebar-menu">
+                    {% for entry in geo_objects %}
+                        <li style="color:#4d4df6" class="rightnav">
+                            <a href="/browse/geo/{{ entry.namespace|join }}:{{ entry.I_S_codename }}" class="rightnav">{{ entry.I_S_name }}</a>
+                        </li>
+                    {% endfor %}
+					            </ul>
+					        </div>
+					    </div>
+					</div>
+				</div>
+                <div class="col-md-7 col-lg-8 col-xl-8 order-md-0">
+                {% block content %}{% endblock %}
+                </div>
+			</div>
+		</div>
+	</div>
+</main>
+
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="container-fluid">
+                <a href="#">SciBook</a><span> 2018</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src={{ url_for('static', filename='js/script.js') }}></script>
+</body>
+</html>

@@ -14,6 +14,7 @@
     <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/validator.js') }}"></script>
     <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
     <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/mustache.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="{% block descr %}{% endblock %}">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -49,18 +50,23 @@
           <li><span style="margin:0 0 0 3px;white-space: nowrap">By Chapters:</span></li>
         </ul>
         <ol>
-          <li><a href="/intro/vaccines" class="linknav">Introduction</a></li>
-          {% for entry in items %}
+        {% if request.path.split('/')|length == 4 or request.path.split('/')|length == 3 %}
+        {% set namespace = request.path.split('/')[2] %}
+        {% else %}
+        {% set namespace = "vaccines" %}
+        {% endif %}
+          <li><a href="/intro/{{ namespace }}" class="linknav">Introduction</a></li>
+          {% for t in chapters %}
             <li class="sqnav" style="white-space: nowrap;">
-            {% if entry.translated == 1 %}
-            <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+            {% if t.translated == 1 %}
+            <a href="/content/{{ t.namespace }}/{{ t.I_S_codename }}" class="sqnav">
             {% else %}
-            <a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" style="color:#777;text-decoration:none;">
+            <a href="/content/{{ t.namespace }}/{{ t.I_S_codename }}" style="color:#777;text-decoration:none;">
             {% endif %}
-            {% if request.path.split('/')[3] == entry.I_S_codename or request.path.split('/')[4] == entry.I_S_codename %}
-                <b>{{ entry.title }}</b>
+            {% if request.path.split('/')[3] == t.I_S_codename or request.path.split('/')[4] == t.I_S_codename %}
+                <b>{{ t.title }}</b>
                 {% else %}
-                {{ entry.title }}
+                {{ t.title }}
                 {% endif %}
             </a>
             </li>
@@ -80,6 +86,12 @@ var sc_security="59e332e0";
     <div class="col-sm-6 col-md-8 col-lg-6" style="margin:0">
         <div style="margin:50px 0 0 600px; z-index:1500">{% include "en/flash_en.html" %}</div>
         {% block content %}{% endblock %}
+        <div align=left style="margin:0; padding:0">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Лицензия Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a> <small>Content above is licenced under Creative Common Attribution—NonCommercial—NoDerivatives (CC BY-NC-ND) licence,<br>
+        i.e. it is free for non-commercial distribution and citation with this reference being provided: scibook.org, amantonio,
+        using the content to create another product or meaning is prohibited.</small>
+        </div>
+        <div align=right><small style="color:#555CE1">scibook.org, 2017-2019</small></div>
     </div>
     <div class="col-md-4 col-lg-2" style="margin:20px 0 0 0">
     {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}

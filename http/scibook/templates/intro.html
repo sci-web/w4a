@@ -10,9 +10,11 @@
             <div style="float:left"><h1>{{ idata.subject }}</h1></div>
             <div style="float:right"><h4 style="text-align:right; margin:5px 0 5px 0"><a href="" class="linknav">{{ idata.analyst }}</a></h4></div>
         </div>
+        {% if idata.epigraph %}
         <div style="margin:0 2% 0 0; line-height:16px" align=right><small>{{ idata.epigraph.text | safe }}<br>
                 <em>{{ idata.epigraph.source }}</em></small>
         </div>
+        {% endif %}
         <div style="margin:10px 2% 0 0; text-align:justify">
         {{ idata.intro | rehref | safe}}
         </div>

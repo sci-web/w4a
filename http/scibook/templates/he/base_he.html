@@ -15,6 +15,7 @@
     <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/validator.js') }}"></script>
     <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/bootstrap-select.js') }}"></script>
     <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/mustache.min.js') }}"></script>
+    <script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/highlightRegex.js') }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <meta name="description" content="{% block descr %}{% endblock %}">
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -91,8 +92,13 @@
     <div class="col-sm-6 col-md-8 col-lg-6 hebrew" style="margin:0 0 35px 10px;">
         <div style="margin:50px 0 0 600px; z-index:1500">{% include "he/flash_he.html" %}</div>
         {% block content %}{% endblock %}
-    </div>
+        <div align=right style="margin:0; padding:0">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="רישיון Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a><br /><span dir="rtl">יצירה זו מופצת תחת <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"> רישיון Attribution-NonCommercial-NoDerivatives 4.0 בין־לאומי של Creative Commons</a>.</span>
+        כלומר חופשיים להפצה שאינה מסחרית עם ציון המקור (scibook.org, amantonio).
 
+        </div>
+        <div align=left><small style="color:#555CE1">scibook.org, 2017-2019</small></div>
+    </div>
     <div class="col-lg-2 visible-lg hebrew" style="margin:65px 5px 0 0; height:100%; width:265px;" align=left>
 {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
      <div class="wscreen">

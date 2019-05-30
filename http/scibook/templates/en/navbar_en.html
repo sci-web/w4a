@@ -17,13 +17,20 @@
       <ul class="nav navbar-nav">
         <li class="visible-lg" style="height:37px;border-right:1px solid #555ce1; margin:5px 0;">&nbsp;</li>
         <li class="dropdown">
-            <a href="/chapters/vaccines" style="font-size:17px;">Vaccines <span class="caret-m"></span></a>
+            <a href="" style="font-size:17px;">All topics<span class="caret-m"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="/intro/vaccines">Introduction</a></li>
-          {% for entry in navitems %}
-                <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+          {% for t in topics %}
+                <li><a href="/chapters/{{ t.namespace }}" style="font-size:17px;">
+                        {{ t.namespace[0]|upper }}{{t.namespace[1:]}}<span class="caret-m"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/intro/{{ t.namespace }}">Introduction</a></li>
+                        {% for entry in navitems[t.namespace] %}
+                <li><a href="/content/{{ t.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
                     <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                     {{ entry.title }}</a>
+                </li>
+                        {% endfor %}
+                    </ul>
                 </li>
           {% endfor %}
             </ul>

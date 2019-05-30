@@ -35,7 +35,7 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group custom-control custom-checkbox">
             <input type="text" placeholder="Title" name=title size=65 value="{{ items.title }}"> <font color="red">(*)</font>
-            Опубликовано:
+            Опубликован перевод:
             <input type=checkbox
             name="translated" value=1 {%if items.translated == 1 %}checked{% endif %}>
         </div>
@@ -83,7 +83,7 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
         </div>
     </div>
     <div>
-        <h3>Points:</h3>
+        <h3>Points (their number is {{items.points|length}}):</h3>
     </div>
     {% set p_num = [1] %}
     {% for p in items.points|sort(attribute='num') %}
@@ -661,5 +661,11 @@ function SwapPoint(id) {
     $(pDivId).append(Mustache.render(template, {newId: new_id, curId: next_id}));
     $(down).remove()
 }
+
+$('form').submit(function() {
+  $(this).find("button[type='submit']").prop('disabled',true);
+});
+
 </script>
+
 {% endblock %}

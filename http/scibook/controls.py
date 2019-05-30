@@ -1,7 +1,8 @@
 from scibook import app, lm
-import re
 from datetime import datetime
-# import xlrd
+import sys, re
+reload(sys)
+sys.setdefaultencoding('utf-8')
 from flask import request, redirect, render_template, flash, Response, send_from_directory, url_for, g, jsonify, make_response
 from flask_login import login_user, logout_user, login_required, current_user
 from .auth import Auth
@@ -15,6 +16,8 @@ from .tools import Tools
 from tidylib import tidy_fragment
 from views import tmpl_picker, load_vars
 from flask import Markup
+# coding=utf-8
+
 # def extension_ok(filename, ff):
 #     """ return whether file's extension is ok or not"""
 #     return '.' in filename and \
@@ -159,7 +162,7 @@ def save_intro(author, namespace):
         langs = i_data["langs"]
     except:
         langs = ["ru", "en"]
-    print langs
+    # print langs
     # {{ form.hidden_tag() }} must be in template for sform.validate_on_submit() True if fields are ok
     if request.form and Auth.is_authenticated and (current_user.author == author or current_user.access > 1):
         if sform.data:
@@ -172,6 +175,7 @@ def save_intro(author, namespace):
             in_refs_pool = {}
             ep_text = ""
             ep_source = ""
+            published = 0
             for key in f.keys():
                 for value in f.getlist(key):
                     # print key,":",value
@@ -189,13 +193,13 @@ def save_intro(author, namespace):
                     if (key == "ref_header" and value != ""): in_data["ref_header"] = value
                     if (key == "summary" and value != ""): in_data["summary"] = value
                     if key == "ep_text": ep_text = value
+                    if key == "published": published = value
                     if key == "ep_source": ep_source = value
                     if (re.match("points", key) and value != ""):
                         p, k = key.split("_")
                         points[k] = value
-                    if (re.match("namespace_", key) and value != ""):
+                    if (re.match("namespace_", key) and value.encode("utf-8") != ""):
                         p, k = key.split("_")
-                        print p,k,value
                         try:
                             dg = int(k)
                             codenames[k] = value
@@ -204,7 +208,7 @@ def save_intro(author, namespace):
                         if k != dg:
                             in_data[key] = value
                     if (re.match("acronym_", key) and value != ""):
-                        p, k = key.split("_")
+                        p, k = key.encode("utf-8").split("_")
                         langs.append(value)
                         acronyms[k] = value
 
@@ -244,6 +248,7 @@ def save_intro(author, namespace):
 
                 if ep_text != "": in_data["epigraph"] = {"text": ep_text, "source": ep_source}
                 in_data["langs"] = langs
+                in_data["published"] = int(published)
                 for k, v in codenames.iteritems():
                     in_data["namespace_" + acronyms[k]] = codenames[k]
 
@@ -484,7 +489,7 @@ def save_chapter(author, namespace, chapter):
                     # print tag, list(o)
                     if len(list(o)) == 0:
                         DB(g.location).insert_an_object({"I_S_codename": tag, "I_S_type_this": "", "I_S_type": "", "I_S_name": "", "namespace" : [namespace] })
-                        f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=https://www.scibook.org/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"
+                        f_msg = f_msg + "<small><b>" + tag + "</b> is a new tag! <br>Mind to <a style='color:blue' href=https://www.scibook.org/editspace/tags:" + author + ":0> edit the tag list</a>!</small><br>"                     
                 if chapter == "0":
                     intro = DB(g.location).get_an_intro(namespace)
                     j_intro = json.loads(dumps(intro))
@@ -498,6 +503,7 @@ def save_chapter(author, namespace, chapter):
                     DB(g.location).insert_a_chapter(in_data)
                 else:
                     DB(g.location).update_a_chapter(author, namespace, chapter, in_data)
+                app.config['LOGS'].debug( 'Number of points for the chapter \"' + chapter + '\" and location \"' + g.location + '\" : ' + str( len(in_data["points"]) ) )
             else:
                 flash(error, category='error')
             # print all_tags

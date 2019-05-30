@@ -81,7 +81,7 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
         </div>
     </div>
     <div>
-        <h3>Points:</h3>
+        <h3>Points (their number is {{items.points|length}}):</h3>
     </div>
     {% set p_num = [1] %}
     {% for p in items.points|sort(attribute='num') %}
@@ -642,5 +642,10 @@ function loadTmpl(thtml, target, div, cnt, id, rcnt) {
     nID = a2 + rcnt/1000;
     $(target).append(Mustache.render(template, {num: cnt, rnum: rcnt, a2: a2, nID: nID}));
 }
+
+$('form').submit(function() {
+  $(this).find("button[type='submit']").prop('disabled',true);
+});
+
 </script>
 {% endblock %}

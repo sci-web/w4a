@@ -26,7 +26,7 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
             {% for l in items.langs %}
                 {% set ns = "namespace_" + l %}
                 {% if l != "en" %}
-            <br><input style="line-height:25px" type="text" name={{ ns }} size=20 value={{ namespaces[l] }}> <font color="darkblue">{{ l }}</font>
+            <br><input style="line-height:25px" type="text" name="{{ ns }}" size=20 value="{{ namespaces[l] }}"> <font color="darkblue">{{ l }}</font>
                 {% endif %}
             {% endfor %}
             <a onClick="loadTmpl('#lang_tmpl', '#lng_target', '#lng_0', 0, 'llcross', 0)" class="linknav pointer">add language</a>
@@ -34,7 +34,13 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
             </div>
         </div>
     </div>
-    <br>
+    <div style="height:75px; width:1010px;">
+        <div style="float:left; width:180px">Опубликовано:</div>
+        <div style="float:right; width:820px" class="form-group">
+            <input type=checkbox
+            name="published" value=1 {%if items.published == 1 %}checked{% endif %}>
+        </div>
+    </div>
     <div style="height:75px; width:1010px;">
         <div style="float:left; width:180px">Epigraph text: </div>
         <div style="float:right; width:830px" class="form-group">

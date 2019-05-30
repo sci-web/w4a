@@ -98,7 +98,10 @@ class DB(object):
         app.config['OBJECTS'].update_one({"_id": ObjectId(_id)}, {'$set': data})
 
     def get_intros(self):
-        return app.config[self.intros].find({"published":1}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1})
+        return app.config[self.intros].find({"published":1})
+
+    def get_intros_main(self):
+        return app.config[self.intros].find({"published":1}, {"namespace": 1, "analyst": 1, "subject": 1, "epigraph": 1, "intro": 1, "namespace_ru": 1})
 
     def get_an_intro(self, namespace):
         return app.config[self.intros].find_one({"namespace": namespace})

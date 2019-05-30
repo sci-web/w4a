@@ -17,13 +17,20 @@
       <ul class="nav navbar-nav">
         <li class="visible-lg" style="height:37px;border-right:1px solid #555ce1; margin:5px 0;">&nbsp;</li>
         <li class="dropdown">
-            <a href="/chapters/vaccines" style="font-size:17px;">Прививки <span class="caret-m"></span></a>
+            <a href="" style="font-size:17px;">Все темы<span class="caret-m"></span></a>
             <ul class="dropdown-menu">
-                <li><a href="/intro/vaccines">Введение</a></li>
-          {% for entry in navitems %}
-                <li><a href="/content/{{ entry.namespace }}/{{ entry.I_S_codename }}" class="sqnav">
+          {% for t in topics %}
+                <li><a href="/chapters/{{ t.namespace|safe }}" style="font-size:17px;">
+                        {{ t.namespace_ru[0]|safe|upper }}{{t.namespace_ru[1:]|safe}}<span class="caret-m"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/intro/{{ t.namespace|safe }}">Введение</a></li>
+                        {% for entry in navitems[t.namespace] %}
+                <li><a href="/content/{{ t.namespace|safe }}/{{ entry.I_S_codename|safe }}" class="sqnav">
                     <div style="display:inline-block; min-width:25px; text-align:right; padding-right:5px">{{ loop.index }}.</div>
                     {{ entry.title }}</a>
+                </li>
+                        {% endfor %}
+                    </ul>
                 </li>
           {% endfor %}
             </ul>
@@ -39,7 +46,8 @@
         </ul>
         <ul class="nav navbar-nav" style="width:35%; padding:0; float:right;white-space: nowrap;">
             <li class="dropdown">
-            <a href="#" style="padding:8px 0 0 0"><img src="https://www.scibook.org{{ url_for('static', filename='img/lang.png') }}" style="padding:0"> <span class="caret-m"></span></a>
+            <a href="#" style="padding:8px 0 0 0"><img src="https://www.scibook.org{{ url_for('static', filename='img/lang.png') }}" style="padding:0">
+            <span class="caret-m"></span></a>
             <ul class="dropdown-menu" style="min-width: 30px !important;">
                 <li style="padding: 2px 0 2px 20px;"><b>RU</b></li>
                 <li><a href="https://en.scibook.org{{ request.path | replace('^/', '^/en/', 1) }}" title="English">EN</a></li>

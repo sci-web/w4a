@@ -23,10 +23,15 @@ li.rightnav:hover {color:#DB7200;text-decoration:none;padding:1px}
 a.linknav {color:#024d60;text-decoration:none;padding:3px}
 a.linknav:hover {color:#DB7200;text-decoration:none;padding:3px}
 .boxed_sh {
-  -moz-border-radius:7px;-khtml-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;border:1px solid #555ce1;margin:15px 0 3px 3px;
+  -moz-border-radius:7px;-khtml-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;border:1px solid #555ce1;
+  margin:15px 10px 3px 7px;
   padding: 2px 2px 2px 2px;box-shadow: 4px 4px 6px #ddd;-moz-box-shadow: 4px 4px 6px #ddd;-webkit-box-shadow: 4px 4px 6px #ddd;background:#fff
 }
-
+@media (max-width: 480px) {
+  .boxed_sh {  -moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;border:1px solid #555ce1;
+  margin:5px 0 0 0;
+  padding: 0;box-shadow: 1px 1px 2px #ddd;-moz-box-shadow: 1px 2px 2px #ddd;-webkit-box-shadow: 1px 1px 2px #ddd;background:#fff}
+}
 .topnav {
   -moz-border-radius:7px;-khtml-border-radius:7px;-webkit-border-radius:7px;border-radius:7px;border:1px solid #555ce1;
   box-shadow: 4px 1px 6px #EAE5FF;-moz-box-shadow: 4px 1px 6px #EAE5FF;-webkit-box-shadow: 4px 1px 6px #EAE5FF;

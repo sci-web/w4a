@@ -1,6 +1,6 @@
     <p style="margin:0"><span style="background:#dfe9f0;color:blue; margin:5px">לפי פרקים</span><br>
-        {% for ch in chapters %}
-            {% if ch.I_S_name == title %}
+        {% for ch in ochapters %}
+            {% if ch.I_S_name == otitle %}
             <span style="white-space: nowrap"><div style="display:inline-block; min-width:25px; padding:0">{{ loop.index }}.</div>
             {{ ch.I_S_name }}</span>
             {% else %}

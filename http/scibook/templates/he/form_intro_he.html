@@ -15,13 +15,15 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Subject (research title): </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Subject" name=subject size=95> <font color="red">(*)</font></div>
+            <input type="text" placeholder="Subject" name=subject size=95
+            data-validation="length alphanumeric" data-validation-length="min3"> <font color="red">(*)</font></div>
     </div>
     <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Namespace: </div>
         <div style="float:right; width:830px;" class="form-group">
-            <div><input style="line-height:25px" type="text" placeholder="Namespace for your research" name=namespace size=20> <font color="red">(*)</font>
+            <div><input style="line-height:25px" type="text" placeholder="Namespace for your research" name=namespace size=20
+            data-validation="length alphanumeric" data-validation-length="min3"> <font color="red">(*)</font>
             must be a unique word in latin letters</div>
             <div><input style="line-height:25px" type="text" placeholder="Hebrew translation" name=namespace_he size=20>
             <font color="darkblue">ru</font> <font color="red">(*)</font>
@@ -225,7 +227,11 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
     </div>
 </script>
 {% endraw %}
+<script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.form-validator.min.js') }}"></script>
 <script>
+  $.validate({
+    lang: 'en'
+  });
 $(document).ready(function() {
     loadTmpl('#pnt_tmpl', '#pnt_target', '#l_1', 0, 'pcross', 0);
     loadTmpl('#lnk_tmpl', '#lnk_target_1', '#ln_1', 0, 'lcross', 0);

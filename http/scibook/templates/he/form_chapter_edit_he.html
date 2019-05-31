@@ -34,7 +34,8 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Title" name=title size=65 value="{{ items.title }}"> <font color="red">(*)</font>
+            <input type="text" placeholder="Title" name=title size=65 value="{{ items.title }}"
+            data-validation="length alphanumeric" data-validation-length="min3"> <font color="red">(*)</font>
             Translated: <input type=checkbox name="translated" value=1 {%if items.translated == 1 %}checked{% endif %}>
         </div>
     </div>
@@ -566,7 +567,11 @@ $(document).ready(function() {
         </div>
 </script>
 {% endraw %}
+<script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.form-validator.min.js') }}"></script>
 <script>
+  $.validate({
+    lang: 'en'
+  });
 function RemoveOneDiv(div, obj, num, pnt) {
     if (confirm("Are you sure?")) {
         $( div ).remove();

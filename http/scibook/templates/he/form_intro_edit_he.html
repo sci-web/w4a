@@ -16,7 +16,8 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Subject (research title): </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Subject" name=subject size=95 value="{{ items.subject }}"> <font color="red">(*)</font></div>
+            <input type="text" placeholder="Subject" name=subject size=95 value="{{ items.subject }}"
+            data-validation="length alphanumeric" data-validation-length="min3"> <font color="red">(*)</font></div>
     </div>
     <br>
     <div style="height:25px; width:1010px;">
@@ -325,7 +326,11 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
     </div>
 </script>
 {% endraw %}
+<script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.form-validator.min.js') }}"></script>
 <script>
+  $.validate({
+    lang: 'en'
+  });
 function RemoveDiv(div) {
     $( div ).remove();
 }

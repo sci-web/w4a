@@ -16,12 +16,12 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Title: </div>
         <div style="float:right; width:830px;" class="form-group">
-            <input type="text" placeholder="Title" name=title size=65> <font color="red">(*)</font></div>
+            <input type="text" placeholder="Title" name=title size=65 data-validation="length alphanumeric" data-validation-length="min3"> <font color="red">(*)</font></div>
     </div>
     <br>
     <div style="height:25px; width:1010px;">
         <div style="float:left; width:180px">Alias: </div>
-        <div style="float:right; width:830px;" class="form-group">
+        <div style="float:right; width:830px;" class="form-group" data-validation="length alphanumeric" data-validation-length="min3">
             <input type="text" name=chapter size=35> in latin letters <font color="red">(*)</font></div>
     </div>
     <br>
@@ -287,7 +287,11 @@ input {background: #FFF; border-top:1px solid #222; border-left:1px solid #222; 
         </div>
 </script>
 {% endraw %}
+<script type=text/javascript src="https://www.scibook.org{{ url_for('static', filename='js/jquery.form-validator.min.js') }}"></script>
 <script>
+  $.validate({
+    lang: 'en'
+  });
 $(document).ready(function() {
     loadTmpl('#imgPool_tmpl', '#imgPool_target_1', '#img_1', 0, 'icross', 0);
     loadTmpl('#srcPool_tmpl', '#srcPool_target_1', '#src_1', 0, 'scross', 0);

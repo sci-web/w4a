@@ -1,6 +1,9 @@
 from pymongo import MongoClient, errors
 import uuid, os
+import logging
+logging.basicConfig(filename='./controls.log',level=logging.DEBUG, format='%(asctime)s %(message)s')
 
+LOGS = logging
 # errors.ServerSelectionTimeoutMS = 5
 WTF_CSRF_ENABLED = True
 SECRET_KEY = 'devil in the sky'

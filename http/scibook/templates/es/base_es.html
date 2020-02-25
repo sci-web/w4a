@@ -96,11 +96,13 @@ var sc_security="59e332e0";
     <div class="col-md-4 col-lg-2" style="margin:20px 0 0 0">
     {% if sitepart != "editspace" and sitepart != "profile" and sitepart != "contact" %}
     <div class="simplebar-content" align=center style="width:345px;padding:14px 0 10px 0;" id=sidebar>
- <li class = "active"> <a data-toggle="tab" href="#ill"> Enfermedades </a> </li>
-             <li> <a data-toggle="tab" href="#drugs"> Drogas </a> </li>
-             <li> <a data-toggle="tab" href="#conds"> Condiciones </a> </li>
-             <li> <a data-toggle="tab" href="#geo"> Geo </a> </li>
-       <div style="border-top:1px solid #DCDBFF; margin-top:-1px;"> </div>
+        <ul class="nav nav-tabs" style="margin-right:80px;">
+            <li class="active"><a data-toggle="tab" href="#ill">Dolencias</a></li>
+            <li><a data-toggle="tab" href="#drugs">Drogas</a></li>
+            <li><a data-toggle="tab" href="#conds">Condiciones</a></li>
+            <li><a data-toggle="tab" href="#geo">Geo</a></li>
+        </ul>
+        <div style="border-top:1px solid #DCDBFF; margin-top:-1px;"> </div>
         <div class="tab-content tab-col" align=left style="padding:3px;">
             <div id=ill class="tab-pane fade in active" style=margin-top:1px>
                 <ul class="sqmenu">
